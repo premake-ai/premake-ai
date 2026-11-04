@@ -5,7 +5,7 @@ import { basename } from 'node:path';
 
 export const DEFAULT_API = 'https://premake.ai';
 export const MAX_FILE = 50 * 1024 * 1024;
-const VERSION = '0.1.0';
+const VERSION = '0.2.0';
 
 export function apiBase(override) {
   return String(override || process.env.PREMAKE_API || DEFAULT_API).replace(/\/+$/, '');

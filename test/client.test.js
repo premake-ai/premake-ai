@@ -85,3 +85,35 @@ test('MCP: tools listed, quote_part returns offers', async (t) => {
   const g = await client.callTool({ name: 'get_quote', arguments: { quote_id: 'nope' } });
   assert.ok(g.isError);
 });
+
+test('defaults to https://premake.ai; the plugin is skill-only (no MCP server, nothing to install)', async () => {
+  const { readFileSync, existsSync } = await import('node:fs');
+  const saved = process.env.PREMAKE_API; delete process.env.PREMAKE_API;
+  try { assert.equal(apiBase(), 'https://premake.ai'); } finally { if (saved !== undefined) process.env.PREMAKE_API = saved; }
+  const pkg = JSON.parse(readFileSync(new URL('../package.json', import.meta.url)));
+  const plugin = JSON.parse(readFileSync(new URL('../.claude-plugin/plugin.json', import.meta.url)));
+  assert.equal(plugin.version, pkg.version);
+  assert.ok(!existsSync(new URL('../.mcp.json', import.meta.url)), 'no .mcp.json: the plugin needs no npm');
+  const skill = readFileSync(new URL('../skills/premake/SKILL.md', import.meta.url), 'utf8');
+  for (const p of ['/api/v1/parts', '/api/v1/quotes', '${PREMAKE_API:-https://premake.ai}', 'X-Filename']) assert.ok(skill.includes(p), `skill mentions ${p}`);
+  assert.doesNotMatch(skill, /npx|quote_part|mcp__/, 'skill uses curl only');
+});
+
+test('skill: its curl commands upload, quote and poll (run against the fake API)', async (t) => {
+  const { readFileSync } = await import('node:fs');
+  const api = await fakeApi(); t.after(() => api.srv.close());
+  const skill = readFileSync(new URL('../skills/premake/SKILL.md', import.meta.url), 'utf8');
+  const blocks = [...skill.matchAll(/```bash\n([\s\S]*?)```/g)].map((m) => m[1].trim()).filter((b) => b.includes('/api/v1/'));
+  assert.equal(blocks.length, 3, 'upload, quote, poll');
+  const file = stepFile();
+  const sh = (cmd) => promisify(execFile)('/bin/sh', ['-c', cmd], { env: { ...process.env, PREMAKE_API: api.url } }).then((r) => JSON.parse(r.stdout));
+  const part = await sh(blocks[0].replace('/path/to/part.step', file).replaceAll('part.step', 'bracket.step'));
+  assert.equal(part.part_id, 'prt_aaaaaaaaaaaaaaaaaaaa');
+  assert.equal(api.seen.uploads[0].name, 'bracket.step');
+  const q = await sh(blocks[1].replace('PART_ID', part.part_id));
+  assert.deepEqual(api.seen.quotes[0], { parts: [{ part_id: part.part_id, qty: [1, 10, 100], material: 'aluminium' }] });
+  const done = await sh(blocks[2].replace('QUOTE_ID', q.quote_id));
+  assert.equal(done.status, 'complete');
+  assert.ok(api.seen.polls >= 2, 'polled until complete');
+  assert.equal(done.best[0].cheapest.supplier, 'RMFG');
+});

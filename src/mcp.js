@@ -20,7 +20,7 @@ const reply = (text, data) => ({ content: [{ type: 'text', text }], structuredCo
 const fail = (e) => ({ isError: true, content: [{ type: 'text', text: `premake-ai: ${e.message}` }] });
 
 export function createServer() {
-  const server = new McpServer({ name: 'premake-ai', version: '0.1.0' });
+  const server = new McpServer({ name: 'premake-ai', version: '0.2.0' });
 
   server.registerTool('quote_part', {
     title: 'Quote a part',

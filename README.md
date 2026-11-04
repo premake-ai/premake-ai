@@ -1,35 +1,26 @@
 # premake-ai
 
-Get parts made from your terminal or your coding agent. Premake is an AI procurement provider: one API over machine shops, sheet-metal shops, print networks and factories. Send a STEP or STL file and get live prices, shipping and delivery dates from every supplier that can make it.
+Get parts made from Claude Code. Premake is an AI procurement provider: one API over machine shops, sheet-metal shops, print networks and factories. Send a STEP or STL file and get live prices, shipping and delivery dates from every supplier that can make it.
 
-This repo holds the open-source clients: a CLI, an MCP server, and a Claude Code plugin with a skill that teaches Claude when to quote and how to export STEP from your CAD code.
+This repo is a Claude Code plugin: a skill that teaches Claude when to quote, how to export STEP from your CAD code, and how to ask Premake's API with `curl`, plus a `/premake-ai:quote` command. Nothing to install beyond the plugin.
 
 Premake never orders or pays for anything. You get a comparison link and order yourself.
 
-## Install in 30 seconds
-
-Claude Code:
+## Install
 
 ```
 /plugin marketplace add premake-ai/premake-ai
 /plugin install premake-ai@premake-ai
 ```
 
-Then ask Claude "what would 20 of these cost in aluminium?" or run `/premake-ai:quote bracket.step 1,10,100`. The plugin starts the MCP server with `npx`, so Node 18.17 or later must be installed.
+Then ask Claude "what would 20 of these cost in aluminium?" or run `/premake-ai:quote bracket.step 1,10,100`.
 
-Command line (Node 18.17 or later):
+- Needs Claude Code 2.0.20 or later: plugins arrived in 2.0.12 and skills in 2.0.20. Check with `claude --version`, upgrade with `claude update`.
+- Works with any Claude model, including Sonnet 4.5 and older. The skill is plain instructions and `curl` commands.
+- No Node, Python or npm. Claude runs `curl`, which ships with macOS, Linux and Windows 10 and later.
+- No account or key. Anonymous use allows 20 quotes a day per IP and files up to 50 MB.
 
-```
-npx premake-ai quote bracket.step --qty 1,10,100 --material aluminium
-```
-
-Any other MCP client (Cursor, Claude Desktop, Codex):
-
-```json
-{ "mcpServers": { "premake-ai": { "command": "npx", "args": ["-y", "premake-ai", "mcp"] } } }
-```
-
-No account or key. Anonymous use allows 20 quotes a day per IP and files up to 50 MB.
+Privacy: your file is sent to Premake's quoting service and the shops being asked. It is used only for quoting and deleted after 30 days.
 
 ## Example
 
@@ -84,24 +75,25 @@ Compare and order: https://premake.ai/q/qt_65fbf02357961cbb29f4
 | SendCutSend | Laser cut and bent sheet | Estimate | STEP or STL |
 | Local shop | Any of the above | Estimate (Premake price model) | STEP or STL |
 
-`premake-ai suppliers` prints the current list. Materials: aluminium (default), steel, stainless, plastic, acrylic.
+Ask Claude "who can make this?" or `curl https://premake.ai/api/v1/suppliers` for the current list. Materials: aluminium (default), steel, stainless, plastic, acrylic.
 
-## Commands
+## Optional: CLI and MCP server
+
+The plugin doesn't need them. For other tools (Cursor, Claude Desktop, scripts), this repo also holds a small CLI and MCP server over the same API. They are not on npm yet; run them from a clone with Node 18.17 or later:
 
 ```
-premake-ai quote <file> [--qty 1,10,100] [--material aluminium] [--zip 10001] [--json]
-premake-ai get <quote_id> [--json]
-premake-ai suppliers [--json]
-premake-ai mcp
+git clone https://github.com/premake-ai/premake-ai && cd premake-ai && npm install
+node bin/premake-ai.js quote bracket.step --qty 1,10,100 --material aluminium
+node bin/premake-ai.js get <quote_id>
+node bin/premake-ai.js suppliers
+node bin/premake-ai.js mcp      # MCP tools: quote_part, get_quote, list_suppliers
 ```
 
-`PREMAKE_API` points the clients at another server (default `https://premake.ai`).
-
-MCP tools: `quote_part` (path, qtys, material), `get_quote` (quote_id), `list_suppliers`.
+`PREMAKE_API` points the skill, CLI and MCP server at another server (default `https://premake.ai`).
 
 ## API
 
-The clients call a small HTTP API you can use directly:
+The skill calls a small HTTP API you can use directly:
 
 ```
 POST /api/v1/parts          raw STEP/STL body, X-Filename header       -> part_id, bbox, volume, likely processes, warnings

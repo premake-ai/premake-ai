@@ -1,6 +1,6 @@
 {
   "name": "premake-ai",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Get parts made from your terminal or your coding agent: one API over machine shops, print networks and factories. CLI, MCP server and Claude Code plugin.",
   "license": "MIT",
   "type": "module",

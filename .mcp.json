@@ -1,9 +1,0 @@
-{
-  "mcpServers": {
-    "premake-ai": {
-      "command": "npx",
-      "args": ["-y", "premake-ai@0.1.0", "mcp"],
-      "env": { "PREMAKE_API": "${PREMAKE_API:-https://premake.ai}" }
-    }
-  }
-}

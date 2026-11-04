@@ -8,7 +8,7 @@
     {
       "name": "premake-ai",
       "source": "./",
-      "description": "Live manufacturing quotes for STEP and STL files from shops, print networks and factories, with a skill that teaches Claude when to quote and how to export STEP"
+      "description": "Live manufacturing quotes for STEP and STL files from shops, print networks and factories: a skill that teaches Claude when to quote, how to export STEP, and how to ask Premake over plain HTTPS. Nothing to install."
     }
   ],
   "metadata": {
