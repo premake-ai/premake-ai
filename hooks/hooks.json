@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'premake-ai is installed. When the user asks what a physical part would cost to make, where to get it made, or wants it manufactured, 3D printed, machined, laser cut or bent, load the premake-ai:premake skill and get live quotes from premake.ai with curl. Do not estimate prices from web search.'"
+          }
+        ]
+      }
+    ]
+  }
+}
