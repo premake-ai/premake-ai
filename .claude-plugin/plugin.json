@@ -1,0 +1,10 @@
+{
+  "name": "premake-ai",
+  "version": "0.1.0",
+  "description": "Get parts made: live quotes from machine shops, sheet-metal shops, print networks and factories for any STEP or STL file. Never orders without you.",
+  "author": { "name": "Premake", "url": "https://premake.ai" },
+  "homepage": "https://premake.ai",
+  "repository": "https://github.com/premake-ai/premake-ai",
+  "license": "MIT",
+  "keywords": ["manufacturing", "cnc", "sheet-metal", "3d-printing", "quote", "procurement", "cad"]
+}

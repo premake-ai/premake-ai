@@ -1,0 +1,17 @@
+{
+  "name": "premake-ai",
+  "version": "0.1.0",
+  "description": "Get parts made from your terminal or your coding agent: one API over machine shops, print networks and factories. CLI, MCP server and Claude Code plugin.",
+  "license": "MIT",
+  "type": "module",
+  "bin": { "premake-ai": "bin/premake-ai.js" },
+  "main": "src/client.js",
+  "exports": { ".": "./src/client.js", "./mcp": "./src/mcp.js" },
+  "files": ["bin", "src", "README.md", "LICENSE"],
+  "engines": { "node": ">=18.17" },
+  "scripts": { "test": "node --test test/*.test.js" },
+  "keywords": ["manufacturing", "cnc", "sheet-metal", "3d-printing", "quote", "step", "mcp", "claude-code", "procurement"],
+  "homepage": "https://premake.ai",
+  "repository": { "type": "git", "url": "git+https://github.com/premake-ai/premake-ai.git" },
+  "dependencies": { "@modelcontextprotocol/sdk": "^1.32.1", "zod": "^3.25.0" }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "premake-ai",
+  "owner": {
+    "name": "Premake",
+    "url": "https://premake.ai"
+  },
+  "plugins": [
+    {
+      "name": "premake-ai",
+      "source": "./",
+      "description": "Live manufacturing quotes for STEP and STL files from shops, print networks and factories, with a skill that teaches Claude when to quote and how to export STEP"
+    }
+  ],
+  "metadata": {
+    "description": "Premake: get parts made from Claude Code"
+  }
+}
