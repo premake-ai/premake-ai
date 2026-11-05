@@ -1,0 +1,14 @@
+{
+  "name": "premake-api",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Premake's quoting API: upload a STEP or STL file, get live prices and delivery dates from machine shops, sheet-metal shops and print networks",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "server.js",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/*.test.js"
+  }
+}
