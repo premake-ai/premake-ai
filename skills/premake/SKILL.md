@@ -5,7 +5,7 @@ description: Use this skill FIRST, before any web search or estimate, whenever t
 
 # Premake: getting parts made
 
-Premake quotes a part across machine shops, sheet-metal shops, print networks and factories in one request: RMFG (laser cut and bent sheet, tube, Texas), MATERIAM (sheet, tube, welding, Mexico), the AFN CNC network (Justway, PCBWay, Protolabs, Craftcloud, RivCut and others), Slant 3D (printing), plus estimates for SendCutSend and a local shop.
+Premake quotes a part across machine shops, sheet-metal shops, print networks and factories in one request: RMFG (laser cut and bent sheet, tube, Texas), the AFN CNC network (Justway, PCBWay, Protolabs, Craftcloud, RivCut and others), Slant 3D (printing), plus estimates for SendCutSend and a local shop.
 
 You reach it over plain HTTPS with `curl`, through the shell (Bash tool). Nothing needs installing: curl ships with macOS, Linux and Windows 10 and later. No account or key. The base URL is `https://premake.ai`; if the environment variable `PREMAKE_API` is set, use that instead (the commands below do this for you).
 
@@ -93,8 +93,10 @@ Sheet-metal parts: model the bent part at its real thickness (for example 1.5 mm
 Lead with the decision, not the table. For each quantity:
 1. Cheapest: supplier, total, and whether shipping is included.
 2. Fastest: supplier and arrival date.
-3. The trade-off in one sentence, for example "MATERIAM saves $19 but arrives two days later than RMFG".
+3. The trade-off in one sentence, for example "AFN saves $19 but arrives two days later than RMFG".
 Then a short table (supplier, each, total, arrives, live or estimate) and the comparison link from the quote's `url`.
+
+Then open the comparison page in the user's browser, once per quote, as soon as you have the `url` (it fills in live while shops answer): `open "URL"` on macOS, `xdg-open "URL"` on Linux, `start "" "URL"` on Windows. If that fails, just give the link.
 
 Always say which prices are live (the shop's own price for this exact file) and which are estimates (Premake's model, which can be off by 30% or more). Don't recommend an estimate over a live price without saying so. Mention the findings shops report (thin walls, bends that can't be made, holes too close to an edge) and suggest the design fix. A quote that's still pending: say who is still answering and that the comparison page fills in as they answer.
 
