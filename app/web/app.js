@@ -1763,8 +1763,9 @@ async function sendDesign(id, c, text, att = [], extra = null) {
 }
 function queueHtml(c) {
   if (!c.queue?.length) return '';
-  return `<div class="q-list">${c.queue.map((q, i) => `<div class="q-item"><span class="q-tag">Queued</span><span class="q-text">${esc(splitParts(q.text).text)}</span>
-    <button class="q-x" data-qx="${i}" aria-label="Remove queued message">✕</button></div>`).join('')}</div>`;
+  // a queued message: your own bubble, faded, with "Sends next · Remove" under it
+  return `<div class="q-list">${c.queue.map((q, i) => `<div class="q-item"><div class="q-text">${esc(splitParts(q.text).text)}</div>
+    <div class="q-meta">Sends next · <button type="button" class="q-x" data-qx="${i}">Remove</button></div></div>`).join('')}</div>`;
 }
 
 // ---------- support thread HTML (the admin inbox below); visitors reach Josh through the call bubble ----------
