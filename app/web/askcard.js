@@ -88,7 +88,7 @@ function cardHtml(key, qs) {
   const s = st(key), n = qs.filter(q => answered(key, q)).length;
   return `<div class="ab-card" data-ab-key="${esc(key)}" role="group" aria-label="Questions from the designer">
     ${qs.map((q, k) => `<div class="ab-q" data-ab-qid="${esc(q.id)}">
-      <p class="ab-qt"><span class="ab-n">${k + 1}</span>${esc(q.question)}${q.multi ? ' <span class="ab-hint">Pick any</span>' : ''}${q.mockup ? ' <span class="ab-hint">Hover an option to see it on the model</span>' : ''}</p>
+      <p class="ab-qt"><span class="ab-n">${k + 1}</span>${esc(q.question)}${q.multi ? ' <span class="ab-hint">Pick any</span>' : ''}</p>
       <div class="ab-opts${rowsOf(q) ? ' ab-mkq' : ''}">${optsHtml(key, q)}</div>
       <input class="ab-otext" type="text" maxlength="200" placeholder="Type your answer" data-ab-otext="${esc(q.id)}" value="${esc(s.other[q.id] || '')}" ${s.otherOn[q.id] ? '' : 'hidden'}>
     </div>`).join('')}
