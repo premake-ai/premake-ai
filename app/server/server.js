@@ -521,9 +521,26 @@ const pollSeen = new Map(); // id -> last poll time; keeps the file watcher aliv
 function lastStepOf(run) { const ev = run?.events || []; for (let i = ev.length - 1; i >= 0; i--) if (/step$/.test(ev[i].type)) return ev[i].text || ''; return ''; }
 /** Emit and remember an event for this run, so reconnecting clients can replay it. */
 function record(id, run, ev) {
+  if (run.flow) flowAdd(run.flow, ev, run.P);
   run.events.push(ev);
   if (run.events.length > RUN_EVENTS_MAX) run.events.splice(0, run.events.length - RUN_EVENTS_MAX);
   emit(id, ev);
+}
+
+/** narration: the turn as it happened, [{ text } | { steps, parts? }], so the reply can show its messages between the steps. */
+function flowAdd(flow, ev, P) {
+  const last = flow[flow.length - 1];
+  if (ev.type === P + 'assistant') flow.push({ text: ev.text });
+  else if (ev.type === P + 'step') {
+    const g = last?.steps ? last : (flow.push({ steps: [] }), flow[flow.length - 1]);
+    g.steps.push(ev.text);
+    if (ev.parts?.length) (g.parts ||= {})[g.steps.length - 1] = ev.parts;
+  }
+}
+/** The flow to keep on the reply: only when the agent wrote between steps; the reply's own text is not repeated. */
+function flowForReply(flow, reply) {
+  const f = (flow || []).filter((x) => x.text == null || !reply.includes(x.text)); // a stopped run's reply is every text joined
+  return f.some((x) => x.text != null) ? f : null;
 }
 
 function emit(id, ev) {
@@ -1070,7 +1087,7 @@ function startAgent(id, kind, text, tSend, by = null) {
   }
 
   if (kind === 'design') { ensureBuildSh(dir); warmWorker(id); }
-  const run = { kind, P, dir, msgFile, ver, userText: String(text || "").replace(/\n*\[Attached images:[\s\S]*$/, "").slice(0, 1200), siteBackup, adsBackup, appBackup, keepTitle, memberGuard, agent, agentFile, child: null, proc: null, startedAt: Date.now(), texts: [], result: null, isError: false, stderr: '', stopped: false,
+  const run = { kind, P, dir, msgFile, ver, userText: String(text || "").replace(/\n*\[Attached images:[\s\S]*$/, "").slice(0, 1200), siteBackup, adsBackup, appBackup, keepTitle, memberGuard, agent, agentFile, child: null, proc: null, startedAt: Date.now(), texts: [], flow: [], result: null, isError: false, stderr: '', stopped: false,
     buildIds: new Set(), buildStart: new Map(), events: [], denied: 0, partial: '', thinking: '', partialTimer: null, tl, lastWork: Date.now(), lastAny: Date.now() };
   if (kind === 'design') { run.fwSig = firmware.sketchSig(dir); run.fwFix = fwFixTurns.get(id) || 0; fwFixTurns.delete(id); } // firmware: compile afterwards if the sketch changed
   map.set(id, run);
@@ -1167,7 +1184,8 @@ function finishRun(id, run, code) {
   const asking = questions && !run.stopped ? questions : null;
   const status = run.stopped ? brain.stopStatus(run, run.capMs || RUN_TIMEOUT_MS) : null;
   if (asking && !reply) reply = 'A few quick questions before I start.';
-  const extra = { tl: timeline, ...(asking ? { questions: asking } : {}), ...(status ? { status } : {}) };
+  const flow = flowForReply(run.flow, reply);
+  const extra = { tl: timeline, ...(asking ? { questions: asking } : {}), ...(status ? { status } : {}), ...(flow ? { flow } : {}) };
   const msgIdx = reply ? addMessageTo(msgFile, 'assistant', reply, extra) : -1;
   if (asking && msgIdx >= 0) { // askmock: the card's message exists now: save the mock-ups that already landed, the rest follow
     const job = startAskMocks(id, dir, asking, run.userText);

@@ -4,7 +4,7 @@ import { highlightPython } from './highlight.js';
 import { renderSite } from './site.js';
 import { renderAds, adsChanged, designPicker } from './ads.js';
 import { renderStore, siteChanged, heroReady } from './store.js';
-import { threadHtml, textHtml, addLiveText, undoBarHtml, wireHistory, wireLiveToggle, liveStepLabel } from './chatui.js';
+import { threadHtml, textHtml, addLiveText, addLiveStep, undoBarHtml, wireHistory, wireLiveToggle, liveStepLabel } from './chatui.js';
 import { thinkingLine, versionNote, partLabel } from './livecaption.js'; // livecaption: reasoning line, version notes, reveal names
 import { renderMarket } from './market.js';
 import { CHECKOUT, openCheckout, startCheckout, renderOrders, ordersLinkVisible } from './checkout.js'; // payments:
@@ -2011,7 +2011,7 @@ async function onProjectEvent(id, d) {
       startLive(c, d); updateRunIndicator();
       if (isCurProject(id)) { renderChat(); if (!S.viewer?.parts().length && !S.viewer?.sketch && S.cur.data) loadModel(S.cur.data.manifest, false); }
       break;
-    case 'step': { const L = live(); L.steps.push(d.text || 'Working'); if (d.parts?.length) (L.stepParts ||= {})[L.steps.length - 1] = d.parts; if (isCurProject(id)) renderChat(); updateRunIndicator(); break; }
+    case 'step': { const L = live(); addLiveStep(L, d.text || 'Working', d.parts); if (isCurProject(id)) renderChat(); updateRunIndicator(); break; }
     case 'editing_parts': if (isCurProject(id) && live().running && (d.parts?.length || d.replay)) S.viewer?.editGlow?.set(d.parts); break; // editglow: shimmer what the agent is editing (a replayed [] = the build landed)
     case 'assistant': if (addLiveText(live(), d.text) && isCurProject(id)) renderChat(); break;
     case 'partial': setPartial(id, e, 'design', d.text, d.thinking); break;
@@ -2115,7 +2115,7 @@ async function onAgentEvent(id, e, d, kind) {
   const live = () => c.live || (c.live = { steps: [], text: '', running: true });
   switch (d.type) {
     case P + 'run_started': startLive(c, d); if (kind === 'app' && isCurProject(id) && S.ctab === 'app') renderAppTab(); break;
-    case P + 'step': live().steps.push(d.text || 'Working'); if (kind === 'app' && isCurProject(id) && S.ctab === 'app') renderAppTab(); break;
+    case P + 'step': addLiveStep(live(), d.text || 'Working'); if (kind === 'app' && isCurProject(id) && S.ctab === 'app') renderAppTab(); break;
     case P + 'assistant': if (!addLiveText(live(), d.text)) return; break;
     case P + 'partial': setPartial(id, e, kind, d.text, d.thinking); return;
     case 'site_updated': siteChanged(id); return;

@@ -48,6 +48,7 @@
 .msgs .msg.assistant .body { font-size: 15px; line-height: 1.6; color: var(--text); }
 .msgs .msg.assistant .body p { margin: 0 0 .8em; }
 .msgs .msg.assistant .body > :last-child { margin-bottom: 0; }
+.msgs .msg.assistant .body.narr { margin: 0 0 10px; } /* narration: a message between step groups */
 .msgs .msg.assistant .body ul, .msgs .msg.assistant .body ol { margin: 0 0 .8em; padding-left: 1.35em; }
 .msgs .msg.assistant .body li { margin: .3em 0; padding-left: .15em; }
 .msgs .msg.assistant .body li::marker { color: var(--muted); }

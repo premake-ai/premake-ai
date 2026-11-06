@@ -221,15 +221,29 @@ export function threadHtml(chat, opts = {}) {
     const h = textHtml(t), c = replyChips(h);
     return c === h && !hasNames() ? `<div class="body" data-ep>${h}</div>` : `<div class="body">${c}</div>`;
   };
+  // narration: a text the agent wrote between steps, styled like the reply
+  const narr = t => { const h = body(t); return h.startsWith('<div class="body"') ? h.replace('class="body"', 'class="body narr"') : `<div class="body narr">${h}</div>`; };
+  const flowHtml = flow => flow.map(x => x.text != null ? narr(x.text) : activityHtml(x.steps, false, false, '', false, x.parts || null)).join('');
   let html = chat.messages.map((m, i) => m.role === 'user'
     ? userHtml(m, i, editable)
-    : `<div class="msg assistant${m.rewound ? ' rewound' : ''}">${chat.steps[i] ? activityHtml(chat.steps[i], false, false, '', false, chat.stepParts?.[i]) : ''}${body(m.text)}${opts.parts ? msgExtrasHtml(m, i, chat) : ''}${footHtml(m)}</div>`).join('');
+    : `<div class="msg assistant${m.rewound ? ' rewound' : ''}">${m.flow?.length ? flowHtml(m.flow) : chat.steps[i] ? activityHtml(chat.steps[i], false, false, '', false, chat.stepParts?.[i]) : ''}${body(m.text)}${opts.parts ? msgExtrasHtml(m, i, chat) : ''}${footHtml(m)}</div>`).join('');
   if (chat.live) {
     const L = chat.live;
     const partial = L.running && L.partial && !(L.text || '').endsWith(L.partial) ? L.partial : '';
     const first = !!opts.firstRun; // designing: a new design's first run (progress checklist, open unless the user closed it)
-    html += `<div class="msg assistant live">${activityHtml(L.steps, L.running, first ? (L.closed === true ? false : true) : L.running && L.closed === false, L.thinking, true, L.stepParts, first)}
-      ${L.text || partial ? `<div class="body">${textHtml(L.text || '')}${partial ? textHtml(partial) : ''}</div>` : ''}
+    const open = first ? (L.closed === true ? false : true) : L.running && L.closed === false;
+    const flow = L.flow || [], tail = flow[flow.length - 1];
+    let inner;
+    if (flow.some(x => x.text != null)) { // narration: texts and step groups in order; only the newest group is the live line
+      const done = tail?.steps && L.running ? flow.slice(0, -1) : flow;
+      inner = flowHtml(done)
+        + (L.running ? activityHtml(first ? L.steps : tail?.steps ? tail.steps : [], true, open, L.thinking, true, first ? L.stepParts : tail?.steps ? tail.parts || null : null, first) : '')
+        + (partial ? `<div class="body narr">${textHtml(partial)}</div>` : '');
+    } else {
+      inner = `${activityHtml(L.steps, L.running, open, L.thinking, true, L.stepParts, first)}
+      ${L.text || partial ? `<div class="body">${textHtml(L.text || '')}${partial ? textHtml(partial) : ''}</div>` : ''}`;
+    }
+    html += `<div class="msg assistant live">${inner}
       ${L.error ? `<div class="err">${esc(L.error)}</div>` : ''}</div>`;
   }
   return html;
@@ -247,7 +261,20 @@ export function addLiveText(L, t) {
   if (!t || L.text.endsWith(t)) { if (L.partial) { L.partial = ''; return true; } return false; }
   L.partial = ''; // the full block replaces the streamed partial
   L.text = t.startsWith(L.text) ? t : (L.text ? L.text + '\n\n' + t : t);
+  const f = (L.flow ||= []), last = f[f.length - 1]; // narration: the texts in order between the step groups
+  if (last?.text != null && t.startsWith(last.text)) last.text = t; else f.push({ text: t });
   return true;
+}
+
+/** Fold a step event into the live turn (the flat list + the current step group of the narration flow). */
+export function addLiveStep(L, t, parts) {
+  L.steps.push(t);
+  if (parts?.length) (L.stepParts ||= {})[L.steps.length - 1] = parts;
+  const f = (L.flow ||= []);
+  let g = f[f.length - 1];
+  if (!g?.steps) f.push(g = { steps: [] });
+  g.steps.push(t);
+  if (parts?.length) (g.parts ||= {})[g.steps.length - 1] = parts;
 }
 
 // ---------- undo / rewind (shared by the studio chat and the website chat) ----------
