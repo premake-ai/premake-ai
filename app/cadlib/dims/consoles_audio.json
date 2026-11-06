@@ -1,0 +1,252 @@
+[
+  {
+    "key": "switch_v1",
+    "name": "Nintendo Switch (original, HAC-001)",
+    "category": "consoles",
+    "dims": {
+      "height_mm": 102,
+      "width_mm": 239,
+      "depth_mm": 13.9,
+      "max_depth_mm": 28.4,
+      "weight_g": 297,
+      "weight_with_joycon_g": 398
+    },
+    "notes": "Size is with Joy-Con attached; Nintendo does not publish a console-only size. max_depth_mm is from analog stick tip to ZL/ZR button surface. Weight_g is console only.",
+    "source": "https://www.nintendo.com/sg/hardware/switch/modal/specs/body.html",
+    "sources": ["https://www.nintendo.com/us/gaming-systems/switch/tech-specs/"],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "switch_oled",
+    "name": "Nintendo Switch - OLED Model (HEG-001)",
+    "category": "consoles",
+    "dims": {
+      "height_mm": 102,
+      "width_mm": 242,
+      "depth_mm": 13.9,
+      "max_depth_mm": 28.4,
+      "weight_g": 320,
+      "weight_with_joycon_g": 420
+    },
+    "notes": "Size is with Joy-Con attached; no console-only size published. max_depth_mm is from analog stick tip to ZL/ZR button surface.",
+    "source": "https://www.nintendo.com/sg/hardware/switch/modal/specs/body_oled.html",
+    "sources": ["https://www.nintendo.com/us/gaming-systems/switch/tech-specs/"],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "switch_lite",
+    "name": "Nintendo Switch Lite (HDH-001)",
+    "category": "consoles",
+    "dims": {
+      "height_mm": 91.1,
+      "width_mm": 208,
+      "depth_mm": 13.9,
+      "max_depth_mm": 28.4,
+      "weight_g": 275
+    },
+    "notes": "Integrated controls. max_depth_mm is from analog stick tip to ZL/ZR button surface.",
+    "source": "https://www.nintendo.com/ph/hardware/switch/modal/specs/lite.html",
+    "sources": ["https://www.nintendo.com/us/gaming-systems/switch/tech-specs/"],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "switch_2",
+    "name": "Nintendo Switch 2",
+    "category": "consoles",
+    "dims": {
+      "height_mm": 116,
+      "width_mm": 272,
+      "depth_mm": 13.9,
+      "max_depth_mm": 30.7,
+      "weight_g": 401,
+      "weight_with_joycon_g": 534
+    },
+    "notes": "Size is with Joy-Con 2 attached (no console-only size published). max_depth_mm is from control stick tips to ZL/ZR. EU user-replaceable-battery version weighs approx. 441 g (548 g with Joy-Con 2).",
+    "source": "https://www.nintendo.com/ph/hardware/switch2/specs/index.html",
+    "sources": ["https://www.nintendo.com/en-gb/Hardware/Nintendo-Switch-2/Nintendo-Switch-2-Specifications-2785627.html"],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "joycon",
+    "name": "Nintendo Joy-Con (original, single controller)",
+    "category": "consoles",
+    "dims": {
+      "height_mm": 102,
+      "width_mm": 35.9,
+      "depth_mm": 28.4,
+      "weight_left_g": 49,
+      "weight_right_g": 52.1
+    },
+    "notes": "Same size for L and R; depth 28.4 mm is max thickness including stick and ZL/ZR. Size without wrist strap.",
+    "source": "https://www.nintendo.com/ph/hardware/switch/modal/specs/joy-con.html",
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "joycon_2",
+    "name": "Nintendo Joy-Con 2 (single controller)",
+    "category": "consoles",
+    "dims": {
+      "height_mm": 116,
+      "width_mm": 41.4,
+      "depth_mm": 30.7,
+      "weight_left_g": 66,
+      "weight_right_g": 67
+    },
+    "notes": "Same size for L and R; depth 30.7 mm is max thickness from stick tip to ZL/ZR. Nintendo UK page lists width as 14.4 mm (apparent typo for 41.4). EU user-replaceable-battery versions weigh 68 g (L) / 69 g (R).",
+    "source": "https://www.nintendo.com/ph/hardware/switch2/accessories/joyCon.html",
+    "sources": ["https://www.nintendo.com/en-gb/Hardware/Nintendo-Switch-2/Nintendo-Switch-2-Specifications-2785627.html"],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "ps5_dualsense",
+    "name": "Sony PS5 DualSense Wireless Controller",
+    "category": "consoles",
+    "dims": {
+      "width_mm": 160,
+      "height_mm": 66,
+      "depth_mm": 106,
+      "weight_g": 300
+    },
+    "notes": "PlayStation store lists approx. H66 x W160 x D106 mm and approx. 0.3 kg; Thai/Latvian retailers list approx. 280 g and note dimensions exclude the largest projection. height_mm is thickness lying flat, depth_mm is front-to-back (grips).",
+    "source": "https://www.playstation.com/en-gb/accessories/dualsense-wireless-controller/buy-now/",
+    "sources": ["https://www.playstation.com/en-gb/accessories/dualsense-wireless-controller/buy-now/product/midnight-black/"],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "xbox_controller",
+    "name": "Microsoft Xbox Wireless Controller (Series X|S model)",
+    "category": "consoles",
+    "dims": {
+      "width_mm": 153,
+      "height_mm": 61,
+      "depth_mm": 102,
+      "weight_g": 287
+    },
+    "notes": "Microsoft does not publish dimensions on xbox.com. Figures from retailer/review listings (Clubic 153 x 102 x 61 mm, 287 g; PC Richard 6.02 x 4.01 x 2.40 in); height_mm is thickness lying flat, depth_mm front-to-back. Weight likely without AA batteries; other retailers list 380+ g (probably with batteries/packaging).",
+    "source": "https://www.clubic.com/26036-xbox-series-controller.html",
+    "sources": ["https://www.pcrichard.com/xbox-wireless-controller-for-xbox-series-x-xbox-series-s-and-xbox-one-carbon-black/EP2-29929.html", "https://www.xbox.com/en-US/accessories/controllers/xbox-wireless-controller"],
+    "checked": "2026-10-30",
+    "confidence": "measured"
+  },
+  {
+    "key": "airpods_3_case",
+    "name": "Apple AirPods (3rd generation) charging case",
+    "category": "audio",
+    "dims": {
+      "height_mm": 46.4,
+      "width_mm": 54.4,
+      "depth_mm": 21.38,
+      "weight_g": 37.91,
+      "earbud_height_mm": 30.79,
+      "earbud_width_mm": 18.26,
+      "earbud_depth_mm": 19.21,
+      "earbud_weight_g": 4.28
+    },
+    "notes": "Same size for Lightning and MagSafe charging case. Apple: size and weight vary by configuration and manufacturing process.",
+    "source": "https://support.apple.com/en-us/111863",
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "airpods_4_case",
+    "name": "Apple AirPods 4 charging case (USB-C)",
+    "category": "audio",
+    "dims": {
+      "height_mm": 46.2,
+      "width_mm": 50.1,
+      "depth_mm": 21.2,
+      "weight_g": 32.3,
+      "weight_anc_case_g": 34.7,
+      "earbud_height_mm": 30.2,
+      "earbud_width_mm": 18.3,
+      "earbud_depth_mm": 18.1,
+      "earbud_weight_g": 4.3
+    },
+    "notes": "AirPods 4 with ANC case (with speaker, wireless charging) has identical size, weight 34.7 g. Note: some apple.com regional spec pages now show 'AirPods 5' with the same case dimensions.",
+    "source": "https://support.apple.com/en-us/121203",
+    "sources": ["https://support.apple.com/en-us/121204"],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "airpods_pro_2_case",
+    "name": "Apple AirPods Pro 2 MagSafe Charging Case (USB-C)",
+    "category": "audio",
+    "dims": {
+      "height_mm": 45.2,
+      "width_mm": 60.6,
+      "depth_mm": 21.7,
+      "weight_g": 50.8,
+      "earbud_height_mm": 30.9,
+      "earbud_width_mm": 21.8,
+      "earbud_depth_mm": 24.0,
+      "earbud_weight_g": 5.3
+    },
+    "notes": "Case with speaker and lanyard loop. Apple: size and weight vary by configuration and manufacturing process.",
+    "source": "https://support.apple.com/en-us/111834",
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "airpods_pro_3_case",
+    "name": "Apple AirPods Pro 3 MagSafe Charging Case (USB-C)",
+    "category": "audio",
+    "dims": {
+      "height_mm": 47.2,
+      "width_mm": 62.2,
+      "depth_mm": 21.8,
+      "weight_g": 43.99,
+      "earbud_height_mm": 30.9,
+      "earbud_width_mm": 19.2,
+      "earbud_depth_mm": 27.0,
+      "earbud_weight_g": 5.55
+    },
+    "notes": "Released 2025. Apple: size and weight vary by configuration and manufacturing process.",
+    "source": "https://www.apple.com/airpods-pro/specs/",
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "usbc_plug",
+    "name": "USB Type-C plug (USB-IF critical dimensions)",
+    "category": "cables",
+    "dims": {
+      "plug_width_mm": 8.25,
+      "plug_thickness_mm": 2.4,
+      "plug_length_mm": 6.65,
+      "overmold_max_width_mm": 12.35,
+      "overmold_max_height_mm": 6.5,
+      "receptacle_opening_width_mm": 8.34,
+      "receptacle_opening_height_mm": 2.56
+    },
+    "notes": "Plug width/thickness tol +/-0.03, plug length (exposed metal from overmold face) +/-0.10; receptacle opening width +0.06/-0.02, height +/-0.04 (USB-IF Compliance Doc rev 1.2, Figs B-1/B-5). A GitHub thread claims a later USB-IF ECN enlarged the overmold envelope to 12.85 x 7.0 mm; unverified.",
+    "source": "https://www.usb.org/sites/default/files/USB_Type-C_Compliance_Document_rev_1_2.pdf",
+    "sources": ["https://github.com/crimpdeq/crimpdeq-case/pull/7"],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "apple_usbc_cable_plug",
+    "name": "Apple USB-C charge cable (240W woven 2 m, A2794)",
+    "category": "cables",
+    "dims": {
+      "cable_diameter_mm": 4.6,
+      "cable_length_mm": 2000,
+      "weight_g": 78,
+      "overmold_max_width_mm": 12.35,
+      "overmold_max_height_mm": 6.5
+    },
+    "notes": "Plug boot width/thickness/length NOT found in any reputable measured source; overmold_max values are the USB-IF upper bound, not Apple measurements. Cable diameter and weight measured by ChargerLAB; an Apple Community user reports ~3.0 mm for the 1 m non-woven cable.",
+    "source": "https://chargerlab.com/teardown-of-apple-240w-usb-c-charge-cable-a2794",
+    "sources": ["https://discussions.apple.com/thread/253788184", "https://www.usb.org/sites/default/files/USB_Type-C_Compliance_Document_rev_1_2.pdf"],
+    "checked": "2026-10-30",
+    "confidence": "measured"
+  }
+]

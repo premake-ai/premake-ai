@@ -1,0 +1,13 @@
+{
+  "autodeskProduct": "Fusion",
+  "type": "addin",
+  "id": "a2a6ce21-2127-4564-9cfb-eafbcab45d83",
+  "author": "Premake",
+  "description": {
+    "": "Hover a part to see what it costs to make, then get it made by manufacturers near you."
+  },
+  "version": "0.1.0",
+  "runOnStartup": true,
+  "supportedOS": "windows|mac",
+  "editEnabled": true
+}

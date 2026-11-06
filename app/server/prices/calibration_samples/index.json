@@ -1,0 +1,62 @@
+[
+ {
+  "file": "plate-50x50-4x3.4.dxf",
+  "what": "Small plate, 4 M3 clearance holes",
+  "size_mm": [
+   50,
+   50
+  ],
+  "cut_length_mm": 243,
+  "holes": 4
+ },
+ {
+  "file": "plate-100x60-4x5.5.dxf",
+  "what": "Mounting plate, 4 M5 clearance holes",
+  "size_mm": [
+   100,
+   60
+  ],
+  "cut_length_mm": 389,
+  "holes": 4
+ },
+ {
+  "file": "plate-150x100-6x5.5-cutout.dxf",
+  "what": "Base plate, 6 M5 holes + 60x30 window",
+  "size_mm": [
+   150,
+   100
+  ],
+  "cut_length_mm": 784,
+  "holes": 6
+ },
+ {
+  "file": "flat-L-bracket-80x60.dxf",
+  "what": "L-bracket flat pattern (1 bend at y=30 if bent), 4 M4 holes",
+  "size_mm": [
+   80,
+   60
+  ],
+  "cut_length_mm": 337,
+  "holes": 4
+ },
+ {
+  "file": "disc-80-center-22.dxf",
+  "what": "Disc 80 mm with a 22 mm bore (acrylic spacer / bearing plate)",
+  "size_mm": [
+   80,
+   80
+  ],
+  "cut_length_mm": 320,
+  "holes": 2
+ },
+ {
+  "file": "panel-200x120-acrylic.dxf",
+  "what": "Front panel, 4 M3 holes + 90x40 display window",
+  "size_mm": [
+   200,
+   120
+  ],
+  "cut_length_mm": 943,
+  "holes": 4
+ }
+]

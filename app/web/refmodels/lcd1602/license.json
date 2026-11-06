@@ -1,0 +1,13 @@
+{
+ "key": "lcd1602",
+ "title": "LCD 16x2 character display (1602)",
+ "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Display.3dshapes/WC1602A.step",
+ "author": "KiCad Library contributors",
+ "license": "CC-BY-SA-4.0 WITH KiCad-libraries-exception",
+ "license_url": "https://www.kicad.org/libraries/license/",
+ "retrieved": "2026-10-30",
+ "modified": "converted STEP to GLB (tessellated, one material per colour), re-centred, scaled to millimetres; geometry otherwise unchanged",
+ "attribution_text": "\"WC1602A.step\" by KiCad Library contributors, CC BY-SA 4.0 (KiCad library) (https://www.kicad.org/libraries/license/), from https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Display.3dshapes/WC1602A.step. Converted STEP to GLB (tessellated, one material per colour), re-centred, scaled to millimetres; geometry otherwise unchanged.",
+ "allowed_use": "display-only",
+ "source_sha256": "ce7ea20fbf54f20a88d1b7a36098abb2df923b50bc19850c40ac3958897b5d22"
+}

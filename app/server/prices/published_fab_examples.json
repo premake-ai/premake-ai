@@ -1,0 +1,405 @@
+{
+ "about": "Example part prices SendCutSend publishes on its own pages (read from the static HTML on the date shown; no quote API used). Starting data for refit_fab.js; real quotes in sendcutsend_quotes.json outweigh these 5:1.",
+ "supplier": "SendCutSend",
+ "examples": [
+  {
+   "part": "Hardboard tab example Hardboard",
+   "desc": "Hardboard tab example [laser]",
+   "material": "Hardboard",
+   "thickness_mm": 3.17,
+   "size_mm": [
+    38.1,
+    76.2
+   ],
+   "bends": 0,
+   "qty": 1,
+   "price_usd": 1.6,
+   "simple": true,
+   "url": "https://sendcutsend.com/pricing/",
+   "checked": "2026-10-29"
+  },
+  {
+   "part": "Hardboard tab example Hardboard",
+   "desc": "Hardboard tab example [laser]",
+   "material": "Hardboard",
+   "thickness_mm": 3.17,
+   "size_mm": [
+    38.1,
+    76.2
+   ],
+   "bends": 0,
+   "qty": 100,
+   "price_usd": 0.65,
+   "simple": true,
+   "url": "https://sendcutsend.com/pricing/",
+   "checked": "2026-10-29"
+  },
+  {
+   "part": "Hardboard tab example Hardboard",
+   "desc": "Hardboard tab example [laser]",
+   "material": "Hardboard",
+   "thickness_mm": 3.17,
+   "size_mm": [
+    38.1,
+    76.2
+   ],
+   "bends": 0,
+   "qty": 1000,
+   "price_usd": 0.55,
+   "simple": true,
+   "url": "https://sendcutsend.com/pricing/",
+   "checked": "2026-10-29"
+  },
+  {
+   "part": "Acrylic tab example Dark Gray Acrylic",
+   "desc": "Acrylic tab example [laser]",
+   "material": "Dark Gray Acrylic",
+   "thickness_mm": 3.0,
+   "size_mm": [
+    38.1,
+    76.2
+   ],
+   "bends": 0,
+   "qty": 1,
+   "price_usd": 2.24,
+   "simple": true,
+   "url": "https://sendcutsend.com/pricing/",
+   "checked": "2026-10-29"
+  },
+  {
+   "part": "Acrylic tab example Dark Gray Acrylic",
+   "desc": "Acrylic tab example [laser]",
+   "material": "Dark Gray Acrylic",
+   "thickness_mm": 3.0,
+   "size_mm": [
+    38.1,
+    76.2
+   ],
+   "bends": 0,
+   "qty": 100,
+   "price_usd": 0.84,
+   "simple": true,
+   "url": "https://sendcutsend.com/pricing/",
+   "checked": "2026-10-29"
+  },
+  {
+   "part": "Acrylic tab example Dark Gray Acrylic",
+   "desc": "Acrylic tab example [laser]",
+   "material": "Dark Gray Acrylic",
+   "thickness_mm": 3.0,
+   "size_mm": [
+    38.1,
+    76.2
+   ],
+   "bends": 0,
+   "qty": 1000,
+   "price_usd": 0.7,
+   "simple": true,
+   "url": "https://sendcutsend.com/pricing/",
+   "checked": "2026-10-29"
+  },
+  {
+   "part": "Aluminium tab example 5052 Aluminum",
+   "desc": "Aluminium tab example [laser]",
+   "material": "5052 Aluminum",
+   "thickness_mm": 4.75,
+   "size_mm": [
+    38.1,
+    76.2
+   ],
+   "bends": 0,
+   "qty": 1,
+   "price_usd": 8.47,
+   "simple": true,
+   "url": "https://sendcutsend.com/pricing/",
+   "checked": "2026-10-29"
+  },
+  {
+   "part": "Aluminium tab example 5052 Aluminum",
+   "desc": "Aluminium tab example [laser]",
+   "material": "5052 Aluminum",
+   "thickness_mm": 4.75,
+   "size_mm": [
+    38.1,
+    76.2
+   ],
+   "bends": 0,
+   "qty": 100,
+   "price_usd": 3.21,
+   "simple": true,
+   "url": "https://sendcutsend.com/pricing/",
+   "checked": "2026-10-29"
+  },
+  {
+   "part": "Aluminium tab example 5052 Aluminum",
+   "desc": "Aluminium tab example [laser]",
+   "material": "5052 Aluminum",
+   "thickness_mm": 4.75,
+   "size_mm": [
+    38.1,
+    76.2
+   ],
+   "bends": 0,
+   "qty": 1000,
+   "price_usd": 2.12,
+   "simple": true,
+   "url": "https://sendcutsend.com/pricing/",
+   "checked": "2026-10-29"
+  },
+  {
+   "part": "Mild steel, simple geometry (inferred order simple/moderate/dense) Mild Steel",
+   "desc": "Mild steel, simple geometry (inferred order simple/moderate/dense) [laser]",
+   "material": "Mild Steel",
+   "thickness_mm": 1.5,
+   "size_mm": [
+    50.8,
+    50.8
+   ],
+   "bends": 0,
+   "qty": 1,
+   "price_usd": 3.38,
+   "simple": false,
+   "url": "https://sendcutsend.com/pricing/",
+   "checked": "2026-10-29",
+   "weight": 0.3,
+   "note": "dense geometry: long cut path the size alone does not show"
+  },
+  {
+   "part": "Mild steel, simple geometry (inferred order simple/moderate/dense) Mild Steel",
+   "desc": "Mild steel, simple geometry (inferred order simple/moderate/dense) [laser]",
+   "material": "Mild Steel",
+   "thickness_mm": 1.5,
+   "size_mm": [
+    50.8,
+    50.8
+   ],
+   "bends": 0,
+   "qty": 100,
+   "price_usd": 1.06,
+   "simple": false,
+   "url": "https://sendcutsend.com/pricing/",
+   "checked": "2026-10-29",
+   "weight": 0.3,
+   "note": "dense geometry: long cut path the size alone does not show"
+  },
+  {
+   "part": "Mild steel, simple geometry (inferred order simple/moderate/dense) Mild Steel",
+   "desc": "Mild steel, simple geometry (inferred order simple/moderate/dense) [laser]",
+   "material": "Mild Steel",
+   "thickness_mm": 1.5,
+   "size_mm": [
+    50.8,
+    50.8
+   ],
+   "bends": 0,
+   "qty": 1000,
+   "price_usd": 0.84,
+   "simple": false,
+   "url": "https://sendcutsend.com/pricing/",
+   "checked": "2026-10-29",
+   "weight": 0.3,
+   "note": "dense geometry: long cut path the size alone does not show"
+  },
+  {
+   "part": "Mild steel, moderate geometry (inferred) Mild Steel",
+   "desc": "Mild steel, moderate geometry (inferred) [laser]",
+   "material": "Mild Steel",
+   "thickness_mm": 1.5,
+   "size_mm": [
+    50.8,
+    50.8
+   ],
+   "bends": 0,
+   "qty": 1,
+   "price_usd": 4.12,
+   "simple": false,
+   "url": "https://sendcutsend.com/pricing/",
+   "checked": "2026-10-29"
+  },
+  {
+   "part": "Mild steel, moderate geometry (inferred) Mild Steel",
+   "desc": "Mild steel, moderate geometry (inferred) [laser]",
+   "material": "Mild Steel",
+   "thickness_mm": 1.5,
+   "size_mm": [
+    50.8,
+    50.8
+   ],
+   "bends": 0,
+   "qty": 100,
+   "price_usd": 1.39,
+   "simple": false,
+   "url": "https://sendcutsend.com/pricing/",
+   "checked": "2026-10-29"
+  },
+  {
+   "part": "Mild steel, moderate geometry (inferred) Mild Steel",
+   "desc": "Mild steel, moderate geometry (inferred) [laser]",
+   "material": "Mild Steel",
+   "thickness_mm": 1.5,
+   "size_mm": [
+    50.8,
+    50.8
+   ],
+   "bends": 0,
+   "qty": 1000,
+   "price_usd": 1.12,
+   "simple": false,
+   "url": "https://sendcutsend.com/pricing/",
+   "checked": "2026-10-29"
+  },
+  {
+   "part": "Mild steel, dense geometry (inferred) Mild Steel",
+   "desc": "Mild steel, dense geometry (inferred) [laser]",
+   "material": "Mild Steel",
+   "thickness_mm": 1.5,
+   "size_mm": [
+    50.8,
+    50.8
+   ],
+   "bends": 0,
+   "qty": 1,
+   "price_usd": 7.19,
+   "simple": false,
+   "url": "https://sendcutsend.com/pricing/",
+   "checked": "2026-10-29",
+   "weight": 0.3,
+   "note": "dense geometry: long cut path the size alone does not show"
+  },
+  {
+   "part": "Mild steel, dense geometry (inferred) Mild Steel",
+   "desc": "Mild steel, dense geometry (inferred) [laser]",
+   "material": "Mild Steel",
+   "thickness_mm": 1.5,
+   "size_mm": [
+    50.8,
+    50.8
+   ],
+   "bends": 0,
+   "qty": 100,
+   "price_usd": 2.9,
+   "simple": false,
+   "url": "https://sendcutsend.com/pricing/",
+   "checked": "2026-10-29",
+   "weight": 0.3,
+   "note": "dense geometry: long cut path the size alone does not show"
+  },
+  {
+   "part": "Mild steel, dense geometry (inferred) Mild Steel",
+   "desc": "Mild steel, dense geometry (inferred) [laser]",
+   "material": "Mild Steel",
+   "thickness_mm": 1.5,
+   "size_mm": [
+    50.8,
+    50.8
+   ],
+   "bends": 0,
+   "qty": 1000,
+   "price_usd": 2.42,
+   "simple": false,
+   "url": "https://sendcutsend.com/pricing/",
+   "checked": "2026-10-29",
+   "weight": 0.3,
+   "note": "dense geometry: long cut path the size alone does not show"
+  },
+  {
+   "part": "Bracket cut only 5052 Aluminum",
+   "desc": "Bracket cut only [laser]",
+   "material": "5052 Aluminum",
+   "thickness_mm": 2.54,
+   "size_mm": [
+    136.5,
+    160.0
+   ],
+   "bends": 0,
+   "qty": 1,
+   "price_usd": 16.48,
+   "simple": false,
+   "url": "https://sendcutsend.com/pricing/",
+   "checked": "2026-10-29"
+  },
+  {
+   "part": "Bracket cut only 5052 Aluminum",
+   "desc": "Bracket cut only [laser]",
+   "material": "5052 Aluminum",
+   "thickness_mm": 2.54,
+   "size_mm": [
+    136.5,
+    160.0
+   ],
+   "bends": 0,
+   "qty": 100,
+   "price_usd": 5.32,
+   "simple": false,
+   "url": "https://sendcutsend.com/pricing/",
+   "checked": "2026-10-29"
+  },
+  {
+   "part": "Bracket cut only 5052 Aluminum",
+   "desc": "Bracket cut only [laser]",
+   "material": "5052 Aluminum",
+   "thickness_mm": 2.54,
+   "size_mm": [
+    136.5,
+    160.0
+   ],
+   "bends": 0,
+   "qty": 1000,
+   "price_usd": 3.38,
+   "simple": false,
+   "url": "https://sendcutsend.com/pricing/",
+   "checked": "2026-10-29"
+  },
+  {
+   "part": "Bracket cut + bending 5052 Aluminum",
+   "desc": "Bracket cut + bending [laser+bend]",
+   "material": "5052 Aluminum",
+   "thickness_mm": 2.54,
+   "size_mm": [
+    136.5,
+    160.0
+   ],
+   "bends": 2,
+   "qty": 1,
+   "price_usd": 37.49,
+   "simple": false,
+   "url": "https://sendcutsend.com/pricing/",
+   "checked": "2026-10-29",
+   "note": "bend count not published; 2 assumed"
+  },
+  {
+   "part": "Bracket cut + bending 5052 Aluminum",
+   "desc": "Bracket cut + bending [laser+bend]",
+   "material": "5052 Aluminum",
+   "thickness_mm": 2.54,
+   "size_mm": [
+    136.5,
+    160.0
+   ],
+   "bends": 2,
+   "qty": 100,
+   "price_usd": 11.06,
+   "simple": false,
+   "url": "https://sendcutsend.com/pricing/",
+   "checked": "2026-10-29",
+   "note": "bend count not published; 2 assumed"
+  },
+  {
+   "part": "Bracket cut + bending 5052 Aluminum",
+   "desc": "Bracket cut + bending [laser+bend]",
+   "material": "5052 Aluminum",
+   "thickness_mm": 2.54,
+   "size_mm": [
+    136.5,
+    160.0
+   ],
+   "bends": 2,
+   "qty": 1000,
+   "price_usd": 8.18,
+   "simple": false,
+   "url": "https://sendcutsend.com/pricing/",
+   "checked": "2026-10-29",
+   "note": "bend count not published; 2 assumed"
+  }
+ ]
+}

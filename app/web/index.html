@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-visual">
+<title>Premake studio</title>
+<meta name="theme-color" content="#fafaf9">
+<meta name="color-scheme" content="light">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Premake">
+<meta name="description" content="Premake: describe a product, watch the CAD build live, and order 1 to 500 units.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/checkout.css"><!-- payments: -->
+<link rel="stylesheet" href="/guide.css"><!-- guide: -->
+<link rel="stylesheet" href="/partmenu.css"><!-- partmenu: -->
+<link rel="stylesheet" href="/share.css"><!-- share: -->
+<link rel="stylesheet" href="/support.css"><!-- call: the Chat panel's "Call Josh" bubble (web/support.js) -->
+<link rel="stylesheet" href="/glass.css"><!-- glass: buttons and toggles, last so it layers over the above -->
+<link rel="stylesheet" href="/chat.css"><!-- chatlook: the chat thread and composer, Claude-style (after glass.css) -->
+<link rel="stylesheet" href="/phone.css"><!-- phonestudio: the phone layout (<= 860 px), web/phonestudio.js -->
+<link rel="stylesheet" href="/appview.css"><link rel="stylesheet" href="/assemble.css"><!-- apps: the App tab (web/appview.js) -->
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/",
+  "three/examples/jsm/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/",
+  "three-mesh-bvh": "https://cdn.jsdelivr.net/npm/three-mesh-bvh@0.7.8/src/index.js",
+  "three-gpu-pathtracer": "https://cdn.jsdelivr.net/npm/three-gpu-pathtracer@0.0.23/src/index.js"
+}}
+</script>
+<script type="module" src="/analytics.js"></script><!-- analytics: PostHog (web/analytics.js) -->
+</head>
+<body>
+<!-- phonekit: launch animation on phones (first load per session, under 2 s, tap to skip, none with reduced motion).
+     A blocky F drawn like a CAD sketch, its corners round off, it fills orange, three LEDs light down the stem, then it fades into the app. -->
+<div id="mLaunch" hidden aria-hidden="true" style="position:fixed;inset:0;z-index:10000;display:grid;place-items:center;background:#fafaf9;transition:opacity .34s ease;-webkit-tap-highlight-color:transparent">
+  <svg viewBox="0 0 130 170" width="112" height="146" style="overflow:visible;transition:transform .34s ease">
+    <defs><filter id="mlGlow" x="-2" y="-2" width="5" height="5"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+    <g id="mlGuides" stroke="#9aa6b5" stroke-width=".6" stroke-dasharray="2 3" opacity="0" fill="none">
+      <path d="M8 20h114M8 140h114M30 6v158M100 6v40"/>
+    </g>
+    <path id="mlF" fill="#e8590c" fill-opacity="0" stroke="#4d5b6c" stroke-width="1.6" stroke-linejoin="round"/>
+    <g id="mlLeds" fill="#fff" fill-opacity=".28">
+      <circle cx="43" cy="106" r="3.4"/><circle cx="43" cy="118" r="3.4"/><circle cx="43" cy="130" r="3.4"/>
+    </g>
+  </svg>
+</div>
+<script>
+(function () {
+  var el = document.getElementById('mLaunch');
+  try {
+    if (!matchMedia('(max-width: 640px)').matches || matchMedia('(prefers-reduced-motion: reduce)').matches) return el.remove();
+    if (sessionStorage.getItem('formery.launched')) return el.remove();
+    sessionStorage.setItem('formery.launched', '1');
+  } catch (e) { return el.remove(); }
+  el.hidden = false;
+  var F = el.querySelector('#mlF'), G = el.querySelector('#mlGuides'), leds = el.querySelectorAll('#mlLeds circle');
+  // the F's outline; r rounds every corner (a quadratic curve cut r back along both edges)
+  var P = [[30, 20], [100, 20], [100, 46], [56, 46], [56, 68], [82, 68], [82, 92], [56, 92], [56, 140], [30, 140]];
+  function shape(r) {
+    var d = '';
+    for (var i = 0; i < P.length; i++) {
+      var a = P[(i + P.length - 1) % P.length], b = P[i], c = P[(i + 1) % P.length];
+      var la = Math.hypot(b[0] - a[0], b[1] - a[1]), lc = Math.hypot(c[0] - b[0], c[1] - b[1]);
+      var p1 = [b[0] + (a[0] - b[0]) * r / la, b[1] + (a[1] - b[1]) * r / la], p2 = [b[0] + (c[0] - b[0]) * r / lc, b[1] + (c[1] - b[1]) * r / lc];
+      d += (i ? 'L' : 'M') + p1[0].toFixed(2) + ' ' + p1[1].toFixed(2) + 'Q' + b[0] + ' ' + b[1] + ' ' + p2[0].toFixed(2) + ' ' + p2[1].toFixed(2);
+    }
+    return d + 'Z';
+  }
+  F.setAttribute('d', shape(0));
+  var per = F.getTotalLength ? F.getTotalLength() : 520, t0 = 0, raf = 0, done = false;
+  F.style.strokeDasharray = per; F.style.strokeDashoffset = per;
+  var cl = function (x) { return Math.max(0, Math.min(1, x)); }, ease = function (x) { return 1 - Math.pow(1 - x, 3); };
+  function end() {
+    if (done) return; done = true; cancelAnimationFrame(raf);
+    el.style.opacity = '0'; el.querySelector('svg').style.transform = 'scale(1.08)';
+    setTimeout(function () { el.remove(); }, 360);
+  }
+  function frame(now) {
+    if (!t0) t0 = now;
+    var t = now - t0;
+    G.setAttribute('opacity', (0.9 * cl(t / 200) * (1 - cl((t - 900) / 250))).toFixed(3));
+    var k = ease(cl(t / 680)); F.style.strokeDashoffset = per * (1 - k);                                       // sketch: 0-680 ms
+    if (k >= 1) F.style.strokeDasharray = 'none';
+    if (t > 700) F.setAttribute('d', shape(9 * ease(cl((t - 700) / 260))));                                     // corners round: 700-960
+    var f = ease(cl((t - 940) / 300)); F.setAttribute('fill-opacity', f.toFixed(3)); F.setAttribute('stroke-opacity', (1 - f).toFixed(3)); // fills: 940-1240
+    leds.forEach(function (c, i) { var q = cl((t - 1240 - i * 110) / 120);                                     // LEDs: 1240-1590
+      c.setAttribute('fill', q > 0 ? '#fff4d6' : '#fff'); c.setAttribute('fill-opacity', (0.28 + 0.72 * q).toFixed(3));
+      if (q >= 1 && !c.getAttribute('filter')) c.setAttribute('filter', 'url(#mlGlow)'); });
+    if (t >= 1640) return end();                                                                                // fade: 1640-1980
+    raf = requestAnimationFrame(frame);
+  }
+  el.addEventListener('pointerdown', end);
+  raf = requestAnimationFrame(frame);
+  setTimeout(end, 2600); // a background tab never runs the frames
+})();
+</script>
+
+<header class="topbar">
+  <button class="icon-btn only-mobile" id="menuBtn" aria-label="Open projects">
+    <svg viewBox="0 0 16 16" width="16" height="16"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+  </button>
+  <a class="brand" href="/" title="Premake home"><span class="brand-mark" aria-hidden="true"></span>Premake</a>
+  <div class="crumb" id="crumb"></div>
+  <div class="mode-switch" role="tablist" aria-label="View">
+    <button id="swStudio" role="tab" class="on">Studio</button>
+    <button id="swStore" role="tab">Store</button>
+  </div>
+  <div class="top-right">
+    <a class="run-ind" id="runInd" href="/" hidden></a>
+    <span class="conn" id="conn" title="Connection"><span class="dot"></span><span class="conn-label">Connecting</span></span>
+  </div>
+</header>
+
+<div class="studio mode-home" id="studio">
+  <aside class="sidebar" id="sidebar">
+    <button class="btn primary block" id="newBtn">
+      <svg viewBox="0 0 16 16" width="14" height="14"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+      New design
+    </button>
+    <div class="side-head">Your projects</div>
+    <input class="proj-search" id="projSearch" type="search" placeholder="Search designs" aria-label="Search your designs" autocomplete="off" hidden>
+    <div class="proj-list" id="projList"></div>
+    <div class="side-foot">
+      <a href="/examples" class="side-link" id="sideExamples">
+        <svg viewBox="0 0 16 16" width="14" height="14"><rect x="2" y="2" width="5" height="5" rx="1" fill="none" stroke="currentColor"/><rect x="9" y="2" width="5" height="5" rx="1" fill="none" stroke="currentColor"/><rect x="2" y="9" width="5" height="5" rx="1" fill="none" stroke="currentColor"/><rect x="9" y="9" width="5" height="5" rx="1" fill="none" stroke="currentColor"/></svg>
+        Examples
+      </a>
+      <a href="/store" class="side-link" id="sideStore">
+        <svg viewBox="0 0 16 16" width="14" height="14"><path d="M2.5 6h11l-.8 7.5H3.3zM5.5 6V4.5a2.5 2.5 0 0 1 5 0V6" fill="none" stroke="currentColor" stroke-linejoin="round"/></svg>
+        Store
+      </a>
+      <!-- payments: -->
+      <a href="/orders" class="side-link" id="sideOrders" hidden>
+        <svg viewBox="0 0 16 16" width="14" height="14"><path d="M2.5 4.5l5.5-2.5 5.5 2.5v7L8 14l-5.5-2.5zM2.5 4.5L8 7l5.5-2.5M8 7v7" fill="none" stroke="currentColor" stroke-linejoin="round"/></svg>
+        My orders
+      </a>
+    </div>
+  </aside>
+  <div class="scrim only-mobile" id="scrim"></div>
+
+  <main class="center">
+    <!-- Home: no project selected -->
+    <section class="home" id="home">
+      <div class="home-inner">
+        <h1>Describe a product to build</h1>
+        <p class="home-sub">A design agent writes the CAD, you watch it take shape, then order 1 to 500 units.</p>
+        <form class="prompt-box" id="homeForm">
+          <textarea id="homePrompt" rows="3" placeholder="Describe a product, or paste a photo or sketch…"></textarea>
+          <div class="prompt-row">
+            <button class="btn primary" type="submit" id="homeGo">Start building
+              <svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" fill="none"/></svg></button>
+          </div>
+        </form>
+        <p class="att-tip">Tip: paste (⌘V) or drop a photo of anything you want made</p>
+        <div class="home-err" id="homeErr" hidden></div>
+        <div class="home-tiles" id="homeTiles" aria-label="Finished examples"></div><!-- hometiles: six finished examples (app.js renderHome) -->
+      </div>
+    </section>
+
+    <!-- Workspace: project or example -->
+    <section class="work" id="work" hidden>
+      <div class="tabbar">
+        <div class="ctabs" role="tablist" aria-label="Design">
+          <button class="tab on" role="tab" data-ctab="model">Model</button>
+          <button class="tab" role="tab" data-ctab="assemble" id="asmTabBtn" hidden>Assemble</button><!-- assemble: print, gather, wire, flash, test, close (web/assemble.js) -->
+          <button class="tab" role="tab" data-ctab="site" aria-label="Website" title="Website"><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M2 8h12M8 2c1.8 1.7 2.6 3.7 2.6 6S9.8 12.3 8 14M8 2C6.2 3.7 5.4 5.7 5.4 8s.8 4.3 2.6 6" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></button>
+          <button class="tab" role="tab" data-ctab="ads" aria-label="Ads" title="Ads"><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M2.5 6.3v3.4h2.3l4.7 3V3.3l-4.7 3H2.5z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M11.6 5.6c.8.7 1.2 1.5 1.2 2.4s-.4 1.7-1.2 2.4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M5 9.7l.9 3.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></button>
+          <button class="tab" role="tab" data-ctab="app" id="appTabBtn" hidden>App</button><!-- apps: the companion app (web/appview.js) -->
+          <button class="tab" role="tab" data-ctab="code" aria-label="Code" title="Code (design.py)"><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M5.5 4.5L2 8l3.5 3.5M10.5 4.5L14 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+        <!-- Launch tab open (desktop): the center previews the build guide or the website instead of the model -->
+        <div class="ctabs lp-tabs" id="lpTabs" role="tablist" aria-label="Launch preview" hidden>
+          <button class="tab on" role="tab" data-lprev="guide">Build guide</button>
+          <button class="tab" role="tab" data-lprev="site">Website</button>
+        </div>
+        <div class="tabbar-right">
+          <button class="tbtn" id="verBtn" hidden aria-label="Versions" aria-haspopup="true" aria-expanded="false" title="Every change the agent made. Click one to go back to it.">
+            <svg viewBox="0 0 16 16" width="14" height="14"><circle cx="8" cy="8" r="5.8" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 4.8V8l2.2 1.6" stroke="currentColor" stroke-width="1.3" fill="none"/></svg>
+            <span class="ver-cur" id="verCur"></span></button>
+          <button class="tbtn" id="phoneBtn" hidden aria-label="Continue on phone" title="Continue on phone: scan a code to carry on from your phone">
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><rect x="4.5" y="1.8" width="7" height="12.4" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M7 12h2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></button><!-- handoff: -->
+          <button class="tbtn" id="shareBtn" aria-haspopup="dialog" aria-expanded="false" title="Share a link to this design">
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 10V2.5M5 5.5l3-3 3 3M3.5 8.5v5h9v-5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+            <span>Share</span></button><!-- share: -->
+          <span class="readonly-tag" id="roTag" hidden>Read-only example</span>
+          <button class="btn primary sm" id="remixBtn" hidden>Remix this</button>
+        </div>
+      </div>
+      <div class="ver-pop" id="verPop" hidden role="menu" aria-label="Versions"></div>
+      <div class="model-pane" id="modelPane">
+        <div class="viewport" id="viewport"></div>
+        <div class="toolbar" id="toolbar">
+          <!-- toolmore: desktop shows these inline (the wrapper is display: contents); phones keep Explode and See-through (web/toolmore.js) -->
+          <div class="tmore" id="tmore" role="group" aria-label="View options">
+            <label class="tslider" title="Explode">
+              <svg viewBox="0 0 16 16" width="14" height="14"><path d="M8 1v4M8 11v4M1 8h4M11 8h4M3 3l2.5 2.5M13 13l-2.5-2.5M13 3l-2.5 2.5M3 13l2.5-2.5" stroke="currentColor" stroke-width="1.3" fill="none"/></svg>
+              <input type="range" id="explode" min="0" max="100" value="0" aria-label="Explode">
+            </label>
+            <span class="tsep"></span>
+            <button class="tbtn" id="ghostBtn" aria-pressed="false" title="See-through case">
+              <svg viewBox="0 0 16 16" width="14" height="14"><rect x="2.5" y="2.5" width="11" height="11" rx="2" fill="none" stroke="currentColor" stroke-dasharray="2 1.5"/><rect x="6" y="6" width="4" height="4" fill="currentColor"/></svg>
+              <span>See-through</span></button>
+            <button class="tbtn" id="resetBtn" title="Reset view">
+              <svg viewBox="0 0 16 16" width="14" height="14"><path d="M3.2 6.2A5.2 5.2 0 1 1 2.8 9.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M2.6 2.8v3.6h3.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Reset view</span></button>
+            <button class="tbtn on" id="compBtn" aria-pressed="true" title="Show bought parts">
+              <svg viewBox="0 0 16 16" width="14" height="14"><circle cx="8" cy="8" r="3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M8 1.5v2.5M8 12v2.5M1.5 8H4M12 8h2.5" stroke="currentColor" stroke-width="1.4"/></svg>
+              <span>Bought parts</span></button>
+            <button class="tbtn" id="bgBtn" title="Light or dark background">
+              <svg viewBox="0 0 16 16" width="14" height="14"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 2.5a5.5 5.5 0 010 11z" fill="currentColor"/></svg>
+              <span>Dark</span></button>
+          </div>
+          <button class="tbtn" id="fitBtn" title="Fit to view">
+            <svg viewBox="0 0 16 16" width="14" height="14"><path d="M2 6V2h4M10 2h4v4M14 10v4h-4M6 14H2v-4" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>
+            <span>Fit</span></button>
+          <span class="tsep"></span>
+          <button class="tbtn render-btn" id="renderBtn" aria-pressed="false" title="Photo-real render">
+            <svg viewBox="0 0 16 16" width="14" height="14"><path d="M8 1.8l1.5 3.6 3.7.3-2.8 2.5.9 3.7L8 9.9l-3.3 2 .9-3.7-2.8-2.5 3.7-.3z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg></button>
+        </div>
+        <div class="price-chip" id="priceChip" hidden></div>
+        <div class="render-bar" id="renderBar" hidden></div>
+        <div class="tree" id="tree" hidden>
+          <button class="tree-head" id="treeToggle"><span>Parts</span><span class="muted" id="treeCount"></span>
+            <svg class="chev" viewBox="0 0 16 16" width="12" height="12"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></button>
+          <div class="tree-body" id="treeBody"></div>
+        </div>
+        <div class="vp-overlay" id="vpOverlay" hidden></div>
+        <div class="vp-status" id="vpStatus" hidden role="status" aria-live="polite"></div>
+        <div class="vp-hint">Drag to rotate · scroll to zoom · mm</div>
+      </div>
+      <div class="code-pane" id="codePane" hidden>
+        <div class="code-scroll"><pre class="code" id="code"></pre></div>
+      </div>
+      <div class="store site-pane" id="sitePane" hidden></div>
+      <div class="adsview ads-pane" id="adsPane" hidden></div>
+      <div class="app-pane" id="appPane" hidden></div><!-- apps: -->
+      <div class="asm-pane" id="asmPane" hidden></div><!-- assemble: -->
+      <div class="guide-prev" id="guidePane" hidden></div>
+    </section>
+
+    <!-- #/site or #/ads with no design: pick one (same shell) -->
+    <section class="pick" id="pick" hidden></section>
+    <!-- #/support: admin help inbox -->
+    <section class="inbox" id="inbox" hidden></section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery" hidden>
+      <div class="gal-head">
+        <div>
+          <h1>Examples</h1>
+          <p class="muted">Real designs made with Premake. Open one to inspect the model, code and quote, or remix it.</p>
+        </div>
+        <div class="search">
+          <svg viewBox="0 0 16 16" width="14" height="14"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.4"/></svg>
+          <input id="galSearch" type="search" placeholder="Search examples" aria-label="Search examples">
+        </div>
+      </div>
+      <div class="tags" id="galTags"></div>
+      <div class="grid" id="galGrid"></div>
+    </section>
+  </main>
+
+  <aside class="right" id="right">
+    <div class="panel-resize" id="panelResize" title="Drag to resize" aria-hidden="true"></div>
+    <div class="tabbar">
+      <button class="tab only-mobile" id="mModelTab">Model</button>
+      <button class="tab on" data-rtab="chat">Chat</button>
+      <button class="tab" data-rtab="order">Order</button>
+      <button class="tab launch-tab" data-rtab="launch" id="launchBtn" hidden><span class="lb-t">Make</span></button>
+      <div class="tabbar-right"><span class="run-pill" id="runPill" hidden><span class="spin"></span>Building</span></div>
+    </div>
+    <div class="pane chat" id="chatPane">
+      <div class="msgs" id="msgs"></div>
+      <button class="order-pill" id="orderPill" hidden></button>
+      <div class="composer" id="composer">
+        <div class="undo-bar" id="undoBar"></div>
+        <div class="cbox">
+          <textarea id="chatInput" rows="1" placeholder="Ask for a change…"></textarea>
+          <div class="cbar">
+            <span class="c-who" id="chatWho">Editing the 3D design</span>
+            <span class="muted small" id="chatHint" hidden></span>
+            <button class="btn danger sm" id="stopBtn" hidden>
+              <svg viewBox="0 0 16 16" width="10" height="10"><rect x="3" y="3" width="10" height="10" rx="1.5" fill="currentColor"/></svg>Stop</button>
+            <button class="send" id="sendBtn" aria-label="Send">
+              <svg viewBox="0 0 16 16" width="14" height="14"><path d="M8 13V3M3.5 7.5L8 3l4.5 4.5" stroke="currentColor" stroke-width="1.7" fill="none"/></svg></button>
+          </div>
+        </div>
+      </div>
+      <div class="remix-card" id="remixCard" hidden>
+        <p>This is a read-only example. Remix it to get your own copy you can change by chatting.</p>
+        <button class="btn primary block" id="remixBtn2">Remix this</button>
+      </div>
+    </div>
+    <div class="pane order" id="orderPane" hidden></div>
+    <div class="pane launch" id="launchPane" hidden></div>
+  </aside>
+</div>
+
+<div class="site" id="site" hidden></div>
+<div class="market" id="market" hidden></div>
+<div class="launch" id="launch" hidden></div>
+<div class="orders-page" id="orders" hidden></div><!-- payments: -->
+<div class="guide-page" id="guidePage" hidden></div><!-- guide: -->
+
+<nav class="mtabs only-mobile" id="mtabs" aria-label="Studio panels">
+  <button data-mtab="model">
+    <svg viewBox="0 0 16 16" width="18" height="18"><path d="M8 1.8l5.5 3v6.4L8 14.2l-5.5-3V4.8zM2.5 4.8L8 7.8l5.5-3M8 7.8v6.4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>Model</button>
+  <button data-mtab="chat" class="on">
+    <svg viewBox="0 0 16 16" width="18" height="18"><path d="M2.5 3.5h11v7h-6l-3 2.5v-2.5h-2z" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>Chat</button>
+  <button data-mtab="order">
+    <svg viewBox="0 0 16 16" width="18" height="18"><path d="M2 4h12l-1.2 6.5H3.2zM5 13.5h.01M11 13.5h.01" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>Order</button>
+  <button id="launchBtnM" hidden>
+    <svg viewBox="0 0 16 16" width="18" height="18"><path d="M8 2.5v8M4.8 7.5 8 10.7l3.2-3.2M3 13.5h10" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Make</button>
+</nav>
+
+<div class="modal-wrap" id="modal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" id="modalBox"></div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script type="module" src="/app.js"></script>
+<script type="module" src="/glass.js"></script>
+<script type="module" src="/toolmore.js"></script>
+<script type="module" src="/motion.js"></script>
+<script type="module" src="/phone.js"></script><!-- phone: the studio as a phone app (<= 860 px) -->
+<script type="module" src="/phonestudio.js"></script><!-- phonestudio: floating bar, right menu, model card, thumbnail while typing -->
+<script type="module" src="/phonehome.js"></script><!-- phonehome: the phone "New design" screen at /new (stage, chips, composer) -->
+<script type="module" src="/phonedesigns.js"></script><!-- phonedesigns: the phone root screen, a full-page Designs list (no projects drawer on phones) -->
+<script type="module" src="/tooltip.js"></script><!-- tooltip: quick hover labels on the viewer toolbar -->
+</body>
+</html>

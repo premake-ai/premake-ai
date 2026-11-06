@@ -1,0 +1,13 @@
+{
+ "key": "extrusion_2020",
+ "title": "2020 aluminium extrusion (V-slot)",
+ "source_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD-library/master/Mechanical%20Parts/Mountings/2020_V-slot_Al_extrusion/2020x50_V_slot_profile-Part.step",
+ "author": "hasecilu (FreeCAD-library)",
+ "license": "CC-BY-3.0",
+ "license_url": "https://creativecommons.org/licenses/by/3.0/",
+ "retrieved": "2026-10-30",
+ "modified": "converted STEP to GLB (tessellated, one material per colour), re-centred, rotated (0, 0, 90) deg, scaled to millimetres; geometry otherwise unchanged",
+ "attribution_text": "\"2020x50_V_slot_profile-Part.step\" by hasecilu (FreeCAD-library), CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/), from https://raw.githubusercontent.com/FreeCAD/FreeCAD-library/master/Mechanical%20Parts/Mountings/2020_V-slot_Al_extrusion/2020x50_V_slot_profile-Part.step. Converted STEP to GLB (tessellated, one material per colour), re-centred, rotated (0, 0, 90) deg, scaled to millimetres; geometry otherwise unchanged.",
+ "allowed_use": "display-only",
+ "source_sha256": "ade2faa9698f0be1c6499bedc8c77caa862c86622fdb7a1d05d304a328c21153"
+}

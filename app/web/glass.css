@@ -1,0 +1,162 @@
+/* Liquid glass: buttons, chips and segmented toggles, light mode only.
+   One file for every page that has buttons: the studio (index.html), admin, build pages and /guides (server/guide.js).
+   gateway/home/glass.css is a byte-for-byte copy for the landing and sign-in pages (server/glass.test.js checks it).
+   Loaded after the page's own CSS: it only changes fills, borders, shadows and press feedback, never sizes or layout.
+   Segmented toggles get a glass pill that slides to the selected option (web/glass.js); without it the selected
+   option is simply filled with glass.
+   Fallbacks: no backdrop-filter -> near-opaque fills; prefers-reduced-transparency -> solid fills, no blur;
+   prefers-reduced-motion -> no press scale, no sliding. */
+:root {
+  --gl-fill: linear-gradient(180deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, .64));
+  --gl-fill-hover: linear-gradient(180deg, rgba(255, 255, 255, .98), rgba(255, 255, 255, .8));
+  --gl-rim: rgba(255, 255, 255, .85);                 /* thin light border */
+  --gl-hair: 0 0 0 .5px rgba(28, 25, 23, .16);        /* hairline so the rim reads on white */
+  --gl-hl: inset 0 1px 0 rgba(255, 255, 255, .95), inset 0 -1px 1px rgba(28, 25, 23, .04); /* top-edge highlight */
+  --gl-shadow: 0 1px 2px rgba(28, 25, 23, .06), 0 4px 14px -3px rgba(28, 25, 23, .1);
+  --gl-shadow-hover: 0 2px 4px rgba(28, 25, 23, .07), 0 8px 22px -4px rgba(28, 25, 23, .14);
+  --gl-shadow-press: 0 1px 2px rgba(28, 25, 23, .08);
+  --gl-blur: blur(14px) saturate(180%);
+  /* orange glass: dark ink text on it is >= 7:1 (WCAG AA and AAA) */
+  --gl-o-fill: linear-gradient(180deg, rgba(253, 154, 80, .95), rgba(249, 115, 22, .92));
+  --gl-o-fill-hover: linear-gradient(180deg, rgba(253, 146, 66, .98), rgba(240, 100, 14, .96));
+  --gl-o-rim: rgba(255, 214, 184, .7);
+  --gl-o-hair: 0 0 0 .5px rgba(154, 52, 18, .45);
+  --gl-o-hl: inset 0 1px 0 rgba(255, 240, 228, .8), inset 0 -1px 1px rgba(124, 45, 18, .2);
+  --gl-o-shadow: 0 1px 2px rgba(194, 65, 12, .2), 0 6px 18px -5px rgba(249, 115, 22, .55);
+  --gl-ink: #1a0d03;
+  /* segmented track (the groove the pill slides in) */
+  --gl-track: rgba(28, 25, 23, .05);
+  --gl-track-line: rgba(28, 25, 23, .07);
+  --gl-track-in: inset 0 1px 2px rgba(28, 25, 23, .07);
+  --gl-ease: cubic-bezier(.3, .8, .25, 1);
+}
+
+/* ---------- neutral glass ---------- */
+.btn, .chip, .mk-chip, .mk-btn.ghost, .gd-btn, .order-pill, .bp-mod-chips .chip, .price-chip, .mk-remix,
+.prompt-box .att-btn.has-label, .cbox .att-btn.has-label, .bp-modify .att-btn.has-label, .auth .btn.ghost {
+  background: var(--gl-fill); border: 1px solid var(--gl-rim); background-clip: padding-box;
+  box-shadow: var(--gl-hl), var(--gl-hair), var(--gl-shadow);
+  -webkit-backdrop-filter: var(--gl-blur); backdrop-filter: var(--gl-blur);
+  transition: background .18s, box-shadow .18s, transform .18s var(--gl-ease), color .15s, opacity .15s;
+}
+.btn:hover, .chip:hover, .mk-chip:hover, .mk-btn.ghost:hover, .gd-btn:hover, .bp-mod-chips .chip:hover, .price-chip:hover,
+.prompt-box .att-btn.has-label:hover, .cbox .att-btn.has-label:hover, .bp-modify .att-btn.has-label:hover, .auth .btn.ghost:hover {
+  background: var(--gl-fill-hover); border-color: var(--gl-rim); box-shadow: var(--gl-hl), var(--gl-hair), var(--gl-shadow-hover);
+}
+.btn:active:not(:disabled), .chip:active, .mk-chip:active, .mk-btn:active, .gd-btn:active:not(:disabled), .order-pill:active, .send:active:not(:disabled),
+.price-chip:active, .gbtn:active, .mk-remix:active, .att-btn:active:not(:disabled), .tbtn:active, .seg button:active, .mode-switch button:active {
+  transform: scale(.97); box-shadow: var(--gl-hl), var(--gl-hair), var(--gl-shadow-press);
+}
+.btn:disabled, .gd-btn:disabled { box-shadow: var(--gl-hl), var(--gl-hair); }
+/* the nav "Log in" on the landing page and borderless icon buttons stay quiet until hovered */
+.auth .btn.ghost { box-shadow: var(--gl-hl), var(--gl-hair); }
+
+/* selected chips: glass with an orange rim */
+.chip.on { background: var(--gl-fill-hover); border-color: rgba(249, 115, 22, .55); color: var(--accent-2, #c2410c);
+  box-shadow: var(--gl-hl), 0 0 0 .5px rgba(249, 115, 22, .5), 0 0 0 3px rgba(249, 115, 22, .12), var(--gl-shadow); }
+.mk-chip.on { background: linear-gradient(180deg, rgba(48, 46, 38, .94), rgba(23, 22, 15, .92)); border-color: rgba(255, 255, 255, .14); color: var(--paper, #f4f1ea);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .18), 0 0 0 .5px rgba(23, 22, 15, .6), 0 4px 14px -3px rgba(23, 22, 15, .35); }
+
+/* ---------- orange glass (primary) ---------- */
+.btn.primary, .send, .gd-btn.primary, .gd-root a.gd-btn.primary, .auth .btn.primary, .order-pill .op-ic, .gbtn {
+  background: var(--gl-o-fill); border: 1px solid var(--gl-o-rim); background-clip: padding-box; color: var(--gl-ink);
+  box-shadow: var(--gl-o-hl), var(--gl-o-hair), var(--gl-o-shadow);
+  -webkit-backdrop-filter: var(--gl-blur); backdrop-filter: var(--gl-blur);
+  transition: background .18s, box-shadow .18s, transform .18s var(--gl-ease), opacity .15s;
+}
+.btn.primary:hover, .send:hover:not(:disabled), .gd-btn.primary:hover, .gd-root a.gd-btn.primary:hover, .auth .btn.primary:hover, .gbtn:hover {
+  background: var(--gl-o-fill-hover); border-color: var(--gl-o-rim); box-shadow: var(--gl-o-hl), var(--gl-o-hair), 0 2px 4px rgba(194, 65, 12, .22), 0 10px 26px -6px rgba(249, 115, 22, .6);
+}
+.btn.primary:active:not(:disabled), .send:active:not(:disabled), .gd-btn.primary:active:not(:disabled), .gbtn:active { box-shadow: var(--gl-o-hl), var(--gl-o-hair), 0 1px 2px rgba(194, 65, 12, .25); }
+.order-pill .op-ic { box-shadow: var(--gl-o-hl), var(--gl-o-hair); }
+.send:disabled { background: var(--gl-fill); border-color: var(--gl-rim); color: var(--muted, #6b6560); box-shadow: var(--gl-hl), var(--gl-hair); }
+/* order pill: glass with an orange tint */
+.order-pill { background: linear-gradient(180deg, rgba(255, 247, 240, .92), rgba(255, 237, 222, .7)); border-color: rgba(255, 255, 255, .85);
+  box-shadow: var(--gl-hl), 0 0 0 .5px rgba(249, 115, 22, .45), var(--gl-shadow); }
+.order-pill:hover { background: linear-gradient(180deg, rgba(255, 250, 245, .98), rgba(255, 232, 212, .85)); border-color: rgba(255, 255, 255, .9);
+  box-shadow: var(--gl-hl), 0 0 0 .5px rgba(249, 115, 22, .6), var(--gl-shadow-hover); }
+/* danger keeps its red text, on glass */
+.btn.danger { background: linear-gradient(180deg, rgba(255, 245, 245, .94), rgba(254, 226, 226, .72)); color: #b91c1c; box-shadow: var(--gl-hl), 0 0 0 .5px rgba(220, 38, 38, .4), var(--gl-shadow); }
+/* the dark store button: same press and highlight, dark glass */
+.mk-btn:not(.ghost) { box-shadow: inset 0 1px 0 rgba(255, 255, 255, .18), 0 4px 14px -4px rgba(23, 22, 15, .4); transition: background .18s, transform .18s var(--gl-ease); }
+
+/* ---------- toolbar buttons: clear until hovered or on ---------- */
+.tbtn, .seg button { transition: background .18s, box-shadow .18s, transform .18s var(--gl-ease), color .15s; }
+.seg button:hover, .tbtn:hover { background: var(--gl-fill-hover); box-shadow: var(--gl-hl), var(--gl-hair); }
+.seg button.on, .tbtn.on { background: linear-gradient(180deg, rgba(255, 247, 240, .95), rgba(255, 237, 222, .75)); color: var(--accent-2, #c2410c);
+  box-shadow: var(--gl-hl), 0 0 0 .5px rgba(249, 115, 22, .45), 0 2px 8px -2px rgba(249, 115, 22, .25); }
+.icon-btn { transition: background .18s, box-shadow .18s; }
+.icon-btn:hover { background: var(--gl-fill-hover); box-shadow: var(--gl-hl), var(--gl-hair); }
+
+/* ---------- segmented toggles: a groove and a sliding glass pill ----------
+   Studio / Store, Model / Website / Ads / Code, Chat / Order / Launch, Instructions / Modify / Order, Assembled / Kit,
+   AI agent / Live support. web/glass.js adds .gl-seg and one .gl-pill child that it moves to the selected option. */
+.mode-switch, .work > .tabbar .ctabs, .mode-toggle, .cm-seg {
+  background: var(--gl-track); border: 1px solid var(--gl-track-line); box-shadow: var(--gl-track-in);
+}
+.mode-switch { border-radius: 10px; }
+.mode-switch button { border-radius: 8px; transition: color .2s; }
+.mode-switch button.on, .mode-toggle button.on, .cm-seg button.on {
+  background: var(--gl-fill-hover); box-shadow: var(--gl-hl), var(--gl-hair), var(--gl-shadow); color: var(--text, #1c1917);
+}
+/* Model / Website / Ads / Code: a segmented control on every screen size (was underlined tabs on desktop) */
+.work > .tabbar { align-items: center; }
+.work > .tabbar .ctabs { display: flex; gap: 2px; padding: 2px; border-radius: 9px; height: 30px; }
+.work > .tabbar .ctabs .tab { height: 24px; padding: 0 11px; border: 0; margin: 0; border-radius: 7px; color: var(--muted, #6b6560); transition: color .2s; }
+.work > .tabbar .ctabs .tab:hover { color: var(--text, #1c1917); }
+.work > .tabbar .ctabs .tab.on { color: var(--text, #1c1917); background: var(--gl-fill-hover); box-shadow: var(--gl-hl), var(--gl-hair), var(--gl-shadow); }
+/* Chat / Order / Launch (studio) and Instructions / Modify / Order (build pages): pill on the panel's tab bar */
+.right > .tabbar, .bp-right > .tabbar { align-items: center; gap: 2px; }
+.right > .tabbar > .tab, .bp-right > .tabbar > .tab { height: 28px; padding: 0 12px; margin: 0; border: 0; border-radius: 8px; color: var(--muted, #6b6560); transition: color .2s; }
+.right > .tabbar > .tab:hover, .bp-right > .tabbar > .tab:hover { color: var(--text, #1c1917); }
+.right > .tabbar > .tab.on, .bp-right > .tabbar > .tab.on { color: var(--text, #1c1917); background: var(--gl-fill-hover); box-shadow: var(--gl-hl), var(--gl-hair), var(--gl-shadow); }
+.mode-toggle { border-radius: 11px; }
+.mode-toggle button { border-radius: 8px; }
+.mode-toggle button.on { background: var(--gl-fill-hover); }
+.cm-seg { padding: 2px; border-radius: 9px; }
+.cm-seg button { border-radius: 7px; }
+
+/* with glass.js: the options are clear and the pill under the selected one slides */
+:where(.gl-seg) { position: relative; } /* zero specificity: a toggle that is already positioned (the centred Studio / Store switch) keeps it */
+.gl-seg { isolation: isolate; }
+.gl-seg > :not(.gl-pill) { position: relative; z-index: 1; }
+.gl-seg.gl-ready > .on, .gl-seg.gl-ready > .tab.on, .gl-seg.gl-ready > button.on, .gl-seg.gl-ready > .gl-act { background: transparent !important; box-shadow: none !important; }
+.gl-pill { position: absolute; left: 0; top: 0; z-index: 0; pointer-events: none; border-radius: 8px;
+  background: var(--gl-fill-hover); border: 1px solid var(--gl-rim); box-shadow: var(--gl-hl), var(--gl-hair), var(--gl-shadow);
+  -webkit-backdrop-filter: var(--gl-blur); backdrop-filter: var(--gl-blur);
+  transition: transform .38s var(--gl-ease), width .38s var(--gl-ease), height .38s var(--gl-ease), opacity .2s; will-change: transform; }
+.gl-pill.gl-instant { transition: none; }
+.mode-switch > .gl-pill, .work > .tabbar .ctabs > .gl-pill, .cm-seg > .gl-pill { border-radius: 7px; }
+.mode-toggle > .gl-pill { border-radius: 8px; }
+
+/* ---------- phones: bigger radii to match the bigger targets ---------- */
+@media (max-width: 640px) {
+  .work > .tabbar .ctabs { height: auto; padding: 3px; border-radius: 12px; }
+  .work > .tabbar .ctabs .tab { height: 36px; border-radius: 9px; }
+  .work > .tabbar .ctabs > .gl-pill, .mode-switch > .gl-pill { border-radius: 9px; }
+  .right > .tabbar > .tab, .bp-right > .tabbar > .tab { height: 36px; border-radius: 10px; }
+  .right > .tabbar > .gl-pill, .bp-right > .tabbar > .gl-pill { border-radius: 10px; }
+  .right > .tabbar, .bp-right > .tabbar { padding: 0 6px; }
+}
+
+/* ---------- fallbacks ---------- */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  :root {
+    --gl-fill: linear-gradient(180deg, #ffffff, #f6f5f3);
+    --gl-fill-hover: linear-gradient(180deg, #ffffff, #fbfaf9);
+    --gl-o-fill: linear-gradient(180deg, #fd9a50, #f97316);
+  }
+}
+@media (prefers-reduced-transparency: reduce) {
+  :root {
+    --gl-fill: #ffffff; --gl-fill-hover: #ffffff; --gl-rim: #d6d3d1;
+    --gl-o-fill: #f97316; --gl-o-fill-hover: #ea580c; --gl-o-rim: #ea580c;
+    --gl-blur: none; --gl-track: #f1f1ef;
+  }
+  .order-pill, .order-pill:hover { background: #fff7ed; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn, .chip, .mk-chip, .gd-btn, .order-pill, .send, .tbtn, .seg button, .gbtn, .gl-pill, .price-chip, .mk-remix { transition: none !important; }
+  .btn:active, .chip:active, .mk-chip:active, .mk-btn:active, .gd-btn:active, .order-pill:active, .send:active, .price-chip:active, .gbtn:active,
+  .mk-remix:active, .att-btn:active, .tbtn:active, .seg button:active, .mode-switch button:active { transform: none !important; }
+}

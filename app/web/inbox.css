@@ -1,0 +1,13 @@
+/* Admin Inbox (web/inbox.js): "Message us" threads. Layout and bubbles reuse Live support's .sup-* in admin.css. */
+.ibx-av { display: grid; place-items: center; flex-shrink: 0; border-radius: 50%; background: var(--a-s3); color: var(--a-text);
+  border: 1px solid var(--a-line); font-weight: 600; font-size: 15px; }
+.ibx-filter { display: flex; gap: 2px; padding: 2px; border-radius: 8px; background: var(--a-s2); border: 1px solid var(--a-line); align-self: flex-start; }
+.ibx-filter button { padding: 4px 10px; border-radius: 6px; font-size: 12.5px; color: var(--a-text2); }
+.ibx-filter button[aria-selected="true"] { background: var(--a-s1); color: var(--a-text); font-weight: 500; box-shadow: 0 1px 2px rgba(0, 0, 0, .12); }
+.sup-item.ibx-done .nm, .sup-item.ibx-done .ls { color: var(--a-muted); }
+.ibx-text { white-space: pre-wrap; }
+.ibx-ctx { font-size: 11.5px; color: var(--a-muted); max-width: 100%; overflow-wrap: anywhere; }
+.ibx-ctx a { color: var(--link, var(--a-acc)); }
+.ibx-imgs { display: flex; flex-wrap: wrap; gap: 6px; }
+.ibx-imgs img { display: block; max-width: 240px; max-height: 180px; border-radius: 10px; border: 1px solid var(--a-line); object-fit: cover; }
+.adm-nav .adm-badge#navInbox[hidden] { display: none; }

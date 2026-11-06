@@ -1,0 +1,326 @@
+{
+ "switch_oled": [
+  {
+   "dims": "switch_oled",
+   "field": "height_mm",
+   "axis": "z",
+   "published_mm": 102.0,
+   "model_mm": 102.47,
+   "diff_mm": 0.47
+  },
+  {
+   "dims": "switch_oled",
+   "field": "depth_mm",
+   "axis": "y",
+   "published_mm": 13.9,
+   "model_mm": 14.04,
+   "diff_mm": 0.14
+  }
+ ],
+ "switch_v1": [
+  {
+   "dims": "switch_v1",
+   "field": "height_mm",
+   "axis": "z",
+   "published_mm": 102.0,
+   "model_mm": 102.47,
+   "diff_mm": 0.47
+  },
+  {
+   "dims": "switch_v1",
+   "field": "depth_mm",
+   "axis": "y",
+   "published_mm": 13.9,
+   "model_mm": 14.04,
+   "diff_mm": 0.14
+  }
+ ],
+ "switch_oled_full": [
+  {
+   "dims": "switch_oled",
+   "field": "width_mm",
+   "axis": "x",
+   "published_mm": 242.0,
+   "model_mm": 242.0,
+   "diff_mm": 0.0
+  },
+  {
+   "dims": "switch_oled",
+   "field": "height_mm",
+   "axis": "z",
+   "published_mm": 102.0,
+   "model_mm": 102.47,
+   "diff_mm": 0.47
+  },
+  {
+   "dims": "switch_oled",
+   "field": "max_depth_mm",
+   "axis": "y",
+   "published_mm": 28.4,
+   "model_mm": 28.4,
+   "diff_mm": 0.0
+  }
+ ],
+ "joycon_l": [
+  {
+   "dims": "joycon",
+   "field": "height_mm",
+   "axis": "z",
+   "published_mm": 102.0,
+   "model_mm": 102.3,
+   "diff_mm": 0.3
+  },
+  {
+   "dims": "joycon",
+   "field": "width_mm",
+   "axis": "x",
+   "published_mm": 35.9,
+   "model_mm": 36.1,
+   "diff_mm": 0.2
+  },
+  {
+   "dims": "joycon",
+   "field": "depth_mm",
+   "axis": "y",
+   "published_mm": 28.4,
+   "model_mm": 28.4,
+   "diff_mm": 0.0
+  }
+ ],
+ "joycon_r": [
+  {
+   "dims": "joycon",
+   "field": "height_mm",
+   "axis": "z",
+   "published_mm": 102.0,
+   "model_mm": 102.3,
+   "diff_mm": 0.3
+  },
+  {
+   "dims": "joycon",
+   "field": "width_mm",
+   "axis": "x",
+   "published_mm": 35.9,
+   "model_mm": 36.1,
+   "diff_mm": 0.2
+  },
+  {
+   "dims": "joycon",
+   "field": "depth_mm",
+   "axis": "y",
+   "published_mm": 28.4,
+   "model_mm": 28.4,
+   "diff_mm": 0.0
+  }
+ ],
+ "iphone_15": [
+  {
+   "dims": "iphone_15",
+   "field": "height_mm",
+   "axis": "z",
+   "published_mm": 147.6,
+   "model_mm": 147.62,
+   "diff_mm": 0.02
+  },
+  {
+   "dims": "iphone_15",
+   "field": "width_mm",
+   "axis": "x",
+   "published_mm": 71.6,
+   "model_mm": 72.3,
+   "diff_mm": 0.7
+  }
+ ],
+ "iphone_16": [
+  {
+   "dims": "iphone_16",
+   "field": "height_mm",
+   "axis": "z",
+   "published_mm": 147.6,
+   "model_mm": 147.62,
+   "diff_mm": 0.02
+  },
+  {
+   "dims": "iphone_16",
+   "field": "width_mm",
+   "axis": "x",
+   "published_mm": 71.6,
+   "model_mm": 72.3,
+   "diff_mm": 0.7
+  }
+ ],
+ "android_phone": [
+  {
+   "dims": "galaxy_s25",
+   "field": "height_mm",
+   "axis": "z",
+   "published_mm": 146.9,
+   "model_mm": 146.92,
+   "diff_mm": 0.02
+  },
+  {
+   "dims": "galaxy_s25",
+   "field": "width_mm",
+   "axis": "x",
+   "published_mm": 70.5,
+   "model_mm": 71.2,
+   "diff_mm": 0.7
+  }
+ ],
+ "esp32_devkitc": [
+  {
+   "dims": "esp32_devkitc_v4",
+   "field": "overall_length_mm",
+   "axis": "x",
+   "published_mm": 54.3,
+   "model_mm": 54.4,
+   "diff_mm": 0.1
+  },
+  {
+   "dims": "esp32_devkitc_v4",
+   "field": "width_mm",
+   "axis": "y",
+   "published_mm": 27.94,
+   "model_mm": 27.94,
+   "diff_mm": 0.0
+  }
+ ],
+ "arduino_nano": [
+  {
+   "dims": "arduino_nano",
+   "field": "length_mm",
+   "axis": "x",
+   "published_mm": 43.2,
+   "model_mm": 43.2,
+   "diff_mm": 0.0
+  },
+  {
+   "dims": "arduino_nano",
+   "field": "width_mm",
+   "axis": "y",
+   "published_mm": 18.0,
+   "model_mm": 18.0,
+   "diff_mm": 0.0
+  }
+ ],
+ "rpi_pico": [
+  {
+   "dims": "rpi_pico",
+   "field": "width_mm",
+   "axis": "y",
+   "published_mm": 21.0,
+   "model_mm": 21.0,
+   "diff_mm": 0.0
+  }
+ ],
+ "rpi_4": [
+  {
+   "dims": "rpi_4",
+   "field": "width_mm",
+   "axis": "y",
+   "published_mm": 56.0,
+   "model_mm": 56.0,
+   "diff_mm": 0.0
+  }
+ ],
+ "lcd1602": [
+  {
+   "dims": "lcd_1602_i2c",
+   "field": "length_mm",
+   "axis": "x",
+   "published_mm": 80.0,
+   "model_mm": 80.0,
+   "diff_mm": 0.0
+  },
+  {
+   "dims": "lcd_1602_i2c",
+   "field": "width_mm",
+   "axis": "y",
+   "published_mm": 36.0,
+   "model_mm": 36.0,
+   "diff_mm": 0.0
+  }
+ ],
+ "oled_096": [
+  {
+   "dims": "oled_096_ssd1306",
+   "field": "length_mm",
+   "axis": "x",
+   "published_mm": 27.3,
+   "model_mm": 27.3,
+   "diff_mm": 0.0
+  },
+  {
+   "dims": "oled_096_ssd1306",
+   "field": "width_mm",
+   "axis": "y",
+   "published_mm": 27.8,
+   "model_mm": 27.9,
+   "diff_mm": 0.1
+  }
+ ],
+ "nema17": [
+  {
+   "dims": "nema17",
+   "field": "face_mm",
+   "axis": "x",
+   "published_mm": 42.3,
+   "model_mm": 42.3,
+   "diff_mm": 0.0
+  }
+ ],
+ "fan_120": [
+  {
+   "dims": "fan_120",
+   "field": "frame_mm",
+   "axis": "x",
+   "published_mm": 120.0,
+   "model_mm": 120.0,
+   "diff_mm": 0.0
+  },
+  {
+   "dims": "fan_120",
+   "field": "thickness_mm",
+   "axis": "z",
+   "published_mm": 25.0,
+   "model_mm": 25.0,
+   "diff_mm": 0.0
+  }
+ ],
+ "fan_80": [
+  {
+   "dims": "fan_80",
+   "field": "frame_mm",
+   "axis": "x",
+   "published_mm": 80.0,
+   "model_mm": 80.0,
+   "diff_mm": 0.0
+  },
+  {
+   "dims": "fan_80",
+   "field": "thickness_mm",
+   "axis": "z",
+   "published_mm": 25.0,
+   "model_mm": 25.0,
+   "diff_mm": 0.0
+  }
+ ],
+ "fan_40": [
+  {
+   "dims": "fan_40",
+   "field": "frame_mm",
+   "axis": "x",
+   "published_mm": 40.0,
+   "model_mm": 40.0,
+   "diff_mm": 0.0
+  },
+  {
+   "dims": "fan_40",
+   "field": "thickness_mm",
+   "axis": "z",
+   "published_mm": 10.0,
+   "model_mm": 10.0,
+   "diff_mm": 0.0
+  }
+ ]
+}

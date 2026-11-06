@@ -1,0 +1,25 @@
+[
+ {
+  "key": "laser_sheet_stock",
+  "name": "Laser-cut sheet stock: actual thickness of nominal 3 mm and 6 mm plywood, acrylic and MDF",
+  "category": "sheet",
+  "dims": {
+   "plywood_3_actual_mm": 3.0,
+   "plywood_6_actual_mm": 5.5,
+   "acrylic_3_actual_mm": 3.0,
+   "acrylic_6_actual_mm": 5.5,
+   "mdf_3_actual_mm": 3.0,
+   "mdf_6_actual_mm": 6.0,
+   "plywood_3_tol_plus_mm": 0.3,
+   "plywood_3_tol_minus_mm": 0.4,
+   "plywood_6_tol_plus_mm": 0.4,
+   "plywood_6_tol_minus_mm": 0.5,
+   "mdf_tol_mm": 0.15
+  },
+  "notes": "What fab.sheet_actual() and fab.slot_width() use. Nominal '6 mm' / 1/4 in plywood is sold thin: US 1/4 in ply is 7/32 in (5.56 mm) actual, Baltic birch 6 mm is +0.4/-0.5 mm, and makers report 0.21-0.27 in across brands, so 5.5 mm is the typical stock; US 1/4 in acrylic is sold as 5.5 mm (0.217 in). MDF holds +/-0.15 mm. The shop should caliper each new batch and update this entry.",
+  "source": "https://woodvault.com/products/baltic-birch-4-x-8",
+  "sources": ["https://www.inchcalculator.com/actual-plywood-thickness-size/", "https://www.acmeplastics.com/acrylic-sheets/acrylic-cast-clear-sheet", "https://www.acrylite.co/technology-center/cast-thickness-tolerance/", "https://forum.lightburnsoftware.com/t/1-4-inch-birch-plywood/17526", "https://www.southern-timber.co.uk/sheet-materials/mdf?cat=307"],
+  "checked": "2026-10-30",
+  "confidence": "datasheet"
+ }
+]

@@ -1,0 +1,13 @@
+{
+ "key": "fan_40",
+ "title": "40 mm fan",
+ "source_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD-library/master/Electrical%20Parts/fans/fan-40x40mm.step",
+ "author": "Obijuan (FreeCAD-library)",
+ "license": "CC-BY-3.0",
+ "license_url": "https://creativecommons.org/licenses/by/3.0/",
+ "retrieved": "2026-10-30",
+ "modified": "converted STEP to GLB (tessellated, one material per colour), re-centred, scaled to millimetres; geometry otherwise unchanged",
+ "attribution_text": "\"fan-40x40mm.step\" by Obijuan (FreeCAD-library), CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/), from https://raw.githubusercontent.com/FreeCAD/FreeCAD-library/master/Electrical%20Parts/fans/fan-40x40mm.step. Converted STEP to GLB (tessellated, one material per colour), re-centred, scaled to millimetres; geometry otherwise unchanged.",
+ "allowed_use": "display-only",
+ "source_sha256": "b3ac546897c4db6e80093b960b45d219e0617c125412e9ff42116bd7831e700e"
+}

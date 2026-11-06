@@ -1,0 +1,13 @@
+{
+ "key": "bearing_608",
+ "title": "608 ball bearing",
+ "source_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD-library/master/Mechanical%20Parts/Bearings/608ZZ_Ball_Bearing.step",
+ "author": "Normand C (FreeCAD-library)",
+ "license": "CC-BY-3.0",
+ "license_url": "https://creativecommons.org/licenses/by/3.0/",
+ "retrieved": "2026-10-30",
+ "modified": "converted STEP to GLB (tessellated, one material per colour), re-centred, scaled to millimetres; geometry otherwise unchanged",
+ "attribution_text": "\"608ZZ_Ball_Bearing.step\" by Normand C (FreeCAD-library), CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/), from https://raw.githubusercontent.com/FreeCAD/FreeCAD-library/master/Mechanical%20Parts/Bearings/608ZZ_Ball_Bearing.step. Converted STEP to GLB (tessellated, one material per colour), re-centred, scaled to millimetres; geometry otherwise unchanged.",
+ "allowed_use": "display-only",
+ "source_sha256": "45246a4cf1bc63c8186ad8de22a74f44a63aecb450294356592c321bf281e3d3"
+}

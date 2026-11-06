@@ -1,0 +1,43 @@
+/* Part context menu (web/partmenu.js) */
+.pm-menu { position: fixed; z-index: 60; min-width: 210px; max-width: 280px; padding: 4px; background: var(--panel-2, #191a1e);
+  border: 1px solid var(--line-2, #31343b); border-radius: 8px; box-shadow: var(--shadow-md, 0 10px 30px rgba(28, 25, 23, .12)); font-size: 12.5px; color: var(--text, #e7e7ea); }
+.pm-menu[hidden] { display: none; }
+.pm-head { display: flex; align-items: center; gap: 8px; padding: 6px 8px 7px; margin-bottom: 3px; border-bottom: 1px solid var(--line, #25272c); font-weight: 600; }
+.pm-sw { width: 9px; height: 9px; border-radius: 2px; flex-shrink: 0; }
+.pm-name { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pm-menu button { display: flex; align-items: center; gap: 10px; width: 100%; height: 28px; padding: 0 8px; border-radius: 5px; text-align: left;
+  color: var(--text-2, #b9bbc2); background: none; border: 0; font: inherit; cursor: pointer; }
+.pm-menu button > span:first-child { flex: 1; }
+.pm-menu button:hover:not([disabled]), .pm-menu button:focus-visible { background: var(--panel-3, #202227); color: var(--text, #e7e7ea); outline: none; }
+.pm-menu button[disabled] { color: var(--muted, #80838c); opacity: .55; cursor: default; }
+.pm-menu kbd { font: 10.5px var(--mono, ui-monospace, monospace); color: var(--muted, #80838c); }
+.pm-dim { color: var(--muted, #80838c); }
+.pm-sep { height: 1px; margin: 4px 2px; background: var(--line, #25272c); }
+.pm-info { margin: 2px 4px 4px; padding: 7px 8px; border-radius: 6px; background: var(--bg, #0c0d0f); display: grid; gap: 4px; font-size: 12px; }
+.pm-info > div { display: flex; justify-content: space-between; gap: 12px; }
+.pm-info span { color: var(--muted, #80838c); }
+.pm-info b { font-weight: 500; color: var(--text, #e7e7ea); font-variant-numeric: tabular-nums; text-align: right; }
+
+.pm-chip { position: absolute; top: 84px; right: 10px; z-index: 2; display: inline-flex; align-items: center; gap: 7px; height: 28px; padding: 0 11px;
+  border-radius: 14px; background: var(--panel-2, #191a1e); border: 1px solid var(--line-2, #31343b); color: var(--text, #e7e7ea);
+  font: 500 12px var(--ui, inherit); cursor: pointer; box-shadow: var(--shadow-sm, 0 4px 14px rgba(28, 25, 23, .1)); }
+.pm-chip:hover { border-color: var(--accent, #ff7a1a); }
+.pm-chip[hidden] { display: none; }
+.pm-chip .pm-n { color: var(--muted, #80838c); font-weight: 400; }
+@media (max-width: 640px) {
+  .pm-chip { top: auto; bottom: 12px; right: 8px; height: 36px; padding: 0 14px; font-size: 13px; border-radius: 18px; }
+  /* phones: the part menu is a bottom action sheet with full-size rows (long-press a part) */
+  .pm-menu { left: 8px !important; right: 8px; top: auto !important; bottom: calc(8px + env(safe-area-inset-bottom, 0px)); min-width: 0; max-width: none; z-index: 90;
+    padding: 6px; border-radius: 14px; font-size: 15px; box-shadow: var(--shadow-lg, 0 -12px 40px rgba(28, 25, 23, .16)); }
+  .pm-head { padding: 10px 12px 11px; }
+  .pm-menu button { height: 46px; padding: 0 12px; border-radius: 8px; }
+  .pm-menu kbd { display: none; }
+  .pm-info { font-size: 13.5px; padding: 10px 12px; }
+
+}
+
+/* parts tree: see-through rows, selection, "Select in parts list" flash */
+.titem.pm-see .nm { color: var(--muted, #80838c); }
+.titem.pm-sel:not(.sel) { background: var(--panel-3, #202227); color: var(--text, #e7e7ea); }
+.titem.pm-flash { animation: pm-flash 1.2s ease-out; }
+@keyframes pm-flash { 0%, 30% { background: var(--accent-soft, rgba(255, 122, 26, .2)); box-shadow: inset 2px 0 0 var(--accent, #ff7a1a); } }

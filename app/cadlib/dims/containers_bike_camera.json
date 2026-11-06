@@ -1,0 +1,212 @@
+[
+  {
+    "key": "spice_jar_mccormick",
+    "name": "McCormick standard spice jar (US)",
+    "category": "containers",
+    "dims": {"diameter_mm": 45.7, "height_mm": 114.3},
+    "notes": "Converted from 1.8 in diameter x 4.5 in tall, incl. cap, as measured by a spice-rack maker; the same site elsewhere lists McCormick/Spice Islands as 4-3/8 in x 1-3/4 in. McCormick publishes no jar drawing, so allow a few mm.",
+    "source": "https://VerticalSpice.com/standard-spice-jar/",
+    "checked": "2026-10-30",
+    "confidence": "measured"
+  },
+  {
+    "key": "spice_jar_simply_organic",
+    "name": "Simply Organic spice bottle (standard glass)",
+    "category": "containers",
+    "dims": {"width_mm": 50.0, "depth_mm": 50.0, "height_mm": 113.0},
+    "notes": "Retailer FAQ: 4.45 x 1.97 x 1.97 in (allspice 2.57 oz). Other retailer listings for different spices give ~4.5 in tall x 1.95 in. Square-ish footprint; no official drawing found.",
+    "source": "https://groceryeshop.us/products/simply-organic-allspice-organic-spice-2-57-ounce-pack-of-1-model-0089836180469",
+    "checked": "2026-10-30",
+    "confidence": "estimate"
+  },
+  {
+    "key": "spice_jar_4oz_square",
+    "name": "4 oz square glass spice jar, 43 mm cap (Specialty Bottle HBSQ4B)",
+    "category": "containers",
+    "dims": {"width_mm": 43.2, "height_mm": 106.7, "cap_size_mm": 43},
+    "notes": "Specialty Bottle lists 1.7 in wide x 4.2 in tall with a 43/400 lid and shaker; it does not say if height includes the lid or if width is across the flats. TricorBraun/Container & Packaging 43-485 versions list 4.09 in total height and 1.71 in.",
+    "source": "https://specialtybottle.com/glass-jars/spice-herb/4oz-hbsq4b",
+    "checked": "2026-10-30",
+    "confidence": "datasheet"
+  },
+  {
+    "key": "crown_cap_26mm",
+    "name": "Crown cap (beer bottle cap), 26 mm pry-off",
+    "category": "containers",
+    "dims": {"outer_diameter_mm": 32.05, "inner_diameter_mm": 26.8, "height_mm": 5.99, "panel_thickness_mm": 0.41, "flutes_count": 21},
+    "notes": "Tapon Corona 26 mm pry-off datasheet: OD 1.262 +/-0.012 in, ID 1.055 +/-0.005 in, height 0.236 +/-0.005 in, panel 0.016 in, 21 corrugations. EN 17177 is the '26 mm diameter, 6 mm height' crown-cap standard. The bottle finish lip OD (ISO 12821 tall / ISO 12822 shallow 26 mm crown finish) is paywalled, so it is not included.",
+    "source": "https://beermex.odoo.com/web/content/product.template/7382/x_studio_binary_field_1kikp?download=1",
+    "sources": ["https://patents.google.com/patent/US20160107802A1/en"],
+    "checked": "2026-10-30",
+    "confidence": "datasheet"
+  },
+  {
+    "key": "beer_bottle_12oz",
+    "name": "US 12 oz longneck beer bottle (ISB, 355 ml)",
+    "category": "containers",
+    "dims": {"diameter_mm": 61, "height_mm": 231, "volume_ml": 355},
+    "notes": "Listed as 9.09 in (23.1 cm) tall x 2.4 in (6.1 cm) diameter. Homebrew vendors round the height to 9 in. Takes a 26 mm crown cap.",
+    "source": "https://www.dimensions.com/element/beer-bottle-12-oz-long-neck",
+    "checked": "2026-10-30",
+    "confidence": "measured"
+  },
+  {
+    "key": "soda_bottle_pco1881",
+    "name": "PCO 1881 28 mm PET soda bottle neck finish",
+    "category": "containers",
+    "dims": {"thread_nominal_mm": 28, "bore_mm": 21.74, "neck_weight_g": 3.7, "neck_with_cap_weight_g": 5.8},
+    "notes": "The 28 mm nominal thread is measured at its widest point, with the neck support ring just below it. The ISBT drawing 3784253-21 (PCO 1881-1) has exact T/E/ring values, but it could not be machine-read, so the thread OD, cap OD and cap height are omitted. Caps use a 2-start thread.",
+    "source": "https://petpla.net/assets/ebooks/PP201706/14/",
+    "sources": ["https://www.isbt.com/resources/isbt-threadspecs", "https://www.pelliconi.com/product/plastic-caps-28mm-1881/"],
+    "checked": "2026-10-30",
+    "confidence": "measured"
+  },
+  {
+    "key": "soda_bottle_2l",
+    "name": "2 litre PET soda bottle",
+    "category": "containers",
+    "dims": {"diameter_mm": 110, "height_mm": 315, "volume_ml": 2000, "diameter_min_mm": 100, "diameter_max_mm": 120, "height_min_mm": 300, "height_max_mm": 330},
+    "notes": "Typical bottle 4.33 in (11 cm) diameter x 12.4 in (31.5 cm) tall, per dimensions.com. Wikipedia gives the typical range of 100-120 mm diameter and 300-330 mm height. Shape varies by bottler. US bottles normally use a 28 mm PCO 1881 neck.",
+    "source": "https://dimensions.com/element/soda-bottle-2-liter",
+    "sources": ["https://en.wikipedia.org/wiki/Two-liter_bottle"],
+    "checked": "2026-10-30",
+    "confidence": "measured"
+  },
+  {
+    "key": "soda_can_12oz",
+    "name": "Standard 12 oz / 355 ml beverage can (211 x 413)",
+    "category": "containers",
+    "dims": {"diameter_mm": 66, "height_mm": 122.22, "volume_ml": 355},
+    "notes": "Crown Holdings spec: body diameter 66 mm (211 code), height 122.22 mm (413 code). The lid/end is necked down to a smaller diameter (202 end), which is not given here.",
+    "source": "https://crowncork.com/beverage-packaging/products/beverage-cans/12oz-355ml-standard",
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "soda_can_slim",
+    "name": "Sleek/slim 12 oz / 355 ml beverage can (Crown CrownSleek)",
+    "category": "containers",
+    "dims": {"diameter_mm": 58, "height_mm": 156.59, "volume_ml": 355},
+    "notes": "Crown spec: diameter 58 mm (204.5 code), height 156.59 mm (602 code). Other makers' sleek cans are similar but not identical.",
+    "source": "https://www.crowncork.com/beverage-packaging/products/beverage-cans/12oz-355ml-crownsleek",
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "mason_jar_regular_mouth",
+    "name": "Ball regular mouth mason jar (70 mm) + 16 oz pint jar",
+    "category": "containers",
+    "dims": {"lid_diameter_mm": 70, "pint_height_mm": 130.2, "pint_max_diameter_mm": 79.4, "pint_top_diameter_mm": 69.9, "pint_bottom_diameter_mm": 57.2, "pint_volume_ml": 473},
+    "notes": "A Ball Team Q&A answer on Target gives 70 mm (2.756 in) for regular mouth lids/jars. TricorBraun lists the regular-mouth finish as 70-450 (thread pitch not published). Pint jar (Ball 61000) from WebstaurantStore: 5-1/8 in tall, 3-1/8 in max dia, 2-3/4 in top, 2-1/4 in bottom; the 473 ml volume is a 16 US fl oz conversion.",
+    "source": "https://www.webstaurantstore.com/16-oz-regular-mouth-glass-canning-jar-with-silver-metal-lid-and-band-case/52761000.html",
+    "sources": ["https://www.target.com/p/-/A-12911372", "https://www.tricorbraun.com/blog/canning-jar-sizes-a-comprehensive-guide.html"],
+    "checked": "2026-10-30",
+    "confidence": "datasheet"
+  },
+  {
+    "key": "mason_jar_wide_mouth",
+    "name": "Ball wide mouth mason jar (86 mm)",
+    "category": "containers",
+    "dims": {"lid_diameter_mm": 86},
+    "notes": "86 mm Ball wide-mouth lids (Berlin Packaging 6788C07). TricorBraun lists wide-mouth canning jar finishes as 86-400; the thread pitch is not published. WebstaurantStore's wide-mouth pint listing (Ball 66000ZFP) is self-inconsistent (top dia larger than max dia, 6-13/16 in tall), so jar dims are omitted.",
+    "source": "https://www.berlinpackaging.com/6788c07-ball-86-mm-silver-wide-mouth-mason-jar-lids/",
+    "sources": ["https://www.tricorbraun.com/blog/canning-jar-sizes-a-comprehensive-guide.html"],
+    "checked": "2026-10-30",
+    "confidence": "datasheet"
+  },
+  {
+    "key": "water_bottle_32oz_wide",
+    "name": "Nalgene 32 oz Wide Mouth bottle",
+    "category": "containers",
+    "dims": {"diameter_mm": 89, "height_mm": 210, "cap_diameter_mm": 63, "weight_g": 177.25, "volume_ml": 946},
+    "notes": "Nalgene specs: 8.25 in (21 cm) tall incl. cap, 3.5 in (89 mm) dia, 63 mm cap, 6.25 oz. The 946 ml volume is a 32 US fl oz conversion. The 63 mm cap also fits the 48 oz wide mouth.",
+    "source": "https://nalgene.com/product/32oz-wide-mouth-sustain/",
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "water_bottle_hydroflask_32",
+    "name": "Hydro Flask 32 oz Wide Mouth bottle",
+    "category": "containers",
+    "dims": {"diameter_mm": 90.9, "height_mm": 238.8, "mouth_diameter_mm": 57.4, "weight_g": 431, "volume_ml": 946},
+    "notes": "evo listing (current refresh): 3.58 in dia, 9.4 in tall with Flex Cap, 2.26 in mouth, 15.2 oz. The older version is listed at 3.56 in / 9.1 in / 2.28 in mouth, and straw-lid versions run 10.1-10.2 in tall. hydroflask.com blocked fetching.",
+    "source": "https://www.evo.com/products/167434-hydro-flask-32oz-wide-mouth-water-bottle",
+    "checked": "2026-10-30",
+    "confidence": "measured"
+  },
+  {
+    "key": "bike_handlebar_clamp",
+    "name": "Bicycle handlebar clamp and grip diameters",
+    "category": "bike",
+    "dims": {"road_modern_clamp_mm": 31.8, "oversize_mtb_clamp_mm": 35, "old_road_mtb_clamp_mm": 25.4, "italian_road_clamp_mm": 26.0, "grip_area_mtb_mm": 22.2, "road_drop_grip_area_mm": 23.8, "bmx_steel_clamp_mm": 22.2},
+    "notes": "Sheldon Brown: 25.4 is ISO, 26.0 is Italian, 31.8 is road oversize; 22.2 is the flat-bar grip and 23.8 the drop-bar grip. BikeGremlin adds 35 mm (Easton-originated MTB) and notes 31.8 is also used on flat bars.",
+    "source": "https://www.sheldonbrown.com/cribsheet-handlebars.html",
+    "sources": ["https://bike.bikegremlin.com/3784/bicycle-handlebar-dimension-standards/"],
+    "checked": "2026-10-30",
+    "confidence": "measured"
+  },
+  {
+    "key": "bike_seatpost",
+    "name": "Bicycle seatpost and seat-collar diameters",
+    "category": "bike",
+    "dims": {"post_27_2_mm": 27.2, "post_30_9_mm": 30.9, "post_31_6_mm": 31.6, "post_34_9_mm": 34.9, "collar_28_6_mm": 28.6, "collar_29_8_mm": 29.8, "collar_31_8_mm": 31.8, "collar_34_9_mm": 34.9, "collar_36_4_mm": 36.4, "collar_38_6_mm": 38.6},
+    "notes": "Post sizes: Sheldon Brown lists 27.2, 30.9 and 31.6 as common, and BikeRadar adds 34.9 for droppers. Collar sizes match the frame seat-tube OD, not the post (e.g. 31.6 post -> 34.9 collar); the collar list is from Wolf Tooth's range on VitalMTB.",
+    "source": "https://www.sheldonbrown.com/seatpost-sizes.html",
+    "sources": ["https://www.bikeradar.com/us/mtb/gear/article/dropper-post-explained-49097/", "https://vitalmtb.com/product/guide/seatpost-collars/wolf-tooth/seatpost-clamp-40731"],
+    "checked": "2026-10-30",
+    "confidence": "measured"
+  },
+  {
+    "key": "bike_bottle_cage_bosses",
+    "name": "Bicycle bottle cage bosses",
+    "category": "bike",
+    "dims": {"hole_spacing_mm": 64, "bolt_diameter_mm": 5, "thread_pitch_mm": 0.8},
+    "notes": "Two M5 x 0.8 threaded bosses 64 mm (2.5 in) apart center-to-center. Some fork/downtube mounts add a third hole at the same pitch. No ISO reference was cited by the source.",
+    "source": "https://en.wikipedia.org/wiki/Bottle_cage",
+    "checked": "2026-10-30",
+    "confidence": "measured"
+  },
+  {
+    "key": "bike_steerer",
+    "name": "Bicycle fork steerer tube diameters",
+    "category": "bike",
+    "dims": {"steerer_1_1_8_mm": 28.6, "steerer_1in_mm": 25.4, "steerer_1_1_4_mm": 31.8, "steerer_1_5_mm": 38.1, "ec34_cup_od_mm": 34.0, "crown_race_1_1_8_id_mm": 30.0},
+    "notes": "Sheldon Brown headset crib sheet. A tapered steerer is 1-1/8 (28.6) at the stem and 1.5 in (38.1) at the crown. Many tapered crown-race seats are actually ~39.8-40 mm (Park CRC-15 / Trek specs, from search snippets only), so check the specific fork.",
+    "source": "https://www.sheldonbrown.com/cribsheet-headsets.html",
+    "checked": "2026-10-30",
+    "confidence": "measured"
+  },
+  {
+    "key": "tripod_screw_1_4_20",
+    "name": "Tripod screw 1/4-20 UNC (ISO 1222)",
+    "category": "camera",
+    "dims": {"major_diameter_mm": 6.35, "thread_tpi": 20, "pitch_mm": 1.27, "pitch_diameter_mm": 5.524, "minor_diameter_internal_mm": 4.976, "minor_diameter_external_mm": 4.839, "tap_drill_mm": 5.105, "clearance_close_mm": 6.528, "clearance_free_mm": 6.756},
+    "notes": "Basic UNC values from eFunda (major 0.2500, pitch dia 0.2175, minor 0.1905/0.1959 in). Little Machine Shop gives tap drill #7 = 0.201 in (75% thread) and clearance F/H. A 5.1 mm metric drill is a near substitute. Some tripod-thread pages quote 5.35 mm as the 'core hole', which is larger than standard.",
+    "source": "https://www.efunda.com/designstandards/screws/screw20un.cfm",
+    "sources": ["https://littlemachineshop.com/reference/tapdrill.php", "https://threadingtoolsguide.com/en/blog/tripod-thread-din-4503-1-iso-1222/"],
+    "checked": "2026-10-30",
+    "confidence": "datasheet"
+  },
+  {
+    "key": "tripod_screw_3_8_16",
+    "name": "Tripod screw 3/8-16 UNC (ISO 1222)",
+    "category": "camera",
+    "dims": {"major_diameter_mm": 9.525, "thread_tpi": 16, "pitch_mm": 1.5875, "pitch_diameter_mm": 8.494, "minor_diameter_internal_mm": 7.805, "minor_diameter_external_mm": 7.633, "tap_drill_mm": 7.94, "clearance_close_mm": 9.804, "clearance_free_mm": 10.084},
+    "notes": "Basic UNC values from eFunda (major 0.3750, pitch dia 0.3344, minor 0.3005/0.3073 in). Little Machine Shop gives tap drill 5/16 in = 0.3125 in and clearance W/X. Used for tripod-to-head and pro-camera mounts.",
+    "source": "https://www.efunda.com/designstandards/screws/screw16un.cfm",
+    "sources": ["https://littlemachineshop.com/reference/tapdrill.php"],
+    "checked": "2026-10-30",
+    "confidence": "datasheet"
+  },
+  {
+    "key": "arca_swiss_plate",
+    "name": "Arca-Swiss style quick-release plate dovetail",
+    "category": "camera",
+    "dims": {"width_mm": 38, "dovetail_angle_deg": 45, "base_width_mm": 35, "thickness_mm": 10, "example_length_mm": 62},
+    "notes": "No official standard exists. Acratech gives 38 mm (1.5 in) width and a 45 deg dovetail, and RRS gives a ~35 mm base and 45 deg. Measured plates range from 38.0 to 38.75 mm (astropix). Thickness and length are from one example plate (Leofoto PL-62: 62 x 38 x 10 mm).",
+    "source": "https://www.acratech.net/blog/arca-swiss-vs-bogen-manfrotto-camera-plates/",
+    "sources": ["https://kb.reallyrightstuff.com/knowledge/what-is-the-rrs-dovetail-standard-1", "https://astropix.com/wp/dovetail-sizes", "https://bccamera.com/leofoto-pl-62-anti-twist-flange-quick-release-plate/"],
+    "checked": "2026-10-30",
+    "confidence": "measured"
+  }
+]

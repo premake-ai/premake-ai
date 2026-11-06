@@ -1,0 +1,2605 @@
+{
+ "checked": "2026-10-29",
+ "about": "Real list prices read from public product pages on the date in each row (no logins, robots.txt respected). Bolt Depot (403 to non-browser clients), McMaster-Carr (robots.txt disallows AI agents), OpenBuilds Part Store (offline), 80/20 (403) and Misumi (prices load from a private API) could not be used. Refresh by re-checking each url and editing the row.",
+ "fasteners": [
+  {
+   "kind": "shcs",
+   "d": 2,
+   "length": 6,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5020032",
+   "price_usd": 0.13,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.13
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.07
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.06
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m2-x-4-x-6m-ft-5020032/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 2,
+   "length": 8,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5020042",
+   "price_usd": 0.15,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.15
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.09
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.07
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m2-x-4-x-8m-ft-5020042/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 2,
+   "length": 10,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5020052",
+   "price_usd": 0.16,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.16
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.1
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.08
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m2-x-4-x-10m-ft-5020052/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 2,
+   "length": 12,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5020062",
+   "price_usd": 0.17,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.17
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.1
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.09
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m2-x-4-x-12m-ft-5020062/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 2.5,
+   "length": 6,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5030022",
+   "price_usd": 0.13,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.13
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.08
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.07
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m25-x-45-x-6m-ft-5030022/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 2.5,
+   "length": 8,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5030032",
+   "price_usd": 0.13,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.13
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.08
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.07
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m25-x-45-x-8m-ft-5030032/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 2.5,
+   "length": 10,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5030042",
+   "price_usd": 0.15,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.15
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.08
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.07
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m25-x-45-x-10m-ft-5030042/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 2.5,
+   "length": 12,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5030052",
+   "price_usd": 0.17,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.17
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.1
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.09
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m25-x-45-x-12m-ft-5030052/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 3,
+   "length": 6,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5040012",
+   "price_usd": 0.07,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.07
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.04
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.03
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m3-x-5-x-6m-ft-5040012/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 3,
+   "length": 8,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5040022",
+   "price_usd": 0.08,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.08
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.04
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.03
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m3-x-5-x-8m-ft-5040022/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 3,
+   "length": 10,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5040032",
+   "price_usd": 0.08,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.08
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.05
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.04
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m3-x-5-x-10m-ft-5040032/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 3,
+   "length": 12,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5040042",
+   "price_usd": 0.08,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.08
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.05
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.04
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m3-x-5-x-12m-ft-5040042/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 3,
+   "length": 16,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5040052",
+   "price_usd": 0.08,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.08
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.05
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.04
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m3-x-5-x-16m-ft-5040052/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 3,
+   "length": 20,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5040062",
+   "price_usd": 0.09,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.09
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.05
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.04
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m3-x-5-x-20m-ft-5040062/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 3,
+   "length": 25,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5040072",
+   "price_usd": 0.12,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.12
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.06
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.05
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m3-x-5-x-25m-pt-5040072/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 3,
+   "length": 30,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5040082",
+   "price_usd": 0.13,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.13
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.07
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.06
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m3-x-5-x-30m-pt-5040082/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 4,
+   "length": 8,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5050022",
+   "price_usd": 0.11,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.11
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.06
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.05
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m4-x-7-x-8m-ft-5050022/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 4,
+   "length": 10,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5050032",
+   "price_usd": 0.11,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.11
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.06
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.05
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m4-x-7-x-10m-ft-5050032/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 4,
+   "length": 12,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5050042",
+   "price_usd": 0.11,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.11
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.06
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.05
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m4-x-7-x-12m-ft-5050042/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 4,
+   "length": 16,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5050062",
+   "price_usd": 0.12,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.12
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.07
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.06
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m4-x-7-x-16m-ft-5050062/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 4,
+   "length": 20,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5050072",
+   "price_usd": 0.15,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.15
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.08
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.07
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m4-x-7-x-20m-ft-5050072/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 4,
+   "length": 25,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5050082",
+   "price_usd": 0.16,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.16
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.09
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.08
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m4-x-7-x-25m-ft-5050082/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 4,
+   "length": 30,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5050092",
+   "price_usd": 0.2,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.2
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.11
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.1
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m4-x-7-x-30m-pt-5050092/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 5,
+   "length": 8,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5060012",
+   "price_usd": 0.15,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.15
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.08
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.07
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m5-x-8-x-8m-ft-5060012/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 5,
+   "length": 10,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5060022",
+   "price_usd": 0.16,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.16
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.09
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.08
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m5-x-8-x-10m-ft-5060022/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 5,
+   "length": 12,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5060032",
+   "price_usd": 0.16,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.16
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.09
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.08
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m5-x-8-x-12m-ft-5060032/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 5,
+   "length": 16,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5060052",
+   "price_usd": 0.19,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.19
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.11
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.1
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m5-x-8-x-16m-ft-5060052/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 5,
+   "length": 20,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5060062",
+   "price_usd": 0.2,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.2
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.13
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.11
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m5-x-8-x-20m-ft-5060062/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 5,
+   "length": 25,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5060072",
+   "price_usd": 0.21,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.21
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.13
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.12
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m5-x-8-x-25m-ft-5060072/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 5,
+   "length": 30,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5060082",
+   "price_usd": 0.28,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.28
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.17
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.15
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m5-x-8-x-30m-pt-5060082/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 5,
+   "length": 40,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5060102",
+   "price_usd": 0.4,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.4
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.26
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.23
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m5-x-8-x-40m-pt-5060102/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 5,
+   "length": 70,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5060162",
+   "price_usd": 0.75,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.75
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.49
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.43
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m5-x-8-x-70m-pt-5060162/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 6,
+   "length": 10,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5070012",
+   "price_usd": 0.24,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.24
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.15
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.13
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m6-x-10-x-10m-ft-5070012/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 6,
+   "length": 12,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5070022",
+   "price_usd": 0.25,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.25
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.16
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.14
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m6-x-10-x-12m-ft-5070022/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 6,
+   "length": 16,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5070042",
+   "price_usd": 0.28,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.28
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.17
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.15
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m6-x-10-x-16m-ft-5070042/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 6,
+   "length": 20,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5070052",
+   "price_usd": 0.29,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.29
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.18
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.16
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m6-x-10-x-20m-ft-5070052/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 6,
+   "length": 25,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5070062",
+   "price_usd": 0.3,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.3
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.19
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.17
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m6-x-10-x-25m-ft-5070062/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 6,
+   "length": 30,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5070072",
+   "price_usd": 0.34,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.34
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.21
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.19
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m6-x-10-x-30m-ft-5070072/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "shcs",
+   "d": 6,
+   "length": 40,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5070092",
+   "price_usd": 0.42,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.42
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.27
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.24
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/socket-head-screws-a2-ss-m6-x-10-x-40m-pt-5070092/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "bhcs",
+   "d": 3,
+   "length": 8,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5400022",
+   "price_usd": 0.07,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.07
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.04
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.03
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/button-socket-head-screws-a2-ss-m3-x-5-x-8m-ft-5400022/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "bhcs",
+   "d": 3,
+   "length": 10,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5400032",
+   "price_usd": 0.08,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.08
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.04
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.03
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/button-socket-head-screws-a2-ss-m3-x-5-x-10m-ft-5400032/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "bhcs",
+   "d": 3,
+   "length": 12,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5400042",
+   "price_usd": 0.09,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.09
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.04
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.03
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/button-socket-head-screws-a2-ss-m3-x-5-x-12m-ft-5400042/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "bhcs",
+   "d": 3,
+   "length": 16,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5400052",
+   "price_usd": 0.11,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.11
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.04
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.03
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/button-socket-head-screws-a2-ss-m3-x-5-x-16m-ft-5400052/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "bhcs",
+   "d": 3,
+   "length": 20,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5400062",
+   "price_usd": 0.11,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.11
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.05
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.04
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/button-socket-head-screws-a2-ss-m3-x-5-x-20m-ft-5400062/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "bhcs",
+   "d": 4,
+   "length": 8,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5410012",
+   "price_usd": 0.12,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.12
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.05
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.04
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/button-socket-head-screws-a2-ss-m4-x-7-x-8m-ft-5410012/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "bhcs",
+   "d": 4,
+   "length": 10,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5410022",
+   "price_usd": 0.12,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.12
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.05
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.04
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/button-socket-head-screws-a2-ss-m4-x-7-x-10m-ft-5410022/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "bhcs",
+   "d": 4,
+   "length": 12,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5410032",
+   "price_usd": 0.12,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.12
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.05
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.04
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/button-socket-head-screws-a2-ss-m4-x-7-x-12m-ft-5410032/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "bhcs",
+   "d": 4,
+   "length": 16,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5410042",
+   "price_usd": 0.13,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.13
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.06
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.05
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/button-socket-head-screws-a2-ss-m4-x-7-x-16m-ft-5410042/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "bhcs",
+   "d": 4,
+   "length": 20,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5410052",
+   "price_usd": 0.15,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.15
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.07
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.06
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/button-socket-head-screws-a2-ss-m4-x-7-x-20m-ft-5410052/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "bhcs",
+   "d": 5,
+   "length": 8,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5420002",
+   "price_usd": 0.15,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.15
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.07
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.06
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/button-socket-head-screws-a2-ss-m5-x-8-x-8m-ft-5420002/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "bhcs",
+   "d": 5,
+   "length": 10,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5420012",
+   "price_usd": 0.16,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.16
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.07
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.06
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/button-socket-head-screws-a2-ss-m5-x-8-x-10m-ft-5420012/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "bhcs",
+   "d": 5,
+   "length": 12,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5420022",
+   "price_usd": 0.17,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.17
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.08
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.07
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/button-socket-head-screws-a2-ss-m5-x-8-x-12m-ft-5420022/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "bhcs",
+   "d": 5,
+   "length": 16,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5420032",
+   "price_usd": 0.19,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.19
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.09
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.08
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/button-socket-head-screws-a2-ss-m5-x-8-x-16m-ft-5420032/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "bhcs",
+   "d": 5,
+   "length": 20,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5420042",
+   "price_usd": 0.2,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.2
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.1
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.09
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/button-socket-head-screws-a2-ss-m5-x-8-x-20m-ft-5420042/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "bhcs",
+   "d": 6,
+   "length": 8,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5430002",
+   "price_usd": 0.2,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.2
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.1
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.09
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/button-socket-head-screws-a2-ss-m6-x-10-x-8m-ft-5430002/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "bhcs",
+   "d": 6,
+   "length": 10,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5430012",
+   "price_usd": 0.21,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.21
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.11
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.1
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/button-socket-head-screws-a2-ss-m6-x-10-x-10m-ft-5430012/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "bhcs",
+   "d": 6,
+   "length": 12,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5430022",
+   "price_usd": 0.09,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.09
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.08
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.07
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/button-socket-head-screws-a2-ss-m6-x-10-x-12m-ft-5430022/",
+   "checked": "2026-10-29",
+   "note": "Qty-1 price $0.09 is out of line with neighbouring lengths ($0.21/$0.24) but is what the page lists."
+  },
+  {
+   "kind": "bhcs",
+   "d": 6,
+   "length": 16,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5430032",
+   "price_usd": 0.24,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.24
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.12
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.11
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/button-socket-head-screws-a2-ss-m6-x-10-x-16m-ft-5430032/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "bhcs",
+   "d": 6,
+   "length": 20,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5430042",
+   "price_usd": 0.26,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.26
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.14
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.12
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/button-socket-head-screws-a2-ss-m6-x-10-x-20m-ft-5430042/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "csk",
+   "d": 3,
+   "length": 8,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5470012",
+   "price_usd": 0.06,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.06
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.04
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.03
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/flat-socket-head-screws-a2-ss-m3-x-5-x-8m-ft-5470012/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "csk",
+   "d": 3,
+   "length": 10,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5470022",
+   "price_usd": 0.07,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.07
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.04
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.03
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/flat-socket-head-screws-a2-ss-m3-x-5-x-10m-ft-5470022/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "csk",
+   "d": 3,
+   "length": 12,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5470032",
+   "price_usd": 0.08,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.08
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.05
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.04
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/flat-socket-head-screws-a2-ss-m3-x-5-x-12m-ft-5470032/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "csk",
+   "d": 3,
+   "length": 16,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5470042",
+   "price_usd": 0.09,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.09
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.05
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.04
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/flat-socket-head-screws-a2-ss-m3-x-5-x-16m-ft-5470042/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "csk",
+   "d": 3,
+   "length": 20,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5470052",
+   "price_usd": 0.1,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.1
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.06
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.05
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/flat-socket-head-screws-a2-ss-m3-x-5-x-20m-ft-5470052/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "csk",
+   "d": 4,
+   "length": 8,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5480012",
+   "price_usd": 0.11,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.11
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.05
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.04
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/flat-socket-head-screws-a2-ss-m4-x-7-x-8m-ft-5480012/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "csk",
+   "d": 4,
+   "length": 10,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5480022",
+   "price_usd": 0.13,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.13
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.06
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.05
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/flat-socket-head-screws-a2-ss-m4-x-7-x-10m-ft-5480022/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "csk",
+   "d": 4,
+   "length": 12,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5480032",
+   "price_usd": 0.14,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.14
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.06
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.05
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/flat-socket-head-screws-a2-ss-m4-x-7-x-12m-ft-5480032/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "csk",
+   "d": 4,
+   "length": 16,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5480042",
+   "price_usd": 0.15,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.15
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.07
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.06
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/flat-socket-head-screws-a2-ss-m4-x-7-x-16m-ft-5480042/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "csk",
+   "d": 4,
+   "length": 20,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5480052",
+   "price_usd": 0.17,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.17
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.07
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.06
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/flat-socket-head-screws-a2-ss-m4-x-7-x-20m-ft-5480052/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "csk",
+   "d": 5,
+   "length": 8,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5490002",
+   "price_usd": 0.17,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.17
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.08
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.07
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/flat-socket-head-screws-a2-ss-m5-x-8-x-8m-ft-5490002/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "csk",
+   "d": 5,
+   "length": 10,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5490012",
+   "price_usd": 0.18,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.18
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.09
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.08
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/flat-socket-head-screws-a2-ss-m5-x-8-x-10m-ft-5490012/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "csk",
+   "d": 5,
+   "length": 12,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5490022",
+   "price_usd": 0.2,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.2
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.09
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.08
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/flat-socket-head-screws-a2-ss-m5-x-8-x-12m-ft-5490022/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "csk",
+   "d": 5,
+   "length": 16,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5490032",
+   "price_usd": 0.22,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.22
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.09
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.08
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/flat-socket-head-screws-a2-ss-m5-x-8-x-16m-ft-5490032/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "csk",
+   "d": 5,
+   "length": 20,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5490042",
+   "price_usd": 0.24,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.24
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.12
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.11
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/flat-socket-head-screws-a2-ss-m5-x-8-x-20m-ft-5490042/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "nut",
+   "d": 2,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5560002",
+   "price_usd": 0.07,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.07
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.02
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.01
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/finish-hex-nuts-a2-ss-m2-x-4-40-flats-x-135-thick-5560002/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "nut",
+   "d": 2.5,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5560012",
+   "price_usd": 0.07,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.07
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.02
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.01
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/finish-hex-nuts-a2-ss-m25-x-45-50-flats-x-175-thick-5560012/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "nut",
+   "d": 3,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5560022",
+   "price_usd": 0.07,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.07
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.02
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.01
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/finish-hex-nuts-a2-ss-m3-x-5-55-flats-x-215-thick-5560022/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "nut",
+   "d": 4,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5560032",
+   "price_usd": 0.07,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.07
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.02
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.01
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/finish-hex-nuts-a2-ss-m4-x-7-70-flats-x-29-thick-5560032/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "nut",
+   "d": 5,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5560042",
+   "price_usd": 0.07,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.07
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.03
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.02
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/finish-hex-nuts-a2-ss-m5-x-8-80-flats-x-37-thick-5560042/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "nut",
+   "d": 6,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5560052",
+   "price_usd": 0.11,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.11
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.06
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.05
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/finish-hex-nuts-a2-ss-m6-x-10-100-flats-x-47-thick-5560052/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "nylock",
+   "d": 2,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5570001-02",
+   "price_usd": 0.89,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.89
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.48
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.4
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/nylon-lock-nuts-a2-ss-m2-x-4-5570001-02/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "nylock",
+   "d": 2.5,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5570002",
+   "price_usd": 0.08,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.08
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.07
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.06
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/nylon-lock-nuts-a2-ss-m25-x-45-50-flats-x-338-height-5570002/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "nylock",
+   "d": 3,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5570012",
+   "price_usd": 0.07,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.07
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.06
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.05
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/nylon-lock-nuts-a2-ss-m3-x-5-55-flats-x-40-height-5570012/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "nylock",
+   "d": 4,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5570022",
+   "price_usd": 0.08,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.08
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.04
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.03
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/nylon-lock-nuts-a2-ss-m4-x-7-70-flats-x-50-height-5570022/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "nylock",
+   "d": 5,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5570032",
+   "price_usd": 0.09,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.09
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.05
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.04
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/nylon-lock-nuts-a2-ss-m5-x-8-80-flats-x-50-height-5570032/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "nylock",
+   "d": 6,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5570042",
+   "price_usd": 0.11,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.11
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.06
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.05
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/nylon-lock-nuts-a2-ss-m6-x-10-100-flats-x-60-height-5570042/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "washer",
+   "d": 2,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5620002",
+   "price_usd": 0.07,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.07
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.02
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.01
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/flat-washers-a2-ss-m2-22m-id-x-50m-od-x-03m-thick-5620002/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "washer",
+   "d": 2.5,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5620012",
+   "price_usd": 0.07,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.07
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.02
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.01
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/flat-washers-a2-ss-m25-27m-id-x-60m-od-x-05m-thick-5620012/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "washer",
+   "d": 3,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5620022",
+   "price_usd": 0.07,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.07
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.02
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.01
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/flat-washers-a2-ss-m3-32m-id-x-70m-od-x-05m-thick-5620022/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "washer",
+   "d": 4,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5620032",
+   "price_usd": 0.07,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.07
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.02
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.01
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/flat-washers-a2-ss-m4-43m-id-x-90m-od-x-08m-thick-5620032/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "washer",
+   "d": 5,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5620042",
+   "price_usd": 0.07,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.07
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.02
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.01
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/flat-washers-a2-ss-m5-53m-id-x-100m-od-x-10m-thick-5620042/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "washer",
+   "d": 6,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5620052",
+   "price_usd": 0.08,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.08
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.04
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.03
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/flat-washers-a2-ss-m6-64m-id-x-120m-od-x-16m-thick-5620052/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "wing_nut",
+   "d": 5,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "5610012",
+   "price_usd": 0.53,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.53
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.32
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.28
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/wing-nuts-a2-ss-m5-x-8-2176m-wing-span-x-1036m-height-5610012/",
+   "checked": "2026-10-29"
+  },
+  {
+   "kind": "hex_bolt",
+   "d": 5,
+   "length": 50,
+   "material": "A2 stainless (18-8)",
+   "supplier": "Albany County Fasteners",
+   "sku": "1077-002-0102",
+   "price_usd": 0.35,
+   "pack_size": 1,
+   "breaks": [
+    {
+     "qty": 1,
+     "unit_usd": 0.35
+    },
+    {
+     "qty": 100,
+     "unit_usd": 0.28
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.25
+    }
+   ],
+   "url": "https://www.albanycountyfasteners.com/m5-x-80-x-50m-hex-cap-screws-a2ss-pt-1077-002-0102/",
+   "checked": "2026-10-29",
+   "note": "M5 x 70 hex bolt NOT listed at Albany County Fasteners (M5 hex cap screws stop at 50 mm; M5 hex tap bolts stop at 50 mm). M5 x 50 is the longest available. An M5 x 70 A2 socket head cap screw (SKU 5060162) is in the shcs rows."
+  },
+  {
+   "kind": "tnut",
+   "d": 5,
+   "material": "steel (finish not stated)",
+   "supplier": "ZYLtech",
+   "sku": "HW-MX-SPRNG-T-NUT-P",
+   "price_usd": 12.95,
+   "pack_size": 100,
+   "breaks": [
+    {
+     "qty": 100,
+     "unit_usd": 0.1295
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.1217
+    }
+   ],
+   "url": "https://www.zyltech.com/100x-zyltech-spring-loaded-t-nuts-for-2020-aluminum-extrusion-m4-or-m5/",
+   "checked": "2026-10-29",
+   "note": "Same price for M4 or M5 option. Break qty 1000 = 10 packs at $12.17/pack. No true drop-in T-nut found on a fetchable US page.",
+   "variant": "spring-loaded roll-in (not drop-in)"
+  },
+  {
+   "kind": "tnut",
+   "d": 5,
+   "material": "steel (finish not stated)",
+   "supplier": "ZYLtech",
+   "sku": "HW-20-HAMMER-P",
+   "price_usd": 9.95,
+   "pack_size": 100,
+   "breaks": [
+    {
+     "qty": 100,
+     "unit_usd": 0.0995
+    },
+    {
+     "qty": 1000,
+     "unit_usd": 0.0935
+    }
+   ],
+   "url": "https://www.zyltech.com/100x-zyltech-hammer-nuts-t-slot-for-2020-aluminum-extrusion-m4-or-m5/",
+   "checked": "2026-10-29",
+   "note": "Same price for M4 or M5 option. Break qty 1000 = 10 packs at $9.35/pack.",
+   "variant": "hammer nut"
+  },
+  {
+   "kind": "feet",
+   "material": "polyurethane, adhesive-backed, ~8 mm dia x 4 mm",
+   "supplier": "Adafruit",
+   "sku": "550",
+   "price_usd": 0.95,
+   "pack_size": 4,
+   "breaks": [
+    {
+     "qty": 4,
+     "unit_usd": 0.2375
+    },
+    {
+     "qty": 40,
+     "unit_usd": 0.215
+    },
+    {
+     "qty": 400,
+     "unit_usd": 0.19
+    }
+   ],
+   "url": "https://www.adafruit.com/product/550",
+   "checked": "2026-10-29",
+   "note": "Pack-of-4 pricing $0.95 (1-9 packs), $0.86 (10-99 packs), $0.76 (100+ packs)."
+  }
+ ],
+ "extrusion": [
+  {
+   "profile": "2020",
+   "name": "2020 (20x20 metric T-slot, clear)",
+   "supplier": "RSP Supply (Tslots brand)",
+   "sku": "Tslots 650045",
+   "url": "https://www.rspsupply.com/p-245255-tslots-650045-aluminum-extrusion-per-inch-20mm-x-20mm-clear-must-order-cut-charge-per-piece.aspx",
+   "checked": "2026-10-29",
+   "per_mm_usd": 0.01063,
+   "per_inch_usd": 0.27,
+   "cut_fee_usd": 2.96,
+   "note": "Sold per inch; title says MUST ORDER CUT CHARGE PER PIECE. Cut fee = Tslots 670500 'Straight cut charge (per piece) for 20X20B' $2.96 sale. Tariff may apply."
+  },
+  {
+   "profile": "2020",
+   "name": "2020 (20x20 metric T-slot, clear) full stick",
+   "supplier": "RSP Supply (Tslots brand)",
+   "sku": "Tslots 650050",
+   "url": "https://www.rspsupply.com/p-261288-tslots-650050-20-foot-aluminum-extrusion-20mm-x-20mm-clear.aspx",
+   "checked": "2026-10-29",
+   "length_mm": 6096,
+   "price_usd": 67.66,
+   "note": "20 ft stick, no cut. Much cheaper per mm than per-inch item."
+  },
+  {
+   "profile": "2040",
+   "name": "2040 (20x40 metric T-slot, clear)",
+   "supplier": "RSP Supply (Tslots brand)",
+   "sku": "Tslots 650046",
+   "url": "https://www.rspsupply.com/p-696550-tslots-650046-aluminum-extrusion-per-inch-20mm-x-40mm-clear-must-order-cut-charge-per-piece.aspx",
+   "checked": "2026-10-29",
+   "per_mm_usd": 0.017717,
+   "per_inch_usd": 0.45,
+   "cut_fee_usd": 2.85,
+   "note": "Per inch sale price (list $0.54 per WebFetch). Cut = Tslots 670501 for 20X40B, $2.85 sale ($3.42 list) per https://rspsupply.com/p-339962-tslots-670501-straight-cut-charge-per-piece-for-20x40b-extrusions.aspx"
+  },
+  {
+   "profile": "3030",
+   "name": "3030 (30x30 metric T-slot, black)",
+   "supplier": "RSP Supply (Tslots brand)",
+   "sku": "Tslots 670109",
+   "url": "https://www.rspsupply.com/p-943706-tslots-670109-aluminum-extrusion-per-inch-30mm-x-30mm-black-must-order-cut-charge-per-piece.aspx",
+   "checked": "2026-10-29",
+   "per_mm_usd": 0.025984,
+   "per_inch_usd": 0.66,
+   "note": "Per inch, cut charge required but the matching 30mm cut-charge SKU price was not found."
+  },
+  {
+   "profile": "3030",
+   "name": "3030 (30x30 metric T-slot, clear) full stick",
+   "supplier": "RSP Supply (Tslots brand)",
+   "sku": "Tslots 670085",
+   "url": "https://www.rspsupply.com/p-261359-tslots-670085-20-foot-aluminum-extrusion-30mm-x-30mm-clear.aspx",
+   "checked": "2026-10-29",
+   "length_mm": 6096,
+   "price_usd": 109.22,
+   "note": "20 ft stick, no cut."
+  },
+  {
+   "profile": "1010",
+   "name": "1010 (80/20, 1in x 1in)",
+   "supplier": "TECO Technology (80/20 distributor)",
+   "sku": "1010-145",
+   "url": "https://tecotechnology.com/pages/80-20-aluminum-framing",
+   "checked": "2026-10-29",
+   "per_mm_usd": 0.017323,
+   "per_inch_usd": 0.44,
+   "note": "Listed '$0.44/in' on collection page; product page shows $0.44 without unit. Custom cut offered, cut fee not published. Shipping for extrusions '$29-$99 Depending on customization'."
+  },
+  {
+   "profile": "1020",
+   "name": "1020 (80/20, 1in x 2in)",
+   "supplier": "TECO Technology (80/20 distributor)",
+   "sku": "1020-242",
+   "url": "https://tecotechnology.com/pages/80-20-aluminum-framing",
+   "checked": "2026-10-29",
+   "per_mm_usd": 0.030709,
+   "per_inch_usd": 0.78,
+   "note": "Per inch; cut fee not published."
+  }
+ ],
+ "sources_notes": [
+  "Bolt Depot (boltdepot.com): robots.txt allows everything except /cdn-cgi/, but every page (including the homepage) returned HTTP 403 to both fetch tools, so it is blocked to non-browser clients. No Bolt Depot prices captured.",
+  "McMaster-Carr: robots.txt explicitly disallows ClaudeBot and other AI agents site-wide (and says its content may not be used for AI), so it was not fetched.",
+  "Albany County Fasteners (albanycountyfasteners.com, Edison NJ, US): robots.txt allows product pages. Static server-rendered tiered pricing (qty 1 / 100 / 1000) was read with the fetch tool. This is the source for all screws, nuts, nylocks, washers, the wing nut and the hex bolt. All A2 (18-8) stainless. Prices are per piece; 100 and 1000 are quantity breaks, not pack-only. Sizes are listed as FT (full thread) / PT (partial thread). Note: the older '-p/xxxx.htm' URLs fail with WebFetch (the page is >200 KB of nav) but work with the plain fetch tool.",
+  "Fastenere (fastenere.com): robots.txt allows; product pages load prices with JavaScript ('loading price & options...'), so no static prices. Skipped.",
+  "Trimcraft Aviation RC: robots.txt (Cloudflare-managed) disallows ClaudeBot, anthropic-ai and Claude-Web. Skipped.",
+  "CNC Kitchen store (cnckitchen.store, Shopify): robots.txt allows product pages (it also contains text aimed at AI agents about installing shopping skills; ignored). Prices are shown only in EUR. No USD conversion was applied, so price_usd is null and price_native/currency are set. Variants appeared as 'sold out or unavailable' in static HTML.",
+  "ZYLtech (zyltech.com, US BigCommerce): robots.txt allows product pages for ClaudeBot (crawl-delay 10). USD prices with per-pack quantity breaks.",
+  "Adafruit (adafruit.com): robots.txt allows /product/. Rubber bumper feet captured.",
+  "Not found on any fetchable page: M3 x 10 mm brass standoff. Tayda Electronics and Digi-Key returned 403. MakerStore disallows ClaudeBot. Adafruit has no brass F-F 10 mm. An M5 x 70 hex bolt is not stocked at Albany (longest M5 hex cap screw is 50 mm). A true M5 drop-in T-nut was not found (3dprintingusa.com page showed no price and was US out-of-stock; the OpenBuilds Part Store domain redirects to openbuilds.com). ZYLtech spring-loaded and hammer nuts are substituted.",
+  "Missing lengths: none for the requested SHCS set. BHCS, CSK and M6 BHCS have 5 lengths each (8,10,12,16,20).",
+  "breaks[].qty is in pieces. For pack items, unit_usd is per piece (pack price / pack size).",
+  "OpenBuilds Part Store: openbuildspartstore.com 301-redirects to openbuilds.com, which does not resolve (DNS ENOTFOUND) on 2026-10-29. A MakerWorld remix note (Oct 2026, via web search) says OpenBuilds sites are offline. No prices obtainable.",
+  "80/20 Inc (8020.net): every product page (1010.html, 1020.html, 20-2020.html etc.) returns HTTP 403 to non-browser fetches. Not bypassed. No first-party 80/20 prices. Dated third-party data only: ToolGuyd blog says 1010 ~$0.23/in + $1.95/cut (old, https://toolguyd.com/pricing-how-much-does-it-cost-to-build-with-80-20-aluminum-t-slot - robots disallows ClaudeBot-type agents for GPTBot/CCBot only; read via search snippet only); a 2021 SLAC 80/20 cart PDF shows cut-to-length $1.60 and $1.95 per cut.",
+  "Misumi US (HFS5-2020): page returns a Next.js shell; prices load via api.us.misumi-ec.com in JS. Not readable without a browser, and API calls were not attempted.",
+  "makerstore.cc (US V-Slot reseller) robots.txt disallows ClaudeBot/anthropic-ai: skipped.",
+  "No source publishes a tap (end-tapping) fee for 20/30 series; tap_fee_usd left null everywhere. OSHCut tapping (sheet) is in sheet.json.",
+  "RSP Supply prices are labelled 'Sale Price' on page; list prices only seen in search snippets.",
+  "Rule of thumb from data: metric 2020 ~ $10.6/m cut-to-length (+$2.96/cut) vs ~$11.1/m as a 20 ft stick at RSP; 2040 ~ $17.7/m; 30x30 ~ $18-26/m. 80/20 1010 (1in) ~ $17.3/m via TECO."
+ ]
+}

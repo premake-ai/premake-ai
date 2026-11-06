@@ -1,0 +1,13 @@
+{
+ "key": "led_5mm",
+ "title": "5 mm LED",
+ "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/LED_THT.3dshapes/LED_D5.0mm.step",
+ "author": "KiCad Library contributors",
+ "license": "CC-BY-SA-4.0 WITH KiCad-libraries-exception",
+ "license_url": "https://www.kicad.org/libraries/license/",
+ "retrieved": "2026-10-30",
+ "modified": "converted STEP to GLB (tessellated, one material per colour), re-centred, scaled to millimetres; geometry otherwise unchanged",
+ "attribution_text": "\"LED_D5.0mm.step\" by KiCad Library contributors, CC BY-SA 4.0 (KiCad library) (https://www.kicad.org/libraries/license/), from https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/LED_THT.3dshapes/LED_D5.0mm.step. Converted STEP to GLB (tessellated, one material per colour), re-centred, scaled to millimetres; geometry otherwise unchanged.",
+ "allowed_use": "display-only",
+ "source_sha256": "7cc5086e6ee1fb4853d1fb74675a61a436c8811204094823b31f04ce788e5d40"
+}

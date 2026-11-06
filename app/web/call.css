@@ -1,0 +1,107 @@
+/* Video calls with Josh (web/call.js). Light, scoped to .call-*; buttons use the shared .btn classes. */
+.call-ui {
+  --call-bg: #f5f5f4; --call-card: #ffffff; --call-ink: #1c1917; --call-muted: #6b6560; --call-line: #e7e5e4;
+  --call-stage: #e7e5e4; --call-accent: #f97316;
+  position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; padding: 24px;
+  background: rgba(28, 25, 23, .32); color: var(--call-ink); font: 14px/1.45 Inter, -apple-system, system-ui, sans-serif;
+  color-scheme: light; -webkit-font-smoothing: antialiased;
+}
+body.call-open { overflow: hidden; }
+.call-frame {
+  width: min(960px, 100%); height: min(640px, 100%); display: flex; flex-direction: column; overflow: hidden;
+  background: var(--call-card); border: 1px solid var(--call-line); border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(28, 25, 23, .1), 0 30px 70px rgba(28, 25, 23, .14);
+}
+.call-stage { position: relative; flex: 1; min-height: 0; background: var(--call-bg); overflow: hidden; }
+.call-remote { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: var(--call-stage); opacity: 0; transition: opacity .25s; }
+.call-live .call-remote { opacity: 1; }
+.call-remote-off .call-remote { opacity: 0; }
+.call-live.call-remote-off .call-stage::before { content: 'Camera off'; position: absolute; inset: 0; display: grid; place-items: center; color: var(--call-muted); font-size: 15px; }
+
+.call-wait { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; padding: 24px; text-align: center; background: var(--call-bg); }
+.call-live .call-wait { display: none; }
+.call-avatar {
+  width: 84px; height: 84px; border-radius: 50%; display: grid; place-items: center; margin-bottom: 14px;
+  background: #fff; border: 1px solid var(--call-line); font-size: 32px; font-weight: 600; color: #c2410c;
+  box-shadow: 0 0 0 0 rgba(249, 115, 22, .35); animation: call-pulse 1.8s ease-out infinite;
+}
+.call-ended .call-avatar { animation: none; }
+@keyframes call-pulse { 0% { box-shadow: 0 0 0 0 rgba(249, 115, 22, .35); } 100% { box-shadow: 0 0 0 22px rgba(249, 115, 22, 0); } }
+@media (prefers-reduced-motion: reduce) { .call-avatar { animation: none; } }
+.call-title { margin: 0; font-size: 20px; font-weight: 600; letter-spacing: normal; }
+.call-sub { margin: 0; max-width: 420px; color: var(--call-muted); }
+.call-sub:empty { display: none; }
+.call-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 16px; }
+.call-actions:empty { display: none; }
+.call-actions .btn { height: 38px; padding: 0 16px; font-size: 14px; }
+
+.call-head {
+  position: absolute; top: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 12px 14px; pointer-events: none;
+}
+.call-head-l { display: flex; flex-direction: column; min-width: 0; padding: 6px 10px; border-radius: 10px; background: rgba(255, 255, 255, .88); pointer-events: auto; }
+.call-name { font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.call-meta { font-size: 12px; color: var(--call-muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.call-meta a { color: #2563eb; }
+.call-meta[data-muted="1"]::after { content: ' · muted'; color: #b91c1c; }
+.call-timer { padding: 4px 10px; border-radius: 999px; background: rgba(255, 255, 255, .88); font-variant-numeric: tabular-nums; font-size: 13px; }
+
+.call-pip {
+  position: absolute; right: 14px; bottom: 14px; width: 180px; aspect-ratio: 4 / 3; border-radius: 12px; overflow: hidden;
+  background: #d6d3d1; border: 2px solid #fff; box-shadow: 0 4px 16px rgba(28, 25, 23, .18); touch-action: none; cursor: grab; z-index: 2;
+  transition: left .18s, top .18s, right .18s, bottom .18s;
+}
+.call-pip.dragging { transition: none; cursor: grabbing; }
+.call-pip[data-corner="tl"] { left: 14px; top: 74px; right: auto; bottom: auto; }
+.call-pip[data-corner="tr"] { right: 14px; top: 74px; bottom: auto; }
+.call-pip[data-corner="bl"] { left: 14px; bottom: 14px; right: auto; }
+.call-local { width: 100%; height: 100%; object-fit: cover; display: block; }
+.call-pip.mirror .call-local { transform: scaleX(-1); }
+.call-pip-off { position: absolute; inset: 0; display: grid; place-items: center; background: #e7e5e4; color: var(--call-muted); font-size: 12px; }
+
+.call-bar { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 14px; border-top: 1px solid var(--call-line); background: var(--call-card); }
+.call-ui .btn.call-ctl { width: 52px; height: 52px; padding: 0; border-radius: 50%; }
+.call-ui .btn.call-ctl.off { background: #1c1917; border-color: #1c1917; color: #fff; }
+.call-ui .btn.call-hang { width: 64px; background: #dc2626; border-color: #dc2626; color: #fff; border-radius: 26px; }
+.call-ui .btn.call-hang:hover { background: #b91c1c; border-color: #b91c1c; }
+
+/* phones: full screen, remote video fills, small draggable self view */
+@media (max-width: 720px) {
+  .call-ui { padding: 0; background: var(--call-bg); }
+  .call-frame { width: 100%; height: 100%; height: 100dvh; border: 0; border-radius: 0; box-shadow: none; }
+  .call-head { padding-top: max(12px, env(safe-area-inset-top)); }
+  .call-pip { width: 104px; aspect-ratio: 3 / 4; right: 12px; bottom: 12px; }
+  .call-pip[data-corner="tl"], .call-pip[data-corner="tr"] { top: calc(max(12px, env(safe-area-inset-top)) + 60px); }
+  .call-bar { padding-bottom: max(14px, env(safe-area-inset-bottom)); gap: 14px; }
+}
+
+/* /admin: incoming call banner, availability switch, toast */
+.call-banner {
+  position: fixed; top: 12px; left: 50%; transform: translateX(-50%); z-index: 1001; width: min(560px, calc(100vw - 24px));
+  display: flex; align-items: center; gap: 14px; padding: 14px 16px; border-radius: 14px; color-scheme: light;
+  background: #fff; color: #1c1917; border: 1px solid #fdba74; box-shadow: 0 10px 30px rgba(28, 25, 23, .14), 0 0 0 4px rgba(249, 115, 22, .15);
+  font: 14px/1.4 Inter, -apple-system, system-ui, sans-serif; animation: call-in .2s ease-out;
+}
+@keyframes call-in { from { opacity: 0; transform: translate(-50%, -8px); } }
+.call-banner-ic { width: 44px; height: 44px; flex: none; border-radius: 50%; display: grid; place-items: center; background: #fff7ed; color: #c2410c; animation: call-pulse 1.4s ease-out infinite; }
+.call-banner-ic svg { width: 22px; height: 22px; }
+.call-banner-t { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.call-banner-t b { font-size: 16px; }
+.call-banner-t span { color: #6b6560; font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.call-banner-left:empty { display: none; }
+.call-banner-b { display: flex; gap: 8px; flex: none; }
+.call-banner-b .btn { height: 40px; padding: 0 16px; font-size: 14px; font-weight: 600; }
+@media (max-width: 520px) {
+  .call-banner { flex-wrap: wrap; }
+  .call-banner-b { width: 100%; }
+  .call-banner-b .btn { flex: 1; }
+}
+.call-avail { display: inline-flex; align-items: center; gap: 7px; font-size: 12px; cursor: pointer; user-select: none; color: inherit; }
+.call-avail input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.call-avail-sw { position: relative; width: 28px; height: 16px; border-radius: 999px; background: #d6d3d1; transition: background .15s; flex: none; }
+.call-avail-sw::after { content: ''; position: absolute; left: 2px; top: 2px; width: 12px; height: 12px; border-radius: 50%; background: #fff; box-shadow: 0 1px 2px rgba(0, 0, 0, .2); transition: transform .15s; }
+.call-avail.on .call-avail-sw { background: #15803d; }
+.call-avail.on .call-avail-sw::after { transform: translateX(12px); }
+.call-avail input:focus-visible + .call-avail-sw { outline: 2px solid #f97316; outline-offset: 2px; }
+@media (max-width: 720px) { .call-avail-l { display: none; } }
+.call-toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); z-index: 1002; max-width: 90vw; padding: 8px 14px; border-radius: 8px; background: #1c1917; color: #fff; font: 13px/1.4 Inter, system-ui, sans-serif; }

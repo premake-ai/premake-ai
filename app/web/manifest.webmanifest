@@ -1,0 +1,19 @@
+{
+  "id": "/",
+  "name": "Premake",
+  "short_name": "Premake",
+  "description": "Describe a product, watch the CAD build live, and order 1 to 500 units.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#fafaf9",
+  "background_color": "#fafaf9",
+  "categories": ["productivity", "design", "utilities"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

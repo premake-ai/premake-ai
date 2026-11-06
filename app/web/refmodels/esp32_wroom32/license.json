@@ -1,0 +1,13 @@
+{
+ "key": "esp32_wroom32",
+ "title": "ESP32-WROOM-32 module",
+ "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/RF_Module.3dshapes/ESP32-WROOM-32.step",
+ "author": "KiCad Library contributors",
+ "license": "CC-BY-SA-4.0 WITH KiCad-libraries-exception",
+ "license_url": "https://www.kicad.org/libraries/license/",
+ "retrieved": "2026-10-30",
+ "modified": "converted STEP to GLB (tessellated, one material per colour), re-centred, rotated (0, 0, 90) deg, scaled to millimetres; geometry otherwise unchanged",
+ "attribution_text": "\"ESP32-WROOM-32.step\" by KiCad Library contributors, CC BY-SA 4.0 (KiCad library) (https://www.kicad.org/libraries/license/), from https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/RF_Module.3dshapes/ESP32-WROOM-32.step. Converted STEP to GLB (tessellated, one material per colour), re-centred, rotated (0, 0, 90) deg, scaled to millimetres; geometry otherwise unchanged.",
+ "allowed_use": "display-only",
+ "source_sha256": "35a8a3ad9783ddd103ce8d2cb5caf20511a8f729e009f18dd6e7ca447c66a739"
+}

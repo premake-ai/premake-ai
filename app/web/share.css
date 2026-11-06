@@ -1,0 +1,159 @@
+/* Share links: the studio's Share popover and the public page /d/<id> (web/share.js). */
+
+/* ---- studio popover (uses the studio's tokens) */
+.share-pop { position: fixed; z-index: 120; background: var(--panel); color: var(--text); border: 1px solid var(--line-2); border-radius: 12px;
+  box-shadow: var(--shadow-lg, 0 18px 50px rgba(28,25,23,.14)); font-size: 13px; }
+.share-pop.busy { opacity: .7; pointer-events: none; }
+.share-pop .sp-body { padding: 14px; display: flex; flex-direction: column; gap: 12px; }
+.share-pop .sp-h { font-size: 14px; font-weight: 600; margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.share-pop .sp-note { margin: 0; color: var(--text-2); font-size: 12.5px; }
+.share-pop .sp-row { display: flex; align-items: flex-start; gap: 12px; cursor: pointer; }
+.share-pop .sp-row.dim { opacity: .5; cursor: default; }
+.share-pop .sp-l { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.share-pop .sp-l b { font-weight: 550; }
+.share-pop .sp-l small { color: var(--muted); font-size: 11.5px; line-height: 1.4; }
+.share-pop .sp-switch { appearance: none; -webkit-appearance: none; flex-shrink: 0; width: 32px; height: 18px; border-radius: 999px; background: var(--line-2);
+  position: relative; cursor: pointer; transition: background .15s; margin: 2px 0 0; }
+.share-pop .sp-switch::after { content: ''; position: absolute; top: 2px; left: 2px; width: 14px; height: 14px; border-radius: 50%; background: #fff; transition: transform .15s; }
+.share-pop .sp-switch:checked { background: var(--accent); }
+.share-pop .sp-switch:checked::after { transform: translateX(14px); }
+.share-pop .sp-switch:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 2px; }
+.share-pop .sp-switch:disabled { cursor: default; }
+.share-pop .sp-link { display: flex; gap: 6px; }
+.share-pop .sp-link input { flex: 1; min-width: 0; height: 26px; border: 1px solid var(--line-2); background: var(--bg); color: var(--text-2); border-radius: 6px;
+  padding: 0 8px; font: 12px var(--mono); outline: none; }
+.share-pop .sp-actions { display: flex; align-items: center; gap: 10px; }
+.share-pop .sp-open { color: var(--link); font-size: 12.5px; margin-left: auto; }
+.share-pop .sp-err { color: var(--danger); margin: 0; font-size: 12.5px; }
+.share-pop .sp-skel { height: 34px; border-radius: 6px; background: var(--panel-2); }
+.share-pop .sp-field { display: flex; flex-direction: column; gap: 6px; }
+.share-pop .sp-lbl { font-weight: 550; }
+.share-pop .sp-hint { color: var(--muted); font-size: 11.5px; line-height: 1.45; }
+.share-pop .sp-seg { display: grid; grid-template-columns: 1fr 1fr; padding: 2px; border-radius: 9px; background: var(--panel-2); border: 1px solid var(--line); }
+.share-pop .sp-seg button { height: 28px; border: 0; border-radius: 7px; background: transparent; color: var(--text-2); font: inherit; font-weight: 500; cursor: pointer; }
+.share-pop .sp-seg button[aria-checked="true"] { background: var(--panel); color: var(--text); box-shadow: 0 1px 2px rgba(28,25,23,.12), 0 0 0 .5px rgba(28,25,23,.08); }
+.share-pop .sp-seg button:focus-visible { outline: 2px solid var(--accent-2, var(--accent)); outline-offset: 1px; }
+.share-pop .sp-end { display: flex; justify-content: flex-end; border-top: 1px solid var(--line); padding-top: 10px; margin-top: -2px; }
+.share-pop .sp-stop-link { border: 0; background: none; padding: 0; color: var(--danger); font: inherit; font-size: 12.5px; cursor: pointer; }
+.share-pop .sp-stop-link:hover { text-decoration: underline; }
+.share-pop .btn.block { width: 100%; justify-content: center; }
+
+/* share: who wrote a message in a shared design's chat, and shared designs in the sidebar */
+.msgs .msg.user .mby { font-size: 11.5px; color: var(--muted); margin: 0 6px -2px 0; }
+.proj .pshared { color: var(--accent); font-weight: 550; }
+
+/* ---- public page */
+body.sh-page { margin: 0; min-height: 100vh; font: 15px/1.5 Inter, -apple-system, system-ui, sans-serif; -webkit-font-smoothing: antialiased;
+  --bg: #f6f5f2; --panel: #fff; --panel-2: #f6f5f2; --panel-3: #efeee9; --line: #e5e3dd; --line-2: #d6d3cb; --text: #1b1a17; --text-2: #4a4945;
+  --muted: #75736d; --warn: #9a6400; --accent: #e8590c; --accent-2: #cf4c06; --accent-ink: #fff; --danger: #b3261e; --link: #c2410c;
+  background: var(--bg); color: var(--text); }
+.sh-page *, .sh-page *::before, .sh-page *::after { box-sizing: border-box; }
+.sh-page a { color: inherit; }
+.sh-root { max-width: 1180px; margin: 0 auto; padding: 0 16px 32px; }
+.sh-top { display: flex; align-items: center; justify-content: space-between; height: 56px; }
+.sh-brand { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: 16px; text-decoration: none; }
+.sh-mark { width: 18px; height: 18px; border-radius: 5px; background: linear-gradient(135deg, var(--accent), #ffb27a); }
+.sh-main { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(280px, 1fr); gap: 28px; align-items: start; }
+.sh-view { position: relative; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); aspect-ratio: 4 / 3.2; background: linear-gradient(180deg, #f5f5f4, #e2e1de); }
+.sh-canvas { position: absolute; inset: 0; }
+.sh-canvas canvas { display: block; outline: none; touch-action: none; }
+.sh-thumb { width: 100%; height: 100%; object-fit: contain; }
+.sh-hint { position: absolute; left: 12px; bottom: 10px; font-size: 11.5px; color: rgba(28,25,23,.6); pointer-events: none; }
+.sh-view [data-backdrop="dark"] ~ .sh-hint { color: rgba(255,255,255,.6); }
+.sh-empty { position: absolute; inset: 0; display: grid; place-items: center; color: var(--muted); }
+.sh-info { padding-top: 6px; }
+.sh-info h1 { font-size: clamp(26px, 3.4vw, 36px); line-height: 1.12; letter-spacing: normal; margin: 0 0 6px; font-weight: 700; text-wrap: balance; }
+.sh-by { margin: 0 0 14px; color: var(--muted); }
+.sh-by:has(+ .sh-cstats) { margin-bottom: 2px; }
+.sh-cstats { margin: 0 0 14px; color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } /* card-stats */
+.sh-desc { margin: 0 0 18px; color: var(--text-2); max-width: 46ch; }
+.sh-stats { display: flex; gap: 28px; margin: 0 0 22px; padding: 12px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.sh-stats div { min-width: 0; }
+.sh-stats dt { font-size: 12.5px; color: var(--muted); }
+.sh-stats dd { margin: 2px 0 0; font-weight: 600; font-variant-numeric: tabular-nums; }
+.sh-stats small { color: var(--muted); font-weight: 400; }
+.sh-ctas { display: flex; flex-wrap: wrap; gap: 8px; }
+.sh-page .btn { display: inline-flex; align-items: center; justify-content: center; gap: 7px; height: 40px; padding: 0 16px; border-radius: 9px; text-decoration: none;
+  border: 1px solid var(--line-2); background: var(--panel); color: var(--text); font: 600 14px/1 Inter, system-ui, sans-serif; cursor: pointer; }
+.sh-page .btn:hover { border-color: var(--muted); }
+.sh-page .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.sh-page .btn.primary:hover { background: var(--accent-2); border-color: var(--accent-2); }
+.sh-page .btn.sm { height: 32px; padding: 0 12px; font-size: 13px; }
+.sh-page .btn.ghost { background: transparent; }
+.sh-page .btn:disabled { opacity: .55; cursor: default; }
+.sh-page .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.sh-pulse { animation: sh-pulse 1.4s ease-out 3; }
+@keyframes sh-pulse { 0% { box-shadow: 0 0 0 0 rgba(232, 89, 12, .5); } 100% { box-shadow: 0 0 0 12px rgba(232, 89, 12, 0); } }
+.sh-fine { margin: 12px 0 0; font-size: 12.5px; color: var(--muted); }
+.sh-err { color: var(--danger); font-size: 13px; margin: 10px 0 0; }
+.sh-foot { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+.sh-foot a { color: var(--text); font-weight: 600; }
+.sh-gone { max-width: 32rem; margin: 18vh auto 0; text-align: center; }
+.sh-gone h1 { font-size: 24px; margin: 0 0 6px; }
+.sh-gone p { color: var(--muted); margin: 0 0 18px; }
+@media (max-width: 820px) {
+  .sh-main { grid-template-columns: 1fr; gap: 18px; }
+  .sh-view { aspect-ratio: 1 / 1; border-radius: 12px; }
+  .sh-ctas .btn { flex: 1 1 auto; height: 44px; }
+  .sh-stats { flex-wrap: wrap; gap: 10px 24px; }
+  .sh-hint { font-size: 12.5px; }
+  .sh-fine, .sh-foot { font-size: 13.5px; }
+  .sh-root { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-bottom: calc(32px + env(safe-area-inset-bottom, 0px)); }
+  .sh-page input, .sh-page select, .sh-page textarea { font-size: 16px !important; }
+}
+@media (prefers-reduced-motion: reduce) { .sh-pulse { animation: none; } }
+
+/* studio share sheet on phones: an iOS sheet with inset grouped lists (web/share.js renders .sp-ios; phone.js drags it) */
+@media (max-width: 640px) {
+  .share-pop { left: 8px !important; right: 8px; width: auto !important; font-size: 16px; max-height: calc(100% - 24px); overflow-y: auto; overscroll-behavior: contain; }
+  .share-pop.sp-ios { background: rgba(242, 242, 247, .985); }
+  .share-pop.sp-ios .sp-body { padding: 4px 14px 14px; gap: 0; }
+  .share-pop .sp-top { display: grid; grid-template-columns: 64px 1fr 64px; align-items: center; min-height: 44px; margin-bottom: 6px; }
+  .share-pop .sp-top .sp-h { grid-column: 2; text-align: center; font-size: 17px; font-weight: 600; }
+  .share-pop .sp-done { grid-column: 3; justify-self: end; border: 0; background: none; color: var(--accent); font: inherit; font-size: 17px; font-weight: 600; min-height: 44px; padding: 0 4px; cursor: pointer; }
+  .share-pop .sp-lead { margin: 4px 4px 14px; color: var(--text-2); font-size: 15px; text-align: center; }
+  .share-pop .sp-gh { margin: 18px 16px 6px; font-size: 13px; font-weight: 400; color: rgba(60, 60, 67, .6); }
+  .share-pop .sp-group { background: #fff; border-radius: 12px; overflow: hidden; margin-top: 8px; }
+  .share-pop .sp-gh + .sp-group { margin-top: 0; }
+  .share-pop .sp-cell { display: flex; align-items: center; gap: 12px; width: 100%; min-height: 50px; padding: 10px 16px; border: 0; background: none; text-align: left;
+    color: var(--text); font: inherit; font-size: 16px; cursor: pointer; position: relative; -webkit-tap-highlight-color: transparent; }
+  .share-pop .sp-cell + .sp-cell::before { content: ''; position: absolute; top: 0; left: 16px; right: 0; border-top: .5px solid rgba(60, 60, 67, .22); }
+  .share-pop .sp-cell:has(.sp-ic) + .sp-cell::before, .share-pop .sp-cell:has(.sp-ic)::before { left: 52px; }
+  .share-pop .sp-cell:active { background: rgba(60, 60, 67, .1); }
+  .share-pop .sp-ic { width: 24px; flex-shrink: 0; display: grid; place-items: center; color: var(--accent); }
+  .share-pop .sp-cl { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+  .share-pop .sp-cl b { font-weight: 400; }
+  .share-pop .sp-cl small { color: rgba(60, 60, 67, .6); font-size: 13px; line-height: 1.35; overflow-wrap: anywhere; }
+  .share-pop .sp-check { width: 20px; flex-shrink: 0; color: var(--accent); display: grid; place-items: center; }
+  .share-pop .sp-stop, .share-pop .sp-create { justify-content: center; color: var(--danger); font-weight: 400; }
+  .share-pop .sp-create { color: var(--accent); font-weight: 600; }
+  .share-pop .sp-foot { margin: 6px 16px 0; font-size: 13px; color: rgba(60, 60, 67, .6); line-height: 1.4; }
+  .share-pop .sp-err { margin: 10px 16px 0; font-size: 14px; }
+}
+
+/* order modal on the public page (no studio stylesheet here) */
+.sh-page .modal-wrap { position: fixed; inset: 0; background: rgba(20, 18, 15, .45); z-index: 100; display: grid; place-items: center; padding: 20px; backdrop-filter: blur(3px); }
+.sh-page .modal-wrap[hidden] { display: none; }
+.sh-page .modal-wrap { grid-template-columns: minmax(0, 1fr); } .sh-page .modal { justify-self: center; }
+.sh-page .modal { width: 460px; max-width: 100%; max-height: calc(100% - 20px); overflow: auto; background: var(--panel); color: var(--text); border: 1px solid var(--line-2);
+  border-radius: 14px; box-shadow: 0 30px 80px rgba(0,0,0,.25); font-size: 14px; }
+.sh-page .modal-head { display: flex; align-items: center; padding: 14px 16px; border-bottom: 1px solid var(--line); }
+.sh-page .modal-head h2 { font-size: 16px; margin: 0; }
+.sh-page .modal-body { padding: 16px; }
+.sh-page .modal-foot { padding: 12px 16px; border-top: 1px solid var(--line); display: flex; gap: 8px; justify-content: flex-end; align-items: center; flex-wrap: wrap; }
+.sh-page .icon-btn { margin-left: auto; width: 30px; height: 30px; border-radius: 8px; border: 0; background: transparent; color: var(--muted); cursor: pointer; display: grid; place-items: center; }
+.sh-page .icon-btn:hover { background: var(--panel-2); color: var(--text); }
+.sh-page .summary { background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; margin-bottom: 14px; }
+.sh-page .legend { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; font-size: 13px; }
+.sh-page .legend .k { color: var(--text-2); }
+.sh-page .legend .v { text-align: right; font-variant-numeric: tabular-nums; }
+.sh-page .legend .tot { font-weight: 700; color: var(--text); border-top: 1px solid var(--line); padding-top: 5px; }
+.sh-page .muted { color: var(--muted); }
+
+/* public page order modal on phones: a bottom sheet (after the base modal rules above) */
+@media (max-width: 820px) {
+  .sh-page .modal-wrap { place-items: end stretch; padding: 0; }
+  .sh-page .modal { width: 100%; border-radius: 16px 16px 0 0; padding-bottom: env(safe-area-inset-bottom, 0px); }
+  .sh-page .modal-foot .btn { flex: 1 1 auto; height: 44px; }
+  .sh-page .icon-btn { width: 40px; height: 40px; }
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Admin · Premake</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/admin/admin.css">
+<link rel="stylesheet" href="/glass.css"><!-- glass: buttons and toggles -->
+<link rel="stylesheet" href="/admin/fulfil.css">
+<link rel="stylesheet" href="/admin/inbox.css"><!-- supportchat: the Inbox (web/inbox.js) -->
+<script type="module" src="/analytics.js"></script><!-- analytics: PostHog (web/analytics.js) -->
+</head>
+<body class="adm">
+<header class="adm-top">
+  <button class="adm-burger" id="burger" aria-label="Open menu" aria-controls="nav" aria-expanded="false">
+    <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5"/></svg>
+  </button>
+  <a class="brand" href="/admin#support"><span class="brand-mark" aria-hidden="true"></span>Premake</a>
+  <span class="adm-crumb" id="crumb">Admin</span>
+  <div class="adm-top-r">
+    <span class="adm-live" id="live" title="Live connection"><span class="dot"></span><span class="adm-live-l">Connecting</span></span>
+    <a class="adm-back" href="/">Studio</a>
+  </div>
+</header>
+<div class="adm-shell">
+  <nav class="adm-nav" id="nav" aria-label="Admin sections">
+    <a href="#support" data-sec="support"><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M2.5 3.5h11v7h-6l-3 2.5v-2.5h-2z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>Live support<span class="adm-badge" id="navUnread" hidden></span></a>
+    <a href="#inbox" data-sec="inbox"><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M2 9.5l1.6-6h8.8l1.6 6v3.5H2zM2 9.5h3.5l1 1.6h3l1-1.6H14" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>Inbox<span class="adm-badge" id="navInbox" hidden></span></a>
+    <a href="#overview" data-sec="overview"><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M2 13.5h12M4 11V7M7 11V4M10 11V8M13 11V5" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>Overview</a>
+    <a href="#users" data-sec="users"><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><circle cx="8" cy="5.5" r="2.7" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M2.8 14c.6-2.8 2.6-4.2 5.2-4.2s4.6 1.4 5.2 4.2" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>Users</a>
+    <a href="#projects" data-sec="projects"><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M8 1.8l5.5 3.1v6.2L8 14.2l-5.5-3.1V4.9z M2.5 4.9L8 8l5.5-3.1M8 8v6.2" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Projects</a>
+    <a href="#orders" data-sec="orders"><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M2.5 5h11l-1 8.5h-9zM5.5 5V4a2.5 2.5 0 015 0v1" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>Orders</a>
+    <a href="#fulfilment" data-sec="fulfilment"><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M1.5 4.5h8v6.5h-8zM9.5 7h3l2 2.2V11h-5M4 13a1.3 1.3 0 100-.1M11.5 13a1.3 1.3 0 100-.1" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>Fulfilment</a>
+    <a href="#runs" data-sec="runs"><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M9 1.5L3.5 9H8l-1 5.5L12.5 7H8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>Agent runs</a>
+    <a href="#system" data-sec="system"><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><rect x="2" y="2.5" width="12" height="4.5" rx="1" fill="none" stroke="currentColor" stroke-width="1.3"/><rect x="2" y="9" width="12" height="4.5" rx="1" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M4.5 4.7h.1M4.5 11.2h.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>System</a>
+  </nav>
+  <div class="adm-scrim" id="scrim"></div>
+  <main class="adm-main" id="main"></main>
+</div>
+<script type="module" src="/admin/admin.js"></script>
+<script type="module">import { initAdminCalls } from '/call.js'; initAdminCalls(); // call: incoming video calls ring on every admin page</script>
+</body>
+</html>

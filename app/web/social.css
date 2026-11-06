@@ -1,0 +1,107 @@
+/* social: counts on gallery cards, the recently designed strip and the build page's like bar + comments (web/social.js) */
+
+/* gallery cards */
+.so-card { display: flex; gap: 12px; margin: 0 0 8px; color: var(--muted, #6b6560); font-size: 11.5px; font-variant-numeric: tabular-nums; }
+.so-card span { display: inline-flex; align-items: center; gap: 4px; }
+.so-card svg { opacity: .75; fill: currentColor; }
+.so-card svg path[stroke] { fill: none; }
+
+/* recently designed strip (real designs: thumbnail, title, when, price) */
+.so-orders { display: flex; align-items: center; gap: 12px; margin: 0 0 14px; padding: 6px 0 6px 12px; border: 1px solid var(--line, #e7e5e4); border-radius: 12px; background: var(--panel, #fff); overflow: hidden; }
+.so-orders-note { flex-shrink: 0; font-size: 11.5px; color: var(--muted, #6b6560); padding-right: 10px; border-right: 1px solid var(--line, #e7e5e4); }
+.so-orders-view { flex: 1; min-width: 0; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 20px, #000 calc(100% - 36px), transparent); mask-image: linear-gradient(90deg, transparent, #000 20px, #000 calc(100% - 36px), transparent); }
+.so-orders-track { display: flex; width: max-content; animation: so-roll linear infinite; }
+.so-orders:hover .so-orders-track, .so-orders:focus-within .so-orders-track { animation-play-state: paused; }
+.so-orders ul { display: flex; gap: 8px; margin: 0; padding: 0 8px 0 0; list-style: none; }
+.so-orders li a { display: flex; align-items: center; gap: 8px; height: 30px; padding: 0 11px 0 3px; border-radius: 999px; background: var(--panel-2, #f7f7f6); font-size: 12.5px; color: var(--text-2, #44403c); white-space: nowrap; text-decoration: none; }
+.so-orders li a:hover { background: var(--panel-3, #f1f1ef); color: var(--text, #1c1917); }
+.so-orders li b { font-weight: 600; color: var(--text, #1c1917); }
+.so-orders time { color: var(--muted, #6b6560); font-size: 11.5px; }
+.so-orders .so-th { width: 26px; height: 26px; border-radius: 50%; object-fit: cover; background: var(--panel-3, #f1f1ef); flex-shrink: 0; }
+.so-orders .so-pr { color: var(--muted, #6b6560); font-size: 11.5px; font-variant-numeric: tabular-nums; }
+.so-orders .so-pr::before { content: '·'; margin-right: 7px; }
+@keyframes so-roll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (max-width: 640px) {
+  .so-orders { flex-direction: column; align-items: stretch; gap: 6px; padding: 9px 0; }
+  .so-orders-note { border-right: 0; padding: 0 12px; }
+  /* phone: a strip you swipe, not a marquee */
+  .so-orders-track { animation: none; }
+  .so-orders-view { overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; -webkit-mask-image: none; mask-image: none; padding-left: 12px; }
+  .so-orders-view::-webkit-scrollbar { display: none; }
+  .so-orders-track ul[aria-hidden] { display: none; }
+  .so-orders li a { height: 36px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .so-orders-track { animation: none; }
+  .so-orders-view { overflow-x: auto; -webkit-mask-image: none; mask-image: none; }
+  .so-orders-track ul[aria-hidden] { display: none; }
+}
+
+/* avatars: initials on a colour */
+.so-av { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; flex-shrink: 0; color: #fff; font: 600 12.5px/1 var(--ui, Inter, system-ui, sans-serif); letter-spacing: .01em; }
+
+/* build page: like / remix / built bar */
+.so-bar { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 14px; margin: 2px 0 14px; color: var(--muted, #6b6560); font-size: 12.5px; font-variant-numeric: tabular-nums; }
+.so-bar:empty { display: none; }
+.so-like { display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 12px; border-radius: 999px; border: 1px solid var(--line-2, #d6d3d1); background: var(--panel, #fff);
+  color: var(--text-2, #44403c); font-weight: 600; font-size: 12.5px; line-height: 1; font-family: inherit; cursor: pointer; transition: background .15s, border-color .15s, color .15s; }
+.so-like svg { fill: none; stroke: currentColor; stroke-width: 1.4; }
+.so-like:hover { border-color: var(--line-3, #a8a29e); }
+.so-like.on { color: #e03131; border-color: rgba(224, 49, 49, .35); background: rgba(224, 49, 49, .06); }
+.so-like.on svg { fill: currentColor; }
+.so-like:active svg { transform: scale(1.2); }
+.so-stat { display: inline-flex; align-items: center; gap: 5px; }
+.so-link { color: inherit; text-decoration: none; }
+.so-link:hover { color: var(--text, #1c1917); }
+
+/* build page: comments */
+.so-talk h2 { display: flex; align-items: center; gap: 8px; }
+.so-count { font-size: 12px; font-weight: 600; color: var(--muted, #6b6560); background: var(--panel-3, #f1f1ef); border-radius: 999px; padding: 2px 8px; }
+.so-form { display: flex; gap: 10px; align-items: flex-start; margin: 10px 0 16px; }
+.so-fbox { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px; align-items: flex-end; }
+.so-fbox textarea { width: 100%; resize: none; min-height: 40px; font-size: 14px; line-height: 1.45; font-family: inherit; color: var(--text, #1c1917); padding: 9px 12px;
+  border: 1px solid var(--line-2, #d6d3d1); border-radius: 12px; background: var(--panel, #fff); outline: none; transition: border-color .15s, box-shadow .15s; }
+.so-fbox textarea:focus { border-color: var(--accent, #e8590c); box-shadow: 0 0 0 3px rgba(232, 89, 12, .12); }
+.so-form-reply { margin: 10px 0 4px; }
+.so-form-reply .so-av { width: 26px; height: 26px; font-size: 11px; }
+.so-signin { margin: 8px 0 16px; }
+.so-list { display: flex; flex-direction: column; gap: 18px; }
+.so-c { display: flex; gap: 10px; align-items: flex-start; }
+.so-cb { flex: 1; min-width: 0; }
+.so-ch { display: flex; align-items: baseline; flex-wrap: wrap; gap: 2px 7px; font-size: 13px; }
+.so-ch b { font-weight: 600; color: var(--text, #1c1917); }
+.so-h, .so-ch time { color: var(--muted, #6b6560); font-size: 12px; }
+.so-badge { font-size: 11px; font-weight: 600; color: var(--accent-2, #c2410c); background: rgba(249, 115, 22, .1); border-radius: 5px; padding: 1px 6px; }
+.so-badge.team { color: var(--text, #1c1917); background: var(--panel-3, #f1f1ef); }
+.so-cb > p { margin: 3px 0 4px; font-size: 13.5px; line-height: 1.5; color: var(--text-2, #44403c); white-space: pre-wrap; overflow-wrap: anywhere; }
+.so-acts { display: flex; align-items: center; gap: 14px; font-size: 12px; color: var(--muted, #6b6560); }
+.so-acts button { background: none; border: 0; padding: 4px 0; color: inherit; font-weight: 600; font-size: 12px; line-height: 1; font-family: inherit; cursor: pointer; }
+.so-acts button:hover { color: var(--text, #1c1917); }
+.so-helpful { display: inline-flex; align-items: center; gap: 4px; }
+.so-helpful svg { fill: currentColor; opacity: .6; width: 11px; height: 11px; }
+.so-reply { margin-top: 14px; }
+.so-reply .so-av { width: 26px; height: 26px; font-size: 11px; }
+.so-more { margin-top: 16px; }
+.so-empty, .so-note { color: var(--muted, #6b6560); font-size: 12.5px; margin: 8px 0 0; }
+.so-note { margin-top: 18px; }
+@media (max-width: 640px) {
+  .so-acts button { padding: 8px 0; }
+  .so-fbox textarea { font-size: 16px; } /* no zoom on focus (iOS) */
+  .so-like { height: 34px; }
+}
+.so-acts button.so-danger { color: #e03131; }
+
+/* phone: iOS action sheet for deleting a comment */
+.so-as { position: fixed; inset: 0; z-index: 1000; }
+.so-as-dim { position: absolute; inset: 0; background: rgba(0, 0, 0, .35); opacity: 0; transition: opacity .22s; }
+.so-as-box { position: absolute; left: 8px; right: 8px; bottom: calc(8px + env(safe-area-inset-bottom, 0px)); display: flex; flex-direction: column; gap: 8px;
+  transform: translateY(110%); transition: transform .26s cubic-bezier(.2, .8, .2, 1); }
+.so-as.in .so-as-dim { opacity: 1; }
+.so-as.in .so-as-box { transform: none; }
+.so-as-group { border-radius: 14px; overflow: hidden; background: rgba(249, 249, 249, .94); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); }
+.so-as-group p { margin: 0; padding: 14px 16px; text-align: center; font-size: 13px; color: #8a8a8e; border-bottom: .5px solid rgba(60, 60, 67, .29); }
+.so-as-group button { display: block; width: 100%; height: 57px; border: 0; background: none; font: 400 20px/1 -apple-system, system-ui, sans-serif; color: #007aff; cursor: pointer; }
+.so-as-group button:active { background: rgba(0, 0, 0, .06); }
+.so-as-group .so-as-del { color: #ff3b30; }
+.so-as-group .so-as-cancel { font-weight: 600; }
+@media (prefers-reduced-motion: reduce) { .so-as-dim, .so-as-box { transition: none; } }

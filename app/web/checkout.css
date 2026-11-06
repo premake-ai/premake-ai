@@ -1,0 +1,50 @@
+/* Stripe Checkout: order modal, success page, My orders, admin orders (web/checkout.js). */
+.co-note { display: flex; gap: 8px; align-items: flex-start; border: 1px solid var(--line-2); background: var(--panel-2); color: var(--text-2);
+  border-radius: 7px; padding: 9px 11px; font-size: 12px; margin-top: 4px; }
+.co-note svg { flex-shrink: 0; margin-top: 1px; color: var(--muted); }
+.co-note a { color: var(--text); text-decoration: underline; text-underline-offset: 2px; }
+.co-test { margin-top: 8px; font-size: 11.5px; color: var(--warn); }
+.co-secure { display: flex; align-items: center; gap: 6px; margin-right: auto; font-size: 11.5px; color: var(--muted); }
+
+.orders-page { height: calc(100% - var(--top)); overflow: auto; }
+.orders-inner { max-width: 880px; margin: 0 auto; padding: 32px 16px 64px; }
+.orders-inner h1 { font-size: 22px; font-weight: 650; letter-spacing: normal; margin: 0 0 6px; }
+.orders-inner .sub { color: var(--muted); margin: 0 0 20px; font-size: 13px; }
+.orders-tabs { display: flex; gap: 4px; margin: 0 0 16px; }
+.orders-tabs a { padding: 6px 11px; border-radius: 6px; color: var(--text-2); font-size: 12.5px; border: 1px solid transparent; }
+.orders-tabs a.on { background: var(--panel-3); color: var(--text); border-color: var(--line-2); }
+.ord-list { display: flex; flex-direction: column; gap: 8px; }
+.ord { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 16px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 13px 15px; }
+.ord .t { font-weight: 600; font-size: 14px; color: var(--text); }
+.ord .m { color: var(--muted); font-size: 12px; }
+.ord .r { text-align: right; font-variant-numeric: tabular-nums; }
+.ord .r b { display: block; font-size: 14px; }
+.ord .addr { grid-column: 1 / -1; color: var(--text-2); font-size: 12px; }
+.ord .admin-row { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; font-size: 12px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 9px; margin-top: 4px; }
+.ord .admin-row code { font-family: var(--mono); font-size: 11px; color: var(--text-2); }
+.ord select { background: var(--panel-3); color: var(--text); border: 1px solid var(--line-2); border-radius: 6px; height: 26px; padding: 0 6px; font: inherit; }
+.st { display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 20px; border: 1px solid var(--line-2); color: var(--text-2); margin-top: 4px; }
+.st.paid { color: var(--ok); border-color: rgba(21,128,61,.3); background: rgba(21,128,61,.07); }
+.st.printing { color: var(--accent-2); border-color: rgba(249,115,22,.35); background: var(--accent-soft); }
+.st.shipped { color: #1d4ed8; border-color: rgba(37,99,235,.3); background: rgba(37,99,235,.07); }
+.st.pending { color: var(--warn); border-color: rgba(161,98,7,.3); background: #fefce8; }
+.st.expired, .st.canceled, .st.refunded { color: var(--muted); }
+.ord-empty { border: 1px dashed var(--line-2); border-radius: 10px; padding: 28px 16px; text-align: center; color: var(--muted); }
+.ord-empty a { color: var(--text); text-decoration: underline; }
+
+.ord-done { max-width: 480px; margin: 0 auto; padding: 48px 16px 64px; text-align: center; }
+.ord-done .tick { width: 52px; height: 52px; border-radius: 50%; background: rgba(21,128,61,.1); color: var(--ok); display: grid; place-items: center; margin: 0 auto 16px; }
+.ord-done .tick.wait { background: var(--panel-3); color: var(--muted); }
+.ord-done h1 { font-size: 24px; font-weight: 650; margin: 0 0 6px; }
+.ord-done > p { color: var(--text-2); margin: 0 0 18px; }
+.ord-done .summary { text-align: left; }
+.ord-done .actions { display: flex; gap: 8px; justify-content: center; margin-top: 18px; flex-wrap: wrap; }
+@media (max-width: 600px) { .ord { grid-template-columns: 1fr; } .ord .r { text-align: left; } }
+/* phones: orders as an iOS grouped list (full-width rows, inset separators) */
+@media (max-width: 640px) {
+  .ord-list { gap: 0; background: var(--panel); border-radius: 14px; overflow: hidden; box-shadow: 0 0 0 .5px var(--line); }
+  .ord { position: relative; min-height: 64px; padding: 14px 16px; border: 0; border-radius: 0; background: none; }
+  .ord + .ord::before { content: ''; position: absolute; top: 0; left: 16px; right: 0; height: .5px; background: var(--line-2); }
+  .ord .t { font-size: 16px; }
+  .ord .m, .ord .addr { font-size: 13px; }
+}

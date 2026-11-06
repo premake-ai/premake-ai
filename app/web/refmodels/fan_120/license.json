@@ -1,0 +1,12 @@
+{
+ "key": "fan_120",
+ "title": "120 mm case fan",
+ "source_url": "",
+ "author": "Premake",
+ "license": "Premake-original",
+ "license_url": "",
+ "retrieved": "2026-10-30",
+ "modified": "parametric model built with CadQuery from cadlib.dims sizes, exported to GLB",
+ "attribution_text": "120 mm case fan reference model by Premake (original parametric model).",
+ "allowed_use": "display-only"
+}

@@ -1,0 +1,560 @@
+[
+  {
+    "key": "iphone_13",
+    "name": "Apple iPhone 13",
+    "category": "phones",
+    "dims": {
+      "height_mm": 146.7,
+      "width_mm": 71.5,
+      "depth_mm": 7.65,
+      "weight_g": 174
+    },
+    "notes": "Apple tech specs; body only, depth excludes rear camera bump. Size and weight vary by configuration. Camera bump thickness and corner radius not included: Apple's dimensional-drawing PDFs (developer.apple.com Accessory Design Guidelines) were fetched but their dimension text is not machine-readable.",
+    "source": "https://support.apple.com/en-us/111872",
+    "sources": [
+      "https://www.apple.com/iphone/compare/"
+    ],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "iphone_13_mini",
+    "name": "Apple iPhone 13 mini",
+    "category": "phones",
+    "dims": {
+      "height_mm": 131.5,
+      "width_mm": 64.2,
+      "depth_mm": 7.65,
+      "weight_g": 141
+    },
+    "notes": "Apple tech specs; body only, depth excludes rear camera bump. Size and weight vary by configuration. Camera bump thickness and corner radius not included: Apple's dimensional-drawing PDFs (developer.apple.com Accessory Design Guidelines) were fetched but their dimension text is not machine-readable.",
+    "source": "https://support.apple.com/en-us/111873",
+    "sources": [
+      "https://www.apple.com/iphone/compare/"
+    ],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "iphone_13_pro",
+    "name": "Apple iPhone 13 Pro",
+    "category": "phones",
+    "dims": {
+      "height_mm": 146.7,
+      "width_mm": 71.5,
+      "depth_mm": 7.65,
+      "weight_g": 204
+    },
+    "notes": "Apple tech specs; body only, depth excludes rear camera bump. Size and weight vary by configuration. Camera bump thickness and corner radius not included: Apple's dimensional-drawing PDFs (developer.apple.com Accessory Design Guidelines) were fetched but their dimension text is not machine-readable.",
+    "source": "https://support.apple.com/en-us/111871",
+    "sources": [
+      "https://www.apple.com/iphone/compare/"
+    ],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "iphone_13_pro_max",
+    "name": "Apple iPhone 13 Pro Max",
+    "category": "phones",
+    "dims": {
+      "height_mm": 160.8,
+      "width_mm": 78.1,
+      "depth_mm": 7.65,
+      "weight_g": 240
+    },
+    "notes": "Apple tech specs; body only, depth excludes rear camera bump. Size and weight vary by configuration. Camera bump thickness and corner radius not included: Apple's dimensional-drawing PDFs (developer.apple.com Accessory Design Guidelines) were fetched but their dimension text is not machine-readable.",
+    "source": "https://support.apple.com/en-us/111870",
+    "sources": [
+      "https://www.apple.com/iphone/compare/"
+    ],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "iphone_14",
+    "name": "Apple iPhone 14",
+    "category": "phones",
+    "dims": {
+      "height_mm": 146.7,
+      "width_mm": 71.5,
+      "depth_mm": 7.8,
+      "weight_g": 172
+    },
+    "notes": "Apple tech specs; body only, depth excludes rear camera bump. Size and weight vary by configuration. Camera bump thickness and corner radius not included: Apple's dimensional-drawing PDFs (developer.apple.com Accessory Design Guidelines) were fetched but their dimension text is not machine-readable.",
+    "source": "https://support.apple.com/en-us/111850",
+    "sources": [
+      "https://www.apple.com/iphone/compare/"
+    ],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "iphone_14_plus",
+    "name": "Apple iPhone 14 Plus",
+    "category": "phones",
+    "dims": {
+      "height_mm": 160.8,
+      "width_mm": 78.1,
+      "depth_mm": 7.8,
+      "weight_g": 203
+    },
+    "notes": "Apple tech specs; body only, depth excludes rear camera bump. Size and weight vary by configuration. Camera bump thickness and corner radius not included: Apple's dimensional-drawing PDFs (developer.apple.com Accessory Design Guidelines) were fetched but their dimension text is not machine-readable.",
+    "source": "https://support.apple.com/en-us/111854",
+    "sources": [
+      "https://www.apple.com/iphone/compare/"
+    ],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "iphone_14_pro",
+    "name": "Apple iPhone 14 Pro",
+    "category": "phones",
+    "dims": {
+      "height_mm": 147.5,
+      "width_mm": 71.5,
+      "depth_mm": 7.85,
+      "weight_g": 206
+    },
+    "notes": "Apple tech specs; body only, depth excludes rear camera bump. Size and weight vary by configuration. Camera bump thickness and corner radius not included: Apple's dimensional-drawing PDFs (developer.apple.com Accessory Design Guidelines) were fetched but their dimension text is not machine-readable.",
+    "source": "https://support.apple.com/en-us/111849",
+    "sources": [
+      "https://www.apple.com/iphone/compare/"
+    ],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "iphone_14_pro_max",
+    "name": "Apple iPhone 14 Pro Max",
+    "category": "phones",
+    "dims": {
+      "height_mm": 160.7,
+      "width_mm": 77.6,
+      "depth_mm": 7.85,
+      "weight_g": 240
+    },
+    "notes": "Apple tech specs; body only, depth excludes rear camera bump. Size and weight vary by configuration. Camera bump thickness and corner radius not included: Apple's dimensional-drawing PDFs (developer.apple.com Accessory Design Guidelines) were fetched but their dimension text is not machine-readable.",
+    "source": "https://support.apple.com/en-us/111846",
+    "sources": [
+      "https://www.apple.com/iphone/compare/"
+    ],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "iphone_15",
+    "name": "Apple iPhone 15",
+    "category": "phones",
+    "dims": {
+      "height_mm": 147.6,
+      "width_mm": 71.6,
+      "depth_mm": 7.8,
+      "weight_g": 171
+    },
+    "notes": "Apple tech specs; body only, depth excludes rear camera bump. Size and weight vary by configuration. Camera bump thickness and corner radius not included: Apple's dimensional-drawing PDFs (developer.apple.com Accessory Design Guidelines) were fetched but their dimension text is not machine-readable.",
+    "source": "https://support.apple.com/en-us/111831",
+    "sources": [
+      "https://www.apple.com/iphone/compare/"
+    ],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "iphone_15_plus",
+    "name": "Apple iPhone 15 Plus",
+    "category": "phones",
+    "dims": {
+      "height_mm": 160.9,
+      "width_mm": 77.8,
+      "depth_mm": 7.8,
+      "weight_g": 201
+    },
+    "notes": "Apple tech specs; body only, depth excludes rear camera bump. Size and weight vary by configuration. Camera bump thickness and corner radius not included: Apple's dimensional-drawing PDFs (developer.apple.com Accessory Design Guidelines) were fetched but their dimension text is not machine-readable.",
+    "source": "https://support.apple.com/en-us/111830",
+    "sources": [
+      "https://www.apple.com/iphone/compare/"
+    ],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "iphone_15_pro",
+    "name": "Apple iPhone 15 Pro",
+    "category": "phones",
+    "dims": {
+      "height_mm": 146.6,
+      "width_mm": 70.6,
+      "depth_mm": 8.25,
+      "weight_g": 187
+    },
+    "notes": "Apple tech specs; body only, depth excludes rear camera bump. Size and weight vary by configuration. Camera bump thickness and corner radius not included: Apple's dimensional-drawing PDFs (developer.apple.com Accessory Design Guidelines) were fetched but their dimension text is not machine-readable.",
+    "source": "https://support.apple.com/en-us/111829",
+    "sources": [
+      "https://www.apple.com/iphone/compare/"
+    ],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "iphone_15_pro_max",
+    "name": "Apple iPhone 15 Pro Max",
+    "category": "phones",
+    "dims": {
+      "height_mm": 159.9,
+      "width_mm": 76.7,
+      "depth_mm": 8.25,
+      "weight_g": 221
+    },
+    "notes": "Apple tech specs; body only, depth excludes rear camera bump. Size and weight vary by configuration. Camera bump thickness and corner radius not included: Apple's dimensional-drawing PDFs (developer.apple.com Accessory Design Guidelines) were fetched but their dimension text is not machine-readable.",
+    "source": "https://support.apple.com/en-us/111828",
+    "sources": [
+      "https://www.apple.com/iphone/compare/"
+    ],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "iphone_16",
+    "name": "Apple iPhone 16",
+    "category": "phones",
+    "dims": {
+      "height_mm": 147.6,
+      "width_mm": 71.6,
+      "depth_mm": 7.8,
+      "weight_g": 170
+    },
+    "notes": "Apple tech specs; body only, depth excludes rear camera bump. Size and weight vary by configuration. Camera bump thickness and corner radius not included: Apple's dimensional-drawing PDFs (developer.apple.com Accessory Design Guidelines) were fetched but their dimension text is not machine-readable.",
+    "source": "https://support.apple.com/en-us/121029",
+    "sources": [
+      "https://www.apple.com/iphone/compare/"
+    ],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "iphone_16_plus",
+    "name": "Apple iPhone 16 Plus",
+    "category": "phones",
+    "dims": {
+      "height_mm": 160.9,
+      "width_mm": 77.8,
+      "depth_mm": 7.8,
+      "weight_g": 199
+    },
+    "notes": "Apple tech specs; body only, depth excludes rear camera bump. Size and weight vary by configuration. Camera bump thickness and corner radius not included: Apple's dimensional-drawing PDFs (developer.apple.com Accessory Design Guidelines) were fetched but their dimension text is not machine-readable.",
+    "source": "https://support.apple.com/en-us/121030",
+    "sources": [
+      "https://www.apple.com/iphone/compare/"
+    ],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "iphone_16_pro",
+    "name": "Apple iPhone 16 Pro",
+    "category": "phones",
+    "dims": {
+      "height_mm": 149.6,
+      "width_mm": 71.5,
+      "depth_mm": 8.25,
+      "weight_g": 199
+    },
+    "notes": "Apple tech specs; body only, depth excludes rear camera bump. Size and weight vary by configuration. Camera bump thickness and corner radius not included: Apple's dimensional-drawing PDFs (developer.apple.com Accessory Design Guidelines) were fetched but their dimension text is not machine-readable.",
+    "source": "https://support.apple.com/en-us/121031",
+    "sources": [
+      "https://www.apple.com/iphone/compare/"
+    ],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "iphone_16_pro_max",
+    "name": "Apple iPhone 16 Pro Max",
+    "category": "phones",
+    "dims": {
+      "height_mm": 163.0,
+      "width_mm": 77.6,
+      "depth_mm": 8.25,
+      "weight_g": 227
+    },
+    "notes": "Apple tech specs; body only, depth excludes rear camera bump. Size and weight vary by configuration. Camera bump thickness and corner radius not included: Apple's dimensional-drawing PDFs (developer.apple.com Accessory Design Guidelines) were fetched but their dimension text is not machine-readable.",
+    "source": "https://support.apple.com/en-us/121032",
+    "sources": [
+      "https://www.apple.com/iphone/compare/"
+    ],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "iphone_17",
+    "name": "Apple iPhone 17",
+    "category": "phones",
+    "dims": {
+      "height_mm": 149.6,
+      "width_mm": 71.5,
+      "depth_mm": 7.95,
+      "weight_g": 177
+    },
+    "notes": "Apple tech specs; body only, depth excludes rear camera bump. Size and weight vary by configuration. Camera bump thickness and corner radius not included: Apple's dimensional-drawing PDFs (developer.apple.com Accessory Design Guidelines) were fetched but their dimension text is not machine-readable.",
+    "source": "https://www.apple.com/iphone-17/specs/",
+    "sources": [
+      "https://www.apple.com/iphone/compare/"
+    ],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "iphone_air",
+    "name": "Apple iPhone Air",
+    "category": "phones",
+    "dims": {
+      "height_mm": 156.2,
+      "width_mm": 74.7,
+      "depth_mm": 5.64,
+      "weight_g": 165
+    },
+    "notes": "Apple tech specs; body only, depth excludes rear camera bump. Size and weight vary by configuration. Camera bump thickness and corner radius not included: Apple's dimensional-drawing PDFs (developer.apple.com Accessory Design Guidelines) were fetched but their dimension text is not machine-readable.",
+    "source": "https://www.apple.com/iphone-air/specs/",
+    "sources": [
+      "https://www.apple.com/iphone/compare/"
+    ],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "iphone_17_pro",
+    "name": "Apple iPhone 17 Pro",
+    "category": "phones",
+    "dims": {
+      "height_mm": 150.0,
+      "width_mm": 71.9,
+      "depth_mm": 8.75,
+      "weight_g": 206
+    },
+    "notes": "US (eSIM-only) figures; some regional Apple pages list ~2 g less (e.g. NZ 204 g / 231 g). Apple tech specs; body only, depth excludes rear camera bump. Size and weight vary by configuration. Camera bump thickness and corner radius not included: Apple's dimensional-drawing PDFs (developer.apple.com Accessory Design Guidelines) were fetched but their dimension text is not machine-readable.",
+    "source": "https://support.apple.com/en-us/125090",
+    "sources": [
+      "https://www.apple.com/iphone/compare/"
+    ],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "iphone_17_pro_max",
+    "name": "Apple iPhone 17 Pro Max",
+    "category": "phones",
+    "dims": {
+      "height_mm": 163.4,
+      "width_mm": 78.0,
+      "depth_mm": 8.75,
+      "weight_g": 233
+    },
+    "notes": "US (eSIM-only) figures; some regional Apple pages list ~2 g less (e.g. NZ 204 g / 231 g). Apple tech specs; body only, depth excludes rear camera bump. Size and weight vary by configuration. Camera bump thickness and corner radius not included: Apple's dimensional-drawing PDFs (developer.apple.com Accessory Design Guidelines) were fetched but their dimension text is not machine-readable.",
+    "source": "https://support.apple.com/en-us/125091",
+    "sources": [
+      "https://www.apple.com/iphone/compare/"
+    ],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "pixel_9_pro",
+    "name": "Google Pixel 9 Pro",
+    "category": "phones",
+    "dims": {
+      "height_mm": 152.8,
+      "width_mm": 72.0,
+      "depth_mm": 8.5,
+      "weight_g": 199
+    },
+    "notes": "'Rest of world' figures. Google Pixel hardware tech specs; depth is body, the camera bar protrudes further (not published). Dimensions/weight vary by configuration.",
+    "source": "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "pixel_10",
+    "name": "Google Pixel 10",
+    "category": "phones",
+    "dims": {
+      "height_mm": 152.8,
+      "width_mm": 72.0,
+      "depth_mm": 8.6,
+      "weight_g": 204
+    },
+    "notes": "Google Pixel hardware tech specs; depth is body, the camera bar protrudes further (not published). Dimensions/weight vary by configuration.",
+    "source": "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "pixel_10_pro",
+    "name": "Google Pixel 10 Pro",
+    "category": "phones",
+    "dims": {
+      "height_mm": 152.8,
+      "width_mm": 72.0,
+      "depth_mm": 8.6,
+      "weight_g": 207
+    },
+    "notes": "Google Pixel hardware tech specs; depth is body, the camera bar protrudes further (not published). Dimensions/weight vary by configuration.",
+    "source": "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "pixel_10_pro_xl",
+    "name": "Google Pixel 10 Pro XL",
+    "category": "phones",
+    "dims": {
+      "height_mm": 162.8,
+      "width_mm": 76.6,
+      "depth_mm": 8.5,
+      "weight_g": 232
+    },
+    "notes": "Google Pixel hardware tech specs; depth is body, the camera bar protrudes further (not published). Dimensions/weight vary by configuration.",
+    "source": "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "pixel_11",
+    "name": "Google Pixel 11",
+    "category": "phones",
+    "dims": {
+      "height_mm": 152.8,
+      "width_mm": 72.0,
+      "depth_mm": 8.6,
+      "weight_g": 197
+    },
+    "notes": "Google Pixel hardware tech specs; depth is body, the camera bar protrudes further (not published). Dimensions/weight vary by configuration.",
+    "source": "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "pixel_11_pro",
+    "name": "Google Pixel 11 Pro",
+    "category": "phones",
+    "dims": {
+      "height_mm": 152.7,
+      "width_mm": 71.9,
+      "depth_mm": 8.4,
+      "weight_g": 204
+    },
+    "notes": "Google Pixel hardware tech specs; depth is body, the camera bar protrudes further (not published). Dimensions/weight vary by configuration.",
+    "source": "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "pixel_11_pro_xl",
+    "name": "Google Pixel 11 Pro XL",
+    "category": "phones",
+    "dims": {
+      "height_mm": 162.7,
+      "width_mm": 76.5,
+      "depth_mm": 8.5,
+      "weight_g": 226
+    },
+    "notes": "Google Pixel hardware tech specs; depth is body, the camera bar protrudes further (not published). Dimensions/weight vary by configuration.",
+    "source": "https://support.google.com/pixelphone/answer/7158570?hl=en",
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "galaxy_s24_ultra",
+    "name": "Samsung Galaxy S24 Ultra",
+    "category": "phones",
+    "dims": {
+      "height_mm": 162.3,
+      "width_mm": 79.0,
+      "depth_mm": 8.6,
+      "weight_g": 232
+    },
+    "notes": "Samsung official spec; depth excludes camera lens protrusion (not published).",
+    "source": "https://www.samsung.com/ph/smartphones/galaxy-s24-ultra/specs/",
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "galaxy_s25",
+    "name": "Samsung Galaxy S25",
+    "category": "phones",
+    "dims": {
+      "height_mm": 146.9,
+      "width_mm": 70.5,
+      "depth_mm": 7.2,
+      "weight_g": 162
+    },
+    "notes": "Samsung official spec; depth excludes camera lens protrusion (not published).",
+    "source": "https://www.samsung.com/my/smartphones/galaxy-s25/specs/",
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "galaxy_s25_ultra",
+    "name": "Samsung Galaxy S25 Ultra",
+    "category": "phones",
+    "dims": {
+      "height_mm": 162.8,
+      "width_mm": 77.6,
+      "depth_mm": 8.2,
+      "weight_g": 218
+    },
+    "notes": "Samsung official spec; depth excludes camera lens protrusion (not published).",
+    "source": "https://www.samsung.com/nz/smartphones/galaxy-s25-ultra/specs/",
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "galaxy_s26",
+    "name": "Samsung Galaxy S26",
+    "category": "phones",
+    "dims": {
+      "height_mm": 149.6,
+      "width_mm": 71.7,
+      "depth_mm": 7.2,
+      "weight_g": 167
+    },
+    "notes": "Samsung official spec; depth excludes camera lens protrusion (not published). Samsung UK lists the figures unlabelled as W x H x D (axes inferred).",
+    "source": "https://www.samsung.com/uk/support/mobile-devices/what-are-the-differences-between-the-galaxy-s26-ultra-s26-plus-and-s26/",
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "galaxy_s26_plus",
+    "name": "Samsung Galaxy S26+",
+    "category": "phones",
+    "dims": {
+      "height_mm": 158.4,
+      "width_mm": 75.8,
+      "depth_mm": 7.3,
+      "weight_g": 190
+    },
+    "notes": "Samsung official spec; depth excludes camera lens protrusion (not published). Samsung UK lists the figures unlabelled as W x H x D (axes inferred).",
+    "source": "https://www.samsung.com/uk/support/mobile-devices/what-are-the-differences-between-the-galaxy-s26-ultra-s26-plus-and-s26/",
+    "checked": "2026-10-30",
+    "confidence": "official"
+  },
+  {
+    "key": "galaxy_s26_ultra",
+    "name": "Samsung Galaxy S26 Ultra",
+    "category": "phones",
+    "dims": {
+      "height_mm": 163.6,
+      "width_mm": 78.1,
+      "depth_mm": 7.9,
+      "weight_g": 214
+    },
+    "notes": "Samsung official spec; depth excludes camera lens protrusion (not published). Samsung UK lists the figures unlabelled as W x H x D (axes inferred).",
+    "source": "https://www.samsung.com/uk/support/mobile-devices/what-are-the-differences-between-the-galaxy-s26-ultra-s26-plus-and-s26/",
+    "sources": [
+      "https://www.samsung.com/uk/smartphones/galaxy-s26-ultra/"
+    ],
+    "checked": "2026-10-30",
+    "confidence": "official"
+  }
+]

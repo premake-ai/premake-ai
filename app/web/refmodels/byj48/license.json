@@ -1,0 +1,12 @@
+{
+ "key": "byj48",
+ "title": "28BYJ-48 geared stepper",
+ "source_url": "",
+ "author": "Premake",
+ "license": "Premake-original",
+ "license_url": "",
+ "retrieved": "2026-10-30",
+ "modified": "parametric model built with CadQuery from cadlib.dims sizes, exported to GLB",
+ "attribution_text": "28BYJ-48 geared stepper reference model by Premake (original parametric model).",
+ "allowed_use": "display-only"
+}

@@ -1,0 +1,12 @@
+{
+ "key": "joycon_r",
+ "title": "Nintendo Joy-Con (R)",
+ "source_url": "",
+ "author": "Premake",
+ "license": "Premake-original",
+ "license_url": "",
+ "retrieved": "2026-10-30",
+ "modified": "parametric model built with CadQuery from cadlib.dims sizes, exported to GLB",
+ "attribution_text": "Nintendo Joy-Con (R) reference model by Premake (original parametric model).",
+ "allowed_use": "display-only"
+}

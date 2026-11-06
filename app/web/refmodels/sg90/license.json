@@ -1,0 +1,13 @@
+{
+ "key": "sg90",
+ "title": "SG90 micro servo",
+ "source_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD-library/master/Electrical%20Parts/Servos/SG-90/Servo-sg90.step",
+ "author": "Gafeju (FreeCAD-library)",
+ "license": "CC-BY-3.0",
+ "license_url": "https://creativecommons.org/licenses/by/3.0/",
+ "retrieved": "2026-10-30",
+ "modified": "converted STEP to GLB (tessellated, one material per colour), re-centred, rotated (0, 0, 90) deg, scaled to millimetres; geometry otherwise unchanged",
+ "attribution_text": "\"Servo-sg90.step\" by Gafeju (FreeCAD-library), CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/), from https://raw.githubusercontent.com/FreeCAD/FreeCAD-library/master/Electrical%20Parts/Servos/SG-90/Servo-sg90.step. Converted STEP to GLB (tessellated, one material per colour), re-centred, rotated (0, 0, 90) deg, scaled to millimetres; geometry otherwise unchanged.",
+ "allowed_use": "display-only",
+ "source_sha256": "9ad7b12887580bf68135e7bf544f0fc231ab9af988508184c097b1d1c3e7d734"
+}

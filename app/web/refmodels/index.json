@@ -1,0 +1,915 @@
+{
+ "v": 1,
+ "models": [
+  {
+   "key": "switch_oled",
+   "title": "Nintendo Switch OLED console",
+   "kind": "product",
+   "label": "Nintendo Switch OLED console (reference model, not included)",
+   "front": "-y",
+   "match": [
+    "\\bswitch\\b"
+   ],
+   "prefer": [
+    "\\boled\\b"
+   ],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    176.0,
+    14.04,
+    102.47
+   ],
+   "file": "refmodels/switch_oled/model.glb",
+   "bytes": 87676,
+   "swatch": "#2a2a2e",
+   "credit": "Model: Premake",
+   "license": "Premake-original",
+   "license_url": "",
+   "source_url": "",
+   "author": "Premake",
+   "attribution_text": "Nintendo Switch OLED console reference model by Premake (original parametric model)."
+  },
+  {
+   "key": "switch_v1",
+   "title": "Nintendo Switch console",
+   "kind": "product",
+   "label": "Nintendo Switch console (reference model, not included)",
+   "front": "-y",
+   "match": [
+    "\\bswitch\\b"
+   ],
+   "prefer": [
+    "\\b(original|v1|v2|hac)\\b"
+   ],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    173.0,
+    14.04,
+    102.47
+   ],
+   "file": "refmodels/switch_v1/model.glb",
+   "bytes": 87672,
+   "swatch": "#2a2a2e",
+   "credit": "Model: Premake",
+   "license": "Premake-original",
+   "license_url": "",
+   "source_url": "",
+   "author": "Premake",
+   "attribution_text": "Nintendo Switch console reference model by Premake (original parametric model)."
+  },
+  {
+   "key": "switch_oled_full",
+   "title": "Nintendo Switch OLED with Joy-Con",
+   "kind": "product",
+   "label": "Nintendo Switch OLED with Joy-Con (reference model, not included)",
+   "front": "-y",
+   "match": [
+    "\\bswitch\\b"
+   ],
+   "prefer": [
+    "with joy-?cons?|\\+ ?joy-?cons?|joy-?cons? attached"
+   ],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    242.0,
+    28.4,
+    102.47
+   ],
+   "file": "refmodels/switch_oled_full/model.glb",
+   "bytes": 332720,
+   "swatch": "#2a2a2e",
+   "credit": "Model: Premake",
+   "license": "Premake-original",
+   "license_url": "",
+   "source_url": "",
+   "author": "Premake",
+   "attribution_text": "Nintendo Switch OLED with Joy-Con reference model by Premake (original parametric model)."
+  },
+  {
+   "key": "joycon_l",
+   "title": "Nintendo Joy-Con (L)",
+   "kind": "product",
+   "label": "Nintendo Joy-Con (L) (reference model, not included)",
+   "front": "-y",
+   "match": [
+    "joy-?cons?"
+   ],
+   "prefer": [
+    "\\b(l|left)\\b|\\(l\\)"
+   ],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": "body",
+   "size": [
+    36.1,
+    28.4,
+    102.3
+   ],
+   "file": "refmodels/joycon_l/model.glb",
+   "bytes": 122636,
+   "swatch": "#0db9e6",
+   "credit": "Model: Premake",
+   "license": "Premake-original",
+   "license_url": "",
+   "source_url": "",
+   "author": "Premake",
+   "attribution_text": "Nintendo Joy-Con (L) reference model by Premake (original parametric model)."
+  },
+  {
+   "key": "joycon_r",
+   "title": "Nintendo Joy-Con (R)",
+   "kind": "product",
+   "label": "Nintendo Joy-Con (R) (reference model, not included)",
+   "front": "-y",
+   "match": [
+    "joy-?cons?"
+   ],
+   "prefer": [
+    "\\b(r|right)\\b|\\(r\\)"
+   ],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": "body",
+   "size": [
+    36.1,
+    28.4,
+    102.3
+   ],
+   "file": "refmodels/joycon_r/model.glb",
+   "bytes": 127408,
+   "swatch": "#ff3d26",
+   "credit": "Model: Premake",
+   "license": "Premake-original",
+   "license_url": "",
+   "source_url": "",
+   "author": "Premake",
+   "attribution_text": "Nintendo Joy-Con (R) reference model by Premake (original parametric model)."
+  },
+  {
+   "key": "iphone_15",
+   "title": "iPhone 15",
+   "kind": "product",
+   "label": "iPhone 15 (reference model, not included)",
+   "front": "-y",
+   "match": [
+    "\\biphone\\b|\\bphone\\b"
+   ],
+   "prefer": [
+    "iphone ?1[2-5]\\b"
+   ],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    72.3,
+    10.49,
+    147.62
+   ],
+   "file": "refmodels/iphone_15/model.glb",
+   "bytes": 168464,
+   "swatch": "#2e3235",
+   "credit": "Model: Premake",
+   "license": "Premake-original",
+   "license_url": "",
+   "source_url": "",
+   "author": "Premake",
+   "attribution_text": "iPhone 15 reference model by Premake (original parametric model)."
+  },
+  {
+   "key": "iphone_16",
+   "title": "iPhone 16",
+   "kind": "product",
+   "label": "iPhone 16 (reference model, not included)",
+   "front": "-y",
+   "match": [
+    "\\biphone\\b|\\bphone\\b"
+   ],
+   "prefer": [
+    "iphone ?1[6-9]\\b|\\biphone\\b"
+   ],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    72.3,
+    10.49,
+    147.62
+   ],
+   "file": "refmodels/iphone_16/model.glb",
+   "bytes": 168464,
+   "swatch": "#2a3b49",
+   "credit": "Model: Premake",
+   "license": "Premake-original",
+   "license_url": "",
+   "source_url": "",
+   "author": "Premake",
+   "attribution_text": "iPhone 16 reference model by Premake (original parametric model)."
+  },
+  {
+   "key": "android_phone",
+   "title": "Android phone (Galaxy S25 size)",
+   "kind": "product",
+   "label": "Android phone (Galaxy S25 size) (reference model, not included)",
+   "front": "-y",
+   "match": [
+    "\\bphone\\b|\\bandroid\\b|\\bgalaxy\\b|\\bpixel\\b|\\bsamsung\\b|\\boneplus\\b"
+   ],
+   "prefer": [
+    "\\bandroid\\b|\\bgalaxy\\b|\\bpixel\\b|\\bsamsung\\b|\\boneplus\\b"
+   ],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    71.2,
+    8.44,
+    146.92
+   ],
+   "file": "refmodels/android_phone/model.glb",
+   "bytes": 112824,
+   "swatch": "#2a2a32",
+   "credit": "Model: Premake",
+   "license": "Premake-original",
+   "license_url": "",
+   "source_url": "",
+   "author": "Premake",
+   "attribution_text": "Android phone (Galaxy S25 size) reference model by Premake (original parametric model)."
+  },
+  {
+   "key": "esp32_c3_supermini",
+   "title": "ESP32-C3 SuperMini",
+   "kind": "part",
+   "label": "ESP32-C3 SuperMini",
+   "front": "+z",
+   "match": [
+    "esp32[- ]?c3"
+   ],
+   "prefer": [
+    "super ?mini"
+   ],
+   "lib_keys": [
+    "esp32_c3_supermini"
+   ],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    23.5,
+    18.0,
+    4.3
+   ],
+   "file": "refmodels/esp32_c3_supermini/model.glb",
+   "bytes": 124792,
+   "swatch": "#16161c",
+   "credit": "Model: Premake",
+   "license": "Premake-original",
+   "license_url": "",
+   "source_url": "",
+   "author": "Premake",
+   "attribution_text": "ESP32-C3 SuperMini reference model by Premake (original parametric model)."
+  },
+  {
+   "key": "esp32_devkitc",
+   "title": "ESP32 DevKitC (WROOM-32)",
+   "kind": "part",
+   "label": "ESP32 DevKitC (WROOM-32)",
+   "front": "+z",
+   "match": [
+    "\\besp-?32(?![- ]?(c3|s3|s2|c6|cam))"
+   ],
+   "prefer": [
+    "devkit|wroom|38"
+   ],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    55.4,
+    27.94,
+    13.25
+   ],
+   "file": "refmodels/esp32_devkitc/model.glb",
+   "bytes": 92684,
+   "swatch": "#1c1c22",
+   "credit": "Model: Premake",
+   "license": "Premake-original",
+   "license_url": "",
+   "source_url": "",
+   "author": "Premake",
+   "attribution_text": "ESP32 DevKitC (WROOM-32) reference model by Premake (original parametric model)."
+  },
+  {
+   "key": "esp32_wroom32",
+   "title": "ESP32-WROOM-32 module",
+   "kind": "part",
+   "label": "ESP32-WROOM-32 module",
+   "front": "+z",
+   "match": [
+    "wroom-?32"
+   ],
+   "prefer": [
+    "module"
+   ],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    25.5,
+    18.0,
+    3.1
+   ],
+   "file": "refmodels/esp32_wroom32/model.glb",
+   "bytes": 203836,
+   "swatch": "#161c4d",
+   "credit": "Model: KiCad Library contributors, CC BY-SA 4.0 (KiCad library)",
+   "license": "CC-BY-SA-4.0 WITH KiCad-libraries-exception",
+   "license_url": "https://www.kicad.org/libraries/license/",
+   "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/RF_Module.3dshapes/ESP32-WROOM-32.step",
+   "author": "KiCad Library contributors",
+   "attribution_text": "\"ESP32-WROOM-32.step\" by KiCad Library contributors, CC BY-SA 4.0 (KiCad library) (https://www.kicad.org/libraries/license/), from https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/RF_Module.3dshapes/ESP32-WROOM-32.step. Converted STEP to GLB (tessellated, one material per colour), re-centred, rotated (0, 0, 90) deg, scaled to millimetres; geometry otherwise unchanged."
+  },
+  {
+   "key": "arduino_nano",
+   "title": "Arduino Nano",
+   "kind": "part",
+   "label": "Arduino Nano",
+   "front": "+z",
+   "match": [
+    "arduino nano|\\bnano\\b"
+   ],
+   "prefer": [],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    44.7,
+    18.0,
+    18.6
+   ],
+   "file": "refmodels/arduino_nano/model.glb",
+   "bytes": 57120,
+   "swatch": "#16427a",
+   "credit": "Model: Premake",
+   "license": "Premake-original",
+   "license_url": "",
+   "source_url": "",
+   "author": "Premake",
+   "attribution_text": "Arduino Nano reference model by Premake (original parametric model)."
+  },
+  {
+   "key": "rpi_pico",
+   "title": "Raspberry Pi Pico",
+   "kind": "part",
+   "label": "Raspberry Pi Pico",
+   "front": "+z",
+   "match": [
+    "\\bpico\\b|rp2040"
+   ],
+   "prefer": [],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    52.44,
+    21.0,
+    12.1
+   ],
+   "file": "refmodels/rpi_pico/model.glb",
+   "bytes": 143992,
+   "swatch": "#1c6a3d",
+   "credit": "Model: Premake",
+   "license": "Premake-original",
+   "license_url": "",
+   "source_url": "",
+   "author": "Premake",
+   "attribution_text": "Raspberry Pi Pico reference model by Premake (original parametric model)."
+  },
+  {
+   "key": "rpi_4",
+   "title": "Raspberry Pi 4 Model B",
+   "kind": "part",
+   "label": "Raspberry Pi 4 Model B",
+   "front": "+z",
+   "match": [
+    "raspberry ?pi ?[345]|\\brpi ?[345]\\b|\\bpi ?[45]\\b"
+   ],
+   "prefer": [],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    87.2,
+    56.55,
+    17.4
+   ],
+   "file": "refmodels/rpi_4/model.glb",
+   "bytes": 56364,
+   "swatch": "#1c6a3d",
+   "credit": "Model: Premake",
+   "license": "Premake-original",
+   "license_url": "",
+   "source_url": "",
+   "author": "Premake",
+   "attribution_text": "Raspberry Pi 4 Model B reference model by Premake (original parametric model)."
+  },
+  {
+   "key": "ws2812b_strip",
+   "title": "WS2812B LED strip (60/m)",
+   "kind": "part",
+   "label": "WS2812B LED strip (60/m)",
+   "front": "+z",
+   "match": [
+    "ws2812|sk6812|neopixel|led strip|addressable"
+   ],
+   "prefer": [],
+   "lib_keys": [
+    "ws2812_strip"
+   ],
+   "fit": "tile",
+   "pitch": 16.666666666666668,
+   "tint": null,
+   "size": [
+    16.67,
+    10.0,
+    2.01
+   ],
+   "file": "refmodels/ws2812b_strip/model.glb",
+   "bytes": 28792,
+   "swatch": "#ebe8de",
+   "credit": "Model: Premake",
+   "license": "Premake-original",
+   "license_url": "",
+   "source_url": "",
+   "author": "Premake",
+   "attribution_text": "WS2812B LED strip (60/m) reference model by Premake (original parametric model)."
+  },
+  {
+   "key": "ws2812b_5050",
+   "title": "WS2812B LED (5050)",
+   "kind": "part",
+   "label": "WS2812B LED (5050)",
+   "front": "+z",
+   "match": [
+    "ws2812b?(?!.*strip)|\\b5050\\b|neopixel(?!.*strip)"
+   ],
+   "prefer": [],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    5.4,
+    5.0,
+    1.6
+   ],
+   "file": "refmodels/ws2812b_5050/model.glb",
+   "bytes": 34696,
+   "swatch": "#e4e3cf",
+   "credit": "Model: KiCad Library contributors, CC BY-SA 4.0 (KiCad library)",
+   "license": "CC-BY-SA-4.0 WITH KiCad-libraries-exception",
+   "license_url": "https://www.kicad.org/libraries/license/",
+   "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/LED_SMD.3dshapes/LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm.step",
+   "author": "KiCad Library contributors",
+   "attribution_text": "\"LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm.step\" by KiCad Library contributors, CC BY-SA 4.0 (KiCad library) (https://www.kicad.org/libraries/license/), from https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/LED_SMD.3dshapes/LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm.step. Converted STEP to GLB (tessellated, one material per colour), re-centred, scaled to millimetres; geometry otherwise unchanged."
+  },
+  {
+   "key": "led_5mm",
+   "title": "5 mm LED",
+   "kind": "part",
+   "label": "5 mm LED",
+   "front": "+z",
+   "match": [
+    "\\bled\\b(?!.*strip)"
+   ],
+   "prefer": [
+    "5 ?mm"
+   ],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    5.39,
+    5.8,
+    14.1
+   ],
+   "file": "refmodels/led_5mm/model.glb",
+   "bytes": 18164,
+   "swatch": "#b2160d",
+   "credit": "Model: KiCad Library contributors, CC BY-SA 4.0 (KiCad library)",
+   "license": "CC-BY-SA-4.0 WITH KiCad-libraries-exception",
+   "license_url": "https://www.kicad.org/libraries/license/",
+   "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/LED_THT.3dshapes/LED_D5.0mm.step",
+   "author": "KiCad Library contributors",
+   "attribution_text": "\"LED_D5.0mm.step\" by KiCad Library contributors, CC BY-SA 4.0 (KiCad library) (https://www.kicad.org/libraries/license/), from https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/LED_THT.3dshapes/LED_D5.0mm.step. Converted STEP to GLB (tessellated, one material per colour), re-centred, scaled to millimetres; geometry otherwise unchanged."
+  },
+  {
+   "key": "lcd1602",
+   "title": "LCD 16x2 character display (1602)",
+   "kind": "part",
+   "label": "LCD 16x2 character display (1602)",
+   "front": "+z",
+   "match": [
+    "1602|16 ?x ?2|lcd"
+   ],
+   "prefer": [
+    "1602|16 ?x ?2"
+   ],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    80.0,
+    36.0,
+    15.0
+   ],
+   "file": "refmodels/lcd1602/model.glb",
+   "bytes": 195872,
+   "swatch": "#56ad71",
+   "credit": "Model: KiCad Library contributors, CC BY-SA 4.0 (KiCad library)",
+   "license": "CC-BY-SA-4.0 WITH KiCad-libraries-exception",
+   "license_url": "https://www.kicad.org/libraries/license/",
+   "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Display.3dshapes/WC1602A.step",
+   "author": "KiCad Library contributors",
+   "attribution_text": "\"WC1602A.step\" by KiCad Library contributors, CC BY-SA 4.0 (KiCad library) (https://www.kicad.org/libraries/license/), from https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Display.3dshapes/WC1602A.step. Converted STEP to GLB (tessellated, one material per colour), re-centred, scaled to millimetres; geometry otherwise unchanged."
+  },
+  {
+   "key": "oled_096",
+   "title": "0.96 inch OLED display (SSD1306)",
+   "kind": "part",
+   "label": "0.96 inch OLED display (SSD1306)",
+   "front": "+z",
+   "match": [
+    "0\\.96|ssd1306|oled (display|module)|i2c oled"
+   ],
+   "prefer": [],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    27.3,
+    27.9,
+    11.27
+   ],
+   "file": "refmodels/oled_096/model.glb",
+   "bytes": 28432,
+   "swatch": "#1c3b6a",
+   "credit": "Model: Premake",
+   "license": "Premake-original",
+   "license_url": "",
+   "source_url": "",
+   "author": "Premake",
+   "attribution_text": "0.96 inch OLED display (SSD1306) reference model by Premake (original parametric model)."
+  },
+  {
+   "key": "usbc_breakout",
+   "title": "USB-C breakout board",
+   "kind": "part",
+   "label": "USB-C breakout board",
+   "front": "+z",
+   "match": [
+    "usb[- ]?c"
+   ],
+   "prefer": [
+    "breakout|board|module|pcb"
+   ],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    15.0,
+    12.0,
+    4.3
+   ],
+   "file": "refmodels/usbc_breakout/model.glb",
+   "bytes": 29424,
+   "swatch": "#1c1c22",
+   "credit": "Model: Premake",
+   "license": "Premake-original",
+   "license_url": "",
+   "source_url": "",
+   "author": "Premake",
+   "attribution_text": "USB-C breakout board reference model by Premake (original parametric model)."
+  },
+  {
+   "key": "usbc_receptacle",
+   "title": "USB-C receptacle",
+   "kind": "part",
+   "label": "USB-C receptacle",
+   "front": "+z",
+   "match": [
+    "usb[- ]?c"
+   ],
+   "prefer": [
+    "receptacle|socket|port|jack|connector"
+   ],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    8.94,
+    7.78,
+    4.26
+   ],
+   "file": "refmodels/usbc_receptacle/model.glb",
+   "bytes": 193440,
+   "swatch": "#cccccc",
+   "credit": "Model: KiCad Library contributors, CC BY-SA 4.0 (KiCad library)",
+   "license": "CC-BY-SA-4.0 WITH KiCad-libraries-exception",
+   "license_url": "https://www.kicad.org/libraries/license/",
+   "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+   "author": "KiCad Library contributors",
+   "attribution_text": "\"USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step\" by KiCad Library contributors, CC BY-SA 4.0 (KiCad library) (https://www.kicad.org/libraries/license/), from https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step. Converted STEP to GLB (tessellated, one material per colour), re-centred, scaled to millimetres; geometry otherwise unchanged."
+  },
+  {
+   "key": "tact_6x6",
+   "title": "6 x 6 mm tactile button",
+   "kind": "part",
+   "label": "6 x 6 mm tactile button",
+   "front": "+z",
+   "match": [
+    "tact|push ?button|tactile|\\bbutton\\b"
+   ],
+   "prefer": [],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    7.17,
+    6.0,
+    7.8
+   ],
+   "file": "refmodels/tact_6x6/model.glb",
+   "bytes": 64564,
+   "swatch": "#262626",
+   "credit": "Model: KiCad Library contributors, CC BY-SA 4.0 (KiCad library)",
+   "license": "CC-BY-SA-4.0 WITH KiCad-libraries-exception",
+   "license_url": "https://www.kicad.org/libraries/license/",
+   "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Button_Switch_THT.3dshapes/SW_PUSH_6mm.step",
+   "author": "KiCad Library contributors",
+   "attribution_text": "\"SW_PUSH_6mm.step\" by KiCad Library contributors, CC BY-SA 4.0 (KiCad library) (https://www.kicad.org/libraries/license/), from https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/Button_Switch_THT.3dshapes/SW_PUSH_6mm.step. Converted STEP to GLB (tessellated, one material per colour), re-centred, scaled to millimetres; geometry otherwise unchanged."
+  },
+  {
+   "key": "nema17",
+   "title": "NEMA 17 stepper motor",
+   "kind": "part",
+   "label": "NEMA 17 stepper motor",
+   "front": "+z",
+   "match": [
+    "nema ?17|17hs|stepper"
+   ],
+   "prefer": [
+    "nema ?17"
+   ],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    42.3,
+    47.7,
+    72.6
+   ],
+   "file": "refmodels/nema17/model.glb",
+   "bytes": 50620,
+   "swatch": "#c7ccd2",
+   "credit": "Model: Premake",
+   "license": "Premake-original",
+   "license_url": "",
+   "source_url": "",
+   "author": "Premake",
+   "attribution_text": "NEMA 17 stepper motor reference model by Premake (original parametric model)."
+  },
+  {
+   "key": "byj48",
+   "title": "28BYJ-48 geared stepper",
+   "kind": "part",
+   "label": "28BYJ-48 geared stepper",
+   "front": "+z",
+   "match": [
+    "28byj|byj-?48|stepper"
+   ],
+   "prefer": [
+    "28byj|byj"
+   ],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    41.98,
+    48.96,
+    30.5
+   ],
+   "file": "refmodels/byj48/model.glb",
+   "bytes": 45524,
+   "swatch": "#c3c7cc",
+   "credit": "Model: Premake",
+   "license": "Premake-original",
+   "license_url": "",
+   "source_url": "",
+   "author": "Premake",
+   "attribution_text": "28BYJ-48 geared stepper reference model by Premake (original parametric model)."
+  },
+  {
+   "key": "sg90",
+   "title": "SG90 micro servo",
+   "kind": "part",
+   "label": "SG90 micro servo",
+   "front": "+z",
+   "match": [
+    "\\bsg-?90\\b|micro servo|\\bmg90|\\bservo\\b"
+   ],
+   "prefer": [],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    32.4,
+    11.8,
+    29.9
+   ],
+   "file": "refmodels/sg90/model.glb",
+   "bytes": 97496,
+   "swatch": "#0055ff",
+   "credit": "Model: Gafeju (FreeCAD-library), CC BY 3.0",
+   "license": "CC-BY-3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0/",
+   "source_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD-library/master/Electrical%20Parts/Servos/SG-90/Servo-sg90.step",
+   "author": "Gafeju (FreeCAD-library)",
+   "attribution_text": "\"Servo-sg90.step\" by Gafeju (FreeCAD-library), CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/), from https://raw.githubusercontent.com/FreeCAD/FreeCAD-library/master/Electrical%20Parts/Servos/SG-90/Servo-sg90.step. Converted STEP to GLB (tessellated, one material per colour), re-centred, rotated (0, 0, 90) deg, scaled to millimetres; geometry otherwise unchanged."
+  },
+  {
+   "key": "fan_120",
+   "title": "120 mm case fan",
+   "kind": "part",
+   "label": "120 mm case fan",
+   "front": "+z",
+   "match": [
+    "\\bfan\\b"
+   ],
+   "prefer": [],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    120.0,
+    133.0,
+    25.0
+   ],
+   "file": "refmodels/fan_120/model.glb",
+   "bytes": 47104,
+   "swatch": "#1c1c22",
+   "credit": "Model: Premake",
+   "license": "Premake-original",
+   "license_url": "",
+   "source_url": "",
+   "author": "Premake",
+   "attribution_text": "120 mm case fan reference model by Premake (original parametric model)."
+  },
+  {
+   "key": "fan_80",
+   "title": "80 mm case fan",
+   "kind": "part",
+   "label": "80 mm case fan",
+   "front": "+z",
+   "match": [
+    "\\bfan\\b"
+   ],
+   "prefer": [],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    80.0,
+    93.0,
+    25.0
+   ],
+   "file": "refmodels/fan_80/model.glb",
+   "bytes": 46240,
+   "swatch": "#1c1c22",
+   "credit": "Model: Premake",
+   "license": "Premake-original",
+   "license_url": "",
+   "source_url": "",
+   "author": "Premake",
+   "attribution_text": "80 mm case fan reference model by Premake (original parametric model)."
+  },
+  {
+   "key": "fan_40",
+   "title": "40 mm fan",
+   "kind": "part",
+   "label": "40 mm fan",
+   "front": "+z",
+   "match": [
+    "\\bfan\\b"
+   ],
+   "prefer": [],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    40.0,
+    40.0,
+    10.0
+   ],
+   "file": "refmodels/fan_40/model.glb",
+   "bytes": 58720,
+   "swatch": "#cccccc",
+   "credit": "Model: Obijuan (FreeCAD-library), CC BY 3.0",
+   "license": "CC-BY-3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0/",
+   "source_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD-library/master/Electrical%20Parts/fans/fan-40x40mm.step",
+   "author": "Obijuan (FreeCAD-library)",
+   "attribution_text": "\"fan-40x40mm.step\" by Obijuan (FreeCAD-library), CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/), from https://raw.githubusercontent.com/FreeCAD/FreeCAD-library/master/Electrical%20Parts/fans/fan-40x40mm.step. Converted STEP to GLB (tessellated, one material per colour), re-centred, scaled to millimetres; geometry otherwise unchanged."
+  },
+  {
+   "key": "bearing_608",
+   "title": "608 ball bearing",
+   "kind": "part",
+   "label": "608 ball bearing",
+   "front": "+z",
+   "match": [
+    "\\b608|skate bearing|\\bbearing\\b"
+   ],
+   "prefer": [
+    "\\b608"
+   ],
+   "lib_keys": [],
+   "fit": "fixed",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    22.0,
+    21.94,
+    7.0
+   ],
+   "file": "refmodels/bearing_608/model.glb",
+   "bytes": 30000,
+   "swatch": "#cccccc",
+   "credit": "Model: Normand C (FreeCAD-library), CC BY 3.0",
+   "license": "CC-BY-3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0/",
+   "source_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD-library/master/Mechanical%20Parts/Bearings/608ZZ_Ball_Bearing.step",
+   "author": "Normand C (FreeCAD-library)",
+   "attribution_text": "\"608ZZ_Ball_Bearing.step\" by Normand C (FreeCAD-library), CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/), from https://raw.githubusercontent.com/FreeCAD/FreeCAD-library/master/Mechanical%20Parts/Bearings/608ZZ_Ball_Bearing.step. Converted STEP to GLB (tessellated, one material per colour), re-centred, scaled to millimetres; geometry otherwise unchanged."
+  },
+  {
+   "key": "extrusion_2020",
+   "title": "2020 aluminium extrusion (V-slot)",
+   "kind": "part",
+   "label": "2020 aluminium extrusion (V-slot)",
+   "front": "+z",
+   "match": [
+    "\\b2020\\b.*(extrusion|profile|v-?slot)|v-?slot"
+   ],
+   "prefer": [],
+   "lib_keys": [],
+   "fit": "stretch",
+   "pitch": null,
+   "tint": null,
+   "size": [
+    50.0,
+    20.0,
+    20.0
+   ],
+   "file": "refmodels/extrusion_2020/model.glb",
+   "bytes": 15972,
+   "swatch": "#cccccc",
+   "credit": "Model: hasecilu (FreeCAD-library), CC BY 3.0",
+   "license": "CC-BY-3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0/",
+   "source_url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD-library/master/Mechanical%20Parts/Mountings/2020_V-slot_Al_extrusion/2020x50_V_slot_profile-Part.step",
+   "author": "hasecilu (FreeCAD-library)",
+   "attribution_text": "\"2020x50_V_slot_profile-Part.step\" by hasecilu (FreeCAD-library), CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/), from https://raw.githubusercontent.com/FreeCAD/FreeCAD-library/master/Mechanical%20Parts/Mountings/2020_V-slot_Al_extrusion/2020x50_V_slot_profile-Part.step. Converted STEP to GLB (tessellated, one material per colour), re-centred, rotated (0, 0, 90) deg, scaled to millimetres; geometry otherwise unchanged."
+  }
+ ]
+}

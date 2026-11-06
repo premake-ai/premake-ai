@@ -1,0 +1,76 @@
+# Open-source app: all runtime data (your designs, orders, caches) lives in data/ and never goes in git
+/data/
+.env*
+.claude/
+
+# Local environment
+.venv
+__pycache__/
+*.pyc
+.DS_Store
+
+# Runtime data (per-machine: user projects, orders, deployed sites, logs)
+data/projects/
+data/deploys/
+data/orders.json
+server/server.log
+*.tmp
+
+# Per-example generated state that shouldn't travel
+data/examples/*/site/waitlist.json
+data/examples/*/build_log.txt
+
+# Online mode (start-online.sh)
+.env.local
+.online-url
+server/tunnel.log
+server/online.log
+
+# Per-user ownership and agent scratch (server-managed)
+data/owners.json
+data/.copywriter/
+
+# Build guides generated for examples (server/guide.js)
+data/guides/
+
+# Admin panel: first/last seen per email (server/admin.js)
+data/users.json
+
+# Supplier quote cache for examples (server/sourcing.js)
+data/.sourcing/
+
+# Parts library cache (cadlib/parts/build_cache.py; the server prebuilds it at startup)
+cadlib/parts/cache/
+
+# Fulfilment plans per paid order (server/fulfilment)
+data/fulfilment/
+
+# Companion-app devices: device records, readings, photos, push subscriptions (server/devices.js, server/push.js)
+data/devices/
+data/push/
+data/.photoai/
+
+# social: real comments and likes (server/social.js). Seed data in data/seed/ IS tracked.
+data/social/
+
+# Owner designs published as examples (server/showcase.js, rebuilt from data/projects)
+data/showcase/
+data/showcase.json
+server/.restart-pending
+
+# rmfg: RMFG OAuth tokens (server/prices/rmfg.js), never commit
+data/.rmfg*
+data/.fabworks*
+data/.mpn*
+data/.afn*
+
+# runtime data (never commit or deploy)
+data/firmware/
+data/.fusion/
+data/prefs.json
+data/public.json
+data/shares.json
+.claude/worktrees/
+
+# Sourcing API uploads and quotes (server/apiv1.js): private, deleted after 30 days
+data/.apiv1/

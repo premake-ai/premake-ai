@@ -1,0 +1,32 @@
+{
+ "fitted_at": "2026-10-29",
+ "supplier": "SendCutSend",
+ "quotes": 0,
+ "published_examples": 24,
+ "part_min_usd": 1.5,
+ "order_min_usd": 39,
+ "lead_days": {
+  "cut": 8,
+  "bent": 10
+ },
+ "coeffs": {
+  "base": 1.972,
+  "rate": {
+   "aluminium": 0.02846,
+   "steel": 0.01566,
+   "stainless": 0.015,
+   "acrylic": 0.003862,
+   "wood": 0,
+   "copper": 0.03
+  },
+  "cut": 0,
+  "bend_setup": 14.01,
+  "bend_each": 2.921
+ },
+ "discount": {
+  "1": 1,
+  "10": 0.51,
+  "100": 0.375,
+  "1000": 0.272
+ }
+}

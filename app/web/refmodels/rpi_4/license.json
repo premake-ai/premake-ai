@@ -1,0 +1,12 @@
+{
+ "key": "rpi_4",
+ "title": "Raspberry Pi 4 Model B",
+ "source_url": "",
+ "author": "Premake",
+ "license": "Premake-original",
+ "license_url": "",
+ "retrieved": "2026-10-30",
+ "modified": "parametric model built with CadQuery from cadlib.dims sizes, exported to GLB",
+ "attribution_text": "Raspberry Pi 4 Model B reference model by Premake (original parametric model).",
+ "allowed_use": "display-only"
+}

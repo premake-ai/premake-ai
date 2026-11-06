@@ -1,0 +1,452 @@
+[
+ {
+  "key": "switch_oled",
+  "title": "Nintendo Switch OLED console",
+  "kind": "product",
+  "label": "Nintendo Switch OLED console (reference model, not included)",
+  "size": [
+   176.0,
+   14.04,
+   102.47
+  ],
+  "front": "-y",
+  "swatch": "#2a2a2e",
+  "credit": "Model: Premake",
+  "license": "Premake-original"
+ },
+ {
+  "key": "switch_v1",
+  "title": "Nintendo Switch console",
+  "kind": "product",
+  "label": "Nintendo Switch console (reference model, not included)",
+  "size": [
+   173.0,
+   14.04,
+   102.47
+  ],
+  "front": "-y",
+  "swatch": "#2a2a2e",
+  "credit": "Model: Premake",
+  "license": "Premake-original"
+ },
+ {
+  "key": "switch_oled_full",
+  "title": "Nintendo Switch OLED with Joy-Con",
+  "kind": "product",
+  "label": "Nintendo Switch OLED with Joy-Con (reference model, not included)",
+  "size": [
+   242.0,
+   28.4,
+   102.47
+  ],
+  "front": "-y",
+  "swatch": "#2a2a2e",
+  "credit": "Model: Premake",
+  "license": "Premake-original"
+ },
+ {
+  "key": "joycon_l",
+  "title": "Nintendo Joy-Con (L)",
+  "kind": "product",
+  "label": "Nintendo Joy-Con (L) (reference model, not included)",
+  "size": [
+   36.1,
+   28.4,
+   102.3
+  ],
+  "front": "-y",
+  "swatch": "#0db9e6",
+  "credit": "Model: Premake",
+  "license": "Premake-original"
+ },
+ {
+  "key": "joycon_r",
+  "title": "Nintendo Joy-Con (R)",
+  "kind": "product",
+  "label": "Nintendo Joy-Con (R) (reference model, not included)",
+  "size": [
+   36.1,
+   28.4,
+   102.3
+  ],
+  "front": "-y",
+  "swatch": "#ff3d26",
+  "credit": "Model: Premake",
+  "license": "Premake-original"
+ },
+ {
+  "key": "iphone_15",
+  "title": "iPhone 15",
+  "kind": "product",
+  "label": "iPhone 15 (reference model, not included)",
+  "size": [
+   72.3,
+   10.49,
+   147.62
+  ],
+  "front": "-y",
+  "swatch": "#2e3235",
+  "credit": "Model: Premake",
+  "license": "Premake-original"
+ },
+ {
+  "key": "iphone_16",
+  "title": "iPhone 16",
+  "kind": "product",
+  "label": "iPhone 16 (reference model, not included)",
+  "size": [
+   72.3,
+   10.49,
+   147.62
+  ],
+  "front": "-y",
+  "swatch": "#2a3b49",
+  "credit": "Model: Premake",
+  "license": "Premake-original"
+ },
+ {
+  "key": "android_phone",
+  "title": "Android phone (Galaxy S25 size)",
+  "kind": "product",
+  "label": "Android phone (Galaxy S25 size) (reference model, not included)",
+  "size": [
+   71.2,
+   8.44,
+   146.92
+  ],
+  "front": "-y",
+  "swatch": "#2a2a32",
+  "credit": "Model: Premake",
+  "license": "Premake-original"
+ },
+ {
+  "key": "esp32_c3_supermini",
+  "title": "ESP32-C3 SuperMini",
+  "kind": "part",
+  "label": "ESP32-C3 SuperMini",
+  "size": [
+   23.5,
+   18.0,
+   4.3
+  ],
+  "front": "+z",
+  "swatch": "#16161c",
+  "credit": "Model: Premake",
+  "license": "Premake-original"
+ },
+ {
+  "key": "esp32_devkitc",
+  "title": "ESP32 DevKitC (WROOM-32)",
+  "kind": "part",
+  "label": "ESP32 DevKitC (WROOM-32)",
+  "size": [
+   55.4,
+   27.94,
+   13.25
+  ],
+  "front": "+z",
+  "swatch": "#1c1c22",
+  "credit": "Model: Premake",
+  "license": "Premake-original"
+ },
+ {
+  "key": "esp32_wroom32",
+  "title": "ESP32-WROOM-32 module",
+  "kind": "part",
+  "label": "ESP32-WROOM-32 module",
+  "size": [
+   25.5,
+   18.0,
+   3.1
+  ],
+  "front": "+z",
+  "swatch": "#161c4d",
+  "credit": "Model: KiCad Library contributors, CC BY-SA 4.0 (KiCad library)",
+  "license": "CC-BY-SA-4.0 WITH KiCad-libraries-exception"
+ },
+ {
+  "key": "arduino_nano",
+  "title": "Arduino Nano",
+  "kind": "part",
+  "label": "Arduino Nano",
+  "size": [
+   44.7,
+   18.0,
+   18.6
+  ],
+  "front": "+z",
+  "swatch": "#16427a",
+  "credit": "Model: Premake",
+  "license": "Premake-original"
+ },
+ {
+  "key": "rpi_pico",
+  "title": "Raspberry Pi Pico",
+  "kind": "part",
+  "label": "Raspberry Pi Pico",
+  "size": [
+   52.44,
+   21.0,
+   12.1
+  ],
+  "front": "+z",
+  "swatch": "#1c6a3d",
+  "credit": "Model: Premake",
+  "license": "Premake-original"
+ },
+ {
+  "key": "rpi_4",
+  "title": "Raspberry Pi 4 Model B",
+  "kind": "part",
+  "label": "Raspberry Pi 4 Model B",
+  "size": [
+   87.2,
+   56.55,
+   17.4
+  ],
+  "front": "+z",
+  "swatch": "#1c6a3d",
+  "credit": "Model: Premake",
+  "license": "Premake-original"
+ },
+ {
+  "key": "ws2812b_strip",
+  "title": "WS2812B LED strip (60/m)",
+  "kind": "part",
+  "label": "WS2812B LED strip (60/m)",
+  "size": [
+   16.67,
+   10.0,
+   2.01
+  ],
+  "front": "+z",
+  "swatch": "#ebe8de",
+  "credit": "Model: Premake",
+  "license": "Premake-original"
+ },
+ {
+  "key": "ws2812b_5050",
+  "title": "WS2812B LED (5050)",
+  "kind": "part",
+  "label": "WS2812B LED (5050)",
+  "size": [
+   5.4,
+   5.0,
+   1.6
+  ],
+  "front": "+z",
+  "swatch": "#e4e3cf",
+  "credit": "Model: KiCad Library contributors, CC BY-SA 4.0 (KiCad library)",
+  "license": "CC-BY-SA-4.0 WITH KiCad-libraries-exception"
+ },
+ {
+  "key": "led_5mm",
+  "title": "5 mm LED",
+  "kind": "part",
+  "label": "5 mm LED",
+  "size": [
+   5.39,
+   5.8,
+   14.1
+  ],
+  "front": "+z",
+  "swatch": "#b2160d",
+  "credit": "Model: KiCad Library contributors, CC BY-SA 4.0 (KiCad library)",
+  "license": "CC-BY-SA-4.0 WITH KiCad-libraries-exception"
+ },
+ {
+  "key": "lcd1602",
+  "title": "LCD 16x2 character display (1602)",
+  "kind": "part",
+  "label": "LCD 16x2 character display (1602)",
+  "size": [
+   80.0,
+   36.0,
+   15.0
+  ],
+  "front": "+z",
+  "swatch": "#56ad71",
+  "credit": "Model: KiCad Library contributors, CC BY-SA 4.0 (KiCad library)",
+  "license": "CC-BY-SA-4.0 WITH KiCad-libraries-exception"
+ },
+ {
+  "key": "oled_096",
+  "title": "0.96 inch OLED display (SSD1306)",
+  "kind": "part",
+  "label": "0.96 inch OLED display (SSD1306)",
+  "size": [
+   27.3,
+   27.9,
+   11.27
+  ],
+  "front": "+z",
+  "swatch": "#1c3b6a",
+  "credit": "Model: Premake",
+  "license": "Premake-original"
+ },
+ {
+  "key": "usbc_breakout",
+  "title": "USB-C breakout board",
+  "kind": "part",
+  "label": "USB-C breakout board",
+  "size": [
+   15.0,
+   12.0,
+   4.3
+  ],
+  "front": "+z",
+  "swatch": "#1c1c22",
+  "credit": "Model: Premake",
+  "license": "Premake-original"
+ },
+ {
+  "key": "usbc_receptacle",
+  "title": "USB-C receptacle",
+  "kind": "part",
+  "label": "USB-C receptacle",
+  "size": [
+   8.94,
+   7.78,
+   4.26
+  ],
+  "front": "+z",
+  "swatch": "#cccccc",
+  "credit": "Model: KiCad Library contributors, CC BY-SA 4.0 (KiCad library)",
+  "license": "CC-BY-SA-4.0 WITH KiCad-libraries-exception"
+ },
+ {
+  "key": "tact_6x6",
+  "title": "6 x 6 mm tactile button",
+  "kind": "part",
+  "label": "6 x 6 mm tactile button",
+  "size": [
+   7.17,
+   6.0,
+   7.8
+  ],
+  "front": "+z",
+  "swatch": "#262626",
+  "credit": "Model: KiCad Library contributors, CC BY-SA 4.0 (KiCad library)",
+  "license": "CC-BY-SA-4.0 WITH KiCad-libraries-exception"
+ },
+ {
+  "key": "nema17",
+  "title": "NEMA 17 stepper motor",
+  "kind": "part",
+  "label": "NEMA 17 stepper motor",
+  "size": [
+   42.3,
+   47.7,
+   72.6
+  ],
+  "front": "+z",
+  "swatch": "#c7ccd2",
+  "credit": "Model: Premake",
+  "license": "Premake-original"
+ },
+ {
+  "key": "byj48",
+  "title": "28BYJ-48 geared stepper",
+  "kind": "part",
+  "label": "28BYJ-48 geared stepper",
+  "size": [
+   41.98,
+   48.96,
+   30.5
+  ],
+  "front": "+z",
+  "swatch": "#c3c7cc",
+  "credit": "Model: Premake",
+  "license": "Premake-original"
+ },
+ {
+  "key": "sg90",
+  "title": "SG90 micro servo",
+  "kind": "part",
+  "label": "SG90 micro servo",
+  "size": [
+   32.4,
+   11.8,
+   29.9
+  ],
+  "front": "+z",
+  "swatch": "#0055ff",
+  "credit": "Model: Gafeju (FreeCAD-library), CC BY 3.0",
+  "license": "CC-BY-3.0"
+ },
+ {
+  "key": "fan_120",
+  "title": "120 mm case fan",
+  "kind": "part",
+  "label": "120 mm case fan",
+  "size": [
+   120.0,
+   133.0,
+   25.0
+  ],
+  "front": "+z",
+  "swatch": "#1c1c22",
+  "credit": "Model: Premake",
+  "license": "Premake-original"
+ },
+ {
+  "key": "fan_80",
+  "title": "80 mm case fan",
+  "kind": "part",
+  "label": "80 mm case fan",
+  "size": [
+   80.0,
+   93.0,
+   25.0
+  ],
+  "front": "+z",
+  "swatch": "#1c1c22",
+  "credit": "Model: Premake",
+  "license": "Premake-original"
+ },
+ {
+  "key": "fan_40",
+  "title": "40 mm fan",
+  "kind": "part",
+  "label": "40 mm fan",
+  "size": [
+   40.0,
+   40.0,
+   10.0
+  ],
+  "front": "+z",
+  "swatch": "#cccccc",
+  "credit": "Model: Obijuan (FreeCAD-library), CC BY 3.0",
+  "license": "CC-BY-3.0"
+ },
+ {
+  "key": "bearing_608",
+  "title": "608 ball bearing",
+  "kind": "part",
+  "label": "608 ball bearing",
+  "size": [
+   22.0,
+   21.94,
+   7.0
+  ],
+  "front": "+z",
+  "swatch": "#cccccc",
+  "credit": "Model: Normand C (FreeCAD-library), CC BY 3.0",
+  "license": "CC-BY-3.0"
+ },
+ {
+  "key": "extrusion_2020",
+  "title": "2020 aluminium extrusion (V-slot)",
+  "kind": "part",
+  "label": "2020 aluminium extrusion (V-slot)",
+  "size": [
+   50.0,
+   20.0,
+   20.0
+  ],
+  "front": "+z",
+  "swatch": "#cccccc",
+  "credit": "Model: hasecilu (FreeCAD-library), CC BY 3.0",
+  "license": "CC-BY-3.0"
+ }
+]
