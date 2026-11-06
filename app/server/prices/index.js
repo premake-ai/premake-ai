@@ -234,7 +234,7 @@ function init({ DATA, PROJECTS, EXAMPLES, BULK, MARGIN, tierOf, MATERIAL_PER_G, 
   // ---------------------------------------------------------------- fabricated parts
   /** rmfg: the live RMFG unit price for a metal sheet / laser part at quantity q (the quoted break at or below q),
    * from cache; starts a background quote when there is none. -> { price, at, detail } | { pending } | null */
-  function rmfgLive(dir, f, q) {
+  function rmfgLive(dir, f, q, quiet = false) {
     if (!dir || !sup.isAllowed('RMFG') || !rmfg.connected()) return null;
     if (/acrylic|ply|wood|mdf|delrin|acetal|polycarbonate|hdpe|abs/i.test(JSON.stringify(f.params || {}))) return null;
     const man = readJSON(path.join(dir, 'manifest.json'), {}) || {};
@@ -249,10 +249,10 @@ function init({ DATA, PROJECTS, EXAMPLES, BULK, MARGIN, tierOf, MATERIAL_PER_G, 
       if (!row || row.unit_usd == null) return null;
       return { price: cents(row.unit_usd), at: c.at, detail: [c.stock?.map((s) => s.stock).join(', '), (c.findings || [])[0]].filter(Boolean).join(' · ') };
     }
-    if (!c || Date.now() - c.at > 10 * 60e3) rmfg.ensure(step, opts);
+    if (!quiet && (!c || Date.now() - c.at > 10 * 60e3)) rmfg.ensure(step, opts);
     return rmfg.quoting(step, opts) ? { pending: true } : null;
   }
-  function fabLines(bom, q, tier, dir) {
+  function fabLines(bom, q, tier, dir, quiet = false) {
     const ls = pricingFab.lines(bom);
     const fabs = (bom.fabricated || []).filter((f) => f && ['extrusion', 'sheet', 'laser'].includes(f.process));
     const out = [];
@@ -279,7 +279,7 @@ function init({ DATA, PROJECTS, EXAMPLES, BULK, MARGIN, tierOf, MATERIAL_PER_G, 
           return;
         }
       }
-      const live = f.process !== 'extrusion' ? rmfgLive(dir, f, q) : null; // rmfg: a real RMFG quote beats the estimate
+      const live = f.process !== 'extrusion' ? rmfgLive(dir, f, q, quiet) : null; // rmfg: a real RMFG quote beats the estimate
       if (live?.price) {
         out.push({ type: 'fabricated', process: f.process, shop: 'RMFG', name: l.name, detail: live.detail, total_usd: live.price,
           source: src.live('RMFG', live.at, 'https://www.rmfg.com/quote/sheet', { detail: live.detail }), lead_days: pricingFab.leadDays(f.process, l.bends || 0) });
@@ -309,8 +309,9 @@ function init({ DATA, PROJECTS, EXAMPLES, BULK, MARGIN, tierOf, MATERIAL_PER_G, 
     const tier = tierOf(q);
     bom = sup.normalizeBom(bom);
     const print = printLines(bom, q, tier, dir, opts.force_print, !!opts.background);
+    const quiet = !!opts.background && process.env.PREMAKE_LIST_QUOTES === '0'; // local installs: lists price from saved quotes only
     const bought = (pricingFab.withoutStopgap(bom).parts || []).filter((p) => p && typeof p === 'object').map((p) => boughtLine(p, q, tier));
-    const fab = fabLines(bom, q, tier, dir);
+    const fab = fabLines(bom, q, tier, dir, quiet);
     return { tier, bought, print, fab };
   }
   /** Kit-contents group of a quote line (Order tab, checkout `omit`). Same rule as payments.kitGroupOf. */

@@ -190,5 +190,16 @@ function addonsFor(bom, addons) {
   return want.length && bom?.needs_soldering === true ? [SOLDER_KIT] : [];
 }
 
-module.exports = { cleanUserTitle, SOLDER_KIT, addonsFor, EFFORTS, DEFAULT_EFFORT, QUESTIONS_FILE, STALL_MS, CONTINUE_TEXT, cleanQuestions, readQuestions, cleanAnswers, store, prefsContext,
+/** The card at the end of a new design's first run: what to check next. The user can tick several, type their own, or
+ *  skip it and keep chatting. A one-off: never saved as a preference (FINISH_ID). */
+const FINISH_ID = 'finish_checks';
+const FINISH_CARD = { id: FINISH_ID, multi: true, question: "I've finished the design. Want me to check anything?", options: [
+  { label: 'Make sure it 3D prints well', detail: 'Overhangs and supports, wall thickness, print orientation, fits a 256 mm bed' },
+  { label: 'Make sure it assembles well', detail: 'Screwdriver access, clearances, the order the parts go together' },
+  { label: 'Make sure it will work', detail: 'Moving parts, strength where it takes load, wiring and power' },
+  { label: 'Make it cheaper', detail: 'Fewer custom parts, less filament, cheaper bought parts' },
+  { label: 'Use easy-to-buy parts', detail: 'Common Amazon parts instead of hard-to-find ones' },
+] };
+
+module.exports = { FINISH_ID, FINISH_CARD, cleanUserTitle, SOLDER_KIT, addonsFor, EFFORTS, DEFAULT_EFFORT, QUESTIONS_FILE, STALL_MS, CONTINUE_TEXT, cleanQuestions, readQuestions, cleanAnswers, store, prefsContext,
   stopStatus, titleArgs, titleInput, cleanTitle, titleFromPrompt, titleFallback, isPromptEcho, TITLE_FILLER };

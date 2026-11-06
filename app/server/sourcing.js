@@ -743,7 +743,7 @@ function init({ DATA, projDir, exDir, exists, readJSON, writeJSON, send, quote }
     const key = setKeyOf(printed);
     const c = (readJSON(src.cache, {}) || {}).slant;
     const fresh = c && c.key === key && ((c.set && Date.now() - c.fetched_at < CACHE_TTL_MS) || (c.error && Date.now() - c.failed_at < RETRY_AFTER_FAIL_MS));
-    if (!fresh) startSlant(src, printed, key, opts.background ? 'lo' : 'hi');
+    if (!fresh && !(opts.background && process.env.PREMAKE_LIST_QUOTES === '0')) startSlant(src, printed, key, opts.background ? 'lo' : 'hi'); // local installs: no uploads for list prices
     const quoting = jobs.has(`${src.kind}:${src.id}`);
     const live = c && c.key === key && c.set ? c : null;
     if (live) return { status: 'live', set: live.set, parts: live.parts, byIndex: printed.map((x) => (x.hash ? live.parts?.[x.hash] || null : null)),
@@ -827,6 +827,7 @@ function init({ DATA, projDir, exDir, exists, readJSON, writeJSON, send, quote }
     const hit = c && c.key === key ? c.orders?.[okey] : null;
     if (hit && !hit.error && Date.now() - hit.at < CACHE_TTL_MS) return { status: 'live', ...hit, fetched_at: hit.at, material: c.material, color: c.color, region_label: region.label };
     if (hit && hit.error && Date.now() - hit.at < RETRY_AFTER_FAIL_MS) return { status: 'failed', error: hit.error };
+    if (opts.background && process.env.PREMAKE_LIST_QUOTES === '0') return { status: 'none' }; // local installs: no uploads for list prices
     const k = `${src.kind}:${src.id}`;
     const pri = opts.background ? 'lo' : 'hi';
     if (!ojobs.has(k)) ojobs.set(k, { pending: new Set(), timer: null, running: false, pri });

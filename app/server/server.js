@@ -887,7 +887,7 @@ function startReplay(slug, prompt, owner) {
   const text = `Here's your ${meta.title || 'design'}: ${String(orig.description || '').replace(/^[^:]*:\s*/, '').replace(/\.?$/, '.')} The Order tab has every part and where to buy it, and Make has the files.\n\n`
     + `This was a replay of a real Premake build: ${R.rounds_total || 'several'} rounds with a person giving feedback, ${took} of real work, shown here in about a minute. Ask for any change and it's live from here.`;
   const now = Date.now() / 1000;
-  writeJSON(path.join(dir, 'messages.json'), [{ role: 'user', text: String(prompt).slice(0, 4000), t: now }, { role: 'assistant', text, flow: replayFlow(R), t: now + 1 }]);
+  writeJSON(path.join(dir, 'messages.json'), [{ role: 'user', text: String(prompt).slice(0, 4000), t: now }, { role: 'assistant', text, flow: replayFlow(R), questions: [brain.FINISH_CARD], t: now + 1 }]);
   console.log(`[replay ${id}] ${slug} for ${JSON.stringify(String(prompt).slice(0, 80))}`);
   return id;
 }
@@ -1217,10 +1217,11 @@ function finishRun(id, run, code) {
   // agentbrain: question card (./questions.json, only from a turn that ended normally) and why a run stopped
   const questions = kind === 'design' ? brain.readQuestions(dir) : null;
   const asking = questions && !run.stopped ? questions : null;
+  const finished = kind === 'design' && !asking && !run.stopped && !run.isError && run.tl?.new_design && exists(path.join(dir, 'manifest.json')) ? [brain.FINISH_CARD] : null; // the "what should I check?" card
   const status = run.stopped ? brain.stopStatus(run, run.capMs || RUN_TIMEOUT_MS) : null;
   if (asking && !reply) reply = 'A few quick questions before I start.';
   const flow = flowForReply(run.flow, reply);
-  const extra = { tl: timeline, ...(asking ? { questions: asking } : {}), ...(status ? { status } : {}), ...(flow ? { flow } : {}) };
+  const extra = { tl: timeline, ...(asking || finished ? { questions: asking || finished } : {}), ...(status ? { status } : {}), ...(flow ? { flow } : {}) };
   const msgIdx = reply ? addMessageTo(msgFile, 'assistant', reply, extra) : -1;
   if (asking && msgIdx >= 0) { // askmock: the card's message exists now: save the mock-ups that already landed, the rest follow
     const job = startAskMocks(id, dir, asking, run.userText);
@@ -1239,7 +1240,7 @@ function finishRun(id, run, code) {
   const builtOk = kind === 'design' && versions.builtOk(tl.builds, dir);
   if (ver) { try { versions.finish(dir, ver.n, reply || (run.stopped ? 'Stopped' : error || ''), ok || builtOk); } catch (e) { console.error(`[versions ${id}] after-snapshot failed: ${e.message}`); } }
   try { fs.appendFileSync(path.join(dir, 'runs.jsonl'), JSON.stringify({ t: now(), id, stopped: !!run.stopped, ...(run.stopped ? { stop_reason: run.stopReason || 'user' } : {}), ...(asking ? { asked: asking.length } : {}), denied: run.denied, ...timeline }) + '\n'); } catch {}
-  emit(id, ok ? { type: P + 'run_finished', ok: true, timeline, ...(asking ? { questions: asking } : {}) } : { type: P + 'run_finished', ok: false, error, timeline, ...(status ? { status } : {}) });
+  emit(id, ok ? { type: P + 'run_finished', ok: true, timeline, ...(asking || finished ? { questions: asking || finished } : {}) } : { type: P + 'run_finished', ok: false, error, timeline, ...(status ? { status } : {}) });
   if (kind === 'design' && !run.stopped && (ok || builtOk)) firmwareAfterRun(id, dir, run);
   if (kind === 'design') showcase?.soon(); // showcase: a finished design shows up in Examples (or its snapshot refreshes)
   if (kind === 'design' && (ok || builtOk)) { // agentbrain: the start-of-run title call failed, or the agent echoed the prompt as the title ("Design a product based on this")
@@ -3535,7 +3536,7 @@ async function handle(req, res) {
         agentGate(acc); // the sender's own run quota (a collaborator's runs count against them, not the owner)
         if (body.answers && typeof body.answers === 'object') { // agentbrain: question-card answers, remembered for this user
           const asked = [...readJSON(path.join(dir, 'messages.json'), [])].reverse().find((x) => x.role === 'assistant')?.questions;
-          prefs.saveAnswers(acc.user, brain.cleanAnswers(asked, body.answers));
+          prefs.saveAnswers(acc.user, brain.cleanAnswers((asked || []).filter((q) => q.id !== brain.FINISH_ID), body.answers)); // the finish card is a one-off
         }
         startRun(b, text, req.t0, mem ? share.writerTag(acc) : null); // share: a collaborator's message is labelled with their initials
         uploads.tag(path.join(dir, 'messages.json'), text, att, b); // images: thumbnails in the chat history
