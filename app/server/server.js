@@ -123,8 +123,41 @@ function findClaude() {
 }
 const CLAUDE = findClaude();
 // One model for every claude spawn (design, website chat, ads chat, copywriter). CAD_AGENT_MODEL / ADS_MODEL still override.
-const FORMA_MODEL = process.env.FORMA_MODEL || 'claude-opus-5-5';
-const AGENT_MODEL = process.env.CAD_AGENT_MODEL || FORMA_MODEL; // design, site and ads chat agents (agentArgs)
+// model-pick: the best model (Claude Opus 5.5) when this Claude Code login has it, else the CLI's own default ('default').
+// FORMA_MODEL fixes it. Otherwise the choice is checked once (checkModel, at boot) and remembered in <DATA>/.model.json;
+// a design run that fails with "issue with the selected model" also switches to 'default' and remembers it.
+const BEST_MODEL = 'claude-opus-5-5';
+const MODEL_FILE = path.join(DATA, '.model.json');
+const MODEL_FIXED = !!process.env.FORMA_MODEL;
+const rememberedModel = () => { try { return String(JSON.parse(fs.readFileSync(MODEL_FILE, 'utf8')).model || ''); } catch { return ''; } };
+let FORMA_MODEL = process.env.FORMA_MODEL || rememberedModel() || BEST_MODEL;
+let AGENT_MODEL = process.env.CAD_AGENT_MODEL || FORMA_MODEL; // design, site and ads chat agents (agentArgs)
+const MODEL_ERR_RE = /issue with the selected model|may not exist or you may not have access|unrecognized_model/i;
+function setModel(m, why) {
+  if (MODEL_FIXED || FORMA_MODEL === m) return;
+  FORMA_MODEL = m;
+  if (!process.env.CAD_AGENT_MODEL) AGENT_MODEL = m;
+  if (!process.env.ADS_MODEL) ADS_MODEL = m;
+  try { fs.mkdirSync(DATA, { recursive: true }); fs.writeFileSync(MODEL_FILE, JSON.stringify({ model: m, why, at: new Date().toISOString() }) + '\n'); } catch {}
+  console.log(`[model] using ${m === 'default' ? "Claude Code's default model" : m} (${why})`);
+  for (const p of [...pool.values()]) killProc(p); // warm agents were started with the old model
+}
+/** model-pick: one tiny call with the best model; if this login can't use it, try 'default' once and remember the answer. */
+function checkModel() {
+  if (MODEL_FIXED || rememberedModel()) return;
+  const probe = (m) => runProc(CLAUDE, ['-p', 'Reply with OK.', '--output-format', 'json', '--model', m, '--effort', 'low', '--setting-sources', '',
+    '--strict-mcp-config', '--tools', '', '--no-session-persistence'], { cwd: os.tmpdir(), env: agentEnv(path.join(DATA, '.model-check')) }, 90e3)
+    .then((r) => { let j = null; try { j = JSON.parse(String(r.stdout || '').trim().split('\n').pop()); } catch {} return { ok: !!j && !j.is_error, modelErr: MODEL_ERR_RE.test(String(j?.result || '') + (r.stderr || '')) }; })
+    .catch(() => ({ ok: false, modelErr: false }));
+  probe(BEST_MODEL).then(async (a) => {
+    if (a.ok) return setModel(BEST_MODEL, 'checked: this login has it') || writeModelFile(BEST_MODEL);
+    if (!a.modelErr) return console.log('[model] could not check the model (offline or not logged in?); will check again next start');
+    const b = await probe('default');
+    if (b.ok) setModel('default', `${BEST_MODEL} is not available on this login`);
+    else console.log("[model] neither the best model nor Claude Code's default answered; will check again next start");
+  });
+}
+function writeModelFile(m) { try { fs.mkdirSync(DATA, { recursive: true }); fs.writeFileSync(MODEL_FILE, JSON.stringify({ model: m, at: new Date().toISOString() }) + '\n'); } catch {} }
 const AGENT_PROMPT_FILE = path.join(__dirname, 'design_agent_prompt.md');
 // Agent permissions (Claude Code rules, --permission-mode dontAsk: anything not allowed is refused).
 // Every file rule is scoped to ./** (the project dir); there is deliberately no bare Read/Glob/Grep, which would allow
@@ -1097,6 +1130,10 @@ function finishRun(id, run, code) {
   tl.end = Date.now() - tl.t_send; tl.ok = ok;
   const timeline = tlPublic(tl);
   let reply = (run.result || run.texts.join('\n\n')).trim();
+  if (run.isError && MODEL_ERR_RE.test(reply) && !MODEL_FIXED && FORMA_MODEL !== 'default') { // model-pick: this login lost the best model
+    setModel('default', `${FORMA_MODEL} was refused during a run`);
+    reply = "This Claude Code login can't use the best model, so Premake switched to Claude Code's default model. Send your message again.";
+  }
   if (siteNote) reply = (reply ? reply + '\n\n' : '') + siteNote;
   // agentbrain: question card (./questions.json, only from a turn that ended normally) and why a run stopped
   const questions = kind === 'design' ? brain.readQuestions(dir) : null;
@@ -1884,7 +1921,7 @@ function placeOrder(body) {
 // ---------------------------------------------------------------- ads
 // Static Meta ads: 4 transparent hero renders (Python/VTK) + 6 copy concepts from a
 // headless, tool-less Claude Code call. Both run in parallel; result saved to <dir>/ads/ads.json.
-const ADS_MODEL = process.env.ADS_MODEL || FORMA_MODEL; // the copywriter
+let ADS_MODEL = process.env.ADS_MODEL || FORMA_MODEL; // the copywriter
 const ADS_RENDER_TIMEOUT = 90e3;
 const ADS_COPY_TIMEOUT = 240e3;
 const META_CTAS = ['Pre-order', 'Learn more', 'Shop now', 'Sign up', 'Get offer'];
@@ -3678,7 +3715,7 @@ const payments = require('./payments').init({ priceFor, readJSON, writeJSON, pro
 const shareMod = require('./share');
 const share = shareMod.init({ DATA, PROJECTS, EXAMPLES, exDir, readJSON, writeJSON, exists, send, serveFile, escHtml, allow, hitCount, clientIp, quote,
   designDims, viaGateway, ownerOf, cardStats, canEdit, orderPriceQuery });
-const guide = require('./guide').init({ DATA, APP, VENV_PY, CLAUDE, MODEL: FORMA_MODEL, PROJECTS, EXAMPLES, exDir, exampleSlugs, readJSON, writeJSON, readText, exists, send, quote,
+const guide = require('./guide').init({ DATA, APP, VENV_PY, CLAUDE, get MODEL() { return FORMA_MODEL; }, PROJECTS, EXAMPLES, exDir, exampleSlugs, readJSON, writeJSON, readText, exists, send, quote,
   canEdit, isAdmin, isPublished, publicFlag, setPublicFlag, agentGate, agentEnv, runProc, childEnv, renderSpawn, escHtml, allow, clientIp, cardStats, serveFile, ownerOf, orderPriceQuery });
 // local-landing: the public landing page for a signed-out local guest (server/landing_local.js reuses gateway/home)
 // showcase: the owner's finished designs published as examples (server/showcase.js); synced at boot, every 3 min, after design runs
@@ -3695,7 +3732,7 @@ const fulfilment = require('./fulfilment').init({ DATA, ORDERS, readJSON, writeJ
 const call = require('./call').init({ DATA, readJSON, writeJSON, exists, projDir, send, isAdmin, canEdit, allow, addSupportMessage });
 const supportchat = require('./supportchat').init({ DATA, send, allow, isAdmin, notifyAdmin }); // supportchat: per-user support threads
 // devices: companion-app devices, ingest, readings, alerts (+ stale timer), photo checks, Web Push: server/devices.js, server/push.js
-const devices = require('./devices').init({ DATA, PROJECTS, projDir, ownerOf, agentEnv, runProc, CLAUDE, MODEL: FORMA_MODEL });
+const devices = require('./devices').init({ DATA, PROJECTS, projDir, ownerOf, agentEnv, runProc, CLAUDE, get MODEL() { return FORMA_MODEL; } });
 firmware.init({ DATA, APP, readJSON, writeJSON, send, emit }); // firmware: compiles in the sandbox, one at a time
 apps.init({ PROJECTS, WEB, DATA, projDir, exDir, ownerOf, readJSON, readText, send, canEdit, allow }); // apps: companion apps + the app agent (server/apps.js)
 
@@ -3733,6 +3770,7 @@ server.listen(PORT, HOST, () => {
   console.log(`  data: ${DATA}  online: ${PUBLIC ? 'public host' : TUNNEL ? 'cloudflare tunnel' : 'no'}  access: ${OPEN_LOCAL ? 'open (local)' : PASSWORD ? 'password login' : 'showcase only (FORMA_PASSWORD not set)'}  ai: Claude Code subscription  model: ${AGENT_MODEL}  code sandbox: ${sandbox.AVAILABLE ? 'on' : 'OFF'}`);
   console.log(`  claude: ${CLAUDE}`);
   prebuildParts();
+  checkModel(); // model-pick
   setTimeout(() => showcase.sync(), 5000).unref(); // showcase: publish the owner's finished designs, then keep them current
   setInterval(() => showcase.sync(), 3 * 60e3).unref();
   if (ONLINE) console.log(`  allowed hosts: ${[...ALLOWED_HOSTS].join(', ')}${TUNNEL ? ', *.trycloudflare.com' : ''}`);

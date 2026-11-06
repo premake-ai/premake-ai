@@ -292,7 +292,7 @@ Reply with ONLY this JSON, no prose, no code fence:
       delete env.ANTHROPIC_API_KEY; delete env.ANTHROPIC_AUTH_TOKEN;
       const plan = planFor(src, sig);
       if (!plan.steps.length) throw new Error('Could not work out a build order for this design.');
-      const args = ['-p', guidePrompt(src, plan), '--output-format', 'json', '--model', MODEL, '--effort', 'low',
+      const args = ['-p', guidePrompt(src, plan), '--output-format', 'json', '--model', ctx.MODEL, '--effort', 'low',
         '--setting-sources', '', '--strict-mcp-config', '--tools', '', '--disable-slash-commands', '--no-session-persistence',
         '--system-prompt', 'You write clear, accurate assembly instructions for maker build guides. You output only valid JSON.'];
       const t0 = Date.now();
@@ -319,7 +319,7 @@ Reply with ONLY this JSON, no prose, no code fence:
       job.stage = 'rendering';
       const images = await renderSteps(src, steps);
       steps.forEach((s, i) => { s.img = images[i] || null; });
-      const g = saveGuide(src, { sig, t: Date.now() / 1000, steps, print, model: MODEL, timing: { claude_s, total_s: +((Date.now() - t0) / 1000).toFixed(1) }, error: null });
+      const g = saveGuide(src, { sig, t: Date.now() / 1000, steps, print, model: ctx.MODEL, timing: { claude_s, total_s: +((Date.now() - t0) / 1000).toFixed(1) }, error: null });
       console.log(`[guide ${src.id}] ${steps.length} steps, ${images.filter(Boolean).length} renders, claude ${claude_s}s`);
       warmShare(src);
       return g;
