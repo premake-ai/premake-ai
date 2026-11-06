@@ -1993,7 +1993,7 @@ em { font-style: normal; }
    thumbnail strip (.side-rail) that slides open over the page while hovered (.side-peek, app.js); the icon again opens it for good. */
 .side-toggle { display: none; }
 .side-resize { display: none; }
-@media (min-width: 1001px) {
+@media (min-width: 641px) { /* wherever the sidebar is a column (phones have the slide-out drawer) */
   .sidebar { position: relative; }
   .side-head { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
   .side-toggle { display: inline-grid; place-items: center; width: 26px; height: 26px; margin: -5px -2px -5px 0; border-radius: 6px; color: var(--muted); flex-shrink: 0; }
