@@ -8,7 +8,7 @@ When the user asks to install, set up, run, start, open or update Premake (for e
 curl -fsSL https://raw.githubusercontent.com/premake-ai/premake-ai/main/install.sh | bash
 ```
 
-If the user also asked for a design (for example "Install premake from github and design me a SCARA arm 3D printer"), pass their request, in their words, to the installer so it starts that design:
+If the user also asked for a design (for example "Install premake-ai from github and design me a SCARA arm 3D printer"), pass their request, in their words, to the installer so it starts that design:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/premake-ai/premake-ai/main/install.sh | bash -s "design me a SCARA arm 3D printer"
