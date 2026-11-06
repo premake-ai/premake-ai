@@ -21,9 +21,9 @@ export function activityHtml(steps, running, open, thinking = '', live = false, 
   const think = running && thinking ? `<p class="act-think">${esc(thinking.length > 320 ? '…' + thinking.slice(-320) : thinking)}</p>` : '';
   const list = steps.length ? `<ol>${steps.map((s, i) => `<li class="${running && i === steps.length - 1 ? 'cur' : ''}${/^Blocked/.test(s) ? ' bad' : ''}">${stepParts?.[i] ? `${esc(verbOf(s))} ${partChips(stepParts[i])}` : esc(s)}</li>`).join('')}</ol>` : '';
   const expandable = !!(list || think);
-  // phonekit: phones show "Editing 6 parts" on one line instead of the chips (phone.css); a tap opens a sheet listing them
+  // the working line: "Editing Link 1" or "Editing 6 parts" on one line, never chips squeezed into it (they're in the list below)
   const pn = lastParts ? `<span class="act-pn">${lastParts.length === 1 ? esc(lastParts[0]) : `${lastParts.length} parts`}</span>` : '';
-  return `<details class="activity${running ? ' running' : ''}${expandable ? '' : ' bare'}" ${open && expandable ? 'open' : ''} ${live ? 'data-live' : ''}><summary${expandable ? '' : ' tabindex="-1"'}${lastParts ? ` data-eparts="${esc(JSON.stringify(lastParts))}"` : ''}>${running ? sparkSvg : ''}<span class="act-label">${label}</span>${pn}${lastParts ? partChips(lastParts, 3) : ''}${expandable ? caretSvg : ''}</summary>
+  return `<details class="activity${running ? ' running' : ''}${expandable ? '' : ' bare'}" ${open && expandable ? 'open' : ''} ${live ? 'data-live' : ''}><summary${expandable ? '' : ' tabindex="-1"'}${lastParts ? ` data-eparts="${esc(JSON.stringify(lastParts))}"` : ''}>${running ? sparkSvg : ''}<span class="act-label">${label}</span>${pn}${expandable ? caretSvg : ''}</summary>
     <div class="act-body">${list}${think}</div></details>`;
 }
 

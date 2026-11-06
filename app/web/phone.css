@@ -839,8 +839,7 @@
 .md-table tr + tr td, .md-table tbody tr:first-child td { border-top: .5px solid rgba(60, 60, 67, .16); }
 .md-table td:first-child { font-weight: 500; }
 @media (max-width: 640px) { .md-table td, .md-table th { min-width: 84px; } .md-table td:first-child { white-space: nowrap; } }
-.msgs .activity summary .act-pn { display: none; }
-@media (max-width: 640px) { .msgs .activity summary .act-pn { display: inline; } }
+.msgs .activity summary .act-pn { display: inline; min-width: 0; margin-left: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text-2, #55524b); font-weight: 500; }
 
 /* phonekit audit: native search fields and segmented tabs on the list pages */
 @media (max-width: 640px) {
