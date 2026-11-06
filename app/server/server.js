@@ -852,6 +852,7 @@ async function checkForUpdate() {
   if (ONLINE || process.env.PREMAKE_AUTO_UPDATE === '0' || !exists(path.join(REPO_ROOT, 'install.sh')) || !fs.existsSync(path.join(REPO_ROOT, '.git'))) return;
   const pidFile = path.join(DATA, '.premake.pid');
   if (!exists(pidFile) || String(fs.readFileSync(pidFile, 'utf8')).trim() !== String(process.pid)) return;
+  if (!setupReady()) return; // first install: the CAD engine is still going in; next check
   const git = (...a) => runProc('git', ['-C', REPO_ROOT, ...a], {}, 60e3);
   const branch = process.env.PREMAKE_UPDATE_BRANCH || 'main'; // tests: another branch
   const f = await git('fetch', '-q', 'origin', branch);

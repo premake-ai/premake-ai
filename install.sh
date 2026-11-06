@@ -61,9 +61,13 @@ if [ -f "$P/app/.venv/.premake-ready" ]; then
 else
   NODE_MAJOR="$(node -p 'process.versions.node.split(".")[0]' 2>/dev/null || echo 0)"
   [ "$NODE_MAJOR" -ge 20 ] 2>/dev/null || { say "Premake needs Node.js 20 or newer: install it from https://nodejs.org (or: brew install node), then run this again."; exit 1; }
-  say "setting up the CAD engine in the background (1 to 3 minutes); Premake opens now"
-  nohup "$P/app/setup.sh" > "$DATA/setup.log" 2>&1 < /dev/null & # keeps going after this script returns
-  SETUP_PID=$!
+  if [ -f "$DATA/.setup.pid" ] && kill -0 "$(cat "$DATA/.setup.pid")" 2>/dev/null; then
+    SETUP_PID="$(cat "$DATA/.setup.pid")" # already installing (an earlier run): never two at once
+  else
+    say "setting up the CAD engine in the background (1 to 3 minutes); Premake opens now"
+    nohup "$P/app/setup.sh" > "$DATA/setup.log" 2>&1 < /dev/null & # keeps going after this script returns
+    SETUP_PID=$!; echo "$SETUP_PID" > "$DATA/.setup.pid"
+  fi
   export PREMAKE_SETUP_BG=1
 fi
 
