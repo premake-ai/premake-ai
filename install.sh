@@ -10,6 +10,10 @@
 #   bash install.sh "design me a SCARA arm 3D printer"   also start that design (curl ... | bash -s "...")
 # Needs git, Node.js 20+ and Python 3.11/3.12 (or uv), and Claude Code or Codex logged in. No API key, no sudo.
 set -euo pipefail
+# Run from a copy: the update below rewrites this very file, and bash reads a script as it goes.
+if [ -z "${PREMAKE_INSTALL_COPY:-}" ] && [ -f "$0" ]; then
+  T="$(mktemp -t premake-install)"; cp "$0" "$T"; PREMAKE_INSTALL_COPY=1 exec bash "$T" "$@"
+fi
 P="${PREMAKE_HOME:-$HOME/Documents/premake-ai}"
 # installs from before 7 Nov 2026 live in ~/premake-ai: keep using that one rather than making a second copy
 if [ -z "${PREMAKE_HOME:-}" ] && [ ! -e "$P" ] && [ -x "$HOME/premake-ai/app/start.sh" ]; then P="$HOME/premake-ai"; fi

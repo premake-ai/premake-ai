@@ -840,6 +840,41 @@ function createProject({ fromExample, fromShare, fromProject, ref, owner, prompt
 
 /** Local installs: on first start, every repo example is copied into your projects (titles kept) so the sidebar starts
  *  full and each one opens and edits like your own design. Once only (DATA/.examples-seeded); deleting one keeps it gone. */
+/** Local installs update themselves: a few minutes after start and every 6 hours, `git fetch` the repo; when GitHub has
+ *  a newer version, this copy is a plain fast-forward behind it (nobody edited Premake's own files) and nothing is being
+ *  designed, run install.sh (detached, no browser): it pulls, restarts the studio on its port, and leaves designs alone.
+ *  Only for a studio install.sh started (its .premake.pid is this process), so a hand-started dev server never restarts.
+ *  PREMAKE_AUTO_UPDATE=0 turns it off. */
+const REPO_ROOT = path.resolve(APP, '..');
+let updateTimer = null;
+function busyRunning() { return runs.size + siteRuns.size + adsRuns.size + appRuns.size > 0; }
+async function checkForUpdate() {
+  if (ONLINE || process.env.PREMAKE_AUTO_UPDATE === '0' || !exists(path.join(REPO_ROOT, 'install.sh')) || !fs.existsSync(path.join(REPO_ROOT, '.git'))) return;
+  const pidFile = path.join(DATA, '.premake.pid');
+  if (!exists(pidFile) || String(fs.readFileSync(pidFile, 'utf8')).trim() !== String(process.pid)) return;
+  const git = (...a) => runProc('git', ['-C', REPO_ROOT, ...a], {}, 60e3);
+  const branch = process.env.PREMAKE_UPDATE_BRANCH || 'main'; // tests: another branch
+  const f = await git('fetch', '-q', 'origin', branch);
+  if (f.code !== 0) return; // offline: try again next time
+  const head = (await git('rev-parse', 'HEAD')).stdout.trim(), remote = (await git('rev-parse', `origin/${branch}`)).stdout.trim();
+  if (!head || !remote || head === remote) return;
+  if ((await git('merge-base', '--is-ancestor', 'HEAD', `origin/${branch}`)).code !== 0) return; // not a plain fast-forward
+  if ((await git('status', '--porcelain', '--untracked-files=no')).stdout.trim()) { console.log('[update] a newer version is out, but Premake\'s own files were changed here, so it won\'t update itself'); return; }
+  const apply = () => {
+    if (busyRunning()) { updateTimer = setTimeout(apply, 5 * 60e3); updateTimer.unref?.(); return; } // never mid-design
+    console.log(`[update] updating ${head.slice(0, 7)} -> ${remote.slice(0, 7)} and restarting`);
+    const log = fs.openSync(path.join(DATA, 'update.log'), 'a');
+    spawn('bash', [path.join(REPO_ROOT, 'install.sh')], { cwd: REPO_ROOT, detached: true, stdio: ['ignore', log, log],
+      env: { ...process.env, PREMAKE_HOME: REPO_ROOT, PREMAKE_BROWSER: 'none', PREMAKE_PROMPT: '' } }).unref();
+  };
+  apply();
+}
+function scheduleUpdates() {
+  if (ONLINE || process.env.PREMAKE_AUTO_UPDATE === '0') return;
+  setTimeout(() => checkForUpdate().catch(() => {}), Number(process.env.PREMAKE_UPDATE_FIRST_MS) || 3 * 60e3).unref(); // tests: sooner
+  setInterval(() => checkForUpdate().catch(() => {}), 6 * 3600e3).unref();
+}
+
 function seedExamples() {
   const mark = path.join(DATA, '.examples-seeded');
   if (ONLINE || exists(mark) || process.env.PREMAKE_SEED_EXAMPLES !== '1') return; // start.sh turns it on (not tests or dev servers)
@@ -3903,6 +3938,7 @@ server.listen(PORT, HOST, () => {
   prebuildParts();
   checkModel(); // model-pick
   seedExamples(); // local: the examples start in the sidebar
+  scheduleUpdates(); // local installs: update themselves when idle
   if (process.env.PREMAKE_OPEN === '1') { // start.sh: open the browser from here too (its own open can be blocked when an agent runs it)
     const url = `http://localhost:${PORT}`, cmd = process.platform === 'darwin' ? 'open' : process.platform === 'win32' ? 'cmd' : 'xdg-open';
     try { require('child_process').spawn(cmd, process.platform === 'win32' ? ['/c', 'start', '', url] : [url], { detached: true, stdio: 'ignore' }).on('error', () => {}).unref(); } catch {}
