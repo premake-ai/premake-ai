@@ -1,8 +1,16 @@
 # Premake
 
-Describe a product and Premake designs it. A Claude Code design agent writes the CAD while you watch the 3D model take shape, then you get the files to make it, the full parts list, prices, and where to buy each part. It runs on your own computer, on your own Claude Code login.
+Describe a product and Premake designs it. An AI design agent writes the CAD while you watch the 3D model take shape, then you get the files to make it, the full parts list, prices, and where to buy each part. It runs on your own computer, on your own Claude Code (or OpenAI Codex) login.
+
+This repo is the home of Premake: the whole studio app, the Claude Code plugin, and the quoting service behind premake.ai's live shop prices. It starts with 128 example designs, from a bike hook to a desktop CNC router, that you can open, change and make.
 
 Premake also gets live manufacturing quotes for any STEP or STL file from machine shops, sheet-metal shops and print networks, right from Claude Code. It never orders or pays for anything: you get a comparison link and order from the shop yourself.
+
+| Folder | What it is |
+|---|---|
+| [`app/`](app/) | The Premake studio: server, web app, CAD library and the example designs |
+| [`skills/`](skills/), [`commands/`](commands/), [`hooks/`](hooks/), [`.claude-plugin/`](.claude-plugin/) | The Claude Code plugin: installs and opens the studio, and quotes parts |
+| [`api/`](api/) | The quoting API behind premake.ai/api/v1 (self-hostable) |
 
 <!-- Screenshot goes here: ![The Premake studio](docs/studio.png) -->
 
@@ -24,7 +32,7 @@ Claude adds the plugin, sets up the app and opens it in your browser. Or do it b
 Then ask "open Premake" or "design a phone stand with Premake". Without Claude, from a terminal:
 
 ```bash
-git clone https://github.com/premake-ai/premake-ai ~/premake-ai
+git clone --depth 1 https://github.com/premake-ai/premake-ai ~/premake-ai
 ~/premake-ai/app/setup.sh      # once, 1 to 3 minutes
 ~/premake-ai/app/start.sh      # prints and opens http://localhost:8800
 ```
@@ -32,7 +40,10 @@ git clone https://github.com/premake-ai/premake-ai ~/premake-ai
 ## Requirements
 
 - macOS (Apple silicon or Intel) or Linux.
-- [Claude Code](https://claude.com/claude-code), installed and logged in (`claude auth login`). The design agent uses your Claude subscription, never an API key. It uses `claude-opus-5-5` by default; set `FORMA_MODEL` to use another model.
+- A design agent, installed and logged in:
+  - [Claude Code](https://claude.com/claude-code) (`claude auth login`). Uses your Claude subscription, never an API key. Premake picks Claude Opus 5.5 when your plan has it and otherwise Claude Code's default model, and remembers the choice. Set `FORMA_MODEL` to choose.
+  - or [OpenAI Codex](https://developers.openai.com/codex) (`npm install -g @openai/codex`, then `codex login`). Uses your ChatGPT plan and Codex's own default model, the best one it offers you. Set `PREMAKE_CODEX_MODEL` to choose.
+  - With both, Premake uses Claude Code. `PREMAKE_AGENT=codex ~/premake-ai/app/start.sh` picks Codex.
 - Node.js 20 or newer.
 - Python 3.11 or 3.12 for CadQuery, or [uv](https://docs.astral.sh/uv/), which fetches Python for you. `setup.sh` makes a venv inside `app/`; nothing is installed system-wide and nothing needs sudo.
 - Quotes on their own (the skill below) need only `curl`, on macOS, Linux or Windows 10 and later.
@@ -45,6 +56,8 @@ Describe a product (or paste a photo or sketch) and press Start building. The de
 - **Assemble**: step-by-step assembly, built from the geometry.
 - **Order**: every part with a price and where to buy it: printed parts, sheet and machined parts with live shop quotes, and off-the-shelf parts with store links.
 - **Make**: STL and STEP files for every part, ready for your printer or a shop.
+
+The Examples page opens any of the example designs; remix one to make it yours.
 
 Ask for changes in the chat and the model updates. Your designs are saved in `app/data/` (set `PREMAKE_DATA_DIR` to keep them elsewhere). More options are in [app/README.md](app/README.md).
 
@@ -87,7 +100,7 @@ Materials: aluminium (the default), steel, stainless, plastic, acrylic. `curl ht
 
 ## Privacy
 
-Everything runs on your machine, and your designs stay in `app/data/` on it. The design agent is your own Claude Code, so it talks to Anthropic like any Claude Code session. The only files sent to Premake are the ones you choose to quote: the STEP or STL files of parts you ask prices for (from the Order tab or the quoting skill) go to premake.ai's quoting service and to the shops being asked. They are used only for quoting and deleted after 30 days, with their quotes. The app has no analytics, no account and no sign-in.
+Everything runs on your machine, and your designs stay in `app/data/` on it. The design agent is your own Claude Code or Codex, so it talks to Anthropic or OpenAI like any session of those tools. The only files sent to Premake are the ones you choose to quote: the STEP or STL files of parts you ask prices for (from the Order tab or the quoting skill) go to premake.ai's quoting service and to the shops being asked. They are used only for quoting and deleted after 30 days, with their quotes. The app has no analytics, no account and no sign-in.
 
 ## The API
 

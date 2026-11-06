@@ -9,11 +9,11 @@ Two things live here: the Premake studio app (describe a product, a design agent
 
 ## Run the Premake studio
 
-Use this when the user says "install Premake", "open Premake", "start Premake" or "design X with Premake". The app runs on their own machine and its design agent is their own Claude Code login (their subscription). Never set or use `ANTHROPIC_API_KEY`.
+Use this when the user says "install Premake", "open Premake", "start Premake" or "design X with Premake". The app runs on their own machine and its design agent is their own Claude Code login (their subscription), or OpenAI Codex if that is what they use. Never set or use `ANTHROPIC_API_KEY`.
 
-1. Find the app: `$PREMAKE_HOME` if set, else `~/premake-ai`. If its `app/start.sh` doesn't exist, clone it (about 10 MB):
+1. Find the app: `$PREMAKE_HOME` if set, else `~/premake-ai`. If its `app/start.sh` doesn't exist, clone it (about 110 MB with the example designs, a minute or two):
    ```bash
-   P="${PREMAKE_HOME:-$HOME/premake-ai}"; [ -x "$P/app/start.sh" ] || git clone https://github.com/premake-ai/premake-ai "$P"
+   P="${PREMAKE_HOME:-$HOME/premake-ai}"; [ -x "$P/app/start.sh" ] || git clone --depth 1 https://github.com/premake-ai/premake-ai "$P"
    ```
    If it exists, leave it as it is (don't pull or reset it unless the user asks: their designs live in `app/data`).
 2. Set it up (first time 1 to 3 minutes, re-runs take seconds; no sudo):
@@ -25,7 +25,7 @@ Use this when the user says "install Premake", "open Premake", "start Premake" o
    ```bash
    "${PREMAKE_HOME:-$HOME/premake-ai}/app/start.sh"
    ```
-   It checks Claude Code is installed and logged in, picks a free port from 8800, prints `Premake: http://localhost:PORT` and opens it in the browser. Read the URL from its first output line. If it says Claude Code isn't logged in or is too old, tell the user to run `claude auth login` or `claude update` in a terminal, then start it again.
+   It checks a design agent (Claude Code, else Codex) is installed and logged in, picks a free port from 8800, prints `Premake: http://localhost:PORT` and opens it in the browser. Read the URL from its first output line. If it says no design agent is logged in or Claude Code is too old, tell the user to run `claude auth login` (or `claude update`), or `codex login` if they use Codex, in a terminal, then start it again. To use Codex when both are installed, start it with `PREMAKE_AGENT=codex`.
 4. Tell the user the URL. If they asked to design something, give them their idea as one line to paste into the "Describe a product" box (for example "A phone stand that holds a phone in portrait or landscape"). The design agent takes it from there: 3D model, Assemble, Order (parts, prices, where to buy) and Make (files).
 
 To stop it, stop the background shell (or Ctrl-C in its terminal). Before starting a second copy, check whether the first is still running and reuse its URL.
