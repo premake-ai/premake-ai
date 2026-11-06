@@ -232,7 +232,7 @@ async function route() {
   if ($('#studio').className !== cls) $('#studio').className = cls;
   $('#home').hidden = mode !== 'home'; $('#gallery').hidden = mode !== 'gallery'; $('#work').hidden = mode !== 'work';
   $('#pick').hidden = mode !== 'pick'; $('#inbox').hidden = mode !== 'inbox';
-  { const on = r.name === 'gallery' || r.name === 'example'; if ($('#sideExamples').classList.contains('on') !== on) $('#sideExamples').classList.toggle('on', on); }
+  { const on = r.name === 'gallery' || r.name === 'example', ex = $('#sideExamples'); if (ex && ex.classList.contains('on') !== on) ex.classList.toggle('on', on); } // local: no Examples link (they're in the sidebar)
   $('#sideStore')?.classList.toggle('on', r.name === 'market');
   renderProjects();
 
@@ -2344,7 +2344,7 @@ function applyAccess() {
   if (msg) { const note = document.createElement('div'); note.className = 'beta-note'; note.innerHTML = msg; $('#homeForm').before(note); }
 }
 applyAccess();
-$('#sideOrders').hidden = !ordersLinkVisible(); // payments:
+if ($('#sideOrders')) $('#sideOrders').hidden = !ordersLinkVisible(); // payments:
 if (ACCESS.admin) { updateInboxBadge(true); setInterval(() => { if (!document.hidden) updateInboxBadge(true); }, 60000); }
 if (innerWidth < 1280) $('#tree').classList.add('collapsed');
 setConn('', MOCK ? 'Mock data' : 'Connecting');

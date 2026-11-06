@@ -204,8 +204,7 @@ function init() {
       if (ownDesign() && window.formeryRename) rows.push(row('rename', '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4zM14 6l4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>', 'Rename')); // agentbrain: web/rename.js
     } else { // phonenav: the pages that used to live in the projects drawer
       const at = location.pathname.split('/')[1] || '';
-      if (at !== 'examples') rows.push(row('examples', I.examples, 'Examples'));
-      if (at !== 'store') rows.push(row('store', I.store, 'Store'));
+      // local: no Examples or Store rows (the examples are in the sidebar)
       if (at !== 'orders' && $('#sideOrders') && !$('#sideOrders').hidden) rows.push(row('orders', I.orders, 'Orders'));
     }
     const more = [];
