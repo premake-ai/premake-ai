@@ -127,6 +127,8 @@ const CLAUDE = findClaude();
 // FORMA_MODEL fixes it. Otherwise the choice is checked once (checkModel, at boot) and remembered in <DATA>/.model.json;
 // a design run that fails with "issue with the selected model" also switches to 'default' and remembers it.
 const BEST_MODEL = 'claude-opus-5-5';
+// codex: PREMAKE_AGENT=codex when start.sh runs OpenAI's Codex CLI as the agent (CLAUDE_BIN is then server/codex_cli.js)
+const AGENT_KIND = process.env.PREMAKE_AGENT === 'codex' ? 'codex' : 'claude';
 const MODEL_FILE = path.join(DATA, '.model.json');
 const MODEL_FIXED = !!process.env.FORMA_MODEL;
 const rememberedModel = () => { try { return String(JSON.parse(fs.readFileSync(MODEL_FILE, 'utf8')).model || ''); } catch { return ''; } };
@@ -144,7 +146,7 @@ function setModel(m, why) {
 }
 /** model-pick: one tiny call with the best model; if this login can't use it, try 'default' once and remember the answer. */
 function checkModel() {
-  if (MODEL_FIXED || rememberedModel()) return;
+  if (AGENT_KIND === 'codex' || MODEL_FIXED || rememberedModel()) return; // codex: Codex picks its own model (server/codex_cli.js)
   const probe = (m) => runProc(CLAUDE, ['-p', 'Reply with OK.', '--output-format', 'json', '--model', m, '--effort', 'low', '--setting-sources', '',
     '--strict-mcp-config', '--tools', '', '--no-session-persistence'], { cwd: os.tmpdir(), env: agentEnv(path.join(DATA, '.model-check')) }, 90e3)
     .then((r) => { let j = null; try { j = JSON.parse(String(r.stdout || '').trim().split('\n').pop()); } catch {} return { ok: !!j && !j.is_error, modelErr: MODEL_ERR_RE.test(String(j?.result || '') + (r.stderr || '')) }; })
@@ -627,7 +629,10 @@ APP=${q(APP)}
 PY=${q(VENV_PY)}
 MOD="-m cadlib.build"; [ -f "$APP/cadlib/build.py" ] || MOD="$APP/server/fallback_build.py"
 ${ULIMITS}
-exec /usr/bin/env -i PATH=/usr/bin:/bin LANG=en_US.UTF-8 HOME=${q(home)} TMPDIR=${q(path.join(home, 'tmp'))} XDG_CACHE_HOME=${q(path.join(home, 'cache'))} \\
+${box ? `# codex: Codex runs this script inside its own macOS sandbox, where a second sandbox-exec is not allowed
+[ -n "$CODEX_SANDBOX" ] && exec /usr/bin/env -i PATH=/usr/bin:/bin LANG=en_US.UTF-8 HOME=${q(home)} TMPDIR=${q(path.join(home, 'tmp'))} XDG_CACHE_HOME=${q(path.join(home, 'cache'))} \\
+  MPLCONFIGDIR=${q(path.join(home, 'cache'))} FORMA_NO_RENDER=1 PYTHONPATH="$APP" PYTHONDONTWRITEBYTECODE=1 "$PY" $MOD .
+` : ''}exec /usr/bin/env -i PATH=/usr/bin:/bin LANG=en_US.UTF-8 HOME=${q(home)} TMPDIR=${q(path.join(home, 'tmp'))} XDG_CACHE_HOME=${q(path.join(home, 'cache'))} \\
   MPLCONFIGDIR=${q(path.join(home, 'cache'))} FORMA_NO_RENDER=1 PYTHONPATH="$APP" PYTHONDONTWRITEBYTECODE=1 \\
   ${box}"$PY" $MOD .
 `;
@@ -663,7 +668,9 @@ function viewsSh(dir) {
 cd ${q(dir)} || exit 1
 mkdir -p ${q(path.join(home, 'tmp'))} ${q(path.join(home, 'cache'))}
 ${ULIMITS}
-exec /usr/bin/env -i PATH=/usr/bin:/bin LANG=en_US.UTF-8 HOME=${q(home)} TMPDIR=${q(path.join(home, 'tmp'))} XDG_CACHE_HOME=${q(path.join(home, 'cache'))} \\
+${box ? `[ -n "$CODEX_SANDBOX" ] && exec /usr/bin/env -i PATH=/usr/bin:/bin LANG=en_US.UTF-8 HOME=${q(home)} TMPDIR=${q(path.join(home, 'tmp'))} XDG_CACHE_HOME=${q(path.join(home, 'cache'))} \\
+  MPLCONFIGDIR=${q(path.join(home, 'cache'))} PYTHONPATH=${q(APP)} PYTHONDONTWRITEBYTECODE=1 ${q(VENV_PY)} -m cadlib.views .
+` : ''}exec /usr/bin/env -i PATH=/usr/bin:/bin LANG=en_US.UTF-8 HOME=${q(home)} TMPDIR=${q(path.join(home, 'tmp'))} XDG_CACHE_HOME=${q(path.join(home, 'cache'))} \\
   MPLCONFIGDIR=${q(path.join(home, 'cache'))} PYTHONPATH=${q(APP)} PYTHONDONTWRITEBYTECODE=1 \\
   ${box}${q(VENV_PY)} -m cadlib.views .
 `;
@@ -3767,8 +3774,8 @@ function prebuildParts() {
 
 server.listen(PORT, HOST, () => {
   console.log(`Vibe manufacturing server on http://${HOST}:${PORT}`);
-  console.log(`  data: ${DATA}  online: ${PUBLIC ? 'public host' : TUNNEL ? 'cloudflare tunnel' : 'no'}  access: ${OPEN_LOCAL ? 'open (local)' : PASSWORD ? 'password login' : 'showcase only (FORMA_PASSWORD not set)'}  ai: Claude Code subscription  model: ${AGENT_MODEL}  code sandbox: ${sandbox.AVAILABLE ? 'on' : 'OFF'}`);
-  console.log(`  claude: ${CLAUDE}`);
+  console.log(`  data: ${DATA}  online: ${PUBLIC ? 'public host' : TUNNEL ? 'cloudflare tunnel' : 'no'}  access: ${OPEN_LOCAL ? 'open (local)' : PASSWORD ? 'password login' : 'showcase only (FORMA_PASSWORD not set)'}  ai: ${AGENT_KIND === 'codex' ? 'OpenAI Codex (your ChatGPT login)' : 'Claude Code subscription'}  model: ${AGENT_KIND === 'codex' ? (process.env.PREMAKE_CODEX_MODEL || 'Codex default') : AGENT_MODEL}  code sandbox: ${sandbox.AVAILABLE ? 'on' : 'OFF'}`);
+  console.log(AGENT_KIND === "codex" ? `  agent: OpenAI Codex (${process.env.PREMAKE_CODEX_BIN || "codex"}, model: ${process.env.PREMAKE_CODEX_MODEL || "Codex default"}) via ${CLAUDE}` : `  claude: ${CLAUDE}`);
   prebuildParts();
   checkModel(); // model-pick
   setTimeout(() => showcase.sync(), 5000).unref(); // showcase: publish the owner's finished designs, then keep them current
