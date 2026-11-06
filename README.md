@@ -30,7 +30,7 @@ Or run it yourself in a terminal (the same thing):
 curl -fsSL https://raw.githubusercontent.com/premake-ai/premake-ai/main/install.sh | bash
 ```
 
-Run that again any time to start Premake. It reuses your install and your designs. Premake lives in `~/premake-ai`.
+Run that again any time to start Premake, or tell Claude Code "Update premake". It gets the newest version and restarts it, and never touches your designs. Premake lives in `~/premake-ai`.
 
 ## Requirements
 

@@ -9,7 +9,7 @@ Two things live here: the Premake studio app (describe a product, a design agent
 
 ## Run the Premake studio
 
-Use this when the user says "install Premake", "open Premake", "start Premake" or "design X with Premake". The app runs on their own machine and its design agent is their own Claude Code login (their subscription), or OpenAI Codex if that is what they use. Never set or use `ANTHROPIC_API_KEY`.
+Use this when the user says "install Premake", "open Premake", "start Premake", "update Premake" or "design X with Premake". The same installer updates an existing install (app code only, never their designs) and restarts it. The app runs on their own machine and its design agent is their own Claude Code login (their subscription), or OpenAI Codex if that is what they use. Never set or use `ANTHROPIC_API_KEY`.
 
 1. Run the installer and wait for it (1 to 3 minutes the first time, seconds after). It downloads Premake to `~/premake-ai` (or reuses it and the user's designs), sets it up, starts the studio in the background and opens the browser:
    ```bash
