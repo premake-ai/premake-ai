@@ -1989,18 +1989,26 @@ em { font-style: normal; }
 /* tooltip: quick hover labels on the viewer toolbar (web/tooltip.js) */
 .qtip { position: fixed; z-index: 10001; max-width: 260px; padding: 6px 9px; border-radius: 7px; background: #1c1917; color: #fafaf9; font: 500 12.5px/1.35 var(--ui, system-ui); pointer-events: none; box-shadow: 0 4px 14px rgba(0,0,0,.18); }
 
-/* Drag the sidebar's right edge to resize it (desktop, app.js); dragged far left it becomes a thumbnail strip
-   (.side-rail) that slides open over the page while hovered. */
+/* Drag the sidebar's right edge to resize it (desktop, app.js). The close-sidebar icon (#sideToggle) folds it to a
+   thumbnail strip (.side-rail) that slides open over the page while hovered (.side-peek, app.js); the icon again opens it for good. */
+.side-toggle { display: none; }
 .side-resize { display: none; }
 @media (min-width: 1001px) {
   .sidebar { position: relative; }
+  .side-head { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
+  .side-toggle { display: inline-grid; place-items: center; width: 26px; height: 26px; margin: -5px -2px -5px 0; border-radius: 6px; color: var(--muted); flex-shrink: 0; }
+  .side-toggle:hover { background: var(--panel-2); color: var(--text); }
   .side-resize { display: block; position: absolute; right: -4px; top: 0; bottom: 0; width: 8px; cursor: col-resize; z-index: 31; }
   .side-resize::after { content: ""; position: absolute; left: 3px; top: 0; bottom: 0; width: 2px; background: transparent; transition: background .15s; }
   .side-resize:hover::after, body.resizing .side-resize::after { background: var(--accent); }
+  .studio.side-rail .side-resize { display: none; }
   .studio.side-rail .sidebar { width: var(--side-w); overflow: hidden; transition: width .16s ease, box-shadow .16s; }
-  .studio.side-rail .sidebar:not(:hover) #newBtn { font-size: 0; gap: 0; padding: 0; justify-content: center; }
-  .studio.side-rail .sidebar:not(:hover) :is(.side-head, .proj-search, .ptext) { display: none; }
-  .studio.side-rail .sidebar:not(:hover) .side-link { font-size: 0; justify-content: center; }
-  .studio.side-rail .sidebar:not(:hover) .proj { justify-content: center; }
-  .studio.side-rail .sidebar:hover { width: 264px; box-shadow: var(--shadow-md); }
+  .studio.side-rail .sidebar :is(#newBtn, .side-head, .side-link) { white-space: nowrap; } /* no re-wrapping while it slides open */
+  .studio.side-rail .sidebar:not(.side-peek) #newBtn { font-size: 0; gap: 0; padding: 0; justify-content: center; }
+  .studio.side-rail .sidebar:not(.side-peek) .side-head { justify-content: center; margin-left: 0; margin-right: 0; }
+  .studio.side-rail .sidebar:not(.side-peek) :is(.side-head > span, .proj-search, .ptext, .side-empty) { display: none; }
+  .studio.side-rail .sidebar:not(.side-peek) .side-toggle { margin: -5px 0; }
+  .studio.side-rail .sidebar:not(.side-peek) .side-link { font-size: 0; justify-content: center; }
+  .studio.side-rail .sidebar:not(.side-peek) .proj { justify-content: center; }
+  .studio.side-rail .sidebar.side-peek { width: 264px; box-shadow: var(--shadow-md); }
 }

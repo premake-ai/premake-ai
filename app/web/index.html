@@ -126,7 +126,9 @@
       <svg viewBox="0 0 16 16" width="14" height="14"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
       New design
     </button>
-    <div class="side-head">Your projects</div>
+    <div class="side-head"><span>Your projects</span>
+      <button type="button" class="side-toggle" id="sideToggle" aria-label="Close sidebar" title="Close sidebar" aria-pressed="false">
+        <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><rect x="2" y="2.5" width="12" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M6 2.5v11" stroke="currentColor" stroke-width="1.3"/></svg></button></div>
     <input class="proj-search" id="projSearch" type="search" placeholder="Search designs" aria-label="Search your designs" autocomplete="off" hidden>
     <div class="proj-list" id="projList"></div>
     <div class="side-foot">
@@ -144,7 +146,7 @@
         My orders
       </a>
     </div>
-    <div class="side-resize" id="sideResize" title="Drag to resize. Drag far left for thumbnails only." aria-hidden="true"></div>
+    <div class="side-resize" id="sideResize" title="Drag to resize" aria-hidden="true"></div>
   </aside>
   <div class="scrim only-mobile" id="scrim"></div>
 

@@ -2359,27 +2359,34 @@ route();
 // guest: back from sign-in with a prompt typed while signed out (/?resume=1, or the old /#/?resume=1): send it, once
 if (ACCESS.authed && !ACCESS.showcase) resumeDraft({ textarea: $('#homePrompt'), form: $('#homeForm'), att: homeAtt });
 
-// Desktop: drag the sidebar's right edge to resize it; far left (under 120 px) it snaps to a thumbnail strip that opens on
-// hover. Double-click the edge for the default width. Remembered per browser.
+// Desktop: drag the sidebar's right edge to resize it (double-click: default width). The close-sidebar icon folds it to a
+// thumbnail strip that opens over the page while hovered; the icon again opens it for good. Both remembered per browser.
 (() => {
-  const h = $('#sideResize'), st = $('#studio'); if (!h || !st) return;
-  const RAIL = 60, KEY = 'premake.sideW';
-  const apply = w => {
-    const rail = w < 120; w = rail ? RAIL : Math.max(180, Math.min(w, 440));
-    st.style.setProperty('--side-w', w + 'px'); st.classList.add('has-sw'); st.classList.toggle('side-rail', rail);
-    return w;
+  const h = $('#sideResize'), tg = $('#sideToggle'), st = $('#studio'); if (!h || !st) return;
+  const KEY = 'premake.sideW', RAIL_KEY = 'premake.sideRail';
+  let width = 0;
+  const show = () => {
+    const rail = st.classList.contains('side-rail');
+    if (rail) st.style.setProperty('--side-w', '60px'); else if (width) st.style.setProperty('--side-w', width + 'px'); else st.style.removeProperty('--side-w');
+    st.classList.toggle('has-sw', rail || !!width);
+    if (tg) { const t = rail ? 'Open sidebar' : 'Close sidebar'; tg.setAttribute('aria-label', t); tg.title = t; tg.dataset.tip = t; tg.setAttribute('aria-pressed', String(rail)); }
   };
-  const reset = () => { st.classList.remove('has-sw', 'side-rail'); st.style.removeProperty('--side-w'); };
-  try { const w = +localStorage.getItem(KEY); if (w) apply(w); } catch {}
+  const setRail = on => { st.classList.toggle('side-rail', on); show(); try { on ? localStorage.setItem(RAIL_KEY, '1') : localStorage.removeItem(RAIL_KEY); } catch {} };
+  try { width = +localStorage.getItem(KEY) || 0; st.classList.toggle('side-rail', localStorage.getItem(RAIL_KEY) === '1'); } catch {}
+  show();
+  // hovering the strip opens it over the page; not straight after closing it, until the mouse has left once
+  const sb = $('#sidebar'); let hold = false;
+  sb?.addEventListener('mouseenter', () => { if (!hold && st.classList.contains('side-rail')) sb.classList.add('side-peek'); });
+  sb?.addEventListener('mouseleave', () => { hold = false; sb.classList.remove('side-peek'); });
+  tg?.addEventListener('click', () => { const on = !st.classList.contains('side-rail'); hold = on; sb?.classList.remove('side-peek'); setRail(on); });
   h.addEventListener('pointerdown', e => {
     e.preventDefault(); h.setPointerCapture(e.pointerId); document.body.classList.add('resizing');
-    let w = 0;
-    const move = ev => { w = apply(ev.clientX - st.getBoundingClientRect().left); };
+    const move = ev => { width = Math.max(180, Math.min(Math.round(ev.clientX - st.getBoundingClientRect().left), 440)); show(); };
     const up = () => { document.body.classList.remove('resizing'); h.removeEventListener('pointermove', move); h.removeEventListener('pointerup', up);
-      try { if (w) localStorage.setItem(KEY, w); } catch {} };
+      try { if (width) localStorage.setItem(KEY, width); } catch {} };
     h.addEventListener('pointermove', move); h.addEventListener('pointerup', up);
   });
-  h.addEventListener('dblclick', () => { reset(); try { localStorage.removeItem(KEY); } catch {} });
+  h.addEventListener('dblclick', () => { width = 0; show(); try { localStorage.removeItem(KEY); } catch {} });
 })();
 
 // Desktop: drag the panel's left edge to make Chat / Order / Launch wider (remembered per browser)
