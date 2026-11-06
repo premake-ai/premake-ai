@@ -1,7 +1,7 @@
 // Image attachments for the home prompt box, the studio chat composer and the build page Modify box.
 // Paste (Cmd/Ctrl+V), drag and drop, or the image button. On phones (touch, no hover) there is also a camera button that
 // opens the rear camera (<input capture="environment">) next to a "Choose photo" library button, and after a photo the box
-// offers quick chips ("Replacement part for this"...) plus a scale tip. Every image is decoded (EXIF orientation applied)
+// offers quick chips ("Replacement part for this"...) until the user types their own words. Every image is decoded (EXIF orientation applied)
 // and re-encoded in the browser (max 2000 px long side, JPEG 0.85), so EXIF and other metadata never leave the device. Uploads go to
 // POST /api/projects/<id>/uploads (server/uploads.js); messages then carry the returned ids.
 import { current } from './nav.js'; // urls: clean URLs
@@ -15,7 +15,6 @@ const PHONE_ACCEPT = 'image/*';
 const isPhone = () => { try { return matchMedia('(hover: none) and (pointer: coarse)').matches; } catch { return false; } };
 const CAM_PLACEHOLDER = 'Describe it: what is it, what should it do, rough size?';
 const CAM_CHIPS = ['Make one like this', 'Replacement part for this', 'Make it fit this', 'Improve this design'];
-const SCALE_TIP = 'Tip: put a coin or ruler in the shot for scale';
 const NOTE_RE = /\n\n\[Attached images: ([^\]]*)\]\s*$/;
 
 export const defaultImageText = n => (n > 1 ? 'Design a product based on these images.' : 'Design a product based on this image.');
@@ -63,8 +62,10 @@ function injectCss() {
 .cam-help[hidden] { display: none; }
 .cam-chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding-bottom: 1px; }
 .cam-chips::-webkit-scrollbar { display: none; }
-.cam-chips .chip { cursor: pointer; flex: none; white-space: nowrap; }
-.cam-tip { display: block; margin-top: 5px; color: var(--muted); font-size: 12px; }
+.cam-chips .chip { cursor: pointer; flex: none; white-space: nowrap; border: 0; border-radius: 8px; padding: 5px 10px; font-size: 12.5px; background: var(--panel-2, #f4f3f0); color: var(--text-2); }
+.cam-chips .chip:hover { color: var(--text); }
+.cam-chips .chip.on { background: var(--accent-soft, rgba(249,115,22,.1)); color: var(--accent-2, #c2410c); }
+.cam-chips[hidden] { display: none; }
 .msg-imgs { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 6px; }
 .msg-imgs button { padding: 0; border: 1px solid var(--line-2); border-radius: 6px; overflow: hidden; width: 72px; height: 72px; cursor: zoom-in; background: var(--panel-2); }
 .msg-imgs img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -194,7 +195,6 @@ export function attachImages(opts) {
       btn.before(cam); cam.after(camInput);
       btn.title = 'Choose photo'; btn.setAttribute('aria-label', 'Choose photo');
     }
-    if (opts.tip) opts.tip.textContent = SCALE_TIP;
   }
 
   // chattools: screenshot of the 3D view, right after the image button. opts.screenshot() -> File | null (cancelled); throws a user-facing Error
@@ -213,20 +213,21 @@ export function attachImages(opts) {
     };
   }
 
-  // after a photo: describe it (placeholder + quick chips + scale tip)
+  // after a photo: describe it (placeholder + quick chips, hidden once the user types their own words)
   const help = document.createElement('div');
   help.className = 'cam-help'; help.hidden = true;
   help.innerHTML = `<div class="cam-chips">${CAM_CHIPS.map(c => `<button type="button" class="chip" data-cam-chip="${esc(c)}">${esc(c)}</button>`).join('')}</div>`
-    + `<span class="cam-tip">${esc(SCALE_TIP)}</span>`;
+;
   strip.after(help);
   let ph0 = null; // the box's own placeholder while ours is shown
   function describeMode(on) {
     help.hidden = !on;
-    if (phone && opts.tip) opts.tip.style.visibility = on ? 'hidden' : ''; // the same tip shows inside the box now
     const ta = opts.textarea;
     if (on && ph0 === null) { ph0 = ta.placeholder; ta.placeholder = CAM_PLACEHOLDER; }
     else if (!on && ph0 !== null) { if (ta.placeholder === CAM_PLACEHOLDER) ta.placeholder = ph0; ph0 = null; }
   }
+  const chipsEl = help.querySelector('.cam-chips');
+  opts.textarea.addEventListener('input', () => { const v = opts.textarea.value.trim(); chipsEl.hidden = !!v && !CAM_CHIPS.some(c => v.startsWith(c)); });
   help.addEventListener('click', e => {
     const b = e.target.closest('[data-cam-chip]');
     if (!b) return;
