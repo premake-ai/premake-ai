@@ -2451,7 +2451,10 @@ if (ACCESS.authed && !ACCESS.showcase) resumeDraft({ textarea: $('#homePrompt'),
   const sb = $('#sidebar'); let hold = false;
   sb?.addEventListener('mouseenter', () => { if (!hold && st.classList.contains('side-rail')) sb.classList.add('side-peek'); });
   sb?.addEventListener('mouseleave', () => { hold = false; sb.classList.remove('side-peek'); });
-  tg?.addEventListener('click', () => { const on = !st.classList.contains('side-rail'); hold = on; sb?.classList.remove('side-peek'); setRail(on); });
+  tg?.addEventListener('click', () => {
+    if (matchMedia('(max-width: 640px)').matches) { closeDrawer(); return; } // the phone drawer: the icon closes it
+    const on = !st.classList.contains('side-rail'); hold = on; sb?.classList.remove('side-peek'); setRail(on);
+  });
   h.addEventListener('pointerdown', e => {
     e.preventDefault(); h.setPointerCapture(e.pointerId); document.body.classList.add('resizing');
     const move = ev => { width = Math.max(180, Math.min(Math.round(ev.clientX - st.getBoundingClientRect().left), 440)); show(); };
