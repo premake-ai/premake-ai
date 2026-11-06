@@ -3829,7 +3829,23 @@ apps.init({ PROJECTS, WEB, DATA, projDir, exDir, ownerOf, readJSON, readText, se
 
 fusion.init({ DATA, send, readBody, allow, rmfg: require('./prices/rmfg').init(DATA), afn: require('./prices/afn').init(DATA), materiam: require('./prices/materiam').init(DATA), // fusion:
   BASE: (req) => (viaGateway(req) ? (process.env.FORMA_PUBLIC_URL || 'https://premake.ai') : `http://${req.headers.host}`) });
-const makefiles = require('./makefiles').init({ projDir, exDir, canEdit, send, allow, clientIp, readJSON }); // makefiles: the Make tab's downloads
+// bambu: the Make tab's Bambu Studio project (cadlib/bambu3mf.py), written to DATA/.bambu/<id>/<title>.3mf
+async function bambu3mf(dir, id, title) {
+  const out = path.join(DATA, '.bambu', id.replace(/[^\w-]/g, '_'), `${String(title).replace(/[^\w ()-]+/g, '').trim().slice(0, 60) || 'design'}.3mf`);
+  fs.mkdirSync(path.dirname(out), { recursive: true });
+  const r = await runProc(VENV_PY, ['-m', 'cadlib.bambu3mf', dir, out], { cwd: APP, env: { ...process.env, PYTHONPATH: APP } }, 120e3);
+  let summary = null; try { summary = JSON.parse(String(r.stdout || '').trim().split('\n').pop()); } catch {}
+  if (r.code !== 0 || !exists(out)) throw new Error(summary?.error || 'Could not make the Bambu Studio file');
+  return { file: out, summary };
+}
+/** Local installs only: open the file in Bambu Studio on this computer. true, or why not. */
+function openBambu(file) {
+  if (ONLINE) return Promise.resolve('Open the downloaded file in Bambu Studio.');
+  if (process.platform !== 'darwin') return Promise.resolve('Open the downloaded file in Bambu Studio.');
+  if (!['/Applications/BambuStudio.app', path.join(os.homedir(), 'Applications/BambuStudio.app')].some((a) => fs.existsSync(a))) return Promise.resolve('Bambu Studio isn’t installed. Get it free from bambulab.com, or download the file.');
+  return runProc('/usr/bin/open', ['-a', 'BambuStudio', file], {}, 20e3).then((r) => (r.code === 0 ? true : 'Bambu Studio didn’t open. Download the file instead.'));
+}
+const makefiles = require('./makefiles').init({ projDir, exDir, canEdit, send, allow, clientIp, readJSON, bambu3mf, openBambu }); // makefiles: the Make tab's downloads
 const apiv1 = require('./apiv1').init({ DATA, send, allow, clientIp, viaGateway, renderSpawn, runProc, estimatePart: fusion.estimatePart }); // apiv1: public sourcing API (server/apiv1.js)
 admin.init({ DATA, PROJECTS, WEB, ORDERS, GATEWAY_URL, ONLINE, MAX_CONCURRENT, readJSON, writeJSON, readText, exists, projDir, vurl, send, serveFile, isAdmin, allow, fulfilment, // admin:
   owners: () => owners, projectUpdated, isPublished, isShared: (id) => share.isShared(id), historyPayload, supportInbox, markSupportRead, addSupportMessage,

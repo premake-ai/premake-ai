@@ -8,11 +8,13 @@
 //   GET /api/make/<id>/print.zip          the printed parts as STL (a 3MF instead when the project has one)
 //   GET /api/make/<id>/shopping-list.csv  bought parts: qty, unit price, line total, supplier, link
 //   GET /api/make/<id>/part/<file>        one part file: <name>.stl or <name>.step
+//   GET /api/make/<id>/bambu.3mf          the printed parts laid flat on 256 mm plates (cadlib/bambu3mf.py), for Bambu Studio
+//   POST /api/make/<id>/open-bambu        local installs: the same file, opened in Bambu Studio on this computer
 const fs = require('node:fs');
 const path = require('node:path');
 const { makeZip } = require('./guide');
 
-let C = {}; // init(): { projDir, exDir, canEdit, send, allow, clientIp, readJSON }
+let C = {}; // init(): { projDir, exDir, canEdit, send, allow, clientIp, readJSON, bambu3mf, openBambu }
 const ID_RE = /^[a-z0-9][a-z0-9-]{0,80}$/i;
 const FILE_RE = /^[\w.-]{1,120}\.(stl|step|3mf)$/i;
 
@@ -68,7 +70,8 @@ function source(acc, id) {
 /** Returns false when the path is not ours. */
 async function handle(req, res, { parts, m, acc }) {
   if (parts[0] !== 'api' || parts[1] !== 'make') return false;
-  if (m !== 'GET' && m !== 'HEAD') { C.send(res, 405, { error: 'GET only' }); return true; }
+  const openReq = m === 'POST' && parts[3] === 'open-bambu' && parts.length === 4;
+  if (m !== 'GET' && m !== 'HEAD' && !openReq) { C.send(res, 405, { error: 'GET only' }); return true; }
   const src = source(acc, parts[2]);
   if (!src) { C.send(res, 404, { error: 'not found' }); return true; }
   const bom = C.readJSON(path.join(src.dir, 'bom.json'), {}) || {};
@@ -100,6 +103,13 @@ async function handle(req, res, { parts, m, acc }) {
     for (const p of made) if (p.process === 'print' && p.stl) { const b = fileBuf(src.dir, p.stl); if (b) files.push({ name: `${P}/${p.base}.stl`, ...b }); }
     if (!files.length) { C.send(res, 404, { error: 'No printed parts' }); return true; }
     sendDownload(res, `${P}-print.zip`, 'application/zip', makeZip(files)); return true;
+  }
+  if ((f === 'bambu.3mf' || openReq) && parts.length === 4) { // Bambu Studio: printed parts laid flat on plates
+    if (!made.some((p) => p.process === 'print' && p.stl)) { C.send(res, 404, { error: 'No printed parts' }); return true; }
+    let r; try { r = await C.bambu3mf(src.dir, src.id, meta.title || P); } catch (e) { C.send(res, 500, { error: e.message }); return true; }
+    if (!openReq) { const b = fileBuf(path.dirname(r.file), path.basename(r.file)); if (!b) { C.send(res, 500, { error: 'Could not make the file' }); return true; } sendDownload(res, `${P}.3mf`, 'model/3mf', b.data); return true; }
+    const opened = await C.openBambu(r.file);
+    C.send(res, 200, { ...r.summary, opened: opened === true, why: opened === true ? null : opened, file: undefined }); return true;
   }
   if (f === 'shopping-list.csv' && parts.length === 4) {
     if (!boughtParts(bom).length) { C.send(res, 404, { error: 'Nothing to buy' }); return true; }

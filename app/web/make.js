@@ -83,7 +83,8 @@ function draw() {
     <div class="mt-group">
       ${row({ icon: I.all, title: 'Download all parts', sub: allSub, action: built ? dlBtn('all.zip', 'Download', true) : '', cls: built ? '' : 'is-off' })}
       ${row({ icon: I.print, title: 'Download for 3D printing', sub: printSub, action: pr.threemf || pr.count ? dlBtn('print.zip') : '', cls: pr.threemf || pr.count ? '' : 'is-off' })}
-      ${row({ icon: I.bambu, title: 'Bambu Studio project', sub: 'Coming soon', cls: 'is-off' })}
+      ${row({ icon: I.bambu, title: 'Open in Bambu Studio', sub: M.bambu || (pr.count ? 'Every printed part laid flat on 256 mm plates' : built ? 'No 3D printed parts in this design' : 'Build the model first'),
+        action: pr.count ? `<span class="mt-acts"><button class="mt-act" type="button" data-mt-bambu>${M.bambuBusy ? 'Opening…' : 'Open'}</button>${dlBtn('bambu.3mf', '3MF')}</span>` : '', cls: pr.count ? '' : 'is-off' })}
     </div>
 
     <div class="mt-group">
@@ -108,6 +109,20 @@ function draw() {
   </div>`;
   $('.mt', el).scrollTop = top;
   el.querySelectorAll('[data-mt-dl]').forEach(a => a.addEventListener('click', () => track('make_download', { file: a.dataset.mtDl.split('/')[0], design: M.id })));
+  const bb = $('[data-mt-bambu]', el); // bambu: make the project file and open it in Bambu Studio on this computer
+  if (bb) bb.onclick = async () => {
+    if (M.bambuBusy) return;
+    const id = M.id; M.bambuBusy = true; M.bambu = null; draw();
+    track('make_bambu', { design: id });
+    try {
+      const r = await fetch(`/api/make/${encodeURIComponent(id)}/open-bambu`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' });
+      const d = await r.json().catch(() => ({}));
+      if (!r.ok) throw new Error(d.error || `Couldn’t make the file (${r.status})`);
+      const n = `${d.parts} part${d.parts === 1 ? '' : 's'} on ${d.plates} plate${d.plates === 1 ? '' : 's'}`;
+      M.bambu = d.opened ? `Opened in Bambu Studio: ${n}. Slice, then print.${d.too_big?.length ? ` Too big for the bed: ${d.too_big.join(', ')}.` : ''}` : `${d.why} (${n})`;
+    } catch (e) { M.bambu = e.message; }
+    M.bambuBusy = false; if (M.id === id) draw();
+  };
   const o = $('[data-mt-order]', el);
   if (o) o.onclick = () => {
     track('make_get_it_made', { design: M.id });
