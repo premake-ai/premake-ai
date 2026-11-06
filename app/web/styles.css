@@ -2011,6 +2011,14 @@ em { font-style: normal; }
   .studio.side-rail .sidebar:not(.side-peek) .side-link { font-size: 0; justify-content: center; }
   .studio.side-rail .sidebar:not(.side-peek) .proj { justify-content: center; }
   .studio.side-rail .sidebar.side-peek { width: 264px; box-shadow: var(--shadow-md); }
+  /* the strip: one centred column, 36 px button, 36 px thumbnails, no scrollbar */
+  .studio.side-rail .sidebar:not(.side-peek) { padding: 12px 0 10px; align-items: center; }
+  .studio.side-rail .sidebar:not(.side-peek) #newBtn { width: 36px; height: 36px; min-height: 0; border-radius: 10px; box-shadow: none; flex-shrink: 0; }
+  .studio.side-rail .sidebar:not(.side-peek) .side-head { margin: 12px 0 6px; padding: 0; width: auto; }
+  .studio.side-rail .sidebar:not(.side-peek) .proj-list { width: 100%; margin: 0; padding: 0; scrollbar-width: none; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+  .studio.side-rail .sidebar:not(.side-peek) .proj-list::-webkit-scrollbar { display: none; }
+  .studio.side-rail .sidebar:not(.side-peek) .proj { width: 40px; height: 40px; padding: 0; gap: 0; flex-shrink: 0; border-radius: 9px; }
+  .studio.side-rail .sidebar:not(.side-peek) :is(.pthumb-w, .pthumb) { width: 36px; height: 36px; border-radius: 8px; }
 }
 
 /* scaleref: the Scale chooser (web/scaleref.js), bottom centre of the viewer */

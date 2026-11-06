@@ -482,9 +482,17 @@ function init({ DATA, projDir, exDir, exists, readJSON, writeJSON, send, quote }
 
   function source(url) {
     const pid = url.searchParams.get('project'), ex = url.searchParams.get('example');
-    if (pid) { const dir = projDir(pid); return dir && exists(dir) ? { kind: 'projects', id: pid, dir, cache: path.join(DATA, '.sourcing', 'projects', pid, 'cache.json') } : null; }
-    if (ex) { const dir = exDir(ex); return dir && exists(dir) ? { kind: 'examples', id: ex, dir, cache: path.join(DATA, '.sourcing', 'examples', ex, 'cache.json') } : null; }
+    if (pid) { const dir = projDir(pid); return dir && exists(dir) ? withSaved({ kind: 'projects', id: pid, dir, cache: path.join(DATA, '.sourcing', 'projects', pid, 'cache.json') }) : null; }
+    if (ex) { const dir = exDir(ex); return dir && exists(dir) ? withSaved({ kind: 'examples', id: ex, dir, cache: path.join(DATA, '.sourcing', 'examples', ex, 'cache.json') }) : null; }
     return null;
+  }
+  /** An example (or a design copied from one) carries its saved quotes (quotes.json, scripts/import-quotes.py): the
+   *  starting cache, so a fresh install prices it without asking a shop. A changed part set has a new key and re-quotes. */
+  function withSaved(src) {
+    if (!exists(src.cache) && exists(path.join(src.dir, 'quotes.json'))) {
+      try { fs.mkdirSync(path.dirname(src.cache), { recursive: true }); fs.copyFileSync(path.join(src.dir, 'quotes.json'), src.cache); } catch {}
+    }
+    return src;
   }
 
   /** Printed parts with their STL hash. */
