@@ -158,7 +158,7 @@ const plateB = { id: 'fab:2', type: 'fabricated', process: 'sheet', name: 'Side 
 
 test('buy group: Slant set, cheaper live metal shop before SendCutSend, Amazon basket and search', async () => {
   const { buyGroup, cutSet, cutFileList, printedSet } = await load();
-  assert.deepEqual(printedSet([printed], 1), { usd: 9, pending: false, url: 'https://www.slant3d.com/', lead: '1–3 days', setup: 5 });
+  assert.deepEqual(printedSet([printed], 1), { usd: 9, estimate: false, pending: false, url: 'https://www.slant3d.com/', lead: '1–3 days', setup: 5 });
   const src = { printed_zip: '/api/sourcing?project=x&zip=printed', cut_zip: '/api/sourcing?project=x&zip=cut' };
   // plate (SCS about 13, no live) + plateB (RMFG 3 live, SCS 9): no live shop covers both, SendCutSend about 22
   let c = cutSet([plate, plateB], 1);
