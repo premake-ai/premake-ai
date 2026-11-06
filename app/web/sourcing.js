@@ -90,6 +90,18 @@ export function sourcingData(src, onChange) {
   return s.hidden ? null : s.data || null;
 }
 
+/** The same data for a second reader (the studio's Buy the parts cards) without taking over the Order tab's listener:
+ *  what is loaded now (or null), starting a load when there is none; onPeek runs after each load. */
+export function sourcingPeek(src, onPeek) {
+  if (!src || !(src.project || src.example)) return null;
+  const key = src.project ? 'project=' + encodeURIComponent(src.project) : 'example=' + encodeURIComponent(src.example);
+  let s = state.get(key);
+  if (!s) { s = { polls: 0, key }; state.set(key, s); }
+  s.onPeek = onPeek || null;
+  if (!s.loading && !s.timer && !s.hidden && !s.data && !s.err) load(s);
+  return s.hidden ? null : s.data || null;
+}
+
 async function load(s) {
   s.loading = true; clearTimeout(s.timer); s.timer = null;
   try {
@@ -102,7 +114,7 @@ async function load(s) {
     if (r.status !== 202) s.polls = 0;
     if (r.status === 202 && s.polls++ < POLL_MAX) s.timer = setTimeout(() => load(s), POLL_MS);
   } catch (e) { s.err = e; }
-  finally { s.loading = false; draw(s); try { s.onChange?.(s.data); } catch (e) { console.warn(e); } }
+  finally { s.loading = false; draw(s); try { s.onChange?.(s.data); } catch (e) { console.warn(e); } try { s.onPeek?.(s.data); } catch (e) { console.warn(e); } }
 }
 
 function draw(s) {

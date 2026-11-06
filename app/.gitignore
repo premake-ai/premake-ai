@@ -5,6 +5,8 @@
 
 # Local environment
 .venv
+.venv.nosync
+.setup-failed
 __pycache__/
 *.pyc
 .DS_Store

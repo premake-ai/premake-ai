@@ -19,10 +19,13 @@ say "1/3 Node $(node -v) ok"
 
 # 2. Python venv with CadQuery (pinned). uv first, else python3.12 / python3.11 from PATH.
 VENV="$APP_DIR/.venv"
+# A new venv goes in .venv.nosync with .venv linking to it: iCloud Drive (Desktop & Documents sync) skips *.nosync, so it
+# never uploads ~400 MB of Python or evicts it with "Optimize Mac Storage". An existing real .venv folder stays as it is.
+if [ ! -e "$VENV" ] || [ -L "$VENV" ]; then mkdir -p "$APP_DIR/.venv.nosync"; ln -sfn .venv.nosync "$VENV"; VENV="$APP_DIR/.venv.nosync"; fi
 if [ -x "$VENV/bin/python" ] && "$VENV/bin/python" -c 'import cadquery, trimesh, vtk, scipy' >/dev/null 2>&1; then
   say "2/3 Python venv already set up ($("$VENV/bin/python" -V))"
 else
-  rm -rf "$VENV"
+  rm -rf "$VENV"; mkdir -p "$VENV"
   if command -v uv >/dev/null 2>&1; then
     say "2/3 Making the Python venv with uv (Python 3.12, downloads it if needed)..."
     uv venv --quiet --python 3.12 "$VENV" || uv venv --quiet --python 3.11 "$VENV" || fail "uv could not create a Python 3.12 or 3.11 venv."

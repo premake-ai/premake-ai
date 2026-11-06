@@ -1,20 +1,23 @@
 #!/usr/bin/env bash
-# Install Premake and start it: download (or reuse) ~/premake-ai, set it up, start the studio in the background and
+# Install Premake and start it: download (or reuse) ~/Documents/premake-ai, set it up, start the studio in the background and
 # open it in the browser. Run it again to update: it pulls the newest app code (your designs in app/data are never
 # touched), restarts a running studio when something changed, and reopens it.
 #   curl -fsSL https://raw.githubusercontent.com/premake-ai/premake-ai/main/install.sh | bash
 #   PREMAKE_HOME=~/somewhere bash install.sh       install somewhere else
 #   PREMAKE_AGENT=codex bash install.sh            use OpenAI Codex as the design agent
 #   PREMAKE_NO_UPDATE=1 bash install.sh            start without checking for updates
+#   PREMAKE_BROWSER=none bash install.sh           don't open a browser (an agent with its own browser pane opens the link there)
 #   bash install.sh "design me a SCARA arm 3D printer"   also start that design (curl ... | bash -s "...")
 # Needs git, Node.js 20+ and Python 3.11/3.12 (or uv), and Claude Code or Codex logged in. No API key, no sudo.
 set -euo pipefail
-P="${PREMAKE_HOME:-$HOME/premake-ai}"
+P="${PREMAKE_HOME:-$HOME/Documents/premake-ai}"
+# installs from before 7 Nov 2026 live in ~/premake-ai: keep using that one rather than making a second copy
+if [ -z "${PREMAKE_HOME:-}" ] && [ ! -e "$P" ] && [ -x "$HOME/premake-ai/app/start.sh" ]; then P="$HOME/premake-ai"; fi
 REPO="${PREMAKE_REPO:-https://github.com/premake-ai/premake-ai}"
 say() { printf 'Premake: %s\n' "$*"; }
 PROMPT="${1:-${PREMAKE_PROMPT:-}}"
 withPrompt() { if [ -n "$PROMPT" ]; then printf '%s/?prompt=%s' "$1" "$(node -e 'process.stdout.write(encodeURIComponent(process.argv[1]))' "$PROMPT" 2>/dev/null)"; else printf '%s' "$1"; fi; }
-open_url() { if [ "$(uname)" = Darwin ]; then open "$1"; elif command -v xdg-open >/dev/null 2>&1; then xdg-open "$1" >/dev/null 2>&1 || true; fi; }
+open_url() { [ "${PREMAKE_BROWSER:-}" != none ] || return 0; if [ "$(uname)" = Darwin ]; then open "$1"; elif command -v xdg-open >/dev/null 2>&1; then xdg-open "$1" >/dev/null 2>&1 || true; fi; }
 
 # 1. Download (once). An existing install is left as it is: your designs live in it.
 if [ ! -x "$P/app/start.sh" ]; then

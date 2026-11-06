@@ -9,7 +9,8 @@ import { thinkingLine, versionNote, partLabel } from './livecaption.js'; // live
 import { renderMarket } from './market.js';
 import { CHECKOUT, openCheckout, startCheckout, renderOrders, ordersLinkVisible } from './checkout.js'; // payments:
 import { partThumb } from './partthumbs.js'; // order tab: a small render of each part next to its line
-import { renderOrderView } from './ordertab.js'; // order tab: calendar, kit contents, delivery timeline (uses web/sourcing.js)
+import { renderOrderView, estimateTotal } from './ordertab.js';
+import { sourcingPeek } from './sourcing.js'; // order tab: calendar, kit contents, delivery timeline (uses web/sourcing.js)
 import { renderGuide, guideQuietLinkHtml } from './guide.js'; // guide:
 import { attachImages, defaultImageText } from './attach.js'; // images:
 import { installGuest, resumeDraft, signInModal } from './guest.js'; // guest: signed-out studio + prompt carry-over
@@ -1221,11 +1222,20 @@ function renderPriceChip(record) { // top right of the model: the build tutorial
 
 // ---------- order pill + post-run nudge ----------
 function tier1() { return S.quote?.tiers?.find(t => t.qty === 1) || null; }
+/** "$10.61": the Order tab's own total for one build (cheapest option per part, before shipping), so the cards and the
+ *  Order tab always agree; '' until its data has loaded (the cards redraw then). */
+function partsCost() {
+  if (!S.cur || S.cur.readOnly && S.cur.kind !== 'example') return '';
+  const src = S.cur.kind === 'project' ? { project: S.cur.id } : { example: S.cur.id }, id = S.cur.id;
+  const d = sourcingPeek(src, () => { if (S.cur?.id === id) { renderOrderPill(); if (S.chat?.nudge && !S.chat.nudge.dismissed) renderChat(); } });
+  const tot = d?.lines?.length ? estimateTotal(d.lines, 1) : null;
+  return tot && tot.usd > 0 ? '$' + tot.usd.toFixed(2) : '';
+}
 function renderOrderPill() {
   const el = $('#orderPill'), t = tier1();
   el.hidden = !t || !S.cur?.data?.manifest?.parts?.length;
   if (el.hidden) return;
-  el.innerHTML = `<span class="op-ic">${cartSvg}</span><span class="op-t"><b>Buy the parts</b><span>Shops and files for every part</span></span><span class="op-go">→</span>`; // order tab: where to buy, not a checkout
+  el.innerHTML = `<span class="op-ic">${cartSvg}</span><span class="op-t"><b>Buy the parts</b><span>${partsCost() ? `About ${partsCost()} in parts · shops for each` : 'Shops and files for every part'}</span></span><span class="op-go">→</span>`; // order tab: where to buy, not a checkout
 }
 const cartSvg = '<svg viewBox="0 0 16 16" width="15" height="15"><path d="M2 3h1.8l1.4 7.2h7.3L14 5H4.3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="6" cy="13" r="1" fill="currentColor"/><circle cx="12" cy="13" r="1" fill="currentColor"/></svg>';
 function orderPrototype() { setRtab('order'); renderOrder(); } // the Order tab: every part and where to buy it
@@ -1238,7 +1248,7 @@ function nudgeHtml(c) {
     <button class="icon-btn on-x" data-nudge-x aria-label="Dismiss"><svg viewBox="0 0 16 16" width="12" height="12"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.5"/></svg></button>
     ${S.hero ? `<img src="${S.hero}" alt="">` : ''}
     <div class="on-t"><b>Looks good? Get the parts</b>
-      <span>Every part with the shops that sell or make it, and the files to upload.</span>
+      <span>${partsCost() ? `About ${partsCost()} in parts. ` : ''}Every part with the shops that sell or make it, and the files to upload.</span>
       <button class="btn primary sm" data-nudge-go>${cartSvg}Where to buy</button></div></div>`;
 }
 function wireNudge(el) {

@@ -22,13 +22,13 @@ Tell Claude Code or Codex:
 Install premake-ai from github
 ```
 
-> **AI agents installing Premake:** run this one command, don't do the steps by hand. It returns in under a minute: it downloads Premake to `~/premake-ai`, starts it, opens the browser (the CAD engine finishes installing in the background) and, given the user's request in quotes, starts that design:
+> **AI agents installing Premake:** run this one command, don't do the steps by hand. It returns in under a minute: it downloads Premake to `~/Documents/premake-ai`, starts it, opens the browser (the CAD engine finishes installing in the background) and, given the user's request in quotes, starts that design:
 >
 > ```bash
 > curl -fsSL https://raw.githubusercontent.com/premake-ai/premake-ai/main/install.sh | bash -s "design me a SCARA arm 3D printer"
 > ```
 >
-> Leave out the quoted part when there's no design to start. Read [install.sh](install.sh) first if you like; it needs no sudo and no API key. As soon as it returns, send the user the `Premake: your design: ...` link it prints (or `Premake: running at ...`) as your first message so they can watch it being built, and open it yourself too in case the browser didn't.
+> Leave out the quoted part when there's no design to start. Read [install.sh](install.sh) first if you like; it needs no sudo and no API key. As soon as it returns, send the user the `Premake: your design: ...` link it prints (or `Premake: running at ...`) as your first message so they can watch it being built. If you have your own browser pane (Claude Code's desktop app), add `PREMAKE_BROWSER=none` before `bash` and open the link there; otherwise open it with `open "LINK"` too, in case the browser didn't. More in [AGENTS.md](AGENTS.md).
 
 It downloads Premake, sets it up, starts it and opens it in your browser. Every example design is already in your sidebar.
 
@@ -38,7 +38,7 @@ Or run it yourself in a terminal (the same thing):
 curl -fsSL https://raw.githubusercontent.com/premake-ai/premake-ai/main/install.sh | bash
 ```
 
-Run that again any time to start Premake, or tell Claude Code "Update premake". It gets the newest version and restarts it, and never touches your designs. Premake lives in `~/premake-ai`.
+Run that again any time to start Premake, or tell Claude Code "Update premake". It gets the newest version and restarts it, and never touches your designs. Premake lives in `~/Documents/premake-ai`.
 
 ## Requirements
 
@@ -46,7 +46,7 @@ Run that again any time to start Premake, or tell Claude Code "Update premake". 
 - A design agent, installed and logged in:
   - [Claude Code](https://claude.com/claude-code) (`claude auth login`). Uses your Claude subscription, never an API key. Premake picks Claude Opus 5.5 when your plan has it and otherwise Claude Code's default model, and remembers the choice. Set `FORMA_MODEL` to choose.
   - or [OpenAI Codex](https://developers.openai.com/codex) (`npm install -g @openai/codex`, then `codex login`). Uses your ChatGPT plan and Codex's own default model, the best one it offers you. Set `PREMAKE_CODEX_MODEL` to choose.
-  - With both, Premake uses Claude Code. `PREMAKE_AGENT=codex ~/premake-ai/app/start.sh` picks Codex.
+  - With both, Premake uses Claude Code. `PREMAKE_AGENT=codex ~/Documents/premake-ai/app/start.sh` picks Codex.
 - Node.js 20 or newer.
 - Python 3.11 or 3.12 for CadQuery, or [uv](https://docs.astral.sh/uv/), which fetches Python for you. `setup.sh` makes a venv inside `app/`; nothing is installed system-wide and nothing needs sudo.
 - Quotes on their own (the skill below) need only `curl`, on macOS, Linux or Windows 10 and later.

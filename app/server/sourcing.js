@@ -579,7 +579,8 @@ function init({ DATA, projDir, exDir, exists, readJSON, writeJSON, send, quote }
       lines.push({ id: `printed:${x.i}`, type: 'printed', name: str(p.name) || `Part ${x.i + 1}`, qty_per_unit: 1, ...(colour ? { color: colour } : {}),
         detail: [Number(p.grams) ? `${Math.round(p.grams)} g` : '', Number(p.print_hours) ? `${(+p.print_hours).toFixed(1)} h` : '', 'PETG', colour ? `colour: ${colour}` : ''].filter(Boolean).join(' · '),
         downloads: x.abs ? [{ label: 'STL', href: files + String(p.file).split('/').map(encodeURIComponent).join('/') }] : [],
-        feedback: sp?.issues || [], options });
+        feedback: sp?.issues || [], options,
+        estimate: Number(bp[1] ?? Object.values(bp)[0]) > 0 ? { unit_usd: Number(bp[1] ?? Object.values(bp)[0]), source: 'Estimate from its filament and print time' } : null }); // until a shop quotes it
     }
 
     // fabricated parts (identical pieces grouped)

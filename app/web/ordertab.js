@@ -63,7 +63,8 @@ export function buyOptions(l, n = 1, qtys = TIERS) {
   const est = Number(l?.estimate?.unit_usd);
   const unpricedAt = o => !(o.prices && o.prices[t] != null);
   let estOn = Number.isFinite(est) && est > 0
-    ? (amzFirst && raw.find(o => isAmazon(o) && unpricedAt(o))) || raw.find(o => l.supplier && String(o.service).toLowerCase() === String(l.supplier).toLowerCase() && unpricedAt(o)) || raw.find(o => !o.upload && unpricedAt(o)) || null : null;
+    ? (groupOf(l) === 'printed' && raw.find(o => o.service === 'Slant 3D' && unpricedAt(o))) // printed: our filament + print-time estimate on Slant until it quotes
+      || (amzFirst && raw.find(o => isAmazon(o) && unpricedAt(o))) || raw.find(o => l.supplier && String(o.service).toLowerCase() === String(l.supplier).toLowerCase() && unpricedAt(o)) || raw.find(o => !o.upload && unpricedAt(o)) || null : null;
   // cut parts with no shop price at all: our shop model's number rides on the first upload shop (SendCutSend), as "about"
   let ourEach = null;
   if (!estOn && groupOf(l) === 'metal' && raw.every(unpricedAt)) {
@@ -117,7 +118,7 @@ export function printedSet(ls, n = 1, qtys = TIERS) {
   const slant = ls.map(l => buyOptions(l, n, qtys).find(x => x.service === 'Slant 3D')).filter(Boolean);
   const priced = ls.length > 0 && slant.length === ls.length && slant.every(o => o.usd != null);
   const setup = priced ? Math.max(0, ...slant.map(o => o.setup || 0)) : 0;
-  return { usd: priced ? r2(slant.reduce((a, o) => a + o.usd, 0) + setup) : null, pending: slant.some(o => o.kind === 'pending'),
+  return { usd: priced ? r2(slant.reduce((a, o) => a + o.usd, 0) + setup) : null, estimate: slant.some(o => o.kind === 'estimate'), pending: slant.some(o => o.kind === 'pending'),
     url: slant.find(o => o.url)?.url || 'https://www.slant3d.com/', lead: slant.find(o => o.lead)?.lead || '', setup };
 }
 
@@ -226,11 +227,7 @@ export function renderOrderView(el, ctx) {
   const buys = lines.length ? buyGroup(lines, N, qtys, src) : [];
   const buySec = buys.length ? `<div class="ot-gh">Buy</div><div class="ot-g ot-buy">${buys.map(buyRowHtml).join('')}</div>` : '';
 
-  // estimate
-  const estSec = tot ? `<div class="ot-gh">Estimated cost</div>
-    <div class="ot-g"><div class="ot-row">
-      <span class="ot-rt"><b>About ${money(tot.usd)}</b><span>${esc(estimateText(tot, N))}</span></span>
-    </div></div>` : '';
+  // (no separate "Estimated cost" box: the total sits in the bar at the bottom, Josh 6 Nov)
 
   // parts, by group
   const groups = GROUPS.map(g => ({ ...g, ls: lines.filter(l => groupOf(l) === g.k) })).filter(g => g.ls.length);
@@ -260,7 +257,7 @@ export function renderOrderView(el, ctx) {
   const pin = tot ? `<div class="ot-pin"><div class="ot-tot"><span>${quoting ? '<span class="ot-upd">Getting live prices…</span>' : `Estimate for ${plural(N, 'build')}`}</span><b class="num">about ${money(tot.usd)}</b></div>
     <p class="ot-fine">Cheapest option per part, before shipping. You buy from each shop directly.</p></div>` : '';
 
-  el.innerHTML = `<div class="ot"><div class="ot-scroll">${head}${qtySec}${buySec}${estSec}${empty}${partSecs}${foot}</div>${pin}</div>`;
+  el.innerHTML = `<div class="ot"><div class="ot-scroll">${head}${qtySec}${buySec}${empty}${partSecs}${foot}</div>${pin}</div>`;
   const sc = el.querySelector('.ot-scroll'); if (sc) sc.scrollTop = keep;
 
   // wiring
@@ -299,8 +296,8 @@ export const NO_METAL_PROMPT = 'Redesign this without cut metal or laser-cut pan
 /** Printed parts: one order for the whole set (Slant 3D, the zip of every STL), other print shops as whole-set links. */
 function printedSetHtml(ls, N, qtys, st, src) {
   const per = ls.map(l => buyOptions(l, N, qtys));
-  const { usd, pending, url, lead, setup } = printedSet(ls, N, qtys);
-  const sub = ['Slant 3D', lead, setup ? `incl. ${money(setup)} setup` : '', usd != null ? 'live quote' : pending ? 'getting a live quote' : 'quote when you upload the STLs'].filter(Boolean).join(' · ');
+  const { usd, estimate, pending, url, lead, setup } = printedSet(ls, N, qtys);
+  const sub = ['Slant 3D', lead, setup ? `incl. ${money(setup)} setup` : '', usd != null && !estimate ? 'live quote' : usd != null ? 'estimate until Slant quotes' : pending ? 'getting a live quote' : 'quote when you upload the STLs'].filter(Boolean).join(' · ');
   const others = [], seen = new Set(['Slant 3D']);
   for (const o of per.flat()) if (!seen.has(o.service) && o.url && o.kind !== 'pending') { seen.add(o.service); others.push(o); }
   const more = st.open.has('printshops');
@@ -308,7 +305,7 @@ function printedSetHtml(ls, N, qtys, st, src) {
   return `<div class="ot-g ot-set">
     <a class="ot-row ot-opt ot-link ot-hero" href="${esc(url)}" target="_blank" rel="noopener noreferrer" data-ot-shop="Slant 3D">${logo('Slant 3D')}
       <span class="ot-rt"><b>Order all ${plural(ls.length, 'printed part')}</b><span>${esc(sub)}</span></span>
-      <span class="ot-amt num ${usd == null ? 'muted' : ''}">${usd != null ? money(usd) : pending ? 'Quoting…' : 'Upload for price'}</span><i class="ot-ext">${EXT}</i></a>
+      <span class="ot-amt num ${usd == null ? 'muted' : ''}">${usd != null ? `${estimate ? '<small>about</small> ' : ''}${money(usd)}` : pending ? 'Quoting…' : 'Upload for price'}</span><i class="ot-ext">${EXT}</i></a>
     ${zip ? `<a class="ot-row ot-opt ot-link" href="${esc(zip)}" download>
       <span class="ot-logo file" aria-hidden="true">${DL}</span>
       <span class="ot-rt"><b>Download all STLs (.zip)</b><span>Upload them to Slant 3D, or any shop below, as one order</span></span></a>` : ''}
@@ -380,14 +377,6 @@ function basketHtml(ls, N, qtys, st) {
       ${open ? search.map(it => `<a class="ot-row ot-opt ot-link ot-sub" href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener noreferrer" data-ot-shop="Amazon">
         <span class="ot-rt"><b>${esc(it.line.name)}</b><span>${esc(`Need ${it.qty} · search Amazon`)}</span></span><i class="ot-ext">${EXT}</i></a>`).join('') : ''}</div>` : '';
   return `<div class="ot-g ot-set">${cartRows}${findRow}</div>`;
-}
-
-function estimateText(tot, N) {
-  const bits = [`Cheapest option for each part, ${plural(N, 'build')}, before shipping and tax`];
-  if (tot.estimate > 0 && tot.live > 0) bits.push(`${money(tot.live)} is live quotes, the rest is estimated`);
-  else if (tot.live === 0) bits.push('all estimated');
-  if (tot.unpriced) bits.push(`${plural(tot.unpriced, 'part')} not counted: the shop quotes when you upload the file`);
-  return bits.join('. ') + '.';
 }
 
 const priceHtml = o => o.usd != null ? `${o.kind === 'estimate' ? '<small>about</small> ' : ''}${money(o.usd)}` : o.kind === 'pending' ? 'Quoting…' : o.upload ? 'Upload for price' : 'See price';
