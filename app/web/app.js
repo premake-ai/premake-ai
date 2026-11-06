@@ -1536,7 +1536,7 @@ function renderChat() {
     $$('.starter', el).forEach(b => b.onclick = () => { $('#chatInput').value = b.textContent; autoGrow(); $('#chatInput').focus(); });
     return;
   }
-  el.innerHTML = threadHtml(c, { editable: !running && !!api.undo, parts: tgt === 'design', firstRun: tgt === 'design' && isFirstRun() }) + (tgt === 'design' ? queueHtml(c) + nudgeHtml(c) : '');
+  el.innerHTML = threadHtml(c, { editable: !running && !!api.undo, parts: tgt === 'design', firstRun: tgt === 'design' && isFirstRun(), base: S.cur.base }) + (tgt === 'design' ? queueHtml(c) + nudgeHtml(c) : '');
   if (tgt === 'design') { wireNudge(el); $$('[data-qx]', el).forEach(b => b.onclick = () => { c.queue.splice(+b.dataset.qx, 1); renderChat(); }); }
   wireLiveToggle(el, c.live);
   if (atBottom || running || c.nudge?.fresh) { el.scrollTop = el.scrollHeight; if (c.nudge) c.nudge.fresh = false; }
@@ -2073,6 +2073,7 @@ async function onProjectEvent(id, d) {
     case 'editing_parts': if (isCurProject(id) && live().running && (d.parts?.length || d.replay)) S.viewer?.editGlow?.set(d.parts); break; // editglow: shimmer what the agent is editing (a replayed [] = the build landed)
     case 'assistant': if (addLiveText(live(), d.text) && isCurProject(id)) renderChat(); break;
     case 'partial': setPartial(id, e, 'design', d.text, d.thinking); break;
+    case 'references': if (Array.isArray(d.refs)) { live().refs = d.refs; if (isCurProject(id)) renderChat(); } break; // refs: reference photos (server/refs.js)
     case 'caption': if (d.text) { const L = live(); clearTimeout(L.thinkTimer); L.thinkTimer = null; showCap(id, L, d.text); } break; // livecaption: server/caption.js (tool steps win over reasoning)
     case 'part_preview': // livepreview: a part of the design.py still being written, on the workbench until the full model lands
       if (isCurProject(id) && live().running && d.url && (isFirstRun() || !S.viewer?.parts().length)) { const v = await getViewer(); if (v && isCurProject(id)) { overlay(''); v.addPreview(d); renderVpStatus(); } }

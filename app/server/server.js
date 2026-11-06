@@ -48,6 +48,7 @@ const PROJECTS = path.join(DATA, 'projects');
 const EXAMPLES = process.env.FORMA_EXAMPLES_DIR ? path.resolve(process.env.FORMA_EXAMPLES_DIR) : path.join(APP, 'examples');
 const ORDERS = path.join(DATA, 'orders.json');
 const brain = require('./agentbrain'); // agentbrain: question cards, per-user prefs (answers, effort), stop reasons, auto titles
+const refs = require('./refs'); // refs: reference photos for a new design ("Designing something like these")
 const prefs = brain.store(DATA);
 const askmock = require('./askmock'); // askmock: quick 3D mock-ups for question-card options
 const sections = require('./sections'); // sections: the Parts panel grouped by machine section
@@ -1221,7 +1222,8 @@ function finishRun(id, run, code) {
   const status = run.stopped ? brain.stopStatus(run, run.capMs || RUN_TIMEOUT_MS) : null;
   if (asking && !reply) reply = 'A few quick questions before I start.';
   const flow = flowForReply(run.flow, reply);
-  const extra = { tl: timeline, ...(asking || finished ? { questions: asking || finished } : {}), ...(status ? { status } : {}), ...(flow ? { flow } : {}) };
+  try { fs.rmSync(path.join(dir, 'references.json'), { force: true }); } catch {} // refs: the photos are saved on the reply
+  const extra = { tl: timeline, ...(run.refs?.length ? { refs: run.refs } : {}), ...(asking || finished ? { questions: asking || finished } : {}), ...(status ? { status } : {}), ...(flow ? { flow } : {}) };
   const msgIdx = reply ? addMessageTo(msgFile, 'assistant', reply, extra) : -1;
   if (asking && msgIdx >= 0) { // askmock: the card's message exists now: save the mock-ups that already landed, the rest follow
     const job = startAskMocks(id, dir, asking, run.userText);
@@ -1301,6 +1303,10 @@ function handleMsg(id, run, agent, agentFile, j) {
         if (ep?.parts.length) emitEditing(id, run, ep.parts, 'edit');
         record(id, run, { type: P + 'step', text: ep ? editparts.editLabel(ep) : stepText(c.name, c.input), ...(ep?.parts.length ? { parts: ep.parts } : {}) });
         if (run.kind === 'design') setCaption(id, run, caption.forTool(c.name, c.input, ep?.parts)); // livecaption:
+        if (run.kind === 'design' && c.name === 'Write' && /(^|\/)references\.json$/.test(String(c.input?.file_path || '')) && !run.refsJob) { // refs: reference photos, fetched now
+          let list = []; try { list = refs.clean(JSON.parse(String(c.input.content || ''))); } catch {}
+          if (list.length) run.refsJob = refs.fetchAll(run.dir, list).then((cards) => { if (cards.length && !run.finished) { run.refs = cards; record(id, run, { type: P + 'references', refs: cards }); } }).catch(() => {});
+        }
         if (run.kind === 'design' && c.name === 'Write' && /(^|\/)questions\.json$/.test(String(c.input?.file_path || ''))) { // askmock: start drawing the options now
           try { const qs = brain.cleanQuestions(JSON.parse(String(c.input.content || ''))); if (qs.length) startAskMocks(id, run.dir, qs, run.userText); } catch {}
         }

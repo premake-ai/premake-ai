@@ -176,3 +176,13 @@
 /* composer: the image button sits next to the effort chip, not floating mid-bar (owner, 3 Nov) */
 #composer .cbar .ep-wrap { order: -2; margin-right: 4px; }
 #composer .cbar .att-btn { order: -1; }
+
+/* refs: "Designing something like these" (web/chatui.js refsHtml, server/refs.js): reference photos above a new design's steps */
+.refs { margin: 2px 0 10px; }
+.refs-h { margin: 0 0 8px; font-size: 13.5px; color: var(--text); }
+.refs-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.ref { display: flex; flex-direction: column; gap: 2px; color: var(--text); text-decoration: none; min-width: 0; }
+.ref img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 10px; background: var(--panel-2); border: 1px solid var(--line); }
+.ref:hover img { border-color: var(--line-2); }
+.ref-c { font-size: 12px; line-height: 1.35; margin-top: 3px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.ref-s { font-size: 11px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

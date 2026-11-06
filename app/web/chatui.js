@@ -213,6 +213,14 @@ function footHtml(m) {
 }
 
 /** Messages + the live turn, as HTML. chat = { messages, live, steps }. opts.editable: show rewind / restore actions. */
+/** refs: "Designing something like these": the reference photos a new design is based on (server/refs.js), each linking
+ *  to the page it came from. img is relative to the design's files (opts.base). */
+function refsHtml(refs, base) {
+  if (!Array.isArray(refs) || !refs.length || !base) return '';
+  return `<div class="refs"><p class="refs-h">Designing something like these</p><div class="refs-row">${refs.map(r => `<a class="ref" href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">
+    <img src="${esc(base + r.img)}" alt="${esc(r.caption || r.site || '')}" loading="lazy" decoding="async"><span class="ref-c">${esc(r.caption || '')}</span><span class="ref-s">${esc(r.site || '')}</span></a>`).join('')}</div></div>`;
+}
+
 export function threadHtml(chat, opts = {}) {
   const editable = !!opts.editable;
   wireChips();
@@ -226,7 +234,7 @@ export function threadHtml(chat, opts = {}) {
   const flowHtml = flow => flow.map(x => x.text != null ? narr(x.text) : activityHtml(x.steps, false, false, '', false, x.parts || null)).join('');
   let html = chat.messages.map((m, i) => m.role === 'user'
     ? userHtml(m, i, editable)
-    : `<div class="msg assistant${m.rewound ? ' rewound' : ''}">${m.flow?.length ? flowHtml(m.flow) : chat.steps[i] ? activityHtml(chat.steps[i], false, false, '', false, chat.stepParts?.[i]) : ''}${body(m.text)}${opts.parts ? msgExtrasHtml(m, i, chat) : ''}${footHtml(m)}</div>`).join('');
+    : `<div class="msg assistant${m.rewound ? ' rewound' : ''}">${refsHtml(m.refs, opts.base)}${m.flow?.length ? flowHtml(m.flow) : chat.steps[i] ? activityHtml(chat.steps[i], false, false, '', false, chat.stepParts?.[i]) : ''}${body(m.text)}${opts.parts ? msgExtrasHtml(m, i, chat) : ''}${footHtml(m)}</div>`).join('');
   if (chat.live) {
     const L = chat.live;
     const partial = L.running && L.partial && !(L.text || '').endsWith(L.partial) ? L.partial : '';
@@ -243,7 +251,7 @@ export function threadHtml(chat, opts = {}) {
       inner = `${activityHtml(L.steps, L.running, open, L.thinking, true, L.stepParts, first)}
       ${L.text || partial ? `<div class="body">${textHtml(L.text || '')}${partial ? textHtml(partial) : ''}</div>` : ''}`;
     }
-    html += `<div class="msg assistant live">${inner}
+    html += `<div class="msg assistant live">${refsHtml(L.refs, opts.base)}${inner}
       ${L.error ? `<div class="err">${esc(L.error)}</div>` : ''}</div>`;
   }
   return html;
