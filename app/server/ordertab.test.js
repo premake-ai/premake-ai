@@ -156,32 +156,41 @@ const plateB = { id: 'fab:2', type: 'fabricated', process: 'sheet', name: 'Side 
   options: [{ service: 'RMFG', kind: 'live', url: 'https://www.rmfg.com/quote/sheet', upload: 'STEP', prices: P(3) },
     { service: 'SendCutSend', kind: 'estimate', url: 'https://app.sendcutsend.com/customer#/quote?action=builder', upload: 'DXF', prices: P(9) }] };
 
-test('buy group: Slant set, cheaper live metal shop before SendCutSend, Amazon basket and search', async () => {
-  const { buyGroup, cutSet, cutFileList, printedSet } = await load();
+test('shop sections: one per shop at the price estimateTotal picks, Slant / Amazon / SendCutSend first, shipping estimates', async () => {
+  const { shopSections, orderTotals, estimateTotal, cutSet, cutFileList, printedSet, SHIP_EST } = await load();
   assert.deepEqual(printedSet([printed], 1), { usd: 9, estimate: false, pending: false, url: 'https://www.slant3d.com/', lead: '1–3 days', setup: 5 });
   const src = { printed_zip: '/api/sourcing?project=x&zip=printed', cut_zip: '/api/sourcing?project=x&zip=cut' };
   // plate (SCS about 13, no live) + plateB (RMFG 3 live, SCS 9): no live shop covers both, SendCutSend about 22
   let c = cutSet([plate, plateB], 1);
   assert.deepEqual([c.scs.usd, c.scs.kind, c.live], [22, 'estimate', null]);
-  const rows = buyGroup([printed, plate, plateB, screw, amzBolt], 1, undefined, src);
-  assert.deepEqual(rows.map((r) => [r.shop, r.title, r.usd]), [
-    ['Slant 3D', 'Slant 3D · all 1 printed part', 9],
-    ['SendCutSend', 'SendCutSend · 2 cut parts', 22],
-    ['Amazon', 'Amazon · add 1 part to basket', 2],
-    ['Amazon', 'Amazon · find 1 more part', 1],
-  ]);
-  assert.equal(rows[0].files.href, src.printed_zip); assert.ok(rows[1].steps); assert.equal(rows[1].files.label, 'Download 2 files');
-  assert.match(rows[1].url, /^https:\/\/app\.sendcutsend\.com\//, 'the quote page, not the homepage');
-  assert.equal(rows[3].find, 1); assert.match(rows[2].url, /cart\/add\.html\?ASIN\.1=B07PGL2ZSL&Quantity\.1=4/);
-  // only plateB: RMFG live 3 covers every cut part and beats SendCutSend 9, so it comes first, with the STEP zip
   c = cutSet([plateB], 1);
   assert.deepEqual(c.live, { service: 'RMFG', usd: 3, url: 'https://www.rmfg.com/quote/sheet' });
-  const r2 = buyGroup([plateB], 1, undefined, src);
-  assert.deepEqual(r2.map((r) => [r.shop, r.usd, r.kind]), [['RMFG', 3, 'live'], ['SendCutSend', 9, 'estimate']]);
-  assert.equal(r2[0].files.href, src.cut_zip + '&want=step');
+  const all = [printed, plate, plateB, screw, amzBolt];
+  const secs = shopSections(all, 1, undefined, src);
+  // plateB is cheapest at RMFG, so it sits there (the same pick as estimateTotal), after the three main shops
+  assert.deepEqual(secs.map((s) => [s.shop, s.kind, s.items.map((i) => i.line.name), s.usd]), [
+    ['Slant 3D', 'printed', ['Body'], 9],
+    ['Amazon', 'bought', ['Bolt', 'M5 screw'], 3],
+    ['SendCutSend', 'metal', ['Plate'], 13],
+    ['RMFG', 'metal', ['Side plate'], 3],
+  ]);
+  const tot = estimateTotal(all, 1);
+  assert.equal(secs.reduce((a, s) => a + (s.usd || 0), 0), tot.usd, 'the sections add up to the estimate');
+  assert.equal(secs[0].setup, 5); assert.equal(secs[0].zip, src.printed_zip); assert.equal(secs[2].zip, src.cut_zip);
+  assert.equal(secs[0].arrives, 'Arrives in about 4 to 8 days'); assert.equal(secs[1].arrives, 'Arrives in 1 to 2 days with Prime');
+  assert.match(secs[1].url, /cart\/add\.html\?ASIN\.1=B07PGL2ZSL&Quantity\.1=4/, 'Amazon: the add-to-basket link');
+  assert.equal(secs[1].search.length, 1, 'the screw has no exact product: an Amazon search');
+  assert.match(secs[2].url, /^https:\/\/app\.sendcutsend\.com\//, 'the quote page, not the homepage');
+  assert.deepEqual(secs.map((s) => s.ship), [SHIP_EST['Slant 3D'], 0, SHIP_EST.SendCutSend, 10]);
+  assert.deepEqual(orderTotals(secs, tot), { parts: tot.usd, ship: 31, total: tot.usd + 31 });
+  // dearest part first
+  assert.deepEqual(shopSections([screw, amzBolt, motor], 1).find((s) => s.shop === 'Amazon').items.map((i) => i.line.name), ['Motor', 'Bolt', 'M5 screw']);
+  // a printed part with no price anywhere still goes to Slant 3D, which prints the set
+  const bare = { ...printed, options: [{ service: 'Craftcloud', kind: 'link', url: 'https://craftcloud3d.com/upload', upload: 'STL' }, { service: 'Slant 3D', kind: 'link', url: 'https://www.slant3d.com/' }] };
+  assert.deepEqual(shopSections([bare], 1).map((s) => [s.shop, s.usd, s.unpriced]), [['Slant 3D', null, 1]]);
   // each cut part's own file: DXF when there is one, else STEP
   assert.deepEqual(cutFileList([plate, plateB]).map((f) => [f.name, f.label]), [['Plate', 'DXF'], ['Side plate', 'STEP']]);
-  assert.deepEqual(buyGroup([], 1), []);
+  assert.deepEqual(shopSections([], 1), []);
 });
 
 test('sourcing: live metal options from the quoting service; MATERIAM hidden; SendCutSend estimate on its link', () => {

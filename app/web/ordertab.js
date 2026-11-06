@@ -1,12 +1,14 @@
-// The Order tab: where to buy every part, drawn as an iOS grouped list. We don't print or sell the parts; for each part
-// (printed / cut metal and panels / extrusion / bought) it lists the places that sell or make it, cheapest first, with
-// the file to upload (STL / STEP / DXF) right next to the shop link, the rest under "More options". On top: a quantity
-// stepper (it picks the shops' price break) and an "about $X" estimate: the cheapest option per part, before shipping.
+// The Order tab: where the money goes. We don't print or sell the parts; the tab shows one section per shop (Slant 3D for
+// the printed parts, Amazon for bought parts and pre-cut extrusion, SendCutSend or the cheapest cutting shop for cut
+// metal, and any other shop that is cheapest for a part), each with its price, delivery time, an Order button and its
+// parts dearest first. On top: a quantity stepper (it picks the shops' price break) and "Parts about $X" (estimateTotal)
+// with a thin split bar; pinned at the bottom: parts, estimated shipping, the total and one "Order everything" button
+// that opens the shops one by one. Layout: option 10b of the order-panel mockups (Josh, 6 Nov).
 // Used by the studio (web/app.js renderOrder, also the phone Order sheet) and the public build page (web/buildpage.js).
 //
 //   renderOrderView(el, ctx)
-//   ctx: { key, quote, title, thumb, thumbLoading, src, buildHref, buildHtml, partThumb(name), wire(el), askNoMetal() }
-//   askNoMetal: studio only, your own design: sends "redesign without cut metal" to the design agent (absent = no button)
+//   ctx: { key, quote, title, thumb, thumbLoading, src, wire(el), askNoMetal() }   (buildHref / buildHtml / partThumb: unused)
+//   askNoMetal: studio only, your own design: sends "redesign without cut metal" to the design agent (absent = no link)
 // Data: GET /api/sourcing (server/sourcing.js, via web/sourcing.js sourcingData). "Premake print" / "Premake shop model"
 // are our own cost models, not places to buy, so they never show here. Checkout code (server/payments.js) is untouched,
 // just not used by this tab.
@@ -24,7 +26,6 @@ const money = v => (v == null || !Number.isFinite(+v)) ? '–' : '$' + (+v).toLo
 const plural = (n, one, many) => `${n} ${n === 1 ? one : many || one + 's'}`;
 
 export const TIERS = [1, 10, 100, 500]; // the quantities /api/sourcing prices at (server/sourcing.js QTYS)
-export const PICKS = [1, 5, 10, 50, 100];
 export const GROUPS = [
   { k: 'printed', label: 'Printed parts', how: 'Download the STLs and upload them all to one print shop as a single order.' },
   { k: 'metal', label: 'Cut metal and panels', how: 'Download the DXF or STEP and upload it to the cutting shop.' },
@@ -144,47 +145,76 @@ export function cutSet(ls, n = 1, qtys = TIERS) {
   return { n: ls.length, scs: { usd: scsUsd, kind: scs.every(o => o?.kind === 'live') ? 'live' : 'estimate', url: scs.find(o => o?.url)?.url || SCS_QUOTE }, live };
 }
 
-/** The "Buy" group under How many: one row per shop that covers a whole section, cheapest live metal shop first when it
- * beats SendCutSend. Each: { shop, title, sub, usd, kind: live|estimate|pending|quote, url, files?: {href, label}, steps?, find? } */
-export function buyGroup(lines, n = 1, qtys = TIERS, src = {}) {
-  const by = k => (lines || []).filter(l => groupOf(l) === k);
-  const rows = [];
-  const pr = by('printed');
-  if (pr.length) {
-    const p = printedSet(pr, n, qtys);
-    rows.push({ shop: 'Slant 3D', title: `Slant 3D · all ${plural(pr.length, 'printed part')}`, usd: p.usd, url: p.url,
-      kind: p.usd != null ? 'live' : p.pending ? 'pending' : 'quote',
-      sub: [p.usd != null ? 'Live quote' : p.pending ? 'Getting a live quote' : 'Upload the STLs for a price', p.lead, p.setup ? `incl. ${money(p.setup)} setup` : ''].filter(Boolean).join(' · '),
-      files: fileUrl(src?.printed_zip || '') ? { href: src.printed_zip, label: `Download ${plural(pr.length, 'STL')}` } : null });
+// ---------------------------------------------------------------- shops (the "Where the money goes" layout, Josh 6 Nov)
+/** Shipping per order when the shop gives us no number: Slant 3D about $9, Amazon free (over $35), SendCutSend about $12. */
+export const SHIP_EST = { 'Slant 3D': 9, Amazon: 0, SendCutSend: 12 };
+export const SHIP_OTHER = 10;
+export const ARRIVES = { 'Slant 3D': 'Arrives in about 4 to 8 days', Amazon: 'Arrives in 1 to 2 days with Prime', SendCutSend: 'Arrives in about 5 to 8 days' };
+const FIRST = ['Slant 3D', 'Amazon', 'SendCutSend'];
+export const NO_SHOP = 'No shop yet';
+
+/** The Order tab's sections, one per shop. Every part sits at the shop estimateTotal picks for it (its first buyOptions),
+ * so the sections add up to that total, setup fees included; a printed part with no price anywhere goes to Slant 3D, which
+ * prints the whole set. Slant 3D, Amazon, SendCutSend first, then the other shops, dearest first.
+ * -> [{ shop, kind: printed|bought|metal, items: [{ line, o, need }] (dearest first), usd (null: nothing priced), setup,
+ *       unpriced, url, basket (Amazon basket links), search (Amazon lines with no exact product), find (Amazon with only
+ *       searches: no Order link), ship, arrives, zip }] */
+export function shopSections(lines, n = 1, qtys = TIERS, src = {}) {
+  const by = new Map();
+  for (const l of lines || []) {
+    const opts = buyOptions(l, n, qtys);
+    let o = opts[0] || null;
+    if (groupOf(l) === 'printed' && (!o || o.usd == null)) o = opts.find(x => x.service === 'Slant 3D') || o;
+    const shop = o ? o.service : NO_SHOP;
+    if (!by.has(shop)) by.set(shop, []);
+    by.get(shop).push({ line: l, o, need: (Number(l?.qty_per_unit) || 1) * n });
   }
-  const cut = by('metal');
-  if (cut.length) {
-    const c = cutSet(cut, n, qtys);
-    const zip = fileUrl(src?.cut_zip || '') ? { href: src.cut_zip, label: `Download ${plural(cut.length, 'file')}` } : null;
-    const scsRow = { shop: 'SendCutSend', title: `SendCutSend · ${plural(cut.length, 'cut part')}`, usd: c.scs.usd, url: c.scs.url, kind: c.scs.usd != null ? c.scs.kind : 'quote',
-      sub: 'Download the files, then upload them on the quote page', files: zip, steps: true };
-    if (c.live && (c.scs.usd == null || c.live.usd < c.scs.usd)) {
-      rows.push({ shop: c.live.service, title: `${c.live.service} · all ${plural(cut.length, 'cut part')}`, usd: c.live.usd, url: c.live.url, kind: 'live',
-        sub: 'Live quote · upload the STEP files there', files: zip ? { href: zip.href + '&want=step', label: 'Download STEPs' } : null });
+  const out = [];
+  for (const [shop, items] of by) {
+    items.sort((a, b) => (b.o?.usd ?? -1) - (a.o?.usd ?? -1));
+    const priced = items.filter(i => i.o?.usd != null);
+    const setup = priced.reduce((s, i) => (i.o.setup ? i.o.setup : s), 0); // estimateTotal: one setup fee per shop
+    const usd = priced.length ? r2(priced.reduce((a, i) => a + i.o.usd, 0) + setup) : null;
+    const kinds = items.map(i => groupOf(i.line));
+    const kind = kinds.includes('printed') ? 'printed' : kinds.includes('metal') ? 'metal' : 'bought';
+    const ls = items.map(i => i.line);
+    let url = items.find(i => i.o?.url)?.o.url || '', basket = [], search = [];
+    if (shop === 'Slant 3D') url = printedSet(ls.filter(l => groupOf(l) === 'printed'), n, qtys).url;
+    else if (shop === 'SendCutSend') url = items.find(i => i.o?.url)?.o.url || SCS_QUOTE;
+    else if (shop === 'Amazon') {
+      const b = amazonBasket(ls, n);
+      basket = b.urls; search = b.search;
+      url = b.urls[0] || (b.search.length ? '' : url); // no exact products: no one link orders them; each part searches
     }
-    rows.push(scsRow);
+    const zip = kind === 'printed' ? fileUrl(src?.printed_zip || '') : kind === 'metal' ? fileUrl(src?.cut_zip || '') : '';
+    const lead = items.find(i => i.o?.lead)?.o.lead || '';
+    out.push({ shop, kind, items, usd, setup: r2(setup), unpriced: items.length - priced.length, url: safeUrl(url), basket, search, find: !url && search.length > 0,
+      ship: shop === NO_SHOP ? 0 : SHIP_EST[shop] ?? SHIP_OTHER,
+      arrives: ARRIVES[shop] || (lead ? (/day|week/i.test(lead) ? `Arrives in about ${lead}` : `Lead time ${lead}`) : ''), zip });
   }
-  const bought = by('bought');
-  if (bought.length) {
-    const { basket, search, urls } = amazonBasket(bought, n);
-    const about = items => { let u = 0, k = 0; for (const it of items) { const b = buyOptions(it.line, n, qtys).find(o => o.amz); if (b?.usd != null) { u += b.usd; k++; } } return k ? r2(u) : null; };
-    urls.forEach((u, i) => rows.push({ shop: 'Amazon', title: `Amazon · add ${plural(basket.length, 'part')} to basket${urls.length > 1 ? ` (${i + 1} of ${urls.length})` : ''}`,
-      sub: 'Amazon asks you to confirm before adding', usd: about(basket), kind: 'estimate', url: u, basket: basket.length }));
-    if (search.length) rows.push({ shop: 'Amazon', title: `Amazon · find ${plural(search.length, basket.length ? 'more part' : 'part')}`,
-      sub: 'No exact product yet: each opens an Amazon search', usd: about(search), kind: 'estimate', url: '', find: search.length });
-  }
-  return rows;
+  const rank = s => s.shop === NO_SHOP ? 99 : FIRST.includes(s.shop) ? FIRST.indexOf(s.shop) : 10;
+  return out.sort((a, b) => rank(a) - rank(b) || (b.usd ?? -1) - (a.usd ?? -1));
 }
 
+/** The footer: parts (= estimateTotal), shipping per shop you order from, and the two added. */
+export function orderTotals(sections, tot) {
+  const ship = (sections || []).reduce((a, s) => a + s.ship, 0);
+  const parts = tot?.usd ?? 0;
+  return { parts, ship, total: r2(parts + ship) };
+}
+
+/** "Next: Amazon basket": what the guided Order everything list calls each shop. */
+const nextLabel = s => s.find ? `find the Amazon parts (${s.items.length})` : s.shop === 'Amazon' && s.basket.length ? 'Amazon basket' : s.shop;
+const countLabel = s => {
+  const k = s.items.length;
+  return s.kind === 'printed' ? plural(k, 'print') : s.kind === 'metal' ? plural(k, 'cut part') : plural(k, 'part');
+};
+const GREYS = ['#57534e', '#a8a29e', '#d6d3d1', '#78716c', '#c4c0b9', '#8f8a84', '#e7e5e4'];
+
 // ---------------------------------------------------------------- per-design state
-const states = new Map(); // design key -> { qty, open:Set }
+const states = new Map(); // design key -> { qty, open:Set, guide }
 function stateFor(key) {
-  if (!states.has(key)) states.set(key, { qty: 1, open: new Set() });
+  if (!states.has(key)) states.set(key, { qty: 1, open: new Set(), guide: 0 });
   return states.get(key);
 }
 
@@ -204,60 +234,84 @@ export function renderOrderView(el, ctx) {
   const lines = src?.lines || [];
   const tot = lines.length ? estimateTotal(lines, N, qtys) : null;
   const quoting = src?.status === 'quoting';
+  const secs = lines.length ? shopSections(lines, N, qtys, src) : [];
+  const shops = secs.filter(s => s.url || s.find);
+  const sums = orderTotals(secs, tot);
+  const priced = secs.filter(s => s.usd > 0);
+  const colorOf = new Map(secs.map((s, i) => [s.shop, GREYS[i % GREYS.length]]));
 
-  // head
+  // head: thumbnail, name, quantity
   const head = `<div class="ot-id">${ctx.thumb !== undefined ? `<span class="ot-thumb ${ctx.thumbLoading ? 'loading' : ''}"><img ${ctx.thumb ? `src="${esc(ctx.thumb)}"` : ''} alt=""></span>` : ''}
-      <div><b>${esc(ctx.title || 'This design')}</b><span>Every part, and where to buy it</span></div></div>`;
+      <div class="ot-idt"><b>${esc(ctx.title || 'This design')}</b><span>${plural(N, 'build')}</span></div>
+      <div class="ot-step" role="group" aria-label="Number to build">
+        <button type="button" class="ot-sb" data-ot-dec aria-label="One fewer" ${N <= 1 ? 'disabled' : ''}>${MINUS}</button>
+        <input class="ot-qn num" data-ot-qty type="text" inputmode="numeric" pattern="[0-9]*" enterkeyhint="done" autocomplete="off" value="${N}" aria-label="Number to build">
+        <button type="button" class="ot-sb" data-ot-inc aria-label="One more">${PLUS}</button>
+      </div></div>`;
 
-  // quantity
-  const qtySec = `<div class="ot-gh">How many</div>
-    <div class="ot-g">
-      <div class="ot-row ot-qrow">
-        <div class="ot-step" role="group" aria-label="Quantity">
-          <button type="button" class="ot-sb" data-ot-dec aria-label="One fewer" ${N <= 1 ? 'disabled' : ''}>${MINUS}</button>
-          <input class="ot-qn num" data-ot-qty type="text" inputmode="numeric" pattern="[0-9]*" enterkeyhint="done" autocomplete="off" value="${N}" aria-label="Number to build">
-          <button type="button" class="ot-sb" data-ot-inc aria-label="One more">${PLUS}</button>
-        </div>
-        <div class="ot-each">${tot ? `<b class="num">${money(tot.each)}</b><span>about, each${N > 1 ? ` at ${N}` : ''}</span>` : ''}</div>
-      </div>
-      <div class="ot-row ot-picks">${PICKS.map(n => `<button type="button" class="ot-pk ${N === n ? 'on' : ''}" data-ot-pick="${n}" aria-pressed="${N === n}">${n}</button>`).join('')}</div>
-    </div>`;
+  // parts total and the split bar
+  const sum = tot ? `<div class="ot-sum">
+      <div class="ot-tl"><span class="ot-mut">Parts</span><b class="num">${tot.usd > 0 ? `about ${money(tot.usd)}` : 'priced on upload'}</b></div>
+      ${priced.length ? `<div class="ot-bar" aria-hidden="true">${priced.map(s => `<i style="flex:${s.usd};background:${colorOf.get(s.shop)}"></i>`).join('')}</div>` : ''}
+      ${quoting ? '<p class="ot-upd">Getting live prices…</p>' : tot.unpriced ? `<p class="ot-upd">Not counted yet: ${plural(tot.unpriced, 'part')}, priced when you upload the files</p>` : ''}
+    </div>` : '';
 
-  // buy: one row per shop that covers a whole section
-  const buys = lines.length ? buyGroup(lines, N, qtys, src) : [];
-  const buySec = buys.length ? `<div class="ot-gh">Buy</div><div class="ot-g ot-buy">${buys.map(buyRowHtml).join('')}</div>` : '';
-
-  // (no separate "Estimated cost" box: the total sits in the bar at the bottom, Josh 6 Nov)
-
-  // parts, by group
-  const groups = GROUPS.map(g => ({ ...g, ls: lines.filter(l => groupOf(l) === g.k) })).filter(g => g.ls.length);
   const solder = (q.tiers || []).find(t => t.at_cost && t.addons)?.addons?.solder;
-  const top = g => g.k === 'printed' ? printedSetHtml(g.ls, N, qtys, st, src) : g.k === 'bought' ? basketHtml(g.ls, N, qtys, st) : g.k === 'metal' ? cutSetHtml(g.ls, N, qtys, st, src) : '';
-  const rows = g => g.k === 'printed' ? eachPartHtml(g.ls, N, qtys, st) : g.ls.map(l => partHtml(l, N, qtys, st)).join('');
-  const partSecs = groups.map(g => `<div class="ot-gh" data-ot-sec="${g.k}"><span>${esc(g.label)}</span><span>${plural(g.ls.length, 'part')}</span></div>
-    ${top(g)}
-    <div class="ot-g">${rows(g)}
-      ${g.k === 'bought' && solder?.needed && safeUrl(solder.url) ? `<a class="ot-row ot-opt ot-link" href="${esc(solder.url)}" target="_blank" rel="noopener noreferrer">
-        <span class="ot-pth ic">${IRON}</span>
-        <span class="ot-rt"><b>Soldering iron, if you need one</b><span>Cordless USB kit with solder, Amazon · about ${money(solder.usd)}</span></span>
-        <i class="ot-ext">${EXT}</i></a>` : ''}
-    </div>
-    <p class="ot-gf">${esc(g.how)}</p>
-    ${g.k === 'metal' && ctx.askNoMetal ? `<div class="ot-g ot-gap"><button type="button" class="ot-row ot-rb ot-act" data-ot-nometal>
-      <span class="ot-rt"><b>Ask Premake to not use cut metal</b><span>Redesign these as 3D printed parts or parts you can buy on Amazon</span></span><i class="ot-chev">${CHEV}</i></button></div>` : ''}`).join('');
+  const shopHtml = s => {
+    const share = tot?.usd > 0 && s.usd > 0 ? s.usd / tot.usd * 100 : 0;
+    const pct = share ? (share < 1 ? ', under 1%' : `, ${Math.round(share)}%`) : '';
+    const open = st.open.has('more:' + s.shop);
+    const shown = open ? s.items : s.items.slice(0, 5);
+    const sub = [s.arrives, s.setup ? `Includes ${money(s.setup)} setup` : '', s.unpriced && s.usd != null ? `${plural(s.unpriced, 'part')} priced on upload` : ''].filter(Boolean);
+    const extra = [];
+    if (s.zip) extra.push(`<a class="ot-tlink" href="${esc(s.zip)}" download>${s.kind === 'printed' ? 'Download STLs (.zip)' : 'Download cut files (.zip)'}</a>`);
+    if (s.shop === 'Amazon' && s.basket.length > 1) s.basket.slice(1).forEach((u, i) => extra.push(`<a class="ot-tlink" href="${esc(u)}" target="_blank" rel="noopener noreferrer" data-ot-basket="1">Amazon basket, part ${i + 2}</a>`));
+    if (s.shop === 'Amazon' && solder?.needed && safeUrl(solder.url)) extra.push(`<a class="ot-tlink" href="${esc(solder.url)}" target="_blank" rel="noopener noreferrer">Soldering iron, if you need one (about ${money(solder.usd)})</a>`);
+    if (s.kind === 'metal' && ctx.askNoMetal) extra.push(`<button type="button" class="ot-tlink" data-ot-nometal>Make these without cut metal</button>`);
+    const searchNote = s.shop === 'Amazon' && s.search.length ? `<p class="ot-note">${s.search.length === s.items.length ? 'Tap a part to find it on Amazon' : `${plural(s.search.length, 'part')} not in the basket: tap ${s.search.length === 1 ? 'it' : 'each'} to search Amazon`}</p>` : '';
+    const searchUrl = new Map(s.search.map(x => [x.line, safeUrl(x.url)]));
+    const row = it => {
+      const o = it.o, name = `${it.need > 1 ? `${it.need} x ` : ''}${it.line.name}`;
+      const price = o?.usd != null ? money(o.usd) : !o ? 'not found' : o.kind === 'pending' ? 'quoting' : o.upload || it.line.type === 'printed' || it.line.type === 'fabricated' ? 'on upload' : 'see price';
+      const href = searchUrl.get(it.line) || (o?.url && o.url !== s.url && !o.upload && s.shop !== 'Slant 3D' ? o.url : '');
+      return `<li>${href ? `<a class="ot-pn" href="${esc(href)}" target="_blank" rel="noopener noreferrer" data-ot-shop="${esc(s.shop)}">${esc(name)}</a>` : `<span class="ot-pn">${esc(name)}</span>`}<span class="num ${o?.usd == null ? 'ot-mut' : ''}">${price}</span></li>`;
+    };
+    return `<section class="ot-shop" data-ot-sec="${esc(s.shop)}">
+      <div class="ot-sh">
+        <span class="ot-sq" style="background:${colorOf.get(s.shop)}" aria-hidden="true"></span>
+        <div class="ot-st"><b>${esc(s.shop)}</b> <span class="ot-mut ot-sm">${countLabel(s)}${pct}</span></div>
+        <span class="ot-sp num ${s.usd == null ? 'ot-mut' : ''}">${s.usd != null ? money(Math.round(s.usd)).replace(/\.00$/, '') : s.shop === NO_SHOP ? '' : 'on upload'}</span>
+        ${s.url ? `<a class="ot-ob" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer" data-ot-shop="${esc(s.shop)}"${s.basket.length ? ` data-ot-basket="${s.items.length}"` : ''}>Order</a>` : s.find ? `<button type="button" class="ot-ob" data-ot-find="${esc(s.shop)}">Find parts</button>` : ''}
+      </div>
+      ${sub.length ? `<p class="ot-arr">${esc(sub.join('. '))}</p>` : ''}
+      ${searchNote}
+      <ul class="ot-pl">${shown.map(row).join('')}</ul>
+      ${s.items.length > 5 || extra.length ? `<div class="ot-sx">${s.items.length > 5 ? `<button type="button" class="ot-tlink" data-ot-open="more:${esc(s.shop)}" aria-expanded="${open}">${open ? 'See less' : `See more (${s.items.length - 5})`}</button>` : ''}${extra.join('')}</div>` : ''}
+    </section>`;
+  };
 
-  const empty = !lines.length ? `<div class="ot-g" style="margin-top:22px"><div class="ot-row"><span class="ot-rt"><b>${src === null && !ctx.src ? 'No parts list yet' : 'Finding places to buy each part…'}</b><span>${src === null && !ctx.src ? 'Shops show up once the design has a parts list.' : 'Checking print shops, cutting shops and stores.'}</span></span></div></div>` : '';
+  const empty = !lines.length ? `<div class="ot-empty"><b>${src === null && !ctx.src ? 'No parts list yet' : 'Finding places to buy each part…'}</b><span>${src === null && !ctx.src ? 'Shops show up once the design has a parts list.' : 'Checking print shops, cutting shops and stores.'}</span></div>` : '';
 
-  const foot = `<div class="ot-more">
-    ${ctx.buildHtml || (ctx.buildHref ? `<a class="ot-diy" href="${esc(ctx.buildHref)}">Step-by-step build instructions →</a>` : '')}
-    <details class="ot-how"><summary>Where the prices come from</summary>
-      <p>Live prices come straight from the shop’s own quote (Slant 3D, RMFG and others). Prices marked about are estimates, from the parts list or a typical price, so check on the shop’s site. Shops without a price give an instant quote once you upload the file. Shipping and tax are extra and set by each shop.${src?.slant?.error ? ` Slant 3D: ${esc(cleanNote(src.slant.error))}.` : ''}</p>
-    </details></div>`;
+  // footer: the money, then Order everything (a guided list after the first click: browsers block several tabs at once)
+  if (st.guide > shops.length) st.guide = shops.length;
+  const g = st.guide;
+  const guide = !shops.length ? '' : g === 0
+    ? goHtml(shops[0], 0, 'Order everything')
+    : `<p class="ot-gd">${esc(`Opened ${shops.slice(0, g).map(s => s.shop).join(', ')}.`)} ${g < shops.length ? `${shops.length - g} more to go.` : 'Check out in each tab.'} <button type="button" class="ot-tlink" data-ot-reset>Start over</button></p>
+      ${g < shops.length ? goHtml(shops[g], g, `Next: ${nextLabel(shops[g])}`) : ''}`;
+  function goHtml(s, i, label) {
+    return s.url ? `<a class="ot-primary" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer" data-ot-go="${i}">${esc(label)}</a>`
+      : `<button type="button" class="ot-primary" data-ot-go="${i}">${esc(label)}</button>`;
+  }
+  const pin = tot ? `<div class="ot-pin">
+      <div class="ot-fl"><span>Parts for ${plural(N, 'build')}</span><span class="num">${tot.usd > 0 ? `about ${money(sums.parts)}` : 'on upload'}</span></div>
+      <div class="ot-fl"><span>Shipping, estimated</span><span class="num">about ${money(sums.ship).replace(/\.00$/, '')}</span></div>
+      <div class="ot-tl ot-ftot"><span>Total</span><b class="num">about ${money(sums.total)}</b></div>
+      <p class="ot-fine">Estimate. You order from each shop directly.</p>
+      ${guide}
+    </div>` : '';
 
-  const pin = tot ? `<div class="ot-pin"><div class="ot-tot"><span>${quoting ? '<span class="ot-upd">Getting live prices…</span>' : `Estimate for ${plural(N, 'build')}`}</span><b class="num">about ${money(tot.usd)}</b></div>
-    <p class="ot-fine">Cheapest option per part, before shipping. You buy from each shop directly.</p></div>` : '';
-
-  el.innerHTML = `<div class="ot"><div class="ot-scroll">${head}${qtySec}${buySec}${empty}${partSecs}${foot}</div>${pin}</div>`;
+  el.innerHTML = `<div class="ot"><div class="ot-scroll">${head}${sum}${empty}${secs.length ? `<div class="ot-shops">${secs.map(shopHtml).join('')}</div>` : ''}</div>${pin}</div>`;
   const sc = el.querySelector('.ot-scroll'); if (sc) sc.scrollTop = keep;
 
   // wiring
@@ -269,7 +323,6 @@ export function renderOrderView(el, ctx) {
   };
   el.querySelector('[data-ot-dec]')?.addEventListener('click', () => setQty(st.qty - 1));
   el.querySelector('[data-ot-inc]')?.addEventListener('click', () => setQty(st.qty + 1));
-  el.querySelectorAll('[data-ot-pick]').forEach(b => b.onclick = () => setQty(+b.dataset.otPick));
   const qi = el.querySelector('[data-ot-qty]');
   if (qi) {
     qi.addEventListener('focus', () => qi.select());
@@ -280,302 +333,100 @@ export function renderOrderView(el, ctx) {
   el.querySelectorAll('[data-ot-open]').forEach(b => b.onclick = () => { const k = b.dataset.otOpen; st.open.has(k) ? st.open.delete(k) : st.open.add(k); rerender(); });
   el.querySelectorAll('a[data-ot-shop]').forEach(a => a.addEventListener('click', () => track('buy_link_opened', { shop: a.dataset.otShop })));
   el.querySelectorAll('a[data-ot-basket]').forEach(a => a.addEventListener('click', () => track('amazon_basket_opened', { items: +a.dataset.otBasket || 0 })));
-  el.querySelectorAll('[data-ot-find]').forEach(b => b.onclick = () => {
-    st.open.add('amzsearch'); rerender();
-    el.querySelector('[data-ot-open="amzsearch"]')?.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  el.querySelectorAll('[data-ot-go]').forEach(a => a.addEventListener('click', () => {
+    const i = +a.dataset.otGo, s = shops[i];
+    track('order_everything', { step: i + 1, of: shops.length, shop: s?.shop });
+    st.guide = i + 1;
+    if (s?.find) st.open.add('more:' + s.shop); // Amazon with only searches: open its list, each part is a search link
+    setTimeout(() => {
+      rerender(); // after the link has opened its tab
+      if (s?.find) el.querySelector(`[data-ot-sec="${CSS.escape(s.shop)}"]`)?.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    }, 0);
+  }));
+  el.querySelectorAll('[data-ot-find]').forEach(b => b.onclick = () => { // Amazon with only searches: the whole list, each part a search
+    st.open.add('more:' + b.dataset.otFind); rerender();
+    el.querySelector(`[data-ot-sec="${CSS.escape(b.dataset.otFind)}"]`)?.scrollIntoView({ block: 'start', behavior: 'smooth' });
   });
+  const rs = el.querySelector('[data-ot-reset]');
+  if (rs) rs.onclick = () => { st.guide = 0; rerender(); };
   const nm = el.querySelector('[data-ot-nometal]');
   if (nm) nm.onclick = () => { track('ask_no_metal', {}); ctx.askNoMetal?.(NO_METAL_PROMPT); };
   ctx.wire?.(el);
-  fillThumbs(el, ctx);
 }
 
-/** What "Ask Premake to not use cut metal" sends to the design agent. */
+/** What "Make these without cut metal" sends to the design agent. */
 export const NO_METAL_PROMPT = 'Redesign this without cut metal or laser-cut panels: make those parts 3D printed, or use parts you can buy on Amazon.';
 
-/** Printed parts: one order for the whole set (Slant 3D, the zip of every STL), other print shops as whole-set links. */
-function printedSetHtml(ls, N, qtys, st, src) {
-  const per = ls.map(l => buyOptions(l, N, qtys));
-  const { usd, estimate, pending, url, lead, setup } = printedSet(ls, N, qtys);
-  const sub = ['Slant 3D', lead, setup ? `incl. ${money(setup)} setup` : '', usd != null && !estimate ? 'live quote' : usd != null ? 'estimate until Slant quotes' : pending ? 'getting a live quote' : 'quote when you upload the STLs'].filter(Boolean).join(' · ');
-  const others = [], seen = new Set(['Slant 3D']);
-  for (const o of per.flat()) if (!seen.has(o.service) && o.url && o.kind !== 'pending') { seen.add(o.service); others.push(o); }
-  const more = st.open.has('printshops');
-  const zip = fileUrl(src?.printed_zip || '');
-  return `<div class="ot-g ot-set">
-    <a class="ot-row ot-opt ot-link ot-hero" href="${esc(url)}" target="_blank" rel="noopener noreferrer" data-ot-shop="Slant 3D">${logo('Slant 3D')}
-      <span class="ot-rt"><b>Order all ${plural(ls.length, 'printed part')}</b><span>${esc(sub)}</span></span>
-      <span class="ot-amt num ${usd == null ? 'muted' : ''}">${usd != null ? `${estimate ? '<small>about</small> ' : ''}${money(usd)}` : pending ? 'Quoting…' : 'Upload for price'}</span><i class="ot-ext">${EXT}</i></a>
-    ${zip ? `<a class="ot-row ot-opt ot-link" href="${esc(zip)}" download>
-      <span class="ot-logo file" aria-hidden="true">${DL}</span>
-      <span class="ot-rt"><b>Download all STLs (.zip)</b><span>Upload them to Slant 3D, or any shop below, as one order</span></span></a>` : ''}
-    ${others.length ? `<div class="ot-cell ${more ? 'open' : ''}"><button type="button" class="ot-row ot-rb ot-opt ot-mrow" data-ot-open="printshops" aria-expanded="${more}">
-      <span class="ot-rt"><b>Other print shops</b><span>${esc(others.map(o => o.service).slice(0, 4).join(', '))}${others.length > 4 ? '…' : ''}</span></span>
-      <span class="ot-amt muted num">${others.length}</span><i class="ot-chev">${CHEV}</i></button>
-      ${more ? others.map(o => `<a class="ot-row ot-opt ot-link ot-sub" href="${esc(o.url)}" target="_blank" rel="noopener noreferrer" data-ot-shop="${esc(o.service)}">${logo(o.service)}
-        <span class="ot-rt"><b>${esc(o.service)}</b><span>${esc([o.note, 'upload the whole set for one quote'].filter(Boolean).join(' · '))}</span></span><i class="ot-ext">${EXT}</i></a>`).join('') : ''}</div>` : ''}
-  </div>`;
-}
-/** One Buy row: the shop link (whole row), and under it the files to upload; SendCutSend gets numbered steps. */
-function buyRowHtml(b) {
-  const amt = b.usd != null ? `${b.kind === 'estimate' ? '<small>about</small> ' : ''}${money(b.usd)}` : b.kind === 'pending' ? 'Quoting…' : b.find ? '' : 'Upload for price';
-  const inner = `${logo(b.shop)}<span class="ot-rt"><b>${esc(b.title)}</b><span>${esc(b.sub)}</span></span>
-      <span class="ot-amt num ${b.usd == null ? 'muted' : ''}">${amt}</span>`;
-  const main = b.find
-    ? `<button type="button" class="ot-row ot-rb ot-opt ot-hero" data-ot-find="${b.find}">${inner}<i class="ot-chev">${CHEV}</i></button>`
-    : `<a class="ot-row ot-opt ot-link ot-hero" href="${esc(b.url)}" target="_blank" rel="noopener noreferrer" data-ot-shop="${esc(b.shop)}"${b.basket ? ` data-ot-basket="${b.basket}"` : ''}>${inner}<i class="ot-ext">${EXT}</i></a>`;
-  const btns = b.steps
-    ? `<div class="ot-btns">${b.files ? `<a class="ot-btn" href="${esc(b.files.href)}" download>1. ${esc(b.files.label)}</a>` : ''}<a class="ot-btn" href="${esc(b.url)}" target="_blank" rel="noopener noreferrer" data-ot-shop="${esc(b.shop)}">${b.files ? '2. ' : ''}Open quote page</a></div>`
-    : b.files ? `<div class="ot-btns"><a class="ot-btn" href="${esc(b.files.href)}" download>${esc(b.files.label)}</a><a class="ot-btn" href="${esc(b.url)}" target="_blank" rel="noopener noreferrer" data-ot-shop="${esc(b.shop)}">Open ${esc(b.shop)}</a></div>` : '';
-  return `<div class="ot-cell ot-bcell">${main}${btns}</div>`;
-}
-
-/** Cut parts: SendCutSend in two steps (download every file, open the quote page), each part's own file listed by name. */
-function cutSetHtml(ls, N, qtys, st, src) {
-  const c = cutSet(ls, N, qtys);
-  const files = cutFileList(ls);
-  const zip = fileUrl(src?.cut_zip || '');
-  const open = st.open.has('cutfiles');
-  const amt = c.scs.usd != null ? `${c.scs.kind === 'estimate' ? '<small>about</small> ' : ''}${money(c.scs.usd)}` : 'Upload for price';
-  return `<div class="ot-g ot-set">
-    ${zip ? `<a class="ot-row ot-opt ot-link ot-hero" href="${esc(zip)}" download>
-      <span class="ot-logo file" aria-hidden="true">${DL}</span>
-      <span class="ot-rt"><b>1. Download all ${plural(ls.length, 'file')} (.zip)</b><span>DXF for flat parts, STEP for the rest</span></span></a>` : ''}
-    ${files.length ? `<div class="ot-cell ${open ? 'open' : ''}"><button type="button" class="ot-row ot-rb ot-opt ot-mrow" data-ot-open="cutfiles" aria-expanded="${open}">
-      <span class="ot-rt"><b>Files in the zip</b><span>${esc(files.map(f => f.name).slice(0, 3).join(', '))}${files.length > 3 ? '…' : ''}</span></span>
-      <span class="ot-amt muted num">${files.length}</span><i class="ot-chev">${CHEV}</i></button>
-      ${open ? files.map(f => `<a class="ot-row ot-opt ot-link ot-sub" href="${esc(f.href)}" download>
-        <span class="ot-rt"><b>${esc(f.name)}</b><span>${esc(f.label)} file</span></span><i class="ot-ext">${DL}</i></a>`).join('') : ''}</div>` : ''}
-    <a class="ot-row ot-opt ot-link ot-hero" href="${esc(c.scs.url)}" target="_blank" rel="noopener noreferrer" data-ot-shop="SendCutSend">${logo('SendCutSend')}
-      <span class="ot-rt"><b>${zip ? '2. ' : ''}Open SendCutSend</b><span>Upload the files on its quote page for the exact price${c.scs.usd != null && c.scs.kind === 'estimate' ? ' · ours is an estimate' : ''}</span></span>
-      <span class="ot-amt num ${c.scs.usd == null ? 'muted' : ''}">${amt}</span><i class="ot-ext">${EXT}</i></a>
-  </div>`;
-}
-
-/** Printed parts, one by one: folded under one row so the set reads as one order. */
-function eachPartHtml(ls, N, qtys, st) {
-  const open = st.open.has('eachprinted');
-  return `<div class="ot-cell ${open ? 'open' : ''}"><button type="button" class="ot-row ot-rb ot-mrow ot-each-row" data-ot-open="eachprinted" aria-expanded="${open}">
-      <span class="ot-rt"><b>Each part on its own</b><span>Prices per part, single STLs, other shops</span></span>
-      <span class="ot-amt muted num">${ls.length}</span><i class="ot-chev">${CHEV}</i></button></div>
-    ${open ? ls.map(l => partHtml(l, N, qtys, st)).join('') : ''}`;
-}
-/** Bought parts: "Add N parts to Amazon basket" for every line with an exact Amazon product, and the rest as searches. */
-function basketHtml(ls, N, qtys, st) {
-  const { basket, search, urls } = amazonBasket(ls, N);
-  if (!basket.length && !search.length) return '';
-  const about = items => { let u = 0, k = 0; for (const it of items) { const b = buyOptions(it.line, N, qtys).find(o => o.amz); if (b?.usd != null) { u += b.usd; k++; } } return k ? `about ${money(r2(u))}` : ''; };
-  const pieces = items => items.reduce((a, it) => a + it.qty, 0);
-  const open = st.open.has('amzsearch');
-  const cartRows = urls.map((u, i) => `<a class="ot-row ot-opt ot-link ot-hero" href="${esc(u)}" target="_blank" rel="noopener noreferrer" data-ot-basket="${basket.length}">${logo('Amazon')}
-      <span class="ot-rt"><b>Add ${plural(basket.length, 'part')} to Amazon basket${urls.length > 1 ? ` (${i + 1} of ${urls.length})` : ''}</b><span>${esc([`${plural(pieces(basket), 'item')} in all`, 'Amazon asks you to confirm before adding'].join(' · '))}</span></span>
-      <span class="ot-amt num">${esc(about(basket))}</span><i class="ot-ext">${EXT}</i></a>`).join('');
-  const findTitle = basket.length ? `${search.length} more to find on Amazon` : `Find ${plural(search.length, 'part')} on Amazon`;
-  const findRow = search.length ? `<div class="ot-cell ${open ? 'open' : ''}"><button type="button" class="ot-row ot-rb ot-opt ot-mrow" data-ot-open="amzsearch" aria-expanded="${open}">
-      ${basket.length ? '' : logo('Amazon')}<span class="ot-rt"><b>${esc(findTitle)}</b><span>No exact product in the parts list yet, so each opens an Amazon search</span></span>
-      <span class="ot-amt muted num">${search.length}</span><i class="ot-chev">${CHEV}</i></button>
-      ${open ? search.map(it => `<a class="ot-row ot-opt ot-link ot-sub" href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener noreferrer" data-ot-shop="Amazon">
-        <span class="ot-rt"><b>${esc(it.line.name)}</b><span>${esc(`Need ${it.qty} · search Amazon`)}</span></span><i class="ot-ext">${EXT}</i></a>`).join('') : ''}</div>` : '';
-  return `<div class="ot-g ot-set">${cartRows}${findRow}</div>`;
-}
-
-const priceHtml = o => o.usd != null ? `${o.kind === 'estimate' ? '<small>about</small> ' : ''}${money(o.usd)}` : o.kind === 'pending' ? 'Quoting…' : o.upload ? 'Upload for price' : 'See price';
-function optSub(o) {
-  const bits = [];
-  if (o.kind === 'live') bits.push(o.checked ? 'Price checked on their site' : 'Live quote');
-  else if (o.kind === 'estimate') bits.push('Estimate');
-  else if (o.kind === 'pending') bits.push('Getting a live quote');
-  else bits.push(o.upload ? `Upload the ${o.upload.split(' ').pop()} on their quote page for the price` : 'Check the price on their site');
-  if (o.lead) bits.push(o.lead);
-  if (o.setup) bits.push(`+${money(o.setup)} setup per order`);
-  if (o.note && o.note !== 'No live price right now') bits.push(o.note);
-  return bits.join(' · ');
-}
-
-/** One part: a row with its best price; tap it for the shops (cheapest first), the files to upload, and More options. */
-function partHtml(l, N, qtys, st) {
-  const opts = buyOptions(l, N, qtys);
-  const best = opts[0];
-  const id = 'p:' + (l.id || l.name);
-  const open = st.open.has(id), more = st.open.has('m:' + id);
-  const need = (Number(l.qty_per_unit) || 1) * N;
-  const sub = [need > 1 ? `Need ${need}` : '', best ? best.service : 'No shop found', best?.lead || ''].filter(Boolean).join(' · ');
-  const files = filesFor(l, opts);
-  const optRow = o => o.url ? `<a class="ot-row ot-opt ot-link" href="${esc(o.url)}" target="_blank" rel="noopener noreferrer" data-ot-shop="${esc(o.service)}">${logo(o.service)}
-      <span class="ot-rt"><b>${esc(o.service)}</b><span title="${esc(optSub(o))}">${esc(optSub(o))}</span></span>
-      <span class="ot-amt num ${o.usd == null ? 'muted' : ''}">${priceHtml(o)}</span><i class="ot-ext">${EXT}</i></a>`
-    : `<div class="ot-row ot-opt">${logo(o.service)}<span class="ot-rt"><b>${esc(o.service)}</b><span title="${esc(optSub(o))}">${esc(optSub(o))}</span></span><span class="ot-amt num muted">${priceHtml(o)}</span></div>`;
-  const fileRow = f => `<a class="ot-row ot-opt ot-link" href="${esc(f.href)}" download>
-      <span class="ot-logo file" aria-hidden="true">${DL}</span>
-      <span class="ot-rt"><b>Download ${esc(f.label)}</b><span>${esc(f.for ? `To upload to ${f.for}` : 'The part file')}</span></span></a>`;
-  const rest = opts.slice(1);
-  return `<div class="ot-cell ${open ? 'open' : ''}">
-    <button type="button" class="ot-row ot-rb ot-prow" data-ot-open="${esc(id)}" aria-expanded="${open}">
-      ${pthHtml(l.name)}
-      <span class="ot-rt"><b>${esc(l.name)}</b><span>${esc(sub)}</span></span>
-      <span class="ot-amt num ${best?.usd == null ? 'muted' : ''}">${best ? priceHtml(best) : ''}</span><i class="ot-chev">${CHEV}</i>
-    </button>
-    ${open ? `<div class="ot-opts">
-      ${best ? optRow(best) : `<div class="ot-row ot-opt"><span class="ot-rt"><b>No shop found yet</b><span>${esc(l.detail || '')}</span></span></div>`}
-      ${files.map(fileRow).join('')}
-      ${rest.length ? `<div class="ot-cell ${more ? 'open' : ''}"><button type="button" class="ot-row ot-rb ot-opt ot-mrow" data-ot-open="m:${esc(id)}" aria-expanded="${more}">
-        <span class="ot-rt"><b>More options</b><span>${esc(rest.map(o => o.service).slice(0, 4).join(', '))}${rest.length > 4 ? '…' : ''}</span></span>
-        <span class="ot-amt muted num">${rest.length}</span><i class="ot-chev">${CHEV}</i></button>
-        ${more ? rest.map(optRow).join('') : ''}</div>` : ''}
-    </div>` : ''}
-  </div>`;
-}
-
-// ---------------------------------------------------------------- shop logos
-const LOGO = {
-  'Slant 3D': { bg: '#14261c', fg: '#7be3a0', html: 'S3D', small: true },
-  SendCutSend: { bg: '#1d3fd8', fg: '#fff', html: 'SCS', small: true },
-  Amazon: { bg: '#131a22', fg: '#fff', html: 'a<i></i>', amz: true },
-  Craftcloud: { bg: '#e8f0ff', fg: '#2b4fd8', html: 'C' },
-  JLC3DP: { bg: '#fff1e6', fg: '#c2410c', html: 'JLC', small: true },
-  RMFG: { bg: '#1c1917', fg: '#fff', html: 'RM', small: true },
-  MATERIAM: { bg: '#eef6f1', fg: '#166534', html: 'M' },
-};
-const logo = shop => {
-  const L = LOGO[shop] || { bg: '#efeeea', fg: '#57534e', html: esc(String(shop || '?').replace(/[^A-Za-z0-9]/g, '').slice(0, 1).toUpperCase() || '?') };
-  return `<b class="ot-logo ${L.small ? 'sm' : ''} ${L.amz ? 'amz' : ''}" style="background:${L.bg};color:${L.fg}" aria-hidden="true">${L.html}</b>`;
-};
-
-/** Part renders already made, so a re-render (quantity change, opening a row) draws them at once instead of blanking them. */
-const thumbUrls = new Map(); // part line name -> image url
-const pthHtml = name => thumbUrls.has(name)
-  ? `<span class="ot-pth" aria-hidden="true" data-ot-pth="${esc(name)}" data-done="1" style="background-image:url(${thumbUrls.get(name)})"></span>`
-  : `<span class="ot-pth" aria-hidden="true" data-ot-pth="${esc(name)}"></span>`;
-
-/** Part renders next to each line; one per idle slice so opening the tab never stalls. */
-function fillThumbs(el, ctx) {
-  if (!ctx.partThumb) return;
-  const todo = [...el.querySelectorAll('.ot-pth[data-ot-pth]:not([data-done])')];
-  const idle = window.requestIdleCallback || (f => setTimeout(f, 16));
-  const step = () => {
-    const t = todo.shift(); if (!t) return;
-    t.dataset.done = '1';
-    const url = ctx.partThumb(t.dataset.otPth);
-    if (url) { thumbUrls.set(t.dataset.otPth, url); t.style.backgroundImage = `url(${url})`; }
-    idle(step);
-  };
-  idle(step);
-}
-
-const MINUS = '<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3.5 8h9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
-const PLUS = '<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3.5 8h9M8 3.5v9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
-const CHEV = '<svg viewBox="0 0 8 14" width="7" height="12" aria-hidden="true"><path d="M1.5 1.5L6.5 7l-5 5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-const EXT = '<svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5H3.5v9h9V10M9 3h4v4M13 3L7.5 8.5"/></svg>';
-const DL = '<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10.5l5 5 5-5M5 19.5h14"/></svg>';
-const IRON = '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l5.5-5.5M8.5 15.5l2 2 9-9a2.1 2.1 0 00-3-3l-9 9z"/><path d="M14 7l3 3"/></svg>';
+const MINUS = '<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3.5 8h9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>';
+const PLUS = '<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3.5 8h9M8 3.5v9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>';
 
 function injectCss() {
   if (typeof document === 'undefined' || document.getElementById('otCss')) return;
   const st = document.createElement('style'); st.id = 'otCss';
   st.textContent = `
 .pane.order.ot-host:not([hidden]),.order.ot-host:not([hidden]){display:flex!important;flex-direction:column;overflow:hidden!important;padding:0!important}
-.ot{--ot-line:rgba(60,55,50,.13);--ot-muted:var(--muted,#6b6560);--ot-faint:#a8a29e;--ot-bg:#f3f2ef;--ot-cell:#fff;--ot-acc:var(--accent,#f97316);
-  flex:1;min-height:0;display:flex;flex-direction:column;color:var(--text,#1c1917);background:var(--ot-bg);font-size:15px}
+.ot{--ot-line:#e7e5e4;--ot-muted:#78716c;--ot-faint:#a8a29e;--ot-soft:#f5f5f4;--ot-acc:var(--accent,#e8590c);--ot-acc-2:var(--accent-2,#cf4c06);
+  flex:1;min-height:0;display:flex;flex-direction:column;color:var(--text,#1c1917);background:#fff;font-size:14px;line-height:1.45}
 .ot .num{font-variant-numeric:tabular-nums}
-.ot .muted{color:var(--ot-muted)}
-.ot-scroll{flex:1;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding:14px 16px 22px}
-.ot-id{display:flex;gap:12px;align-items:center;min-width:0;padding:2px 2px 4px}
-.ot-id b{display:block;font-size:17px;font-weight:650;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.ot-id span{display:block;font-size:13px;color:var(--ot-muted)}
-.ot-id>div{min-width:0}
-.ot-thumb{width:52px;height:52px;border-radius:12px;overflow:hidden;flex:none;background:#e4e5e7}
+.ot-mut{color:var(--ot-muted)}
+.ot-sm{font-size:12.5px}
+.ot-scroll{flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+.ot-id{display:flex;align-items:center;gap:12px;padding:16px}
+.ot-thumb{width:48px;height:36px;border-radius:8px;overflow:hidden;flex:none;background:var(--ot-soft);border:1px solid var(--ot-line);box-sizing:border-box}
 .ot-thumb img{width:100%;height:100%;object-fit:cover;display:block}
 .ot-thumb.loading img,.ot-thumb img:not([src]){visibility:hidden}
-.ot-gh{margin:22px 16px 7px;font-size:13px;color:var(--ot-muted);display:flex;justify-content:space-between;gap:8px}
-.ot-g{background:var(--ot-cell);border-radius:12px;overflow:hidden}
-.ot-gf{margin:7px 16px 0;font-size:12.5px;line-height:1.45;color:var(--ot-muted)}
-.ot-upd{color:var(--ot-acc);font-weight:600}
-.ot-row{display:flex;align-items:center;gap:12px;min-height:48px;padding:8px 16px;position:relative;box-sizing:border-box;width:100%}
-.ot-g>.ot-row+.ot-row::before,.ot-cell+.ot-cell::before,.ot-g>.ot-cell+.ot-row::before,.ot-opts>.ot-row::before,.ot-opts>.ot-cell::before,.ot-opts .ot-cell>.ot-row+.ot-row::before{content:"";position:absolute;top:0;left:16px;right:0;height:.5px;background:var(--ot-line)}
-.ot-cell{position:relative}
-.ot-rt{flex:1;min-width:0;display:flex;flex-direction:column;gap:1px;text-align:left}
-.ot-rt b{font-weight:500;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.ot-rt>span{font-size:13px;color:var(--ot-muted);overflow-wrap:break-word}
-.ot-amt{flex:none;font-size:15px;white-space:nowrap;text-align:right}
-.ot-chev{flex:none;display:grid;color:#c4c0b9;transition:transform .2s;font-style:normal}
-.ot-cell.open>.ot-rb .ot-chev{transform:rotate(90deg)}
-.ot-ext{flex:none;display:grid;color:#b5b0a8;font-style:normal}
-.ot-rb{all:unset;box-sizing:border-box;flex:1;min-width:0;display:flex;align-items:center;gap:12px;cursor:pointer;min-height:44px;-webkit-tap-highlight-color:transparent}
-button.ot-row.ot-rb{padding:8px 16px;width:100%}
-.ot-rb:focus-visible,.ot-sb:focus-visible,.ot-pk:focus-visible,.ot-link:focus-visible{outline:2px solid var(--ot-acc);outline-offset:-2px}
-@media (hover:hover){.ot-rb:hover .ot-rt b,.ot-link:hover .ot-rt b{text-decoration:underline;text-decoration-color:var(--ot-line)}}
-.ot-rb:active,.ot-link:active{background:#f1f0ed}
-/* quantity */
-.ot-qrow{justify-content:space-between;min-height:60px}
-.ot-step{display:flex;align-items:center;background:#f1f0ed;border-radius:10px;padding:3px}
-.ot-sb{all:unset;width:40px;height:36px;display:grid;place-items:center;border-radius:8px;cursor:pointer;color:var(--text,#1c1917);-webkit-tap-highlight-color:transparent}
-.ot-sb:active:not(:disabled){background:#e4e2de}
-.ot-sb:disabled{color:#c9c5be;cursor:default}
-.ot-qn{width:58px;height:36px;border:0;border-radius:8px;background:#fff;text-align:center;font:600 17px/1 var(--ui,inherit);color:inherit;padding:0;box-shadow:0 1px 2px rgba(0,0,0,.08);-webkit-appearance:none;appearance:none}
+.ot-idt{flex:1;min-width:0}
+.ot-idt b{display:block;font-weight:600;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ot-idt span{display:block;font-size:13px;color:var(--ot-muted)}
+.ot-step{flex:none;display:inline-flex;align-items:center;height:32px;border:1px solid var(--ot-line);border-radius:8px;background:#fff;box-sizing:border-box}
+.ot-sb{all:unset;width:30px;height:30px;display:grid;place-items:center;border-radius:7px;cursor:pointer;color:var(--text,#1c1917);-webkit-tap-highlight-color:transparent}
+.ot-sb:hover:not(:disabled){background:var(--ot-soft)}
+.ot-sb:disabled{color:#d6d3d1;cursor:default}
+.ot-qn{width:34px;height:28px;border:0;background:none;text-align:center;font:500 14px/1 var(--ui,inherit);color:inherit;padding:0;-webkit-appearance:none;appearance:none;border-radius:6px}
 .ot-qn:focus{outline:2px solid var(--ot-acc);outline-offset:0}
-.ot-each{text-align:right;display:flex;flex-direction:column;line-height:1.2;white-space:nowrap}
-.ot-each b{font-size:17px;font-weight:650}
-.ot-each span{font-size:12.5px;color:var(--ot-muted)}
-.ot-picks{gap:8px;padding-top:4px;padding-bottom:12px;min-height:0}
-.ot-pk{all:unset;flex:1;text-align:center;height:34px;line-height:34px;border-radius:9px;background:#f1f0ed;font-weight:600;font-size:14px;cursor:pointer;font-variant-numeric:tabular-nums;-webkit-tap-highlight-color:transparent}
-.ot-pk.on{background:var(--text,#1c1917);color:#fff}
-/* parts and shops */
-.ot-link{text-decoration:none;color:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
-.ot-pth{flex:none;width:40px;height:40px;border-radius:9px;background:#f4f3f0 center/86% no-repeat;display:block;box-shadow:inset 0 0 0 .5px var(--ot-line)}
-.ot-pth:not([style]):not(.ic){background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a8a29e' stroke-width='1.5' stroke-linejoin='round'%3E%3Cpath d='M12 3l8 4.5v9L12 21l-8-4.5v-9z'/%3E%3Cpath d='M4 7.5l8 4.5 8-4.5M12 12v9'/%3E%3C/svg%3E");background-size:20px}
-.ot-pth.ic{display:grid;place-items:center;color:#78716c;box-shadow:none}
-.ot-prow{min-height:56px}
-.ot-prow .ot-rt b{white-space:normal;overflow-wrap:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;line-height:1.25}
-.ot-amt small{font-size:12px;color:var(--ot-muted)}
-.ot-cell.open>.ot-prow{background:#faf9f7}
-.ot-opts{background:#faf9f7;padding-left:52px}
-.ot-opts .ot-row{padding-left:0}
-.ot-opts .ot-row::before{left:0!important}
-.ot-opt{min-height:52px}
-.ot-opt .ot-rt b{font-size:14.5px}
-.ot-opt .ot-amt{font-size:14.5px}
-.ot-opt .ot-rt>span{font-size:12.5px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.ot-mrow .ot-rt b{color:var(--ot-acc);font-weight:600}
-.ot-opts .ot-cell .ot-opt:not(.ot-mrow){padding-left:0}
-.ot-g{container-type:inline-size}
-@container (max-width:380px){.ot-g .ot-pth{width:34px;height:34px}.ot-g .ot-row{gap:10px}.ot-opts{padding-left:16px}.ot-g .ot-amt{font-size:14px}}
-.ot-logo{display:grid;place-items:center;width:30px;height:30px;border-radius:8px;font-weight:800;font-size:15px;flex:none;position:relative;line-height:1;font-style:normal;font-family:var(--ui,inherit)}
-.ot-logo.sm{font-size:9.5px}
-.ot-logo.amz{font-size:17px;font-weight:700}
-.ot-logo.amz i{position:absolute;left:8px;right:8px;bottom:6px;height:2px;border-radius:2px;background:#ff9900}
-.ot-logo.file{background:#fff1e6;color:var(--ot-acc)}
-/* more */
-.ot-more{margin:22px 16px 0;display:flex;flex-direction:column;gap:12px}
-.ot-diy{all:unset;cursor:pointer;font-size:15px;font-weight:500;color:var(--ot-acc)}
-.ot-diy:hover{text-decoration:underline}
-.ot-how{font-size:13px;color:var(--ot-muted)}
-.ot-how summary{cursor:pointer;width:max-content;max-width:100%}
-.ot-how p{margin:8px 0 0;line-height:1.55}
-/* pinned estimate */
-.ot-pin{flex:none;position:sticky;bottom:0;z-index:3;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(250,249,247,.94);
-  -webkit-backdrop-filter:blur(20px) saturate(1.6);backdrop-filter:blur(20px) saturate(1.6);border-top:.5px solid var(--ot-line);display:flex;flex-direction:column;gap:2px}
-.ot-tot{display:flex;justify-content:space-between;align-items:baseline;font-size:14px;color:var(--ot-muted)}
-.ot-tot b{font-size:19px;font-weight:700;color:var(--text,#1c1917)}
-.ot-fine{margin:0;font-size:12px;color:var(--ot-muted)}
-.ot-g>.ot-row+.ot-cell::before,.ot-set .ot-cell>.ot-row+.ot-row::before{content:"";position:absolute;top:0;left:16px;right:0;height:.5px;background:var(--ot-line)}
-.ot-set .ot-cell>.ot-row{position:relative}
-.ot-set{margin-bottom:10px}
-.ot-set .ot-hero{min-height:60px}
-.ot-set .ot-hero .ot-rt b{font-weight:600;font-size:15px;white-space:normal;line-height:1.25}
-.ot-set .ot-sub{padding-left:58px}
-.ot-set .ot-sub::before{left:58px!important}
-.ot-set .ot-rt b,.ot-act .ot-rt b{white-space:normal;line-height:1.25}
-.ot-each-row .ot-rt b{font-weight:500;color:var(--text,#1c1917)}
-.ot-gap{margin-top:12px}
-.ot-act .ot-rt b{color:var(--ot-acc);font-weight:600}
-.ot-buy .ot-bcell+.ot-bcell::before{content:"";position:absolute;top:0;left:58px;right:0;height:.5px;background:var(--ot-line)}
-.ot-buy .ot-hero{min-height:60px}
-.ot-buy .ot-hero .ot-rt b{font-weight:600;white-space:normal;line-height:1.25}
-.ot-btns{display:flex;flex-wrap:wrap;gap:8px;padding:0 16px 12px 58px}
-.ot-btn{flex:1 1 120px;min-width:0;display:grid;place-items:center;height:36px;padding:0 10px;border-radius:9px;background:#f1f0ed;color:var(--ot-acc);font-weight:600;font-size:14px;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-webkit-tap-highlight-color:transparent}
-.ot-btn:active{background:#e4e2de}
-.ot-btn:focus-visible{outline:2px solid var(--ot-acc);outline-offset:-2px}
-@container (max-width:380px){.ot-btns{padding-left:16px}}
-@media (prefers-reduced-motion:reduce){.ot-chev{transition:none}}`;
+.ot-sum{padding:0 16px 16px}
+.ot-tl{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.ot-tl b{font-size:22px;font-weight:600;letter-spacing:-.01em}
+.ot-sum .ot-tl{margin-bottom:8px}
+.ot-bar{display:flex;gap:2px;height:8px;border-radius:4px;overflow:hidden}
+.ot-bar i{display:block;min-width:3px}
+.ot-upd{margin:8px 0 0;font-size:12.5px;color:var(--ot-muted)}
+.ot-shops{padding:0 16px 16px}
+.ot-shop{padding:12px 0;border-top:1px solid var(--ot-line)}
+.ot-sh{display:flex;align-items:center;gap:12px;min-height:32px}
+.ot-sq{flex:none;width:8px;height:8px;border-radius:2px}
+.ot-st{flex:1;min-width:0;line-height:1.3}
+.ot-st b{font-weight:500}
+.ot-st span{white-space:nowrap}
+.ot-sp{flex:none;white-space:nowrap}
+.ot-arr{margin:0 0 0 20px;font-size:12.5px;color:var(--ot-muted)}
+.ot-ob{all:unset;box-sizing:border-box;cursor:pointer;flex:none;display:inline-flex;align-items:center;justify-content:center;height:30px;padding:0 10px;border:1px solid var(--ot-line);border-radius:8px;background:#fff;color:var(--text,#1c1917);font-weight:500;font-size:13px;text-decoration:none;white-space:nowrap;-webkit-tap-highlight-color:transparent}
+.ot-ob:hover{background:var(--ot-soft)}
+.ot-ob:active{background:#ecebe9}
+.ot-note{margin:6px 0 0 20px;font-size:12.5px;color:var(--ot-muted)}
+.ot-pl{margin:8px 0 0;padding:0 0 0 20px;list-style:none}
+.ot-pl li{display:flex;gap:8px;font-size:12.5px;color:var(--ot-muted);padding:2px 0}
+.ot-pn{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:inherit;text-decoration:none}
+a.ot-pn:hover{color:var(--text,#1c1917);text-decoration:underline;text-decoration-color:var(--ot-line);text-underline-offset:3px}
+.ot-sx{display:flex;flex-wrap:wrap;gap:4px 16px;padding-left:20px;margin-top:4px}
+.ot-tlink{all:unset;cursor:pointer;font-size:12.5px;color:var(--text,#1c1917);text-decoration:underline;text-decoration-color:var(--ot-line);text-underline-offset:3px}
+.ot-tlink:hover{text-decoration-color:var(--text,#1c1917)}
+.ot-empty{margin:8px 16px;display:flex;flex-direction:column;gap:2px}
+.ot-empty b{font-weight:500}
+.ot-empty span{font-size:13px;color:var(--ot-muted)}
+.ot-pin{flex:none;border-top:1px solid var(--ot-line);padding:12px 16px calc(14px + env(safe-area-inset-bottom,0px));background:#fff}
+.ot-fl{display:flex;justify-content:space-between;gap:12px;font-size:12.5px}
+.ot-fl+.ot-fl{margin-top:2px}
+.ot-fl>span:first-child{color:var(--ot-muted)}
+.ot-ftot{margin-top:6px}
+.ot-ftot span{font-weight:600}
+.ot-fine{margin:2px 0 10px;font-size:12.5px;color:var(--ot-muted)}
+.ot-gd{margin:0 0 8px;font-size:12.5px;color:var(--ot-muted)}
+.ot-gd .ot-tlink{margin-left:4px}
+.ot-primary{all:unset;cursor:pointer;display:flex;align-items:center;justify-content:center;width:100%;height:40px;box-sizing:border-box;border-radius:8px;background:var(--ot-acc);color:#fff;font-weight:500;font-size:14px;text-decoration:none;-webkit-tap-highlight-color:transparent}
+.ot-primary:hover{background:var(--ot-acc-2)}
+.ot-sb:focus-visible,.ot-ob:focus-visible,.ot-tlink:focus-visible,a.ot-pn:focus-visible{outline:2px solid var(--ot-acc);outline-offset:2px}
+.ot-primary:focus-visible{outline:2px solid var(--ot-acc);outline-offset:2px}
+@media (max-width:640px){.ot-id,.ot-sum,.ot-shops{padding-left:16px;padding-right:16px}.ot-ob{height:32px}.ot-pl li{padding:3px 0}.ot-primary{height:44px}}`;
   document.head.appendChild(st);
 }

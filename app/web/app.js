@@ -567,6 +567,7 @@ async function openDesign(kind, id) {
   const readOnly = kind === 'example';
   if (readOnly) track('example_opened', { example: id }); // analytics:
   S.cur = { kind, id, data: null, base: '', readOnly };
+  S.autoShown = null; // autobuild: the viewer shows this design's own model
   S.chat = kind === 'project' ? runEntry(id).chat : { messages: [], live: null, steps: {} };
   if (kind === 'project' && !S.chat.queue?.length) { const q = loadQueue(id); if (q.length) S.chat.queue = q; } // queued messages survive a reload
   if (kind === 'project') ensureStream(id);
@@ -2119,8 +2120,10 @@ async function onProjectEvent(id, d) {
     case 'sketch': // instant blockout for a new design, replaced by the real model when its first build lands
       if (isCurProject(id) && d.sketch && !d.replay) { const v = await getViewer(); if (v && isCurProject(id)) { overlay(''); v.showSketch(d.sketch); renderVpStatus(); } }
       break;
+    case 'auto_model': if (isCurProject(id) && S.cur.data && c.live?.running) autoModel(id, c); break; // autobuild: a copy rebuilt after the agent's edits
     case 'model_updated': {
       if (isCurProject(id) && S.cur.data) {
+        S.modelGen = (S.modelGen || 0) + 1; // autobuild: an auto model still loading must not land over this one
         try {
           const m = await api.manifest(S.cur.base);
           if (!isCurProject(id)) break;
@@ -2135,6 +2138,7 @@ async function onProjectEvent(id, d) {
           S.cur.data.manifest = m;
           if (S.restoring?.id === id) S.restoring = null; // undo/restore rebuild landed
           await loadModel(m, !first, true); // keeps the camera, even while the studio is hidden; animates the change
+          if (S.autoShown === id) S.autoShown = null;
           const afterHistory = Date.now() < historyToast.until && !c.live?.running;
           if (onStudioFor(id) && (afterHistory || (!(Date.now() - (S.viewer?.lastChange?.at || 0) < 2000) && !(Date.now() - (S.colorSavedAt || 0) < 5000)))) toast(afterHistory ? `${historyToast.label} · model rebuilt` : 'Model updated', afterHistory && historyToast.back ? historyToast.back : undefined); // changefx: its chip says what changed; colours: a swatch pick is not news
           if (afterHistory) historyToast.until = Date.now() + 1500; // swallow the quote toast that follows, then back to normal
@@ -2188,6 +2192,11 @@ async function onProjectEvent(id, d) {
         c.live = L.error ? { steps: [], text: '', running: false, error: L.error } : null;
       } else if (d.resync) c.live = null;
       if (isCurProject(id)) { S.viewer?.editGlow?.stop(); S.viewer?.clearPreviews?.(); } // editglow: no new model came: fade the shimmer out; livepreview: the workbench goes
+      if (isCurProject(id) && S.autoShown === id && S.cur.data) { // autobuild: the run ended on an auto model (no build of its own after it): back to the real one
+        S.autoShown = null; S.modelGen = (S.modelGen || 0) + 1;
+        try { const m = await api.manifest(S.cur.base); if (isCurProject(id) && m) S.cur.data.manifest = m; } catch {}
+        if (isCurProject(id)) await loadModel(S.cur.data.manifest, true, true);
+      }
       // once per successful run: a gentle "order one" card under the agent's reply
       if (d.ok && !d.resync && after > before && !c.live?.error && !d.questions?.length) { c.nudge = { at: c.messages.length, fresh: true }; if (isCurProject(id)) setTimeout(maybeHero, 600); appNudge(id); } // app-preview: the App pill
       if (isCurProject(id)) {
@@ -2205,6 +2214,31 @@ async function onProjectEvent(id, d) {
       break;
     }
   }
+}
+
+/** autobuild: the server rebuilt a copy of the design in autobuild/ after the agent's edits (server/autobuild.js). Show it
+ * in the viewer (camera kept, the change animated) without touching S.cur.data.manifest: the agent's own build
+ * (model_updated) replaces it as before. A burst (a replay after a reload) loads once, the newest. */
+async function autoModel(id, c) {
+  const A = S.autoLoad ||= {};
+  if (A.busy) { A.again = true; return; }
+  A.busy = true;
+  try {
+    do {
+      A.again = false;
+      const gen = S.modelGen || 0, base = `${S.cur.base}autobuild/`;
+      let m = null;
+      try { m = await api.manifest(base); } catch {}
+      if (!m?.parts?.length || !isCurProject(id) || !c.live?.running || gen !== (S.modelGen || 0)) break;
+      if (S.restoring?.id === id) break; // undo / restore rebuild owns the viewer
+      const v = await getViewer();
+      if (!v || !isCurProject(id) || !v.parts().length || v.sketch || gen !== (S.modelGen || 0)) break; // no model on screen yet: the first build's reveal stays
+      await v.load(m, base, { keepCamera: true, animate: true });
+      if (!isCurProject(id) || gen !== (S.modelGen || 0)) break;
+      S.autoShown = id;
+      renderTree(); renderVpStatus();
+    } while (A.again);
+  } finally { A.busy = false; }
 }
 
 /** Website and ads agents: same event shapes with a site_ / ads_ prefix. */

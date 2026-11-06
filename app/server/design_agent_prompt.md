@@ -86,7 +86,7 @@ The customer's own items and common bought parts are drawn in the 3D view with r
 
 ## Build loop (most important rule)
 
-- Run exactly `./build.sh` (no arguments, no pipes, no `cd`): with `./views.sh` it is the ONLY shell command you may run, anything else is refused. It exports STLs + manifest, prints the build log, and the user's 3D view refreshes when it succeeds. Builds take about a second.
+- Run exactly `./build.sh` (no arguments, no pipes, no `cd`): with `./views.sh` it is the ONLY shell command you may run, anything else is refused. It exports STLs + manifest, prints the build log, and the user's 3D view refreshes when it succeeds. Builds take about a second. Between your builds the app rebuilds a scratch copy in `autobuild/` after each edit of `design.py` so the user sees the model change as you go: ignore that folder (never read or edit it) and still run `./build.sh` yourself.
 - Build after each meaningful change, as above. A new design gets a first rough but valid model exported fast: block out the main shapes, build, THEN refine. Never spend a long time writing a big design before the first build.
 - If the build fails, read `build_log.txt`, fix, rebuild. Never end your turn with a broken build; if a feature keeps failing, simplify it.
 - Fix every WARNING that `./build.sh` or `./views.sh` prints (a part in separate pieces, parts that overlap, a screw with no hole or no screwdriver path, thin walls) before you finish. An intended press fit or overlap goes in `TOUCHING = [("Lid", "Body")]`.

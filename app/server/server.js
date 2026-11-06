@@ -21,6 +21,8 @@ const editparts = require('./editparts'); // editglow: which parts an agent edit
 const caption = require('./caption'); // livecaption: plain-words line under the model while a design run works
 const livepreview = require('./livepreview'); // livepreview: parts appear while design.py is still being written
 const PREVIEW_ON = process.env.FORMA_LIVE_PREVIEW !== '0';
+const autobuild = require('./autobuild'); // autobuild: the model rebuilds (a copy, in autobuild/) after each design.py edit
+const AUTOBUILD_ON = process.env.FORMA_AUTOBUILD !== '0';
 const uploads = require('./uploads').init({ send, allow }); // images: chat image attachments (server/uploads.js)
 const approutes = require('./approutes'); // urls: clean studio URLs (/designs/..., /examples/..., /store, /orders)
 const admin = require('./admin'); // admin: /admin panel + /api/admin/* (server/admin.js), init at the bottom
@@ -809,7 +811,7 @@ function createProject({ fromExample, fromShare, fromProject, ref, owner, prompt
       filter: (s) => {
         const b = path.basename(s);
         if (shared?.project && path.dirname(s) === src && ['site', 'ads', 'guide', 'uploads', 'build_log.txt', 'support', 'runs.jsonl', 'app', '.app_messages.json', '.sourcing', '.agent-home', '.build'].includes(b)) return false; // share: a remix copies the design, not the owner's site / ads / chats
-        return s === src || !(b.startsWith('.') || ['messages.json', 'agent.json', 'versions.json', 'build.sh', 'views.sh', '__pycache__'].includes(b) || (b === 'preview' && path.dirname(s) === src)); // livepreview: scratch STLs
+        return s === src || !(b.startsWith('.') || ['messages.json', 'agent.json', 'versions.json', 'build.sh', 'views.sh', '__pycache__'].includes(b) || ((b === 'preview' || b === autobuild.DIR) && path.dirname(s) === src)); // livepreview / autobuild: scratch STLs
       },
     });
     const meta = readJSON(path.join(dir, 'meta.json'), {});
@@ -1249,6 +1251,7 @@ function finishRun(id, run, code) {
   clearTimeout(run.cap); clearInterval(run.watchdog);
   if (run.preview) { run.preview.stop('turn ended'); setTimeout(() => { if (!runs.has(id)) try { fs.rmSync(path.join(dir, 'preview'), { recursive: true, force: true }); } catch {} }, 60e3).unref(); } // livepreview: scratch STLs go
   clearTimeout(run.capTimer); // livecaption
+  if (run.auto) { run.auto.stop(); setTimeout(() => { if (!runs.has(id)) autobuild.clean(dir); }, 60e3).unref(); } // autobuild: the shadow copy goes
   if (run.partialTimer) { clearTimeout(run.partialTimer); run.partialTimer = null; }
   let siteNote = '';
   if (kind === 'site') { try { siteNote = finalizeSite(dir, run.siteBackup); } catch (e) { siteNote = 'Could not check the page: ' + e.message; } }
@@ -1366,12 +1369,15 @@ function handleMsg(id, run, agent, agentFile, j) {
         if (run.kind === 'design' && c.name === 'Write' && /(^|\/)questions\.json$/.test(String(c.input?.file_path || ''))) { // askmock: start drawing the options now
           try { const qs = brain.cleanQuestions(JSON.parse(String(c.input.content || ''))); if (qs.length) startAskMocks(id, run.dir, qs, run.userText); } catch {}
         }
-        if (c.name === 'Bash' && /build\.sh/.test((c.input || {}).command || '')) { run.buildIds.add(c.id); run.buildStart.set(c.id, at()); run.preview?.stop('build started'); } // livepreview: never alongside the real build
+        if (c.name === 'Bash' && /build\.sh/.test((c.input || {}).command || '')) { run.buildIds.add(c.id); run.buildStart.set(c.id, at()); run.preview?.stop('build started'); (run.buildsOpen ||= new Set()).add(c.id); run.auto?.agentBuildStarted(); } // livepreview / autobuild: never alongside the real build
+        if (run.kind === 'design' && /^(Edit|MultiEdit|Write)$/.test(c.name) && path.basename(String(c.input?.file_path || '')) === 'design.py') (run.designEdits ||= new Set()).add(c.id); // autobuild:
       }
     }
   } else if (j.type === 'user' && j.message && Array.isArray(j.message.content)) {
     for (const c of j.message.content) {
       if (c.type !== 'tool_result') continue;
+      run.buildsOpen?.delete(c.tool_use_id);
+      if (run.designEdits?.delete(c.tool_use_id) && !c.is_error) autoEdited(id, run); // autobuild: rebuild a copy, show it live
       if (run.buildIds.has(c.tool_use_id)) {
         const body = typeof c.content === 'string' ? c.content : JSON.stringify(c.content || '');
         const start = run.buildStart.get(c.tool_use_id) ?? at(), end = at();
@@ -1454,6 +1460,34 @@ function narrationParts(id, run, text) {
   if (!man) return;
   const parts = editparts.namesInText(text, man);
   if (parts.length) emitEditing(id, run, parts, 'narration');
+}
+
+// ---------------------------------------------------------------- autobuild: the model keeps up with the edits
+/** A design.py edit landed: (re)build a copy of the design in autobuild/ and tell the studio (server/autobuild.js).
+ * Not on a new design's first turn before its first build (the sketch + livepreview own that stage). */
+function autoEdited(id, run) {
+  if (!AUTOBUILD_ON || run.kind !== 'design' || run.finished || runs.get(id) !== run) return;
+  if (run.tl.new_design && !run.tl.builds?.some((b) => b.ok)) return;
+  run.auto ||= new autobuild.AutoBuild({
+    dir: run.dir, spawnBuild: spawnAutoBuild, log: (m) => console.log(`[autobuild ${id}] ${m}`),
+    agentBuilding: () => !!run.buildsOpen?.size,
+    onModel: (man) => {
+      if (run.finished || runs.get(id) !== run) return;
+      run.editingSet = null; // editglow: the next edits shimmer again on the new model
+      record(id, run, { type: 'auto_model', t: man.t, n: run.auto.n });
+    },
+  });
+  run.auto.edited();
+}
+/** autobuild: `python -m cadlib.build .` in the shadow folder, under exactly the build.sh sandbox (the project's
+ * profile), empty env and caps, at low priority. Its own process group so a kill takes everything. */
+function spawnAutoBuild(sh) {
+  const dir = path.dirname(sh), home = path.join(dir, AGENT_HOME);
+  for (const d of ['tmp', 'cache']) fs.mkdirSync(path.join(home, d), { recursive: true });
+  const env = { PATH: '/usr/bin:/bin', LANG: 'en_US.UTF-8', HOME: home, TMPDIR: path.join(home, 'tmp'), XDG_CACHE_HOME: path.join(home, 'cache'),
+    MPLCONFIGDIR: path.join(home, 'cache'), FORMA_NO_RENDER: '1', PYTHONPATH: APP, PYTHONDONTWRITEBYTECODE: '1' };
+  const [cmd, args] = sandbox.AVAILABLE ? ['/usr/bin/sandbox-exec', ['-p', buildProfile(dir), VENV_PY, '-m', 'cadlib.build', '.']] : [VENV_PY, ['-m', 'cadlib.build', '.']];
+  return spawn('/usr/bin/nice', ['-n', '10', '/bin/sh', '-c', `${ULIMITS}; exec "$@"`, 'autobuild', cmd, ...args], { cwd: sh, env, detached: true, stdio: 'ignore' });
 }
 
 // ---------------------------------------------------------------- livecaption + livepreview
@@ -3166,7 +3200,7 @@ function memberRefusal(role, c, d, m) {
 /** Close collaborators' live streams on a design (sharing turned off or its mode changed): they reconnect with the new
  *  role, or get a 404 once they are no longer members. */
 function dropMemberStreams(id) { for (const r of [...(clients.get(id) || [])]) if (r.formaRole) { try { r.end(); } catch {} clients.get(id)?.delete(r); } }
-const COPY_EVENTS = new Set(['title', 'model_updated', 'bom_updated', 'code_updated', 'sketch', 'caption', 'part_preview', 'history_changed', 'run_started', 'run_finished', 'editing_parts']);
+const COPY_EVENTS = new Set(['title', 'model_updated', 'auto_model', 'bom_updated', 'code_updated', 'sketch', 'caption', 'part_preview', 'history_changed', 'run_started', 'run_finished', 'editing_parts']);
 /** Which live events a collaborator's stream carries: edit links the design agent's (no website / ads / app / support),
  *  copy links only model changes (no chat). */
 const memberEvent = (role, t) => (role === 'edit' ? !/^(site|ads|app)_/.test(String(t)) && t !== 'support_message' : COPY_EVENTS.has(t));
@@ -3810,7 +3844,7 @@ async function handle(req, res) {
       const publicFile = /^(thumb\.png|manifest\.json|stl\/[\w.-]+\.stl|ads\/renders\/[\w.-]+\.png)$/.test(rel);
       // share: collaborators get the model (and, on edit links, the chat's images); never meta, chats, code files or the rest
       const mem = share.roleFor(acc, id);
-      const memberFile = !!mem && (/^(thumb\.png|manifest\.json|stl\/[\w.-]+\.stl)$/.test(rel) || (mem.role === 'edit' && /^uploads\/[\w-][\w.-]*$/.test(rel)));
+      const memberFile = !!mem && (/^(thumb\.png|(autobuild\/)?manifest\.json|(autobuild\/)?stl\/[\w.-]+\.stl)$/.test(rel) || (mem.role === 'edit' && /^uploads\/[\w-][\w.-]*$/.test(rel)));
       if (!memberFile && (!publicFile || !isPublished(root))) return send(res, 404, { error: 'not found' });
     }
     return serveFile(res, root, rest.join('/'), { noCache: true, sandbox: true });
