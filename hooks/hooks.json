@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "echo 'premake-ai is installed. When the user asks what a physical part would cost to make, where to get it made, or wants it manufactured, 3D printed, machined, laser cut or bent, load the premake-ai:premake skill and get live quotes from premake.ai with curl. Do not estimate prices from web search.'"
+            "command": "echo 'premake-ai is installed. When the user asks to install, open or start Premake, or to design or make a product with Premake, load the premake-ai:premake skill and run the Premake studio app. When the user asks what a physical part would cost to make, where to get it made, or wants it manufactured, 3D printed, machined, laser cut or bent, load the same skill and get live quotes from premake.ai with curl. Do not estimate prices from web search.'"
           }
         ]
       }

@@ -1,27 +1,56 @@
-# premake-ai
+# Premake
 
-Get parts made from Claude Code. Give Claude a STEP or STL file (or the CAD script that makes one) and ask what it would cost. Claude uploads it to Premake, which asks machine shops, sheet-metal shops and print networks at once and comes back with real prices, shipping and delivery dates.
+Describe a product and Premake designs it. A Claude Code design agent writes the CAD while you watch the 3D model take shape, then you get the files to make it, the full parts list, prices, and where to buy each part. It runs on your own computer, on your own Claude Code login.
 
-Premake never orders or pays for anything. You get a comparison link and order from the shop yourself.
+Premake also gets live manufacturing quotes for any STEP or STL file from machine shops, sheet-metal shops and print networks, right from Claude Code. It never orders or pays for anything: you get a comparison link and order from the shop yourself.
 
-<!-- Demo GIF goes here: ![premake-ai in Claude Code](docs/demo.gif) -->
+<!-- Screenshot goes here: ![The Premake studio](docs/studio.png) -->
 
 ## Install
 
-In Claude Code:
+Paste this into Claude Code:
+
+```
+Install Premake from github.com/premake-ai/premake-ai
+```
+
+Claude adds the plugin, sets up the app and opens it in your browser. Or do it by hand, in Claude Code:
 
 ```
 /plugin marketplace add premake-ai/premake-ai
 /plugin install premake-ai@premake-ai
 ```
 
-That's it. No account, no key, nothing else to install: the plugin is a skill that runs `curl`, which ships with macOS, Linux and Windows 10 and later.
+Then ask "open Premake" or "design a phone stand with Premake". Without Claude, from a terminal:
 
-- Needs Claude Code 2.0.20 or later (`claude --version`, upgrade with `claude update`).
-- Works with any Claude model.
-- Free use allows 20 quotes a day per IP address and files up to 50 MB.
+```bash
+git clone https://github.com/premake-ai/premake-ai ~/premake-ai
+~/premake-ai/app/setup.sh      # once, 1 to 3 minutes
+~/premake-ai/app/start.sh      # prints and opens http://localhost:8800
+```
 
-## What it looks like
+## Requirements
+
+- macOS (Apple silicon or Intel) or Linux.
+- [Claude Code](https://claude.com/claude-code), installed and logged in (`claude auth login`). The design agent uses your Claude subscription, never an API key. It uses `claude-opus-5-5` by default; set `FORMA_MODEL` to use another model.
+- Node.js 20 or newer.
+- Python 3.11 or 3.12 for CadQuery, or [uv](https://docs.astral.sh/uv/), which fetches Python for you. `setup.sh` makes a venv inside `app/`; nothing is installed system-wide and nothing needs sudo.
+- Quotes on their own (the skill below) need only `curl`, on macOS, Linux or Windows 10 and later.
+
+## The studio
+
+Describe a product (or paste a photo or sketch) and press Start building. The design agent writes a CadQuery model and the parts appear as it works. Then:
+
+- **Model**: the 3D model, with parts you can hide, measure, section and recolour.
+- **Assemble**: step-by-step assembly, built from the geometry.
+- **Order**: every part with a price and where to buy it: printed parts, sheet and machined parts with live shop quotes, and off-the-shelf parts with store links.
+- **Make**: STL and STEP files for every part, ready for your printer or a shop.
+
+Ask for changes in the chat and the model updates. Your designs are saved in `app/data/` (set `PREMAKE_DATA_DIR` to keep them elsewhere). More options are in [app/README.md](app/README.md).
+
+## Quotes from Claude Code
+
+With the plugin installed, Claude can price any part you have as a STEP or STL file, with no app running. Free use allows 20 quotes a day per IP address and files up to 50 MB.
 
 ```
 > What would 1 and 10 of crossbar-gusset-left.step cost in aluminium?
@@ -58,7 +87,7 @@ Materials: aluminium (the default), steel, stainless, plastic, acrylic. `curl ht
 
 ## Privacy
 
-Your file goes to Premake's quoting service and to the shops being asked for a price. It is used only for quoting and deleted after 30 days, with its quotes.
+Everything runs on your machine, and your designs stay in `app/data/` on it. The design agent is your own Claude Code, so it talks to Anthropic like any Claude Code session. The only files sent to Premake are the ones you choose to quote: the STEP or STL files of parts you ask prices for (from the Order tab or the quoting skill) go to premake.ai's quoting service and to the shops being asked. They are used only for quoting and deleted after 30 days, with their quotes. The app has no analytics, no account and no sign-in.
 
 ## The API
 
@@ -104,4 +133,4 @@ MATERIAM, the AFN network and Slant 3D are public and need no key. Each supplier
 
 ## Licence
 
-MIT. See [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE). Contact: joshmitchell10@gmail.com

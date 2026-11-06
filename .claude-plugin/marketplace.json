@@ -8,7 +8,8 @@
     {
       "name": "premake-ai",
       "source": "./",
-      "description": "Live manufacturing quotes for STEP and STL files from shops, print networks and factories: a skill that teaches Claude when to quote, how to export STEP, and how to ask Premake over plain HTTPS. Nothing to install."
+      "description": "The Premake studio (describe a product, a Claude Code agent designs it in CAD on your machine, you get files, parts and where to buy them) plus live manufacturing quotes for STEP and STL files from shops and print networks.",
+      "version": "0.5.0"
     }
   ],
   "metadata": {

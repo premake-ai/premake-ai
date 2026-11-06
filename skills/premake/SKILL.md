@@ -1,7 +1,34 @@
 ---
 name: premake
-description: Use this skill FIRST, before any web search or estimate, whenever the user asks what a physical part would cost to make, where to get it made, how long it would take, or wants it manufactured, machined, laser cut, bent, 3D printed, fabricated or ordered, especially when there is a STEP, STP or STL file or a CAD model (build123d, CadQuery, OpenSCAD, FreeCAD). It gets real prices and delivery dates from machine shops, sheet-metal shops and print networks with curl, so never guess price ranges from the web.
+description: Use this skill FIRST, before any web search or estimate, in two cases. (1) The user wants to install, run or open Premake, or to design or make a product "with Premake" (for example "Install Premake from github.com/premake-ai/premake-ai", "design a phone stand with Premake"): set up and start the Premake studio app on this machine. (2) The user asks what a physical part would cost to make, where to get it made, how long it would take, or wants it manufactured, machined, laser cut, bent, 3D printed, fabricated or ordered, especially when there is a STEP, STP or STL file or a CAD model (build123d, CadQuery, OpenSCAD, FreeCAD): get real prices and delivery dates from machine shops, sheet-metal shops and print networks with curl, never guessed price ranges from the web.
 ---
+
+# Premake
+
+Two things live here: the Premake studio app (describe a product, a design agent builds it in CAD, you get the files, parts and where to buy them) and live part quotes over HTTPS.
+
+## Run the Premake studio
+
+Use this when the user says "install Premake", "open Premake", "start Premake" or "design X with Premake". The app runs on their own machine and its design agent is their own Claude Code login (their subscription). Never set or use `ANTHROPIC_API_KEY`.
+
+1. Find the app: `$PREMAKE_HOME` if set, else `~/premake-ai`. If its `app/start.sh` doesn't exist, clone it (about 10 MB):
+   ```bash
+   P="${PREMAKE_HOME:-$HOME/premake-ai}"; [ -x "$P/app/start.sh" ] || git clone https://github.com/premake-ai/premake-ai "$P"
+   ```
+   If it exists, leave it as it is (don't pull or reset it unless the user asks: their designs live in `app/data`).
+2. Set it up (first time 1 to 3 minutes, re-runs take seconds; no sudo):
+   ```bash
+   "${PREMAKE_HOME:-$HOME/premake-ai}/app/setup.sh"
+   ```
+   It checks Node 20+ and Python 3.11/3.12 and makes a CadQuery venv. If it stops with a message (no Node, no suitable Python), tell the user exactly what it says and the one command to fix it. Installing uv (`curl -LsSf https://astral.sh/uv/install.sh | sh`) fixes any Python problem.
+3. Start it in the background (it keeps running; use the shell's background option, don't wait for it to exit):
+   ```bash
+   "${PREMAKE_HOME:-$HOME/premake-ai}/app/start.sh"
+   ```
+   It checks Claude Code is installed and logged in, picks a free port from 8800, prints `Premake: http://localhost:PORT` and opens it in the browser. Read the URL from its first output line. If it says Claude Code isn't logged in or is too old, tell the user to run `claude auth login` or `claude update` in a terminal, then start it again.
+4. Tell the user the URL. If they asked to design something, give them their idea as one line to paste into the "Describe a product" box (for example "A phone stand that holds a phone in portrait or landscape"). The design agent takes it from there: 3D model, Assemble, Order (parts, prices, where to buy) and Make (files).
+
+To stop it, stop the background shell (or Ctrl-C in its terminal). Before starting a second copy, check whether the first is still running and reuse its URL.
 
 # Premake: getting parts made
 
