@@ -952,7 +952,11 @@ function addMessage(dir, role, text) { addMessageTo(path.join(dir, 'messages.jso
 function stepText(name, input = {}) {
   const base = (f) => (f ? path.basename(String(f)) : 'file');
   switch (name) {
-    case 'Read': return `Reading ${base(input.file_path)}`;
+    case 'Read': { // an uploaded photo is saved as <timestamp>-<hash>.jpg: say what it is, not its file name
+      const fp = String(input.file_path || '');
+      if (/(^|\/)uploads\//.test(fp) && /\.(jpe?g|png|webp|gif|heic)$/i.test(fp)) return /(^|\/)ref-\d+\./.test(fp) ? 'Looking at a reference photo' : 'Looking at your photo';
+      return `Reading ${base(fp)}`;
+    }
     case 'Write': return `Writing ${base(input.file_path)}`;
     case 'Edit': case 'MultiEdit': return `Editing ${base(input.file_path)}`;
     case 'Glob': return 'Looking through files';
