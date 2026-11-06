@@ -568,6 +568,7 @@ async function openDesign(kind, id) {
   if (readOnly) track('example_opened', { example: id }); // analytics:
   S.cur = { kind, id, data: null, base: '', readOnly };
   S.chat = kind === 'project' ? runEntry(id).chat : { messages: [], live: null, steps: {} };
+  if (kind === 'project' && !S.chat.queue?.length) { const q = loadQueue(id); if (q.length) S.chat.queue = q; } // queued messages survive a reload
   if (kind === 'project') ensureStream(id);
   pruneStreams();
   S.quote = null; S.quoteErr = null; S.tierIdx = 1;
@@ -1550,8 +1551,18 @@ function renderChat() {
     $$('.starter', el).forEach(b => b.onclick = () => { $('#chatInput').value = b.textContent; autoGrow(); $('#chatInput').focus(); });
     return;
   }
+  if (tgt === 'design' && cur.kind === 'project') saveQueue(cur.id, c.queue);
   el.innerHTML = threadHtml(c, { editable: !running && !!api.undo, parts: tgt === 'design', firstRun: tgt === 'design' && isFirstRun(), base: S.cur.base }) + (tgt === 'design' ? queueHtml(c) + nudgeHtml(c) : '');
-  if (tgt === 'design') { wireNudge(el); $$('[data-qx]', el).forEach(b => b.onclick = () => { c.queue.splice(+b.dataset.qx, 1); renderChat(); }); }
+  if (tgt === 'design') {
+    wireNudge(el); $$('[data-qx]', el).forEach(b => b.onclick = () => { c.queue.splice(+b.dataset.qx, 1); renderChat(); });
+    // Send now: stop the current change; this message goes out as soon as the stop lands (run_finished)
+    $$('[data-qnow]', el).forEach(b => b.onclick = async () => {
+      const q = c.queue.splice(+b.dataset.qnow, 1)[0], id = cur.id; if (!q) return;
+      if (!c.live?.running) { renderChat(); sendDesign(id, c, q.text, q.att); return; }
+      c.sendNow = q; renderChat();
+      try { await api.stop(id); } catch (e) { c.sendNow = null; c.queue.unshift(q); renderChat(); toast(e.message); }
+    });
+  }
   wireLiveToggle(el, c.live);
   if (atBottom || running || c.nudge?.fresh) { el.scrollTop = el.scrollHeight; if (c.nudge) c.nudge.fresh = false; }
 }
@@ -1761,11 +1772,21 @@ async function sendDesign(id, c, text, att = [], extra = null) {
     if (isCurProject(id)) renderChat(); updateRunIndicator();
   }
 }
+/** Queued messages are kept per design in this browser, so a reload doesn't lose them (after a reload with nothing
+ *  running they wait with "Send now"). */
+const queueKey = id => 'premake.queue.' + id;
+function loadQueue(id) {
+  try { const q = JSON.parse(localStorage.getItem(queueKey(id)) || '[]'); return Array.isArray(q) ? q.filter(x => x && typeof x.text === 'string' && x.text) : []; } catch { return []; }
+}
+function saveQueue(id, q) {
+  try { if (q?.length) localStorage.setItem(queueKey(id), JSON.stringify(q.map(({ text, att }) => ({ text, att: att || [] })))); else localStorage.removeItem(queueKey(id)); } catch {}
+}
 function queueHtml(c) {
-  if (!c.queue?.length) return '';
-  // a queued message: your own bubble, faded, with "Sends next · Remove" under it
-  return `<div class="q-list">${c.queue.map((q, i) => `<div class="q-item"><div class="q-text">${esc(splitParts(q.text).text)}</div>
-    <div class="q-meta">Sends next · <button type="button" class="q-x" data-qx="${i}">Remove</button></div></div>`).join('')}</div>`;
+  if (!c.queue?.length && !c.sendNow) return '';
+  const now = c.sendNow ? `<div class="q-item"><div class="q-text">${esc(splitParts(c.sendNow.text).text)}</div><div class="q-meta">Stopping the current change…</div></div>` : '';
+  // a queued message: your own bubble, faded, with "Sends next · Send now · Remove" under it
+  return `<div class="q-list">${now}${(c.queue || []).map((q, i) => `<div class="q-item"><div class="q-text">${esc(splitParts(q.text).text)}</div>
+    <div class="q-meta">Sends next · <button type="button" class="q-x" data-qnow="${i}">Send now</button> · <button type="button" class="q-x" data-qx="${i}">Remove</button></div></div>`).join('')}</div>`;
 }
 
 // ---------- support thread HTML (the admin inbox below); visitors reach Josh through the call bubble ----------
@@ -2177,7 +2198,8 @@ async function onProjectEvent(id, d) {
         }
       }
       loadProjects(); updateRunIndicator();
-      if (c.queue?.length && !d.resync && d.error !== 'Stopped') { const q = c.queue.shift(); sendDesign(id, c, q.text, q.att); } // next queued message
+      if (c.sendNow && !d.resync) { const q = c.sendNow; c.sendNow = null; sendDesign(id, c, q.text, q.att); } // Send now: stopped for this one
+      else if (c.queue?.length && !d.resync && d.error !== 'Stopped') { const q = c.queue.shift(); sendDesign(id, c, q.text, q.att); } // next queued message
       if (!onStudioFor(id) && !d.resync) toast(`${d.ok ? 'Design run finished' : 'Design run stopped'} · ${titleOf(id)}`, { href: designPath({ project: id }), label: 'Open studio' });
       pruneStreams();
       break;
