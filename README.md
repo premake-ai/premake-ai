@@ -22,13 +22,13 @@ Tell Claude Code or Codex:
 Install premake-ai from github
 ```
 
-> **AI agents installing Premake:** run this one command and wait for it, don't do the steps by hand. It downloads Premake to `~/premake-ai`, starts it, opens the browser straight away (the CAD engine finishes installing in the background) and, given the user's request in quotes, starts that design:
+> **AI agents installing Premake:** run this one command, don't do the steps by hand. It returns in under a minute: it downloads Premake to `~/premake-ai`, starts it, opens the browser (the CAD engine finishes installing in the background) and, given the user's request in quotes, starts that design:
 >
 > ```bash
 > curl -fsSL https://raw.githubusercontent.com/premake-ai/premake-ai/main/install.sh | bash -s "design me a SCARA arm 3D printer"
 > ```
 >
-> Leave out the quoted part when there's no design to start. Read [install.sh](install.sh) first if you like; it needs no sudo and no API key. Then open the `Premake: your design: ...` link it prints (or `Premake: running at ...`) yourself too, and tell the user to watch it there.
+> Leave out the quoted part when there's no design to start. Read [install.sh](install.sh) first if you like; it needs no sudo and no API key. As soon as it returns, send the user the `Premake: your design: ...` link it prints (or `Premake: running at ...`) as your first message so they can watch it being built, and open it yourself too in case the browser didn't.
 
 It downloads Premake, sets it up, starts it and opens it in your browser. Every example design is already in your sidebar.
 

@@ -1046,7 +1046,8 @@ function memberGuardEnd(id, dir, g) {
 const setupReady = () => process.env.PREMAKE_SETUP_BG !== '1' || exists(path.join(APP, '.venv', '.premake-ready'));
 function whenSetupReady(fn) {
   if (setupReady()) return fn();
-  const t0 = Date.now(), tick = () => { if (setupReady()) fn(); else if (Date.now() - t0 < 15 * 60e3) setTimeout(tick, 2000); };
+  const failed = () => exists(path.join(APP, '.setup-failed')); // setup.sh gave up: run anyway, so the error shows in the chat instead of a silent wait
+  const t0 = Date.now(), tick = () => { if (setupReady() || failed()) fn(); else if (Date.now() - t0 < 15 * 60e3) setTimeout(tick, 2000); };
   setTimeout(tick, 2000);
 }
 function startRun(id, text, tSend, by) {
@@ -3447,7 +3448,7 @@ async function handle(req, res) {
         const mine = ownerOf(id) === acc.user;
         if (!mine && !(isAdmin(acc) && url.searchParams.get('all') === '1')) continue;
         const meta = readJSON(path.join(dir, 'meta.json'), {});
-        out.push({ id, title: meta.title || 'Untitled', updated: projectUpdated(dir), running: runs.has(id), site_running: siteRuns.has(id), ads_running: adsRuns.has(id), app_running: appRuns.has(id),
+        out.push({ id, title: meta.title || 'Untitled', updated: projectUpdated(dir), ...(meta.example_copy && !readJSON(path.join(dir, 'messages.json'), []).length ? { example: true } : {}), running: runs.has(id), site_running: siteRuns.has(id), ads_running: adsRuns.has(id), app_running: appRuns.has(id),
           step: lastStepOf(runs.get(id) || siteRuns.get(id) || adsRuns.get(id) || appRuns.get(id)), // sidebar: what a running project is doing right now
           thumb: vurl(dir, 'thumb.png', `/files/projects/${id}/thumb.png`), ...cardStats(dir), ...(mine ? {} : { owner: ownerOf(id) }) });
       }

@@ -8,7 +8,8 @@ cd "$(dirname "$0")"
 APP_DIR="$(pwd)"
 
 say()  { printf '%s\n' "$*"; }
-fail() { printf 'Premake setup: %s\n' "$*" >&2; exit 1; }
+fail() { printf 'Premake setup: %s\n' "$*" >&2; touch "$APP_DIR/.setup-failed" 2>/dev/null; exit 1; } # the server stops waiting for it
+rm -f "$APP_DIR/.setup-failed" 2>/dev/null
 
 # 1. Node 20+ (the server has no npm dependencies)
 command -v node >/dev/null 2>&1 || fail "Node.js 20 or newer is needed. Install it from https://nodejs.org (or: brew install node), then run ./setup.sh again."

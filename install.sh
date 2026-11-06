@@ -55,7 +55,7 @@ else
   NODE_MAJOR="$(node -p 'process.versions.node.split(".")[0]' 2>/dev/null || echo 0)"
   [ "$NODE_MAJOR" -ge 20 ] 2>/dev/null || { say "Premake needs Node.js 20 or newer: install it from https://nodejs.org (or: brew install node), then run this again."; exit 1; }
   say "setting up the CAD engine in the background (1 to 3 minutes); Premake opens now"
-  "$P/app/setup.sh" > "$DATA/setup.log" 2>&1 &
+  nohup "$P/app/setup.sh" > "$DATA/setup.log" 2>&1 < /dev/null & # keeps going after this script returns
   SETUP_PID=$!
   export PREMAKE_SETUP_BG=1
 fi
@@ -77,7 +77,4 @@ open_url "$(withPrompt "$URL")"
 say "running at $URL"
 [ -z "$PROMPT" ] || say "your design: $(withPrompt "$URL")"
 say "stop it: kill $PID   start or update it: bash $P/install.sh   log: $LOG"
-if [ -n "$SETUP_PID" ]; then # stay until the CAD engine is in, so a failure is seen (the studio is already open)
-  if wait "$SETUP_PID"; then say "setup done: new designs build now"
-  else tail -15 "$DATA/setup.log" >&2; kill "$PID" 2>/dev/null || true; rm -f "$DATA/.premake.pid"; say "setup failed (above, full log: $DATA/setup.log). Fix that, then run this again."; exit 1; fi
-fi
+[ -z "$SETUP_PID" ] || say "the CAD engine is still installing in the background (1 to 3 minutes, log: $DATA/setup.log); designs start building as soon as it's done"

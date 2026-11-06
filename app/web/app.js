@@ -345,7 +345,7 @@ function renderProjects() {
     return `<a class="proj ${p.id === curId ? 'on' : ''}${busy ? ' busy' : ''}" href="${esc(projectPath(p.id, p.title || ''))}" data-id="${esc(p.id)}">
       <span class="pthumb-w">${thumb ? `<span class="pthumb" style="background-image:url('${esc(thumb)}')"></span>`
         : `<span class="pthumb blank"><svg viewBox="0 0 16 16" width="12" height="12"><path d="M8 2l5.5 3v6L8 14l-5.5-3V5z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span>`}${fresh ? '<span class="pnew" title="Updated"></span>' : ''}</span>
-      <span class="ptext"><div class="ptitle">${esc(p.title || 'Untitled design')}</div><div class="ptime"${busy ? ` title="${esc(busy)}"` : ''}>${p.shared && !busy ? '<span class="pshared">Shared</span> · ' : ''}${busy ? esc(shortStep(busy)) : fresh ? '<b class="pnew-t">Updated</b> · ' + esc(ago(p.updated)) : esc(ago(p.updated)) + (Number(p.price_each) > 0 ? ' · $' + Number(p.price_each).toFixed(2) : '')}</div></span></a>`;
+      <span class="ptext"><div class="ptitle">${esc(p.title || 'Untitled design')}</div><div class="ptime"${busy ? ` title="${esc(busy)}"` : ''}>${p.shared && !busy ? '<span class="pshared">Shared</span> · ' : ''}${busy ? esc(shortStep(busy)) : fresh ? '<b class="pnew-t">Updated</b> · ' + esc(ago(p.updated)) : (p.example ? 'Example' : esc(ago(p.updated))) + (Number(p.price_each) > 0 ? ' · $' + Number(p.price_each).toFixed(2) : '')}</div></span></a>`; // preloaded examples: no copy date
   }).join(''));
 }
 $('#projSearch')?.addEventListener('input', () => renderProjects());

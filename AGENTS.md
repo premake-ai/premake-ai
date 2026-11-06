@@ -2,7 +2,7 @@
 
 ## Installing, starting or updating Premake
 
-When the user asks to install, set up, run, start, open or update Premake (for example "Install premake-ai from github"), run this one command in the shell and wait for it to finish (1 to 3 minutes the first time):
+When the user asks to install, set up, run, start, open or update Premake (for example "Install premake-ai from github"), run this one command in the shell (it returns in under a minute; the CAD engine finishes installing in the background):
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/premake-ai/premake-ai/main/install.sh | bash
@@ -16,8 +16,7 @@ curl -fsSL https://raw.githubusercontent.com/premake-ai/premake-ai/main/install.
 
 From a clone of this repo, `bash install.sh` (with the request as its argument, if there is one) does the same. It downloads Premake to `~/premake-ai` (or updates the copy that's there: app code only, never their designs), sets it up, starts the studio in the background, opens it in the browser and prints `Premake: running at http://localhost:PORT`. Then:
 
-1. Open the link yourself too, in case the browser didn't open: the `your design:` link when it printed one, else `http://localhost:PORT`. Use `open "LINK"` (macOS) or `xdg-open "LINK"` (Linux), with the quotes.
-2. Give the user the link.
+1. Straight away, as your first message, give the user the link so they can watch it being built: the `your design:` link when it printed one, else `http://localhost:PORT`. Open it yourself too, in case the browser didn't open: `open "LINK"` (macOS) or `xdg-open "LINK"` (Linux), with the quotes.
 
 If it stops with a message, tell the user that message and the one command it names to fix it. The usual ones are:
 - `claude auth login` (or `claude update`)
