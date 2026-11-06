@@ -99,7 +99,7 @@ test('--gen-vapid appends the keys once and never prints the private key', () =>
     const get = (k) => (new RegExp(`^${k}=(.*)$`, 'm').exec(text) || [])[1];
     assert.ok(text.startsWith('FORMA_PASSWORD=x\n'));
     assert.ok(P.vapidFrom({ VAPID_PUBLIC_KEY: get('VAPID_PUBLIC_KEY'), VAPID_PRIVATE_KEY: get('VAPID_PRIVATE_KEY'), VAPID_SUBJECT: get('VAPID_SUBJECT') }));
-    assert.equal(get('VAPID_SUBJECT'), 'mailto:owner@example.com');
+    assert.equal(get('VAPID_SUBJECT'), 'mailto:admin@localhost.local'); // no FORMA_CONTACT_EMAIL in the test env
     assert.ok(out.includes(get('VAPID_PUBLIC_KEY')));
     assert.ok(!out.includes(get('VAPID_PRIVATE_KEY')), 'private key never printed');
     assert.equal(fs.statSync(env).mode & 0o777, 0o600);

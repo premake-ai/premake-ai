@@ -19,7 +19,7 @@ test('guest pages: examples and the store, never a design', () => {
   for (const p of ['/designs/0cc247aa90', '/orders', '/orders/success', '/stats', '/launch', '/support']) assert.ok(!GUEST_PAGE.test(p), p);
 });
 
-test('the gateway keeps the same guest page list', () => {
+test('the gateway keeps the same guest page list', { skip: 'tests the hosted gateway (gateway/server.js), not in the open-source app' }, () => {
   const gw = fs.readFileSync(path.join(__dirname, '..', 'gateway', 'server.js'), 'utf8');
   const m = gw.match(/const GUEST_PAGE = (\/.*\/);/);
   assert.ok(m, 'GUEST_PAGE in gateway/server.js');

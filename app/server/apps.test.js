@@ -70,7 +70,7 @@ function start(fx) {
   const port = 20000 + Math.floor(Math.random() * 20000);
   const gw = crypto.randomBytes(16).toString('hex');
   const env = { PATH: process.env.PATH, HOME: process.env.HOME, PORT: String(port), FORMA_DATA_DIR: fx.data, FORMA_GATEWAY_SECRET: gw,
-    FORMA_PARTS_PREBUILD: '0', CLAUDE_BIN: '/usr/bin/false' };
+    FORMA_PARTS_PREBUILD: '0', CLAUDE_BIN: '/usr/bin/false', FORMA_ADMIN_EMAILS: 'owner@example.com' };
   const srv = spawn(process.execPath, ['--preserve-symlinks', '--preserve-symlinks-main', path.join(fx.root, 'server', 'server.js')], { env, stdio: ['ignore', 'pipe', 'pipe'] });
   let log = ''; srv.stdout.on('data', (d) => (log += d)); srv.stderr.on('data', (d) => (log += d));
   return { port, gw, srv, log: () => log };

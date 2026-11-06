@@ -50,7 +50,7 @@ test('trackingUrl picks the carrier', () => {
   assert.equal(F.trackingUrl('', ''), null);
 });
 
-test('onPaid creates a plan with printed, fabricated and bought jobs x order qty', () => {
+test('onPaid creates a plan with printed, fabricated and bought jobs x order qty', { skip: 'needs the example designs in data/examples, not in the open-source repo' }, () => {
   const { ORDERS, ful, DATA } = setup();
   const o = order();
   writeJSON(ORDERS, [o]);
@@ -107,7 +107,7 @@ test('planJobs skips the kit-contents groups the customer left out', () => {
   assert.deepEqual(some, ['bought']);
 });
 
-test('admin API: view, supplier switch, placed -> order printing, drop-ship tracking -> shipped', async () => {
+test('admin API: view, supplier switch, placed -> order printing, drop-ship tracking -> shipped', { skip: 'needs the example designs in data/examples, not in the open-source repo' }, async () => {
   const { ORDERS, ful, sent } = setup();
   const o = order();
   writeJSON(ORDERS, [o]);

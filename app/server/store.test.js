@@ -9,7 +9,7 @@ const path = require('node:path');
 const crypto = require('node:crypto');
 const { spawn } = require('node:child_process');
 
-test('store: examples listed, grip trainer hidden', async (t) => {
+test('store: examples listed, grip trainer hidden', { skip: 'needs the example designs in data/examples, not in the open-source repo' }, async (t) => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'formery-store-root-'));
   for (const d of ['server', 'web', 'gateway']) fs.symlinkSync(path.join(__dirname, '..', d), path.join(root, d));
   fs.mkdirSync(path.join(root, 'data'));

@@ -643,7 +643,7 @@ test('storage refuses symlinks: readings, device dirs, app config, device record
 });
 
 // ---------------------------------------------------------------- wiring: the gateway and server.js
-test('gateway passes exactly POST /api/d/ingest without a session, and still strips identity headers', async () => {
+test('gateway passes exactly POST /api/d/ingest without a session, and still strips identity headers', { skip: 'tests the hosted gateway (gateway/server.js), not in the open-source app' }, async () => {
   const src = fs.readFileSync(path.join(__dirname, '..', 'gateway', 'server.js'), 'utf8');
   const hop = src.match(/const HOP = new Set\(\[([\s\S]*?)\]\)/)[1];
   for (const h of ['x-forma-gateway', 'x-forma-user', 'x-forwarded-host', 'x-forwarded-for', 'forwarded']) assert.ok(hop.includes(`'${h}'`), h);
@@ -752,7 +752,7 @@ test('controls: long poll wakes on a command, one poll per device, rate limits, 
   } finally { env.close(); }
 });
 
-test('gateway passes exactly GET /api/d/commands and the app preview paths without a session', async () => {
+test('gateway passes exactly GET /api/d/commands and the app preview paths without a session', { skip: 'tests the hosted gateway (gateway/server.js), not in the open-source app' }, async () => {
   const port = 20000 + Math.floor(Math.random() * 20000);
   const child = spawn(process.execPath, [path.join(__dirname, '..', 'gateway', 'server.js')], {
     env: { PATH: process.env.PATH, PORT: String(port), PUBLIC_HOST: `localhost:${port}`, GATEWAY_SECRET: 'test-secret', SESSION_SECRET: 'test' }, stdio: 'ignore' });

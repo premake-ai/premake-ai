@@ -264,7 +264,7 @@ async function gateway(t, extra = {}) {
   await waitUp(port);
   return port;
 }
-test('gateway: post-login next= stays on this site (A1), sign-out is a same-site POST (A7)', async (t) => {
+test('gateway: post-login next= stays on this site (A1), sign-out is a same-site POST (A7)', { skip: 'tests the hosted gateway (gateway/server.js), not in the open-source app' }, async (t) => {
   const port = await gateway(t);
   const g = (p, o = {}) => rawReq(port, p, { ...o, headers: { Host: `localhost:${port}`, ...(o.headers || {}) } });
   for (const [n, want] of [['/%09//evil.example', '/'], ['/%09/evil.example', '/'], ['//evil.example', '/'], ['/\\evil.example', '/'], ['/%5Cevil.example', '/'],
@@ -278,7 +278,7 @@ test('gateway: post-login next= stays on this site (A1), sign-out is a same-site
   const ok = await g('/auth/logout', { method: 'POST', headers: { Origin: `http://localhost:${port}` } });
   assert.equal(ok.status, 303); assert.match(String(ok.headers['set-cookie']), /Max-Age=0/);
 });
-test('gateway source: client IP from Railway\'s X-Real-IP, passed on as X-Forma-Client-Ip (A6); waitlist switch (A4)', () => {
+test('gateway source: client IP from Railway\'s X-Real-IP, passed on as X-Forma-Client-Ip (A6); waitlist switch (A4)', { skip: 'tests the hosted gateway (gateway/server.js), not in the open-source app' }, () => {
   const src = fs.readFileSync(path.join(APP, 'gateway', 'server.js'), 'utf8');
   assert.match(src, /'x-forma-client-ip': clientIp\(req\)/);
   assert.match(src, /'x-forma-client-ip', 'x-real-ip'/, 'visitor copies are dropped');
