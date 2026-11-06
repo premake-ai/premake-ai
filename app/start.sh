@@ -17,7 +17,11 @@ unset ANTHROPIC_API_KEY ANTHROPIC_AUTH_TOKEN
 
 # 1. Setup done?
 command -v node >/dev/null 2>&1 || fail "Node.js is not installed. Run $APP_DIR/setup.sh first."
-[ -x "$APP_DIR/.venv/bin/python" ] || fail "The Python venv is missing. Run $APP_DIR/setup.sh first."
+# install.sh starts the studio while setup.sh is still installing CadQuery (PREMAKE_SETUP_BG=1): the examples and the
+# SCARA replay need no Python, and new designs wait in the server until setup leaves .venv/.premake-ready.
+if [ "${PREMAKE_SETUP_BG:-}" != 1 ]; then
+  [ -f "$APP_DIR/.venv/.premake-ready" ] || [ -x "$APP_DIR/.venv/bin/python" ] || fail "The Python venv is missing. Run $APP_DIR/setup.sh first."
+fi
 
 # 2. The design agent: Claude Code (preferred) or OpenAI's Codex CLI, whichever is installed and logged in.
 #    PREMAKE_AGENT=claude or PREMAKE_AGENT=codex picks one; the default (auto) tries Claude Code first.

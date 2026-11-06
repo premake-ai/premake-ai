@@ -46,8 +46,19 @@ if [ -f "$DATA/.premake.pid" ] && kill -0 "$(cat "$DATA/.premake.pid")" 2>/dev/n
   say "already running at $URL"; [ -z "$PROMPT" ] || say "your design: $(withPrompt "$URL")"; exit 0
 fi
 
-# 4. Set up (first time 1 to 3 minutes, then seconds)
-"$P/app/setup.sh"
+# 4. Set up. Already set up: a quick check. First time: CadQuery (1 to 3 minutes) installs in the background while the
+#    studio starts, so the browser opens at once; the examples and the replay need no Python, new designs wait for it.
+SETUP_PID=""
+if [ -f "$P/app/.venv/.premake-ready" ]; then
+  "$P/app/setup.sh" >/dev/null || { say "setup failed: run $P/app/setup.sh to see why"; exit 1; }
+else
+  NODE_MAJOR="$(node -p 'process.versions.node.split(".")[0]' 2>/dev/null || echo 0)"
+  [ "$NODE_MAJOR" -ge 20 ] 2>/dev/null || { say "Premake needs Node.js 20 or newer: install it from https://nodejs.org (or: brew install node), then run this again."; exit 1; }
+  say "setting up the CAD engine in the background (1 to 3 minutes); Premake opens now"
+  "$P/app/setup.sh" > "$DATA/setup.log" 2>&1 &
+  SETUP_PID=$!
+  export PREMAKE_SETUP_BG=1
+fi
 
 # 5. Start in the background, wait for it to answer, open the browser
 LOG="$DATA/premake.log"
@@ -66,3 +77,7 @@ open_url "$(withPrompt "$URL")"
 say "running at $URL"
 [ -z "$PROMPT" ] || say "your design: $(withPrompt "$URL")"
 say "stop it: kill $PID   start or update it: bash $P/install.sh   log: $LOG"
+if [ -n "$SETUP_PID" ]; then # stay until the CAD engine is in, so a failure is seen (the studio is already open)
+  if wait "$SETUP_PID"; then say "setup done: new designs build now"
+  else tail -15 "$DATA/setup.log" >&2; kill "$PID" 2>/dev/null || true; rm -f "$DATA/.premake.pid"; say "setup failed (above, full log: $DATA/setup.log). Fix that, then run this again."; exit 1; fi
+fi

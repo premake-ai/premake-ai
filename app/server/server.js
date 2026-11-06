@@ -104,7 +104,7 @@ function childEnv() {
   return env;
 }
 const VENV_PY = process.env.FORMA_PYTHON
-  || (fs.existsSync(path.join(APP, '.venv', 'bin', 'python')) ? path.join(APP, '.venv', 'bin', 'python') : 'python3');
+  || (process.env.PREMAKE_SETUP_BG === '1' || fs.existsSync(path.join(APP, '.venv', 'bin', 'python')) ? path.join(APP, '.venv', 'bin', 'python') : 'python3'); // install.sh: the venv is still being made
 const NODE_BIN = process.env.FORMA_NODE_BIN || path.dirname(process.execPath);
 // The claude CLI: CLAUDE_BIN, else the newest Claude Code bundled with the Claude desktop app (kept up to date by the app;
 // new models such as claude-opus-5-5 need a recent CLI), else `claude` next to node.
@@ -1041,7 +1041,18 @@ function memberGuardEnd(id, dir, g) {
   return changed;
 }
 
-function startRun(id, text, tSend, by) { return startAgent(id, 'design', text, tSend, by); }
+/** install.sh: setup.sh may still be installing CadQuery (PREMAKE_SETUP_BG=1) while the studio already runs; a design
+ *  run waits for .venv/.premake-ready (checked every 2 s, up to 15 min). Everything else starts at once. */
+const setupReady = () => process.env.PREMAKE_SETUP_BG !== '1' || exists(path.join(APP, '.venv', '.premake-ready'));
+function whenSetupReady(fn) {
+  if (setupReady()) return fn();
+  const t0 = Date.now(), tick = () => { if (setupReady()) fn(); else if (Date.now() - t0 < 15 * 60e3) setTimeout(tick, 2000); };
+  setTimeout(tick, 2000);
+}
+function startRun(id, text, tSend, by) {
+  if (!setupReady()) { console.log(`[setup] ${id}: waiting for setup to finish before the design run`); return whenSetupReady(() => startAgent(id, 'design', text, tSend, by)); }
+  return startAgent(id, 'design', text, tSend, by);
+}
 function startSiteRun(id, text, tSend) { return startAgent(id, 'site', text, tSend); }
 
 /** Exact CLI args for one agent turn (exported in logs so the command is auditable). stream: a warm design process that
@@ -3867,6 +3878,7 @@ const server = http.createServer((req, res) => {
 /** Parts library cache (cadlib/parts/cache): builds whatever is missing, in the background, outside the sandbox (builds
  * can read cadlib/ but not write it; a part missing at build time is built into the project's own cache instead). */
 function prebuildParts() {
+  if (!setupReady()) return whenSetupReady(prebuildParts); // install.sh: CadQuery still installing
   if (!exists(path.join(APP, 'cadlib', 'parts', 'build_cache.py')) || process.env.FORMA_PARTS_PREBUILD === '0') return;
   try {
     const child = spawn(VENV_PY, ['-m', 'cadlib.parts.build_cache', '-j', '2'], { cwd: APP, env: { ...childEnv(), PYTHONPATH: APP }, stdio: ['ignore', 'ignore', 'pipe'] });

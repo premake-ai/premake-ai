@@ -50,5 +50,6 @@ import cadquery as cq
 assert cq.Workplane().box(10, 10, 10).val().Volume() > 999
 PY
 say "3/3 CAD self-check ok"
+touch "$VENV/.premake-ready" # start.sh / the server: designs can build now
 say ""
 say "Setup done. Start Premake with: $APP_DIR/start.sh"

@@ -52,6 +52,10 @@ function st(key) { if (!state.has(key)) state.set(key, { sel: {}, other: {}, oth
 function answered(key, q) { const s = st(key); return (s.sel[q.id]?.size || 0) > 0 || (s.otherOn[q.id] && (s.other[q.id] || '').trim()); }
 
 /** HTML under an assistant message (i = its index in chat.messages). */
+/** One option per row, name over its description: design options with mock-ups, and any options with a description
+ *  (squeezed into pills they wrap into tall bubbles). */
+const rowsOf = q => !!q.mockup || (q.options || []).some(o => o.detail);
+
 export function msgExtrasHtml(m, i, chat) {
   ensureWired();
   const last = i === chat.messages.length - 1 && !chat.live?.running;
@@ -77,7 +81,7 @@ export function msgExtrasHtml(m, i, chat) {
 function optsHtml(key, q) {
   const s = st(key), sel = s.sel[q.id] || new Set();
   return q.options.map(o => `<button type="button" class="ab-opt${sel.has(o.label) ? ' on' : ''}" data-ab-q="${esc(q.id)}" data-ab-o="${esc(o.label)}" aria-pressed="${sel.has(o.label)}">
-      ${q.multi ? `<span class="ab-box">${sel.has(o.label) ? tick : ''}</span>` : ''}${q.mockup ? `<span class="ab-ot"><span class="ab-ol">${esc(o.label)}</span>${o.detail ? `<small>${esc(o.detail)}</small>` : ''}</span>` : `<span class="ab-ol">${esc(o.label)}</span>${o.detail ? `<small>${esc(o.detail)}</small>` : ''}`}${mockIcon(q, o)}</button>`).join('')
+      ${q.multi ? `<span class="ab-box">${sel.has(o.label) ? tick : ''}</span>` : ''}${rowsOf(q) ? `<span class="ab-ot"><span class="ab-ol">${esc(o.label)}</span>${o.detail ? `<small>${esc(o.detail)}</small>` : ''}</span>` : `<span class="ab-ol">${esc(o.label)}</span>${o.detail ? `<small>${esc(o.detail)}</small>` : ''}`}${mockIcon(q, o)}</button>`).join('')
     + `<button type="button" class="ab-opt ab-other${s.otherOn[q.id] ? ' on' : ''}" data-ab-q="${esc(q.id)}" data-ab-other aria-pressed="${!!s.otherOn[q.id]}"><span class="ab-ol">Other…</span></button>`;
 }
 function cardHtml(key, qs) {
@@ -85,7 +89,7 @@ function cardHtml(key, qs) {
   return `<div class="ab-card" data-ab-key="${esc(key)}" role="group" aria-label="Questions from the designer">
     ${qs.map((q, k) => `<div class="ab-q" data-ab-qid="${esc(q.id)}">
       <p class="ab-qt"><span class="ab-n">${k + 1}</span>${esc(q.question)}${q.multi ? ' <span class="ab-hint">Pick any</span>' : ''}${q.mockup ? ' <span class="ab-hint">Hover an option to see it on the model</span>' : ''}</p>
-      <div class="ab-opts${q.mockup ? ' ab-mkq' : ''}">${optsHtml(key, q)}</div>
+      <div class="ab-opts${rowsOf(q) ? ' ab-mkq' : ''}">${optsHtml(key, q)}</div>
       <input class="ab-otext" type="text" maxlength="200" placeholder="Type your answer" data-ab-otext="${esc(q.id)}" value="${esc(s.other[q.id] || '')}" ${s.otherOn[q.id] ? '' : 'hidden'}>
     </div>`).join('')}
     <div class="ab-foot"><button type="button" class="ab-skip" data-ab-skip>Skip, use defaults</button>
