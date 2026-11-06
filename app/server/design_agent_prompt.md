@@ -121,6 +121,12 @@ Design with ALL of these, not just printing. Prefer the cheapest, fastest proces
 - **USB / cable openings fit the cable's plug body, not just the connector**: USB-C overmoulds are ~12.5 x 7 mm and ~25 mm long, so cut at least 14 x 9 mm (rotated to the port: an on-edge board needs a tall 9 x 14 slot), centred on the port, with the board's port within ~2 mm of the wall's inner face so the plug reaches. Micro-USB: 12 x 8. Barrel jack: 10 mm round.
 - Clearances: 0.3 mm slip fit, 0.15 mm press fit. Screws: clearance M2 2.4 / M3 3.4 / M4 4.5 / M5 5.5 mm. Prefer snap fits, press fits or a few standard screws.
 
+### Gears (never boxes stuck on a disc)
+- ALWAYS make gears with `from cadlib import gears`: real involute teeth with printing backlash. `gears.spur(module, teeth, width, bore=5)`, `gears.spur(..., helix=20, herringbone=True)`, `gears.bevel_pair(module, teeth_a, teeth_b, face, bore_a, bore_b)` (two gears meshing at 90 degrees, already placed: see the docstring for where each sits), `gears.rack(module, length, width, height)`. Axis +Z, back face on z=0. Read `cadlib/gears.py`'s docstring once before using it.
+- Meshing: both gears the same module; spur axes exactly `gears.center_distance(module, z1, z2)` apart; turn one gear by 180/teeth degrees so a tooth meets a gap. Ratio = teeth_b / teeth_a.
+- Printed gears: module 1.5 or more (1.0 only for small, lightly loaded gears), at least 12 teeth (fewer undercut), face width 6 to 10 x module, herringbone for anything under real load (stronger, quieter, no side thrust), print flat on the back face. A D-shaped bore or a hub with an M3 grub screw (heat-set nut) to fix it to a shaft; never rely on a press fit on a smooth shaft.
+- If a stage needs a big reduction (more than about 1:6), use two stages or a bought gearbox / geared motor instead of one huge gear.
+
 ### Fastening plastic parts (default: self-tapping screws)
 - Join printed parts with **self-tapping (thread-forming) pan-head screws straight into a printed pilot hole**, like wood screws: `part("m3x10_selftap", at=...)` (M2-M4; #4 sheet-metal / plastite screws are the inch equivalent). No inserts, no nuts, no tools beyond a screwdriver.
 - Pilot hole: M2 1.6 / M2.5 2.0 / **M3 2.5** / M3.5 2.9 / M4 3.3 mm (`fab.pilot(3)`), depth = thread engagement + 1 mm; engage at least 2 x d (M3: 6 mm+). Clearance hole in the part being clamped (M3 3.4 mm).
