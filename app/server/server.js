@@ -3450,7 +3450,8 @@ async function handle(req, res) {
         const meta = readJSON(path.join(dir, 'meta.json'), {});
         out.push({ id, title: meta.title || 'Untitled', updated: projectUpdated(dir), ...(meta.example_copy && !readJSON(path.join(dir, 'messages.json'), []).length ? { example: true } : {}), running: runs.has(id), site_running: siteRuns.has(id), ads_running: adsRuns.has(id), app_running: appRuns.has(id),
           step: lastStepOf(runs.get(id) || siteRuns.get(id) || adsRuns.get(id) || appRuns.get(id)), // sidebar: what a running project is doing right now
-          thumb: vurl(dir, 'thumb.png', `/files/projects/${id}/thumb.png`), ...cardStats(dir), ...(mine ? {} : { owner: ownerOf(id) }) });
+          thumb: vurl(dir, 'thumb.png', `/files/projects/${id}/thumb.png`), ...cardStats(dir), ...(mine ? {} : { owner: ownerOf(id) }),
+          ...(meta.replay?.pending ? { thumb: null, price_each: null, running: true, step: 'Designing' } : {}) }); // replay: looks like the new design it is until it has played
       }
       // share: designs shared with you (you opened their edit / copy link), marked shared: 'edit' | 'copy'
       for (const sh of share.sharedWith(acc.user)) {

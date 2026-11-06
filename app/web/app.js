@@ -563,6 +563,7 @@ async function openDesign(kind, id) {
     if (S.cur.stale) { S.cur.stale = false; refreshAll(); }
     return;
   }
+  S.replaying = null; // replay: a new open starts it again if it's still pending
   const readOnly = kind === 'example';
   if (readOnly) track('example_opened', { example: id }); // analytics:
   S.cur = { kind, id, data: null, base: '', readOnly };
@@ -630,7 +631,7 @@ async function openDesign(kind, id) {
 
 // ---------- replay: a recorded real run played back sped up (web/replay.js, server.js startReplay) ----------
 function startReplay(id, data, token) {
-  pendingPrompt = null;
+  pendingPrompt = null; S.replaying = id;
   syncAppTab(); syncAsmTab(); renderCode(); loadQuote();
   const final = { manifest: data.manifest, messages: data.messages || [] };
   const alive = () => token === openToken && isCurProject(id);
@@ -652,18 +653,20 @@ function startReplay(id, data, token) {
       S.chat.messages = final.messages.filter(m => m.role === 'user').slice(0, 1);
       S.chat.live = { steps: [], text: '', running: true };
       if (!isNarrow()) $('#tree')?.classList.add('collapsed'); // the model is the show
+      renderOrderPill(); $('#priceChip').hidden = true;
       renderChat(); updateRunIndicator();
       await loadModel(null, false);
     },
     showModel: (m, base) => landed(m, base),
     async showFinal() { S.cur.data.manifest = final.manifest; await landed(final.manifest, S.cur.base); },
     async finish() {
+      if (S.replaying === id) S.replaying = null;
       if (!alive()) return;
       S.cur.data.manifest = final.manifest;
       await api.replayDone?.(id).catch(() => {});
       const p = await api.project(id).catch(() => null); if (!alive()) return; // the saved reply (held back while it played)
       S.chat.live = null; S.chat.messages = p?.messages || final.messages; S.chat.history = p?.history || S.chat.history;
-      renderChat(); updateRunIndicator();
+      renderChat(); updateRunIndicator(); renderOrderPill(); loadProjects();
       await loadModel(final.manifest, true, true);
       const v = S.viewer; if (!v || !alive()) return;
       v.fit(); await new Promise(r => setTimeout(r, 400));
@@ -672,7 +675,7 @@ function startReplay(id, data, token) {
       if (v.fitBox) v.glideTo(v.fitBox, true); await new Promise(r => setTimeout(r, 900)); // the Assemble camera ends close in
       if (alive()) { const b = $('#scaleBtn'); if (b && !b.classList.contains('on')) b.click(); await new Promise(r => setTimeout(r, 900)); if (alive()) v.fit(); } // fit: the printer and the phone, like the Fit button
     },
-  })).catch(() => { if (alive()) { api.replayDone?.(id).catch(() => {}); loadModel(final.manifest, false); } });
+  })).catch(() => { if (S.replaying === id) S.replaying = null; if (alive()) { api.replayDone?.(id).catch(() => {}); loadModel(final.manifest, false); } });
 }
 
 // ---------- share: designs shared with you (server/share.js). edit: the studio, chatting on the shared design. copy: the
@@ -738,6 +741,7 @@ $('#chatInput').addEventListener('focus', () => { if (S.cur?.kind === 'project' 
 $('#chatInput').addEventListener('input', () => { if (S.cur?.kind === 'project' && chatTarget() === 'design') warmUp(S.cur.id); });
 
 async function loadModel(manifest, keepCamera, animate = false) {
+  if (S.replaying && S.replaying === S.cur?.id && manifest?.parts?.length) return; // replay: only the replay puts models on screen (a catch-up load would show the finished design first)
   const v = await getViewer();
   if (!v) { overlay(`<h3>3D viewer failed to load</h3><p>Couldn’t load three.js from the CDN. Check your connection and reload.</p>`); return; }
   if (!manifest?.parts?.length) {
@@ -1233,7 +1237,7 @@ function partsCost() {
 }
 function renderOrderPill() {
   const el = $('#orderPill'), t = tier1();
-  el.hidden = !t || !S.cur?.data?.manifest?.parts?.length;
+  el.hidden = !t || !S.cur?.data?.manifest?.parts?.length || !!S.chat?.live?.running; // nothing to buy while it's still being designed (a replay too)
   if (el.hidden) return;
   el.innerHTML = `<span class="op-ic">${cartSvg}</span><span class="op-t"><b>Buy the parts</b><span>${partsCost() ? `About ${partsCost()} in parts · shops for each` : 'Shops and files for every part'}</span></span><span class="op-go">→</span>`; // order tab: where to buy, not a checkout
 }
