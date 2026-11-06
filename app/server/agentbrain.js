@@ -190,16 +190,22 @@ function addonsFor(bom, addons) {
   return want.length && bom?.needs_soldering === true ? [SOLDER_KIT] : [];
 }
 
-/** The card at the end of a new design's first run: what to check next. The user can tick several, type their own, or
- *  skip it and keep chatting. A one-off: never saved as a preference (FINISH_ID). */
+/** The card at the end of a new design's first run: what to check or build next. The user can tick several, type their
+ *  own, or skip it and keep chatting. A one-off: never saved as a preference (FINISH_ID). "Build an app" (designs with
+ *  electronics only) and "Build a page to sell it" start the App and Website builders (web/app.js); the design agent
+ *  just confirms those. */
 const FINISH_ID = 'finish_checks';
-const FINISH_CARD = { id: FINISH_ID, multi: true, question: "I've finished the design. Want me to check anything?", options: [
-  { label: 'Make sure it 3D prints well', detail: 'Overhangs and supports, wall thickness, print orientation, fits a 256 mm bed' },
-  { label: 'Make sure it assembles well', detail: 'Screwdriver access, clearances, the order the parts go together' },
-  { label: 'Make sure it will work', detail: 'Moving parts, strength where it takes load, wiring and power' },
-  { label: 'Make it cheaper', detail: 'Fewer custom parts, less filament, cheaper bought parts' },
-  { label: 'Use easy-to-buy parts', detail: 'Common Amazon parts instead of hard-to-find ones' },
-] };
+const FINISH_APP = 'Build an app to control it', FINISH_SITE = 'Build a page to sell it';
+function finishCard({ electronics = false } = {}) {
+  return { id: FINISH_ID, multi: true, question: "I've finished the design. Want me to check or build anything?", options: [
+    { label: 'Make sure it 3D prints well', detail: 'Overhangs and supports, wall thickness, print orientation, fits a 256 mm bed' },
+    { label: 'Make sure it assembles well', detail: 'Screwdriver access, clearances, the order the parts go together' },
+    { label: 'Make sure it will work', detail: 'Moving parts, strength where it takes load, wiring and power' },
+    { label: 'Make it cheaper and easier to buy', detail: 'Fewer custom parts, less filament, common Amazon parts' },
+    ...(electronics ? [{ label: FINISH_APP, detail: 'A phone app for it, built in the App tab' }] : []),
+    { label: FINISH_SITE, detail: 'A product page with photos and a buy button, built in the Website tab' },
+  ] };
+}
 
-module.exports = { FINISH_ID, FINISH_CARD, cleanUserTitle, SOLDER_KIT, addonsFor, EFFORTS, DEFAULT_EFFORT, QUESTIONS_FILE, STALL_MS, CONTINUE_TEXT, cleanQuestions, readQuestions, cleanAnswers, store, prefsContext,
+module.exports = { FINISH_ID, FINISH_APP, FINISH_SITE, finishCard, cleanUserTitle, SOLDER_KIT, addonsFor, EFFORTS, DEFAULT_EFFORT, QUESTIONS_FILE, STALL_MS, CONTINUE_TEXT, cleanQuestions, readQuestions, cleanAnswers, store, prefsContext,
   stopStatus, titleArgs, titleInput, cleanTitle, titleFromPrompt, titleFallback, isPromptEcho, TITLE_FILLER };

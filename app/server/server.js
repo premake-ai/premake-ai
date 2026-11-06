@@ -887,7 +887,7 @@ function startReplay(slug, prompt, owner) {
   const text = `Here's your ${meta.title || 'design'}: ${String(orig.description || '').replace(/^[^:]*:\s*/, '').replace(/\.?$/, '.')} The Order tab has every part and where to buy it, and Make has the files.\n\n`
     + `This was a replay of a real Premake build: ${R.rounds_total || 'several'} rounds with a person giving feedback, ${took} of real work, shown here in about a minute. Ask for any change and it's live from here.`;
   const now = Date.now() / 1000;
-  writeJSON(path.join(dir, 'messages.json'), [{ role: 'user', text: String(prompt).slice(0, 4000), t: now }, { role: 'assistant', text, flow: replayFlow(R), questions: [brain.FINISH_CARD], t: now + 1 }]);
+  writeJSON(path.join(dir, 'messages.json'), [{ role: 'user', text: String(prompt).slice(0, 4000), t: now }, { role: 'assistant', text, flow: replayFlow(R), questions: [brain.finishCard({ electronics: apps.info(dir).electronics })], t: now + 1 }]);
   console.log(`[replay ${id}] ${slug} for ${JSON.stringify(String(prompt).slice(0, 80))}`);
   return id;
 }
@@ -1217,7 +1217,7 @@ function finishRun(id, run, code) {
   // agentbrain: question card (./questions.json, only from a turn that ended normally) and why a run stopped
   const questions = kind === 'design' ? brain.readQuestions(dir) : null;
   const asking = questions && !run.stopped ? questions : null;
-  const finished = kind === 'design' && !asking && !run.stopped && !run.isError && run.tl?.new_design && exists(path.join(dir, 'manifest.json')) ? [brain.FINISH_CARD] : null; // the "what should I check?" card
+  const finished = kind === 'design' && !asking && !run.stopped && !run.isError && run.tl?.new_design && exists(path.join(dir, 'manifest.json')) ? [brain.finishCard({ electronics: apps.info(dir).electronics })] : null; // the "what should I check?" card
   const status = run.stopped ? brain.stopStatus(run, run.capMs || RUN_TIMEOUT_MS) : null;
   if (asking && !reply) reply = 'A few quick questions before I start.';
   const flow = flowForReply(run.flow, reply);

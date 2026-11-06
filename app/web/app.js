@@ -1279,7 +1279,13 @@ addEventListener('formery:send', e => {
   if (!text || !S.cur || S.cur.readOnly || S.cur.kind !== 'project' || chatTarget() !== 'design' || S.chat.live?.running) return;
   track('change_requested', { kind: 'design', queued: false, prompt_length: text.length, has_image: false, project_id: S.cur.id, via: answers ? 'question_card' : 'card' }); // analytics:
   sendDesign(S.cur.id, S.chat, text, [], answers ? { answers } : null);
+  // the finish card (server/agentbrain.js finishCard): "Build an app" / "Build a page to sell it" start those builders
+  const picks = [].concat(answers?.[FINISH_ID] || []), id = S.cur.id;
+  if (picks.includes(FINISH_SITE)) agentSend(id, 'site', 'Turn this into a page that sells the product: a strong headline, what it does and who it is for, photos of the 3D model, the key specs, the price and a clear buy button.');
+  if (picks.includes(FINISH_APP)) agentSend(id, 'app', FIRST_PROMPT);
+  if (picks.includes(FINISH_APP) || picks.includes(FINISH_SITE)) toast(`Building ${[picks.includes(FINISH_APP) && 'the app (App tab)', picks.includes(FINISH_SITE) && 'the sales page (Website tab)'].filter(Boolean).join(' and ')}`);
 });
+const FINISH_ID = 'finish_checks', FINISH_APP = 'Build an app to control it', FINISH_SITE = 'Build a page to sell it'; // = server/agentbrain.js
 
 // askmock: a question-card option's mock-up over the model (web/askcard.js -> viewer.askMock, web/askpreview.js)
 addEventListener('formery:askmock', e => {
