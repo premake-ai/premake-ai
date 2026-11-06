@@ -1,0 +1,1575 @@
+{
+ "t": 1793304158.6029499,
+ "title": "3d printer that uses arms",
+ "parts": [
+  {
+   "file": "stl/frame-bar.stl",
+   "name": "Frame bar",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -0.266,
+    0.044,
+    -0.963
+   ],
+   "bbox": [
+    165.3,
+    266.3,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/frame-bar-2.stl",
+   "name": "Frame bar",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -0.328,
+    0.055,
+    -0.943
+   ],
+   "bbox": [
+    165.3,
+    266.3,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/frame-bar-3.stl",
+   "name": "Frame bar",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -0.308,
+    0.051,
+    0.95
+   ],
+   "bbox": [
+    165.3,
+    266.3,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/frame-bar-4.stl",
+   "name": "Frame bar",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.0,
+    -0.397,
+    -0.918
+   ],
+   "bbox": [
+    296.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/frame-bar-5.stl",
+   "name": "Frame bar",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.0,
+    -0.478,
+    -0.878
+   ],
+   "bbox": [
+    296.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/frame-bar-6.stl",
+   "name": "Frame bar",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.0,
+    -0.453,
+    0.892
+   ],
+   "bbox": [
+    296.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/frame-bar-7.stl",
+   "name": "Frame bar",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.266,
+    0.044,
+    -0.963
+   ],
+   "bbox": [
+    165.3,
+    266.3,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/frame-bar-8.stl",
+   "name": "Frame bar",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.328,
+    0.055,
+    -0.943
+   ],
+   "bbox": [
+    165.3,
+    266.3,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/frame-bar-9.stl",
+   "name": "Frame bar",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.308,
+    0.051,
+    0.95
+   ],
+   "bbox": [
+    165.3,
+    266.3,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/tower.stl",
+   "name": "Tower",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.0,
+    0.99,
+    -0.14
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    600.0
+   ]
+  },
+  {
+   "file": "stl/bottom-vertex.stl",
+   "name": "Bottom vertex",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2b",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    124.6,
+    86.0,
+    84.0
+   ]
+  },
+  {
+   "file": "stl/top-vertex.stl",
+   "name": "Top vertex",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2b",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    124.6,
+    64.0,
+    22.0
+   ]
+  },
+  {
+   "file": "stl/mgn12-rail.stl",
+   "name": "MGN12 rail",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa0a6",
+   "explode": [
+    0.0,
+    0.999,
+    0.045
+   ],
+   "bbox": [
+    12.0,
+    8.0,
+    480.0
+   ]
+  },
+  {
+   "file": "stl/mgn12h-block.stl",
+   "name": "MGN12H block",
+   "group": "component",
+   "process": "bought",
+   "color": "#c0c4c8",
+   "explode": [
+    0.0,
+    0.747,
+    0.665
+   ],
+   "bbox": [
+    27.0,
+    8.0,
+    46.0
+   ]
+  },
+  {
+   "file": "stl/carriage.stl",
+   "name": "Carriage",
+   "group": "case",
+   "process": "print",
+   "color": "#e85d2a",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    60.0,
+    17.0,
+    50.0
+   ]
+  },
+  {
+   "file": "stl/gt2-belt.stl",
+   "name": "GT2 belt",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    0.0,
+    0.998,
+    -0.061
+   ],
+   "bbox": [
+    6.0,
+    1.5,
+    547.0
+   ]
+  },
+  {
+   "file": "stl/gt2-belt-2.stl",
+   "name": "GT2 belt",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    0.0,
+    0.998,
+    -0.068
+   ],
+   "bbox": [
+    6.0,
+    1.5,
+    547.0
+   ]
+  },
+  {
+   "file": "stl/carbon-arm.stl",
+   "name": "Carbon arm",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1a1a",
+   "explode": [
+    -0.4,
+    0.91,
+    -0.109
+   ],
+   "bbox": [
+    6.0,
+    130.5,
+    275.2
+   ]
+  },
+  {
+   "file": "stl/steel-ball.stl",
+   "name": "Steel ball",
+   "group": "component",
+   "process": "bought",
+   "color": "#d0d0d0",
+   "explode": [
+    -0.14,
+    0.671,
+    0.728
+   ],
+   "bbox": [
+    10.1,
+    10.1,
+    10.1
+   ]
+  },
+  {
+   "file": "stl/steel-ball-2.stl",
+   "name": "Steel ball",
+   "group": "component",
+   "process": "bought",
+   "color": "#d0d0d0",
+   "explode": [
+    -0.172,
+    -0.038,
+    -0.984
+   ],
+   "bbox": [
+    10.1,
+    10.1,
+    10.1
+   ]
+  },
+  {
+   "file": "stl/carbon-arm-2.stl",
+   "name": "Carbon arm",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1a1a",
+   "explode": [
+    0.4,
+    0.91,
+    -0.109
+   ],
+   "bbox": [
+    6.0,
+    130.5,
+    275.2
+   ]
+  },
+  {
+   "file": "stl/steel-ball-3.stl",
+   "name": "Steel ball",
+   "group": "component",
+   "process": "bought",
+   "color": "#d0d0d0",
+   "explode": [
+    0.141,
+    0.671,
+    0.728
+   ],
+   "bbox": [
+    10.1,
+    10.1,
+    10.1
+   ]
+  },
+  {
+   "file": "stl/steel-ball-4.stl",
+   "name": "Steel ball",
+   "group": "component",
+   "process": "bought",
+   "color": "#d0d0d0",
+   "explode": [
+    0.172,
+    -0.038,
+    -0.984
+   ],
+   "bbox": [
+    10.1,
+    10.1,
+    10.1
+   ]
+  },
+  {
+   "file": "stl/tower-2.stl",
+   "name": "Tower",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -0.783,
+    -0.613,
+    -0.105
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    600.0
+   ]
+  },
+  {
+   "file": "stl/bottom-vertex-2.stl",
+   "name": "Bottom vertex",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2b",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    109.5,
+    113.5,
+    84.0
+   ]
+  },
+  {
+   "file": "stl/top-vertex-2.stl",
+   "name": "Top vertex",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2b",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    81.4,
+    107.9,
+    22.0
+   ]
+  },
+  {
+   "file": "stl/mgn12-rail-2.stl",
+   "name": "MGN12 rail",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa0a6",
+   "explode": [
+    -0.781,
+    -0.623,
+    0.033
+   ],
+   "bbox": [
+    12.9,
+    14.4,
+    480.0
+   ]
+  },
+  {
+   "file": "stl/mgn12h-block-2.stl",
+   "name": "MGN12H block",
+   "group": "component",
+   "process": "bought",
+   "color": "#c0c4c8",
+   "explode": [
+    -0.655,
+    -0.527,
+    0.541
+   ],
+   "bbox": [
+    20.4,
+    27.4,
+    46.0
+   ]
+  },
+  {
+   "file": "stl/carriage-2.stl",
+   "name": "Carriage",
+   "group": "case",
+   "process": "print",
+   "color": "#e85d2a",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    40.7,
+    57.0,
+    50.0
+   ]
+  },
+  {
+   "file": "stl/gt2-belt-3.stl",
+   "name": "GT2 belt",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    -0.768,
+    -0.639,
+    -0.042
+   ],
+   "bbox": [
+    4.3,
+    5.9,
+    547.0
+   ]
+  },
+  {
+   "file": "stl/gt2-belt-4.stl",
+   "name": "GT2 belt",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    -0.76,
+    -0.649,
+    -0.045
+   ],
+   "bbox": [
+    4.3,
+    5.9,
+    547.0
+   ]
+  },
+  {
+   "file": "stl/carbon-arm-3.stl",
+   "name": "Carbon arm",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1a1a",
+   "explode": [
+    -0.546,
+    -0.836,
+    -0.055
+   ],
+   "bbox": [
+    113.9,
+    68.4,
+    275.2
+   ]
+  },
+  {
+   "file": "stl/steel-ball-5.stl",
+   "name": "Steel ball",
+   "group": "component",
+   "process": "bought",
+   "color": "#d0d0d0",
+   "explode": [
+    -0.546,
+    -0.604,
+    0.581
+   ],
+   "bbox": [
+    10.1,
+    10.1,
+    10.1
+   ]
+  },
+  {
+   "file": "stl/steel-ball-6.stl",
+   "name": "Steel ball",
+   "group": "component",
+   "process": "bought",
+   "color": "#d0d0d0",
+   "explode": [
+    -0.084,
+    -0.449,
+    -0.89
+   ],
+   "bbox": [
+    10.1,
+    10.1,
+    10.1
+   ]
+  },
+  {
+   "file": "stl/carbon-arm-4.stl",
+   "name": "Carbon arm",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1a1a",
+   "explode": [
+    -0.837,
+    -0.544,
+    -0.062
+   ],
+   "bbox": [
+    113.9,
+    68.4,
+    275.2
+   ]
+  },
+  {
+   "file": "stl/steel-ball-7.stl",
+   "name": "Steel ball",
+   "group": "component",
+   "process": "bought",
+   "color": "#d0d0d0",
+   "explode": [
+    -0.679,
+    -0.423,
+    0.6
+   ],
+   "bbox": [
+    10.1,
+    10.1,
+    10.1
+   ]
+  },
+  {
+   "file": "stl/steel-ball-8.stl",
+   "name": "Steel ball",
+   "group": "component",
+   "process": "bought",
+   "color": "#d0d0d0",
+   "explode": [
+    -0.255,
+    -0.191,
+    -0.948
+   ],
+   "bbox": [
+    10.1,
+    10.1,
+    10.1
+   ]
+  },
+  {
+   "file": "stl/tower-3.stl",
+   "name": "Tower",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.783,
+    -0.613,
+    -0.105
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    600.0
+   ]
+  },
+  {
+   "file": "stl/bottom-vertex-3.stl",
+   "name": "Bottom vertex",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2b",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    101.5,
+    127.4,
+    84.0
+   ]
+  },
+  {
+   "file": "stl/top-vertex-3.stl",
+   "name": "Top vertex",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2b",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    81.4,
+    107.9,
+    22.0
+   ]
+  },
+  {
+   "file": "stl/mgn12-rail-3.stl",
+   "name": "MGN12 rail",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa0a6",
+   "explode": [
+    0.781,
+    -0.623,
+    0.033
+   ],
+   "bbox": [
+    12.9,
+    14.4,
+    480.0
+   ]
+  },
+  {
+   "file": "stl/mgn12h-block-3.stl",
+   "name": "MGN12H block",
+   "group": "component",
+   "process": "bought",
+   "color": "#c0c4c8",
+   "explode": [
+    0.655,
+    -0.527,
+    0.541
+   ],
+   "bbox": [
+    20.4,
+    27.4,
+    46.0
+   ]
+  },
+  {
+   "file": "stl/carriage-3.stl",
+   "name": "Carriage",
+   "group": "case",
+   "process": "print",
+   "color": "#e85d2a",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    40.7,
+    57.0,
+    50.0
+   ]
+  },
+  {
+   "file": "stl/gt2-belt-5.stl",
+   "name": "GT2 belt",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    0.768,
+    -0.639,
+    -0.042
+   ],
+   "bbox": [
+    4.3,
+    5.9,
+    547.0
+   ]
+  },
+  {
+   "file": "stl/gt2-belt-6.stl",
+   "name": "GT2 belt",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    0.76,
+    -0.649,
+    -0.045
+   ],
+   "bbox": [
+    4.3,
+    5.9,
+    547.0
+   ]
+  },
+  {
+   "file": "stl/carbon-arm-5.stl",
+   "name": "Carbon arm",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1a1a",
+   "explode": [
+    0.837,
+    -0.544,
+    -0.062
+   ],
+   "bbox": [
+    113.9,
+    68.4,
+    275.2
+   ]
+  },
+  {
+   "file": "stl/steel-ball-9.stl",
+   "name": "Steel ball",
+   "group": "component",
+   "process": "bought",
+   "color": "#d0d0d0",
+   "explode": [
+    0.679,
+    -0.423,
+    0.6
+   ],
+   "bbox": [
+    10.1,
+    10.1,
+    10.1
+   ]
+  },
+  {
+   "file": "stl/steel-ball-10.stl",
+   "name": "Steel ball",
+   "group": "component",
+   "process": "bought",
+   "color": "#d0d0d0",
+   "explode": [
+    0.255,
+    -0.191,
+    -0.948
+   ],
+   "bbox": [
+    10.1,
+    10.1,
+    10.1
+   ]
+  },
+  {
+   "file": "stl/carbon-arm-6.stl",
+   "name": "Carbon arm",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1a1a",
+   "explode": [
+    0.546,
+    -0.836,
+    -0.055
+   ],
+   "bbox": [
+    113.9,
+    68.4,
+    275.2
+   ]
+  },
+  {
+   "file": "stl/steel-ball-11.stl",
+   "name": "Steel ball",
+   "group": "component",
+   "process": "bought",
+   "color": "#d0d0d0",
+   "explode": [
+    0.546,
+    -0.604,
+    0.581
+   ],
+   "bbox": [
+    10.1,
+    10.1,
+    10.1
+   ]
+  },
+  {
+   "file": "stl/steel-ball-12.stl",
+   "name": "Steel ball",
+   "group": "component",
+   "process": "bought",
+   "color": "#d0d0d0",
+   "explode": [
+    0.084,
+    -0.449,
+    -0.89
+   ],
+   "bbox": [
+    10.1,
+    10.1,
+    10.1
+   ]
+  },
+  {
+   "file": "stl/nema17-stepper-motor-40-mm.stl",
+   "name": "NEMA17 stepper motor 40 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    -0.067,
+    0.383,
+    -0.922
+   ],
+   "bbox": [
+    64.6,
+    47.7,
+    42.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 40 mm",
+    "unit_cost_usd": 11.0,
+    "mass_g": 280.0
+   }
+  },
+  {
+   "file": "stl/gt2-pulley-20t-5-mm-bore.stl",
+   "name": "GT2 pulley 20T 5 mm bore",
+   "group": "component",
+   "process": "bought",
+   "color": "#c7ccd2",
+   "explode": [
+    0.0,
+    0.391,
+    -0.92
+   ],
+   "bbox": [
+    16.0,
+    16.1,
+    16.1
+   ],
+   "subparts": [
+    {
+     "file": "stl/gt2-pulley-20t-5-mm-bore__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/gt2-pulley-20t-5-mm-bore__1.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "gt2_pulley_20t",
+    "qty": 1,
+    "name": "GT2 pulley 20T 5 mm bore",
+    "unit_cost_usd": 1.5,
+    "mass_g": 6.2
+   }
+  },
+  {
+   "file": "stl/625zz-bearing-2.stl",
+   "name": "625ZZ bearing \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9cdd2",
+   "explode": [
+    0.0,
+    0.41,
+    0.912
+   ],
+   "bbox": [
+    10.0,
+    16.0,
+    16.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/625zz-bearing-2__0.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/625zz-bearing-2__1.stl",
+     "color": "#a9aeb5",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/625zz-bearing-2__2.stl",
+     "color": "#8e939a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bearing_625",
+    "qty": 2,
+    "name": "625ZZ bearing",
+    "unit_cost_usd": 0.8,
+    "mass_g": 6.7
+   }
+  },
+  {
+   "file": "stl/nema17-stepper-motor-40-mm-2.stl",
+   "name": "NEMA17 stepper motor 40 mm (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    -0.349,
+    -0.406,
+    -0.845
+   ],
+   "bbox": [
+    60.4,
+    67.1,
+    42.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/nema17-stepper-motor-40-mm-2__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm-2__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm-2__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm-2__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm-2__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm-2__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 40 mm",
+    "unit_cost_usd": 11.0,
+    "mass_g": 280.0
+   }
+  },
+  {
+   "file": "stl/gt2-pulley-20t-5-mm-bore-2.stl",
+   "name": "GT2 pulley 20T 5 mm bore (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c7ccd2",
+   "explode": [
+    -0.405,
+    -0.341,
+    -0.848
+   ],
+   "bbox": [
+    21.8,
+    21.9,
+    16.1
+   ],
+   "subparts": [
+    {
+     "file": "stl/gt2-pulley-20t-5-mm-bore-2__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/gt2-pulley-20t-5-mm-bore-2__1.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "gt2_pulley_20t",
+    "qty": 1,
+    "name": "GT2 pulley 20T 5 mm bore",
+    "unit_cost_usd": 1.5,
+    "mass_g": 6.2
+   }
+  },
+  {
+   "file": "stl/625zz-bearing-2-2.stl",
+   "name": "625ZZ bearing \u00d72 (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9cdd2",
+   "explode": [
+    -0.421,
+    -0.355,
+    0.835
+   ],
+   "bbox": [
+    18.8,
+    16.7,
+    16.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/625zz-bearing-2-2__0.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/625zz-bearing-2-2__1.stl",
+     "color": "#a9aeb5",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/625zz-bearing-2-2__2.stl",
+     "color": "#8e939a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bearing_625",
+    "qty": 2,
+    "name": "625ZZ bearing",
+    "unit_cost_usd": 0.8,
+    "mass_g": 6.7
+   }
+  },
+  {
+   "file": "stl/nema17-stepper-motor-40-mm-3.stl",
+   "name": "NEMA17 stepper motor 40 mm (3)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    0.453,
+    -0.272,
+    -0.849
+   ],
+   "bbox": [
+    56.6,
+    68.2,
+    42.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/nema17-stepper-motor-40-mm-3__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm-3__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm-3__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm-3__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm-3__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm-3__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 40 mm",
+    "unit_cost_usd": 11.0,
+    "mass_g": 280.0
+   }
+  },
+  {
+   "file": "stl/gt2-pulley-20t-5-mm-bore-3.stl",
+   "name": "GT2 pulley 20T 5 mm bore (3)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c7ccd2",
+   "explode": [
+    0.405,
+    -0.341,
+    -0.848
+   ],
+   "bbox": [
+    21.8,
+    21.9,
+    16.1
+   ],
+   "subparts": [
+    {
+     "file": "stl/gt2-pulley-20t-5-mm-bore-3__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/gt2-pulley-20t-5-mm-bore-3__1.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "gt2_pulley_20t",
+    "qty": 1,
+    "name": "GT2 pulley 20T 5 mm bore",
+    "unit_cost_usd": 1.5,
+    "mass_g": 6.2
+   }
+  },
+  {
+   "file": "stl/625zz-bearing-2-3.stl",
+   "name": "625ZZ bearing \u00d72 (3)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9cdd2",
+   "explode": [
+    0.421,
+    -0.355,
+    0.835
+   ],
+   "bbox": [
+    18.8,
+    16.7,
+    16.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/625zz-bearing-2-3__0.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/625zz-bearing-2-3__1.stl",
+     "color": "#a9aeb5",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/625zz-bearing-2-3__2.stl",
+     "color": "#8e939a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bearing_625",
+    "qty": 2,
+    "name": "625ZZ bearing",
+    "unit_cost_usd": 0.8,
+    "mass_g": 6.7
+   }
+  },
+  {
+   "file": "stl/extruder-mount.stl",
+   "name": "Extruder mount",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2b",
+   "explode": [
+    -0.105,
+    0.457,
+    0.883
+   ],
+   "bbox": [
+    66.0,
+    44.0,
+    4.0
+   ]
+  },
+  {
+   "file": "stl/nema17-stepper-motor-40-mm-4.stl",
+   "name": "NEMA17 stepper motor 40 mm (4)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    -0.096,
+    0.423,
+    0.901
+   ],
+   "bbox": [
+    64.6,
+    47.7,
+    42.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/nema17-stepper-motor-40-mm-4__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm-4__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm-4__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm-4__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm-4__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm-4__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 40 mm",
+    "unit_cost_usd": 11.0,
+    "mass_g": 280.0
+   }
+  },
+  {
+   "file": "stl/bowden-extruder-dual-gear.stl",
+   "name": "Bowden extruder (dual gear)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c03030",
+   "explode": [
+    -0.036,
+    0.431,
+    0.901
+   ],
+   "bbox": [
+    20.0,
+    42.0,
+    42.0
+   ]
+  },
+  {
+   "file": "stl/effector.stl",
+   "name": "Effector",
+   "group": "case",
+   "process": "print",
+   "color": "#e85d2a",
+   "explode": [
+    0.0,
+    -0.241,
+    -0.971
+   ],
+   "bbox": [
+    84.1,
+    84.1,
+    8.1
+   ]
+  },
+  {
+   "file": "stl/hotend-v6-style.stl",
+   "name": "Hotend (V6 style)",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8b8b8",
+   "explode": [
+    0.009,
+    -0.203,
+    -0.979
+   ],
+   "bbox": [
+    25.0,
+    22.0,
+    48.0
+   ]
+  },
+  {
+   "file": "stl/5v-fan-30-30-10.stl",
+   "name": "5V fan 30\u00d730\u00d710",
+   "group": "component",
+   "process": "bought",
+   "color": "#1c1d20",
+   "explode": [
+    0.0,
+    -0.295,
+    -0.956
+   ],
+   "bbox": [
+    30.0,
+    10.0,
+    40.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/5v-fan-30-30-10__0.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/5v-fan-30-30-10__1.stl",
+     "color": "#ece6d4",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/5v-fan-30-30-10__2.stl",
+     "color": "#232428",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/5v-fan-30-30-10__3.stl",
+     "color": "#d23b2e",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "fan_30",
+    "qty": 1,
+    "name": "5V fan 30\u00d730\u00d710",
+    "unit_cost_usd": 3.0,
+    "mass_g": 8.0
+   }
+  },
+  {
+   "file": "stl/bed-clip.stl",
+   "name": "Bed clip",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2b",
+   "explode": [
+    0.0,
+    -0.496,
+    -0.868
+   ],
+   "bbox": [
+    30.0,
+    26.0,
+    4.0
+   ]
+  },
+  {
+   "file": "stl/bed-clip-2.stl",
+   "name": "Bed clip",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2b",
+   "explode": [
+    0.342,
+    0.057,
+    -0.938
+   ],
+   "bbox": [
+    37.5,
+    39.0,
+    4.0
+   ]
+  },
+  {
+   "file": "stl/bed-clip-3.stl",
+   "name": "Bed clip",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2b",
+   "explode": [
+    -0.342,
+    0.057,
+    -0.938
+   ],
+   "bbox": [
+    37.5,
+    39.0,
+    4.0
+   ]
+  },
+  {
+   "file": "stl/heated-bed-220-mm.stl",
+   "name": "Heated bed 220 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#b5b5b5",
+   "explode": [
+    0.0,
+    -0.15,
+    -0.989
+   ],
+   "bbox": [
+    220.1,
+    220.2,
+    3.3
+   ]
+  },
+  {
+   "file": "stl/floor-plate.stl",
+   "name": "Floor plate",
+   "group": "case",
+   "process": "laser",
+   "color": "#222222",
+   "explode": [
+    0.0,
+    -0.048,
+    -0.999
+   ],
+   "bbox": [
+    291.5,
+    258.3,
+    3.3
+   ]
+  },
+  {
+   "file": "stl/m3-10-brass-standoff-4.stl",
+   "name": "M3\u00d710 brass standoff \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    0.0,
+    -0.149,
+    -0.989
+   ],
+   "bbox": [
+    97.8,
+    67.0,
+    10.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-brass-standoff-4__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "standoff",
+    "qty": 4,
+    "name": "M3\u00d710 brass standoff",
+    "unit_cost_usd": 0.18,
+    "mass_g": 1.4
+   }
+  },
+  {
+   "file": "stl/mainboard-32-bit-tmc2209.stl",
+   "name": "Mainboard (32-bit, TMC2209)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f6f3f",
+   "explode": [
+    0.0,
+    -0.157,
+    -0.988
+   ],
+   "bbox": [
+    102.0,
+    73.0,
+    13.0
+   ]
+  }
+ ]
+}

@@ -1,0 +1,74 @@
+{
+ "t": 1793394243.081439,
+ "title": "This",
+ "parts": [
+  {
+   "file": "stl/human-half.stl",
+   "name": "Human half",
+   "group": "case",
+   "process": "print",
+   "color": "#c9a97a",
+   "explode": [
+    0.0,
+    -0.909,
+    -0.418
+   ],
+   "bbox": [
+    260.0,
+    160.0,
+    45.0
+   ]
+  },
+  {
+   "file": "stl/robot-half.stl",
+   "name": "Robot half",
+   "group": "case",
+   "process": "print",
+   "color": "#c9a97a",
+   "explode": [
+    0.0,
+    0.909,
+    -0.418
+   ],
+   "bbox": [
+    260.0,
+    160.0,
+    45.0
+   ]
+  },
+  {
+   "file": "stl/tower.stl",
+   "name": "Tower",
+   "group": "case",
+   "process": "print",
+   "color": "#333333",
+   "explode": [
+    0.0,
+    0.993,
+    0.116
+   ],
+   "bbox": [
+    160.0,
+    58.0,
+    60.0
+   ]
+  },
+  {
+   "file": "stl/link-1.stl",
+   "name": "Link 1",
+   "group": "case",
+   "process": "print",
+   "color": "#444444",
+   "explode": [
+    0.414,
+    0.835,
+    0.363
+   ],
+   "bbox": [
+    130.0,
+    34.0,
+    5.5
+   ]
+  }
+ ]
+}

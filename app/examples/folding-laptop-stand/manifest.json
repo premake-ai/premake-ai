@@ -1,0 +1,216 @@
+{
+ "t": 1793336763.511486,
+ "title": "Folding Laptop Stand",
+ "parts": [
+  {
+   "file": "stl/deck.stl",
+   "name": "Deck",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98a",
+   "explode": [
+    0.0,
+    -0.114,
+    -0.993
+   ],
+   "bbox": [
+    280.0,
+    227.6,
+    87.8
+   ]
+  },
+  {
+   "file": "stl/lip.stl",
+   "name": "Lip",
+   "group": "case",
+   "process": "laser",
+   "color": "#c9a46f",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    260.0,
+    12.5,
+    20.9
+   ]
+  },
+  {
+   "file": "stl/leg.stl",
+   "name": "Leg",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98a",
+   "explode": [
+    0.0,
+    1.0,
+    -1.0
+   ],
+   "bbox": [
+    240.0,
+    31.7,
+    73.7
+   ]
+  },
+  {
+   "file": "stl/stop-bar.stl",
+   "name": "Stop bar",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2b",
+   "explode": [
+    0.0,
+    1.0,
+    -1.0
+   ],
+   "bbox": [
+    120.0,
+    16.7,
+    15.6
+   ]
+  },
+  {
+   "file": "stl/hinges-deck-leaves.stl",
+   "name": "Hinges (deck leaves)",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8b8b8",
+   "explode": [
+    0.0,
+    0.969,
+    0.247
+   ],
+   "bbox": [
+    208.0,
+    21.2,
+    8.1
+   ]
+  },
+  {
+   "file": "stl/hleg.stl",
+   "name": "Hinges (leg leaves)",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8b8b8",
+   "explode": [
+    0.0,
+    0.992,
+    0.127
+   ],
+   "bbox": [
+    208.0,
+    7.9,
+    18.4
+   ]
+  },
+  {
+   "file": "stl/hinge-screws-deck.stl",
+   "name": "Hinge screws (deck)",
+   "group": "component",
+   "process": "bought",
+   "color": "#777777",
+   "explode": [
+    0.0,
+    0.973,
+    0.229
+   ],
+   "bbox": [
+    195.5,
+    5.7,
+    3.3
+   ]
+  },
+  {
+   "file": "stl/sleg.stl",
+   "name": "Hinge screws (leg)",
+   "group": "component",
+   "process": "bought",
+   "color": "#777777",
+   "explode": [
+    0.0,
+    0.994,
+    0.107
+   ],
+   "bbox": [
+    195.5,
+    3.3,
+    5.7
+   ]
+  },
+  {
+   "file": "stl/stop-bar-screws.stl",
+   "name": "Stop bar screws",
+   "group": "component",
+   "process": "bought",
+   "color": "#777777",
+   "explode": [
+    0.0,
+    0.975,
+    0.223
+   ],
+   "bbox": [
+    85.5,
+    5.9,
+    3.8
+   ]
+  },
+  {
+   "file": "stl/rubber-bumpers.stl",
+   "name": "Rubber bumpers",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    0.0,
+    -0.909,
+    -0.417
+   ],
+   "bbox": [
+    232.7,
+    13.1,
+    7.6
+   ]
+  },
+  {
+   "file": "stl/strip.stl",
+   "name": "Leg grip strips",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    0.0,
+    0.917,
+    -0.398
+   ],
+   "bbox": [
+    230.0,
+    6.2,
+    3.6
+   ]
+  },
+  {
+   "file": "stl/your-laptop-14-in-reference.stl",
+   "name": "Your laptop (14 in, reference)",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa0a6",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    312.6,
+    213.2,
+    90.2
+   ]
+  }
+ ],
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 4
+ }
+}

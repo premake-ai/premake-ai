@@ -1,0 +1,1281 @@
+{
+ "t": 1793242494.97877,
+ "title": "Design a 3D printer a coreXY",
+ "parts": [
+  {
+   "file": "stl/upright.stl",
+   "name": "Upright",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    -0.682,
+    -0.725,
+    -0.099
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    460.0
+   ]
+  },
+  {
+   "file": "stl/upright-2.stl",
+   "name": "Upright",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    -0.725,
+    0.68,
+    -0.105
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    460.0
+   ]
+  },
+  {
+   "file": "stl/upright-3.stl",
+   "name": "Upright",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    0.682,
+    -0.725,
+    -0.099
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    460.0
+   ]
+  },
+  {
+   "file": "stl/upright-4.stl",
+   "name": "Upright",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    0.725,
+    0.68,
+    -0.105
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    460.0
+   ]
+  },
+  {
+   "file": "stl/frame-bar-x.stl",
+   "name": "Frame bar X",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    0.0,
+    -0.649,
+    -0.761
+   ],
+   "bbox": [
+    380.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/frame-bar-y.stl",
+   "name": "Frame bar Y",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    -0.626,
+    -0.039,
+    -0.779
+   ],
+   "bbox": [
+    20.0,
+    380.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/frame-bar-x-2.stl",
+   "name": "Frame bar X",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    0.0,
+    0.602,
+    -0.799
+   ],
+   "bbox": [
+    380.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/frame-bar-y-2.stl",
+   "name": "Frame bar Y",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    0.626,
+    -0.039,
+    -0.779
+   ],
+   "bbox": [
+    20.0,
+    380.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/frame-bar-x-3.stl",
+   "name": "Frame bar X",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    0.0,
+    -0.744,
+    0.668
+   ],
+   "bbox": [
+    380.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/frame-bar-y-3.stl",
+   "name": "Frame bar Y",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    -0.722,
+    -0.045,
+    0.69
+   ],
+   "bbox": [
+    20.0,
+    380.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/frame-bar-x-4.stl",
+   "name": "Frame bar X",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    0.0,
+    0.701,
+    0.714
+   ],
+   "bbox": [
+    380.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/frame-bar-y-4.stl",
+   "name": "Frame bar Y",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    0.722,
+    -0.045,
+    0.69
+   ],
+   "bbox": [
+    20.0,
+    380.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/base-plate.stl",
+   "name": "Base plate",
+   "group": "case",
+   "process": "laser",
+   "color": "#1a1a1a",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    400.0,
+    400.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/rubber-foot.stl",
+   "name": "Rubber foot",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    -0.488,
+    -0.52,
+    -0.701
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/rubber-foot-2.stl",
+   "name": "Rubber foot",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    -0.504,
+    0.47,
+    -0.725
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/rubber-foot-3.stl",
+   "name": "Rubber foot",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    0.488,
+    -0.52,
+    -0.701
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/rubber-foot-4.stl",
+   "name": "Rubber foot",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    0.504,
+    0.47,
+    -0.725
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/mgn12-rail-350.stl",
+   "name": "MGN12 rail 350",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f96",
+   "explode": [
+    -0.677,
+    -0.029,
+    0.735
+   ],
+   "bbox": [
+    8.0,
+    350.0,
+    12.0
+   ]
+  },
+  {
+   "file": "stl/mgn12h-carriage.stl",
+   "name": "MGN12H carriage",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f96",
+   "explode": [
+    -0.657,
+    -0.049,
+    0.752
+   ],
+   "bbox": [
+    10.0,
+    45.0,
+    27.0
+   ]
+  },
+  {
+   "file": "stl/xy-joint-l.stl",
+   "name": "XY joint L",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    -1.0,
+    0.0,
+    0.3
+   ],
+   "bbox": [
+    30.0,
+    50.0,
+    59.0
+   ]
+  },
+  {
+   "file": "stl/gt2-idler.stl",
+   "name": "GT2 idler",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f96",
+   "explode": [
+    -0.578,
+    0.006,
+    0.816
+   ],
+   "bbox": [
+    18.0,
+    18.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/gt2-idler-2.stl",
+   "name": "GT2 idler",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f96",
+   "explode": [
+    -0.556,
+    0.006,
+    0.831
+   ],
+   "bbox": [
+    18.0,
+    18.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/mgn12-rail-350-2.stl",
+   "name": "MGN12 rail 350",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f96",
+   "explode": [
+    0.677,
+    -0.029,
+    0.735
+   ],
+   "bbox": [
+    8.0,
+    350.0,
+    12.0
+   ]
+  },
+  {
+   "file": "stl/mgn12h-carriage-2.stl",
+   "name": "MGN12H carriage",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f96",
+   "explode": [
+    0.657,
+    -0.049,
+    0.752
+   ],
+   "bbox": [
+    10.0,
+    45.0,
+    27.0
+   ]
+  },
+  {
+   "file": "stl/xy-joint-r.stl",
+   "name": "XY joint R",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    1.0,
+    0.0,
+    0.3
+   ],
+   "bbox": [
+    30.0,
+    50.0,
+    59.0
+   ]
+  },
+  {
+   "file": "stl/gt2-idler-3.stl",
+   "name": "GT2 idler",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f96",
+   "explode": [
+    0.578,
+    0.006,
+    0.816
+   ],
+   "bbox": [
+    18.0,
+    18.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/gt2-idler-4.stl",
+   "name": "GT2 idler",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f96",
+   "explode": [
+    0.556,
+    0.006,
+    0.831
+   ],
+   "bbox": [
+    18.0,
+    18.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/x-beam.stl",
+   "name": "X beam",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    0.0,
+    -0.065,
+    0.998
+   ],
+   "bbox": [
+    264.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/mgn12-rail-250.stl",
+   "name": "MGN12 rail 250",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f96",
+   "explode": [
+    0.0,
+    -0.137,
+    0.991
+   ],
+   "bbox": [
+    250.0,
+    8.0,
+    12.0
+   ]
+  },
+  {
+   "file": "stl/mgn12h-carriage-3.stl",
+   "name": "MGN12H carriage",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f96",
+   "explode": [
+    0.0,
+    -0.183,
+    0.983
+   ],
+   "bbox": [
+    45.0,
+    10.0,
+    27.0
+   ]
+  },
+  {
+   "file": "stl/toolhead.stl",
+   "name": "Toolhead",
+   "group": "case",
+   "process": "print",
+   "color": "#ff6a00",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    60.0,
+    44.0,
+    89.0
+   ]
+  },
+  {
+   "file": "stl/v6-hotend.stl",
+   "name": "V6 hotend",
+   "group": "component",
+   "process": "bought",
+   "color": "#c0c0c0",
+   "explode": [
+    0.0,
+    -0.408,
+    0.913
+   ],
+   "bbox": [
+    22.0,
+    22.0,
+    62.0
+   ]
+  },
+  {
+   "file": "stl/direct-drive-extruder.stl",
+   "name": "Direct drive extruder",
+   "group": "component",
+   "process": "bought",
+   "color": "#333333",
+   "explode": [
+    0.0,
+    -0.243,
+    0.97
+   ],
+   "bbox": [
+    44.0,
+    40.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/4010-hotend-fan.stl",
+   "name": "4010 hotend fan",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    -0.189,
+    -0.337,
+    0.922
+   ],
+   "bbox": [
+    10.0,
+    40.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/4010-blower.stl",
+   "name": "4010 blower",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    0.22,
+    -0.344,
+    0.913
+   ],
+   "bbox": [
+    20.0,
+    40.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/motor-mount.stl",
+   "name": "Motor mount",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    60.0,
+    68.0,
+    6.0
+   ]
+  },
+  {
+   "file": "stl/nema17-xy.stl",
+   "name": "NEMA17 XY",
+   "group": "component",
+   "process": "bought",
+   "color": "#333333",
+   "explode": [
+    -0.521,
+    0.645,
+    0.559
+   ],
+   "bbox": [
+    42.3,
+    42.3,
+    64.0
+   ]
+  },
+  {
+   "file": "stl/gt2-pulley-20t.stl",
+   "name": "GT2 pulley 20T",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f96",
+   "explode": [
+    -0.499,
+    0.617,
+    0.609
+   ],
+   "bbox": [
+    16.0,
+    16.0,
+    21.0
+   ]
+  },
+  {
+   "file": "stl/front-idler-mount.stl",
+   "name": "Front idler mount",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    50.0,
+    45.0,
+    33.0
+   ]
+  },
+  {
+   "file": "stl/gt2-idler-5.stl",
+   "name": "GT2 idler",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f96",
+   "explode": [
+    -0.529,
+    -0.575,
+    0.624
+   ],
+   "bbox": [
+    18.0,
+    18.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/gt2-idler-6.stl",
+   "name": "GT2 idler",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f96",
+   "explode": [
+    -0.518,
+    -0.562,
+    0.645
+   ],
+   "bbox": [
+    18.0,
+    18.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/motor-mount-2.stl",
+   "name": "Motor mount",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    60.0,
+    68.0,
+    6.0
+   ]
+  },
+  {
+   "file": "stl/nema17-xy-2.stl",
+   "name": "NEMA17 XY",
+   "group": "component",
+   "process": "bought",
+   "color": "#333333",
+   "explode": [
+    0.521,
+    0.645,
+    0.559
+   ],
+   "bbox": [
+    42.3,
+    42.3,
+    64.0
+   ]
+  },
+  {
+   "file": "stl/gt2-pulley-20t-2.stl",
+   "name": "GT2 pulley 20T",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f96",
+   "explode": [
+    0.499,
+    0.617,
+    0.609
+   ],
+   "bbox": [
+    16.0,
+    16.0,
+    21.0
+   ]
+  },
+  {
+   "file": "stl/front-idler-mount-2.stl",
+   "name": "Front idler mount",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    50.0,
+    45.0,
+    33.0
+   ]
+  },
+  {
+   "file": "stl/gt2-idler-7.stl",
+   "name": "GT2 idler",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f96",
+   "explode": [
+    0.529,
+    -0.575,
+    0.624
+   ],
+   "bbox": [
+    18.0,
+    18.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/gt2-idler-8.stl",
+   "name": "GT2 idler",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f96",
+   "explode": [
+    0.518,
+    -0.562,
+    0.645
+   ],
+   "bbox": [
+    18.0,
+    18.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/gt2-belt-6-mm.stl",
+   "name": "GT2 belt 6 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#151515",
+   "explode": [
+    -0.042,
+    0.042,
+    0.998
+   ],
+   "bbox": [
+    360.0,
+    427.0,
+    6.0
+   ]
+  },
+  {
+   "file": "stl/gt2-belt-6-mm-2.stl",
+   "name": "GT2 belt 6 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#151515",
+   "explode": [
+    0.04,
+    0.04,
+    0.998
+   ],
+   "bbox": [
+    360.0,
+    427.0,
+    6.0
+   ]
+  },
+  {
+   "file": "stl/8-mm-rod-420.stl",
+   "name": "8 mm rod 420",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f96",
+   "explode": [
+    -0.396,
+    0.903,
+    -0.164
+   ],
+   "bbox": [
+    8.0,
+    8.0,
+    420.0
+   ]
+  },
+  {
+   "file": "stl/rod-holder-low.stl",
+   "name": "Rod holder low",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    -0.236,
+    0.542,
+    -0.807
+   ],
+   "bbox": [
+    28.0,
+    34.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/rod-holder-high.stl",
+   "name": "Rod holder high",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    -0.282,
+    0.646,
+    0.709
+   ],
+   "bbox": [
+    28.0,
+    34.0,
+    50.0
+   ]
+  },
+  {
+   "file": "stl/8-mm-rod-420-2.stl",
+   "name": "8 mm rod 420",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f96",
+   "explode": [
+    0.396,
+    0.903,
+    -0.164
+   ],
+   "bbox": [
+    8.0,
+    8.0,
+    420.0
+   ]
+  },
+  {
+   "file": "stl/rod-holder-low-2.stl",
+   "name": "Rod holder low",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    0.236,
+    0.542,
+    -0.807
+   ],
+   "bbox": [
+    28.0,
+    34.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/rod-holder-high-2.stl",
+   "name": "Rod holder high",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    0.282,
+    0.646,
+    0.709
+   ],
+   "bbox": [
+    28.0,
+    34.0,
+    50.0
+   ]
+  },
+  {
+   "file": "stl/z-motor-mount.stl",
+   "name": "Z motor mount",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    0.0,
+    0.558,
+    -0.83
+   ],
+   "bbox": [
+    60.0,
+    40.0,
+    49.0
+   ]
+  },
+  {
+   "file": "stl/nema17-z.stl",
+   "name": "NEMA17 Z",
+   "group": "component",
+   "process": "bought",
+   "color": "#333333",
+   "explode": [
+    0.0,
+    0.582,
+    -0.813
+   ],
+   "bbox": [
+    42.3,
+    42.3,
+    64.0
+   ]
+  },
+  {
+   "file": "stl/t8-leadscrew-400.stl",
+   "name": "T8 leadscrew 400",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f96",
+   "explode": [
+    0.0,
+    0.993,
+    -0.121
+   ],
+   "bbox": [
+    19.0,
+    19.0,
+    381.0
+   ]
+  },
+  {
+   "file": "stl/z-carriage.stl",
+   "name": "Z carriage",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    200.0,
+    36.0,
+    45.0
+   ]
+  },
+  {
+   "file": "stl/lm8uu-bearing.stl",
+   "name": "LM8UU bearing",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f96",
+   "explode": [
+    -0.4,
+    0.912,
+    -0.086
+   ],
+   "bbox": [
+    15.0,
+    15.0,
+    24.0
+   ]
+  },
+  {
+   "file": "stl/bed-arm.stl",
+   "name": "Bed arm",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    -0.995,
+    -0.083,
+    -0.055
+   ],
+   "bbox": [
+    20.0,
+    320.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/lm8uu-bearing-2.stl",
+   "name": "LM8UU bearing",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f96",
+   "explode": [
+    0.4,
+    0.912,
+    -0.086
+   ],
+   "bbox": [
+    15.0,
+    15.0,
+    24.0
+   ]
+  },
+  {
+   "file": "stl/bed-arm-2.stl",
+   "name": "Bed arm",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    0.995,
+    -0.083,
+    -0.055
+   ],
+   "bbox": [
+    20.0,
+    320.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/silicone-bed-spacer.stl",
+   "name": "Silicone bed spacer",
+   "group": "component",
+   "process": "bought",
+   "color": "#cc3333",
+   "explode": [
+    -0.598,
+    -0.794,
+    0.106
+   ],
+   "bbox": [
+    10.0,
+    10.0,
+    22.0
+   ]
+  },
+  {
+   "file": "stl/silicone-bed-spacer-2.stl",
+   "name": "Silicone bed spacer",
+   "group": "component",
+   "process": "bought",
+   "color": "#cc3333",
+   "explode": [
+    -0.763,
+    0.632,
+    0.136
+   ],
+   "bbox": [
+    10.0,
+    10.0,
+    22.0
+   ]
+  },
+  {
+   "file": "stl/silicone-bed-spacer-3.stl",
+   "name": "Silicone bed spacer",
+   "group": "component",
+   "process": "bought",
+   "color": "#cc3333",
+   "explode": [
+    0.598,
+    -0.794,
+    0.106
+   ],
+   "bbox": [
+    10.0,
+    10.0,
+    22.0
+   ]
+  },
+  {
+   "file": "stl/silicone-bed-spacer-4.stl",
+   "name": "Silicone bed spacer",
+   "group": "component",
+   "process": "bought",
+   "color": "#cc3333",
+   "explode": [
+    0.763,
+    0.632,
+    0.136
+   ],
+   "bbox": [
+    10.0,
+    10.0,
+    22.0
+   ]
+  },
+  {
+   "file": "stl/heated-bed-235-24v.stl",
+   "name": "Heated bed 235 24V",
+   "group": "component",
+   "process": "bought",
+   "color": "#202020",
+   "explode": [
+    0.0,
+    -0.62,
+    0.785
+   ],
+   "bbox": [
+    235.0,
+    235.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/pei-spring-sheet.stl",
+   "name": "PEI spring sheet",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9a227",
+   "explode": [
+    0.0,
+    -0.594,
+    0.805
+   ],
+   "bbox": [
+    235.0,
+    235.0,
+    1.0
+   ]
+  },
+  {
+   "file": "stl/skr-mini-e3-v3-board.stl",
+   "name": "SKR Mini E3 V3 board",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f5f2f",
+   "explode": [
+    -0.409,
+    -0.506,
+    -0.759
+   ],
+   "bbox": [
+    102.0,
+    71.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/board-cover.stl",
+   "name": "Board cover",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    116.0,
+    84.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/display-bracket.stl",
+   "name": "Display bracket",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    0.332,
+    -0.68,
+    -0.654
+   ],
+   "bbox": [
+    100.0,
+    5.0,
+    85.0
+   ]
+  },
+  {
+   "file": "stl/12864-lcd-display.stl",
+   "name": "12864 LCD display",
+   "group": "component",
+   "process": "bought",
+   "color": "#0b3d91",
+   "explode": [
+    0.325,
+    -0.7,
+    -0.636
+   ],
+   "bbox": [
+    96.0,
+    18.0,
+    78.0
+   ]
+  },
+  {
+   "file": "stl/power-inlet-plate.stl",
+   "name": "Power inlet plate",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    0.381,
+    0.586,
+    -0.715
+   ],
+   "bbox": [
+    40.0,
+    5.0,
+    30.0
+   ]
+  },
+  {
+   "file": "stl/dc-panel-jack.stl",
+   "name": "DC panel jack",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    0.382,
+    0.582,
+    -0.718
+   ],
+   "bbox": [
+    12.0,
+    15.0,
+    12.0
+   ]
+  }
+ ]
+}

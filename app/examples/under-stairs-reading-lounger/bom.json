@@ -1,0 +1,928 @@
+{
+ "parts": [
+  {
+   "name": "Floor lounger (60 x 125 cm folding)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 75.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B0F6CQ73WN",
+   "notes": "Foldable floor sofa bed, 5-position backrest (90-180 deg), 60 x 125 x 20 cm single-width size. Used as-is: no modification. Search 'foldable floor sofa bed 60x125 adjustable backrest' if unavailable; keep width <= 62 cm."
+  },
+  {
+   "name": "Floor cushion",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 28.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Square floor pillow 20 x 20 in (51 cm), ~6 in thick, for the calves/feet past the lounger seat. Search '20x20 square floor pillow cushion'."
+  },
+  {
+   "name": "Gooseneck reading lamp",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 13.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B09TKSF7P1",
+   "notes": "Wall-mount LED reading light, 15 in gooseneck, 3000K warm, 5 V USB, touch dimmer (sold as a 2-pack ~$26; the second is a spare or for the stair wall). Bolts to the bookcase top."
+  },
+  {
+   "name": "USB wall charger 5 V 2 A (UL listed)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 8.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Powers the lamp. Search 'UL listed USB wall charger 5V 2A'."
+  },
+  {
+   "name": "Adhesive cable clips",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 6.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Pack; route the lamp USB cable down the bookcase back. Search 'adhesive cable clips 20 pack'."
+  },
+  {
+   "name": "M5x8 button head screw",
+   "qty_per_unit": 76,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "2 per corner bracket. Search 'M5x8 button head screw 100 pcs'."
+  },
+  {
+   "name": "M5 drop-in T-nut (2020)",
+   "qty_per_unit": 110,
+   "unit_cost_usd": 0.08,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "76 for brackets, 32 for deck screws, 2 for the bookcase. Search '2020 M5 drop in T nut 100 pcs' (buy 2 packs)."
+  },
+  {
+   "name": "2020 end cap",
+   "qty_per_unit": 6,
+   "unit_cost_usd": 0.3,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Black plastic caps for the 6 exposed long-rail ends. Search '2020 extrusion end cap'."
+  },
+  {
+   "name": "M3x16 screw + nylock nut + washers",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.2,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Bolts the lamp base through the 6 mm bookcase top (drill 3.4 mm through the lamp base holes)."
+  },
+  {
+   "name": "Wood glue",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Glue the bookcase tab-and-slot joints. Search 'Titebond II 4 oz'."
+  },
+  {
+   "name": "2020 corner bracket",
+   "qty_per_unit": 38,
+   "unit_cost_usd": 0.6,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=2020+corner+bracket&rh=p_85%3A2470955011",
+   "notes": "search: 2020 corner bracket",
+   "auto": "lib"
+  },
+  {
+   "name": "M5\u00d712 button head screw",
+   "qty_per_unit": 34,
+   "unit_cost_usd": 0.179,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M5x12+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M5x12 button head screw",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 150,
+ "kit_ok": true,
+ "needs_soldering": false,
+ "printed": [
+  {
+   "file": "stl/foot-cap-1.stl",
+   "name": "Foot cap 1",
+   "grams": 3.4,
+   "print_hours": 0.25,
+   "bbox": [
+    26.0,
+    26.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/foot-cap-2.stl",
+   "name": "Foot cap 2",
+   "grams": 3.4,
+   "print_hours": 0.25,
+   "bbox": [
+    26.0,
+    26.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/foot-cap-3.stl",
+   "name": "Foot cap 3",
+   "grams": 3.4,
+   "print_hours": 0.25,
+   "bbox": [
+    26.0,
+    26.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/foot-cap-4.stl",
+   "name": "Foot cap 4",
+   "grams": 3.4,
+   "print_hours": 0.25,
+   "bbox": [
+    26.0,
+    26.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/foot-cap-5.stl",
+   "name": "Foot cap 5",
+   "grams": 3.4,
+   "print_hours": 0.25,
+   "bbox": [
+    26.0,
+    26.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/foot-cap-6.stl",
+   "name": "Foot cap 6",
+   "grams": 3.4,
+   "print_hours": 0.25,
+   "bbox": [
+    26.0,
+    26.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/foot-cap-7.stl",
+   "name": "Foot cap 7",
+   "grams": 3.4,
+   "print_hours": 0.25,
+   "bbox": [
+    26.0,
+    26.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/foot-cap-8.stl",
+   "name": "Foot cap 8",
+   "grams": 3.4,
+   "print_hours": 0.25,
+   "bbox": [
+    26.0,
+    26.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/foot-cap-9.stl",
+   "name": "Foot cap 9",
+   "grams": 3.4,
+   "print_hours": 0.25,
+   "bbox": [
+    26.0,
+    26.0,
+    15.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/long-rail-1.stl",
+   "name": "Long rail 1",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 1500.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1500.0,
+    "minutes": 5.0,
+    "material_usd": 9.0
+   },
+   "bbox": [
+    1500.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/long-rail-2.stl",
+   "name": "Long rail 2",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 1500.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1500.0,
+    "minutes": 5.0,
+    "material_usd": 9.0
+   },
+   "bbox": [
+    1500.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/long-rail-3.stl",
+   "name": "Long rail 3",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 1500.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1500.0,
+    "minutes": 5.0,
+    "material_usd": 9.0
+   },
+   "bbox": [
+    1500.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/cross-rail-1.stl",
+   "name": "Cross rail 1",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 300.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 300.0,
+    "minutes": 5.0,
+    "material_usd": 1.8
+   },
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/cross-rail-2.stl",
+   "name": "Cross rail 2",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 300.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 300.0,
+    "minutes": 5.0,
+    "material_usd": 1.8
+   },
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/cross-rail-3.stl",
+   "name": "Cross rail 3",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 300.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 300.0,
+    "minutes": 5.0,
+    "material_usd": 1.8
+   },
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/cross-rail-4.stl",
+   "name": "Cross rail 4",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 300.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 300.0,
+    "minutes": 5.0,
+    "material_usd": 1.8
+   },
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/cross-rail-5.stl",
+   "name": "Cross rail 5",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 300.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 300.0,
+    "minutes": 5.0,
+    "material_usd": 1.8
+   },
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/cross-rail-6.stl",
+   "name": "Cross rail 6",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 300.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 300.0,
+    "minutes": 5.0,
+    "material_usd": 1.8
+   },
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/cross-rail-7.stl",
+   "name": "Cross rail 7",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 300.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 300.0,
+    "minutes": 5.0,
+    "material_usd": 1.8
+   },
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/cross-rail-8.stl",
+   "name": "Cross rail 8",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 300.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 300.0,
+    "minutes": 5.0,
+    "material_usd": 1.8
+   },
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/cross-rail-9.stl",
+   "name": "Cross rail 9",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 300.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 300.0,
+    "minutes": 5.0,
+    "material_usd": 1.8
+   },
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/cross-rail-10.stl",
+   "name": "Cross rail 10",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 300.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 300.0,
+    "minutes": 5.0,
+    "material_usd": 1.8
+   },
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/leg-1.stl",
+   "name": "Leg 1",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 100.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 100.0,
+    "minutes": 5.0,
+    "material_usd": 0.6
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/leg-2.stl",
+   "name": "Leg 2",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 100.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 100.0,
+    "minutes": 5.0,
+    "material_usd": 0.6
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/leg-3.stl",
+   "name": "Leg 3",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 100.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 100.0,
+    "minutes": 5.0,
+    "material_usd": 0.6
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/leg-4.stl",
+   "name": "Leg 4",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 100.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 100.0,
+    "minutes": 5.0,
+    "material_usd": 0.6
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/leg-5.stl",
+   "name": "Leg 5",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 100.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 100.0,
+    "minutes": 5.0,
+    "material_usd": 0.6
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/leg-6.stl",
+   "name": "Leg 6",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 100.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 100.0,
+    "minutes": 5.0,
+    "material_usd": 0.6
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/leg-7.stl",
+   "name": "Leg 7",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 100.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 100.0,
+    "minutes": 5.0,
+    "material_usd": 0.6
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/leg-8.stl",
+   "name": "Leg 8",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 100.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 100.0,
+    "minutes": 5.0,
+    "material_usd": 0.6
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/leg-9.stl",
+   "name": "Leg 9",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 100.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 100.0,
+    "minutes": 5.0,
+    "material_usd": 0.6
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/deck-panel-1.stl",
+   "name": "Deck panel 1",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1491.2,
+    "area_cm2": 1133.2,
+    "minutes": 4.1,
+    "material_usd": 8.16
+   },
+   "bbox": [
+    375.0,
+    330.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/deck-panel-2.stl",
+   "name": "Deck panel 2",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1456.7,
+    "area_cm2": 1133.7,
+    "minutes": 4.0,
+    "material_usd": 8.16
+   },
+   "bbox": [
+    375.0,
+    330.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/deck-panel-3.stl",
+   "name": "Deck panel 3",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1456.7,
+    "area_cm2": 1133.7,
+    "minutes": 4.0,
+    "material_usd": 8.16
+   },
+   "bbox": [
+    375.0,
+    330.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/deck-panel-4.stl",
+   "name": "Deck panel 4",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1491.2,
+    "area_cm2": 1133.2,
+    "minutes": 4.1,
+    "material_usd": 8.16
+   },
+   "bbox": [
+    375.0,
+    330.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/deck-panel-5.stl",
+   "name": "Deck panel 5",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1491.2,
+    "area_cm2": 1133.2,
+    "minutes": 4.1,
+    "material_usd": 8.16
+   },
+   "bbox": [
+    375.0,
+    330.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/deck-panel-6.stl",
+   "name": "Deck panel 6",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1456.7,
+    "area_cm2": 1133.7,
+    "minutes": 4.0,
+    "material_usd": 8.16
+   },
+   "bbox": [
+    375.0,
+    330.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/deck-panel-7.stl",
+   "name": "Deck panel 7",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1456.7,
+    "area_cm2": 1133.7,
+    "minutes": 4.0,
+    "material_usd": 8.16
+   },
+   "bbox": [
+    375.0,
+    330.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/deck-panel-8.stl",
+   "name": "Deck panel 8",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1491.2,
+    "area_cm2": 1133.2,
+    "minutes": 4.1,
+    "material_usd": 8.16
+   },
+   "bbox": [
+    375.0,
+    330.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/bookcase-left-side.stl",
+   "name": "Bookcase left side",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 3032.4,
+    "area_cm2": 2173.0,
+    "minutes": 7.3,
+    "material_usd": 15.65
+   },
+   "bbox": [
+    5.6,
+    400.0,
+    600.0
+   ]
+  },
+  {
+   "file": "stl/bookcase-right-side.stl",
+   "name": "Bookcase right side",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 3067.0,
+    "area_cm2": 2172.6,
+    "minutes": 7.4,
+    "material_usd": 15.64
+   },
+   "bbox": [
+    5.6,
+    400.0,
+    600.0
+   ]
+  },
+  {
+   "file": "stl/bookcase-bottom.stl",
+   "name": "Bookcase bottom",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1399.0,
+    "area_cm2": 1041.3,
+    "minutes": 3.9,
+    "material_usd": 7.5
+   },
+   "bbox": [
+    300.0,
+    388.5,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/bookcase-shelf.stl",
+   "name": "Bookcase shelf",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1399.0,
+    "area_cm2": 1041.3,
+    "minutes": 3.9,
+    "material_usd": 7.5
+   },
+   "bbox": [
+    300.0,
+    388.5,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/bookcase-top.stl",
+   "name": "Bookcase top",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1399.0,
+    "area_cm2": 1041.3,
+    "minutes": 3.9,
+    "material_usd": 7.5
+   },
+   "bbox": [
+    300.0,
+    388.5,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/bookcase-back.stl",
+   "name": "Bookcase back",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1793.0,
+    "area_cm2": 1563.2,
+    "minutes": 4.7,
+    "material_usd": 11.25
+   },
+   "bbox": [
+    300.0,
+    5.5,
+    585.5
+   ]
+  }
+ ]
+}

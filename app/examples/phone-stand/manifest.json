@@ -1,0 +1,70 @@
+{
+ "t": 1793164703.4740748,
+ "title": "Adjustable phone stand",
+ "parts": [
+  {
+   "file": "stl/base.stl",
+   "name": "Base",
+   "group": "case",
+   "color": "#3d4451",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    84.0,
+    96.0,
+    27.5
+   ]
+  },
+  {
+   "file": "stl/tilting-arm.stl",
+   "name": "Tilting arm",
+   "group": "case",
+   "color": "#ff8a3d",
+   "explode": [
+    0.0,
+    1.0,
+    0.4
+   ],
+   "bbox": [
+    74.0,
+    63.3,
+    117.2
+   ]
+  },
+  {
+   "file": "stl/m5-x-70-bolt-wing-nut.stl",
+   "name": "M5 x 70 bolt + wing nut",
+   "group": "component",
+   "color": "#9aa0a6",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    75.3,
+    11.0,
+    26.0
+   ]
+  },
+  {
+   "file": "stl/rubber-bumper-feet-4x.stl",
+   "name": "Rubber bumper feet (4x)",
+   "group": "component",
+   "color": "#222222",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    72.0,
+    84.0,
+    2.5
+   ]
+  }
+ ]
+}

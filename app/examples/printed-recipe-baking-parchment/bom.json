@@ -1,0 +1,27 @@
+{
+ "parts": [
+  {
+   "name": "Custom-printed recipe parchment sheet, 381 x 559 mm (15 x 22 in)",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.4,
+   "supplier": "Print On Papers",
+   "url": "https://printonpapers.com/blogs/custom-parchment-paper-for-bakeries/",
+   "manual_order": true,
+   "notes": "Custom print: Amazon doesn't sell it. Bleached white silicone-coated parchment, ~40 gsm, PFAS-free, rated 420-450 F. Print MIRRORED on the uncoated back only, water-based ink rated for non-direct food contact, low ink coverage. Ask for a declaration of compliance plus an oven migration test at 200 C. 500-sheet minimum, from $0.40/sheet, 7-10 working days after proof. Alternative: Cone Sleeves (100 minimum, 15 in rolls)."
+  },
+  {
+   "name": "Printed kraft sleeve, 292 x 198 x 5 mm",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.85,
+   "supplier": "Packlim",
+   "url": "https://packlim.com/custom-packaging-sleeves/",
+   "manual_order": true,
+   "notes": "Custom print: Amazon doesn't sell it. Kraft paperboard, printed on the outside only and plain inside, because the sheets' food side touches the inside. Back panel: shopping list and allergens (fish). 100 minimum, from $0.85, 4-6 business days, free US shipping."
+  }
+ ],
+ "assembly_minutes": 2,
+ "kit_ok": true,
+ "needs_soldering": false,
+ "printed": [],
+ "fabricated": []
+}

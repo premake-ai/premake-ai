@@ -1,0 +1,334 @@
+{
+ "t": 1793373827.9065092,
+ "title": "Desk Tesla Coil Lamp",
+ "parts": [
+  {
+   "file": "stl/base.stl",
+   "name": "Base",
+   "group": "case",
+   "process": "print",
+   "color": "#26262a",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    104.1,
+    104.2,
+    26.2
+   ]
+  },
+  {
+   "file": "stl/bottom-plate.stl",
+   "name": "Bottom plate",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    99.5,
+    99.5,
+    3.1
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/primary-ring.stl",
+   "name": "Primary ring",
+   "group": "case",
+   "process": "print",
+   "color": "#c27a3e",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    72.1,
+    72.1,
+    7.1
+   ]
+  },
+  {
+   "file": "stl/secondary-coil.stl",
+   "name": "Secondary coil",
+   "group": "case",
+   "process": "print",
+   "color": "#b87333",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    32.0,
+    32.0,
+    150.0
+   ]
+  },
+  {
+   "file": "stl/toroid-bottom.stl",
+   "name": "Toroid bottom",
+   "group": "case",
+   "process": "print",
+   "color": "#d9dbe3",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    100.1,
+    100.1,
+    14.1
+   ]
+  },
+  {
+   "file": "stl/toroid-top.stl",
+   "name": "Toroid top",
+   "group": "case",
+   "process": "print",
+   "color": "#eef0f8",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    100.1,
+    100.1,
+    12.1
+   ],
+   "fx": {
+    "glow": {
+     "color": "#b08cff",
+     "mode": "pulse"
+    }
+   }
+  },
+  {
+   "file": "stl/24-led-ws2812b-ring.stl",
+   "name": "24-LED WS2812B ring",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1d1d",
+   "explode": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    66.0,
+    66.1,
+    3.5
+   ],
+   "fx": {
+    "glow": {
+     "color": "#b08cff",
+     "mode": "pulse"
+    }
+   }
+  },
+  {
+   "file": "stl/rubber-feet.stl",
+   "name": "Rubber feet",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    -0.0,
+    -0.103,
+    -0.995
+   ],
+   "bbox": [
+    79.3,
+    70.0,
+    2.0
+   ],
+   "material": "rubber"
+  },
+  {
+   "file": "stl/esp32-c3-supermini.stl",
+   "name": "ESP32-C3 SuperMini",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    -0.0,
+    0.393,
+    -0.92
+   ],
+   "bbox": [
+    18.0,
+    23.5,
+    4.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/esp32-c3-supermini__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__4.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__6.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    }
+   ],
+   "lib": {
+    "key": "esp32_c3_supermini",
+    "qty": 1,
+    "name": "ESP32-C3 SuperMini",
+    "unit_cost_usd": 4.0,
+    "mass_g": 2.0
+   }
+  },
+  {
+   "file": "stl/m3-heat-set-insert-6.stl",
+   "name": "M3 heat-set insert \u00d76",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    -0.0,
+    0.101,
+    -0.995
+   ],
+   "bbox": [
+    77.3,
+    72.6,
+    28.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-heat-set-insert-6__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "insert",
+    "qty": 6,
+    "name": "M3 heat-set insert",
+    "unit_cost_usd": 0.12,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m3-8-button-head-screw-3.stl",
+   "name": "M3\u00d78 button head screw \u00d73",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.0,
+    0.112,
+    -0.994
+   ],
+   "bbox": [
+    78.4,
+    68.7,
+    9.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-8-button-head-screw-3__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 3,
+    "name": "M3\u00d78 button head screw",
+    "unit_cost_usd": 0.097,
+    "mass_g": 0.7
+   }
+  },
+  {
+   "file": "stl/m3-6-socket-head-screw-3.stl",
+   "name": "M3\u00d76 socket head screw \u00d73",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.0,
+    -0.092,
+    -0.996
+   ],
+   "bbox": [
+    50.5,
+    44.5,
+    9.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-6-socket-head-screw-3__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 3,
+    "name": "M3\u00d76 socket head screw",
+    "unit_cost_usd": 0.095,
+    "mass_g": 0.8
+   }
+  }
+ ],
+ "scene": "desk",
+ "assembly_order": [
+  [
+   "Base"
+  ],
+  [
+   "Primary ring"
+  ],
+  [
+   "ESP32-C3 SuperMini",
+   "Bottom plate"
+  ],
+  [
+   "Secondary coil"
+  ],
+  [
+   "24-LED WS2812B ring",
+   "Toroid bottom",
+   "Toroid top"
+  ],
+  [
+   "Rubber feet"
+  ]
+ ]
+}

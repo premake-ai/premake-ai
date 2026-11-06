@@ -1,0 +1,421 @@
+{
+ "parts": [
+  {
+   "name": "18650 holder, 1 cell",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=18650+battery+holder+1+slot&rh=p_85%3A2470955011",
+   "notes": "search: 18650 battery holder 1 slot",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d710 button head screw",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.099,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x10+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M3x10 button head screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M3 nylock nut",
+   "qty_per_unit": 7,
+   "unit_cost_usd": 0.09,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+nylon+lock+nut&rh=p_85%3A2470955011",
+   "notes": "search: M3 nylon lock nut",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d710 socket head screw",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.099,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x10+socket+head+cap+screw&rh=p_85%3A2470955011",
+   "notes": "search: M3x10 socket head cap screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M3 heat-set insert",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.12,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+heat+set+insert+brass&rh=p_85%3A2470955011",
+   "notes": "search: M3 heat set insert brass",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d740 button head screw",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.126,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x40+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M3x40 button head screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d716 socket head screw",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.104,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x16+socket+head+cap+screw&rh=p_85%3A2470955011",
+   "notes": "search: M3x16 socket head cap screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M4\u00d716 countersunk screw",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.139,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M4x16+countersunk+screw&rh=p_85%3A2470955011",
+   "notes": "search: M4x16 countersunk screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M4 hex nut",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.07,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M4+hex+nut&rh=p_85%3A2470955011",
+   "notes": "search: M4 hex nut",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 0,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/stem-socket.stl",
+   "name": "Stem socket",
+   "grams": 15.3,
+   "print_hours": 0.77,
+   "bbox": [
+    64.0,
+    64.1,
+    30.1
+   ]
+  },
+  {
+   "file": "stl/stem.stl",
+   "name": "Stem",
+   "grams": 36.0,
+   "print_hours": 1.8,
+   "bbox": [
+    25.0,
+    25.0,
+    250.0
+   ]
+  },
+  {
+   "file": "stl/solar-leaf.stl",
+   "name": "Solar leaf",
+   "grams": 31.2,
+   "print_hours": 1.56,
+   "bbox": [
+    194.1,
+    96.2,
+    14.1
+   ]
+  },
+  {
+   "file": "stl/perch-arm.stl",
+   "name": "Perch arm",
+   "grams": 21.2,
+   "print_hours": 1.06,
+   "bbox": [
+    50.1,
+    179.0,
+    48.1
+   ]
+  },
+  {
+   "file": "stl/nectar-cup.stl",
+   "name": "Nectar cup",
+   "grams": 7.5,
+   "print_hours": 0.37,
+   "bbox": [
+    50.1,
+    50.1,
+    27.1
+   ]
+  },
+  {
+   "file": "stl/nectar-lid.stl",
+   "name": "Nectar lid",
+   "grams": 3.5,
+   "print_hours": 0.25,
+   "bbox": [
+    50.0,
+    50.0,
+    7.1
+   ]
+  },
+  {
+   "file": "stl/camera-pod.stl",
+   "name": "Camera pod",
+   "grams": 53.1,
+   "print_hours": 2.66,
+   "bbox": [
+    110.1,
+    45.2,
+    123.1
+   ]
+  },
+  {
+   "file": "stl/petal-ring.stl",
+   "name": "Petal ring",
+   "grams": 41.0,
+   "print_hours": 2.05,
+   "bbox": [
+    202.0,
+    3.1,
+    202.0
+   ]
+  },
+  {
+   "file": "stl/back-cap-gasket.stl",
+   "name": "Back cap gasket",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    92.1,
+    1.6,
+    92.1
+   ]
+  },
+  {
+   "file": "stl/back-cap.stl",
+   "name": "Back cap",
+   "grams": 13.8,
+   "print_hours": 0.69,
+   "bbox": [
+    92.1,
+    3.1,
+    92.1
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/hotel-bottom.stl",
+   "name": "Hotel bottom",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1160.9,
+    "area_cm2": 307.0,
+    "minutes": 3.4,
+    "material_usd": 2.21
+   },
+   "bbox": [
+    176.0,
+    196.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/hotel-top.stl",
+   "name": "Hotel top",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1632.3,
+    "area_cm2": 295.8,
+    "minutes": 4.4,
+    "material_usd": 2.13
+   },
+   "bbox": [
+    176.0,
+    196.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/hotel-left-side.stl",
+   "name": "Hotel left side",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 704.0,
+    "area_cm2": 232.6,
+    "minutes": 2.5,
+    "material_usd": 1.67
+   },
+   "bbox": [
+    5.5,
+    180.0,
+    150.0
+   ]
+  },
+  {
+   "file": "stl/hotel-right-side.stl",
+   "name": "Hotel right side",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 704.0,
+    "area_cm2": 232.6,
+    "minutes": 2.5,
+    "material_usd": 1.67
+   },
+   "bbox": [
+    5.5,
+    180.0,
+    150.0
+   ]
+  },
+  {
+   "file": "stl/hotel-back.stl",
+   "name": "Hotel back",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 664.0,
+    "area_cm2": 201.5,
+    "minutes": 2.4,
+    "material_usd": 1.45
+   },
+   "bbox": [
+    160.0,
+    5.5,
+    150.0
+   ]
+  },
+  {
+   "file": "stl/planter-bottom.stl",
+   "name": "Planter bottom",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1323.3,
+    "area_cm2": 303.3,
+    "minutes": 3.8,
+    "material_usd": 2.18
+   },
+   "bbox": [
+    176.0,
+    196.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/planter-left-side.stl",
+   "name": "Planter left side",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 666.0,
+    "area_cm2": 182.8,
+    "minutes": 2.4,
+    "material_usd": 1.32
+   },
+   "bbox": [
+    5.5,
+    180.0,
+    120.5
+   ]
+  },
+  {
+   "file": "stl/planter-right-side.stl",
+   "name": "Planter right side",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 666.0,
+    "area_cm2": 182.8,
+    "minutes": 2.4,
+    "material_usd": 1.32
+   },
+   "bbox": [
+    5.5,
+    180.0,
+    120.5
+   ]
+  },
+  {
+   "file": "stl/planter-back.stl",
+   "name": "Planter back",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 583.0,
+    "area_cm2": 160.5,
+    "minutes": 2.2,
+    "material_usd": 1.16
+   },
+   "bbox": [
+    160.0,
+    5.5,
+    120.5
+   ]
+  },
+  {
+   "file": "stl/planter-front.stl",
+   "name": "Planter front",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 658.4,
+    "area_cm2": 159.1,
+    "minutes": 2.4,
+    "material_usd": 1.15
+   },
+   "bbox": [
+    160.0,
+    5.5,
+    120.5
+   ]
+  },
+  {
+   "file": "stl/camera-window.stl",
+   "name": "Camera window",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 66.6,
+    "area_cm2": 3.5,
+    "minutes": 1.1,
+    "material_usd": 0.04
+   },
+   "bbox": [
+    21.2,
+    3.0,
+    21.2
+   ]
+  }
+ ]
+}

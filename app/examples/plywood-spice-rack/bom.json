@@ -1,0 +1,221 @@
+{
+ "parts": [
+  {
+   "name": "#8 x 1-1/2\" flat-head wood screw",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.12,
+   "supplier": "Home Depot / Amazon",
+   "url": "",
+   "notes": "Wall mount through the countersunk holes in the back board; into studs or anchors"
+  },
+  {
+   "name": "Self-drilling drywall anchor (#8, 50 lb)",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.2,
+   "supplier": "Home Depot / Amazon",
+   "url": "",
+   "notes": "\"E-Z Ancor self drilling drywall anchor #8\"; skip if screwing into studs"
+  },
+  {
+   "name": "Wood glue (PVA), ~5 ml",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.4,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "\"Titebond II wood glue\"; glues the tab-and-slot joints"
+  },
+  {
+   "name": "Clear finish, wipe-on (portion)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.8,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "\"wipe-on polyurethane\"; makes the kitchen plywood wipeable"
+  }
+ ],
+ "assembly_minutes": 25,
+ "kit_ok": true,
+ "printed": [],
+ "fabricated": [
+  {
+   "file": "stl/back-board.stl",
+   "name": "Back Board",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1919.6,
+    "area_cm2": 1095.3,
+    "minutes": 5.0,
+    "material_usd": 7.89
+   },
+   "bbox": [
+    236.0,
+    6.1,
+    470.0
+   ]
+  },
+  {
+   "file": "stl/left-side.stl",
+   "name": "Left Side",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1420.5,
+    "area_cm2": 282.1,
+    "minutes": 4.0,
+    "material_usd": 2.03
+   },
+   "bbox": [
+    6.0,
+    62.0,
+    470.0
+   ]
+  },
+  {
+   "file": "stl/right-side.stl",
+   "name": "Right Side",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1420.5,
+    "area_cm2": 282.1,
+    "minutes": 4.0,
+    "material_usd": 2.03
+   },
+   "bbox": [
+    6.0,
+    62.0,
+    470.0
+   ]
+  },
+  {
+   "file": "stl/shelf-1.stl",
+   "name": "Shelf 1",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 624.0,
+    "area_cm2": 124.2,
+    "minutes": 2.3,
+    "material_usd": 0.89
+   },
+   "bbox": [
+    236.0,
+    58.0,
+    6.0
+   ]
+  },
+  {
+   "file": "stl/front-rail-1.stl",
+   "name": "Front Rail 1",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 513.4,
+    "area_cm2": 50.7,
+    "minutes": 2.1,
+    "material_usd": 0.36
+   },
+   "bbox": [
+    236.0,
+    6.0,
+    22.0
+   ]
+  },
+  {
+   "file": "stl/shelf-2.stl",
+   "name": "Shelf 2",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 624.0,
+    "area_cm2": 124.2,
+    "minutes": 2.3,
+    "material_usd": 0.89
+   },
+   "bbox": [
+    236.0,
+    58.0,
+    6.0
+   ]
+  },
+  {
+   "file": "stl/front-rail-2.stl",
+   "name": "Front Rail 2",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 513.4,
+    "area_cm2": 50.7,
+    "minutes": 2.1,
+    "material_usd": 0.36
+   },
+   "bbox": [
+    236.0,
+    6.0,
+    22.0
+   ]
+  },
+  {
+   "file": "stl/shelf-3.stl",
+   "name": "Shelf 3",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 624.0,
+    "area_cm2": 124.2,
+    "minutes": 2.3,
+    "material_usd": 0.89
+   },
+   "bbox": [
+    236.0,
+    58.0,
+    6.0
+   ]
+  },
+  {
+   "file": "stl/front-rail-3.stl",
+   "name": "Front Rail 3",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 513.4,
+    "area_cm2": 50.7,
+    "minutes": 2.1,
+    "material_usd": 0.36
+   },
+   "bbox": [
+    236.0,
+    6.0,
+    22.0
+   ]
+  }
+ ]
+}

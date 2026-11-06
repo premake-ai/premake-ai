@@ -1,0 +1,1 @@
+No wires to make: the ESP32-CAM plugs onto the ESP32-CAM-MB board's headers (camera ribbon is factory-fitted), and power comes in over a micro-USB cable from a 5 V 1 A USB adapter (~0.3 A typical, ~0.5 A peaks with Wi-Fi + camera). The MB board also flashes the firmware (CH340C USB-serial; hold IO0 / press RST if the browser flasher can't connect).

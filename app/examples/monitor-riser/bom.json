@@ -1,0 +1,54 @@
+{
+ "parts": [
+  {
+   "name": "Pine common board 1 in x 10 in x 2 ft",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 7.48,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": "19 x 235 x 610 mm actual"
+  },
+  {
+   "name": "#8 x 5/8 in pan head wood screw",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.08,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "Felt furniture pads 1 in",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.1,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": ""
+  }
+ ],
+ "assembly_minutes": 10,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/leg-left.stl",
+   "name": "Leg left",
+   "grams": 92.1,
+   "print_hours": 4.6,
+   "bbox": [
+    34.0,
+    241.0,
+    98.0
+   ]
+  },
+  {
+   "file": "stl/leg-right.stl",
+   "name": "Leg right",
+   "grams": 92.1,
+   "print_hours": 4.6,
+   "bbox": [
+    34.0,
+    241.0,
+    98.0
+   ]
+  }
+ ]
+}

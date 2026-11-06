@@ -1,0 +1,378 @@
+{
+ "t": 1793390683.935338,
+ "title": "Make one like this",
+ "parts": [
+  {
+   "file": "stl/left-post.stl",
+   "name": "Left post",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -1.0,
+    0.0,
+    0.002
+   ],
+   "bbox": [
+    20.0,
+    40.0,
+    1200.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/left-post-adapter.stl",
+   "name": "Left post adapter",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3d40",
+   "explode": [
+    -0.724,
+    0.0,
+    -0.69
+   ],
+   "bbox": [
+    49.0,
+    49.0,
+    70.0
+   ]
+  },
+  {
+   "file": "stl/left-ground-spike.stl",
+   "name": "Left ground spike",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2b2b",
+   "explode": [
+    -0.696,
+    0.0,
+    -0.718
+   ],
+   "bbox": [
+    54.0,
+    54.0,
+    150.0
+   ]
+  },
+  {
+   "file": "stl/right-post.stl",
+   "name": "Right post",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    1.0,
+    0.0,
+    0.002
+   ],
+   "bbox": [
+    20.0,
+    40.0,
+    1200.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/right-post-adapter.stl",
+   "name": "Right post adapter",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3d40",
+   "explode": [
+    0.724,
+    0.0,
+    -0.69
+   ],
+   "bbox": [
+    49.0,
+    49.0,
+    70.0
+   ]
+  },
+  {
+   "file": "stl/right-ground-spike.stl",
+   "name": "Right ground spike",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2b2b",
+   "explode": [
+    0.696,
+    0.0,
+    -0.718
+   ],
+   "bbox": [
+    54.0,
+    54.0,
+    150.0
+   ]
+  },
+  {
+   "file": "stl/rail1.stl",
+   "name": "Rail 1",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    1000.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/rail2.stl",
+   "name": "Rail 2",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    1000.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/rail3.stl",
+   "name": "Rail 3",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    1000.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/rail4.stl",
+   "name": "Rail 4",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.0,
+    -0.0,
+    1.0
+   ],
+   "bbox": [
+    1000.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/stile1.stl",
+   "name": "Mid stile 1",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    300.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/stile2.stl",
+   "name": "Mid stile 2",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    300.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/stile3.stl",
+   "name": "Mid stile 3",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    300.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/panel00.stl",
+   "name": "Lower panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#9a9a95",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    500.0,
+    5.5,
+    320.0
+   ],
+   "material": "acrylic_frosted"
+  },
+  {
+   "file": "stl/panel01.stl",
+   "name": "Lower panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#9a9a95",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    500.0,
+    5.5,
+    320.0
+   ],
+   "material": "acrylic_frosted"
+  },
+  {
+   "file": "stl/panel10.stl",
+   "name": "Upper panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    500.0,
+    5.5,
+    320.0
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/panel11.stl",
+   "name": "Upper panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    500.0,
+    5.5,
+    320.0
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/panel20.stl",
+   "name": "Upper panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    500.0,
+    5.5,
+    320.0
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/panel21.stl",
+   "name": "Upper panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    500.0,
+    5.5,
+    320.0
+   ],
+   "material": "acrylic_clear"
+  }
+ ],
+ "scene": "floor",
+ "assembly_order": [
+  [
+   "Left ground spike",
+   "Right ground spike"
+  ],
+  [
+   "Left post adapter",
+   "Right post adapter"
+  ],
+  [
+   "Left post",
+   "Right post"
+  ],
+  [
+   "Rail 1",
+   "Rail 2",
+   "Rail 3",
+   "Rail 4"
+  ],
+  [
+   "Mid stile 1",
+   "Mid stile 2",
+   "Mid stile 3"
+  ],
+  [
+   "Lower panel",
+   "Lower panel",
+   "Upper panel",
+   "Upper panel",
+   "Upper panel",
+   "Upper panel"
+  ]
+ ]
+}

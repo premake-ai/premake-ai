@@ -1,0 +1,695 @@
+{
+ "parts": [
+  {
+   "name": "10 mm linear rod 210 mm (Y)",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 6.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: 10mm hardened linear shaft 210mm (or 250 mm cut down)"
+  },
+  {
+   "name": "10 mm linear rod 245 mm (X)",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 7.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: 10mm hardened linear shaft 250mm, trim to 245"
+  },
+  {
+   "name": "8 mm linear rod 100 mm (Z)",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 3.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: 8mm linear shaft 100mm"
+  },
+  {
+   "name": "SC10UU slider block (LM10UU)",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Y axis bed carriages; search: SC10UU linear bearing block"
+  },
+  {
+   "name": "LM10UU linear bearing",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "X carriage, 2 per X rod; search: LM10UU"
+  },
+  {
+   "name": "LM8SUU short linear bearing",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 1.2,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Z slider, 2 per Z rod; search: LM8SUU"
+  },
+  {
+   "name": "T8 lead screw 4 mm lead (X 237, Y 202, Z 100 mm)",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 7.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: T8 lead screw 4mm lead 250mm / 100mm, cut to length"
+  },
+  {
+   "name": "T8 brass anti-backlash spring nut",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 3.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: T8 anti backlash nut 4mm lead"
+  },
+  {
+   "name": "Flexible coupler 5 x 8 mm",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: 5mm to 8mm flexible shaft coupler"
+  },
+  {
+   "name": "Aluminium T-slot bed 180 x 100 x 15",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 25.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "1610 CNC spare work table, 4 T-slots along X; search: 1610 CNC aluminium T slot table"
+  },
+  {
+   "name": "775 spindle motor 24 V + ER11 extension rod + collet",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 18.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: 775 spindle motor ER11 extension rod 24V"
+  },
+  {
+   "name": "End mill 3.175 mm shank",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: 1/8 shank CNC end mill set"
+  },
+  {
+   "name": "GRBL controller board",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 20.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "3-axis GRBL 1.1 USB board for 1610/3018 with spindle output, ships flashed; search: GRBL 3 axis CNC control board 3018"
+  },
+  {
+   "name": "24V 5A power adapter",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 16.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Sealed UL-listed brick, 5.5 x 2.1 barrel; search: 24V 5A power supply 5.5x2.1"
+  },
+  {
+   "name": "Inline fuse holder 7.5 A",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "In the 24 V + lead (max draw ~5 A); search: inline blade fuse holder 18AWG"
+  },
+  {
+   "name": "M5 T-nut for 2020/2040",
+   "qty_per_unit": 14,
+   "unit_cost_usd": 0.15,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "8 gantry feet, 4 controller case, 2 tilt driver box; search: M5 T-nut 2020 drop-in"
+  },
+  {
+   "name": "8 mm linear rod 150 mm (tilt lever)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Lever rod clamped in the spindle sleeve; search: 8mm hardened linear shaft 150mm"
+  },
+  {
+   "name": "LM8UU linear bearing",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "In the tilt shuttle, lets the lever rod slide with Z; search: LM8UU"
+  },
+  {
+   "name": "Stepper cable 4-pin XH (1 m)",
+   "qty_per_unit": 5,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "3 machine axes + 2 tilt pull motors; search: NEMA17 stepper cable XH2.54 4pin 1m"
+  },
+  {
+   "name": "Extension spring ~0.5 N/mm, 7 mm OD, 25-30 mm",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Return springs (-X, -Y) preloaded ~10 N against the pull cords; calibrate rate with a luggage scale; search: extension spring assortment"
+  },
+  {
+   "name": "Braided fishing line 0.8 mm (50 lb)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 8.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Tilt cords; low stretch so the spring sets the compliance; search: braided fishing line 50lb"
+  },
+  {
+   "name": "Perfboard 50 x 70 mm + female header strips",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 3.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Socketed ESP32 + 2 TMC2209 for the tilt rig (soldered); search: perfboard 5x7 female header kit"
+  },
+  {
+   "name": "100uF 35V electrolytic capacitor",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "One across each TMC2209 VM/GND; search: 100uF 35V electrolytic capacitor"
+  },
+  {
+   "name": "12V 2A power adapter (tilt rig)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 9.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Separate supply for the two pull motors, keeps the GRBL 24 V rail untouched; sealed UL-listed, 5.5 x 2.1; search: 12V 2A power supply 5.5x2.1"
+  },
+  {
+   "name": "DC barrel pigtail 5.5 x 2.1",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "12 V into the perfboard; search: 5.5x2.1 DC female pigtail"
+  },
+  {
+   "name": "Inline fuse holder 3 A (tilt rig)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "In the 12 V + lead; search: inline blade fuse holder 3A"
+  },
+  {
+   "name": "Micro-USB data cable 1 m",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "ESP32 power + serial from the PC running the vision loop; search: micro USB data cable 1m"
+  },
+  {
+   "name": "608ZZ bearing",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.6,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=608ZZ+bearing&rh=p_85%3A2470955011",
+   "notes": "search: 608ZZ bearing",
+   "auto": "lib"
+  },
+  {
+   "name": "NEMA17 stepper motor 34 mm",
+   "qty_per_unit": 5,
+   "unit_cost_usd": 9.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=NEMA17+stepper+motor+34mm&rh=p_85%3A2470955011",
+   "notes": "search: NEMA17 stepper motor 34mm",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d714 socket head screw",
+   "qty_per_unit": 8,
+   "unit_cost_usd": 0.103,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x14+socket+head+cap+screw&rh=p_85%3A2470955011",
+   "notes": "search: M3x14 socket head cap screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M5\u00d716 socket head screw",
+   "qty_per_unit": 12,
+   "unit_cost_usd": 0.186,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M5x16+socket+head+cap+screw&rh=p_85%3A2470955011",
+   "notes": "search: M5x16 socket head cap screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M4\u00d78 socket head screw",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.13,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M4x8+socket+head+cap+screw&rh=p_85%3A2470955011",
+   "notes": "search: M4x8 socket head cap screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M5\u00d710 button head screw",
+   "qty_per_unit": 8,
+   "unit_cost_usd": 0.176,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M5x10+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M5x10 button head screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d76 self-tapping screw for plastic",
+   "qty_per_unit": 8,
+   "unit_cost_usd": 0.057,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+x+6mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M3 x 6mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d710 self-tapping screw for plastic",
+   "qty_per_unit": 8,
+   "unit_cost_usd": 0.059,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+x+10mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M3 x 10mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  },
+  {
+   "name": "M5\u00d78 button head screw",
+   "qty_per_unit": 6,
+   "unit_cost_usd": 0.173,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M5x8+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M5x8 button head screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d730 socket head screw",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.117,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x30+socket+head+cap+screw&rh=p_85%3A2470955011",
+   "notes": "search: M3x30 socket head cap screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M4\u00d720 socket head screw",
+   "qty_per_unit": 5,
+   "unit_cost_usd": 0.144,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M4x20+socket+head+cap+screw&rh=p_85%3A2470955011",
+   "notes": "search: M4x20 socket head cap screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M4 hex nut",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.07,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M4+hex+nut&rh=p_85%3A2470955011",
+   "notes": "search: M4 hex nut",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d716 self-tapping screw for plastic",
+   "qty_per_unit": 5,
+   "unit_cost_usd": 0.063,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+x+16mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M3 x 16mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d716 socket head screw",
+   "qty_per_unit": 8,
+   "unit_cost_usd": 0.104,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x16+socket+head+cap+screw&rh=p_85%3A2470955011",
+   "notes": "search: M3x16 socket head cap screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M4 nylock nut",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M4+nylon+lock+nut&rh=p_85%3A2470955011",
+   "notes": "search: M4 nylon lock nut",
+   "auto": "lib"
+  },
+  {
+   "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 7.5,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=ESP32+DevKitC+WROOM-32+38+pin&rh=p_85%3A2470955011",
+   "notes": "search: ESP32 DevKitC WROOM-32 38 pin",
+   "auto": "lib"
+  },
+  {
+   "name": "TMC2209 stepper driver",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=TMC2209+stepstick&rh=p_85%3A2470955011",
+   "notes": "search: TMC2209 stepstick",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 240,
+ "kit_ok": true,
+ "needs_soldering": true,
+ "soldering_reason": "The spindle leads and the tilt rig's perfboard (ESP32 + two TMC2209 sockets) are soldered.",
+ "printed": [
+  {
+   "file": "stl/bed-y-nut-mount.stl",
+   "name": "Y nut mount",
+   "grams": 12.0,
+   "print_hours": 0.6,
+   "bbox": [
+    30.0,
+    20.0,
+    32.0
+   ]
+  },
+  {
+   "file": "stl/bed-phone-mount-front.stl",
+   "name": "Phone mount (front)",
+   "grams": 13.0,
+   "print_hours": 0.65,
+   "bbox": [
+    60.0,
+    29.0,
+    28.0
+   ]
+  },
+  {
+   "file": "stl/bed-phone-mount-side.stl",
+   "name": "Phone mount (side)",
+   "grams": 13.0,
+   "print_hours": 0.65,
+   "bbox": [
+    29.0,
+    60.0,
+    28.0
+   ]
+  },
+  {
+   "file": "stl/controller-case.stl",
+   "name": "Controller case",
+   "grams": 46.2,
+   "print_hours": 2.31,
+   "bbox": [
+    90.0,
+    28.0,
+    96.0
+   ]
+  },
+  {
+   "file": "stl/controller-cover.stl",
+   "name": "Controller cover",
+   "grams": 12.5,
+   "print_hours": 0.62,
+   "bbox": [
+    90.0,
+    2.5,
+    96.0
+   ]
+  },
+  {
+   "file": "stl/x-x-z-carriage.stl",
+   "name": "X/Z carriage",
+   "grams": 220.9,
+   "print_hours": 11.04,
+   "bbox": [
+    70.0,
+    70.0,
+    128.0
+   ]
+  },
+  {
+   "file": "stl/z-z-slider-spindle-clamp.stl",
+   "name": "Z slider / spindle clamp",
+   "grams": 61.3,
+   "print_hours": 3.06,
+   "bbox": [
+    60.0,
+    96.5,
+    38.1
+   ]
+  },
+  {
+   "file": "stl/x-z-motor-saddle.stl",
+   "name": "Z motor saddle",
+   "grams": 128.2,
+   "print_hours": 6.41,
+   "bbox": [
+    139.0,
+    147.0,
+    46.0
+   ]
+  },
+  {
+   "file": "stl/x-x-cord-spool.stl",
+   "name": "X cord spool",
+   "grams": 2.1,
+   "print_hours": 0.25,
+   "bbox": [
+    24.0,
+    24.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/x-y-cord-spool.stl",
+   "name": "Y cord spool",
+   "grams": 2.1,
+   "print_hours": 0.25,
+   "bbox": [
+    24.0,
+    24.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/x-tilt-shuttle.stl",
+   "name": "Tilt shuttle",
+   "grams": 4.7,
+   "print_hours": 0.25,
+   "bbox": [
+    34.0,
+    34.0,
+    25.1
+   ]
+  },
+  {
+   "file": "stl/z-spindle-lever-sleeve-dot-band.stl",
+   "name": "Spindle lever sleeve (dot band)",
+   "grams": 13.8,
+   "print_hours": 0.69,
+   "bbox": [
+    79.6,
+    51.1,
+    29.1
+   ]
+  },
+  {
+   "file": "stl/tilt-driver-box.stl",
+   "name": "Tilt driver box",
+   "grams": 41.8,
+   "print_hours": 2.09,
+   "bbox": [
+    70.0,
+    34.0,
+    96.0
+   ]
+  },
+  {
+   "file": "stl/tilt-driver-cover.stl",
+   "name": "Tilt driver cover",
+   "grams": 9.6,
+   "print_hours": 0.48,
+   "bbox": [
+    70.0,
+    2.5,
+    96.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/front-end-plate.stl",
+   "name": "Front end plate",
+   "process": "laser",
+   "params": {
+    "material": "phenolic",
+    "thickness_mm": 10.0
+   },
+   "est": {
+    "cut_length_mm": 726.3,
+    "area_cm2": 110.0,
+    "minutes": 2.5,
+    "material_usd": 3.85
+   },
+   "bbox": [
+    250.0,
+    10.0,
+    46.0
+   ]
+  },
+  {
+   "file": "stl/rear-end-plate.stl",
+   "name": "Rear end plate",
+   "process": "laser",
+   "params": {
+    "material": "phenolic",
+    "thickness_mm": 10.0
+   },
+   "est": {
+    "cut_length_mm": 769.7,
+    "area_cm2": 109.6,
+    "minutes": 2.6,
+    "material_usd": 3.84
+   },
+   "bbox": [
+    250.0,
+    10.0,
+    46.0
+   ]
+  },
+  {
+   "file": "stl/left-base-rail.stl",
+   "name": "Left base rail",
+   "process": "extrusion",
+   "params": {
+    "profile": "2040",
+    "length_mm": 210.0,
+    "tapped_ends": 2
+   },
+   "est": {
+    "length_mm": 210.0,
+    "minutes": 5.0,
+    "material_usd": 2.1
+   },
+   "bbox": [
+    20.0,
+    210.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/right-base-rail.stl",
+   "name": "Right base rail",
+   "process": "extrusion",
+   "params": {
+    "profile": "2040",
+    "length_mm": 210.0,
+    "tapped_ends": 2
+   },
+   "est": {
+    "length_mm": 210.0,
+    "minutes": 5.0,
+    "material_usd": 2.1
+   },
+   "bbox": [
+    20.0,
+    210.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/left-gantry-plate.stl",
+   "name": "Left gantry plate",
+   "process": "laser",
+   "params": {
+    "material": "phenolic",
+    "thickness_mm": 10.0
+   },
+   "est": {
+    "cut_length_mm": 863.2,
+    "area_cm2": 205.6,
+    "minutes": 2.8,
+    "material_usd": 7.2
+   },
+   "bbox": [
+    10.0,
+    119.5,
+    250.0
+   ]
+  },
+  {
+   "file": "stl/right-gantry-plate.stl",
+   "name": "Right gantry plate",
+   "process": "laser",
+   "params": {
+    "material": "phenolic",
+    "thickness_mm": 10.0
+   },
+   "est": {
+    "cut_length_mm": 907.8,
+    "area_cm2": 205.1,
+    "minutes": 2.9,
+    "material_usd": 7.18
+   },
+   "bbox": [
+    10.0,
+    119.5,
+    250.0
+   ]
+  },
+  {
+   "file": "stl/lower-gantry-profile.stl",
+   "name": "Lower gantry profile",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 245.0,
+    "tapped_ends": 2
+   },
+   "est": {
+    "length_mm": 245.0,
+    "minutes": 5.0,
+    "material_usd": 1.47
+   },
+   "bbox": [
+    245.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/upper-gantry-profile.stl",
+   "name": "Upper gantry profile",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 245.0,
+    "tapped_ends": 2
+   },
+   "est": {
+    "length_mm": 245.0,
+    "minutes": 5.0,
+    "material_usd": 1.47
+   },
+   "bbox": [
+    245.0,
+    20.0,
+    20.0
+   ]
+  }
+ ]
+}

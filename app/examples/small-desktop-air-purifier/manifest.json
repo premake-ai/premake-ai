@@ -1,0 +1,264 @@
+{
+  "t": 1793336700.842796,
+  "title": "Small desktop air purifier",
+  "parts": [
+    {
+      "file": "stl/base.stl",
+      "name": "Base",
+      "group": "case",
+      "process": "laser",
+      "color": "#c8a27a",
+      "explode": [
+        0,
+        0,
+        -1
+      ],
+      "bbox": [
+        205.1,
+        205.2,
+        6.3
+      ]
+    },
+    {
+      "file": "stl/filter-locator-ring.stl",
+      "name": "Filter locator ring",
+      "group": "case",
+      "process": "laser",
+      "color": "#c8a27a",
+      "explode": [
+        0,
+        0,
+        -1
+      ],
+      "bbox": [
+        205.1,
+        205.2,
+        6.3
+      ]
+    },
+    {
+      "file": "stl/hepa-filter.stl",
+      "name": "HEPA filter",
+      "group": "component",
+      "process": "bought",
+      "color": "#f2efe6",
+      "explode": [
+        0,
+        0,
+        -1
+      ],
+      "bbox": [
+        193.1,
+        193.2,
+        147.2
+      ]
+    },
+    {
+      "file": "stl/spigot-ring.stl",
+      "name": "Spigot ring",
+      "group": "case",
+      "process": "laser",
+      "color": "#c8a27a",
+      "explode": [
+        0,
+        0,
+        1
+      ],
+      "bbox": [
+        112.1,
+        112.1,
+        6.1
+      ]
+    },
+    {
+      "file": "stl/top-plate.stl",
+      "name": "Top plate",
+      "group": "case",
+      "process": "laser",
+      "color": "#c8a27a",
+      "explode": [
+        0,
+        0,
+        1
+      ],
+      "bbox": [
+        205.1,
+        205.2,
+        6.3
+      ]
+    },
+    {
+      "file": "stl/fan.stl",
+      "name": "120 mm fan",
+      "group": "component",
+      "process": "bought",
+      "color": "#2b2b2b",
+      "explode": [
+        0,
+        0,
+        1
+      ],
+      "bbox": [
+        120,
+        120,
+        25.1
+      ]
+    },
+    {
+      "file": "stl/fan-shroud.stl",
+      "name": "Fan shroud",
+      "group": "case",
+      "process": "print",
+      "color": "#ecebe7",
+      "explode": [
+        0,
+        0,
+        1
+      ],
+      "bbox": [
+        176.3,
+        176.4,
+        27.8
+      ]
+    },
+    {
+      "file": "stl/pwm-speed-controller.stl",
+      "name": "PWM speed controller",
+      "group": "component",
+      "process": "bought",
+      "color": "#1f6f3f",
+      "explode": [
+        -0.001,
+        -0.746,
+        0.666
+      ],
+      "bbox": [
+        32,
+        24.8,
+        20
+      ]
+    },
+    {
+      "file": "stl/speed-knob.stl",
+      "name": "Speed knob",
+      "group": "component",
+      "process": "bought",
+      "color": "#3a3a3a",
+      "explode": [
+        0,
+        -0.779,
+        0.627
+      ],
+      "bbox": [
+        14,
+        12,
+        14
+      ]
+    },
+    {
+      "file": "stl/rubber-feet.stl",
+      "name": "Rubber feet",
+      "group": "component",
+      "process": "bought",
+      "color": "#222222",
+      "explode": [
+        -0.001,
+        0,
+        -1
+      ],
+      "bbox": [
+        131.5,
+        131.5,
+        3
+      ]
+    },
+    {
+      "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1.stl",
+      "name": "DC barrel jack, panel mount 5.5×2.1",
+      "group": "component",
+      "process": "bought",
+      "color": "#c9cdd2",
+      "explode": [
+        -0.001,
+        0.728,
+        0.685
+      ],
+      "bbox": [
+        16.2,
+        16.6,
+        14
+      ],
+      "subparts": [
+        {
+          "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__0.stl",
+          "color": "#c9cdd2",
+          "finish": "metal"
+        },
+        {
+          "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__1.stl",
+          "color": "#b9bec4",
+          "finish": "metal"
+        },
+        {
+          "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__2.stl",
+          "color": "#1c1d20",
+          "finish": "plastic"
+        },
+        {
+          "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__3.stl",
+          "color": "#e0e2e4",
+          "finish": "metal"
+        },
+        {
+          "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__4.stl",
+          "color": "#c4c7cb",
+          "finish": "metal"
+        }
+      ],
+      "lib": {
+        "key": "dc_jack_panel",
+        "qty": 1,
+        "name": "DC barrel jack, panel mount 5.5×2.1",
+        "unit_cost_usd": 0.8,
+        "mass_g": 6
+      }
+    },
+    {
+      "file": "stl/m4-40-countersunk-screw-4.stl",
+      "name": "M4×40 countersunk screw ×4",
+      "group": "component",
+      "process": "bought",
+      "color": "#2b2d31",
+      "explode": [
+        -0.001,
+        0,
+        1
+      ],
+      "bbox": [
+        113,
+        113,
+        40
+      ],
+      "subparts": [
+        {
+          "file": "stl/m4-40-countersunk-screw-4__0.stl",
+          "color": "#2b2d31",
+          "finish": "metal"
+        }
+      ],
+      "lib": {
+        "key": "csk",
+        "qty": 4,
+        "name": "M4×40 countersunk screw",
+        "unit_cost_usd": 0.168,
+        "mass_g": 4.1
+      }
+    }
+  ],
+  "motion": {
+    "file": "motion.json",
+    "duration": 6,
+    "frames": 90,
+    "parts": 1
+  }
+}

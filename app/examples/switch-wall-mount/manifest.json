@@ -1,0 +1,108 @@
+{
+ "t": 1793336879.985049,
+ "title": "Wall mount for a Nintendo Switch",
+ "parts": [
+  {
+   "file": "stl/console-cradle.stl",
+   "name": "Console Cradle",
+   "group": "case",
+   "process": "print",
+   "color": "#e8e8e8",
+   "explode": [
+    0.0,
+    0.213,
+    -0.977
+   ],
+   "bbox": [
+    185.0,
+    22.5,
+    45.0
+   ]
+  },
+  {
+   "file": "stl/left-joy-con-holder.stl",
+   "name": "Left Joy-Con Holder",
+   "group": "case",
+   "process": "print",
+   "color": "#e8e8e8",
+   "explode": [
+    -0.977,
+    0.0,
+    -0.211
+   ],
+   "bbox": [
+    50.0,
+    35.8,
+    50.0
+   ]
+  },
+  {
+   "file": "stl/right-joy-con-holder.stl",
+   "name": "Right Joy-Con Holder",
+   "group": "case",
+   "process": "print",
+   "color": "#e8e8e8",
+   "explode": [
+    0.977,
+    0.0,
+    -0.211
+   ],
+   "bbox": [
+    50.0,
+    35.8,
+    50.0
+   ]
+  },
+  {
+   "file": "stl/switch-console-yours.stl",
+   "name": "Switch console (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#303030",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    176.0,
+    13.9,
+    102.0
+   ]
+  },
+  {
+   "file": "stl/left-joy-con-yours.stl",
+   "name": "Left Joy-Con (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#00a8d8",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    35.9,
+    28.4,
+    102.0
+   ]
+  },
+  {
+   "file": "stl/right-joy-con-yours.stl",
+   "name": "Right Joy-Con (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#e8403a",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    35.9,
+    28.4,
+    102.0
+   ]
+  }
+ ]
+}

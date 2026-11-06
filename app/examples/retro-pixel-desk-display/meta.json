@@ -1,0 +1,13 @@
+{
+ "title": "Retro Pixel Desk Display",
+ "description": "A 64x32 RGB LED pixel display for your desk, in a cream printed case with a smoked acrylic front, running open-source Tronbyt apps for the time, weather, scores, stocks, news and your calendar.",
+ "creator": "Premake",
+ "tags": [
+  "led matrix",
+  "smart display",
+  "ESP32",
+  "desk"
+ ],
+ "created": "2026-10-30T20:32:40.774Z",
+ "demo": true
+}

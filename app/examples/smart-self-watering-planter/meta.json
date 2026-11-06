@@ -1,0 +1,8 @@
+{
+ "title": "Smart Self-Watering Planter",
+ "description": "A cordless smart planter that tracks soil moisture, light, temperature and humidity and waters the plant itself from a built-in reservoir, run by an ESP32 on a rechargeable 18650 cell.",
+ "creator": "Premake",
+ "tags": [],
+ "created": "2026-10-30T20:21:40.222Z",
+ "demo": true
+}

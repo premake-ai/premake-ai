@@ -1,0 +1,12 @@
+{
+  "living_room": { "name": "Living room", "rssi_min": -70, "rssi_max": -30, "notes": "Mount it high in a corner so it sees the whole room. Keep it out of direct sun through the window, which washes out the picture." },
+  "kitchen": { "name": "Kitchen", "rssi_min": -72, "rssi_max": -30, "notes": "Keep it away from the hob and kettle: steam and grease fog the lens. Microwaves can disturb Wi-Fi while they run." },
+  "bedroom": { "name": "Bedroom", "rssi_min": -72, "rssi_max": -30, "notes": "Turn the flash LED off at night so it doesn't light up the room." },
+  "nursery": { "name": "Nursery", "rssi_min": -67, "rssi_max": -30, "notes": "Mount it well out of reach of the cot, with the cable clipped along the wall. A strong signal keeps the live view smooth." },
+  "front_door": { "name": "Front door", "rssi_min": -75, "rssi_max": -30, "notes": "Point it at the door from inside, angled slightly down. Glass reflects at night, so press the lens close to a window or avoid one." },
+  "hallway": { "name": "Hallway", "rssi_min": -75, "rssi_max": -30, "notes": "Aim it along the hall towards the doors so anyone passing is face-on." },
+  "office": { "name": "Home office", "rssi_min": -70, "rssi_max": -30, "notes": "Keep it a little away from the router's metal case and desk monitors for a cleaner signal." },
+  "pet_corner": { "name": "Pet corner", "rssi_min": -67, "rssi_max": -30, "notes": "Place it at about head height to your pet's bed or bowl, and tuck the cable away from chewing." },
+  "garage": { "name": "Garage", "rssi_min": -78, "rssi_max": -30, "notes": "Garages are often at the edge of Wi-Fi range. If the signal is weak, a cheap Wi-Fi extender nearby helps a lot." },
+  "porch_window": { "name": "Porch window", "rssi_min": -78, "rssi_max": -30, "notes": "This camera isn't weatherproof: keep it indoors, looking out through the glass with the lens right against it." }
+}

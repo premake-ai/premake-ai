@@ -1,0 +1,268 @@
+{
+ "parts": [
+  {
+   "name": "LED ring 24",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 6.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "WS2812B 24 LED ring, 66 mm OD, 5 V. Search: \"WS2812B ring 24 LED 5V\""
+  },
+  {
+   "name": "Encoder EC11",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.2,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "EC11 rotary encoder with push switch, 6 mm knurled shaft, 15 mm long, M7 nut. Search: \"EC11 rotary encoder push switch 15mm\""
+  },
+  {
+   "name": "M5 T-nut for 2020",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.15,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Drop-in M5 T-nuts for 2020 slot 6. Search: \"2020 M5 drop in T nut\""
+  },
+  {
+   "name": "Slot cover strip",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.9,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "2020 slot cover strip, cut 236 mm; hides the lamp wires in the stem's back slot. Search: \"2020 slot cover strip 6mm\""
+  },
+  {
+   "name": "Rubber foot",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Self-adhesive rubber bumpers 12.7 x 3.5 mm. Search: \"rubber bumper feet 12.7mm\""
+  },
+  {
+   "name": "PTC fuse 2A",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.2,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Resettable polyfuse, 2 A hold, radial. Search: \"PTC resettable fuse 2A radial\""
+  },
+  {
+   "name": "330 ohm resistor",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.02,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "In the LED data line. Search: \"resistor assortment kit\""
+  },
+  {
+   "name": "1000uF capacitor",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.2,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "1000 uF 10 V electrolytic, soldered across the ring's 5V/GND. Search: \"1000uF 10V electrolytic capacitor\""
+  },
+  {
+   "name": "Silicone hook-up wire 26 AWG",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.6,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "About 1.2 m of 3 colours (red, black, green) plus heat-shrink. Search: \"26 AWG silicone wire kit\""
+  },
+  {
+   "name": "Double-sided foam tape",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.2,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Holds the ESP32 board, USB-C breakout and LED ring. Search: \"3M double sided foam tape\""
+  },
+  {
+   "name": "USB-C charger 20 W + cable",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 12.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Any 5 V / 3 A USB-C charger and C-to-C cable works; skip if you have one. Search: \"20W USB C charger with cable\""
+  },
+  {
+   "name": "ESP32-C3 SuperMini",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=ESP32-C3+SuperMini&rh=p_85%3A2470955011",
+   "notes": "search: ESP32-C3 SuperMini",
+   "auto": "lib"
+  },
+  {
+   "name": "USB-C power breakout",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.9,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=USB-C+female+breakout+board&rh=p_85%3A2470955011",
+   "notes": "search: USB-C female breakout board",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d710 self-tapping screw for plastic",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.059,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+x+10mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M3 x 10mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  },
+  {
+   "name": "M5\u00d710 button head screw",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.176,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M5x10+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M5x10 button head screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M4\u00d730 socket head screw",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.156,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M4x30+socket+head+cap+screw&rh=p_85%3A2470955011",
+   "notes": "search: M4x30 socket head cap screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M4 nylock nut",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M4+nylon+lock+nut&rh=p_85%3A2470955011",
+   "notes": "search: M4 nylon lock nut",
+   "auto": "lib"
+  },
+  {
+   "name": "M2.5\u00d78 self-tapping screw for plastic",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.052,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M2.5+x+8mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M2.5 x 8mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 60,
+ "kit_ok": true,
+ "needs_soldering": true,
+ "soldering_reason": "The LED ring, encoder, fuse and USB-C breakout are wired to the ESP32 with short soldered leads to fit inside the slim base and head.",
+ "printed": [
+  {
+   "file": "stl/base.stl",
+   "name": "Base",
+   "grams": 36.9,
+   "print_hours": 1.85,
+   "bbox": [
+    140.4,
+    140.4,
+    32.1
+   ]
+  },
+  {
+   "file": "stl/arm.stl",
+   "name": "Arm",
+   "grams": 29.0,
+   "print_hours": 1.45,
+   "bbox": [
+    28.0,
+    142.0,
+    39.0
+   ]
+  },
+  {
+   "file": "stl/head.stl",
+   "name": "Head",
+   "grams": 21.7,
+   "print_hours": 1.09,
+   "bbox": [
+    96.1,
+    96.1,
+    45.1
+   ]
+  },
+  {
+   "file": "stl/knob.stl",
+   "name": "Knob",
+   "grams": 4.9,
+   "print_hours": 0.25,
+   "bbox": [
+    26.0,
+    26.0,
+    14.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/weight-plate.stl",
+   "name": "Weight plate",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 140.4,
+    "bends": 0,
+    "minutes": 5.4,
+    "material_usd": 0.63
+   },
+   "bbox": [
+    134.1,
+    134.1,
+    3.2
+   ]
+  },
+  {
+   "file": "stl/stem.stl",
+   "name": "Stem",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 300.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 300.0,
+    "minutes": 5.0,
+    "material_usd": 1.8
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    300.0
+   ]
+  },
+  {
+   "file": "stl/diffuser.stl",
+   "name": "Diffuser",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 313.5,
+    "area_cm2": 65.4,
+    "minutes": 1.3,
+    "material_usd": 0.69
+   },
+   "bbox": [
+    91.5,
+    91.5,
+    3.1
+   ]
+  }
+ ]
+}

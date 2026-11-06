@@ -1,0 +1,63 @@
+{
+ "parts": [],
+ "assembly_minutes": 0,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/base-shell.stl",
+   "name": "Base shell",
+   "grams": 859.5,
+   "print_hours": 42.98,
+   "bbox": [
+    96.1,
+    96.1,
+    170.1
+   ]
+  },
+  {
+   "file": "stl/leg-1.stl",
+   "name": "Leg 1",
+   "grams": 17.9,
+   "print_hours": 0.89,
+   "bbox": [
+    20.0,
+    160.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/leg-2.stl",
+   "name": "Leg 2",
+   "grams": 17.9,
+   "print_hours": 0.89,
+   "bbox": [
+    148.6,
+    97.3,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/leg-3.stl",
+   "name": "Leg 3",
+   "grams": 17.9,
+   "print_hours": 0.89,
+   "bbox": [
+    148.6,
+    97.3,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/head-shell.stl",
+   "name": "Head shell",
+   "grams": 419.1,
+   "print_hours": 20.96,
+   "bbox": [
+    150.0,
+    50.0,
+    80.0
+   ]
+  }
+ ],
+ "fabricated": []
+}

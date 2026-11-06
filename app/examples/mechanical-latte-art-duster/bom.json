@@ -1,0 +1,204 @@
+{
+ "parts": [
+  {
+   "name": "Stainless sieve mesh (40 mesh)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 12.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B074XFJWWV",
+   "notes": "Inoxia 40 mesh 304L woven mesh, 0.41 mm aperture, 0.224 mm wire. Cut one 52 mm disc with scissors using the Mesh clamp ring as a template; one sheet makes many spares."
+  },
+  {
+   "name": "Button spring",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 10.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B0BL7RYQ27",
+   "notes": "Stainless compression spring assortment (200 pcs, 40 sizes). Button: ~10-11 mm OD x 10-12 mm long. The same kit supplies the Sieve return spring."
+  },
+  {
+   "name": "Sieve return spring",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "From the same stainless spring assortment as the Button spring: ~6 mm OD x 15-18 mm long."
+  },
+  {
+   "name": "Silicone lens cap (stretch lid)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 9.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Food-grade silicone stretch lid set (search 'silicone stretch lids 6 sizes'). Use the ~4 in size over the 102 mm rim ring so no powder escapes when carried."
+  }
+ ],
+ "assembly_minutes": 15,
+ "kit_ok": true,
+ "needs_soldering": false,
+ "printed": [
+  {
+   "file": "stl/camera-body.stl",
+   "name": "Camera body",
+   "grams": 56.9,
+   "print_hours": 2.85,
+   "bbox": [
+    106.0,
+    98.1,
+    57.1
+   ]
+  },
+  {
+   "file": "stl/cup-rim-ring.stl",
+   "name": "Cup rim ring",
+   "grams": 29.7,
+   "print_hours": 1.49,
+   "bbox": [
+    102.1,
+    102.1,
+    15.8
+   ]
+  },
+  {
+   "file": "stl/basket.stl",
+   "name": "Sieve basket",
+   "grams": 7.2,
+   "print_hours": 0.36,
+   "bbox": [
+    73.1,
+    56.2,
+    24.7
+   ]
+  },
+  {
+   "file": "stl/clamp.stl",
+   "name": "Mesh clamp ring",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    52.2,
+    52.2,
+    2.6
+   ]
+  },
+  {
+   "file": "stl/hopper-funnel.stl",
+   "name": "Hopper funnel",
+   "grams": 7.8,
+   "print_hours": 0.39,
+   "bbox": [
+    67.4,
+    67.5,
+    21.3
+   ]
+  },
+  {
+   "file": "stl/hopper-lid.stl",
+   "name": "Hopper lid",
+   "grams": 6.8,
+   "print_hours": 0.34,
+   "bbox": [
+    72.0,
+    72.1,
+    11.0
+   ]
+  },
+  {
+   "file": "stl/plunger.stl",
+   "name": "Shutter button",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    16.0,
+    16.0,
+    36.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/stencil-heart.stl",
+   "name": "Stencil: heart",
+   "process": "sheet",
+   "params": {
+    "material": "stainless 304",
+    "thickness_mm": 0.8,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 45.3,
+    "bends": 0,
+    "minutes": 4.5,
+    "material_usd": 0.18
+   },
+   "bbox": [
+    60.0,
+    88.0,
+    0.8
+   ]
+  },
+  {
+   "file": "stl/stencil-star.stl",
+   "name": "Stencil: star",
+   "process": "sheet",
+   "params": {
+    "material": "stainless 304",
+    "thickness_mm": 0.8,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 47.4,
+    "bends": 0,
+    "minutes": 4.5,
+    "material_usd": 0.19
+   },
+   "bbox": [
+    88.0,
+    0.8,
+    60.0
+   ]
+  },
+  {
+   "file": "stl/stencil-smile.stl",
+   "name": "Stencil: smile",
+   "process": "sheet",
+   "params": {
+    "material": "stainless 304",
+    "thickness_mm": 0.8,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 50.5,
+    "bends": 0,
+    "minutes": 4.5,
+    "material_usd": 0.2
+   },
+   "bbox": [
+    88.0,
+    0.8,
+    60.0
+   ]
+  },
+  {
+   "file": "stl/stencil-snowflake.stl",
+   "name": "Stencil: snowflake",
+   "process": "sheet",
+   "params": {
+    "material": "stainless 304",
+    "thickness_mm": 0.8,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 49.5,
+    "bends": 0,
+    "minutes": 4.5,
+    "material_usd": 0.2
+   },
+   "bbox": [
+    88.0,
+    0.8,
+    60.0
+   ]
+  }
+ ]
+}

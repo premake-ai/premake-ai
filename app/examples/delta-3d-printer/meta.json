@@ -1,0 +1,8 @@
+{
+ "title": "Delta 3D Printer",
+ "description": "A delta 3D printer about 600 mm tall: three towers carry carriages, and six carbon arms with magnetic ball joints hold the hotend over a 220 mm round heated bed.",
+ "creator": "Premake",
+ "tags": [],
+ "created": "2026-10-29T19:34:27.516Z",
+ "demo": true
+}

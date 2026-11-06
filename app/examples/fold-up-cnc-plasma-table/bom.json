@@ -1,0 +1,1569 @@
+{
+ "parts": [
+  {
+   "name": "Steel slats 1/8 x 1-1/2 x 48 in (25)",
+   "qty_per_unit": 25,
+   "unit_cost_usd": 11.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 1/8 x 1-1/2 x 48 inch hot rolled steel flat bar. Sacrificial: replace as they wear. A local steel yard sells 20 ft bars much cheaper (cut to 48 in)."
+  },
+  {
+   "name": "Y V-wheels (8)",
+   "qty_per_unit": 12,
+   "unit_cost_usd": 1.6,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: V-slot delrin wheel kit with eccentric spacer M5. 8 for Y, 4 for X (X V-wheels)"
+  },
+  {
+   "name": "Z axis slide, 100 mm stroke",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 36.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: Z axis linear slide 100mm stroke T8 lead screw NEMA17 (no motor). Firmware assumes 8 mm lead"
+  },
+  {
+   "name": "GT2 belt 6 mm steel-core, 5 m",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 12.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: GT2 belt 6mm steel core 5 meter. Y belts 2 x 1.5 m, X belt 1.55 m"
+  },
+  {
+   "name": "Roller-lever microswitch KW12-3 (limits + float)",
+   "qty_per_unit": 5,
+   "unit_cost_usd": 0.8,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: KW12-3 roller lever micro switch. Limit switch X, Y1, Y2, Z and Float switch, wired NC to GND"
+  },
+  {
+   "name": "Cable drag chain 15 x 30 mm, 1 m",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 9.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: cable drag chain 15x30mm 1m. Y drag chain and X drag chain"
+  },
+  {
+   "name": "Gas strut 28 in, 90 lb (400 N)",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 16.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 28 inch 90 lb gas strut ball stud. ~20 in compressed, 8 in stroke"
+  },
+  {
+   "name": "Hinge bolts M12 x 60 + nylock + spacer",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 2.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: M12 x 60 hex bolt nylon lock nut zinc; spacer = 34 mm of 1/2 in steel pipe"
+  },
+  {
+   "name": "Leg pivot bolts M10 x 60 + nylock",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: M10 x 60 hex bolt nylock"
+  },
+  {
+   "name": "Quick-release pins 3/8 in (bed + leg locks)",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 3/8 inch quick release ball lock pin with lanyard. 2 lock the bed open or folded, 2 lock the legs down"
+  },
+  {
+   "name": "Levelling feet M10 + 1.5 in tube inserts",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 3.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 1.5 inch square tube threaded insert M10 levelling foot"
+  },
+  {
+   "name": "Gantry lock knobs M5 + T-nuts",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: M5 star knob 20mm thread. Clamp the gantry to the rails before folding"
+  },
+  {
+   "name": "M8 x 50 bolts + nylocks (frame)",
+   "qty_per_unit": 40,
+   "unit_cost_usd": 0.35,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: M8 x 50 hex bolt nylock nut zinc. Through-bolts every bracket and gusset (not modelled)"
+  },
+  {
+   "name": "M5 x 10 button screws + drop-in T-nuts",
+   "qty_per_unit": 40,
+   "unit_cost_usd": 0.2,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: M5 drop in T-nut button head kit. Rails to tubes, belt anchors, switches (not modelled)"
+  },
+  {
+   "name": "ESP32 screw-terminal breakout",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 6.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: ESP32 38 pin screw terminal breakout board"
+  },
+  {
+   "name": "Stepstick driver carrier board (screw terminals)",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 2.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: stepstick stepper driver expansion board screw terminal. Driver carrier X, Y1, Y2, Z; jumper MS1+MS2 high for 1/16 step"
+  },
+  {
+   "name": "E-stop station (22 mm, NC)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 12.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: emergency stop button box 22mm NC. Breaks the 24 V feed to everything"
+  },
+  {
+   "name": "Inline fuse holder (5 A)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: inline blade fuse holder 18 AWG with 5A fuse"
+  },
+  {
+   "name": "24 V 5 A power adapter (5.5 x 2.1)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 20.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 24V 5A power supply adapter 5.5x2.1 UL listed"
+  },
+  {
+   "name": "24V bus bar",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 6 position barrier terminal block with jumper strip"
+  },
+  {
+   "name": "GND bus bar",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 6 position barrier terminal block with jumper strip"
+  },
+  {
+   "name": "Stepper cable 2 m, 4-pin shielded",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: shielded 4 conductor 22 AWG stepper motor cable. Shield grounded at the control box only"
+  },
+  {
+   "name": "Plasma CNC start cable (to your cutter)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 20.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Must match your cutter's CNC port (e.g. 14-pin CPC); uses the start contacts only. Cutter must be blowback / non-HF start"
+  },
+  {
+   "name": "Hookup wire + ferrules kit 22/18 AWG",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 12.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 22 AWG 18 AWG silicone wire kit ferrule crimp kit"
+  },
+  {
+   "name": "NEMA17 stepper motor 48 mm",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 13.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=NEMA17+stepper+motor+48mm&rh=p_85%3A2470955011",
+   "notes": "search: NEMA17 stepper motor 48mm",
+   "auto": "lib"
+  },
+  {
+   "name": "GT2 pulley 20T 5 mm bore",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=GT2+20T+pulley+5mm+bore&rh=p_85%3A2470955011",
+   "notes": "search: GT2 20T pulley 5mm bore",
+   "auto": "lib"
+  },
+  {
+   "name": "625-2RS bearing",
+   "qty_per_unit": 6,
+   "unit_cost_usd": 0.8,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=625ZZ+bearing&rh=p_85%3A2470955011",
+   "notes": "search: 625ZZ bearing",
+   "auto": "lib"
+  },
+  {
+   "name": "NEMA17 stepper motor 40 mm",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 11.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=NEMA17+stepper+motor+40mm&rh=p_85%3A2470955011",
+   "notes": "search: NEMA17 stepper motor 40mm",
+   "auto": "lib"
+  },
+  {
+   "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 7.5,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=ESP32+DevKitC+WROOM-32+38+pin&rh=p_85%3A2470955011",
+   "notes": "search: ESP32 DevKitC WROOM-32 38 pin",
+   "auto": "lib"
+  },
+  {
+   "name": "TMC2209 stepper driver",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=TMC2209+stepstick&rh=p_85%3A2470955011",
+   "notes": "search: TMC2209 stepstick",
+   "auto": "lib"
+  },
+  {
+   "name": "LM2596 buck converter",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=LM2596+buck+converter+module&rh=p_85%3A2470955011",
+   "notes": "search: LM2596 buck converter module",
+   "auto": "lib"
+  },
+  {
+   "name": "5V relay module, 1 channel",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.5,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=5V+relay+module+1+channel&rh=p_85%3A2470955011",
+   "notes": "search: 5V relay module 1 channel",
+   "auto": "lib"
+  },
+  {
+   "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.8,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=DC-022+panel+mount+barrel+jack+5.5x2.1&rh=p_85%3A2470955011",
+   "notes": "search: DC-022 panel mount barrel jack 5.5x2.1",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 420,
+ "kit_ok": true,
+ "needs_soldering": false,
+ "printed": [
+  {
+   "file": "stl/x-belt-clamp-left.stl",
+   "name": "X belt clamp left",
+   "grams": 16.2,
+   "print_hours": 0.81,
+   "bbox": [
+    22.0,
+    36.0,
+    30.0
+   ]
+  },
+  {
+   "file": "stl/x-belt-clamp-right.stl",
+   "name": "X belt clamp right",
+   "grams": 16.2,
+   "print_hours": 0.81,
+   "bbox": [
+    22.0,
+    36.0,
+    30.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/stand-runner-left.stl",
+   "name": "Stand runner left",
+   "process": "extrusion",
+   "params": {
+    "profile": "steel square tube 1.5in 14ga",
+    "length_mm": 700.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 700.0,
+    "minutes": 5.0,
+    "material_usd": 5.6
+   },
+   "bbox": [
+    40.0,
+    700.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/stand-post-left.stl",
+   "name": "Stand post left",
+   "process": "extrusion",
+   "params": {
+    "profile": "steel square tube 1.5in 14ga",
+    "length_mm": 810.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 810.0,
+    "minutes": 5.0,
+    "material_usd": 6.48
+   },
+   "bbox": [
+    40.0,
+    40.0,
+    810.0
+   ]
+  },
+  {
+   "file": "stl/hinge-plate-left.stl",
+   "name": "Hinge plate left",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 93.9,
+    "bends": 0,
+    "minutes": 4.9,
+    "material_usd": 0.42
+   },
+   "bbox": [
+    3.0,
+    130.0,
+    75.0
+   ]
+  },
+  {
+   "file": "stl/post-gusset-left.stl",
+   "name": "Post gusset left",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 72.0,
+    "bends": 0,
+    "minutes": 4.7,
+    "material_usd": 0.32
+   },
+   "bbox": [
+    3.0,
+    120.0,
+    120.0
+   ]
+  },
+  {
+   "file": "stl/crossbar-gusset-left.stl",
+   "name": "Crossbar gusset left",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 72.0,
+    "bends": 0,
+    "minutes": 4.7,
+    "material_usd": 0.32
+   },
+   "bbox": [
+    120.0,
+    3.0,
+    120.0
+   ]
+  },
+  {
+   "file": "stl/strut-bracket-stand-left.stl",
+   "name": "Strut bracket, stand left",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 32.3,
+    "bends": 0,
+    "minutes": 4.3,
+    "material_usd": 0.15
+   },
+   "bbox": [
+    65.0,
+    3.0,
+    50.0
+   ]
+  },
+  {
+   "file": "stl/stand-runner-right.stl",
+   "name": "Stand runner right",
+   "process": "extrusion",
+   "params": {
+    "profile": "steel square tube 1.5in 14ga",
+    "length_mm": 700.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 700.0,
+    "minutes": 5.0,
+    "material_usd": 5.6
+   },
+   "bbox": [
+    40.0,
+    700.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/stand-post-right.stl",
+   "name": "Stand post right",
+   "process": "extrusion",
+   "params": {
+    "profile": "steel square tube 1.5in 14ga",
+    "length_mm": 810.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 810.0,
+    "minutes": 5.0,
+    "material_usd": 6.48
+   },
+   "bbox": [
+    40.0,
+    40.0,
+    810.0
+   ]
+  },
+  {
+   "file": "stl/hinge-plate-right.stl",
+   "name": "Hinge plate right",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 93.9,
+    "bends": 0,
+    "minutes": 4.9,
+    "material_usd": 0.42
+   },
+   "bbox": [
+    3.0,
+    130.0,
+    75.0
+   ]
+  },
+  {
+   "file": "stl/post-gusset-right.stl",
+   "name": "Post gusset right",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 72.0,
+    "bends": 0,
+    "minutes": 4.7,
+    "material_usd": 0.32
+   },
+   "bbox": [
+    3.0,
+    120.0,
+    120.0
+   ]
+  },
+  {
+   "file": "stl/crossbar-gusset-right.stl",
+   "name": "Crossbar gusset right",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 72.0,
+    "bends": 0,
+    "minutes": 4.7,
+    "material_usd": 0.32
+   },
+   "bbox": [
+    120.0,
+    3.0,
+    120.0
+   ]
+  },
+  {
+   "file": "stl/strut-bracket-stand-right.stl",
+   "name": "Strut bracket, stand right",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 32.3,
+    "bends": 0,
+    "minutes": 4.3,
+    "material_usd": 0.15
+   },
+   "bbox": [
+    65.0,
+    3.0,
+    50.0
+   ]
+  },
+  {
+   "file": "stl/stand-crossbar.stl",
+   "name": "Stand crossbar",
+   "process": "extrusion",
+   "params": {
+    "profile": "steel square tube 1.5in 14ga",
+    "length_mm": 1480.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1480.0,
+    "minutes": 5.0,
+    "material_usd": 11.84
+   },
+   "bbox": [
+    1480.0,
+    40.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/stand-rear-foot.stl",
+   "name": "Stand rear foot",
+   "process": "extrusion",
+   "params": {
+    "profile": "steel square tube 1.5in 14ga",
+    "length_mm": 1480.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1480.0,
+    "minutes": 5.0,
+    "material_usd": 11.84
+   },
+   "bbox": [
+    1480.0,
+    40.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/bed-side-tube-left.stl",
+   "name": "Bed side tube left",
+   "process": "extrusion",
+   "params": {
+    "profile": "steel square tube 1.5in 14ga",
+    "length_mm": 1500.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1500.0,
+    "minutes": 5.0,
+    "material_usd": 12.0
+   },
+   "bbox": [
+    40.0,
+    1500.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/hinge-lug-left.stl",
+   "name": "Hinge lug left",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 25.0,
+    "bends": 0,
+    "minutes": 4.2,
+    "material_usd": 0.11
+   },
+   "bbox": [
+    3.0,
+    55.0,
+    50.0
+   ]
+  },
+  {
+   "file": "stl/bed-side-tube-right.stl",
+   "name": "Bed side tube right",
+   "process": "extrusion",
+   "params": {
+    "profile": "steel square tube 1.5in 14ga",
+    "length_mm": 1500.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1500.0,
+    "minutes": 5.0,
+    "material_usd": 12.0
+   },
+   "bbox": [
+    40.0,
+    1500.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/hinge-lug-right.stl",
+   "name": "Hinge lug right",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 25.0,
+    "bends": 0,
+    "minutes": 4.2,
+    "material_usd": 0.11
+   },
+   "bbox": [
+    3.0,
+    55.0,
+    50.0
+   ]
+  },
+  {
+   "file": "stl/bed-cross-tube-front.stl",
+   "name": "Bed cross tube front",
+   "process": "extrusion",
+   "params": {
+    "profile": "steel square tube 1.5in 14ga",
+    "length_mm": 1320.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1320.0,
+    "minutes": 5.0,
+    "material_usd": 10.56
+   },
+   "bbox": [
+    1320.0,
+    40.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/bed-cross-tube-middle.stl",
+   "name": "Bed cross tube middle",
+   "process": "extrusion",
+   "params": {
+    "profile": "steel square tube 1.5in 14ga",
+    "length_mm": 1320.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1320.0,
+    "minutes": 5.0,
+    "material_usd": 10.56
+   },
+   "bbox": [
+    1320.0,
+    40.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/bed-cross-tube-rear.stl",
+   "name": "Bed cross tube rear",
+   "process": "extrusion",
+   "params": {
+    "profile": "steel square tube 1.5in 14ga",
+    "length_mm": 1320.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1320.0,
+    "minutes": 5.0,
+    "material_usd": 10.56
+   },
+   "bbox": [
+    1320.0,
+    40.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/frame-corner-bracket-1.stl",
+   "name": "Frame corner bracket 1",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 1
+   },
+   "est": {
+    "area_cm2": 56.5,
+    "bends": 1,
+    "minutes": 6.1,
+    "material_usd": 0.25
+   },
+   "bbox": [
+    80.0,
+    80.0,
+    36.0
+   ]
+  },
+  {
+   "file": "stl/frame-corner-bracket-2.stl",
+   "name": "Frame corner bracket 2",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 1
+   },
+   "est": {
+    "area_cm2": 56.5,
+    "bends": 1,
+    "minutes": 6.1,
+    "material_usd": 0.25
+   },
+   "bbox": [
+    80.0,
+    80.0,
+    36.0
+   ]
+  },
+  {
+   "file": "stl/frame-corner-bracket-3.stl",
+   "name": "Frame corner bracket 3",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 1
+   },
+   "est": {
+    "area_cm2": 56.5,
+    "bends": 1,
+    "minutes": 6.1,
+    "material_usd": 0.25
+   },
+   "bbox": [
+    80.0,
+    80.0,
+    36.0
+   ]
+  },
+  {
+   "file": "stl/frame-corner-bracket-4.stl",
+   "name": "Frame corner bracket 4",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 1
+   },
+   "est": {
+    "area_cm2": 56.5,
+    "bends": 1,
+    "minutes": 6.1,
+    "material_usd": 0.25
+   },
+   "bbox": [
+    80.0,
+    80.0,
+    36.0
+   ]
+  },
+  {
+   "file": "stl/frame-corner-bracket-5.stl",
+   "name": "Frame corner bracket 5",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 1
+   },
+   "est": {
+    "area_cm2": 56.5,
+    "bends": 1,
+    "minutes": 6.1,
+    "material_usd": 0.25
+   },
+   "bbox": [
+    80.0,
+    80.0,
+    36.0
+   ]
+  },
+  {
+   "file": "stl/frame-corner-bracket-6.stl",
+   "name": "Frame corner bracket 6",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 1
+   },
+   "est": {
+    "area_cm2": 56.5,
+    "bends": 1,
+    "minutes": 6.1,
+    "material_usd": 0.25
+   },
+   "bbox": [
+    80.0,
+    80.0,
+    36.0
+   ]
+  },
+  {
+   "file": "stl/slat-comb-front-1.stl",
+   "name": "Slat comb front 1",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 1
+   },
+   "est": {
+    "area_cm2": 532.5,
+    "bends": 1,
+    "minutes": 10.8,
+    "material_usd": 2.4
+   },
+   "bbox": [
+    416.0,
+    72.5,
+    62.0
+   ]
+  },
+  {
+   "file": "stl/slat-comb-front-2.stl",
+   "name": "Slat comb front 2",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 1
+   },
+   "est": {
+    "area_cm2": 541.2,
+    "bends": 1,
+    "minutes": 10.9,
+    "material_usd": 2.44
+   },
+   "bbox": [
+    424.0,
+    72.5,
+    62.0
+   ]
+  },
+  {
+   "file": "stl/slat-comb-front-3.stl",
+   "name": "Slat comb front 3",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 1
+   },
+   "est": {
+    "area_cm2": 532.5,
+    "bends": 1,
+    "minutes": 10.8,
+    "material_usd": 2.4
+   },
+   "bbox": [
+    416.0,
+    72.5,
+    62.0
+   ]
+  },
+  {
+   "file": "stl/slat-comb-rear-1.stl",
+   "name": "Slat comb rear 1",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 1
+   },
+   "est": {
+    "area_cm2": 532.5,
+    "bends": 1,
+    "minutes": 10.8,
+    "material_usd": 2.4
+   },
+   "bbox": [
+    416.0,
+    72.5,
+    62.0
+   ]
+  },
+  {
+   "file": "stl/slat-comb-rear-2.stl",
+   "name": "Slat comb rear 2",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 1
+   },
+   "est": {
+    "area_cm2": 541.2,
+    "bends": 1,
+    "minutes": 10.9,
+    "material_usd": 2.44
+   },
+   "bbox": [
+    424.0,
+    72.5,
+    62.0
+   ]
+  },
+  {
+   "file": "stl/slat-comb-rear-3.stl",
+   "name": "Slat comb rear 3",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 1
+   },
+   "est": {
+    "area_cm2": 532.5,
+    "bends": 1,
+    "minutes": 10.8,
+    "material_usd": 2.4
+   },
+   "bbox": [
+    416.0,
+    72.5,
+    62.0
+   ]
+  },
+  {
+   "file": "stl/y-rail-left-2040-v-slot.stl",
+   "name": "Y rail left (2040 V-slot)",
+   "process": "extrusion",
+   "params": {
+    "profile": "2040",
+    "length_mm": 1500.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1500.0,
+    "minutes": 5.0,
+    "material_usd": 15.0
+   },
+   "bbox": [
+    40.0,
+    1500.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/y-rail-right-2040-v-slot.stl",
+   "name": "Y rail right (2040 V-slot)",
+   "process": "extrusion",
+   "params": {
+    "profile": "2040",
+    "length_mm": 1500.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1500.0,
+    "minutes": 5.0,
+    "material_usd": 15.0
+   },
+   "bbox": [
+    40.0,
+    1500.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/y-belt-anchor-left-front.stl",
+   "name": "Y belt anchor left front",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 1
+   },
+   "est": {
+    "area_cm2": 37.9,
+    "bends": 1,
+    "minutes": 5.9,
+    "material_usd": 0.17
+   },
+   "bbox": [
+    100.0,
+    33.0,
+    26.0
+   ]
+  },
+  {
+   "file": "stl/y-belt-anchor-left-rear.stl",
+   "name": "Y belt anchor left rear",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 1
+   },
+   "est": {
+    "area_cm2": 37.9,
+    "bends": 1,
+    "minutes": 5.9,
+    "material_usd": 0.17
+   },
+   "bbox": [
+    100.0,
+    33.0,
+    26.0
+   ]
+  },
+  {
+   "file": "stl/y-belt-anchor-right-front.stl",
+   "name": "Y belt anchor right front",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 1
+   },
+   "est": {
+    "area_cm2": 37.9,
+    "bends": 1,
+    "minutes": 5.9,
+    "material_usd": 0.17
+   },
+   "bbox": [
+    100.0,
+    33.0,
+    26.0
+   ]
+  },
+  {
+   "file": "stl/y-belt-anchor-right-rear.stl",
+   "name": "Y belt anchor right rear",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 1
+   },
+   "est": {
+    "area_cm2": 37.9,
+    "bends": 1,
+    "minutes": 5.9,
+    "material_usd": 0.17
+   },
+   "bbox": [
+    100.0,
+    33.0,
+    26.0
+   ]
+  },
+  {
+   "file": "stl/y-chain-bracket.stl",
+   "name": "Y chain bracket",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 1
+   },
+   "est": {
+    "area_cm2": 52.4,
+    "bends": 1,
+    "minutes": 6.0,
+    "material_usd": 0.24
+   },
+   "bbox": [
+    100.0,
+    40.0,
+    34.0
+   ]
+  },
+  {
+   "file": "stl/strut-bracket-bed-left.stl",
+   "name": "Strut bracket, bed left",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 1
+   },
+   "est": {
+    "area_cm2": 74.0,
+    "bends": 1,
+    "minutes": 6.2,
+    "material_usd": 0.33
+   },
+   "bbox": [
+    125.0,
+    40.0,
+    63.0
+   ]
+  },
+  {
+   "file": "stl/leg-hinge-bracket-left.stl",
+   "name": "Leg hinge bracket left",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 2
+   },
+   "est": {
+    "area_cm2": 74.9,
+    "bends": 2,
+    "minutes": 7.7,
+    "material_usd": 0.34
+   },
+   "bbox": [
+    46.0,
+    60.0,
+    45.0
+   ]
+  },
+  {
+   "file": "stl/strut-bracket-bed-right.stl",
+   "name": "Strut bracket, bed right",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 1
+   },
+   "est": {
+    "area_cm2": 74.0,
+    "bends": 1,
+    "minutes": 6.2,
+    "material_usd": 0.33
+   },
+   "bbox": [
+    125.0,
+    40.0,
+    63.0
+   ]
+  },
+  {
+   "file": "stl/leg-hinge-bracket-right.stl",
+   "name": "Leg hinge bracket right",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 2
+   },
+   "est": {
+    "area_cm2": 74.9,
+    "bends": 2,
+    "minutes": 7.7,
+    "material_usd": 0.34
+   },
+   "bbox": [
+    46.0,
+    60.0,
+    45.0
+   ]
+  },
+  {
+   "file": "stl/gantry-end-plate-left.stl",
+   "name": "Gantry end plate left",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 6061",
+    "thickness_mm": 6.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 141.5,
+    "bends": 0,
+    "minutes": 5.4,
+    "material_usd": 3.4
+   },
+   "bbox": [
+    180.0,
+    160.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/gantry-end-plate-right.stl",
+   "name": "Gantry end plate right",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 6061",
+    "thickness_mm": 6.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 141.5,
+    "bends": 0,
+    "minutes": 5.4,
+    "material_usd": 3.4
+   },
+   "bbox": [
+    180.0,
+    160.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/gantry-beam-2-x-4-in-tube.stl",
+   "name": "Gantry beam (2 x 4 in tube)",
+   "process": "extrusion",
+   "params": {
+    "profile": "steel rect tube 2x4in 14ga",
+    "length_mm": 1500.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1500.0,
+    "minutes": 5.0,
+    "material_usd": 12.0
+   },
+   "bbox": [
+    1500.0,
+    50.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/x-rail-2040-v-slot.stl",
+   "name": "X rail (2040 V-slot)",
+   "process": "extrusion",
+   "params": {
+    "profile": "2040",
+    "length_mm": 1500.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1500.0,
+    "minutes": 5.0,
+    "material_usd": 15.0
+   },
+   "bbox": [
+    1500.0,
+    20.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/x-carriage-plate.stl",
+   "name": "X carriage plate",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 6061",
+    "thickness_mm": 6.0,
+    "bends": 1
+   },
+   "est": {
+    "area_cm2": 106.1,
+    "bends": 1,
+    "minutes": 6.6,
+    "material_usd": 2.55
+   },
+   "bbox": [
+    140.0,
+    70.0,
+    138.0
+   ]
+  },
+  {
+   "file": "stl/float-plate.stl",
+   "name": "Float plate",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 49.9,
+    "bends": 0,
+    "minutes": 4.5,
+    "material_usd": 0.22
+   },
+   "bbox": [
+    50.0,
+    3.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/torch-clamp-lower.stl",
+   "name": "Torch clamp lower",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 1
+   },
+   "est": {
+    "area_cm2": 18.2,
+    "bends": 1,
+    "minutes": 5.7,
+    "material_usd": 0.08
+   },
+   "bbox": [
+    50.0,
+    57.0,
+    30.0
+   ]
+  },
+  {
+   "file": "stl/torch-clamp-upper.stl",
+   "name": "Torch clamp upper",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 1
+   },
+   "est": {
+    "area_cm2": 18.2,
+    "bends": 1,
+    "minutes": 5.7,
+    "material_usd": 0.08
+   },
+   "bbox": [
+    50.0,
+    57.0,
+    30.0
+   ]
+  },
+  {
+   "file": "stl/leg-left.stl",
+   "name": "Leg left",
+   "process": "extrusion",
+   "params": {
+    "profile": "steel square tube 1.5in 14ga",
+    "length_mm": 770.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 770.0,
+    "minutes": 5.0,
+    "material_usd": 6.16
+   },
+   "bbox": [
+    40.0,
+    40.0,
+    770.0
+   ]
+  },
+  {
+   "file": "stl/leg-brace-bracket-left.stl",
+   "name": "Leg brace bracket left",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 63.8,
+    "bends": 0,
+    "minutes": 4.6,
+    "material_usd": 0.29
+   },
+   "bbox": [
+    80.0,
+    3.0,
+    80.0
+   ]
+  },
+  {
+   "file": "stl/leg-right.stl",
+   "name": "Leg right",
+   "process": "extrusion",
+   "params": {
+    "profile": "steel square tube 1.5in 14ga",
+    "length_mm": 770.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 770.0,
+    "minutes": 5.0,
+    "material_usd": 6.16
+   },
+   "bbox": [
+    40.0,
+    40.0,
+    770.0
+   ]
+  },
+  {
+   "file": "stl/leg-brace-bracket-right.stl",
+   "name": "Leg brace bracket right",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 63.8,
+    "bends": 0,
+    "minutes": 4.6,
+    "material_usd": 0.29
+   },
+   "bbox": [
+    80.0,
+    3.0,
+    80.0
+   ]
+  },
+  {
+   "file": "stl/leg-brace.stl",
+   "name": "Leg brace",
+   "process": "extrusion",
+   "params": {
+    "profile": "steel square tube 1.5in 14ga",
+    "length_mm": 1320.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1320.0,
+    "minutes": 5.0,
+    "material_usd": 10.56
+   },
+   "bbox": [
+    1320.0,
+    40.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/control-box.stl",
+   "name": "Control box",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 1.5,
+    "bends": 2
+   },
+   "est": {
+    "area_cm2": 711.9,
+    "bends": 2,
+    "minutes": 14.1,
+    "material_usd": 1.6
+   },
+   "bbox": [
+    257.0,
+    140.0,
+    70.0
+   ]
+  },
+  {
+   "file": "stl/control-box-end-cap-left.stl",
+   "name": "Control box end cap left",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 1.5,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 92.7,
+    "bends": 0,
+    "minutes": 4.9,
+    "material_usd": 0.21
+   },
+   "bbox": [
+    1.5,
+    140.0,
+    70.0
+   ]
+  },
+  {
+   "file": "stl/control-box-end-cap-right.stl",
+   "name": "Control box end cap right",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 1.5,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 97.0,
+    "bends": 0,
+    "minutes": 5.0,
+    "material_usd": 0.22
+   },
+   "bbox": [
+    1.5,
+    140.0,
+    70.0
+   ]
+  },
+  {
+   "file": "stl/control-box-lid.stl",
+   "name": "Control box lid",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 1.5,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 363.9,
+    "bends": 0,
+    "minutes": 7.6,
+    "material_usd": 0.82
+   },
+   "bbox": [
+    260.0,
+    140.0,
+    1.5
+   ]
+  }
+ ]
+}

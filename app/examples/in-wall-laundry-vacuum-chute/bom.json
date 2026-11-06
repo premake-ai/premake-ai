@@ -1,0 +1,42 @@
+{
+ "parts": [],
+ "assembly_minutes": 0,
+ "kit_ok": true,
+ "needs_soldering": false,
+ "printed": [
+  {
+   "file": "stl/catch-chamber.stl",
+   "name": "Catch chamber",
+   "grams": 63745.1,
+   "print_hours": 3187.26,
+   "bbox": [
+    390.0,
+    390.0,
+    600.0
+   ]
+  },
+  {
+   "file": "stl/inlet-port-1.stl",
+   "name": "Inlet port 1",
+   "grams": 1475.2,
+   "print_hours": 73.76,
+   "bbox": [
+    220.0,
+    40.0,
+    240.0
+   ]
+  },
+  {
+   "file": "stl/inlet-port-2.stl",
+   "name": "Inlet port 2",
+   "grams": 1475.2,
+   "print_hours": 73.76,
+   "bbox": [
+    220.0,
+    40.0,
+    240.0
+   ]
+  }
+ ],
+ "fabricated": []
+}

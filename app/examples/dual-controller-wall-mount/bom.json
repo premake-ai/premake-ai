@@ -1,0 +1,36 @@
+{
+ "parts": [
+  {
+   "name": "#8 x 1-1/4\" flat-head wood screw",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.1,
+   "supplier": "Home Depot / Amazon",
+   "url": "",
+   "notes": "countersunk; \"#8 flat head wood screw\""
+  },
+  {
+   "name": "Drywall anchor for #8 screw",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.12,
+   "supplier": "Home Depot / Amazon",
+   "url": "",
+   "notes": "skip if screwing into a stud; \"#8 plastic drywall anchor\""
+  }
+ ],
+ "assembly_minutes": 5,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/wall-mount.stl",
+   "name": "Wall Mount",
+   "grams": 62.7,
+   "print_hours": 3.13,
+   "bbox": [
+    50.0,
+    70.5,
+    222.0
+   ]
+  }
+ ],
+ "fabricated": []
+}

@@ -1,0 +1,448 @@
+{
+ "t": 1793242427.754448,
+ "title": "Design a bed cooling device. a",
+ "parts": [
+  {
+   "file": "stl/chassis.stl",
+   "name": "Chassis",
+   "group": "case",
+   "process": "sheet",
+   "color": "#c9ccd1",
+   "explode": [
+    0.0,
+    0.974,
+    0.225
+   ],
+   "bbox": [
+    240.0,
+    200.0,
+    140.0
+   ]
+  },
+  {
+   "file": "stl/lid.stl",
+   "name": "Lid",
+   "group": "case",
+   "process": "sheet",
+   "color": "#d7dade",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    243.0,
+    200.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/front-panel.stl",
+   "name": "Front panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#2b2f36",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    237.0,
+    3.0,
+    138.5
+   ]
+  },
+  {
+   "file": "stl/back-panel.stl",
+   "name": "Back panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#2b2f36",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    237.0,
+    3.0,
+    138.5
+   ]
+  },
+  {
+   "file": "stl/tec-stand-1.stl",
+   "name": "TEC stand 1",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3f47",
+   "explode": [
+    -0.714,
+    0.462,
+    -0.526
+   ],
+   "bbox": [
+    70.0,
+    50.0,
+    48.0
+   ]
+  },
+  {
+   "file": "stl/cold-water-block-1.stl",
+   "name": "Cold water block 1",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa3ad",
+   "explode": [
+    -0.844,
+    0.502,
+    -0.186
+   ],
+   "bbox": [
+    40.0,
+    46.0,
+    12.0
+   ]
+  },
+  {
+   "file": "stl/peltier-tec1-12706-1.stl",
+   "name": "Peltier TEC1-12706 1",
+   "group": "component",
+   "process": "bought",
+   "color": "#f2f2f2",
+   "explode": [
+    -0.838,
+    0.542,
+    -0.07
+   ],
+   "bbox": [
+    40.0,
+    40.0,
+    3.8
+   ]
+  },
+  {
+   "file": "stl/heatsink-1.stl",
+   "name": "Heatsink 1",
+   "group": "component",
+   "process": "bought",
+   "color": "#b0b5bb",
+   "explode": [
+    -0.822,
+    0.531,
+    0.206
+   ],
+   "bbox": [
+    90.0,
+    90.0,
+    35.0
+   ]
+  },
+  {
+   "file": "stl/80-mm-fan-1.stl",
+   "name": "80 mm fan 1",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    -0.637,
+    0.412,
+    0.651
+   ],
+   "bbox": [
+    80.0,
+    80.0,
+    25.1
+   ]
+  },
+  {
+   "file": "stl/tec-stand-2.stl",
+   "name": "TEC stand 2",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3f47",
+   "explode": [
+    0.714,
+    0.462,
+    -0.526
+   ],
+   "bbox": [
+    70.0,
+    50.0,
+    48.0
+   ]
+  },
+  {
+   "file": "stl/cold-water-block-2.stl",
+   "name": "Cold water block 2",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa3ad",
+   "explode": [
+    0.844,
+    0.502,
+    -0.186
+   ],
+   "bbox": [
+    40.0,
+    46.0,
+    12.0
+   ]
+  },
+  {
+   "file": "stl/peltier-tec1-12706-2.stl",
+   "name": "Peltier TEC1-12706 2",
+   "group": "component",
+   "process": "bought",
+   "color": "#f2f2f2",
+   "explode": [
+    0.838,
+    0.542,
+    -0.07
+   ],
+   "bbox": [
+    40.0,
+    40.0,
+    3.8
+   ]
+  },
+  {
+   "file": "stl/heatsink-2.stl",
+   "name": "Heatsink 2",
+   "group": "component",
+   "process": "bought",
+   "color": "#b0b5bb",
+   "explode": [
+    0.822,
+    0.531,
+    0.206
+   ],
+   "bbox": [
+    90.0,
+    90.0,
+    35.0
+   ]
+  },
+  {
+   "file": "stl/80-mm-fan-2.stl",
+   "name": "80 mm fan 2",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    0.637,
+    0.412,
+    0.651
+   ],
+   "bbox": [
+    80.0,
+    80.0,
+    25.1
+   ]
+  },
+  {
+   "file": "stl/reservoir-60x120.stl",
+   "name": "Reservoir 60x120",
+   "group": "component",
+   "process": "bought",
+   "color": "#8fd0ff",
+   "explode": [
+    0.828,
+    -0.561,
+    -0.009
+   ],
+   "bbox": [
+    60.0,
+    60.1,
+    128.0
+   ]
+  },
+  {
+   "file": "stl/12v-pump.stl",
+   "name": "12V pump",
+   "group": "component",
+   "process": "bought",
+   "color": "#333333",
+   "explode": [
+    -0.663,
+    -0.548,
+    -0.51
+   ],
+   "bbox": [
+    55.0,
+    40.0,
+    45.0
+   ]
+  },
+  {
+   "file": "stl/esp32-c3-supermini.stl",
+   "name": "ESP32-C3 SuperMini",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f98",
+   "explode": [
+    -0.004,
+    -0.768,
+    -0.64
+   ],
+   "bbox": [
+    23.3,
+    18.0,
+    4.8
+   ]
+  },
+  {
+   "file": "stl/rotary-encoder.stl",
+   "name": "Rotary encoder",
+   "group": "component",
+   "process": "bought",
+   "color": "#555555",
+   "explode": [
+    0.0,
+    -0.992,
+    0.123
+   ],
+   "bbox": [
+    20.0,
+    25.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/5v-buck-mp1584.stl",
+   "name": "5V buck MP1584",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f98",
+   "explode": [
+    0.341,
+    0.763,
+    -0.549
+   ],
+   "bbox": [
+    22.0,
+    17.0,
+    4.7
+   ]
+  },
+  {
+   "file": "stl/mosfet-module-1.stl",
+   "name": "MOSFET module 1",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f6fb2",
+   "explode": [
+    -0.593,
+    0.663,
+    -0.458
+   ],
+   "bbox": [
+    34.0,
+    17.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/mosfet-module-2.stl",
+   "name": "MOSFET module 2",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f6fb2",
+   "explode": [
+    -0.345,
+    0.772,
+    -0.533
+   ],
+   "bbox": [
+    34.0,
+    17.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/mosfet-module-3.stl",
+   "name": "MOSFET module 3",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f6fb2",
+   "explode": [
+    0.0,
+    0.823,
+    -0.568
+   ],
+   "bbox": [
+    34.0,
+    17.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/rubber-foot.stl",
+   "name": "Rubber foot",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    -0.684,
+    -0.522,
+    -0.51
+   ],
+   "bbox": [
+    12.0,
+    12.0,
+    5.0
+   ]
+  },
+  {
+   "file": "stl/rubber-foot-2.stl",
+   "name": "Rubber foot",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    -0.645,
+    0.594,
+    -0.481
+   ],
+   "bbox": [
+    12.0,
+    12.0,
+    5.0
+   ]
+  },
+  {
+   "file": "stl/rubber-foot-3.stl",
+   "name": "Rubber foot",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    0.684,
+    -0.522,
+    -0.51
+   ],
+   "bbox": [
+    12.0,
+    12.0,
+    5.0
+   ]
+  },
+  {
+   "file": "stl/rubber-foot-4.stl",
+   "name": "Rubber foot",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    0.645,
+    0.594,
+    -0.481
+   ],
+   "bbox": [
+    12.0,
+    12.0,
+    5.0
+   ]
+  }
+ ]
+}

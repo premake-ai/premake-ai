@@ -1,0 +1,452 @@
+{
+ "parts": [
+  {
+   "name": "3/4 in x 48 in hardwood dowel rods, 5-pack",
+   "qty_per_unit": 7,
+   "unit_cost_usd": 27.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B01GQTB99Y",
+   "notes": "35 dowels. Each 48 in dowel makes 2 struts: 15 dowels -> 30 x A 502 mm, 18 dowels -> 35 x B 574 mm (+1 spare B), 2 spare dowels. Price estimated, check the listing."
+  },
+  {
+   "name": "Stretch film 18 in x 1500 ft, 80 gauge, clear",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 25.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B075PZL9KH",
+   "notes": "Skin. One roll covers the 6.3 m2 dome several times (3-4 layers). Plain pallet film is not UV-stabilised: expect weeks to a few months outdoors before it goes brittle."
+  },
+  {
+   "name": "12 in J-hook rebar ground stakes, 3/8 in, 10-pack",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 22.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: \"12 inch J hook rebar stakes 3/8 10 pack\". One through the foot of each base hub (11 mm hole)."
+  },
+  {
+   "name": "Clear packing tape 2 in",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 6.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: \"clear packing tape 2 inch\". Seals film seams and the door flap edges."
+  },
+  {
+   "name": "Miter box with hand saw",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 16.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: \"miter box with saw\". For square cuts on the 65 struts; skip if you already own a saw."
+  },
+  {
+   "name": "10x3 mm neodymium magnet",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.4,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: \"10x3mm neodymium disc magnets\". Glued into the door catch pockets."
+  },
+  {
+   "name": "Steel fender washer (magnet strike)",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.25,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: \"M8 fender washer 16mm OD zinc\" (must be steel, not stainless). Glued to the door panel's inside face over the magnets."
+  },
+  {
+   "name": "Super glue gel",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: \"super glue gel\". Magnets into the catch, washers onto the acrylic."
+  },
+  {
+   "name": "M4\u00d720 self-tapping screw for plastic",
+   "qty_per_unit": 130,
+   "unit_cost_usd": 0.086,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M4+x+20mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M4 x 20mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d710 self-tapping screw for plastic",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.059,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+x+10mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M3 x 10mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  },
+  {
+   "name": "M4\u00d716 self-tapping screw for plastic",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.084,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M4+x+16mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M4 x 16mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 355,
+ "kit_ok": true,
+ "needs_soldering": false,
+ "printed": [
+  {
+   "file": "stl/hub-5-way.stl",
+   "name": "Hub 5-way",
+   "grams": 39.8,
+   "print_hours": 1.99,
+   "bbox": [
+    90.9,
+    88.8,
+    38.2
+   ]
+  },
+  {
+   "file": "stl/hub-6-way.stl",
+   "name": "Hub 6-way",
+   "grams": 44.1,
+   "print_hours": 2.2,
+   "bbox": [
+    88.5,
+    87.1,
+    67.7
+   ]
+  },
+  {
+   "file": "stl/hub-6-way-2.stl",
+   "name": "Hub 6-way",
+   "grams": 44.1,
+   "print_hours": 2.2,
+   "bbox": [
+    88.5,
+    87.1,
+    67.7
+   ]
+  },
+  {
+   "file": "stl/hub-5-way-2.stl",
+   "name": "Hub 5-way",
+   "grams": 39.8,
+   "print_hours": 1.99,
+   "bbox": [
+    80.6,
+    76.3,
+    86.1
+   ]
+  },
+  {
+   "file": "stl/hub-6-way-3.stl",
+   "name": "Hub 6-way",
+   "grams": 44.1,
+   "print_hours": 2.2,
+   "bbox": [
+    92.9,
+    61.9,
+    79.6
+   ]
+  },
+  {
+   "file": "stl/hub-5-way-3.stl",
+   "name": "Hub 5-way",
+   "grams": 39.8,
+   "print_hours": 1.99,
+   "bbox": [
+    80.6,
+    76.3,
+    86.1
+   ]
+  },
+  {
+   "file": "stl/hub-6-way-4.stl",
+   "name": "Hub 6-way",
+   "grams": 44.1,
+   "print_hours": 2.2,
+   "bbox": [
+    85.2,
+    90.9,
+    67.7
+   ]
+  },
+  {
+   "file": "stl/hub-6-way-5.stl",
+   "name": "Hub 6-way",
+   "grams": 44.1,
+   "print_hours": 2.2,
+   "bbox": [
+    71.1,
+    90.9,
+    79.6
+   ]
+  },
+  {
+   "file": "stl/hub-5-way-4.stl",
+   "name": "Hub 5-way",
+   "grams": 39.8,
+   "print_hours": 1.99,
+   "bbox": [
+    64.6,
+    87.5,
+    86.1
+   ]
+  },
+  {
+   "file": "stl/hub-6-way-6.stl",
+   "name": "Hub 6-way",
+   "grams": 44.1,
+   "print_hours": 2.2,
+   "bbox": [
+    85.2,
+    90.9,
+    67.7
+   ]
+  },
+  {
+   "file": "stl/hub-6-way-7.stl",
+   "name": "Hub 6-way",
+   "grams": 44.1,
+   "print_hours": 2.2,
+   "bbox": [
+    71.1,
+    90.9,
+    79.6
+   ]
+  },
+  {
+   "file": "stl/hub-5-way-5.stl",
+   "name": "Hub 5-way",
+   "grams": 39.8,
+   "print_hours": 1.99,
+   "bbox": [
+    64.6,
+    87.5,
+    86.1
+   ]
+  },
+  {
+   "file": "stl/hub-6-way-8.stl",
+   "name": "Hub 6-way",
+   "grams": 44.1,
+   "print_hours": 2.2,
+   "bbox": [
+    86.3,
+    86.7,
+    67.7
+   ]
+  },
+  {
+   "file": "stl/hub-6-way-9.stl",
+   "name": "Hub 6-way",
+   "grams": 44.1,
+   "print_hours": 2.2,
+   "bbox": [
+    85.2,
+    76.7,
+    79.6
+   ]
+  },
+  {
+   "file": "stl/hub-5-way-6.stl",
+   "name": "Hub 5-way",
+   "grams": 39.8,
+   "print_hours": 1.99,
+   "bbox": [
+    90.9,
+    59.0,
+    86.1
+   ]
+  },
+  {
+   "file": "stl/hub-6-way-10.stl",
+   "name": "Hub 6-way",
+   "grams": 44.1,
+   "print_hours": 2.2,
+   "bbox": [
+    85.2,
+    76.7,
+    79.6
+   ]
+  },
+  {
+   "file": "stl/hub-4-way-base.stl",
+   "name": "Hub 4-way base",
+   "grams": 44.1,
+   "print_hours": 2.2,
+   "bbox": [
+    88.5,
+    71.4,
+    62.2
+   ]
+  },
+  {
+   "file": "stl/hub-4-way-base-2.stl",
+   "name": "Hub 4-way base",
+   "grams": 44.1,
+   "print_hours": 2.2,
+   "bbox": [
+    88.5,
+    71.4,
+    62.2
+   ]
+  },
+  {
+   "file": "stl/hub-4-way-base-3.stl",
+   "name": "Hub 4-way base",
+   "grams": 44.1,
+   "print_hours": 2.2,
+   "bbox": [
+    76.7,
+    83.9,
+    62.2
+   ]
+  },
+  {
+   "file": "stl/hub-4-way-base-4.stl",
+   "name": "Hub 4-way base",
+   "grams": 44.1,
+   "print_hours": 2.2,
+   "bbox": [
+    62.1,
+    93.0,
+    62.2
+   ]
+  },
+  {
+   "file": "stl/hub-4-way-base-5.stl",
+   "name": "Hub 4-way base",
+   "grams": 44.1,
+   "print_hours": 2.2,
+   "bbox": [
+    76.7,
+    83.9,
+    62.2
+   ]
+  },
+  {
+   "file": "stl/hub-4-way-base-6.stl",
+   "name": "Hub 4-way base",
+   "grams": 44.1,
+   "print_hours": 2.2,
+   "bbox": [
+    62.1,
+    93.0,
+    62.2
+   ]
+  },
+  {
+   "file": "stl/hub-4-way-base-7.stl",
+   "name": "Hub 4-way base",
+   "grams": 44.1,
+   "print_hours": 2.2,
+   "bbox": [
+    76.7,
+    83.9,
+    62.2
+   ]
+  },
+  {
+   "file": "stl/hub-4-way-base-8.stl",
+   "name": "Hub 4-way base",
+   "grams": 44.1,
+   "print_hours": 2.2,
+   "bbox": [
+    88.5,
+    71.4,
+    62.2
+   ]
+  },
+  {
+   "file": "stl/hub-4-way-base-9.stl",
+   "name": "Hub 4-way base",
+   "grams": 44.1,
+   "print_hours": 2.2,
+   "bbox": [
+    88.5,
+    71.4,
+    62.2
+   ]
+  },
+  {
+   "file": "stl/hub-4-way-base-10.stl",
+   "name": "Hub 4-way base",
+   "grams": 44.1,
+   "print_hours": 2.2,
+   "bbox": [
+    76.7,
+    83.9,
+    62.2
+   ]
+  },
+  {
+   "file": "stl/hinge0-3.stl",
+   "name": "Door hinge ring",
+   "grams": 5.4,
+   "print_hours": 0.27,
+   "bbox": [
+    53.3,
+    35.7,
+    38.2
+   ]
+  },
+  {
+   "file": "stl/hinge0-62.stl",
+   "name": "Door hinge ring",
+   "grams": 5.4,
+   "print_hours": 0.27,
+   "bbox": [
+    53.3,
+    35.7,
+    38.2
+   ]
+  },
+  {
+   "file": "stl/door-catch.stl",
+   "name": "Door catch",
+   "grams": 10.3,
+   "print_hours": 0.51,
+   "bbox": [
+    48.1,
+    30.2,
+    63.1
+   ]
+  },
+  {
+   "file": "stl/handle.stl",
+   "name": "Door handle",
+   "grams": 14.6,
+   "print_hours": 0.73,
+   "bbox": [
+    57.1,
+    46.2,
+    88.1
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/door.stl",
+   "name": "Door panel",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 1859.4,
+    "area_cm2": 1556.7,
+    "minutes": 2.5,
+    "material_usd": 16.35
+   },
+   "bbox": [
+    542.9,
+    76.7,
+    386.8
+   ]
+  }
+ ]
+}

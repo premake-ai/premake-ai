@@ -1,0 +1,27 @@
+{
+ "parts": [
+  {
+   "name": "Silicone anti-slip pad",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.35,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Cut to 32 x 50 mm"
+  }
+ ],
+ "assembly_minutes": 1,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/door-wedge.stl",
+   "name": "Door wedge",
+   "grams": 40.0,
+   "print_hours": 2.0,
+   "bbox": [
+    42.0,
+    118.0,
+    28.0
+   ]
+  }
+ ]
+}

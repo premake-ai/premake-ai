@@ -1,0 +1,962 @@
+{
+ "t": 1793679438.760878,
+ "title": "Smart Putting Return Cup",
+ "parts": [
+  {
+   "file": "stl/floor-plate.stl",
+   "name": "Floor plate",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    248.0,
+    201.5,
+    15.6
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/front-wall.stl",
+   "name": "Front wall",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    190.0,
+    5.5,
+    34.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/gutter-wall-front.stl",
+   "name": "Gutter wall front",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    5.5,
+    15.5,
+    34.8
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/gutter-wall-back.stl",
+   "name": "Gutter wall back",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    5.5,
+    17.5,
+    33.3
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/trough-wall.stl",
+   "name": "Trough wall",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    195.5,
+    5.5,
+    31.3
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/deck.stl",
+   "name": "Deck",
+   "group": "case",
+   "process": "laser",
+   "color": "#e2c79c",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    195.5,
+    150.0,
+    5.6
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/backstop.stl",
+   "name": "Backstop",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    248.0,
+    5.5,
+    85.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/back-panel.stl",
+   "name": "Back panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    248.0,
+    5.5,
+    85.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/led-shelf.stl",
+   "name": "LED shelf",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    248.0,
+    14.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/floor-rib-front.stl",
+   "name": "Floor rib front",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    195.5,
+    5.5,
+    15.6
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/floor-rib-back.stl",
+   "name": "Floor rib back",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    248.0,
+    5.5,
+    17.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/left-side.stl",
+   "name": "Left side",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    5.5,
+    250.0,
+    85.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/right-side.stl",
+   "name": "Right side",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    5.5,
+    250.0,
+    85.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/ramp.stl",
+   "name": "Ramp",
+   "group": "case",
+   "process": "laser",
+   "color": "#e2c79c",
+   "explode": [
+    0.0,
+    -1.0,
+    0.3
+   ],
+   "bbox": [
+    195.5,
+    161.7,
+    39.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/ramp-rib-1.stl",
+   "name": "Ramp rib 1",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    5.5,
+    149.2,
+    36.9
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/ramp-rib-2.stl",
+   "name": "Ramp rib 2",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    5.5,
+    149.2,
+    36.9
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/ramp-rib-3.stl",
+   "name": "Ramp rib 3",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    5.5,
+    149.2,
+    36.9
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/lid.stl",
+   "name": "Lid",
+   "group": "case",
+   "process": "laser",
+   "color": "#f2f2f2",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    248.0,
+    54.0,
+    3.0
+   ],
+   "material": "acrylic_frosted"
+  },
+  {
+   "file": "stl/cup.stl",
+   "name": "Cup",
+   "group": "case",
+   "process": "print",
+   "color": "#1f2326",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    121.9,
+    115.4,
+    29.1
+   ]
+  },
+  {
+   "file": "stl/ramp-nose.stl",
+   "name": "Ramp nose",
+   "group": "case",
+   "process": "print",
+   "color": "#1f2326",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    195.5,
+    33.3,
+    4.3
+   ]
+  },
+  {
+   "file": "stl/sensor-cap-left.stl",
+   "name": "Sensor cap left",
+   "group": "case",
+   "process": "print",
+   "color": "#1f2326",
+   "explode": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    17.5,
+    42.0,
+    66.0
+   ]
+  },
+  {
+   "file": "stl/sensor-cap-right.stl",
+   "name": "Sensor cap right",
+   "group": "case",
+   "process": "print",
+   "color": "#1f2326",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    17.5,
+    68.0,
+    66.0
+   ]
+  },
+  {
+   "file": "stl/channel-dock.stl",
+   "name": "Channel dock",
+   "group": "case",
+   "process": "print",
+   "color": "#1f2326",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    46.4,
+    48.0,
+    10.6
+   ]
+  },
+  {
+   "file": "stl/attempt-beam-emitter.stl",
+   "name": "Attempt beam emitter",
+   "group": "component",
+   "process": "bought",
+   "color": "#202020",
+   "explode": [
+    -0.099,
+    0.995,
+    0.01
+   ],
+   "bbox": [
+    20.0,
+    8.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/attempt-beam-receiver.stl",
+   "name": "Attempt beam receiver",
+   "group": "component",
+   "process": "bought",
+   "color": "#202020",
+   "explode": [
+    0.099,
+    0.995,
+    0.01
+   ],
+   "bbox": [
+    20.0,
+    8.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/exit-beam-emitter.stl",
+   "name": "Exit beam emitter",
+   "group": "component",
+   "process": "bought",
+   "color": "#202020",
+   "explode": [
+    0.048,
+    0.999,
+    -0.015
+   ],
+   "bbox": [
+    20.0,
+    8.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/exit-beam-receiver.stl",
+   "name": "Exit beam receiver",
+   "group": "component",
+   "process": "bought",
+   "color": "#202020",
+   "explode": [
+    0.099,
+    0.995,
+    -0.015
+   ],
+   "bbox": [
+    20.0,
+    8.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/cup-beam-emitter.stl",
+   "name": "Cup beam emitter",
+   "group": "component",
+   "process": "bought",
+   "color": "#202020",
+   "explode": [
+    0.049,
+    0.999,
+    -0.019
+   ],
+   "bbox": [
+    8.0,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/cup-beam-receiver.stl",
+   "name": "Cup beam receiver",
+   "group": "component",
+   "process": "bought",
+   "color": "#202020",
+   "explode": [
+    0.046,
+    0.999,
+    -0.017
+   ],
+   "bbox": [
+    8.0,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/esp32-screw-terminal-breakout.stl",
+   "name": "ESP32 screw-terminal breakout",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d4fa0",
+   "explode": [
+    -0.009,
+    1.0,
+    -0.001
+   ],
+   "bbox": [
+    75.0,
+    11.6,
+    65.0
+   ]
+  },
+  {
+   "file": "stl/esp32-devkitc-wroom-32-38-pin.stl",
+   "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    -0.01,
+    1.0,
+    -0.004
+   ],
+   "bbox": [
+    55.4,
+    13.2,
+    27.9
+   ],
+   "subparts": [
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__1.stl",
+     "color": "#232a36",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__4.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__6.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__7.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__8.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__9.stl",
+     "color": "#b48a5c",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "esp32_devkitc",
+    "qty": 1,
+    "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+    "unit_cost_usd": 7.5,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/m3-10-brass-standoff-4.stl",
+   "name": "M3\u00d710 brass standoff \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    -0.009,
+    1.0,
+    -0.004
+   ],
+   "bbox": [
+    73.8,
+    10.0,
+    63.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-brass-standoff-4__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "standoff",
+    "qty": 4,
+    "name": "M3\u00d710 brass standoff",
+    "unit_cost_usd": 0.18,
+    "mass_g": 1.4
+   }
+  },
+  {
+   "file": "stl/m3-8-button-head-screw-4.stl",
+   "name": "M3\u00d78 button head screw \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.009,
+    1.0,
+    -0.004
+   ],
+   "bbox": [
+    73.7,
+    9.6,
+    63.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-8-button-head-screw-4__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M3\u00d78 button head screw",
+    "unit_cost_usd": 0.097,
+    "mass_g": 0.7
+   }
+  },
+  {
+   "file": "stl/m3-6-button-head-screw-4.stl",
+   "name": "M3\u00d76 button head screw \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.009,
+    1.0,
+    -0.004
+   ],
+   "bbox": [
+    73.7,
+    7.6,
+    63.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-6-button-head-screw-4__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M3\u00d76 button head screw",
+    "unit_cost_usd": 0.095,
+    "mass_g": 0.6
+   }
+  },
+  {
+   "file": "stl/ws2812b-led-strip-10-leds.stl",
+   "name": "WS2812B LED strip, 10 LEDs",
+   "group": "component",
+   "process": "bought",
+   "color": "#f1f0ea",
+   "explode": [
+    -0.009,
+    1.0,
+    0.023
+   ],
+   "bbox": [
+    166.7,
+    10.0,
+    1.9
+   ],
+   "subparts": [
+    {
+     "file": "stl/ws2812b-led-strip-10-leds__0.stl",
+     "color": "#f1f0ea",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/ws2812b-led-strip-10-leds__1.stl",
+     "color": "#f6f4ee",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/ws2812b-led-strip-10-leds__2.stl",
+     "color": "#f7efc9",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/ws2812b-led-strip-10-leds__3.stl",
+     "color": "#b48a5c",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/ws2812b-led-strip-10-leds__4.stl",
+     "color": "#c47a4c",
+     "finish": "gold"
+    }
+   ],
+   "lib": {
+    "key": "ws2812_strip",
+    "qty": 1,
+    "name": "WS2812B LED strip, 10 LEDs",
+    "unit_cost_usd": 1.67,
+    "mass_g": 1.1
+   }
+  },
+  {
+   "file": "stl/m3-12-button-head-screw-4.stl",
+   "name": "M3\u00d712 button head screw \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    1.0,
+    0.024
+   ],
+   "bbox": [
+    248.2,
+    19.7,
+    13.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-12-button-head-screw-4__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M3\u00d712 button head screw",
+    "unit_cost_usd": 0.101,
+    "mass_g": 0.9
+   }
+  },
+  {
+   "file": "stl/m3-hex-nut-4.stl",
+   "name": "M3 hex nut \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.0,
+    1.0,
+    0.021
+   ],
+   "bbox": [
+    248.9,
+    19.5,
+    2.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-hex-nut-4__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 4,
+    "name": "M3 hex nut",
+    "unit_cost_usd": 0.06,
+    "mass_g": 0.3
+   }
+  },
+  {
+   "file": "stl/m2-5-8-self-tapping-screw-for-plastic-2.stl",
+   "name": "M2.5\u00d78 self-tapping screw for plastic \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.094,
+    0.995,
+    -0.014
+   ],
+   "bbox": [
+    9.9,
+    67.0,
+    5.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m2-5-8-self-tapping-screw-for-plastic-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 2,
+    "name": "M2.5\u00d78 self-tapping screw for plastic",
+    "unit_cost_usd": 0.052,
+    "mass_g": 0.5
+   }
+  },
+  {
+   "file": "stl/m2-5-8-self-tapping-screw-for-plastic-2-2.stl",
+   "name": "M2.5\u00d78 self-tapping screw for plastic \u00d72 (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.095,
+    0.995,
+    -0.014
+   ],
+   "bbox": [
+    9.9,
+    41.0,
+    5.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m2-5-8-self-tapping-screw-for-plastic-2-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 2,
+    "name": "M2.5\u00d78 self-tapping screw for plastic",
+    "unit_cost_usd": 0.052,
+    "mass_g": 0.5
+   }
+  },
+  {
+   "file": "stl/m3-10-self-tapping-screw-for-plastic.stl",
+   "name": "M3\u00d710 self-tapping screw for plastic",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.08,
+    0.996,
+    -0.031
+   ],
+   "bbox": [
+    12.2,
+    5.6,
+    5.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-self-tapping-screw-for-plastic__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M3\u00d710 self-tapping screw for plastic",
+    "unit_cost_usd": 0.059,
+    "mass_g": 0.8
+   }
+  },
+  {
+   "file": "stl/return-channel-1-in-alu-u-channel-4-ft.stl",
+   "name": "Return channel (1 in alu U-channel, 4 ft)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9cdd2",
+   "explode": [
+    0.133,
+    0.99,
+    -0.049
+   ],
+   "bbox": [
+    28.6,
+    1219.2,
+    12.7
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/golf-ball-yours.stl",
+   "name": "Golf ball (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#fafafa",
+   "explode": [
+    -0.003,
+    1.0,
+    -0.004
+   ],
+   "bbox": [
+    43.1,
+    43.0,
+    43.1
+   ]
+  },
+  {
+   "file": "stl/putting-mat-10-ft.stl",
+   "name": "Putting mat 10 ft",
+   "group": "component",
+   "process": "bought",
+   "color": "#2f8f3a",
+   "explode": [
+    0.0,
+    -0.041,
+    -0.999
+   ],
+   "bbox": [
+    500.0,
+    3046.0,
+    5.0
+   ]
+  }
+ ],
+ "scene": "floor"
+}

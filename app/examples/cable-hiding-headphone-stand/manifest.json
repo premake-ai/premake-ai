@@ -1,0 +1,359 @@
+{
+ "t": 1793336467.3255239,
+ "title": "Cable-Hiding Headphone Stand",
+ "parts": [
+  {
+   "file": "stl/base-plate.stl",
+   "name": "Base Plate",
+   "group": "case",
+   "process": "sheet",
+   "color": "#2a2a2e",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    140.1,
+    120.1,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/post.stl",
+   "name": "Post",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#1c1c1f",
+   "explode": [
+    0.0,
+    -0.959,
+    -0.285
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    250.0
+   ]
+  },
+  {
+   "file": "stl/saddle.stl",
+   "name": "Saddle",
+   "group": "case",
+   "process": "print",
+   "color": "#c9c3b8",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    110.9,
+    40.9,
+    39.5
+   ]
+  },
+  {
+   "file": "stl/plug-dock.stl",
+   "name": "Plug Dock",
+   "group": "case",
+   "process": "print",
+   "color": "#c9c3b8",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    26.0,
+    21.5,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/slot-cover-strip.stl",
+   "name": "Slot Cover Strip",
+   "group": "component",
+   "process": "bought",
+   "color": "#151517",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    6.0,
+    1.6,
+    105.0
+   ]
+  },
+  {
+   "file": "stl/rubber-feet.stl",
+   "name": "Rubber Feet",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    122.7,
+    102.7,
+    6.0
+   ]
+  },
+  {
+   "file": "stl/usb-c-cable-yours.stl",
+   "name": "USB-C Cable (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#e8e8e8",
+   "explode": [
+    0.0,
+    0.54,
+    -0.841
+   ],
+   "bbox": [
+    4.0,
+    70.5,
+    172.0
+   ]
+  },
+  {
+   "file": "stl/usb-c-plug-yours.stl",
+   "name": "USB-C Plug (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#f2f2f2",
+   "explode": [
+    0.0,
+    0.59,
+    0.807
+   ],
+   "bbox": [
+    12.0,
+    6.2,
+    26.7
+   ]
+  },
+  {
+   "file": "stl/2020-corner-bracket.stl",
+   "name": "2020 corner bracket",
+   "group": "component",
+   "process": "bought",
+   "color": "#c7ccd2",
+   "explode": [
+    0.0,
+    -0.243,
+    -0.97
+   ],
+   "bbox": [
+    20.0,
+    23.0,
+    23.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/2020-corner-bracket__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bracket_2020",
+    "qty": 1,
+    "name": "2020 corner bracket",
+    "unit_cost_usd": 0.6,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/m5-20-countersunk-screw.stl",
+   "name": "M5\u00d720 countersunk screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    -0.06,
+    0.998
+   ],
+   "bbox": [
+    10.0,
+    10.0,
+    20.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m5-20-countersunk-screw__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "csk",
+    "qty": 1,
+    "name": "M5\u00d720 countersunk screw",
+    "unit_cost_usd": 0.192,
+    "mass_g": 3.4
+   }
+  },
+  {
+   "file": "stl/m5-10-button-head-screw.stl",
+   "name": "M5\u00d710 button head screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    -0.059,
+    -0.998
+   ],
+   "bbox": [
+    9.5,
+    9.5,
+    12.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/m5-10-button-head-screw__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 1,
+    "name": "M5\u00d710 button head screw",
+    "unit_cost_usd": 0.176,
+    "mass_g": 2.7
+   }
+  },
+  {
+   "file": "stl/m5-12-button-head-screw.stl",
+   "name": "M5\u00d712 button head screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    -0.236,
+    -0.972
+   ],
+   "bbox": [
+    9.5,
+    9.5,
+    14.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/m5-12-button-head-screw__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 1,
+    "name": "M5\u00d712 button head screw",
+    "unit_cost_usd": 0.179,
+    "mass_g": 3.0
+   }
+  },
+  {
+   "file": "stl/m5-10-button-head-screw-2.stl",
+   "name": "M5\u00d710 button head screw (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    -0.171,
+    -0.985
+   ],
+   "bbox": [
+    9.5,
+    12.8,
+    9.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m5-10-button-head-screw-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 1,
+    "name": "M5\u00d710 button head screw",
+    "unit_cost_usd": 0.176,
+    "mass_g": 2.7
+   }
+  },
+  {
+   "file": "stl/m5-16-button-head-screw.stl",
+   "name": "M5\u00d716 button head screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    0.65,
+    -0.76
+   ],
+   "bbox": [
+    9.5,
+    18.8,
+    9.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m5-16-button-head-screw__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 1,
+    "name": "M5\u00d716 button head screw",
+    "unit_cost_usd": 0.186,
+    "mass_g": 3.6
+   }
+  },
+  {
+   "file": "stl/m5-hex-nut.stl",
+   "name": "M5 hex nut",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.0,
+    -0.243,
+    -0.97
+   ],
+   "bbox": [
+    9.2,
+    8.0,
+    4.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m5-hex-nut__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 1,
+    "name": "M5 hex nut",
+    "unit_cost_usd": 0.08,
+    "mass_g": 1.1
+   }
+  }
+ ]
+}

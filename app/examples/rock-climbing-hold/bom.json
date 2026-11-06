@@ -1,0 +1,35 @@
+{
+ "parts": [
+  {
+   "name": "3/8\"-16 T-Nut (4-prong)",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.35,
+   "supplier": "McMaster-Carr",
+   "url": "",
+   "notes": "Standard climbing wall T-nut, zinc plated"
+  },
+  {
+   "name": "3/8\"-16 x 2\" Socket Head Cap Screw",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.5,
+   "supplier": "McMaster-Carr",
+   "url": "",
+   "notes": "Stainless steel, bolt to mount hold to wall"
+  }
+ ],
+ "assembly_minutes": 2,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/climbing-hold.stl",
+   "name": "Climbing Hold",
+   "grams": 181.6,
+   "print_hours": 9.08,
+   "bbox": [
+    154.2,
+    104.1,
+    69.2
+   ]
+  }
+ ]
+}

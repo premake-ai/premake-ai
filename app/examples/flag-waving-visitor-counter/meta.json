@@ -1,0 +1,14 @@
+{
+ "title": "Flag Waving Visitor Counter",
+ "description": "A desk buddy that waves a little flag whenever someone visits or designs on premake.ai and shows today's count on an OLED.",
+ "creator": "Premake",
+ "tags": [
+  "ESP32",
+  "servo",
+  "oled",
+  "Wi-Fi",
+  "desk"
+ ],
+ "created": "2026-11-02T22:33:49.788Z",
+ "demo": true
+}

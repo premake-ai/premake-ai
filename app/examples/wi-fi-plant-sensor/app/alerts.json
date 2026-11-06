@@ -1,0 +1,10 @@
+{
+  "rules": [
+    { "id": "thirsty", "field": "moisture", "below": "profile.moisture_min", "severity": "high", "message": "{name} needs a drink", "cooldown_h": 12 },
+    { "id": "soggy", "field": "moisture", "above": "profile.moisture_max", "sustain_h": 48, "severity": "low", "message": "{name} is overwatered", "cooldown_h": 24 },
+    { "id": "dark", "field": "light", "below": "profile.light_min", "sustain_h": 48, "severity": "low", "message": "{name} isn't getting enough light", "cooldown_h": 24 },
+    { "id": "cold", "field": "temp", "below": "profile.temp_min", "sustain_h": 2, "severity": "low", "message": "{name} is too cold", "cooldown_h": 12 },
+    { "id": "battery", "field": "battery", "below": 3.45, "severity": "low", "message": "{name}'s sensor needs charging", "cooldown_h": 48 },
+    { "id": "offline", "stale_h": 3, "severity": "low", "message": "{name}'s sensor is offline", "cooldown_h": 24 }
+  ]
+}

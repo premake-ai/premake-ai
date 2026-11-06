@@ -1,0 +1,14 @@
+{
+ "title": "Insulated Home Cold Plunge",
+ "description": "Insulated cold plunge tub with an ETL-listed 1/2 HP chiller, UL pump and filter on an extrusion equipment cart, over-the-rim hoses and a low-voltage Wi-Fi controller that runs everything through UL-listed smart plugs on a GFCI.",
+ "creator": "Premake",
+ "tags": [
+  "cold plunge",
+  "chiller",
+  "ESP32",
+  "2020 extrusion",
+  "wellness"
+ ],
+ "created": "2026-11-03T03:50:43.450Z",
+ "demo": true
+}

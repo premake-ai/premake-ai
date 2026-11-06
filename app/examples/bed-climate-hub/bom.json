@@ -1,0 +1,367 @@
+{
+ "parts": [
+  {
+   "name": "Water cooling mattress pad 70x160 cm, 6 mm hoses (pad only)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 40.0,
+   "supplier": "mattress-cooler.com / Amazon",
+   "url": "https://mattress-cooler.com/products/replacement-cooling-pad",
+   "notes": "search: water cooling mattress pad without machine 6mm hose"
+  },
+  {
+   "name": "Peltier TEC1-12706 40x40 mm",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: TEC1-12706 peltier"
+  },
+  {
+   "name": "Aluminium water cooling block 40x40x12 mm",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 40x40 water cooling block aluminum"
+  },
+  {
+   "name": "92 mm CPU heatsink (4 mm base) + thermal paste",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 8.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 92mm aluminum heatsink 92x92x45"
+  },
+  {
+   "name": "92 mm 12 V fan",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon / Micro Center",
+   "url": "",
+   "notes": "search: 92mm 12V fan 2 pin"
+  },
+  {
+   "name": "12 V brushless DC water pump (~240 L/h)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 10.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 12V brushless mini water pump DC40"
+  },
+  {
+   "name": "250 ml cylinder reservoir with fill cap",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 10.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 50mm water cooling reservoir 250ml; cap passes through the cover"
+  },
+  {
+   "name": "6 mm hose barb bulkhead fitting",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 6mm hose barb bulkhead fitting"
+  },
+  {
+   "name": "Silicone tube 6 mm ID, 1 m",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "internal loop; with zip ties"
+  },
+  {
+   "name": "BTS7960 43 A H-bridge module",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 7.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: BTS7960 motor driver; reverses the Peltier for heating"
+  },
+  {
+   "name": "ESP32 30/38-pin screw terminal breakout",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: ESP32 screw terminal breakout"
+  },
+  {
+   "name": "D4184 MOSFET module (pump + fan)",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: D4184 MOSFET module"
+  },
+  {
+   "name": "MP1584 buck module 12 V -> 5 V",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: MP1584EN buck module"
+  },
+  {
+   "name": "DS18B20 waterproof probe",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 2.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "water return + pad/bed temperature"
+  },
+  {
+   "name": "EC11 rotary encoder with push",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: EC11 rotary encoder"
+  },
+  {
+   "name": "12 V 10 A UL-listed power adapter, 5.5x2.1",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 20.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 12V 10A power supply UL listed 5.5x2.1"
+  },
+  {
+   "name": "Inline blade fuse holder + 10 A fuse",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "on the 12 V input right behind the jack"
+  },
+  {
+   "name": "Wago 221 lever connectors + 18/22 AWG wire",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "12 V and GND distribution"
+  },
+  {
+   "name": "Rubber bumper foot 12 mm",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.2,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "adhesive"
+  },
+  {
+   "name": "M3x40 screw + spring (heatsink clamp)",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.25,
+   "supplier": "McMaster / Amazon",
+   "url": "",
+   "notes": "into inserts in the TEC cradle"
+  },
+  {
+   "name": "M3 heat-set insert (TEC cradle)",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 7.5,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=ESP32+DevKitC+WROOM-32+38+pin",
+   "notes": "search: ESP32 DevKitC WROOM-32 38 pin",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d710 brass standoff",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.18,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+brass+standoff+10mm",
+   "notes": "search: M3 brass standoff 10mm",
+   "auto": "lib"
+  },
+  {
+   "name": "0.96\" OLED display (SSD1306)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 3.5,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=0.96+inch+OLED+SSD1306+I2C",
+   "notes": "search: 0.96 inch OLED SSD1306 I2C",
+   "auto": "lib"
+  },
+  {
+   "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.8,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=DC-022+panel+mount+barrel+jack+5.5x2.1",
+   "notes": "search: DC-022 panel mount barrel jack 5.5x2.1",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d712 button head screw",
+   "qty_per_unit": 16,
+   "unit_cost_usd": 0.101,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x12+button+head+screw",
+   "notes": "search: M3x12 button head screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M3 heat-set insert",
+   "qty_per_unit": 8,
+   "unit_cost_usd": 0.12,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+heat+set+insert+brass",
+   "notes": "search: M3 heat set insert brass",
+   "auto": "lib"
+  },
+  {
+   "name": "M3 hex nut",
+   "qty_per_unit": 8,
+   "unit_cost_usd": 0.06,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+hex+nut",
+   "notes": "search: M3 hex nut",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 75,
+ "kit_ok": false,
+ "printed": [
+  {
+   "file": "stl/front-top-rail.stl",
+   "name": "Front Top Rail",
+   "grams": 6.5,
+   "print_hours": 0.33,
+   "bbox": [
+    178.0,
+    12.0,
+    12.0
+   ]
+  },
+  {
+   "file": "stl/rear-top-rail.stl",
+   "name": "Rear Top Rail",
+   "grams": 6.5,
+   "print_hours": 0.33,
+   "bbox": [
+    178.0,
+    12.0,
+    12.0
+   ]
+  },
+  {
+   "file": "stl/tec-cradle.stl",
+   "name": "TEC Cradle",
+   "grams": 28.3,
+   "print_hours": 1.42,
+   "bbox": [
+    70.0,
+    60.0,
+    14.0
+   ]
+  },
+  {
+   "file": "stl/knob.stl",
+   "name": "Knob",
+   "grams": 5.7,
+   "print_hours": 0.28,
+   "bbox": [
+    25.9,
+    16.0,
+    25.9
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/cover.stl",
+   "name": "Cover",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 5052",
+    "thickness_mm": 1.5,
+    "bends": 2
+   },
+   "est": {
+    "area_cm2": 790.6,
+    "bends": 2,
+    "minutes": 14.9,
+    "material_usd": 4.74
+   },
+   "bbox": [
+    240.0,
+    170.0,
+    123.8
+   ]
+  },
+  {
+   "file": "stl/base-tray.stl",
+   "name": "Base Tray",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 5052",
+    "thickness_mm": 1.5,
+    "bends": 4
+   },
+   "est": {
+    "area_cm2": 507.9,
+    "bends": 4,
+    "minutes": 15.1,
+    "material_usd": 3.05
+   },
+   "bbox": [
+    237.0,
+    170.0,
+    16.0
+   ]
+  },
+  {
+   "file": "stl/front-panel.stl",
+   "name": "Front Panel",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 870.3,
+    "area_cm2": 299.8,
+    "minutes": 1.7,
+    "material_usd": 3.15
+   },
+   "bbox": [
+    240.0,
+    3.0,
+    127.0
+   ]
+  },
+  {
+   "file": "stl/rear-panel.stl",
+   "name": "Rear Panel",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 1466.3,
+    "area_cm2": 284.7,
+    "minutes": 2.2,
+    "material_usd": 2.99
+   },
+   "bbox": [
+    240.0,
+    3.0,
+    127.0
+   ]
+  }
+ ]
+}

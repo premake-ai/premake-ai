@@ -1,0 +1,1099 @@
+{
+ "t": 1793678024.52353,
+ "title": "Smart Sleep Headband Replica",
+ "parts": [
+  {
+   "file": "stl/left-end-panel.stl",
+   "name": "Left end panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#f4f4f2",
+   "explode": [
+    -0.15,
+    -0.989,
+    0.004
+   ],
+   "bbox": [
+    5.5,
+    176.0,
+    125.0
+   ],
+   "material": "acrylic_frosted"
+  },
+  {
+   "file": "stl/right-end-panel.stl",
+   "name": "Right end panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#f4f4f2",
+   "explode": [
+    0.15,
+    -0.989,
+    0.004
+   ],
+   "bbox": [
+    5.5,
+    176.0,
+    125.0
+   ],
+   "material": "acrylic_frosted"
+  },
+  {
+   "file": "stl/bottom-panel.stl",
+   "name": "Bottom panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#f4f4f2",
+   "explode": [
+    0.0,
+    -0.999,
+    -0.046
+   ],
+   "bbox": [
+    329.0,
+    168.0,
+    5.5
+   ],
+   "material": "acrylic_frosted"
+  },
+  {
+   "file": "stl/top-panel.stl",
+   "name": "Top panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#f4f4f2",
+   "explode": [
+    0.0,
+    -0.999,
+    0.055
+   ],
+   "bbox": [
+    329.0,
+    168.0,
+    5.6
+   ],
+   "material": "acrylic_frosted"
+  },
+  {
+   "file": "stl/front-panel.stl",
+   "name": "Front panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#2b2d30",
+   "explode": [
+    0.0,
+    -1.0,
+    0.004
+   ],
+   "bbox": [
+    340.0,
+    3.0,
+    106.0
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/back-panel.stl",
+   "name": "Back panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#f4f4f2",
+   "explode": [
+    0.0,
+    -1.0,
+    0.005
+   ],
+   "bbox": [
+    340.0,
+    3.0,
+    106.0
+   ],
+   "material": "acrylic_frosted"
+  },
+  {
+   "file": "stl/tank-bottom.stl",
+   "name": "Tank bottom",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    -0.094,
+    -0.995,
+    -0.042
+   ],
+   "bbox": [
+    110.0,
+    116.0,
+    3.0
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/tank-front.stl",
+   "name": "Tank front",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    -0.089,
+    -0.996,
+    -0.001
+   ],
+   "bbox": [
+    110.0,
+    3.0,
+    87.5
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/tank-back.stl",
+   "name": "Tank back",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    -0.099,
+    -0.995,
+    -0.001
+   ],
+   "bbox": [
+    110.0,
+    3.0,
+    87.5
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/tank-left.stl",
+   "name": "Tank left",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    -0.141,
+    -0.99,
+    -0.001
+   ],
+   "bbox": [
+    3.0,
+    110.0,
+    87.5
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/tank-right.stl",
+   "name": "Tank right",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    -0.046,
+    -0.999,
+    -0.001
+   ],
+   "bbox": [
+    3.0,
+    110.0,
+    87.5
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/tank-lid.stl",
+   "name": "Tank lid",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    -0.094,
+    -0.995,
+    0.039
+   ],
+   "bbox": [
+    110.0,
+    116.0,
+    3.1
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/fill-neck.stl",
+   "name": "Fill neck",
+   "group": "case",
+   "process": "print",
+   "color": "#e8e8e6",
+   "explode": [
+    -0.094,
+    -0.995,
+    0.045
+   ],
+   "bbox": [
+    52.0,
+    52.0,
+    25.3
+   ]
+  },
+  {
+   "file": "stl/fill-cap.stl",
+   "name": "Fill cap",
+   "group": "case",
+   "process": "print",
+   "color": "#3a8fd6",
+   "explode": [
+    -0.094,
+    -0.994,
+    0.054
+   ],
+   "bbox": [
+    46.0,
+    46.0,
+    13.3
+   ]
+  },
+  {
+   "file": "stl/front-clamp-bar.stl",
+   "name": "Front clamp bar",
+   "group": "case",
+   "process": "print",
+   "color": "#555a60",
+   "explode": [
+    0.052,
+    -0.999,
+    -0.007
+   ],
+   "bbox": [
+    182.0,
+    10.0,
+    16.0
+   ]
+  },
+  {
+   "file": "stl/rear-clamp-bar.stl",
+   "name": "Rear clamp bar",
+   "group": "case",
+   "process": "print",
+   "color": "#555a60",
+   "explode": [
+    0.055,
+    -0.998,
+    -0.008
+   ],
+   "bbox": [
+    182.0,
+    8.0,
+    16.0
+   ]
+  },
+  {
+   "file": "stl/heatsink.stl",
+   "name": "Heatsink",
+   "group": "component",
+   "process": "bought",
+   "color": "#b9bec4",
+   "explode": [
+    0.054,
+    -0.999,
+    -0.008
+   ],
+   "bbox": [
+    150.0,
+    30.0,
+    80.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/peltier-a.stl",
+   "name": "Peltier A",
+   "group": "component",
+   "process": "bought",
+   "color": "#f0f0ea",
+   "explode": [
+    0.035,
+    -0.999,
+    -0.008
+   ],
+   "bbox": [
+    40.0,
+    3.8,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/peltier-b.stl",
+   "name": "Peltier B",
+   "group": "component",
+   "process": "bought",
+   "color": "#f0f0ea",
+   "explode": [
+    0.071,
+    -0.997,
+    -0.008
+   ],
+   "bbox": [
+    40.0,
+    3.8,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/water-block-40x80.stl",
+   "name": "Water block 40x80",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8ccd0",
+   "explode": [
+    0.059,
+    -0.998,
+    -0.008
+   ],
+   "bbox": [
+    93.0,
+    12.0,
+    40.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/80-mm-case-fan.stl",
+   "name": "80 mm case fan",
+   "group": "component",
+   "process": "bought",
+   "color": "#1c1c22",
+   "explode": [
+    0.017,
+    -1.0,
+    -0.008
+   ],
+   "bbox": [
+    80.0,
+    25.0,
+    93.0
+   ],
+   "ref_model": {
+    "key": "fan_80",
+    "m": [
+     [
+      1.0,
+      0.0,
+      0.0,
+      18.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      68.5
+     ],
+     [
+      0.0,
+      -1.0,
+      0.0,
+      49.5
+     ],
+     [
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "yours": false
+   },
+   "lib": {
+    "key": "ref:fan_80",
+    "qty": 1,
+    "name": "80 mm case fan",
+    "unit_cost_usd": 6.0,
+    "mass_g": null
+   }
+  },
+  {
+   "file": "stl/80-mm-case-fan-2.stl",
+   "name": "80 mm case fan (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1c1c22",
+   "explode": [
+    0.094,
+    -0.996,
+    -0.008
+   ],
+   "bbox": [
+    80.0,
+    25.0,
+    93.0
+   ],
+   "ref_model": {
+    "key": "fan_80",
+    "m": [
+     [
+      1.0,
+      0.0,
+      0.0,
+      98.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      68.5
+     ],
+     [
+      0.0,
+      -1.0,
+      0.0,
+      49.5
+     ],
+     [
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "yours": false
+   },
+   "lib": {
+    "key": "ref:fan_80",
+    "qty": 1,
+    "name": "80 mm case fan",
+    "unit_cost_usd": 6.0,
+    "mass_g": null
+   }
+  },
+  {
+   "file": "stl/m3-70-socket-head-screw-2.stl",
+   "name": "M3\u00d770 socket head screw \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.054,
+    -0.999,
+    -0.008
+   ],
+   "bbox": [
+    175.5,
+    73.0,
+    5.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-70-socket-head-screw-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 2,
+    "name": "M3\u00d770 socket head screw",
+    "unit_cost_usd": 0.153,
+    "mass_g": 4.4
+   }
+  },
+  {
+   "file": "stl/m3-nylock-nut-2.stl",
+   "name": "M3 nylock nut \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.055,
+    -0.998,
+    -0.008
+   ],
+   "bbox": [
+    176.4,
+    3.0,
+    5.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-nylock-nut-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/m3-nylock-nut-2__1.stl",
+     "color": "#e8e4d6",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 2,
+    "name": "M3 nylock nut",
+    "unit_cost_usd": 0.09,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m3-16-button-head-screw-8.stl",
+   "name": "M3\u00d716 button head screw \u00d78",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    -1.0,
+    0.004
+   ],
+   "bbox": [
+    343.3,
+    105.7,
+    117.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-16-button-head-screw-8__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 8,
+    "name": "M3\u00d716 button head screw",
+    "unit_cost_usd": 0.104,
+    "mass_g": 1.1
+   }
+  },
+  {
+   "file": "stl/m3-hex-nut-8.stl",
+   "name": "M3 hex nut \u00d78",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.0,
+    -1.0,
+    0.004
+   ],
+   "bbox": [
+    317.4,
+    105.5,
+    117.9
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-hex-nut-8__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 8,
+    "name": "M3 hex nut",
+    "unit_cost_usd": 0.06,
+    "mass_g": 0.3
+   }
+  },
+  {
+   "file": "stl/12v-brushless-pump.stl",
+   "name": "12V brushless pump",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f22",
+   "explode": [
+    -0.016,
+    -1.0,
+    -0.024
+   ],
+   "bbox": [
+    50.0,
+    40.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/bts7960-h-bridge.stl",
+   "name": "BTS7960 H-bridge",
+   "group": "component",
+   "process": "bought",
+   "color": "#c62a2a",
+   "explode": [
+    0.095,
+    -0.995,
+    -0.022
+   ],
+   "bbox": [
+    50.0,
+    50.0,
+    39.0
+   ]
+  },
+  {
+   "file": "stl/nano-screw-terminal-board.stl",
+   "name": "Nano screw-terminal board",
+   "group": "component",
+   "process": "bought",
+   "color": "#2a5bc6",
+   "explode": [
+    0.047,
+    -0.998,
+    -0.033
+   ],
+   "bbox": [
+    50.0,
+    45.0,
+    12.0
+   ],
+   "material": "pcb"
+  },
+  {
+   "file": "stl/arduino-nano-compatible.stl",
+   "name": "Arduino Nano (compatible)",
+   "group": "component",
+   "process": "bought",
+   "color": "#18427a",
+   "explode": [
+    0.047,
+    -0.999,
+    -0.026
+   ],
+   "bbox": [
+    44.7,
+    18.0,
+    18.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/arduino-nano-compatible__0.stl",
+     "color": "#18427a",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/arduino-nano-compatible__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/arduino-nano-compatible__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/arduino-nano-compatible__3.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/arduino-nano-compatible__4.stl",
+     "color": "#e6e2d8",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/arduino-nano-compatible__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/arduino-nano-compatible__6.stl",
+     "color": "#3be06a",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/arduino-nano-compatible__7.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/arduino-nano-compatible__8.stl",
+     "color": "#f2c94c",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/arduino-nano-compatible__9.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    }
+   ],
+   "lib": {
+    "key": "arduino_nano",
+    "qty": 1,
+    "name": "Arduino Nano (compatible)",
+    "unit_cost_usd": 6.0,
+    "mass_g": 7.0
+   }
+  },
+  {
+   "file": "stl/pump-mosfet-module.stl",
+   "name": "Pump MOSFET module",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f6fd1",
+   "explode": [
+    -0.02,
+    -0.999,
+    -0.035
+   ],
+   "bbox": [
+    34.0,
+    17.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/fan-mosfet-module.stl",
+   "name": "Fan MOSFET module",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f6fd1",
+   "explode": [
+    0.042,
+    -0.999,
+    -0.035
+   ],
+   "bbox": [
+    34.0,
+    17.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/0-96-oled-display-ssd1306.stl",
+   "name": "0.96\" OLED display (SSD1306)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a3a6b",
+   "explode": [
+    0.084,
+    -0.996,
+    0.023
+   ],
+   "bbox": [
+    27.3,
+    11.3,
+    27.9
+   ],
+   "subparts": [
+    {
+     "file": "stl/0-96-oled-display-ssd1306__0.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/0-96-oled-display-ssd1306__1.stl",
+     "color": "#1a3a6b",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/0-96-oled-display-ssd1306__2.stl",
+     "color": "#0f1013",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/0-96-oled-display-ssd1306__3.stl",
+     "color": "#08090c",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/0-96-oled-display-ssd1306__4.stl",
+     "color": "#0d1b2a",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/0-96-oled-display-ssd1306__5.stl",
+     "color": "#c9a24a",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/0-96-oled-display-ssd1306__6.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "oled_096",
+    "qty": 1,
+    "name": "0.96\" OLED display (SSD1306)",
+    "unit_cost_usd": 3.5,
+    "mass_g": 4.0
+   }
+  },
+  {
+   "file": "stl/power-button.stl",
+   "name": "Power button",
+   "group": "component",
+   "process": "bought",
+   "color": "#d9dde2",
+   "explode": [
+    0.059,
+    -0.998,
+    -0.007
+   ],
+   "bbox": [
+    15.0,
+    23.5,
+    15.0
+   ],
+   "material": "steel",
+   "fx": {
+    "glow": {
+     "color": "#33ccff"
+    }
+   }
+  },
+  {
+   "file": "stl/cool-heat-button.stl",
+   "name": "Cool/Heat button",
+   "group": "component",
+   "process": "bought",
+   "color": "#d9dde2",
+   "explode": [
+    0.074,
+    -0.997,
+    -0.007
+   ],
+   "bbox": [
+    15.0,
+    23.5,
+    15.0
+   ],
+   "material": "steel",
+   "fx": {
+    "glow": {
+     "color": "#33ccff"
+    }
+   }
+  },
+  {
+   "file": "stl/eco-max-button.stl",
+   "name": "Eco/Max button",
+   "group": "component",
+   "process": "bought",
+   "color": "#d9dde2",
+   "explode": [
+    0.089,
+    -0.996,
+    -0.007
+   ],
+   "bbox": [
+    15.0,
+    23.5,
+    15.0
+   ],
+   "material": "steel",
+   "fx": {
+    "glow": {
+     "color": "#33ccff"
+    }
+   }
+  },
+  {
+   "file": "stl/timer-button.stl",
+   "name": "Timer button",
+   "group": "component",
+   "process": "bought",
+   "color": "#d9dde2",
+   "explode": [
+    0.104,
+    -0.995,
+    -0.007
+   ],
+   "bbox": [
+    15.0,
+    23.5,
+    15.0
+   ],
+   "material": "steel",
+   "fx": {
+    "glow": {
+     "color": "#33ccff"
+    }
+   }
+  },
+  {
+   "file": "stl/din-power-socket.stl",
+   "name": "DIN power socket",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    -0.072,
+    -0.997,
+    0.019
+   ],
+   "bbox": [
+    22.0,
+    27.0,
+    22.0
+   ],
+   "cable": {
+    "type": "dc-barrel",
+    "at": [
+     -75.0,
+     86.0,
+     78.0
+    ],
+    "dir": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "length_mm": 600.0
+   }
+  },
+  {
+   "file": "stl/hose-bulkhead-in.stl",
+   "name": "Hose bulkhead IN",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9a54a",
+   "explode": [
+    -0.102,
+    -0.995,
+    -0.017
+   ],
+   "bbox": [
+    18.0,
+    35.0,
+    18.0
+   ],
+   "material": "brass"
+  },
+  {
+   "file": "stl/insulated-hose-in.stl",
+   "name": "Insulated hose IN",
+   "group": "component",
+   "process": "bought",
+   "color": "#e6e9ec",
+   "explode": [
+    -0.202,
+    -0.978,
+    -0.047
+   ],
+   "bbox": [
+    119.4,
+    613.3,
+    66.0
+   ]
+  },
+  {
+   "file": "stl/hose-bulkhead-out.stl",
+   "name": "Hose bulkhead OUT",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9a54a",
+   "explode": [
+    -0.131,
+    -0.991,
+    -0.017
+   ],
+   "bbox": [
+    18.0,
+    35.0,
+    18.0
+   ],
+   "material": "brass"
+  },
+  {
+   "file": "stl/insulated-hose-out.stl",
+   "name": "Insulated hose OUT",
+   "group": "component",
+   "process": "bought",
+   "color": "#e6e9ec",
+   "explode": [
+    -0.257,
+    -0.965,
+    -0.047
+   ],
+   "bbox": [
+    143.6,
+    612.9,
+    65.8
+   ]
+  },
+  {
+   "file": "stl/water-cooling-pad.stl",
+   "name": "Water cooling pad",
+   "group": "component",
+   "process": "bought",
+   "color": "#dfe8f1",
+   "explode": [
+    0.0,
+    0.991,
+    -0.133
+   ],
+   "bbox": [
+    700.1,
+    1600.1,
+    10.1
+   ]
+  }
+ ],
+ "scene": "floor",
+ "assembly_order": [
+  [
+   "Bottom panel"
+  ],
+  [
+   "Tank bottom",
+   "Tank front",
+   "Tank back",
+   "Tank left",
+   "Tank right"
+  ],
+  [
+   "Tank lid",
+   "Fill neck"
+  ],
+  [
+   "Heatsink",
+   "Peltier A",
+   "Peltier B",
+   "Water block 40x80"
+  ],
+  [
+   "Front clamp bar",
+   "Rear clamp bar"
+  ],
+  [
+   "Back panel"
+  ],
+  [
+   "Front panel"
+  ],
+  [
+   "Left end panel",
+   "Right end panel"
+  ],
+  [
+   "Top panel",
+   "Fill cap"
+  ]
+ ],
+ "wiring": {
+  "file": "wiring.json",
+  "wires": 51,
+  "parts": [
+   "0.96\" OLED display (SSD1306)",
+   "12V brushless pump",
+   "80 mm case fan",
+   "80 mm case fan (2)",
+   "BTS7960 H-bridge",
+   "Cool/Heat button",
+   "DIN power socket",
+   "DS18B20 probe + adapter (heatsink)",
+   "DS18B20 probe + adapter (water)",
+   "Eco/Max button",
+   "Fan MOSFET module",
+   "Inline blade fuse holder (15 A)",
+   "Mean Well GST220A12 12 V 15 A adapter",
+   "Nano screw-terminal board",
+   "Peltier A",
+   "Peltier B",
+   "Power button",
+   "Pump MOSFET module",
+   "Timer button",
+   "Wago 221-415 (12 V)",
+   "Wago 221-415 (GND)"
+  ],
+  "ok": true
+ }
+}

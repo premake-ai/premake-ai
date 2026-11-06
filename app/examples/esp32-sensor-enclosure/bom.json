@@ -1,0 +1,94 @@
+{
+ "parts": [
+  {
+   "name": "BME280 sensor",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: BME280 3.3V I2C module (4-pin VIN/GND/SCL/SDA)"
+  },
+  {
+   "name": "Rubber feet",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "8 mm x 2.5 mm self-adhesive; search: 8mm self adhesive rubber bumper feet"
+  },
+  {
+   "name": "Silicone hookup wire 26 AWG",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.3,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "4 x ~80 mm leads, sensor to ESP32 header pins; search: 26 AWG silicone wire kit"
+  },
+  {
+   "name": "Micro-USB cable",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 3.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "power + flashing; search: micro USB data cable 1m"
+  },
+  {
+   "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 7.5,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=ESP32+DevKitC+WROOM-32+38+pin&rh=p_85%3A2470955011",
+   "notes": "search: ESP32 DevKitC WROOM-32 38 pin",
+   "auto": "lib"
+  },
+  {
+   "name": "M2.5\u00d78 self-tapping screw for plastic",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.052,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M2.5+x+8mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M2.5 x 8mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 20,
+ "kit_ok": true,
+ "needs_soldering": true,
+ "soldering_reason": "Four short wires are soldered from the BME280 pads to the ESP32 header pins so everything fits the compact case.",
+ "printed": [
+  {
+   "file": "stl/base.stl",
+   "name": "Base",
+   "grams": 22.2,
+   "print_hours": 1.11,
+   "bbox": [
+    96.0,
+    50.0,
+    30.0
+   ]
+  },
+  {
+   "file": "stl/lid.stl",
+   "name": "Lid",
+   "grams": 8.7,
+   "print_hours": 0.44,
+   "bbox": [
+    96.0,
+    50.0,
+    8.5
+   ]
+  },
+  {
+   "file": "stl/board-clamp.stl",
+   "name": "Board clamp",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    8.0,
+    46.0,
+    3.5
+   ]
+  }
+ ],
+ "fabricated": []
+}

@@ -1,0 +1,886 @@
+{
+ "t": 1793336629.97506,
+ "title": "Wi-Fi Pet Feeder",
+ "parts": [
+  {
+   "file": "stl/base-plate.stl",
+   "name": "Base Plate",
+   "group": "case",
+   "process": "laser",
+   "color": "#f4f2ee",
+   "explode": [
+    0.0,
+    -0.026,
+    -1.0
+   ],
+   "bbox": [
+    250.1,
+    398.1,
+    6.3
+   ]
+  },
+  {
+   "file": "stl/side-panel-l.stl",
+   "name": "Side Panel L",
+   "group": "case",
+   "process": "laser",
+   "color": "#f4f2ee",
+   "explode": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    6.0,
+    218.0,
+    380.0
+   ]
+  },
+  {
+   "file": "stl/side-panel-r.stl",
+   "name": "Side Panel R",
+   "group": "case",
+   "process": "laser",
+   "color": "#f4f2ee",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    6.0,
+    218.0,
+    380.0
+   ]
+  },
+  {
+   "file": "stl/front-window.stl",
+   "name": "Front Window",
+   "group": "case",
+   "process": "laser",
+   "color": "#cfe8f0",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    104.0,
+    3.0,
+    249.4
+   ]
+  },
+  {
+   "file": "stl/front-lower-panel.stl",
+   "name": "Front Lower Panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#f4f2ee",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    104.0,
+    3.0,
+    94.1
+   ]
+  },
+  {
+   "file": "stl/back-panel.stl",
+   "name": "Back Panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#cfe8f0",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    104.0,
+    3.0,
+    270.0
+   ]
+  },
+  {
+   "file": "stl/access-cover.stl",
+   "name": "Access Cover",
+   "group": "case",
+   "process": "laser",
+   "color": "#f4f2ee",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    104.0,
+    3.0,
+    110.0
+   ]
+  },
+  {
+   "file": "stl/ramp-front.stl",
+   "name": "Ramp Front",
+   "group": "case",
+   "process": "laser",
+   "color": "#f4f2ee",
+   "explode": [
+    0.0,
+    0.682,
+    0.731
+   ],
+   "bbox": [
+    104.0,
+    52.6,
+    56.9
+   ]
+  },
+  {
+   "file": "stl/ramp-back.stl",
+   "name": "Ramp Back",
+   "group": "case",
+   "process": "laser",
+   "color": "#f4f2ee",
+   "explode": [
+    0.0,
+    0.925,
+    0.379
+   ],
+   "bbox": [
+    104.0,
+    52.6,
+    56.9
+   ]
+  },
+  {
+   "file": "stl/chute.stl",
+   "name": "Chute",
+   "group": "case",
+   "process": "laser",
+   "color": "#f4f2ee",
+   "explode": [
+    0.0,
+    0.553,
+    -0.833
+   ],
+   "bbox": [
+    104.0,
+    165.0,
+    106.6
+   ]
+  },
+  {
+   "file": "stl/trough.stl",
+   "name": "Trough",
+   "group": "case",
+   "process": "print",
+   "color": "#8a9ba8",
+   "explode": [
+    0.0,
+    0.999,
+    0.053
+   ],
+   "bbox": [
+    114.0,
+    70.0,
+    69.6
+   ]
+  },
+  {
+   "file": "stl/wheel.stl",
+   "name": "Portion Wheel",
+   "group": "case",
+   "process": "print",
+   "color": "#f2a541",
+   "explode": [
+    0.034,
+    0.991,
+    0.126
+   ],
+   "bbox": [
+    106.5,
+    63.0,
+    55.4
+   ]
+  },
+  {
+   "file": "stl/motor-cover.stl",
+   "name": "Motor Cover",
+   "group": "case",
+   "process": "print",
+   "color": "#8a9ba8",
+   "explode": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    46.0,
+    56.0,
+    101.0
+   ]
+  },
+  {
+   "file": "stl/cover-cleat-l.stl",
+   "name": "Cover Cleat L",
+   "group": "case",
+   "process": "print",
+   "color": "#8a9ba8",
+   "explode": [
+    -0.23,
+    0.877,
+    -0.422
+   ],
+   "bbox": [
+    10.0,
+    10.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/cover-cleat-r.stl",
+   "name": "Cover Cleat R",
+   "group": "case",
+   "process": "print",
+   "color": "#8a9ba8",
+   "explode": [
+    0.23,
+    0.877,
+    -0.422
+   ],
+   "bbox": [
+    10.0,
+    10.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/lid.stl",
+   "name": "Lid",
+   "group": "case",
+   "process": "laser",
+   "color": "#f4f2ee",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    122.0,
+    162.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/lid-plug.stl",
+   "name": "Lid Plug",
+   "group": "case",
+   "process": "laser",
+   "color": "#f4f2ee",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    103.4,
+    149.4,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/steel-bowl-16-oz.stl",
+   "name": "Steel bowl 16 oz",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bec3",
+   "explode": [
+    0.0,
+    -0.436,
+    -0.9
+   ],
+   "bbox": [
+    216.1,
+    216.2,
+    51.3
+   ]
+  },
+  {
+   "file": "stl/perfboard-50x70.stl",
+   "name": "Perfboard 50x70",
+   "group": "component",
+   "process": "bought",
+   "color": "#3f7d3a",
+   "explode": [
+    0.0,
+    0.593,
+    -0.806
+   ],
+   "bbox": [
+    70.0,
+    50.0,
+    1.6
+   ]
+  },
+  {
+   "file": "stl/feed-button-16-mm.stl",
+   "name": "Feed button 16 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#d94f3d",
+   "explode": [
+    -0.104,
+    0.804,
+    -0.585
+   ],
+   "bbox": [
+    19.0,
+    20.0,
+    19.0
+   ]
+  },
+  {
+   "file": "stl/rubber-foot.stl",
+   "name": "Rubber foot",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2b2b",
+   "explode": [
+    0.0,
+    -0.005,
+    -1.0
+   ],
+   "bbox": [
+    212.7,
+    352.7,
+    4.0
+   ]
+  },
+  {
+   "file": "stl/m3-10-brass-standoff-4.stl",
+   "name": "M3\u00d710 brass standoff \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    0.0,
+    0.58,
+    -0.815
+   ],
+   "bbox": [
+    67.8,
+    47.0,
+    10.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-brass-standoff-4__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "standoff",
+    "qty": 4,
+    "name": "M3\u00d710 brass standoff",
+    "unit_cost_usd": 0.18,
+    "mass_g": 1.4
+   }
+  },
+  {
+   "file": "stl/m3-8-button-head-screw-4.stl",
+   "name": "M3\u00d78 button head screw \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    0.587,
+    -0.809
+   ],
+   "bbox": [
+    67.7,
+    47.7,
+    9.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-8-button-head-screw-4__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M3\u00d78 button head screw",
+    "unit_cost_usd": 0.097,
+    "mass_g": 0.7
+   }
+  },
+  {
+   "file": "stl/m3-8-button-head-screw-4-2.stl",
+   "name": "M3\u00d78 button head screw \u00d74 (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    0.564,
+    -0.826
+   ],
+   "bbox": [
+    67.7,
+    47.7,
+    9.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-8-button-head-screw-4-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M3\u00d78 button head screw",
+    "unit_cost_usd": 0.097,
+    "mass_g": 0.7
+   }
+  },
+  {
+   "file": "stl/esp32-c3-supermini.stl",
+   "name": "ESP32-C3 SuperMini",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    -0.084,
+    0.62,
+    -0.78
+   ],
+   "bbox": [
+    23.5,
+    18.0,
+    4.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/esp32-c3-supermini__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__4.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__6.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    }
+   ],
+   "lib": {
+    "key": "esp32_c3_supermini",
+    "qty": 1,
+    "name": "ESP32-C3 SuperMini",
+    "unit_cost_usd": 4.0,
+    "mass_g": 2.0
+   }
+  },
+  {
+   "file": "stl/tmc2209-stepper-driver.stl",
+   "name": "TMC2209 stepper driver",
+   "group": "component",
+   "process": "bought",
+   "color": "#2f2547",
+   "explode": [
+    0.072,
+    0.628,
+    -0.775
+   ],
+   "bbox": [
+    20.3,
+    15.2,
+    18.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/tmc2209-stepper-driver__0.stl",
+     "color": "#2f2547",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/tmc2209-stepper-driver__1.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tmc2209-stepper-driver__2.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/tmc2209-stepper-driver__3.stl",
+     "color": "#9aa3ad",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/tmc2209-stepper-driver__4.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tmc2209-stepper-driver__5.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/tmc2209-stepper-driver__6.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tmc2209-stepper-driver__7.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "tmc2209",
+    "qty": 1,
+    "name": "TMC2209 stepper driver",
+    "unit_cost_usd": 5.0,
+    "mass_g": 4.0
+   }
+  },
+  {
+   "file": "stl/mp1584-mini-buck-converter.stl",
+   "name": "MP1584 mini buck converter",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d5e3b",
+   "explode": [
+    -0.087,
+    0.553,
+    -0.829
+   ],
+   "bbox": [
+    22.0,
+    17.0,
+    4.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/mp1584-mini-buck-converter__0.stl",
+     "color": "#1d5e3b",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__1.stl",
+     "color": "#26282c",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__3.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__4.stl",
+     "color": "#2a6ad0",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__5.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__6.stl",
+     "color": "#b48a5c",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__7.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    }
+   ],
+   "lib": {
+    "key": "mp1584",
+    "qty": 1,
+    "name": "MP1584 mini buck converter",
+    "unit_cost_usd": 1.2,
+    "mass_g": 2.0
+   }
+  },
+  {
+   "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1.stl",
+   "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9cdd2",
+   "explode": [
+    0.109,
+    0.783,
+    -0.613
+   ],
+   "bbox": [
+    16.2,
+    16.6,
+    14.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__0.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__1.stl",
+     "color": "#b9bec4",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__3.stl",
+     "color": "#e0e2e4",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__4.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "dc_jack_panel",
+    "qty": 1,
+    "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+    "unit_cost_usd": 0.8,
+    "mass_g": 6.0
+   }
+  },
+  {
+   "file": "stl/m3-heat-set-insert-2.stl",
+   "name": "M3 heat-set insert \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    0.0,
+    0.903,
+    -0.43
+   ],
+   "bbox": [
+    98.6,
+    5.7,
+    4.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-heat-set-insert-2__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "insert",
+    "qty": 2,
+    "name": "M3 heat-set insert",
+    "unit_cost_usd": 0.12,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m3-8-button-head-screw-2.stl",
+   "name": "M3\u00d78 button head screw \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    0.905,
+    -0.424
+   ],
+   "bbox": [
+    99.7,
+    9.6,
+    5.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-8-button-head-screw-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 2,
+    "name": "M3\u00d78 button head screw",
+    "unit_cost_usd": 0.097,
+    "mass_g": 0.7
+   }
+  },
+  {
+   "file": "stl/m3-heat-set-insert.stl",
+   "name": "M3 heat-set insert",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    -0.449,
+    0.819,
+    -0.357
+   ],
+   "bbox": [
+    5.7,
+    4.6,
+    4.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-heat-set-insert__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "insert",
+    "qty": 1,
+    "name": "M3 heat-set insert",
+    "unit_cost_usd": 0.12,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/nema17-stepper-motor-40-mm.stl",
+   "name": "NEMA17 stepper motor 40 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    -0.526,
+    0.843,
+    0.11
+   ],
+   "bbox": [
+    64.6,
+    47.7,
+    42.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 40 mm",
+    "unit_cost_usd": 11.0,
+    "mass_g": 280.0
+   }
+  },
+  {
+   "file": "stl/m3-10-button-head-screw-5.stl",
+   "name": "M3\u00d710 button head screw \u00d75",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.456,
+    0.885,
+    -0.097
+   ],
+   "bbox": [
+    11.6,
+    36.7,
+    88.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-button-head-screw-5__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 5,
+    "name": "M3\u00d710 button head screw",
+    "unit_cost_usd": 0.099,
+    "mass_g": 0.8
+   }
+  }
+ ],
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 1
+ }
+}

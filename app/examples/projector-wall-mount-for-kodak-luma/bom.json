@@ -1,0 +1,106 @@
+{
+ "parts": [
+  {
+   "name": "M6 x 45 hex bolt",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.4,
+   "supplier": "McMaster-Carr / hardware store",
+   "url": "",
+   "notes": "tilt pivot"
+  },
+  {
+   "name": "M6 star knob, female thread",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "\"M6 star knob female thread\" - hand-tight tilt lock"
+  },
+  {
+   "name": "M6 x 30 countersunk bolt",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.35,
+   "supplier": "McMaster-Carr / hardware store",
+   "url": "",
+   "notes": "pan pivot"
+  },
+  {
+   "name": "M6 star knob, female thread (pan)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "\"M6 star knob female thread\""
+  },
+  {
+   "name": "M6 washer",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.05,
+   "supplier": "hardware store",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "1/4\"-20 x 1/2\" thumb screw",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "\"1/4-20 camera thumb screw\" - into the projector's tripod socket"
+  },
+  {
+   "name": "#8 x 1-1/2\" flat head wood screw + drywall anchor",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.3,
+   "supplier": "hardware store",
+   "url": "",
+   "notes": "wall fixing"
+  },
+  {
+   "name": "Adhesive rubber pad sheet (small)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "on platform top to stop rotation"
+  }
+ ],
+ "assembly_minutes": 5,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/wall-arm.stl",
+   "name": "Wall arm",
+   "grams": 81.0,
+   "print_hours": 4.05,
+   "bbox": [
+    76.1,
+    148.1,
+    76.1
+   ]
+  },
+  {
+   "file": "stl/pan-yoke.stl",
+   "name": "Pan yoke",
+   "grams": 7.4,
+   "print_hours": 0.37,
+   "bbox": [
+    36.1,
+    36.1,
+    30.0
+   ]
+  },
+  {
+   "file": "stl/tilt-platform.stl",
+   "name": "Tilt platform",
+   "grams": 31.5,
+   "print_hours": 1.58,
+   "bbox": [
+    96.0,
+    96.0,
+    30.0
+   ]
+  }
+ ],
+ "fabricated": []
+}

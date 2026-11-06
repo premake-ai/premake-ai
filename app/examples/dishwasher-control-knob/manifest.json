@@ -1,0 +1,40 @@
+{
+ "t": 1793310084.990454,
+ "title": "Dishwasher Control Knob",
+ "parts": [
+  {
+   "file": "stl/knob.stl",
+   "name": "Knob",
+   "group": "case",
+   "process": "print",
+   "color": "#e8e8e4",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    44.1,
+    44.1,
+    22.1
+   ]
+  },
+  {
+   "file": "stl/6-mm-d-shaft-reference.stl",
+   "name": "6 mm D-shaft (reference)",
+   "group": "component",
+   "process": "bought",
+   "color": "#9a9a9a",
+   "explode": [
+    -0.003,
+    0.164,
+    -0.987
+   ],
+   "bbox": [
+    6.0,
+    4.5,
+    28.0
+   ]
+  }
+ ]
+}

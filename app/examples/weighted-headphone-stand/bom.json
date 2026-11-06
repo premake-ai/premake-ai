@@ -1,0 +1,123 @@
+{
+ "parts": [
+  {
+   "name": "Rubber feet",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.08,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Self-adhesive rubber bumper feet, ~12.7 mm dia x 4 mm tall (must clear the ~3 mm screw heads under the base). Search: \"rubber bumper feet 1/2 inch self adhesive\""
+  },
+  {
+   "name": "M4\u00d716 self-tapping screw for plastic",
+   "qty_per_unit": 6,
+   "unit_cost_usd": 0.084,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M4+x+16mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M4 x 16mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  },
+  {
+   "name": "M4\u00d720 self-tapping screw for plastic",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.086,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M4+x+20mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M4 x 20mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 10,
+ "kit_ok": true,
+ "needs_soldering": false,
+ "printed": [
+  {
+   "file": "stl/hub.stl",
+   "name": "Hub",
+   "grams": 24.4,
+   "print_hours": 1.22,
+   "bbox": [
+    72.1,
+    72.1,
+    22.1
+   ]
+  },
+  {
+   "file": "stl/upright.stl",
+   "name": "Upright",
+   "grams": 28.7,
+   "print_hours": 1.43,
+   "bbox": [
+    27.1,
+    66.3,
+    229.2
+   ]
+  },
+  {
+   "file": "stl/hook.stl",
+   "name": "Hook",
+   "grams": 17.5,
+   "print_hours": 0.87,
+   "bbox": [
+    115.0,
+    26.8,
+    19.4
+   ]
+  },
+  {
+   "file": "stl/hook-pad.stl",
+   "name": "Hook pad",
+   "grams": 8.8,
+   "print_hours": 0.44,
+   "bbox": [
+    115.9,
+    31.7,
+    19.5
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/weight-disc-top.stl",
+   "name": "Weight disc (top)",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 176.1,
+    "bends": 0,
+    "minutes": 5.8,
+    "material_usd": 0.79
+   },
+   "bbox": [
+    150.1,
+    150.1,
+    3.2
+   ]
+  },
+  {
+   "file": "stl/weight-disc-bottom.stl",
+   "name": "Weight disc (bottom)",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 176.1,
+    "bends": 0,
+    "minutes": 5.8,
+    "material_usd": 0.79
+   },
+   "bbox": [
+    150.1,
+    150.1,
+    3.2
+   ]
+  }
+ ]
+}

@@ -1,0 +1,335 @@
+{
+ "parts": [
+  {
+   "name": "2020 V-slot, 2 x 600 + 3 x 160 + 4 x 100 mm, cut and end-tapped M5",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 16.0,
+   "supplier": "Local shop / Amazon cut-to-length",
+   "url": "",
+   "notes": "2.08 m total; search \"2020 V-slot cut to length\"",
+   "fabricated": true
+  },
+  {
+   "name": "6 mm birch plywood top, laser cut 600 x 240 mm",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 9.0,
+   "supplier": "Local laser shop",
+   "url": "",
+   "notes": "Includes cable notch + 6 counterbored holes",
+   "fabricated": true
+  },
+  {
+   "name": "M5 x 10 button head screw",
+   "qty_per_unit": 14,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "8 for gussets, 6 for the top; search \"M5x10 button head hex\""
+  },
+  {
+   "name": "M5 x 12 button head screw (end-tap joints)",
+   "qty_per_unit": 10,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Through access holes into tapped bar ends"
+  },
+  {
+   "name": "M5 drop-in T-nut for 2020",
+   "qty_per_unit": 14,
+   "unit_cost_usd": 0.12,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"2020 M5 drop in T nut\""
+  }
+ ],
+ "assembly_minutes": 20,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/corner-gusset.stl",
+   "name": "Corner gusset",
+   "grams": 5.5,
+   "print_hours": 0.27,
+   "bbox": [
+    34.0,
+    20.0,
+    34.0
+   ]
+  },
+  {
+   "file": "stl/foot-tpu.stl",
+   "name": "Foot (TPU)",
+   "grams": 4.6,
+   "print_hours": 0.25,
+   "bbox": [
+    28.0,
+    28.0,
+    14.0
+   ]
+  },
+  {
+   "file": "stl/corner-gusset-2.stl",
+   "name": "Corner gusset",
+   "grams": 5.5,
+   "print_hours": 0.27,
+   "bbox": [
+    34.0,
+    20.0,
+    34.0
+   ]
+  },
+  {
+   "file": "stl/foot-tpu-2.stl",
+   "name": "Foot (TPU)",
+   "grams": 4.6,
+   "print_hours": 0.25,
+   "bbox": [
+    28.0,
+    28.0,
+    14.0
+   ]
+  },
+  {
+   "file": "stl/corner-gusset-3.stl",
+   "name": "Corner gusset",
+   "grams": 5.5,
+   "print_hours": 0.27,
+   "bbox": [
+    34.0,
+    20.0,
+    34.0
+   ]
+  },
+  {
+   "file": "stl/foot-tpu-3.stl",
+   "name": "Foot (TPU)",
+   "grams": 4.6,
+   "print_hours": 0.25,
+   "bbox": [
+    28.0,
+    28.0,
+    14.0
+   ]
+  },
+  {
+   "file": "stl/corner-gusset-4.stl",
+   "name": "Corner gusset",
+   "grams": 5.5,
+   "print_hours": 0.27,
+   "bbox": [
+    34.0,
+    20.0,
+    34.0
+   ]
+  },
+  {
+   "file": "stl/foot-tpu-4.stl",
+   "name": "Foot (TPU)",
+   "grams": 4.6,
+   "print_hours": 0.25,
+   "bbox": [
+    28.0,
+    28.0,
+    14.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/front-rail.stl",
+   "name": "Front rail",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 600.0
+   },
+   "est": {
+    "length_mm": 600.0,
+    "minutes": 5.0,
+    "material_usd": 3.6
+   },
+   "bbox": [
+    600.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/back-rail.stl",
+   "name": "Back rail",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 600.0
+   },
+   "est": {
+    "length_mm": 600.0,
+    "minutes": 5.0,
+    "material_usd": 3.6
+   },
+   "bbox": [
+    600.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/left-cross-bar.stl",
+   "name": "Left cross bar",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 160.0
+   },
+   "est": {
+    "length_mm": 160.0,
+    "minutes": 5.0,
+    "material_usd": 0.96
+   },
+   "bbox": [
+    20.0,
+    160.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/middle-cross-bar.stl",
+   "name": "Middle cross bar",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 160.0
+   },
+   "est": {
+    "length_mm": 160.0,
+    "minutes": 5.0,
+    "material_usd": 0.96
+   },
+   "bbox": [
+    20.0,
+    160.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/right-cross-bar.stl",
+   "name": "Right cross bar",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 160.0
+   },
+   "est": {
+    "length_mm": 160.0,
+    "minutes": 5.0,
+    "material_usd": 0.96
+   },
+   "bbox": [
+    20.0,
+    160.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/leg.stl",
+   "name": "Leg",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 100.0,
+    "tapped_ends": 1
+   },
+   "est": {
+    "length_mm": 100.0,
+    "minutes": 3.5,
+    "material_usd": 0.6
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/leg-2.stl",
+   "name": "Leg",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 100.0,
+    "tapped_ends": 1
+   },
+   "est": {
+    "length_mm": 100.0,
+    "minutes": 3.5,
+    "material_usd": 0.6
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/leg-3.stl",
+   "name": "Leg",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 100.0,
+    "tapped_ends": 1
+   },
+   "est": {
+    "length_mm": 100.0,
+    "minutes": 3.5,
+    "material_usd": 0.6
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/leg-4.stl",
+   "name": "Leg",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 100.0,
+    "tapped_ends": 1
+   },
+   "est": {
+    "length_mm": 100.0,
+    "minutes": 3.5,
+    "material_usd": 0.6
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/plywood-top.stl",
+   "name": "Plywood top",
+   "process": "laser",
+   "params": {
+    "material": "birch plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1876.4,
+    "area_cm2": 1411.7,
+    "minutes": 4.9,
+    "material_usd": 10.16
+   },
+   "bbox": [
+    600.0,
+    240.0,
+    6.1
+   ]
+  }
+ ]
+}

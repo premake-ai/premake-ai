@@ -1,0 +1,14 @@
+{
+ "title": "Bed Climate Hub",
+ "description": "A 12 V Peltier water chiller/heater with Wi-Fi control that pumps water through a mattress pad to cool or warm your bed.",
+ "creator": "Premake",
+ "tags": [
+  "sleep",
+  "peltier",
+  "ESP32",
+  "smart home",
+  "cooling"
+ ],
+ "created": "2026-10-30T02:13:59.768Z",
+ "demo": true
+}

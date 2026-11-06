@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script src="/apps/sdk.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Flag Buddy</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main id="app">
+    <section id="home" aria-label="Your flags" aria-busy="false">
+      <div class="sk sk-line" aria-hidden="true"></div>
+      <div class="card sk-card" aria-hidden="true">
+        <div class="sk sk-title"></div>
+        <div class="sk sk-big"></div>
+        <div class="sk sk-bar"></div>
+        <div class="sk sk-btn"></div>
+      </div>
+      <div class="card sk-card" aria-hidden="true">
+        <div class="sk sk-title"></div>
+        <div class="sk sk-big"></div>
+        <div class="sk sk-bar"></div>
+        <div class="sk sk-btn"></div>
+      </div>
+      <p class="sr" role="status">Loading your flags…</p>
+    </section>
+    <section id="device" hidden aria-label="Flag details"></section>
+  </main>
+</body>
+</html>

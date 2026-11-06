@@ -1,0 +1,54 @@
+{
+ "t": 1793164679.7780852,
+ "title": "Entryway key shelf",
+ "parts": [
+  {
+   "file": "stl/key-shelf.stl",
+   "name": "Key shelf",
+   "group": "case",
+   "color": "#e9e4d8",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    200.0,
+    50.5,
+    104.0
+   ]
+  },
+  {
+   "file": "stl/mini-carabiners-4x.stl",
+   "name": "Mini carabiners (4x)",
+   "group": "component",
+   "color": "#ff5a5f",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    154.1,
+    4.1,
+    38.2
+   ]
+  },
+  {
+   "file": "stl/keys-not-included.stl",
+   "name": "Keys (not included)",
+   "group": "component",
+   "color": "#c7a750",
+   "explode": [
+    0.0,
+    -1.0,
+    -0.5
+   ],
+   "bbox": [
+    110.0,
+    2.2,
+    55.0
+   ]
+  }
+ ]
+}

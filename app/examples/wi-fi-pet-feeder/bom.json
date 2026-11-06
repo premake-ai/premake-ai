@@ -1,0 +1,466 @@
+{
+ "parts": [
+  {
+   "name": "Stainless steel pet bowl 16 oz (Mlife, 16 cm top / 21.5 cm base / 5 cm)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 6.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: Mlife stainless steel dog bowl rubber base 16 oz (set of 2 ~ $12)"
+  },
+  {
+   "name": "12 V 2 A plug-in adapter, 5.5x2.1 barrel (UL listed)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 9.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 12V 2A power supply 5.5x2.1"
+  },
+  {
+   "name": "Inline fuse holder + 1.5 A fuse",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: inline blade fuse holder; on +12 V right after the jack"
+  },
+  {
+   "name": "16 mm momentary push button (manual feed)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 16mm momentary push button"
+  },
+  {
+   "name": "Perfboard 50 x 70 mm",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.6,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 5x7 cm perfboard double sided"
+  },
+  {
+   "name": "Female headers 2.54 mm (driver + ESP32 sockets)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 2.54mm female header strip"
+  },
+  {
+   "name": "100 uF 35 V electrolytic capacitor",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "across VM/GND at the TMC2209"
+  },
+  {
+   "name": "JST-XH 4-pin motor cable + hookup wire",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: JST XH kit; 22 AWG"
+  },
+  {
+   "name": "Self-adhesive rubber feet 12.7 x 4 mm",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.15,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: rubber bumper feet 1/2 inch"
+  },
+  {
+   "name": "Acrylic solvent cement (Weld-On 4 type), share per unit",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.8,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "bonds the acrylic panels and cleats; ~$8 per bottle"
+  },
+  {
+   "name": "M3\u00d710 brass standoff",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.18,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+brass+standoff+10mm",
+   "notes": "search: M3 brass standoff 10mm",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d78 button head screw",
+   "qty_per_unit": 10,
+   "unit_cost_usd": 0.097,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x8+button+head+screw",
+   "notes": "search: M3x8 button head screw",
+   "auto": "lib"
+  },
+  {
+   "name": "ESP32-C3 SuperMini",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=ESP32-C3+SuperMini",
+   "notes": "search: ESP32-C3 SuperMini",
+   "auto": "lib"
+  },
+  {
+   "name": "TMC2209 stepper driver",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=TMC2209+stepstick",
+   "notes": "search: TMC2209 stepstick",
+   "auto": "lib"
+  },
+  {
+   "name": "MP1584 mini buck converter",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.2,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=MP1584EN+buck+module",
+   "notes": "search: MP1584EN buck module",
+   "auto": "lib"
+  },
+  {
+   "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.8,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=DC-022+panel+mount+barrel+jack+5.5x2.1",
+   "notes": "search: DC-022 panel mount barrel jack 5.5x2.1",
+   "auto": "lib"
+  },
+  {
+   "name": "M3 heat-set insert",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.12,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+heat+set+insert+brass",
+   "notes": "search: M3 heat set insert brass",
+   "auto": "lib"
+  },
+  {
+   "name": "NEMA17 stepper motor 40 mm",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 11.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=NEMA17+stepper+motor+40mm",
+   "notes": "search: NEMA17 stepper motor 40mm",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d710 button head screw",
+   "qty_per_unit": 5,
+   "unit_cost_usd": 0.099,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x10+button+head+screw",
+   "notes": "search: M3x10 button head screw",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 75,
+ "kit_ok": false,
+ "printed": [
+  {
+   "file": "stl/trough.stl",
+   "name": "Trough",
+   "grams": 20.0,
+   "print_hours": 1.0,
+   "bbox": [
+    114.0,
+    70.0,
+    69.6
+   ]
+  },
+  {
+   "file": "stl/wheel.stl",
+   "name": "Portion Wheel",
+   "grams": 27.3,
+   "print_hours": 1.37,
+   "bbox": [
+    106.5,
+    63.0,
+    55.4
+   ]
+  },
+  {
+   "file": "stl/motor-cover.stl",
+   "name": "Motor Cover",
+   "grams": 19.8,
+   "print_hours": 0.99,
+   "bbox": [
+    46.0,
+    56.0,
+    101.0
+   ]
+  },
+  {
+   "file": "stl/cover-cleat-l.stl",
+   "name": "Cover Cleat L",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    10.0,
+    10.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/cover-cleat-r.stl",
+   "name": "Cover Cleat R",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    10.0,
+    10.0,
+    20.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/base-plate.stl",
+   "name": "Base Plate",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1993.2,
+    "area_cm2": 602.2,
+    "minutes": 5.2,
+    "material_usd": 12.65
+   },
+   "bbox": [
+    250.1,
+    398.1,
+    6.3
+   ]
+  },
+  {
+   "file": "stl/side-panel-l.stl",
+   "name": "Side Panel L",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1355.3,
+    "area_cm2": 620.4,
+    "minutes": 3.8,
+    "material_usd": 13.03
+   },
+   "bbox": [
+    6.0,
+    218.0,
+    380.0
+   ]
+  },
+  {
+   "file": "stl/side-panel-r.stl",
+   "name": "Side Panel R",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1232.5,
+    "area_cm2": 624.7,
+    "minutes": 3.6,
+    "material_usd": 13.12
+   },
+   "bbox": [
+    6.0,
+    218.0,
+    380.0
+   ]
+  },
+  {
+   "file": "stl/front-window.stl",
+   "name": "Front Window",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 706.8,
+    "area_cm2": 259.4,
+    "minutes": 1.6,
+    "material_usd": 2.72
+   },
+   "bbox": [
+    104.0,
+    3.0,
+    249.4
+   ]
+  },
+  {
+   "file": "stl/front-lower-panel.stl",
+   "name": "Front Lower Panel",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 396.2,
+    "area_cm2": 97.8,
+    "minutes": 1.3,
+    "material_usd": 1.03
+   },
+   "bbox": [
+    104.0,
+    3.0,
+    94.1
+   ]
+  },
+  {
+   "file": "stl/back-panel.stl",
+   "name": "Back Panel",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 748.0,
+    "area_cm2": 280.8,
+    "minutes": 1.6,
+    "material_usd": 2.95
+   },
+   "bbox": [
+    104.0,
+    3.0,
+    270.0
+   ]
+  },
+  {
+   "file": "stl/access-cover.stl",
+   "name": "Access Cover",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 535.4,
+    "area_cm2": 111.2,
+    "minutes": 1.4,
+    "material_usd": 1.17
+   },
+   "bbox": [
+    104.0,
+    3.0,
+    110.0
+   ]
+  },
+  {
+   "file": "stl/ramp-front.stl",
+   "name": "Ramp Front",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 216.5,
+    "area_cm2": 77.4,
+    "minutes": 1.2,
+    "material_usd": 0.81
+   },
+   "bbox": [
+    104.0,
+    52.6,
+    56.9
+   ]
+  },
+  {
+   "file": "stl/ramp-back.stl",
+   "name": "Ramp Back",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 216.5,
+    "area_cm2": 77.4,
+    "minutes": 1.2,
+    "material_usd": 0.81
+   },
+   "bbox": [
+    104.0,
+    52.6,
+    56.9
+   ]
+  },
+  {
+   "file": "stl/chute.stl",
+   "name": "Chute",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 396.2,
+    "area_cm2": 202.3,
+    "minutes": 1.3,
+    "material_usd": 2.12
+   },
+   "bbox": [
+    104.0,
+    165.0,
+    106.6
+   ]
+  },
+  {
+   "file": "stl/lid.stl",
+   "name": "Lid",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 550.8,
+    "area_cm2": 196.8,
+    "minutes": 1.5,
+    "material_usd": 2.07
+   },
+   "bbox": [
+    122.0,
+    162.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/lid-plug.stl",
+   "name": "Lid Plug",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 502.2,
+    "area_cm2": 154.4,
+    "minutes": 1.4,
+    "material_usd": 1.62
+   },
+   "bbox": [
+    103.4,
+    149.4,
+    3.0
+   ]
+  }
+ ]
+}

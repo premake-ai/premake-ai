@@ -1,0 +1,35 @@
+{
+ "parts": [
+  {
+   "name": "Stainless steel dog bowl, 1 qt (7 in rim)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 6.99,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "Rubber bumper feet 15 mm",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.15,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  }
+ ],
+ "assembly_minutes": 2,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/bowl-stand.stl",
+   "name": "Bowl stand",
+   "grams": 138.0,
+   "print_hours": 6.9,
+   "bbox": [
+    213.2,
+    213.3,
+    120.8
+   ]
+  }
+ ]
+}

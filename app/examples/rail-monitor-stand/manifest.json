@@ -1,0 +1,312 @@
+{
+ "t": 1793237642.132131,
+ "title": "Rail monitor stand",
+ "parts": [
+  {
+   "file": "stl/front-rail.stl",
+   "name": "Front rail",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.0,
+    -0.878,
+    0.478
+   ],
+   "bbox": [
+    600.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/back-rail.stl",
+   "name": "Back rail",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.0,
+    0.878,
+    0.478
+   ],
+   "bbox": [
+    600.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/left-cross-bar.stl",
+   "name": "Left cross bar",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -0.986,
+    -0.0,
+    0.167
+   ],
+   "bbox": [
+    20.0,
+    160.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/middle-cross-bar.stl",
+   "name": "Middle cross bar",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.0,
+    -0.0,
+    1.0
+   ],
+   "bbox": [
+    20.0,
+    160.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/right-cross-bar.stl",
+   "name": "Right cross bar",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.986,
+    -0.0,
+    0.167
+   ],
+   "bbox": [
+    20.0,
+    160.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/leg.stl",
+   "name": "Leg",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -0.3,
+    -0.3,
+    -0.6
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/leg-2.stl",
+   "name": "Leg",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -0.3,
+    0.3,
+    -0.6
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/leg-3.stl",
+   "name": "Leg",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.3,
+    -0.3,
+    -0.6
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/leg-4.stl",
+   "name": "Leg",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.3,
+    0.3,
+    -0.6
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/corner-gusset.stl",
+   "name": "Corner gusset",
+   "group": "case",
+   "process": "print",
+   "color": "#ff8a3d",
+   "explode": [
+    0.8,
+    0.0,
+    -0.4
+   ],
+   "bbox": [
+    34.0,
+    20.0,
+    34.0
+   ]
+  },
+  {
+   "file": "stl/foot-tpu.stl",
+   "name": "Foot (TPU)",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    28.0,
+    28.0,
+    14.0
+   ]
+  },
+  {
+   "file": "stl/corner-gusset-2.stl",
+   "name": "Corner gusset",
+   "group": "case",
+   "process": "print",
+   "color": "#ff8a3d",
+   "explode": [
+    0.8,
+    0.0,
+    -0.4
+   ],
+   "bbox": [
+    34.0,
+    20.0,
+    34.0
+   ]
+  },
+  {
+   "file": "stl/foot-tpu-2.stl",
+   "name": "Foot (TPU)",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    28.0,
+    28.0,
+    14.0
+   ]
+  },
+  {
+   "file": "stl/corner-gusset-3.stl",
+   "name": "Corner gusset",
+   "group": "case",
+   "process": "print",
+   "color": "#ff8a3d",
+   "explode": [
+    -0.8,
+    0.0,
+    -0.4
+   ],
+   "bbox": [
+    34.0,
+    20.0,
+    34.0
+   ]
+  },
+  {
+   "file": "stl/foot-tpu-3.stl",
+   "name": "Foot (TPU)",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    28.0,
+    28.0,
+    14.0
+   ]
+  },
+  {
+   "file": "stl/corner-gusset-4.stl",
+   "name": "Corner gusset",
+   "group": "case",
+   "process": "print",
+   "color": "#ff8a3d",
+   "explode": [
+    -0.8,
+    0.0,
+    -0.4
+   ],
+   "bbox": [
+    34.0,
+    20.0,
+    34.0
+   ]
+  },
+  {
+   "file": "stl/foot-tpu-4.stl",
+   "name": "Foot (TPU)",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    28.0,
+    28.0,
+    14.0
+   ]
+  },
+  {
+   "file": "stl/plywood-top.stl",
+   "name": "Plywood top",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98a",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    600.0,
+    240.0,
+    6.1
+   ]
+  }
+ ]
+}

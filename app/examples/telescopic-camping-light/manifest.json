@@ -1,0 +1,160 @@
+{
+ "t": 1793393491.7838569,
+ "title": "This",
+ "parts": [
+  {
+   "file": "stl/base-shell.stl",
+   "name": "Base shell",
+   "group": "case",
+   "process": "print",
+   "color": "#2b3a2f",
+   "explode": [
+    0.0,
+    -0.088,
+    -0.996
+   ],
+   "bbox": [
+    96.1,
+    96.1,
+    170.1
+   ]
+  },
+  {
+   "file": "stl/tube-1.stl",
+   "name": "Tube 1",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc2",
+   "explode": [
+    0.0,
+    -0.138,
+    -0.99
+   ],
+   "bbox": [
+    25.0,
+    25.0,
+    300.0
+   ]
+  },
+  {
+   "file": "stl/tube-2.stl",
+   "name": "Tube 2",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc2",
+   "explode": [
+    0.0,
+    -0.406,
+    -0.914
+   ],
+   "bbox": [
+    22.0,
+    22.0,
+    300.0
+   ]
+  },
+  {
+   "file": "stl/tube-3.stl",
+   "name": "Tube 3",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc2",
+   "explode": [
+    0.0,
+    -0.352,
+    0.936
+   ],
+   "bbox": [
+    19.0,
+    19.0,
+    300.0
+   ]
+  },
+  {
+   "file": "stl/tube-4.stl",
+   "name": "Tube 4",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc2",
+   "explode": [
+    0.0,
+    -0.131,
+    0.991
+   ],
+   "bbox": [
+    16.0,
+    16.0,
+    300.0
+   ]
+  },
+  {
+   "file": "stl/leg-1.stl",
+   "name": "Leg 1",
+   "group": "case",
+   "process": "print",
+   "color": "#2b3a2f",
+   "explode": [
+    0.0,
+    0.131,
+    -0.991
+   ],
+   "bbox": [
+    20.0,
+    160.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/leg-2.stl",
+   "name": "Leg 2",
+   "group": "case",
+   "process": "print",
+   "color": "#2b3a2f",
+   "explode": [
+    -0.175,
+    -0.176,
+    -0.969
+   ],
+   "bbox": [
+    148.6,
+    97.3,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/leg-3.stl",
+   "name": "Leg 3",
+   "group": "case",
+   "process": "print",
+   "color": "#2b3a2f",
+   "explode": [
+    0.175,
+    -0.176,
+    -0.969
+   ],
+   "bbox": [
+    148.6,
+    97.3,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/head-shell.stl",
+   "name": "Head shell",
+   "group": "case",
+   "process": "print",
+   "color": "#2b3a2f",
+   "explode": [
+    0.0,
+    -0.081,
+    0.997
+   ],
+   "bbox": [
+    150.0,
+    50.0,
+    80.0
+   ]
+  }
+ ],
+ "scene": "floor"
+}

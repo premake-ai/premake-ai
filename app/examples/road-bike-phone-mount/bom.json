@@ -1,0 +1,65 @@
+{
+ "parts": [
+  {
+   "name": "Silicone O-ring 50 mm ID x 3.5 mm cord",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.25,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: silicone O-ring 50mm ID 3.5mm; threaded through the plate slots, stretched over the phone corners; buy a pack, they are wear items"
+  },
+  {
+   "name": "Adhesive rubber strip 1 mm, 18 x 110 mm",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.3,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 1mm adhesive neoprene rubber sheet; cut 2 strips to line the clamp bore for grip and bar protection"
+  },
+  {
+   "name": "M4\u00d716 socket head screw",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.139,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M4x16+socket+head+cap+screw",
+   "notes": "search: M4x16 socket head cap screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M4 hex nut",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.07,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M4+hex+nut",
+   "notes": "search: M4 hex nut",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 5,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/cradle.stl",
+   "name": "Cradle",
+   "grams": 31.6,
+   "print_hours": 1.58,
+   "bbox": [
+    100.0,
+    113.5,
+    37.7
+   ]
+  },
+  {
+   "file": "stl/clamp-lower.stl",
+   "name": "Clamp lower",
+   "grams": 4.8,
+   "print_hours": 0.25,
+   "bbox": [
+    18.1,
+    59.8,
+    20.7
+   ]
+  }
+ ],
+ "fabricated": []
+}

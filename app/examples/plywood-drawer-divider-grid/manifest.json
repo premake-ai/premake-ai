@@ -1,0 +1,91 @@
+{
+ "t": 1793336924.965448,
+ "title": "Plywood Drawer Divider Grid",
+ "parts": [
+  {
+   "file": "stl/long1.stl",
+   "name": "Long divider 1",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b382",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    6.0,
+    496.0,
+    60.0
+   ]
+  },
+  {
+   "file": "stl/long2.stl",
+   "name": "Long divider 2",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b382",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    6.0,
+    496.0,
+    60.0
+   ]
+  },
+  {
+   "file": "stl/cross1.stl",
+   "name": "Cross divider 1",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b382",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    396.0,
+    6.0,
+    60.0
+   ]
+  },
+  {
+   "file": "stl/cross2.stl",
+   "name": "Cross divider 2",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b382",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    396.0,
+    6.0,
+    60.0
+   ]
+  },
+  {
+   "file": "stl/kitchen-drawer-reference.stl",
+   "name": "Kitchen drawer (reference)",
+   "group": "component",
+   "process": "bought",
+   "color": "#e8e8e8",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    424.0,
+    524.0,
+    92.0
+   ]
+  }
+ ]
+}

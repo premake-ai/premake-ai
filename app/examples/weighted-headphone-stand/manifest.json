@@ -1,0 +1,246 @@
+{
+ "t": 1793831517.698813,
+ "title": "Weighted Headphone Stand",
+ "parts": [
+  {
+   "file": "stl/weight-disc-top.stl",
+   "name": "Weight disc (top)",
+   "group": "case",
+   "process": "sheet",
+   "color": "#3a3c40",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    150.1,
+    150.1,
+    3.2
+   ],
+   "material": "steel",
+   "step": "step/weight-disc-top.step"
+  },
+  {
+   "file": "stl/weight-disc-bottom.stl",
+   "name": "Weight disc (bottom)",
+   "group": "case",
+   "process": "sheet",
+   "color": "#3a3c40",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    150.1,
+    150.1,
+    3.2
+   ],
+   "material": "steel",
+   "step": "step/weight-disc-bottom.step"
+  },
+  {
+   "file": "stl/hub.stl",
+   "name": "Hub",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    72.1,
+    72.1,
+    22.1
+   ]
+  },
+  {
+   "file": "stl/upright.stl",
+   "name": "Upright",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    27.1,
+    66.3,
+    229.2
+   ]
+  },
+  {
+   "file": "stl/hook.stl",
+   "name": "Hook",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    115.0,
+    26.8,
+    19.4
+   ]
+  },
+  {
+   "file": "stl/hook-pad.stl",
+   "name": "Hook pad",
+   "group": "case",
+   "process": "print",
+   "color": "#8a8f98",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    115.9,
+    31.7,
+    19.5
+   ],
+   "material": "rubber"
+  },
+  {
+   "file": "stl/rubber-feet.stl",
+   "name": "Rubber feet",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    140.7,
+    140.7,
+    4.0
+   ],
+   "material": "rubber"
+  },
+  {
+   "file": "stl/m4-16-self-tapping-screw-for-plastic-4.stl",
+   "name": "M4\u00d716 self-tapping screw for plastic \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.0,
+    0.178,
+    -0.984
+   ],
+   "bbox": [
+    44.3,
+    44.3,
+    18.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-16-self-tapping-screw-for-plastic-4__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 4,
+    "name": "M4\u00d716 self-tapping screw for plastic",
+    "unit_cost_usd": 0.084,
+    "mass_g": 2.1
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-2.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.0,
+    0.196,
+    -0.981
+   ],
+   "bbox": [
+    21.5,
+    7.5,
+    22.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 2,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-16-self-tapping-screw-for-plastic-2.stl",
+   "name": "M4\u00d716 self-tapping screw for plastic \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    21.5,
+    7.5,
+    18.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-16-self-tapping-screw-for-plastic-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 2,
+    "name": "M4\u00d716 self-tapping screw for plastic",
+    "unit_cost_usd": 0.084,
+    "mass_g": 2.1
+   }
+  }
+ ],
+ "scene": "desk",
+ "assembly_order": [
+  [
+   "Hub"
+  ],
+  [
+   "Upright"
+  ],
+  [
+   "Weight disc (top)",
+   "Weight disc (bottom)"
+  ],
+  [
+   "Rubber feet"
+  ],
+  [
+   "Hook"
+  ],
+  [
+   "Hook pad"
+  ]
+ ]
+}

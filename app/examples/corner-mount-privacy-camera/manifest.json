@@ -1,0 +1,415 @@
+{
+ "t": 1793740883.1962738,
+ "title": "Corner Mount Privacy Camera",
+ "parts": [
+  {
+   "file": "stl/pod-shell.stl",
+   "name": "Pod shell",
+   "group": "case",
+   "process": "print",
+   "color": "#e6e2db",
+   "explode": [
+    0.0,
+    -0.95,
+    -0.312
+   ],
+   "bbox": [
+    58.0,
+    33.5,
+    64.0
+   ],
+   "material": "petg"
+  },
+  {
+   "file": "stl/back-cap.stl",
+   "name": "Back cap",
+   "group": "case",
+   "process": "print",
+   "color": "#e6e2db",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    56.0,
+    11.6,
+    64.0
+   ],
+   "material": "petg"
+  },
+  {
+   "file": "stl/shutter.stl",
+   "name": "Privacy shutter",
+   "group": "case",
+   "process": "print",
+   "color": "#e8743b",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    18.0,
+    1.6,
+    30.0
+   ]
+  },
+  {
+   "file": "stl/front-panel.stl",
+   "name": "Front panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#1c1c1e",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    44.0,
+    3.0,
+    52.0
+   ],
+   "material": "acrylic_clear",
+   "engrave": {
+    "text": "kin",
+    "face": "<Y",
+    "depth_mm": 0.4,
+    "mode": "engrave",
+    "size_mm": 4.5
+   }
+  },
+  {
+   "file": "stl/corner-bracket.stl",
+   "name": "Corner bracket",
+   "group": "case",
+   "process": "sheet",
+   "color": "#26272a",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    61.0,
+    64.8,
+    46.8
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/esp32-cam-ai-thinker-ov2640.stl",
+   "name": "ESP32-CAM (AI-Thinker, OV2640)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d4f91",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    27.0,
+    9.0,
+    40.5
+   ]
+  },
+  {
+   "file": "stl/esp32-cam-mb-usb-programmer.stl",
+   "name": "ESP32-CAM-MB USB programmer",
+   "group": "component",
+   "process": "bought",
+   "color": "#20232a",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    27.0,
+    13.1,
+    40.0
+   ],
+   "cable": {
+    "type": "usb-c",
+    "at": [
+     0.0,
+     -42.0,
+     36.0
+    ],
+    "dir": [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    "length_mm": 400.0
+   }
+  },
+  {
+   "file": "stl/removable-mounting-strips.stl",
+   "name": "Removable mounting strips",
+   "group": "component",
+   "process": "bought",
+   "color": "#f2f2f2",
+   "explode": [
+    0.0,
+    0.299,
+    0.954
+   ],
+   "bbox": [
+    48.0,
+    60.0,
+    44.0
+   ]
+  },
+  {
+   "file": "stl/5-mm-led-red.stl",
+   "name": "5 mm LED (red)",
+   "group": "component",
+   "process": "bought",
+   "color": "#e8483d",
+   "explode": [
+    0.0,
+    -0.429,
+    -0.903
+   ],
+   "bbox": [
+    5.8,
+    31.8,
+    5.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/5-mm-led-red__0.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/5-mm-led-red__1.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "fx": {
+    "glow": {
+     "color": "#ff3b30",
+     "mode": "solid"
+    }
+   },
+   "lib": {
+    "key": "led_5mm",
+    "qty": 1,
+    "name": "5 mm LED (red)",
+    "unit_cost_usd": 0.05,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m4-heat-set-insert.stl",
+   "name": "M4 heat-set insert",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    0.811,
+    -0.552,
+    0.195
+   ],
+   "bbox": [
+    8.1,
+    6.3,
+    6.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-heat-set-insert__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "insert",
+    "qty": 1,
+    "name": "M4 heat-set insert",
+    "unit_cost_usd": 0.14,
+    "mass_g": 1.1
+   }
+  },
+  {
+   "file": "stl/m4-heat-set-insert-2.stl",
+   "name": "M4 heat-set insert (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    -0.811,
+    -0.552,
+    0.195
+   ],
+   "bbox": [
+    8.1,
+    6.3,
+    6.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-heat-set-insert-2__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "insert",
+    "qty": 1,
+    "name": "M4 heat-set insert",
+    "unit_cost_usd": 0.14,
+    "mass_g": 1.1
+   }
+  },
+  {
+   "file": "stl/m4-8-button-head-screw.stl",
+   "name": "M4\u00d78 button head screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.837,
+    -0.515,
+    0.182
+   ],
+   "bbox": [
+    10.2,
+    7.6,
+    7.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-8-button-head-screw__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 1,
+    "name": "M4\u00d78 button head screw",
+    "unit_cost_usd": 0.13,
+    "mass_g": 1.4
+   }
+  },
+  {
+   "file": "stl/m4-8-button-head-screw-2.stl",
+   "name": "M4\u00d78 button head screw (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.837,
+    -0.515,
+    0.182
+   ],
+   "bbox": [
+    10.2,
+    7.6,
+    7.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-8-button-head-screw-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 1,
+    "name": "M4\u00d78 button head screw",
+    "unit_cost_usd": 0.13,
+    "mass_g": 1.4
+   }
+  },
+  {
+   "file": "stl/cap-screws.stl",
+   "name": "M2.5\u00d78 self-tapping screw for plastic \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.0,
+    -0.322,
+    -0.947
+   ],
+   "bbox": [
+    49.0,
+    9.9,
+    59.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/cap-screws__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 4,
+    "name": "M2.5\u00d78 self-tapping screw for plastic",
+    "unit_cost_usd": 0.052,
+    "mass_g": 0.5
+   }
+  }
+ ],
+ "scene": "wall",
+ "assembly_order": [
+  [
+   "Corner bracket",
+   "Removable mounting strips"
+  ],
+  [
+   "Pod shell",
+   "M4 heat-set insert",
+   "M4 heat-set insert (2)"
+  ],
+  [
+   "Front panel"
+  ],
+  [
+   "Privacy shutter"
+  ],
+  [
+   "5 mm LED (red)"
+  ],
+  [
+   "ESP32-CAM (AI-Thinker, OV2640)",
+   "ESP32-CAM-MB USB programmer"
+  ],
+  [
+   "Back cap"
+  ],
+  [
+   "M4\u00d78 button head screw",
+   "M4\u00d78 button head screw (2)"
+  ]
+ ],
+ "wiring": {
+  "file": "wiring.json",
+  "wires": 10,
+  "parts": [
+   "220 ohm resistor",
+   "5 V 2 A USB wall adapter",
+   "5 mm LED (red)",
+   "ESP32-CAM (AI-Thinker, OV2640)",
+   "ESP32-CAM-MB USB programmer",
+   "Micro-USB cable 3 m"
+  ],
+  "ok": true
+ },
+ "motion": {
+  "file": "motion.json",
+  "duration": 8.0,
+  "frames": 90,
+  "parts": 10
+ }
+}

@@ -1,0 +1,61 @@
+{
+  "wires": [
+    {"from": {"part": "DC panel jack 5.5x2.5 (10 A)", "pin": "+"}, "to": {"part": "Inline blade fuse holder + 10 A fuse", "pin": "IN"}, "color": "red", "kind": "solder"},
+    {"from": {"part": "Inline blade fuse holder + 10 A fuse", "pin": "OUT"}, "to": {"part": "Emergency stop 22 mm", "pin": "NC1"}, "color": "red", "kind": "18 AWG"},
+    {"from": {"part": "Emergency stop 22 mm", "pin": "NC2"}, "to": {"part": "Wago 221-415 (24 V bus)", "pin": "1"}, "color": "red", "kind": "18 AWG"},
+    {"from": {"part": "DC panel jack 5.5x2.5 (10 A)", "pin": "-"}, "to": {"part": "Wago 221-415 (GND bus)", "pin": "1"}, "color": "black", "kind": "solder"},
+
+    {"from": {"part": "Wago 221-415 (24 V bus)", "pin": "2"}, "to": {"part": "D4184 MOSFET module", "pin": "VIN+"}, "color": "red", "kind": "18 AWG"},
+    {"from": {"part": "Wago 221-415 (GND bus)", "pin": "2"}, "to": {"part": "D4184 MOSFET module", "pin": "VIN-"}, "color": "black", "kind": "18 AWG"},
+    {"from": {"part": "Wago 221-415 (24 V bus)", "pin": "3"}, "to": {"part": "Perfboard 9x15 cm", "pin": "24V"}, "color": "red", "kind": "18 AWG"},
+    {"from": {"part": "Wago 221-415 (GND bus)", "pin": "3"}, "to": {"part": "Perfboard 9x15 cm", "pin": "GND"}, "color": "black", "kind": "18 AWG"},
+
+    {"from": {"part": "Perfboard 9x15 cm", "pin": "24V"}, "to": {"part": "TMC2209 X", "pin": "VM"}, "color": "red", "kind": "solder"},
+    {"from": {"part": "Perfboard 9x15 cm", "pin": "24V"}, "to": {"part": "TMC2209 Y", "pin": "VM"}, "color": "red", "kind": "solder"},
+    {"from": {"part": "Perfboard 9x15 cm", "pin": "24V"}, "to": {"part": "TMC2209 Z", "pin": "VM"}, "color": "red", "kind": "solder"},
+    {"from": {"part": "Perfboard 9x15 cm", "pin": "GND"}, "to": {"part": "TMC2209 X", "pin": "GND"}, "color": "black", "kind": "solder"},
+    {"from": {"part": "Perfboard 9x15 cm", "pin": "GND"}, "to": {"part": "TMC2209 Y", "pin": "GND"}, "color": "black", "kind": "solder"},
+    {"from": {"part": "Perfboard 9x15 cm", "pin": "GND"}, "to": {"part": "TMC2209 Z", "pin": "GND"}, "color": "black", "kind": "solder"},
+    {"from": {"part": "100 uF 35 V capacitor", "pin": "+"}, "to": {"part": "TMC2209 X", "pin": "VM"}, "color": "red", "kind": "solder"},
+    {"from": {"part": "100 uF 35 V capacitor", "pin": "+"}, "to": {"part": "TMC2209 Y", "pin": "VM"}, "color": "red", "kind": "solder"},
+    {"from": {"part": "100 uF 35 V capacitor", "pin": "+"}, "to": {"part": "TMC2209 Z", "pin": "VM"}, "color": "red", "kind": "solder"},
+    {"from": {"part": "100 uF 35 V capacitor", "pin": "-"}, "to": {"part": "Perfboard 9x15 cm", "pin": "GND"}, "color": "black", "kind": "solder"},
+    {"from": {"part": "Perfboard 9x15 cm", "pin": "GND"}, "to": {"part": "ESP32 DevKitC", "pin": "GND"}, "color": "black", "kind": "solder"},
+
+    {"from": {"part": "ESP32 DevKitC", "pin": "3V3"}, "to": {"part": "TMC2209 X", "pin": "VIO"}, "color": "orange", "kind": "solder"},
+    {"from": {"part": "ESP32 DevKitC", "pin": "3V3"}, "to": {"part": "TMC2209 Y", "pin": "VIO"}, "color": "orange", "kind": "solder"},
+    {"from": {"part": "ESP32 DevKitC", "pin": "3V3"}, "to": {"part": "TMC2209 Z", "pin": "VIO"}, "color": "orange", "kind": "solder"},
+    {"from": {"part": "ESP32 DevKitC", "pin": "GPIO25"}, "to": {"part": "TMC2209 X", "pin": "STEP"}, "color": "yellow", "kind": "solder"},
+    {"from": {"part": "ESP32 DevKitC", "pin": "GPIO26"}, "to": {"part": "TMC2209 X", "pin": "DIR"}, "color": "green", "kind": "solder"},
+    {"from": {"part": "ESP32 DevKitC", "pin": "GPIO27"}, "to": {"part": "TMC2209 Y", "pin": "STEP"}, "color": "yellow", "kind": "solder"},
+    {"from": {"part": "ESP32 DevKitC", "pin": "GPIO14"}, "to": {"part": "TMC2209 Y", "pin": "DIR"}, "color": "green", "kind": "solder"},
+    {"from": {"part": "ESP32 DevKitC", "pin": "GPIO32"}, "to": {"part": "TMC2209 Z", "pin": "STEP"}, "color": "yellow", "kind": "solder"},
+    {"from": {"part": "ESP32 DevKitC", "pin": "GPIO33"}, "to": {"part": "TMC2209 Z", "pin": "DIR"}, "color": "green", "kind": "solder"},
+    {"from": {"part": "ESP32 DevKitC", "pin": "GPIO13"}, "to": {"part": "TMC2209 X", "pin": "EN"}, "color": "white", "kind": "solder"},
+    {"from": {"part": "ESP32 DevKitC", "pin": "GPIO13"}, "to": {"part": "TMC2209 Y", "pin": "EN"}, "color": "white", "kind": "solder"},
+    {"from": {"part": "ESP32 DevKitC", "pin": "GPIO13"}, "to": {"part": "TMC2209 Z", "pin": "EN"}, "color": "white", "kind": "solder"},
+
+    {"from": {"part": "TMC2209 X", "pin": "A1"}, "to": {"part": "X motor", "pin": "A+"}, "color": "black", "kind": "dupont"},
+    {"from": {"part": "TMC2209 X", "pin": "A2"}, "to": {"part": "X motor", "pin": "A-"}, "color": "green", "kind": "dupont"},
+    {"from": {"part": "TMC2209 X", "pin": "B1"}, "to": {"part": "X motor", "pin": "B+"}, "color": "red", "kind": "dupont"},
+    {"from": {"part": "TMC2209 X", "pin": "B2"}, "to": {"part": "X motor", "pin": "B-"}, "color": "blue", "kind": "dupont"},
+    {"from": {"part": "TMC2209 Y", "pin": "A1"}, "to": {"part": "Y motor", "pin": "A+"}, "color": "black", "kind": "dupont"},
+    {"from": {"part": "TMC2209 Y", "pin": "A2"}, "to": {"part": "Y motor", "pin": "A-"}, "color": "green", "kind": "dupont"},
+    {"from": {"part": "TMC2209 Y", "pin": "B1"}, "to": {"part": "Y motor", "pin": "B+"}, "color": "red", "kind": "dupont"},
+    {"from": {"part": "TMC2209 Y", "pin": "B2"}, "to": {"part": "Y motor", "pin": "B-"}, "color": "blue", "kind": "dupont"},
+    {"from": {"part": "TMC2209 Z", "pin": "A1"}, "to": {"part": "Z motor", "pin": "A+"}, "color": "black", "kind": "dupont"},
+    {"from": {"part": "TMC2209 Z", "pin": "A2"}, "to": {"part": "Z motor", "pin": "A-"}, "color": "green", "kind": "dupont"},
+    {"from": {"part": "TMC2209 Z", "pin": "B1"}, "to": {"part": "Z motor", "pin": "B+"}, "color": "red", "kind": "dupont"},
+    {"from": {"part": "TMC2209 Z", "pin": "B2"}, "to": {"part": "Z motor", "pin": "B-"}, "color": "blue", "kind": "dupont"},
+
+    {"from": {"part": "ESP32 DevKitC", "pin": "GPIO4"}, "to": {"part": "D4184 MOSFET module", "pin": "PWM"}, "color": "purple", "kind": "dupont"},
+    {"from": {"part": "ESP32 DevKitC", "pin": "GND"}, "to": {"part": "D4184 MOSFET module", "pin": "GND"}, "color": "black", "kind": "dupont"},
+    {"from": {"part": "D4184 MOSFET module", "pin": "OUT+"}, "to": {"part": "775 ER11 spindle 24V", "pin": "+"}, "color": "red", "kind": "18 AWG"},
+    {"from": {"part": "D4184 MOSFET module", "pin": "OUT-"}, "to": {"part": "775 ER11 spindle 24V", "pin": "-"}, "color": "black", "kind": "18 AWG"},
+    {"from": {"part": "1N5822 Schottky diode", "pin": "K (band)"}, "to": {"part": "775 ER11 spindle 24V", "pin": "+"}, "color": "red", "kind": "solder"},
+    {"from": {"part": "1N5822 Schottky diode", "pin": "A"}, "to": {"part": "775 ER11 spindle 24V", "pin": "-"}, "color": "black", "kind": "solder"},
+
+    {"from": {"part": "ESP32 DevKitC", "pin": "GPIO19"}, "to": {"part": "Z touch probe plate", "pin": "PLATE"}, "color": "blue", "kind": "dupont"},
+    {"from": {"part": "ESP32 DevKitC", "pin": "GND"}, "to": {"part": "Z touch probe plate", "pin": "CLIP (on the bit)"}, "color": "black", "kind": "dupont"}
+  ]
+}

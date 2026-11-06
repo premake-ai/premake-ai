@@ -1,0 +1,1138 @@
+{
+ "t": 1793395292.475868,
+ "title": "This",
+ "parts": [
+  {
+   "file": "stl/lift-frame-base.stl",
+   "name": "Lift frame base",
+   "group": "component",
+   "process": "bought",
+   "color": "#26282b",
+   "explode": [
+    0.01,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    1390.0,
+    700.0,
+    600.0
+   ]
+  },
+  {
+   "file": "stl/frame-top.stl",
+   "name": "Lift frame top",
+   "group": "component",
+   "process": "bought",
+   "color": "#303236",
+   "explode": [
+    0.014,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    1374.0,
+    600.0,
+    580.0
+   ]
+  },
+  {
+   "file": "stl/keypad.stl",
+   "name": "Desk keypad",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    -0.823,
+    -0.568,
+    -0.007
+   ],
+   "bbox": [
+    100.0,
+    36.0,
+    22.0
+   ],
+   "fx": {
+    "glow": {
+     "color": "#33ccff"
+    }
+   }
+  },
+  {
+   "file": "stl/desktop.stl",
+   "name": "Desktop",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9a57c",
+   "explode": [
+    0.208,
+    0.0,
+    0.978
+   ],
+   "bbox": [
+    1524.0,
+    762.0,
+    25.0
+   ],
+   "material": "wood"
+  },
+  {
+   "file": "stl/rpost1.stl",
+   "name": "Riser post",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -0.987,
+    0.122,
+    0.109
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/rpost2.stl",
+   "name": "Riser post",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -0.889,
+    0.448,
+    0.098
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/rpost3.stl",
+   "name": "Riser post",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.033,
+    0.746,
+    0.666
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/rpost4.stl",
+   "name": "Riser post",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.011,
+    0.977,
+    0.214
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/rpost5.stl",
+   "name": "Riser post",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.987,
+    0.121,
+    0.108
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/rpost6.stl",
+   "name": "Riser post",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.891,
+    0.444,
+    0.097
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/rrail0.stl",
+   "name": "Riser rail",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.024,
+    0.541,
+    0.84
+   ],
+   "bbox": [
+    1500.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/rrail1.stl",
+   "name": "Riser rail",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.01,
+    0.935,
+    0.356
+   ],
+   "bbox": [
+    1500.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/upost0.stl",
+   "name": "Upper post",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -0.873,
+    0.108,
+    0.476
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    500.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/upost1.stl",
+   "name": "Upper post",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -0.803,
+    0.405,
+    0.438
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    500.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/upost2.stl",
+   "name": "Upper post",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.875,
+    0.107,
+    0.472
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    500.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/upost3.stl",
+   "name": "Upper post",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.806,
+    0.402,
+    0.435
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    500.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/upost4.stl",
+   "name": "Upper post",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.007,
+    0.679,
+    0.734
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    500.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/trail0.stl",
+   "name": "Top rail",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.006,
+    0.134,
+    0.991
+   ],
+   "bbox": [
+    1500.0,
+    20.0,
+    40.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/trail1.stl",
+   "name": "Top rail",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.005,
+    0.484,
+    0.875
+   ],
+   "bbox": [
+    1500.0,
+    20.0,
+    40.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/rshelf0.stl",
+   "name": "Riser shelf",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    -0.873,
+    0.406,
+    0.271
+   ],
+   "bbox": [
+    500.0,
+    300.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/tshelf0.stl",
+   "name": "Top shelf",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    -0.561,
+    0.261,
+    0.785
+   ],
+   "bbox": [
+    500.0,
+    300.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/rshelf1.stl",
+   "name": "Riser shelf",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.014,
+    0.832,
+    0.555
+   ],
+   "bbox": [
+    500.0,
+    300.0,
+    5.6
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/tshelf1.stl",
+   "name": "Top shelf",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.005,
+    0.316,
+    0.949
+   ],
+   "bbox": [
+    500.0,
+    300.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/rshelf2.stl",
+   "name": "Riser shelf",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.876,
+    0.401,
+    0.268
+   ],
+   "bbox": [
+    500.0,
+    300.0,
+    5.6
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/tshelf2.stl",
+   "name": "Top shelf",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.567,
+    0.26,
+    0.781
+   ],
+   "bbox": [
+    500.0,
+    300.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/hanger0.stl",
+   "name": "Drawer hanger",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.659,
+    -0.723,
+    -0.207
+   ],
+   "bbox": [
+    5.5,
+    300.0,
+    130.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/hanger1.stl",
+   "name": "Drawer hanger",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.942,
+    -0.321,
+    -0.092
+   ],
+   "bbox": [
+    5.5,
+    300.0,
+    130.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/slide0.stl",
+   "name": "Drawer slide 12in",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc2",
+   "explode": [
+    0.673,
+    -0.703,
+    -0.228
+   ],
+   "bbox": [
+    12.7,
+    303.0,
+    45.0
+   ],
+   "material": "steel"
+  },
+  {
+   "file": "stl/slide1.stl",
+   "name": "Drawer slide 12in",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc2",
+   "explode": [
+    0.94,
+    -0.325,
+    -0.105
+   ],
+   "bbox": [
+    12.7,
+    303.0,
+    45.0
+   ],
+   "material": "steel"
+  },
+  {
+   "file": "stl/dbottom.stl",
+   "name": "Drawer bottom",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.856,
+    -0.452,
+    -0.252
+   ],
+   "bbox": [
+    383.6,
+    300.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/dsidel.stl",
+   "name": "Drawer side",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.686,
+    -0.696,
+    -0.213
+   ],
+   "bbox": [
+    5.5,
+    300.0,
+    110.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/dsider.stl",
+   "name": "Drawer side",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.937,
+    -0.334,
+    -0.102
+   ],
+   "bbox": [
+    5.5,
+    300.0,
+    110.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/dfront.stl",
+   "name": "Drawer inner front",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.737,
+    -0.665,
+    -0.119
+   ],
+   "bbox": [
+    372.6,
+    5.5,
+    110.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/dback.stl",
+   "name": "Drawer back",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.976,
+    -0.15,
+    -0.158
+   ],
+   "bbox": [
+    372.6,
+    5.5,
+    110.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/dface.stl",
+   "name": "Drawer face",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.733,
+    -0.671,
+    -0.11
+   ],
+   "bbox": [
+    420.0,
+    5.5,
+    125.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/trayrail0.stl",
+   "name": "Tray rail",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3a3a",
+   "explode": [
+    0.699,
+    -0.687,
+    -0.201
+   ],
+   "bbox": [
+    8.0,
+    279.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/trayrail1.stl",
+   "name": "Tray rail",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3a3a",
+   "explode": [
+    0.936,
+    -0.338,
+    -0.099
+   ],
+   "bbox": [
+    8.0,
+    279.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/tray.stl",
+   "name": "Organiser tray",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.878,
+    -0.463,
+    -0.12
+   ],
+   "bbox": [
+    370.6,
+    287.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/ebox.stl",
+   "name": "Controller box",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2d30",
+   "explode": [
+    -0.887,
+    0.459,
+    0.059
+   ],
+   "bbox": [
+    96.0,
+    46.0,
+    24.0
+   ]
+  },
+  {
+   "file": "stl/elid.stl",
+   "name": "Controller lid",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2d30",
+   "explode": [
+    -0.886,
+    0.459,
+    0.07
+   ],
+   "bbox": [
+    96.0,
+    46.0,
+    13.0
+   ]
+  },
+  {
+   "file": "stl/button.stl",
+   "name": "16mm push button",
+   "group": "component",
+   "process": "bought",
+   "color": "#d0d4d8",
+   "explode": [
+    -0.894,
+    0.444,
+    0.068
+   ],
+   "bbox": [
+    19.0,
+    19.0,
+    15.5
+   ]
+  },
+  {
+   "file": "stl/esp32.stl",
+   "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    -0.891,
+    0.451,
+    0.054
+   ],
+   "bbox": [
+    55.4,
+    27.9,
+    13.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/esp32__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32__1.stl",
+     "color": "#232a36",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32__4.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32__6.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32__7.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/esp32__8.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32__9.stl",
+     "color": "#b48a5c",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "esp32_devkitc",
+    "qty": 1,
+    "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+    "unit_cost_usd": 7.5,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/dcjack.stl",
+   "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9cdd2",
+   "explode": [
+    -0.878,
+    0.474,
+    0.062
+   ],
+   "bbox": [
+    16.6,
+    14.0,
+    16.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/dcjack__0.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dcjack__1.stl",
+     "color": "#b9bec4",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dcjack__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/dcjack__3.stl",
+     "color": "#e0e2e4",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dcjack__4.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "dc_jack_panel",
+    "qty": 1,
+    "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+    "unit_cost_usd": 0.8,
+    "mass_g": 6.0
+   }
+  },
+  {
+   "file": "stl/inserts.stl",
+   "name": "M3 heat-set insert \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    -0.874,
+    0.481,
+    0.075
+   ],
+   "bbox": [
+    4.6,
+    32.6,
+    5.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/inserts__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "insert",
+    "qty": 2,
+    "name": "M3 heat-set insert",
+    "unit_cost_usd": 0.12,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/lidscrews.stl",
+   "name": "M3\u00d78 button head screw \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.873,
+    0.481,
+    0.078
+   ],
+   "bbox": [
+    5.7,
+    33.7,
+    9.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/lidscrews__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 2,
+    "name": "M3\u00d78 button head screw",
+    "unit_cost_usd": 0.097,
+    "mass_g": 0.7
+   }
+  },
+  {
+   "file": "stl/led-task.stl",
+   "name": "WS2812B LED strip, 84 LEDs",
+   "group": "component",
+   "process": "bought",
+   "color": "#f1f0ea",
+   "explode": [
+    0.006,
+    0.139,
+    0.99
+   ],
+   "bbox": [
+    1400.0,
+    10.0,
+    1.9
+   ],
+   "subparts": [
+    {
+     "file": "stl/led-task__0.stl",
+     "color": "#f1f0ea",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/led-task__1.stl",
+     "color": "#f6f4ee",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/led-task__2.stl",
+     "color": "#f7efc9",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/led-task__3.stl",
+     "color": "#b48a5c",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/led-task__4.stl",
+     "color": "#c47a4c",
+     "finish": "gold"
+    }
+   ],
+   "fx": {
+    "glow": {
+     "color": "#ffd8a8"
+    }
+   },
+   "lib": {
+    "key": "ws2812_strip",
+    "qty": 1,
+    "name": "WS2812B LED strip, 84 LEDs",
+    "unit_cost_usd": 14.0,
+    "mass_g": 9.2
+   }
+  },
+  {
+   "file": "stl/led-glow.stl",
+   "name": "WS2812B LED strip, 54 LEDs",
+   "group": "component",
+   "process": "bought",
+   "color": "#f1f0ea",
+   "explode": [
+    0.011,
+    -1.0,
+    0.014
+   ],
+   "bbox": [
+    900.0,
+    10.0,
+    1.9
+   ],
+   "subparts": [
+    {
+     "file": "stl/led-glow__0.stl",
+     "color": "#f1f0ea",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/led-glow__1.stl",
+     "color": "#f6f4ee",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/led-glow__2.stl",
+     "color": "#f7efc9",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/led-glow__3.stl",
+     "color": "#b48a5c",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/led-glow__4.stl",
+     "color": "#c47a4c",
+     "finish": "gold"
+    }
+   ],
+   "fx": {
+    "glow": {
+     "color": "rainbow",
+     "mode": "rainbow"
+    }
+   },
+   "lib": {
+    "key": "ws2812_strip",
+    "qty": 1,
+    "name": "WS2812B LED strip, 54 LEDs",
+    "unit_cost_usd": 9.0,
+    "mass_g": 5.9
+   }
+  },
+  {
+   "file": "stl/qi.stl",
+   "name": "15W in-desk Qi charger",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1a1a",
+   "explode": [
+    0.91,
+    0.348,
+    0.227
+   ],
+   "bbox": [
+    70.0,
+    70.1,
+    17.6
+   ],
+   "fx": {
+    "glow": {
+     "color": "#3399ff",
+     "mode": "pulse"
+    }
+   }
+  },
+  {
+   "file": "stl/grommet.stl",
+   "name": "60mm cable grommet",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1a1a",
+   "explode": [
+    0.014,
+    0.825,
+    0.565
+   ],
+   "bbox": [
+    66.0,
+    66.1,
+    3.1
+   ]
+  },
+  {
+   "file": "stl/power.stl",
+   "name": "Clamp power strip",
+   "group": "component",
+   "process": "bought",
+   "color": "#f0f0f0",
+   "explode": [
+    -0.953,
+    -0.3,
+    0.048
+   ],
+   "bbox": [
+    71.0,
+    200.0,
+    105.0
+   ]
+  },
+  {
+   "file": "stl/brk.stl",
+   "name": "2020 corner bracket",
+   "group": "component",
+   "process": "bought",
+   "color": "#c7ccd2",
+   "explode": [
+    0.018,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    23.0,
+    20.0,
+    23.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/brk__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bracket_2020",
+    "qty": 1,
+    "name": "2020 corner bracket",
+    "unit_cost_usd": 0.6,
+    "mass_g": 10.0
+   }
+  }
+ ],
+ "scene": "floor",
+ "motion": {
+  "file": "motion.json",
+  "duration": 8.0,
+  "frames": 90,
+  "parts": 50
+ }
+}

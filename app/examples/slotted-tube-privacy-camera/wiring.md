@@ -1,0 +1,6 @@
+- Power path: USB-C (5 V 2 A adapter) -> TP4056 (charges the 18650, protection on OUT) -> MT3608 set to 5.1 V -> JST-PH plug -> ESP32-CAM 5V / GND pins (solder the pigtail to the pin joints on the component side).
+- Flashing: unplug the JST-PH lead first, then use the MB's micro-USB. Never connect both 5 V sources at once.
+- Set the MT3608 to 5.1 V with a multimeter BEFORE connecting the camera (it can ship at 20+ V).
+- Status LED: 220 ohm in the anode lead, wires to GPIO13 and GND. Trim LED legs to ~4 mm.
+- Load: ESP32-CAM streaming ~0.25-0.3 A at 5 V (~1.3 W from the cell incl. boost loss); TP4056 charges at 1 A, so it keeps up while plugged in. Below 1 A total, no extra fuse; the TP4056's DW01 protects the cell.
+- The flash LED (GPIO4) is forced off in firmware.

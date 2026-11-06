@@ -1,0 +1,54 @@
+{
+ "t": 1793164635.259271,
+ "title": "Raised dog bowl stand",
+ "parts": [
+  {
+   "file": "stl/bowl-stand.stl",
+   "name": "Bowl stand",
+   "group": "case",
+   "color": "#2a9d8f",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    213.2,
+    213.3,
+    120.8
+   ]
+  },
+  {
+   "file": "stl/stainless-steel-bowl-1-qt.stl",
+   "name": "Stainless steel bowl, 1 qt",
+   "group": "component",
+   "color": "#c0c6cc",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    178.5,
+    178.6,
+    60.0
+   ]
+  },
+  {
+   "file": "stl/rubber-bumper-feet-4x.stl",
+   "name": "Rubber bumper feet (4x)",
+   "group": "component",
+   "color": "#222222",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    149.8,
+    149.8,
+    2.0
+   ]
+  }
+ ]
+}

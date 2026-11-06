@@ -1,0 +1,9 @@
+{"wires": [
+ {"from": {"part": "ESP32 DevKitC (WROOM-32, 38 pin)", "pin": "3V3"},    "to": {"part": "0.96\" OLED display (SSD1306)", "pin": "VCC"}, "color": "red",    "kind": "dupont"},
+ {"from": {"part": "ESP32 DevKitC (WROOM-32, 38 pin)", "pin": "GND"},    "to": {"part": "0.96\" OLED display (SSD1306)", "pin": "GND"}, "color": "black",  "kind": "dupont"},
+ {"from": {"part": "ESP32 DevKitC (WROOM-32, 38 pin)", "pin": "GPIO21"}, "to": {"part": "0.96\" OLED display (SSD1306)", "pin": "SDA"}, "color": "blue",   "kind": "dupont"},
+ {"from": {"part": "ESP32 DevKitC (WROOM-32, 38 pin)", "pin": "GPIO22"}, "to": {"part": "0.96\" OLED display (SSD1306)", "pin": "SCL"}, "color": "yellow", "kind": "dupont"},
+ {"from": {"part": "ESP32 DevKitC (WROOM-32, 38 pin)", "pin": "5V"},     "to": {"part": "SG90 micro servo", "pin": "V+ (red)"},      "color": "red",    "kind": "dupont"},
+ {"from": {"part": "ESP32 DevKitC (WROOM-32, 38 pin)", "pin": "GND"},    "to": {"part": "SG90 micro servo", "pin": "GND (brown)"},   "color": "black",  "kind": "dupont"},
+ {"from": {"part": "ESP32 DevKitC (WROOM-32, 38 pin)", "pin": "GPIO13"}, "to": {"part": "SG90 micro servo", "pin": "SIG (orange)"},  "color": "orange", "kind": "dupont"}
+]}

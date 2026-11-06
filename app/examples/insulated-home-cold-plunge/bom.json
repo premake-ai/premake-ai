@@ -1,0 +1,586 @@
+{
+ "parts": [
+  {
+   "name": "Insulated cold plunge tub with insulated lid (Elecpluway XL, 53 x 33 x 26 in)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 160.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B0CT7R2ZGH",
+   "notes": "Search 'Elecpluway XL cold plunge tub'. Price not shown on the listing when checked; ~$160 is an estimate. Any insulated tub with a lid and a rim wall 50-110 mm thick works with the rim manifold; its own drain valve stays usable."
+  },
+  {
+   "name": "Active Aqua AACH50HP 1/2 HP water chiller (ETL listed)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 934.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B09Z9FZG79",
+   "notes": "ETL reg. 4006823, 120 V 5.4 A, 4,020 BTU/h, 39-90 F, needs 800-1600 GPH flow, 10 psi max. Includes 1/2, 3/4 and 1 in barbs: use the 3/4 in pair. Last tracked Amazon price $934 (Feb 2026)."
+  },
+  {
+   "name": "Danner Mag-Drive 12 inline pump, 1200 GPH (UL listed)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 135.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B0002564QW",
+   "notes": "Used IN-LINE on the cart, never in the tub. 110 W 1.5 A, 3/4 in FPT inlet / MPT outlet, ~880 GPH at 3 ft head."
+  },
+  {
+   "name": "10 in x 2.5 in water filter housing, 3/4 in NPT, with mounting bracket",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 30.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search '10 inch filter housing 3/4 NPT bracket'. Bracket bolts to the cart's filter bar with 2 x M5 + T-nuts."
+  },
+  {
+   "name": "Pleated 50 micron filter cartridge 10 x 2.5 in, 2-pack",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 18.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search 'pleated sediment filter 10 x 2.5 50 micron washable'. Rinse weekly."
+  },
+  {
+   "name": "3/4 in ID PVC spiral suction hose, 15 ft",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 32.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search '3/4 inch spiral suction hose 15 ft'. Kink resistant. Cut with a utility knife into: rim-to-filter 1.0 m, filter-to-pump 0.45 m, pump-to-chiller 0.45 m, chiller-to-rim 1.0 m, suction drop 0.28 m, return drop 0.21 m."
+  },
+  {
+   "name": "Foam pipe insulation for 1 in OD tube, 6 ft (3 pack)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 12.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Slip over the four dry hose runs to stop condensation drips and heat gain."
+  },
+  {
+   "name": "3/4 in MPT x 3/4 in hose barb, brass (4 pack)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 16.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Filter in + out, pump inlet, tee run. Wrap threads with PTFE tape."
+  },
+  {
+   "name": "3/4 in brass tee FPT + 3/4 in ball valve + 3/4 in MPT to garden hose adapter (drain)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 26.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "On the pump outlet. To drain: switch the chiller off in the app, fold-clamp the chiller hose, open the valve and the pump empties the tub into a garden hose."
+  },
+  {
+   "name": "Stainless worm-gear hose clamps #12, 15 pack",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 10.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "One on every barb (11 used)."
+  },
+  {
+   "name": "PTFE thread seal tape",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "Shelly Plug US Gen4 smart plug (UL listed, 15 A)",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 20.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search 'Shelly Plug US Gen4'. One for the chiller (5.4 A), one for the pump (1.5 A). Controlled over local Wi-Fi by the ESP32; no wiring to them."
+  },
+  {
+   "name": "GFCI 3-outlet pigtail cord, 12/3, 15 A, UL listed",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 28.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search 'GFCI pigtail 3 outlet 12/3 UL'. Everything plugs into this, even if the wall outlet is already GFCI. Press TEST before every plunge."
+  },
+  {
+   "name": "DS18B20 waterproof probe",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 7.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search 'DS18B20 waterproof stainless 3m'. 3 m cable, 3.3 V signal only."
+  },
+  {
+   "name": "DS18B20 adapter module",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 3.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search 'DS18B20 adapter module terminal' (4.7k pull-up, screw terminal, 3-pin header). Often bundled with the probe. Stick to the pod floor with foam tape."
+  },
+  {
+   "name": "Dupont jumper wires female-female, 20 cm (40 pack)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 6.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "3 used."
+  },
+  {
+   "name": "USB power adapter 5 V 1 A (UL listed)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 8.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Plugs into the GFCI pigtail."
+  },
+  {
+   "name": "Micro-USB cable, 3 m",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 8.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Adapter to ESP32 DevKitC; route with a drip loop."
+  },
+  {
+   "name": "PG7 cable gland, nylon (10 pack)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 7.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Probe cable entry on the underside of the pod."
+  },
+  {
+   "name": "M8 x 80 star knob clamping screw with swivel pad + M8 nut",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 6.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search 'M8 clamping screw swivel pad star knob 80mm'. Clamps the rim manifold to the tub wall."
+  },
+  {
+   "name": "2020 corner bracket kit with M5 screws and T-nuts (20 pack)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 15.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "12 used: 6 rail-to-cross-bar, 4 post-to-cross-bar, 2 filter-bar-to-post."
+  },
+  {
+   "name": "M5 x 10 button head screw + M5 drop-in T-nut, 50 sets",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 12.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Decks (12), splash shield (6), filter bracket (2), caster plates to rails (8), T-nuts for the pod's 2 screws."
+  },
+  {
+   "name": "2 in locking swivel plate casters (4 pack)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 18.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Plate hole pattern 38-56 mm fits the caster plates' radial slots."
+  },
+  {
+   "name": "M6 x 16 bolt + nylock nut + washer, 20 sets",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 8.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Casters to caster plates (16 used)."
+  },
+  {
+   "name": "Hook-and-loop cinch strap 25 mm x 40 cm (5 pack)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 7.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Holds the pump down through the pump deck slots."
+  },
+  {
+   "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 7.5,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=ESP32+DevKitC+WROOM-32+38+pin&rh=p_85%3A2470955011",
+   "notes": "search: ESP32 DevKitC WROOM-32 38 pin",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d710 self-tapping screw for plastic",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.059,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+x+10mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M3 x 10mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  },
+  {
+   "name": "M5\u00d710 button head screw",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.176,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M5x10+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M5x10 button head screw",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 150,
+ "kit_ok": true,
+ "needs_soldering": false,
+ "printed": [
+  {
+   "file": "stl/rim-manifold.stl",
+   "name": "Rim manifold",
+   "grams": 52.4,
+   "print_hours": 2.62,
+   "bbox": [
+    189.1,
+    57.1,
+    68.6
+   ]
+  },
+  {
+   "file": "stl/intake-strainer.stl",
+   "name": "Intake strainer",
+   "grams": 10.5,
+   "print_hours": 0.52,
+   "bbox": [
+    32.1,
+    32.1,
+    105.0
+   ]
+  },
+  {
+   "file": "stl/controller-pod.stl",
+   "name": "Controller pod",
+   "grams": 17.6,
+   "print_hours": 0.88,
+   "bbox": [
+    72.4,
+    34.0,
+    34.0
+   ]
+  },
+  {
+   "file": "stl/pod-lid.stl",
+   "name": "Pod lid",
+   "grams": 3.8,
+   "print_hours": 0.25,
+   "bbox": [
+    72.4,
+    8.1,
+    34.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/rail0.stl",
+   "name": "Cart rail",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 600.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 600.0,
+    "minutes": 5.0,
+    "material_usd": 3.6
+   },
+   "bbox": [
+    600.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/rail1.stl",
+   "name": "Cart rail",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 600.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 600.0,
+    "minutes": 5.0,
+    "material_usd": 3.6
+   },
+   "bbox": [
+    600.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/bar0.stl",
+   "name": "Cross bar",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 500.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 500.0,
+    "minutes": 5.0,
+    "material_usd": 3.0
+   },
+   "bbox": [
+    20.0,
+    500.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/bar1.stl",
+   "name": "Cross bar",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 500.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 500.0,
+    "minutes": 5.0,
+    "material_usd": 3.0
+   },
+   "bbox": [
+    20.0,
+    500.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/bar2.stl",
+   "name": "Cross bar",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 500.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 500.0,
+    "minutes": 5.0,
+    "material_usd": 3.0
+   },
+   "bbox": [
+    20.0,
+    500.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/post0.stl",
+   "name": "Post",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 400.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 400.0,
+    "minutes": 5.0,
+    "material_usd": 2.4
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    400.0
+   ]
+  },
+  {
+   "file": "stl/post1.stl",
+   "name": "Post",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 400.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 400.0,
+    "minutes": 5.0,
+    "material_usd": 2.4
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    400.0
+   ]
+  },
+  {
+   "file": "stl/filter-bar.stl",
+   "name": "Filter bar",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 500.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 500.0,
+    "minutes": 5.0,
+    "material_usd": 3.0
+   },
+   "bbox": [
+    20.0,
+    500.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/pump-deck.stl",
+   "name": "Pump deck",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1612.7,
+    "area_cm2": 1043.9,
+    "minutes": 4.4,
+    "material_usd": 21.92
+   },
+   "bbox": [
+    230.0,
+    500.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/chiller-deck.stl",
+   "name": "Chiller deck",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1777.9,
+    "area_cm2": 1695.2,
+    "minutes": 4.7,
+    "material_usd": 35.6
+   },
+   "bbox": [
+    370.0,
+    500.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/splash-shield.stl",
+   "name": "Splash shield",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1869.3,
+    "area_cm2": 1828.9,
+    "minutes": 4.9,
+    "material_usd": 38.41
+   },
+   "bbox": [
+    5.5,
+    500.0,
+    400.0
+   ]
+  },
+  {
+   "file": "stl/cplate0.stl",
+   "name": "Caster plate",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 5052",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 62.2,
+    "bends": 0,
+    "minutes": 4.6,
+    "material_usd": 0.75
+   },
+   "bbox": [
+    80.0,
+    80.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/cplate1.stl",
+   "name": "Caster plate",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 5052",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 62.2,
+    "bends": 0,
+    "minutes": 4.6,
+    "material_usd": 0.75
+   },
+   "bbox": [
+    80.0,
+    80.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/cplate2.stl",
+   "name": "Caster plate",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 5052",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 62.2,
+    "bends": 0,
+    "minutes": 4.6,
+    "material_usd": 0.75
+   },
+   "bbox": [
+    80.0,
+    80.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/cplate3.stl",
+   "name": "Caster plate",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 5052",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 62.2,
+    "bends": 0,
+    "minutes": 4.6,
+    "material_usd": 0.75
+   },
+   "bbox": [
+    80.0,
+    80.0,
+    3.0
+   ]
+  }
+ ]
+}

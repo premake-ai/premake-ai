@@ -1,0 +1,188 @@
+{
+ "parts": [
+  {
+   "name": "18650 holder, 1 cell",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=18650+battery+holder+1+slot&rh=p_85%3A2470955011",
+   "notes": "search: 18650 battery holder 1 slot",
+   "auto": "lib"
+  },
+  {
+   "name": "18650 Li-ion cell",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=18650+battery+protected+3000mAh&rh=p_85%3A2470955011",
+   "notes": "search: 18650 battery protected 3000mAh",
+   "auto": "lib"
+  },
+  {
+   "name": "ESP32-C3 SuperMini",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=ESP32-C3+SuperMini&rh=p_85%3A2470955011",
+   "notes": "search: ESP32-C3 SuperMini",
+   "auto": "lib"
+  },
+  {
+   "name": "5 mm LED (red)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=5mm+LED+assortment&rh=p_85%3A2470955011",
+   "notes": "search: 5mm LED assortment",
+   "auto": "lib"
+  },
+  {
+   "name": "M3 heat-set insert",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.12,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+heat+set+insert+brass&rh=p_85%3A2470955011",
+   "notes": "search: M3 heat set insert brass",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d78 button head screw",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.097,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x8+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M3x8 button head screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d710 button head screw",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.099,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x10+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M3x10 button head screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M3 hex nut",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.06,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+hex+nut&rh=p_85%3A2470955011",
+   "notes": "search: M3 hex nut",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d76 button head screw",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.095,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x6+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M3x6 button head screw",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 0,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/base.stl",
+   "name": "Base",
+   "grams": 68.3,
+   "print_hours": 3.41,
+   "bbox": [
+    202.6,
+    202.8,
+    52.0
+   ]
+  },
+  {
+   "file": "stl/motor-mount.stl",
+   "name": "Motor mount",
+   "grams": 6.7,
+   "print_hours": 0.34,
+   "bbox": [
+    44.0,
+    44.0,
+    20.1
+   ]
+  },
+  {
+   "file": "stl/drive-hub.stl",
+   "name": "Drive hub",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    26.0,
+    26.0,
+    5.0
+   ]
+  },
+  {
+   "file": "stl/pump-base.stl",
+   "name": "Pump base",
+   "grams": 11.9,
+   "print_hours": 0.6,
+   "bbox": [
+    80.1,
+    80.1,
+    17.1
+   ]
+  },
+  {
+   "file": "stl/impeller.stl",
+   "name": "Impeller",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    29.0,
+    29.0,
+    8.5
+   ]
+  },
+  {
+   "file": "stl/pump-cover.stl",
+   "name": "Pump cover",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    37.0,
+    37.0,
+    4.0
+   ]
+  },
+  {
+   "file": "stl/dome.stl",
+   "name": "Spout dome",
+   "grams": 14.4,
+   "print_hours": 0.72,
+   "bbox": [
+    77.5,
+    77.5,
+    66.3
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/bottom-plate.stl",
+   "name": "Bottom plate",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 698.7,
+    "area_cm2": 319.9,
+    "minutes": 1.6,
+    "material_usd": 3.36
+   },
+   "bbox": [
+    202.1,
+    202.2,
+    3.3
+   ]
+  }
+ ]
+}

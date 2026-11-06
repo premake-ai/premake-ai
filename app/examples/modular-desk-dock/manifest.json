@@ -1,0 +1,1170 @@
+{
+ "t": 1793393781.176743,
+ "title": "Modular Desk Dock",
+ "parts": [
+  {
+   "file": "stl/base-bottom.stl",
+   "name": "Base bottom",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.0,
+    -0.0,
+    -1.0
+   ],
+   "bbox": [
+    360.0,
+    120.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/base-middle.stl",
+   "name": "Base middle",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.0,
+    -0.0,
+    -1.0
+   ],
+   "bbox": [
+    360.0,
+    120.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/base-top.stl",
+   "name": "Base top",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.0,
+    -0.0,
+    -1.0
+   ],
+   "bbox": [
+    360.0,
+    120.0,
+    3.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/steel-magnet-bar.stl",
+   "name": "Steel magnet bar",
+   "group": "component",
+   "process": "bought",
+   "color": "#4a4d52",
+   "explode": [
+    0.0,
+    -0.0,
+    -1.0
+   ],
+   "bbox": [
+    304.8,
+    25.4,
+    6.4
+   ],
+   "material": "steel"
+  },
+  {
+   "file": "stl/brass-power-rails.stl",
+   "name": "Brass power rails",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9a43a",
+   "explode": [
+    0.0,
+    0.036,
+    -0.999
+   ],
+   "bbox": [
+    304.8,
+    54.4,
+    1.6
+   ],
+   "material": "brass"
+  },
+  {
+   "file": "stl/rubber-feet.stl",
+   "name": "Rubber feet",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    0.0,
+    -0.0,
+    -1.0
+   ],
+   "bbox": [
+    332.0,
+    102.0,
+    4.0
+   ],
+   "material": "rubber"
+  },
+  {
+   "file": "stl/dc-barrel-jack-pcb-5-5-2-1.stl",
+   "name": "DC barrel jack, PCB 5.5\u00d72.1",
+   "group": "component",
+   "process": "bought",
+   "color": "#1c1d20",
+   "explode": [
+    -0.779,
+    0.257,
+    -0.572
+   ],
+   "bbox": [
+    10.4,
+    14.5,
+    14.5
+   ],
+   "cable": {
+    "type": "dc-barrel",
+    "at": [
+     -160.0,
+     60.0,
+     9.5
+    ],
+    "dir": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "length_mm": 600.0
+   },
+   "subparts": [
+    {
+     "file": "stl/dc-barrel-jack-pcb-5-5-2-1__0.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/dc-barrel-jack-pcb-5-5-2-1__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-barrel-jack-pcb-5-5-2-1__2.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "dc_jack_pcb",
+    "qty": 1,
+    "name": "DC barrel jack, PCB 5.5\u00d72.1",
+    "unit_cost_usd": 0.4,
+    "mass_g": 2.0
+   }
+  },
+  {
+   "file": "stl/ch-floor.stl",
+   "name": "Charger floor",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    -0.771,
+    -0.0,
+    -0.637
+   ],
+   "bbox": [
+    86.0,
+    80.0,
+    3.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/ch-ring1.stl",
+   "name": "Charger ring 1",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    -0.784,
+    -0.0,
+    -0.621
+   ],
+   "bbox": [
+    86.0,
+    80.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/ch-ring2.stl",
+   "name": "Charger ring 2",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    -0.8,
+    -0.0,
+    -0.6
+   ],
+   "bbox": [
+    86.0,
+    80.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/ch-top.stl",
+   "name": "Charger top",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    -0.813,
+    -0.0,
+    -0.583
+   ],
+   "bbox": [
+    86.0,
+    80.0,
+    3.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/ch-pins.stl",
+   "name": "Charger pogo pins",
+   "group": "component",
+   "process": "bought",
+   "color": "#d4af37",
+   "explode": [
+    -0.775,
+    0.024,
+    -0.632
+   ],
+   "bbox": [
+    19.0,
+    51.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/ch-mags.stl",
+   "name": "Charger magnets",
+   "group": "component",
+   "process": "bought",
+   "color": "#9a9da3",
+   "explode": [
+    -0.771,
+    -0.0,
+    -0.637
+   ],
+   "bbox": [
+    64.0,
+    10.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/ch-pcb.stl",
+   "name": "15W Qi charger board",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d5e2c",
+   "explode": [
+    -0.782,
+    -0.0,
+    -0.623
+   ],
+   "bbox": [
+    45.0,
+    45.0,
+    4.6
+   ]
+  },
+  {
+   "file": "stl/ch-coil.stl",
+   "name": "Qi coil",
+   "group": "component",
+   "process": "bought",
+   "color": "#b5651d",
+   "explode": [
+    -0.804,
+    -0.0,
+    -0.594
+   ],
+   "bbox": [
+    48.4,
+    48.4,
+    2.6
+   ]
+  },
+  {
+   "file": "stl/ch-phone.stl",
+   "name": "iPhone 16 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2a3b49",
+   "explode": [
+    -0.833,
+    0.0,
+    -0.553
+   ],
+   "bbox": [
+    72.3,
+    147.6,
+    10.5
+   ],
+   "ref_model": {
+    "key": "iphone_16",
+    "m": [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -128.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.01
+     ],
+     [
+      0.0,
+      -1.0,
+      0.0,
+      40.25
+     ],
+     [
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "yours": true
+   }
+  },
+  {
+   "file": "stl/speaker-floor.stl",
+   "name": "Speaker floor",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    -0.338,
+    -0.0,
+    -0.941
+   ],
+   "bbox": [
+    76.0,
+    80.0,
+    3.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/speaker-front.stl",
+   "name": "Speaker front",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    -0.469,
+    -0.46,
+    -0.754
+   ],
+   "bbox": [
+    76.0,
+    5.5,
+    86.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/speaker-back.stl",
+   "name": "Speaker back",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    -0.469,
+    0.46,
+    -0.754
+   ],
+   "bbox": [
+    76.0,
+    5.5,
+    86.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/speaker-side-l.stl",
+   "name": "Speaker side L",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    -0.768,
+    -0.0,
+    -0.64
+   ],
+   "bbox": [
+    5.5,
+    69.0,
+    86.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/speaker-side-r.stl",
+   "name": "Speaker side R",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    -0.045,
+    -0.0,
+    -0.999
+   ],
+   "bbox": [
+    5.5,
+    69.0,
+    86.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/speaker-top.stl",
+   "name": "Speaker top",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    -0.93,
+    -0.0,
+    -0.367
+   ],
+   "bbox": [
+    76.0,
+    80.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/2in-5w-speaker-driver.stl",
+   "name": "2in 5W speaker driver",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2b2b",
+   "explode": [
+    -0.531,
+    -0.301,
+    -0.792
+   ],
+   "bbox": [
+    52.0,
+    26.0,
+    52.0
+   ]
+  },
+  {
+   "file": "stl/bluetooth-amp-board.stl",
+   "name": "Bluetooth amp board",
+   "group": "component",
+   "process": "bought",
+   "color": "#1b3f8f",
+   "explode": [
+    -0.35,
+    0.165,
+    -0.922
+   ],
+   "bbox": [
+    40.0,
+    25.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/mp1584-mini-buck-converter.stl",
+   "name": "MP1584 mini buck converter",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d5e3b",
+   "explode": [
+    -0.475,
+    -0.153,
+    -0.866
+   ],
+   "bbox": [
+    22.0,
+    17.0,
+    4.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/mp1584-mini-buck-converter__0.stl",
+     "color": "#1d5e3b",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__1.stl",
+     "color": "#26282c",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__3.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__4.stl",
+     "color": "#2a6ad0",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__5.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__6.stl",
+     "color": "#b48a5c",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__7.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    }
+   ],
+   "lib": {
+    "key": "mp1584",
+    "qty": 1,
+    "name": "MP1584 mini buck converter",
+    "unit_cost_usd": 1.2,
+    "mass_g": 2.0
+   }
+  },
+  {
+   "file": "stl/speaker-pogo-pins.stl",
+   "name": "Speaker pogo pins",
+   "group": "component",
+   "process": "bought",
+   "color": "#d4af37",
+   "explode": [
+    -0.342,
+    0.036,
+    -0.939
+   ],
+   "bbox": [
+    19.0,
+    51.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/speaker-magnets.stl",
+   "name": "Speaker magnets",
+   "group": "component",
+   "process": "bought",
+   "color": "#9a9da3",
+   "explode": [
+    -0.338,
+    -0.0,
+    -0.941
+   ],
+   "bbox": [
+    54.0,
+    10.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/lamp-floor.stl",
+   "name": "Lamp floor",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.354,
+    -0.0,
+    -0.935
+   ],
+   "bbox": [
+    60.0,
+    80.0,
+    3.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/lamp-foot-ring.stl",
+   "name": "Lamp foot ring",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.367,
+    -0.0,
+    -0.93
+   ],
+   "bbox": [
+    60.0,
+    80.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/lamp-foot-top.stl",
+   "name": "Lamp foot top",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.385,
+    -0.0,
+    -0.923
+   ],
+   "bbox": [
+    60.0,
+    80.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/lamp-diffuser.stl",
+   "name": "Lamp diffuser",
+   "group": "case",
+   "process": "laser",
+   "color": "#f4f1ea",
+   "explode": [
+    0.957,
+    -0.257,
+    0.137
+   ],
+   "bbox": [
+    40.0,
+    3.0,
+    220.0
+   ],
+   "material": "acrylic_frosted",
+   "fx": {
+    "glow": {
+     "color": "#ffd9a0"
+    }
+   }
+  },
+  {
+   "file": "stl/lamp-spine.stl",
+   "name": "Lamp spine",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.964,
+    0.229,
+    0.139
+   ],
+   "bbox": [
+    40.0,
+    5.5,
+    220.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/lamp-side-l.stl",
+   "name": "Lamp side L",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.968,
+    -0.054,
+    0.245
+   ],
+   "bbox": [
+    5.5,
+    16.0,
+    220.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/lamp-side-r.stl",
+   "name": "Lamp side R",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.995,
+    -0.022,
+    0.1
+   ],
+   "bbox": [
+    5.5,
+    16.0,
+    220.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/lamp-cap.stl",
+   "name": "Lamp cap",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.32,
+    -0.0,
+    0.947
+   ],
+   "bbox": [
+    40.0,
+    24.5,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/12v-cob-led-strips.stl",
+   "name": "12V COB LED strips",
+   "group": "component",
+   "process": "bought",
+   "color": "#fff2d0",
+   "explode": [
+    0.98,
+    0.141,
+    0.141
+   ],
+   "bbox": [
+    18.0,
+    2.0,
+    200.0
+   ],
+   "fx": {
+    "glow": {
+     "color": "#ffd9a0"
+    }
+   }
+  },
+  {
+   "file": "stl/12mm-latching-push-switch.stl",
+   "name": "12mm latching push switch",
+   "group": "component",
+   "process": "bought",
+   "color": "#c0c0c0",
+   "explode": [
+    0.33,
+    -0.01,
+    0.944
+   ],
+   "bbox": [
+    14.0,
+    14.0,
+    22.0
+   ],
+   "material": "steel"
+  },
+  {
+   "file": "stl/lamp-pogo-pins.stl",
+   "name": "Lamp pogo pins",
+   "group": "component",
+   "process": "bought",
+   "color": "#d4af37",
+   "explode": [
+    0.357,
+    0.036,
+    -0.933
+   ],
+   "bbox": [
+    19.0,
+    51.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/lamp-magnets.stl",
+   "name": "Lamp magnets",
+   "group": "component",
+   "process": "bought",
+   "color": "#9a9da3",
+   "explode": [
+    0.354,
+    -0.0,
+    -0.935
+   ],
+   "bbox": [
+    38.0,
+    10.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/display-floor.stl",
+   "name": "Display floor",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.763,
+    -0.0,
+    -0.646
+   ],
+   "bbox": [
+    104.0,
+    80.0,
+    3.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/display-cheek-l.stl",
+   "name": "Display cheek L",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.719,
+    0.006,
+    -0.695
+   ],
+   "bbox": [
+    5.5,
+    74.7,
+    62.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/display-cheek-r.stl",
+   "name": "Display cheek R",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.922,
+    0.003,
+    -0.388
+   ],
+   "bbox": [
+    5.5,
+    74.7,
+    62.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/display-face.stl",
+   "name": "Display face",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.842,
+    -0.177,
+    -0.509
+   ],
+   "bbox": [
+    93.0,
+    23.4,
+    57.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/2-9in-e-paper-module.stl",
+   "name": "2.9in e-paper module",
+   "group": "component",
+   "process": "bought",
+   "color": "#e9e9e4",
+   "explode": [
+    0.846,
+    -0.156,
+    -0.51
+   ],
+   "bbox": [
+    89.5,
+    15.8,
+    36.7
+   ],
+   "fx": {
+    "screen": {
+     "text": "3 new\n10:30 stand-up",
+     "bg": "#e9e9e4",
+     "fg": "#111111",
+     "face": "-y"
+    }
+   }
+  },
+  {
+   "file": "stl/display-top.stl",
+   "name": "Display top",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.937,
+    0.088,
+    -0.337
+   ],
+   "bbox": [
+    93.0,
+    52.4,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/display-back.stl",
+   "name": "Display back",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.831,
+    0.234,
+    -0.505
+   ],
+   "bbox": [
+    93.0,
+    5.5,
+    56.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/esp32-c3-supermini.stl",
+   "name": "ESP32-C3 SuperMini",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    0.71,
+    0.142,
+    -0.69
+   ],
+   "bbox": [
+    18.0,
+    23.5,
+    4.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/esp32-c3-supermini__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__4.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__6.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    }
+   ],
+   "lib": {
+    "key": "esp32_c3_supermini",
+    "qty": 1,
+    "name": "ESP32-C3 SuperMini",
+    "unit_cost_usd": 4.0,
+    "mass_g": 2.0
+   }
+  },
+  {
+   "file": "stl/mp1584-mini-buck-converter-2.stl",
+   "name": "MP1584 mini buck converter (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d5e3b",
+   "explode": [
+    0.813,
+    0.112,
+    -0.572
+   ],
+   "bbox": [
+    22.0,
+    17.0,
+    4.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/mp1584-mini-buck-converter-2__0.stl",
+     "color": "#1d5e3b",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter-2__1.stl",
+     "color": "#26282c",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter-2__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter-2__3.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter-2__4.stl",
+     "color": "#2a6ad0",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter-2__5.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter-2__6.stl",
+     "color": "#b48a5c",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter-2__7.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    }
+   ],
+   "lib": {
+    "key": "mp1584",
+    "qty": 1,
+    "name": "MP1584 mini buck converter",
+    "unit_cost_usd": 1.2,
+    "mass_g": 2.0
+   }
+  },
+  {
+   "file": "stl/display-pogo-pins.stl",
+   "name": "Display pogo pins",
+   "group": "component",
+   "process": "bought",
+   "color": "#d4af37",
+   "explode": [
+    0.767,
+    0.024,
+    -0.641
+   ],
+   "bbox": [
+    19.0,
+    51.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/display-magnets.stl",
+   "name": "Display magnets",
+   "group": "component",
+   "process": "bought",
+   "color": "#9a9da3",
+   "explode": [
+    0.763,
+    -0.0,
+    -0.646
+   ],
+   "bbox": [
+    82.0,
+    10.0,
+    3.0
+   ]
+  }
+ ],
+ "scene": "desk",
+ "assembly_order": [
+  [
+   "Base bottom",
+   "Base middle",
+   "Steel magnet bar"
+  ],
+  [
+   "Brass power rails",
+   "Base top",
+   "Rubber feet"
+  ],
+  [
+   "Charger floor",
+   "Speaker floor",
+   "Lamp floor",
+   "Display floor"
+  ],
+  [
+   "Charger ring 1",
+   "Charger ring 2",
+   "15W Qi charger board",
+   "Qi coil",
+   "Charger top"
+  ],
+  [
+   "Speaker front",
+   "Speaker back",
+   "Speaker side L",
+   "Speaker side R",
+   "Speaker top"
+  ],
+  [
+   "Lamp foot ring",
+   "Lamp foot top",
+   "Lamp spine",
+   "Lamp side L",
+   "Lamp side R",
+   "Lamp diffuser",
+   "Lamp cap"
+  ],
+  [
+   "Display cheek L",
+   "Display cheek R",
+   "Display face",
+   "Display back",
+   "Display top"
+  ]
+ ],
+ "motion": {
+  "file": "motion.json",
+  "duration": 5.0,
+  "frames": 90,
+  "parts": 9
+ }
+}

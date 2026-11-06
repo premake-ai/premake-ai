@@ -1,0 +1,8 @@
+{
+ "title": "Desktop CNC Router 1610 PRO",
+ "description": "Dimension-faithful model of a 1610 PRO desktop CNC router (phenolic plates, 2040 base, 10 mm rods, T8 screws, 775 spindle) with bed-clamped phone mounts and a spindle dot-marker band, for structural simulation.",
+ "creator": "Premake",
+ "tags": [],
+ "created": "2026-11-05T21:53:41.017Z",
+ "demo": true
+}

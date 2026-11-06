@@ -1,0 +1,13 @@
+{
+ "title": "Spin turntable",
+ "description": "Motorised photo turntable: printed drum with a NEMA17 stepper and ESP32 inside, a 240 mm laser-cut black acrylic platter on a swivel bearing, speed knob and a 24-stop photo mode.",
+ "creator": "Premake",
+ "tags": [
+  "photography",
+  "stepper",
+  "ESP32",
+  "laser cut"
+ ],
+ "created": "2026-10-28T02:20:00Z",
+ "demo": true
+}

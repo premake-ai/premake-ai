@@ -1,0 +1,51 @@
+{
+  "t": 1793165629.7,
+  "source": "claude",
+  "edited": true,
+  "copy": {
+    "tagline": "Knob-adjustable grip trainer with independent finger plungers",
+    "intro": "A palm-lever hand gripper that lets you adjust main spring resistance on the fly and train each finger individually through four spring-loaded plungers.",
+    "benefits": [
+      {
+        "title": "Adjustable resistance, one knob",
+        "body": "Turn the adjust knob to change compression on the main spring. No tools, no swapping parts. Dial in the resistance that matches your current strength level."
+      },
+      {
+        "title": "Four independent finger plungers",
+        "body": "Each finger gets its own spring-loaded plunger so you can isolate and train weak fingers separately."
+      },
+      {
+        "title": "Full-hand palm lever",
+        "body": "Squeeze the palm lever against the main spring for traditional grip training. Combined with finger plungers, one device covers multiple grip exercises."
+      },
+      {
+        "title": "Durable, repairable hardware",
+        "body": "The springs and fasteners are standard sizes you can find at any hardware store. If a spring wears out after heavy use, replacement is simple and inexpensive."
+      }
+    ],
+    "made": "Every unit is made to order in the USA. The body, lever, knob and plungers are 3D printed in PETG, then each gripper is assembled by hand with zinc-plated bolts, a lock nut, washers, one main compression spring and four finger springs.",
+    "faq": [
+      {
+        "q": "Is this a pre-order?",
+        "a": "Yes. It is designed but not yet in production. Pre-ordering reserves a unit from the first build run. This is a demo, so no payment is taken."
+      },
+      {
+        "q": "When will it ship?",
+        "a": "Estimated ship time is about three weeks after you place your order. Each unit is made to order, so build times may shift slightly depending on demand. We will email you with tracking as soon as your gripper ships."
+      },
+      {
+        "q": "What is it made of?",
+        "a": "The printed parts, including the body halves, palm lever, adjust knob, and finger plungers, are PETG plastic. Internal hardware is zinc-plated steel bolts, nuts, washers, standard compression springs, and sheet-metal screws."
+      },
+      {
+        "q": "How do I adjust the resistance?",
+        "a": "Turn the adjust knob on the end of the gripper. It threads along the main bolt to compress or release the main spring, changing how much force the palm lever requires. No tools needed."
+      },
+      {
+        "q": "Can I replace worn springs myself?",
+        "a": "Yes. The springs are standard compression springs available at most hardware stores. Remove the body screws, swap the spring, and reassemble. We will include the spring sizes in your order so you know exactly what to buy."
+      }
+    ],
+    "cta": "Pre-order"
+  }
+}

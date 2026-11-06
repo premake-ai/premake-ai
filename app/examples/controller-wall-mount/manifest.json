@@ -1,0 +1,57 @@
+{
+ "t": 1793242622.682415,
+ "title": "Controller wall mount",
+ "parts": [
+  {
+   "file": "stl/mount-body.stl",
+   "name": "Mount body",
+   "group": "case",
+   "process": "print",
+   "color": "#ef476f",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    34.2,
+    59.1,
+    96.1
+   ]
+  },
+  {
+   "file": "stl/screw-caps-x2.stl",
+   "name": "Screw caps (x2)",
+   "group": "case",
+   "process": "print",
+   "color": "#ef476f",
+   "explode": [
+    0.0,
+    -1.0,
+    0.2
+   ],
+   "bbox": [
+    11.3,
+    3.0,
+    81.3
+   ]
+  },
+  {
+   "file": "stl/grip-pad-tpu.stl",
+   "name": "Grip pad (TPU)",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2d42",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    23.6,
+    38.0,
+    5.7
+   ]
+  }
+ ]
+}

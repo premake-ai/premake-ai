@@ -1,0 +1,1681 @@
+{
+ "t": 1793920087.829013,
+ "title": "Compact Desktop CNC Mill",
+ "parts": [
+  {
+   "file": "stl/base-rail-l.stl",
+   "name": "Base rail L",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -0.454,
+    0.106,
+    -0.884
+   ],
+   "bbox": [
+    20.0,
+    600.0,
+    40.0
+   ],
+   "material": "aluminium",
+   "step": "step/base-rail-l.step"
+  },
+  {
+   "file": "stl/upright-l.stl",
+   "name": "Upright L",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -0.672,
+    0.594,
+    -0.441
+   ],
+   "bbox": [
+    20.0,
+    40.0,
+    400.0
+   ],
+   "material": "aluminium",
+   "step": "step/upright-l.step"
+  },
+  {
+   "file": "stl/upright-shim-l.stl",
+   "name": "Upright shim L",
+   "group": "case",
+   "process": "print",
+   "color": "#2b6cb0",
+   "explode": [
+    -0.441,
+    0.418,
+    -0.795
+   ],
+   "bbox": [
+    4.0,
+    40.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/base-rail-r.stl",
+   "name": "Base rail R",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.492,
+    0.103,
+    -0.864
+   ],
+   "bbox": [
+    20.0,
+    600.0,
+    40.0
+   ],
+   "material": "aluminium",
+   "step": "step/base-rail-r.step"
+  },
+  {
+   "file": "stl/upright-r.stl",
+   "name": "Upright R",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.705,
+    0.569,
+    -0.423
+   ],
+   "bbox": [
+    20.0,
+    40.0,
+    400.0
+   ],
+   "material": "aluminium",
+   "step": "step/upright-r.step"
+  },
+  {
+   "file": "stl/upright-shim-r.stl",
+   "name": "Upright shim R",
+   "group": "case",
+   "process": "print",
+   "color": "#2b6cb0",
+   "explode": [
+    0.475,
+    0.409,
+    -0.779
+   ],
+   "bbox": [
+    4.0,
+    40.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/cross-bar-front.stl",
+   "name": "Cross bar front",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.021,
+    -0.625,
+    -0.78
+   ],
+   "bbox": [
+    300.0,
+    40.0,
+    20.0
+   ],
+   "material": "aluminium",
+   "step": "step/cross-bar-front.step"
+  },
+  {
+   "file": "stl/cross-bar-back.stl",
+   "name": "Cross bar back",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.019,
+    0.718,
+    -0.695
+   ],
+   "bbox": [
+    300.0,
+    40.0,
+    20.0
+   ],
+   "material": "aluminium",
+   "step": "step/cross-bar-back.step"
+  },
+  {
+   "file": "stl/gantry-beam-lower.stl",
+   "name": "Gantry beam lower",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.066,
+    0.997,
+    0.037
+   ],
+   "bbox": [
+    400.0,
+    20.0,
+    40.0
+   ],
+   "material": "aluminium",
+   "step": "step/gantry-beam-lower.step"
+  },
+  {
+   "file": "stl/gantry-beam-upper.stl",
+   "name": "Gantry beam upper",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.062,
+    0.94,
+    0.335
+   ],
+   "bbox": [
+    400.0,
+    20.0,
+    40.0
+   ],
+   "material": "aluminium",
+   "step": "step/gantry-beam-upper.step"
+  },
+  {
+   "file": "stl/corner-brackets.stl",
+   "name": "Corner brackets",
+   "group": "component",
+   "process": "bought",
+   "color": "#c7ccd2",
+   "explode": [
+    0.05,
+    0.215,
+    -0.975
+   ],
+   "bbox": [
+    388.0,
+    580.0,
+    290.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/corner-brackets__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bracket_2020",
+    "qty": 10,
+    "name": "2020 corner bracket",
+    "unit_cost_usd": 0.6,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/y-rails-mgn12-500-mm.stl",
+   "name": "Y rails (MGN12 500 mm)",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa0a6",
+   "explode": [
+    0.03,
+    0.129,
+    -0.991
+   ],
+   "bbox": [
+    332.0,
+    500.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/y-blocks.stl",
+   "name": "Y blocks (MGN12H)",
+   "group": "component",
+   "process": "bought",
+   "color": "#3d4247",
+   "explode": [
+    0.031,
+    0.131,
+    -0.991
+   ],
+   "bbox": [
+    347.0,
+    245.4,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/bed.stl",
+   "name": "Bed plate",
+   "group": "case",
+   "process": "sheet",
+   "color": "#a9b1bb",
+   "explode": [
+    0.031,
+    0.134,
+    -0.99
+   ],
+   "bbox": [
+    320.0,
+    300.0,
+    3.0
+   ],
+   "material": "aluminium",
+   "step": "step/bed.step"
+  },
+  {
+   "file": "stl/spoil.stl",
+   "name": "Spoilboard",
+   "group": "case",
+   "process": "laser",
+   "color": "#b89668",
+   "explode": [
+    0.032,
+    0.136,
+    -0.99
+   ],
+   "bbox": [
+    300.0,
+    280.0,
+    6.0
+   ],
+   "material": "wood"
+  },
+  {
+   "file": "stl/probe.stl",
+   "name": "Z touch probe plate",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9ccd1",
+   "explode": [
+    -0.405,
+    -0.294,
+    -0.866
+   ],
+   "bbox": [
+    30.0,
+    20.0,
+    8.0
+   ],
+   "material": "aluminium",
+   "step": "step/probe.step"
+  },
+  {
+   "file": "stl/y-lead-screw.stl",
+   "name": "Y lead screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc2",
+   "explode": [
+    0.029,
+    0.125,
+    -0.992
+   ],
+   "bbox": [
+    8.0,
+    600.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/y-bearing-blocks-kp08.stl",
+   "name": "Y bearing blocks (KP08)",
+   "group": "component",
+   "process": "bought",
+   "color": "#8c9095",
+   "explode": [
+    0.029,
+    0.125,
+    -0.992
+   ],
+   "bbox": [
+    55.0,
+    553.0,
+    29.0
+   ]
+  },
+  {
+   "file": "stl/y-coupler.stl",
+   "name": "Y coupler",
+   "group": "component",
+   "process": "bought",
+   "color": "#c0c4c8",
+   "explode": [
+    0.021,
+    -0.69,
+    -0.724
+   ],
+   "bbox": [
+    19.0,
+    25.0,
+    19.0
+   ]
+  },
+  {
+   "file": "stl/y-motor.stl",
+   "name": "Y motor",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    0.02,
+    -0.733,
+    -0.68
+   ],
+   "bbox": [
+    42.3,
+    72.6,
+    47.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/y-motor__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/y-motor__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/y-motor__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/y-motor__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/y-motor__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/y-motor__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 48 mm",
+    "unit_cost_usd": 13.0,
+    "mass_g": 360.0
+   }
+  },
+  {
+   "file": "stl/y-motor-mount.stl",
+   "name": "Y motor mount",
+   "group": "case",
+   "process": "print",
+   "color": "#2b6cb0",
+   "explode": [
+    0.021,
+    -0.694,
+    -0.72
+   ],
+   "bbox": [
+    48.0,
+    22.0,
+    58.0
+   ]
+  },
+  {
+   "file": "stl/y-nutblock.stl",
+   "name": "Y nut block",
+   "group": "case",
+   "process": "print",
+   "color": "#2b6cb0",
+   "explode": [
+    0.03,
+    0.137,
+    -0.99
+   ],
+   "bbox": [
+    34.0,
+    18.0,
+    30.0
+   ]
+  },
+  {
+   "file": "stl/y-nut.stl",
+   "name": "Y nut",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9a227",
+   "explode": [
+    0.029,
+    0.153,
+    -0.988
+   ],
+   "bbox": [
+    22.0,
+    15.0,
+    22.0
+   ],
+   "material": "brass",
+   "step": "step/y-nut.step"
+  },
+  {
+   "file": "stl/x-rails-mgn12-400-mm.stl",
+   "name": "X rails (MGN12 400 mm)",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa0a6",
+   "explode": [
+    0.073,
+    0.974,
+    0.216
+   ],
+   "bbox": [
+    400.0,
+    8.0,
+    72.0
+   ]
+  },
+  {
+   "file": "stl/x-blocks.stl",
+   "name": "X blocks (MGN12H)",
+   "group": "component",
+   "process": "bought",
+   "color": "#3d4247",
+   "explode": [
+    0.075,
+    0.972,
+    0.224
+   ],
+   "bbox": [
+    105.4,
+    10.0,
+    87.0
+   ]
+  },
+  {
+   "file": "stl/xplate.stl",
+   "name": "X carriage plate",
+   "group": "case",
+   "process": "sheet",
+   "color": "#a9b1bb",
+   "explode": [
+    0.072,
+    0.877,
+    0.476
+   ],
+   "bbox": [
+    110.0,
+    3.0,
+    160.0
+   ],
+   "material": "aluminium",
+   "step": "step/xplate.step"
+  },
+  {
+   "file": "stl/x-nutblock.stl",
+   "name": "X nut block",
+   "group": "case",
+   "process": "print",
+   "color": "#2b6cb0",
+   "explode": [
+    0.056,
+    0.802,
+    0.595
+   ],
+   "bbox": [
+    30.0,
+    33.0,
+    33.0
+   ]
+  },
+  {
+   "file": "stl/x-nut.stl",
+   "name": "X nut",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9a227",
+   "explode": [
+    0.109,
+    0.839,
+    0.534
+   ],
+   "bbox": [
+    15.0,
+    22.0,
+    22.0
+   ],
+   "material": "brass",
+   "step": "step/x-nut.step"
+  },
+  {
+   "file": "stl/x-lead-screw.stl",
+   "name": "X lead screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc2",
+   "explode": [
+    0.022,
+    0.844,
+    0.537
+   ],
+   "bbox": [
+    400.0,
+    8.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/x-coupler.stl",
+   "name": "X coupler",
+   "group": "component",
+   "process": "bought",
+   "color": "#c0c4c8",
+   "explode": [
+    -0.809,
+    0.496,
+    0.316
+   ],
+   "bbox": [
+    25.0,
+    19.0,
+    19.0
+   ]
+  },
+  {
+   "file": "stl/x-motor.stl",
+   "name": "X motor",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    -0.848,
+    0.444,
+    0.289
+   ],
+   "bbox": [
+    72.6,
+    47.7,
+    42.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/x-motor__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-motor__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/x-motor__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-motor__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-motor__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/x-motor__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 48 mm",
+    "unit_cost_usd": 13.0,
+    "mass_g": 360.0
+   }
+  },
+  {
+   "file": "stl/x-motor-bracket.stl",
+   "name": "X motor bracket",
+   "group": "case",
+   "process": "print",
+   "color": "#2b6cb0",
+   "explode": [
+    -0.803,
+    0.503,
+    0.32
+   ],
+   "bbox": [
+    43.0,
+    44.0,
+    46.0
+   ]
+  },
+  {
+   "file": "stl/x-end-block-l.stl",
+   "name": "X end block L",
+   "group": "case",
+   "process": "print",
+   "color": "#2b6cb0",
+   "explode": [
+    -0.728,
+    0.578,
+    0.368
+   ],
+   "bbox": [
+    16.0,
+    20.0,
+    30.0
+   ]
+  },
+  {
+   "file": "stl/x-end-block-r.stl",
+   "name": "X end block R",
+   "group": "case",
+   "process": "print",
+   "color": "#2b6cb0",
+   "explode": [
+    0.761,
+    0.547,
+    0.348
+   ],
+   "bbox": [
+    16.0,
+    20.0,
+    30.0
+   ]
+  },
+  {
+   "file": "stl/608-bearings-x.stl",
+   "name": "608 bearings X",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9cdd2",
+   "explode": [
+    0.056,
+    0.842,
+    0.536
+   ],
+   "bbox": [
+    330.0,
+    22.0,
+    22.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/608-bearings-x__0.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/608-bearings-x__1.stl",
+     "color": "#a9aeb5",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/608-bearings-x__2.stl",
+     "color": "#8e939a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bearing_608",
+    "qty": 2,
+    "name": "608ZZ bearing",
+    "unit_cost_usd": 0.6,
+    "mass_g": 17.4
+   }
+  },
+  {
+   "file": "stl/z-blocks.stl",
+   "name": "Z blocks (MGN12H)",
+   "group": "component",
+   "process": "bought",
+   "color": "#3d4247",
+   "explode": [
+    0.083,
+    0.8,
+    0.595
+   ],
+   "bbox": [
+    91.0,
+    10.0,
+    105.4
+   ]
+  },
+  {
+   "file": "stl/zspacers.stl",
+   "name": "Z block spacers",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    0.075,
+    0.837,
+    0.542
+   ],
+   "bbox": [
+    89.8,
+    14.0,
+    85.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/zspacers__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "standoff",
+    "qty": 16,
+    "name": "M3\u00d714 brass standoff",
+    "unit_cost_usd": 0.204,
+    "mass_g": 2.1
+   }
+  },
+  {
+   "file": "stl/z-nutbracket.stl",
+   "name": "Z nut bracket",
+   "group": "case",
+   "process": "print",
+   "color": "#2b6cb0",
+   "explode": [
+    0.055,
+    0.589,
+    0.806
+   ],
+   "bbox": [
+    32.0,
+    20.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/z-nut.stl",
+   "name": "Z nut",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9a227",
+   "explode": [
+    0.054,
+    0.57,
+    0.82
+   ],
+   "bbox": [
+    22.0,
+    22.0,
+    15.0
+   ],
+   "material": "brass",
+   "step": "step/z-nut.step"
+  },
+  {
+   "file": "stl/zplate.stl",
+   "name": "Z plate",
+   "group": "case",
+   "process": "sheet",
+   "color": "#a9b1bb",
+   "explode": [
+    0.085,
+    0.725,
+    0.683
+   ],
+   "bbox": [
+    100.0,
+    3.0,
+    350.0
+   ],
+   "material": "aluminium",
+   "step": "step/zplate.step"
+  },
+  {
+   "file": "stl/z-rails.stl",
+   "name": "Z rails (MGN12 350 mm)",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa0a6",
+   "explode": [
+    0.082,
+    0.75,
+    0.656
+   ],
+   "bbox": [
+    76.0,
+    8.0,
+    350.0
+   ]
+  },
+  {
+   "file": "stl/z-screw.stl",
+   "name": "Z lead screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc2",
+   "explode": [
+    0.073,
+    0.771,
+    0.633
+   ],
+   "bbox": [
+    8.0,
+    8.0,
+    350.0
+   ]
+  },
+  {
+   "file": "stl/z-coupler.stl",
+   "name": "Z coupler",
+   "group": "component",
+   "process": "bought",
+   "color": "#c0c4c8",
+   "explode": [
+    0.032,
+    0.332,
+    0.943
+   ],
+   "bbox": [
+    19.0,
+    19.0,
+    25.0
+   ]
+  },
+  {
+   "file": "stl/z-motor.stl",
+   "name": "Z motor",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    0.028,
+    0.307,
+    0.951
+   ],
+   "bbox": [
+    42.3,
+    47.7,
+    72.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/z-motor__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/z-motor__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/z-motor__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/z-motor__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/z-motor__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/z-motor__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 48 mm",
+    "unit_cost_usd": 13.0,
+    "mass_g": 360.0
+   }
+  },
+  {
+   "file": "stl/z-motorbracket.stl",
+   "name": "Z motor bracket",
+   "group": "case",
+   "process": "print",
+   "color": "#2b6cb0",
+   "explode": [
+    0.032,
+    0.34,
+    0.94
+   ],
+   "bbox": [
+    42.0,
+    42.0,
+    50.0
+   ]
+  },
+  {
+   "file": "stl/z-bearingblock.stl",
+   "name": "Z bearing block",
+   "group": "case",
+   "process": "print",
+   "color": "#2b6cb0",
+   "explode": [
+    0.062,
+    0.651,
+    -0.756
+   ],
+   "bbox": [
+    28.0,
+    29.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/z-bearing.stl",
+   "name": "608 bearing Z",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9cdd2",
+   "explode": [
+    0.064,
+    0.668,
+    -0.741
+   ],
+   "bbox": [
+    22.0,
+    22.0,
+    7.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/z-bearing__0.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/z-bearing__1.stl",
+     "color": "#a9aeb5",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/z-bearing__2.stl",
+     "color": "#8e939a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bearing_608",
+    "qty": 1,
+    "name": "608ZZ bearing",
+    "unit_cost_usd": 0.6,
+    "mass_g": 17.4
+   }
+  },
+  {
+   "file": "stl/spindlemount.stl",
+   "name": "Spindle mount",
+   "group": "case",
+   "process": "print",
+   "color": "#2b6cb0",
+   "explode": [
+    0.111,
+    0.473,
+    -0.874
+   ],
+   "bbox": [
+    56.0,
+    68.0,
+    86.0
+   ]
+  },
+  {
+   "file": "stl/spindle.stl",
+   "name": "775 ER11 spindle 24V",
+   "group": "component",
+   "process": "bought",
+   "color": "#30343a",
+   "explode": [
+    0.089,
+    0.379,
+    -0.921
+   ],
+   "bbox": [
+    45.5,
+    45.5,
+    135.0
+   ]
+  },
+  {
+   "file": "stl/spindle-screws.stl",
+   "name": "Spindle screws M4x12",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.082,
+    0.349,
+    -0.933
+   ],
+   "bbox": [
+    36.0,
+    7.0,
+    16.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/spindle-screws__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 2,
+    "name": "M4\u00d712 socket head screw",
+    "unit_cost_usd": 0.134,
+    "mass_g": 2.2
+   }
+  },
+  {
+   "file": "stl/electronics-back-panel.stl",
+   "name": "Electronics back panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#151515",
+   "explode": [
+    0.656,
+    0.5,
+    -0.565
+   ],
+   "bbox": [
+    3.0,
+    140.0,
+    200.0
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/electronics-front-panel.stl",
+   "name": "Electronics front panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    3.0,
+    140.0,
+    200.0
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/panel-standoffs.stl",
+   "name": "Panel standoffs",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    0.693,
+    0.478,
+    -0.539
+   ],
+   "bbox": [
+    40.0,
+    133.0,
+    193.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/panel-standoffs__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "standoff",
+    "qty": 4,
+    "name": "M3\u00d740 brass standoff",
+    "unit_cost_usd": 0.36,
+    "mass_g": 6.9
+   }
+  },
+  {
+   "file": "stl/front-panel-screws.stl",
+   "name": "Front panel screws",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.724,
+    0.457,
+    -0.516
+   ],
+   "bbox": [
+    7.6,
+    133.7,
+    193.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/front-panel-screws__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M3\u00d76 button head screw",
+    "unit_cost_usd": 0.095,
+    "mass_g": 0.6
+   }
+  },
+  {
+   "file": "stl/board-standoffs.stl",
+   "name": "Board standoffs",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    0.685,
+    0.523,
+    -0.506
+   ],
+   "bbox": [
+    10.0,
+    119.5,
+    147.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/board-standoffs__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "standoff",
+    "qty": 6,
+    "name": "M3\u00d710 brass standoff",
+    "unit_cost_usd": 0.18,
+    "mass_g": 1.4
+   }
+  },
+  {
+   "file": "stl/perfboard-9x15-cm.stl",
+   "name": "Perfboard 9x15 cm",
+   "group": "component",
+   "process": "bought",
+   "color": "#2f6b3a",
+   "explode": [
+    0.718,
+    0.466,
+    -0.516
+   ],
+   "bbox": [
+    1.6,
+    90.0,
+    150.0
+   ],
+   "material": "pcb"
+  },
+  {
+   "file": "stl/esp32-devkitc.stl",
+   "name": "ESP32 DevKitC",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    0.812,
+    0.437,
+    -0.388
+   ],
+   "bbox": [
+    13.2,
+    27.9,
+    55.4
+   ],
+   "port": {
+    "type": "usb-c",
+    "at": [
+     220.0,
+     85.0,
+     236.2
+    ],
+    "dir": [
+     -0.0,
+     0.0,
+     1.0
+    ],
+    "wide": [
+     0.0,
+     1.0,
+     0.0
+    ]
+   },
+   "subparts": [
+    {
+     "file": "stl/esp32-devkitc__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-devkitc__1.stl",
+     "color": "#232a36",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-devkitc__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-devkitc__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32-devkitc__4.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc__6.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-devkitc__7.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/esp32-devkitc__8.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc__9.stl",
+     "color": "#b48a5c",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "esp32_devkitc",
+    "qty": 1,
+    "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+    "unit_cost_usd": 7.5,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/tmc2209-x.stl",
+   "name": "TMC2209 X",
+   "group": "component",
+   "process": "bought",
+   "color": "#2f2547",
+   "explode": [
+    0.751,
+    0.549,
+    -0.367
+   ],
+   "bbox": [
+    18.0,
+    15.2,
+    20.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/tmc2209-x__0.stl",
+     "color": "#2f2547",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/tmc2209-x__1.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tmc2209-x__2.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/tmc2209-x__3.stl",
+     "color": "#9aa3ad",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/tmc2209-x__4.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tmc2209-x__5.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/tmc2209-x__6.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tmc2209-x__7.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "tmc2209",
+    "qty": 1,
+    "name": "TMC2209 stepper driver",
+    "unit_cost_usd": 5.0,
+    "mass_g": 4.0
+   }
+  },
+  {
+   "file": "stl/tmc2209-y.stl",
+   "name": "TMC2209 Y",
+   "group": "component",
+   "process": "bought",
+   "color": "#2f2547",
+   "explode": [
+    0.716,
+    0.524,
+    -0.461
+   ],
+   "bbox": [
+    18.0,
+    15.2,
+    20.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/tmc2209-y__0.stl",
+     "color": "#2f2547",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/tmc2209-y__1.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tmc2209-y__2.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/tmc2209-y__3.stl",
+     "color": "#9aa3ad",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/tmc2209-y__4.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tmc2209-y__5.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/tmc2209-y__6.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tmc2209-y__7.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "tmc2209",
+    "qty": 1,
+    "name": "TMC2209 stepper driver",
+    "unit_cost_usd": 5.0,
+    "mass_g": 4.0
+   }
+  },
+  {
+   "file": "stl/tmc2209-z.stl",
+   "name": "TMC2209 Z",
+   "group": "component",
+   "process": "bought",
+   "color": "#2f2547",
+   "explode": [
+    0.678,
+    0.496,
+    -0.542
+   ],
+   "bbox": [
+    18.0,
+    15.2,
+    20.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/tmc2209-z__0.stl",
+     "color": "#2f2547",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/tmc2209-z__1.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tmc2209-z__2.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/tmc2209-z__3.stl",
+     "color": "#9aa3ad",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/tmc2209-z__4.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tmc2209-z__5.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/tmc2209-z__6.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tmc2209-z__7.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "tmc2209",
+    "qty": 1,
+    "name": "TMC2209 stepper driver",
+    "unit_cost_usd": 5.0,
+    "mass_g": 4.0
+   }
+  },
+  {
+   "file": "stl/lm2596-5v-buck.stl",
+   "name": "LM2596 5V buck",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a3a6b",
+   "explode": [
+    0.616,
+    0.584,
+    -0.529
+   ],
+   "bbox": [
+    12.7,
+    21.2,
+    43.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/lm2596-5v-buck__0.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/lm2596-5v-buck__1.stl",
+     "color": "#1a3a6b",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/lm2596-5v-buck__2.stl",
+     "color": "#1d2a4a",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/lm2596-5v-buck__3.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/lm2596-5v-buck__4.stl",
+     "color": "#24262a",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/lm2596-5v-buck__5.stl",
+     "color": "#c47a4c",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/lm2596-5v-buck__6.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/lm2596-5v-buck__7.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/lm2596-5v-buck__8.stl",
+     "color": "#2a6ad0",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/lm2596-5v-buck__9.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "lm2596",
+    "qty": 1,
+    "name": "LM2596 buck converter",
+    "unit_cost_usd": 2.0,
+    "mass_g": 12.0
+   }
+  },
+  {
+   "file": "stl/d4184-mosfet-module.stl",
+   "name": "D4184 MOSFET module",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d4f91",
+   "explode": [
+    0.551,
+    0.543,
+    -0.634
+   ],
+   "bbox": [
+    10.0,
+    17.0,
+    34.0
+   ]
+  },
+  {
+   "file": "stl/dc-panel-jack-5-5x2-5-10-a.stl",
+   "name": "DC panel jack 5.5x2.5 (10 A)",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    0.601,
+    0.513,
+    -0.613
+   ],
+   "bbox": [
+    20.5,
+    16.0,
+    16.0
+   ],
+   "cable": {
+    "type": "dc-barrel",
+    "at": [
+     242.5,
+     170.0,
+     70.0
+    ],
+    "dir": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "length_mm": 600.0
+   }
+  },
+  {
+   "file": "stl/emergency-stop-22-mm.stl",
+   "name": "Emergency stop 22 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#d62828",
+   "explode": [
+    0.725,
+    0.613,
+    -0.314
+   ],
+   "bbox": [
+    55.0,
+    40.0,
+    40.0
+   ]
+  }
+ ],
+ "scene": "desk",
+ "motion": {
+  "file": "motion.json",
+  "duration": 8.0,
+  "frames": 90,
+  "parts": 25
+ }
+}

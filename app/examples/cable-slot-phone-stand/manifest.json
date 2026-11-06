@@ -1,0 +1,97 @@
+{
+ "t": 1793731342.453699,
+ "title": "Cable Slot Phone Stand",
+ "parts": [
+  {
+   "file": "stl/stand.stl",
+   "name": "Stand",
+   "group": "case",
+   "process": "print",
+   "color": "#e8e4dc",
+   "explode": [
+    -0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    70.0,
+    98.7,
+    134.0
+   ]
+  },
+  {
+   "file": "stl/rubber-foot.stl",
+   "name": "Rubber foot",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    0.0,
+    -0.002,
+    -1.0
+   ],
+   "bbox": [
+    64.0,
+    89.0,
+    2.5
+   ],
+   "material": "rubber"
+  },
+  {
+   "file": "stl/iphone-16-yours.stl",
+   "name": "iPhone 16 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2a3b49",
+   "explode": [
+    0.0,
+    0.215,
+    0.977
+   ],
+   "bbox": [
+    72.3,
+    60.3,
+    142.3
+   ],
+   "ref_model": {
+    "key": "iphone_16",
+    "m": [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.939692621,
+      0.342020143,
+      20.311121
+     ],
+     [
+      0.0,
+      -0.342020143,
+      0.939692621,
+      113.654318
+     ],
+     [
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "yours": true
+   }
+  }
+ ],
+ "scene": "desk",
+ "assembly_order": [
+  [
+   "Stand"
+  ],
+  [
+   "Rubber foot"
+  ]
+ ]
+}

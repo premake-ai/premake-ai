@@ -1,0 +1,31 @@
+{
+ "parts": [],
+ "assembly_minutes": 1,
+ "kit_ok": true,
+ "needs_soldering": false,
+ "printed": [
+  {
+   "file": "stl/organiser-body.stl",
+   "name": "Organiser body",
+   "grams": 77.2,
+   "print_hours": 3.86,
+   "bbox": [
+    171.1,
+    90.0,
+    105.4
+   ]
+  },
+  {
+   "file": "stl/drawer.stl",
+   "name": "Drawer",
+   "grams": 26.0,
+   "print_hours": 1.3,
+   "bbox": [
+    104.6,
+    90.7,
+    38.0
+   ]
+  }
+ ],
+ "fabricated": []
+}

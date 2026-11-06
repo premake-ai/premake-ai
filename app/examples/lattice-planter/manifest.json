@@ -1,0 +1,23 @@
+{
+ "t": 1793242637.1019142,
+ "title": "Lattice planter",
+ "parts": [
+  {
+   "file": "stl/lattice-planter.stl",
+   "name": "Lattice planter",
+   "group": "case",
+   "process": "print",
+   "color": "#e9c46a",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    111.9,
+    111.9,
+    100.5
+   ]
+  }
+ ]
+}

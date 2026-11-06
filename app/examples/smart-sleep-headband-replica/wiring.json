@@ -1,0 +1,61 @@
+{
+  "wires": [
+    {"from": {"part": "Mean Well GST220A12 12 V 15 A adapter", "pin": "+12V"}, "to": {"part": "DIN power socket", "pin": "+12V"}, "color": "red", "kind": "18 AWG"},
+    {"from": {"part": "Mean Well GST220A12 12 V 15 A adapter", "pin": "GND"}, "to": {"part": "DIN power socket", "pin": "GND"}, "color": "black", "kind": "18 AWG"},
+    {"from": {"part": "DIN power socket", "pin": "+12V"}, "to": {"part": "Inline blade fuse holder (15 A)", "pin": "IN"}, "color": "red", "kind": "solder"},
+    {"from": {"part": "DIN power socket", "pin": "GND"}, "to": {"part": "Wago 221-415 (GND)", "pin": "1"}, "color": "black", "kind": "solder"},
+    {"from": {"part": "Inline blade fuse holder (15 A)", "pin": "OUT"}, "to": {"part": "Wago 221-415 (12 V)", "pin": "1"}, "color": "red", "kind": "wago"},
+
+    {"from": {"part": "Wago 221-415 (12 V)", "pin": "2"}, "to": {"part": "BTS7960 H-bridge", "pin": "B+"}, "color": "red", "kind": "18 AWG"},
+    {"from": {"part": "Wago 221-415 (GND)", "pin": "2"}, "to": {"part": "BTS7960 H-bridge", "pin": "B-"}, "color": "black", "kind": "18 AWG"},
+    {"from": {"part": "Wago 221-415 (12 V)", "pin": "3"}, "to": {"part": "Fan MOSFET module", "pin": "VIN+"}, "color": "red", "kind": "screw terminal"},
+    {"from": {"part": "Wago 221-415 (GND)", "pin": "3"}, "to": {"part": "Fan MOSFET module", "pin": "VIN-"}, "color": "black", "kind": "screw terminal"},
+    {"from": {"part": "Wago 221-415 (12 V)", "pin": "4"}, "to": {"part": "Pump MOSFET module", "pin": "VIN+"}, "color": "red", "kind": "screw terminal"},
+    {"from": {"part": "Wago 221-415 (GND)", "pin": "4"}, "to": {"part": "Pump MOSFET module", "pin": "VIN-"}, "color": "black", "kind": "screw terminal"},
+    {"from": {"part": "Wago 221-415 (12 V)", "pin": "5"}, "to": {"part": "Nano screw-terminal board", "pin": "VIN"}, "color": "red", "kind": "screw terminal"},
+    {"from": {"part": "Wago 221-415 (GND)", "pin": "5"}, "to": {"part": "Nano screw-terminal board", "pin": "GND"}, "color": "black", "kind": "screw terminal"},
+
+    {"from": {"part": "BTS7960 H-bridge", "pin": "M+"}, "to": {"part": "Peltier A", "pin": "red"}, "color": "red", "kind": "screw terminal"},
+    {"from": {"part": "BTS7960 H-bridge", "pin": "M+"}, "to": {"part": "Peltier B", "pin": "red"}, "color": "red", "kind": "screw terminal"},
+    {"from": {"part": "BTS7960 H-bridge", "pin": "M-"}, "to": {"part": "Peltier A", "pin": "black"}, "color": "black", "kind": "screw terminal"},
+    {"from": {"part": "BTS7960 H-bridge", "pin": "M-"}, "to": {"part": "Peltier B", "pin": "black"}, "color": "black", "kind": "screw terminal"},
+    {"from": {"part": "Fan MOSFET module", "pin": "OUT+"}, "to": {"part": "80 mm case fan", "pin": "+"}, "color": "red", "kind": "screw terminal"},
+    {"from": {"part": "Fan MOSFET module", "pin": "OUT-"}, "to": {"part": "80 mm case fan", "pin": "-"}, "color": "black", "kind": "screw terminal"},
+    {"from": {"part": "Fan MOSFET module", "pin": "OUT+"}, "to": {"part": "80 mm case fan (2)", "pin": "+"}, "color": "red", "kind": "screw terminal"},
+    {"from": {"part": "Fan MOSFET module", "pin": "OUT-"}, "to": {"part": "80 mm case fan (2)", "pin": "-"}, "color": "black", "kind": "screw terminal"},
+    {"from": {"part": "Pump MOSFET module", "pin": "OUT+"}, "to": {"part": "12V brushless pump", "pin": "+"}, "color": "red", "kind": "screw terminal"},
+    {"from": {"part": "Pump MOSFET module", "pin": "OUT-"}, "to": {"part": "12V brushless pump", "pin": "-"}, "color": "black", "kind": "screw terminal"},
+
+    {"from": {"part": "Nano screw-terminal board", "pin": "5V"}, "to": {"part": "BTS7960 H-bridge", "pin": "VCC"}, "color": "red", "kind": "dupont"},
+    {"from": {"part": "Nano screw-terminal board", "pin": "GND"}, "to": {"part": "BTS7960 H-bridge", "pin": "GND"}, "color": "black", "kind": "dupont"},
+    {"from": {"part": "Nano screw-terminal board", "pin": "D5"}, "to": {"part": "BTS7960 H-bridge", "pin": "RPWM"}, "color": "orange", "kind": "dupont"},
+    {"from": {"part": "Nano screw-terminal board", "pin": "D6"}, "to": {"part": "BTS7960 H-bridge", "pin": "LPWM"}, "color": "yellow", "kind": "dupont"},
+    {"from": {"part": "Nano screw-terminal board", "pin": "D7"}, "to": {"part": "BTS7960 H-bridge", "pin": "R_EN"}, "color": "green", "kind": "dupont"},
+    {"from": {"part": "Nano screw-terminal board", "pin": "D8"}, "to": {"part": "BTS7960 H-bridge", "pin": "L_EN"}, "color": "blue", "kind": "dupont"},
+    {"from": {"part": "Nano screw-terminal board", "pin": "D9"}, "to": {"part": "Fan MOSFET module", "pin": "PWM+"}, "color": "white", "kind": "screw terminal"},
+    {"from": {"part": "Nano screw-terminal board", "pin": "GND"}, "to": {"part": "Fan MOSFET module", "pin": "PWM-"}, "color": "black", "kind": "screw terminal"},
+    {"from": {"part": "Nano screw-terminal board", "pin": "D10"}, "to": {"part": "Pump MOSFET module", "pin": "PWM+"}, "color": "purple", "kind": "screw terminal"},
+    {"from": {"part": "Nano screw-terminal board", "pin": "GND"}, "to": {"part": "Pump MOSFET module", "pin": "PWM-"}, "color": "black", "kind": "screw terminal"},
+
+    {"from": {"part": "Nano screw-terminal board", "pin": "5V"}, "to": {"part": "0.96\" OLED display (SSD1306)", "pin": "VCC"}, "color": "red", "kind": "dupont"},
+    {"from": {"part": "Nano screw-terminal board", "pin": "GND"}, "to": {"part": "0.96\" OLED display (SSD1306)", "pin": "GND"}, "color": "black", "kind": "dupont"},
+    {"from": {"part": "Nano screw-terminal board", "pin": "A4"}, "to": {"part": "0.96\" OLED display (SSD1306)", "pin": "SDA"}, "color": "blue", "kind": "dupont"},
+    {"from": {"part": "Nano screw-terminal board", "pin": "A5"}, "to": {"part": "0.96\" OLED display (SSD1306)", "pin": "SCL"}, "color": "yellow", "kind": "dupont"},
+
+    {"from": {"part": "Nano screw-terminal board", "pin": "5V"}, "to": {"part": "DS18B20 probe + adapter (water)", "pin": "VCC"}, "color": "red", "kind": "dupont"},
+    {"from": {"part": "Nano screw-terminal board", "pin": "GND"}, "to": {"part": "DS18B20 probe + adapter (water)", "pin": "GND"}, "color": "black", "kind": "dupont"},
+    {"from": {"part": "Nano screw-terminal board", "pin": "D2"}, "to": {"part": "DS18B20 probe + adapter (water)", "pin": "DAT"}, "color": "green", "kind": "dupont"},
+    {"from": {"part": "Nano screw-terminal board", "pin": "5V"}, "to": {"part": "DS18B20 probe + adapter (heatsink)", "pin": "VCC"}, "color": "red", "kind": "dupont"},
+    {"from": {"part": "Nano screw-terminal board", "pin": "GND"}, "to": {"part": "DS18B20 probe + adapter (heatsink)", "pin": "GND"}, "color": "black", "kind": "dupont"},
+    {"from": {"part": "Nano screw-terminal board", "pin": "D3"}, "to": {"part": "DS18B20 probe + adapter (heatsink)", "pin": "DAT"}, "color": "white", "kind": "dupont"},
+
+    {"from": {"part": "Nano screw-terminal board", "pin": "D4"}, "to": {"part": "Power button", "pin": "1"}, "color": "orange", "kind": "screw terminal"},
+    {"from": {"part": "Nano screw-terminal board", "pin": "GND"}, "to": {"part": "Power button", "pin": "2"}, "color": "black", "kind": "screw terminal"},
+    {"from": {"part": "Nano screw-terminal board", "pin": "D11"}, "to": {"part": "Cool/Heat button", "pin": "1"}, "color": "blue", "kind": "screw terminal"},
+    {"from": {"part": "Nano screw-terminal board", "pin": "GND"}, "to": {"part": "Cool/Heat button", "pin": "2"}, "color": "black", "kind": "screw terminal"},
+    {"from": {"part": "Nano screw-terminal board", "pin": "D12"}, "to": {"part": "Eco/Max button", "pin": "1"}, "color": "green", "kind": "screw terminal"},
+    {"from": {"part": "Nano screw-terminal board", "pin": "GND"}, "to": {"part": "Eco/Max button", "pin": "2"}, "color": "black", "kind": "screw terminal"},
+    {"from": {"part": "Nano screw-terminal board", "pin": "A0"}, "to": {"part": "Timer button", "pin": "1"}, "color": "white", "kind": "screw terminal"},
+    {"from": {"part": "Nano screw-terminal board", "pin": "GND"}, "to": {"part": "Timer button", "pin": "2"}, "color": "black", "kind": "screw terminal"}
+  ]
+}

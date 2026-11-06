@@ -1,0 +1,35 @@
+{
+ "parts": [
+  {
+   "name": "#10 x 2-1/2 in wood screw, flat head",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.22,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": "Into a stud"
+  },
+  {
+   "name": "Adhesive rubber strip 1/16 in",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.8,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Cut to 100 x 22 mm"
+  }
+ ],
+ "assembly_minutes": 3,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/bike-hook.stl",
+   "name": "Bike hook",
+   "grams": 113.9,
+   "print_hours": 5.69,
+   "bbox": [
+    64.0,
+    141.0,
+    120.0
+   ]
+  }
+ ]
+}

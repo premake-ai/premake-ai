@@ -1,0 +1,57 @@
+{
+ "t": 1793242594.427315,
+ "title": "Zip-slide bag clips",
+ "parts": [
+  {
+   "file": "stl/bag-clip-70-mm.stl",
+   "name": "Bag clip 70 mm",
+   "group": "case",
+   "process": "print",
+   "color": "#ffb4a2",
+   "explode": [
+    0.0,
+    -1.0,
+    0.3
+   ],
+   "bbox": [
+    87.0,
+    19.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/bag-clip-105-mm.stl",
+   "name": "Bag clip 105 mm",
+   "group": "case",
+   "process": "print",
+   "color": "#b5e48c",
+   "explode": [
+    0.0,
+    0.0,
+    0.3
+   ],
+   "bbox": [
+    122.0,
+    19.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/bag-clip-140-mm.stl",
+   "name": "Bag clip 140 mm",
+   "group": "case",
+   "process": "print",
+   "color": "#a0c4ff",
+   "explode": [
+    0.0,
+    1.0,
+    0.3
+   ],
+   "bbox": [
+    157.0,
+    19.0,
+    10.0
+   ]
+  }
+ ]
+}

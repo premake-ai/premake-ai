@@ -1,0 +1,43 @@
+{
+ "parts": [
+  {
+   "name": "N52 neodymium bar magnet 20 x 10 x 3 mm",
+   "qty_per_unit": 10,
+   "unit_cost_usd": 0.45,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Insert at a print pause"
+  },
+  {
+   "name": "#8 x 1-1/2 in pan head screw",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.12,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "Plastic wall anchor #8",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.08,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": ""
+  }
+ ],
+ "assembly_minutes": 8,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/knife-bar.stl",
+   "name": "Knife bar",
+   "grams": 92.2,
+   "print_hours": 4.61,
+   "bbox": [
+    240.0,
+    15.0,
+    40.0
+   ]
+  }
+ ]
+}

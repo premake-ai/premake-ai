@@ -1,0 +1,425 @@
+{
+ "t": 1793493517.482202,
+ "title": "Pork Meat Temperature Gauge",
+ "parts": [
+  {
+   "file": "stl/base.stl",
+   "name": "Base",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2d31",
+   "explode": [
+    -0.912,
+    0.408,
+    -0.047
+   ],
+   "bbox": [
+    104.0,
+    60.0,
+    31.5
+   ]
+  },
+  {
+   "file": "stl/lid.stl",
+   "name": "Lid",
+   "group": "case",
+   "process": "print",
+   "color": "#c8452b",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    104.0,
+    60.0,
+    8.8
+   ]
+  },
+  {
+   "file": "stl/esp32-c3-supermini.stl",
+   "name": "ESP32-C3 SuperMini",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    -0.948,
+    0.056,
+    -0.315
+   ],
+   "bbox": [
+    23.5,
+    18.0,
+    4.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/esp32-c3-supermini__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__4.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__6.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    }
+   ],
+   "lib": {
+    "key": "esp32_c3_supermini",
+    "qty": 1,
+    "name": "ESP32-C3 SuperMini",
+    "unit_cost_usd": 4.0,
+    "mass_g": 2.0
+   }
+  },
+  {
+   "file": "stl/0-96-oled-display-ssd1306.stl",
+   "name": "0.96\" OLED display (SSD1306)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a3a6b",
+   "explode": [
+    -0.986,
+    0.028,
+    0.166
+   ],
+   "bbox": [
+    27.3,
+    27.9,
+    11.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/0-96-oled-display-ssd1306__0.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/0-96-oled-display-ssd1306__1.stl",
+     "color": "#1a3a6b",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/0-96-oled-display-ssd1306__2.stl",
+     "color": "#0f1013",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/0-96-oled-display-ssd1306__3.stl",
+     "color": "#08090c",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/0-96-oled-display-ssd1306__4.stl",
+     "color": "#0d1b2a",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/0-96-oled-display-ssd1306__5.stl",
+     "color": "#c9a24a",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/0-96-oled-display-ssd1306__6.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    }
+   ],
+   "fx": {
+    "screen": {
+     "text": "138\u00b0F\nPORK > 145",
+     "bg": "#000000",
+     "fg": "#33ccff"
+    }
+   },
+   "lib": {
+    "key": "oled_096",
+    "qty": 1,
+    "name": "0.96\" OLED display (SSD1306)",
+    "unit_cost_usd": 3.5,
+    "mass_g": 4.0
+   }
+  },
+  {
+   "file": "stl/18650-li-ion-cell.stl",
+   "name": "18650 Li-ion cell",
+   "group": "component",
+   "process": "bought",
+   "color": "#2f6fd0",
+   "explode": [
+    -0.693,
+    0.718,
+    -0.062
+   ],
+   "bbox": [
+    66.1,
+    18.4,
+    18.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/18650-li-ion-cell__0.stl",
+     "color": "#2f6fd0",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/18650-li-ion-cell__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/18650-li-ion-cell__2.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "cell_18650",
+    "qty": 1,
+    "name": "18650 Li-ion cell",
+    "unit_cost_usd": 5.0,
+    "mass_g": 46.0
+   }
+  },
+  {
+   "file": "stl/18650-holder-1-cell.stl",
+   "name": "18650 holder, 1 cell",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1a1a",
+   "explode": [
+    -0.698,
+    0.71,
+    -0.09
+   ],
+   "bbox": [
+    77.0,
+    21.0,
+    19.0
+   ]
+  },
+  {
+   "file": "stl/tp4056-usb-c-charger.stl",
+   "name": "TP4056 USB-C charger",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f4fa8",
+   "explode": [
+    -0.986,
+    0.03,
+    -0.166
+   ],
+   "bbox": [
+    28.3,
+    17.0,
+    4.8
+   ],
+   "cable": {
+    "type": "usb-c",
+    "at": [
+     -52.0,
+     -11.0,
+     7.2
+    ],
+    "dir": [
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "length_mm": 400.0
+   }
+  },
+  {
+   "file": "stl/12-mm-push-button.stl",
+   "name": "12 mm push button",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc2",
+   "explode": [
+    -0.846,
+    0.112,
+    0.522
+   ],
+   "bbox": [
+    15.5,
+    15.5,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/active-buzzer-3-v-12-mm.stl",
+   "name": "Active buzzer 3 V, 12 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    0.671,
+    0.223,
+    0.707
+   ],
+   "bbox": [
+    12.0,
+    12.0,
+    9.5
+   ]
+  },
+  {
+   "file": "stl/2-5-mm-stereo-panel-jack.stl",
+   "name": "2.5 mm stereo panel jack",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa0a6",
+   "explode": [
+    0.968,
+    0.132,
+    -0.215
+   ],
+   "bbox": [
+    21.7,
+    9.0,
+    9.0
+   ]
+  },
+  {
+   "file": "stl/meat-probe-2-5-mm-plug.stl",
+   "name": "Meat probe, 2.5 mm plug",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9ccd1",
+   "explode": [
+    0.0,
+    -0.941,
+    -0.337
+   ],
+   "bbox": [
+    182.0,
+    12.0,
+    12.0
+   ],
+   "material": "steel"
+  },
+  {
+   "file": "stl/m2-5-self-tapping-screw-for-plastic-4.stl",
+   "name": "M2\u00d75 self-tapping screw for plastic \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.968,
+    0.028,
+    0.25
+   ],
+   "bbox": [
+    27.3,
+    27.8,
+    6.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m2-5-self-tapping-screw-for-plastic-4__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 4,
+    "name": "M2\u00d75 self-tapping screw for plastic",
+    "unit_cost_usd": 0.044,
+    "mass_g": 0.2
+   }
+  },
+  {
+   "file": "stl/m3-10-self-tapping-screw-for-plastic-4.stl",
+   "name": "M3\u00d710 self-tapping screw for plastic \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.851,
+    0.381,
+    0.362
+   ],
+   "bbox": [
+    97.6,
+    53.6,
+    12.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-self-tapping-screw-for-plastic-4__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 4,
+    "name": "M3\u00d710 self-tapping screw for plastic",
+    "unit_cost_usd": 0.059,
+    "mass_g": 0.8
+   }
+  }
+ ],
+ "scene": "counter",
+ "assembly_order": [
+  [
+   "Base"
+  ],
+  [
+   "18650 holder, 1 cell",
+   "TP4056 USB-C charger",
+   "ESP32-C3 SuperMini",
+   "2.5 mm stereo panel jack"
+  ],
+  [
+   "Lid"
+  ],
+  [
+   "12 mm push button",
+   "Active buzzer 3 V, 12 mm"
+  ]
+ ],
+ "wiring": {
+  "file": "wiring.json",
+  "wires": 24,
+  "parts": [
+   "0.96\" OLED display (SSD1306)",
+   "100k 1% resistor",
+   "100nF ceramic capacitor",
+   "12 mm push button",
+   "18650 holder, 1 cell",
+   "2.5 mm stereo panel jack",
+   "470k resistor",
+   "Active buzzer 3 V, 12 mm",
+   "ESP32-C3 SuperMini",
+   "TP4056 USB-C charger"
+  ],
+  "ok": true
+ }
+}

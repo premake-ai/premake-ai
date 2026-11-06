@@ -1,0 +1,252 @@
+{
+ "t": 1793741163.486799,
+ "title": "Private Home Monitoring Camera",
+ "parts": [
+  {
+   "file": "stl/front-shell.stl",
+   "name": "Front shell",
+   "group": "case",
+   "process": "sheet",
+   "color": "#efe9dd",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    58.0,
+    20.8,
+    64.5
+   ],
+   "material": "aluminium",
+   "step": "step/front-shell.step"
+  },
+  {
+   "file": "stl/back-shell.stl",
+   "name": "Back shell",
+   "group": "case",
+   "process": "sheet",
+   "color": "#3b3d42",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    58.0,
+    20.8,
+    64.5
+   ],
+   "material": "aluminium",
+   "step": "step/back-shell.step"
+  },
+  {
+   "file": "stl/top-cap-frame.stl",
+   "name": "Top cap + frame",
+   "group": "case",
+   "process": "print",
+   "color": "#d9d4ca",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    62.0,
+    46.0,
+    77.0
+   ]
+  },
+  {
+   "file": "stl/bottom-cap.stl",
+   "name": "Bottom cap",
+   "group": "case",
+   "process": "print",
+   "color": "#d9d4ca",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    62.0,
+    46.0,
+    36.0
+   ]
+  },
+  {
+   "file": "stl/shutter.stl",
+   "name": "Privacy shutter",
+   "group": "case",
+   "process": "print",
+   "color": "#2a2a2c",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    27.0,
+    2.5,
+    39.0
+   ]
+  },
+  {
+   "file": "stl/knob.stl",
+   "name": "Shutter knob",
+   "group": "case",
+   "process": "print",
+   "color": "#c96f3b",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    14.0,
+    9.5,
+    5.0
+   ]
+  },
+  {
+   "file": "stl/esp32-cam-ai-thinker-ov2640.stl",
+   "name": "ESP32-CAM (AI-Thinker, OV2640)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d3b6e",
+   "explode": [
+    0.0,
+    -0.636,
+    0.772
+   ],
+   "bbox": [
+    27.0,
+    17.1,
+    40.5
+   ]
+  },
+  {
+   "file": "stl/esp32-cam-mb.stl",
+   "name": "ESP32-CAM-MB",
+   "group": "component",
+   "process": "bought",
+   "color": "#14305a",
+   "explode": [
+    0.0,
+    0.182,
+    0.983
+   ],
+   "bbox": [
+    27.0,
+    4.3,
+    41.0
+   ]
+  },
+  {
+   "file": "stl/status-led.stl",
+   "name": "Status LED",
+   "group": "component",
+   "process": "bought",
+   "color": "#22cc66",
+   "explode": [
+    0.0,
+    -0.059,
+    -0.998
+   ],
+   "bbox": [
+    5.8,
+    31.8,
+    5.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/status-led__0.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/status-led__1.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "led_5mm",
+    "qty": 1,
+    "name": "5 mm LED (red)",
+    "unit_cost_usd": 0.05,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m3-16-self-tapping-screw-for-plastic-4.stl",
+   "name": "M3\u00d716 self-tapping screw for plastic \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.0,
+    -0.083,
+    -0.997
+   ],
+   "bbox": [
+    31.6,
+    28.7,
+    18.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-16-self-tapping-screw-for-plastic-4__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 4,
+    "name": "M3\u00d716 self-tapping screw for plastic",
+    "unit_cost_usd": 0.063,
+    "mass_g": 1.1
+   }
+  }
+ ],
+ "scene": "shelf",
+ "assembly_order": [
+  [
+   "Top cap + frame"
+  ],
+  [
+   "Privacy shutter",
+   "Shutter knob"
+  ],
+  [
+   "ESP32-CAM (AI-Thinker, OV2640)",
+   "ESP32-CAM-MB"
+  ],
+  [
+   "Front shell",
+   "Back shell"
+  ],
+  [
+   "Bottom cap"
+  ]
+ ],
+ "wiring": {
+  "file": "wiring.json",
+  "wires": 5,
+  "parts": [
+   "220 ohm resistor",
+   "5V 2A USB wall adapter",
+   "ESP32-CAM-MB",
+   "Micro-USB cable (1.8 m)",
+   "Status LED"
+  ],
+  "ok": true
+ },
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 2
+ }
+}

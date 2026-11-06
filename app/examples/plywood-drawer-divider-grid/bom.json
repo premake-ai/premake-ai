@@ -1,0 +1,88 @@
+{
+ "parts": [],
+ "assembly_minutes": 2,
+ "kit_ok": true,
+ "printed": [],
+ "fabricated": [
+  {
+   "file": "stl/long1.stl",
+   "name": "Long divider 1",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1223.4,
+    "area_cm2": 293.4,
+    "minutes": 3.5,
+    "material_usd": 2.11
+   },
+   "bbox": [
+    6.0,
+    496.0,
+    60.0
+   ]
+  },
+  {
+   "file": "stl/long2.stl",
+   "name": "Long divider 2",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1223.4,
+    "area_cm2": 293.4,
+    "minutes": 3.5,
+    "material_usd": 2.11
+   },
+   "bbox": [
+    6.0,
+    496.0,
+    60.0
+   ]
+  },
+  {
+   "file": "stl/cross1.stl",
+   "name": "Cross divider 1",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1023.4,
+    "area_cm2": 233.4,
+    "minutes": 3.1,
+    "material_usd": 1.68
+   },
+   "bbox": [
+    396.0,
+    6.0,
+    60.0
+   ]
+  },
+  {
+   "file": "stl/cross2.stl",
+   "name": "Cross divider 2",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1023.4,
+    "area_cm2": 233.4,
+    "minutes": 3.1,
+    "material_usd": 1.68
+   },
+   "bbox": [
+    396.0,
+    6.0,
+    60.0
+   ]
+  }
+ ]
+}

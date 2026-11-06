@@ -1,0 +1,13 @@
+{
+ "title": "Arc LED desk lamp",
+ "description": "Weighted-base desk lamp with a swept arc arm and a head that holds an aluminium LED channel with a USB 5 V strip and inline dimmer.",
+ "creator": "Premake",
+ "tags": [
+  "desk",
+  "lighting",
+  "electronics",
+  "USB"
+ ],
+ "created": "2026-10-24T19:00:00Z",
+ "demo": true
+}

@@ -1,0 +1,560 @@
+{
+ "t": 1793341153.290664,
+ "title": "Laptop Sun Hood",
+ "parts": [
+  {
+   "file": "stl/laptop-base-reference.stl",
+   "name": "Laptop base (reference)",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc2",
+   "explode": [
+    0.0,
+    -0.267,
+    -0.964
+   ],
+   "bbox": [
+    304.1,
+    215.0,
+    6.3
+   ]
+  },
+  {
+   "file": "stl/laptop-lid-reference.stl",
+   "name": "Laptop lid (reference)",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc2",
+   "explode": [
+    0.0,
+    0.966,
+    -0.259
+   ],
+   "bbox": [
+    304.1,
+    47.5,
+    201.6
+   ]
+  },
+  {
+   "file": "stl/screen-reference.stl",
+   "name": "Screen (reference)",
+   "group": "component",
+   "process": "bought",
+   "color": "#10141c",
+   "explode": [
+    0.0,
+    0.96,
+    -0.281
+   ],
+   "bbox": [
+    288.1,
+    39.0,
+    181.1
+   ]
+  },
+  {
+   "file": "stl/hood-top.stl",
+   "name": "Hood top",
+   "group": "case",
+   "process": "laser",
+   "color": "#262626",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    314.1,
+    251.1,
+    56.2
+   ]
+  },
+  {
+   "file": "stl/side-l.stl",
+   "name": "Hood side L",
+   "group": "case",
+   "process": "laser",
+   "color": "#262626",
+   "explode": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    3.0,
+    207.0,
+    187.7
+   ]
+  },
+  {
+   "file": "stl/friction-hinges-l-top-leaves.stl",
+   "name": "Friction hinges L (top leaves)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9c9c9",
+   "explode": [
+    -0.815,
+    0.0,
+    0.579
+   ],
+   "bbox": [
+    21.0,
+    192.2,
+    47.4
+   ]
+  },
+  {
+   "file": "stl/hleaf-l.stl",
+   "name": "Friction hinges L (side leaves)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9c9c9",
+   "explode": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    1.5,
+    194.4,
+    57.7
+   ]
+  },
+  {
+   "file": "stl/m4-10-button-head-screw-4.stl",
+   "name": "M4\u00d710 button head screw \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.8,
+    0.008,
+    0.6
+   ],
+   "bbox": [
+    7.6,
+    182.8,
+    49.9
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-10-button-head-screw-4__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M4\u00d710 button head screw",
+    "unit_cost_usd": 0.132,
+    "mass_g": 1.6
+   }
+  },
+  {
+   "file": "stl/m4-hex-nut-4.stl",
+   "name": "M4 hex nut \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.806,
+    0.001,
+    0.591
+   ],
+   "bbox": [
+    8.1,
+    182.3,
+    41.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-hex-nut-4__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 4,
+    "name": "M4 hex nut",
+    "unit_cost_usd": 0.07,
+    "mass_g": 0.6
+   }
+  },
+  {
+   "file": "stl/sscrew-l.stl",
+   "name": "M4\u00d710 button head screw \u00d74 (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.859,
+    -0.013,
+    0.512
+   ],
+   "bbox": [
+    12.2,
+    182.7,
+    44.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/sscrew-l__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M4\u00d710 button head screw",
+    "unit_cost_usd": 0.132,
+    "mass_g": 1.6
+   }
+  },
+  {
+   "file": "stl/snut-l.stl",
+   "name": "M4 hex nut \u00d74 (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.856,
+    -0.013,
+    0.517
+   ],
+   "bbox": [
+    3.2,
+    182.8,
+    45.1
+   ],
+   "subparts": [
+    {
+     "file": "stl/snut-l__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 4,
+    "name": "M4 hex nut",
+    "unit_cost_usd": 0.07,
+    "mass_g": 0.6
+   }
+  },
+  {
+   "file": "stl/side-r.stl",
+   "name": "Hood side R",
+   "group": "case",
+   "process": "laser",
+   "color": "#262626",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    3.0,
+    207.0,
+    187.7
+   ]
+  },
+  {
+   "file": "stl/friction-hinges-r-top-leaves.stl",
+   "name": "Friction hinges R (top leaves)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9c9c9",
+   "explode": [
+    0.815,
+    0.0,
+    0.579
+   ],
+   "bbox": [
+    21.0,
+    192.2,
+    47.4
+   ]
+  },
+  {
+   "file": "stl/hleaf-r.stl",
+   "name": "Friction hinges R (side leaves)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9c9c9",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    1.5,
+    194.4,
+    57.7
+   ]
+  },
+  {
+   "file": "stl/m4-10-button-head-screw-4-3.stl",
+   "name": "M4\u00d710 button head screw \u00d74 (3)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.8,
+    0.008,
+    0.6
+   ],
+   "bbox": [
+    7.6,
+    182.8,
+    49.9
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-10-button-head-screw-4-3__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M4\u00d710 button head screw",
+    "unit_cost_usd": 0.132,
+    "mass_g": 1.6
+   }
+  },
+  {
+   "file": "stl/m4-hex-nut-4-3.stl",
+   "name": "M4 hex nut \u00d74 (3)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.806,
+    0.001,
+    0.591
+   ],
+   "bbox": [
+    8.1,
+    182.3,
+    41.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-hex-nut-4-3__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 4,
+    "name": "M4 hex nut",
+    "unit_cost_usd": 0.07,
+    "mass_g": 0.6
+   }
+  },
+  {
+   "file": "stl/sscrew-r.stl",
+   "name": "M4\u00d710 button head screw \u00d74 (4)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.859,
+    -0.013,
+    0.512
+   ],
+   "bbox": [
+    12.2,
+    182.7,
+    44.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/sscrew-r__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M4\u00d710 button head screw",
+    "unit_cost_usd": 0.132,
+    "mass_g": 1.6
+   }
+  },
+  {
+   "file": "stl/snut-r.stl",
+   "name": "M4 hex nut \u00d74 (4)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.856,
+    -0.013,
+    0.517
+   ],
+   "bbox": [
+    3.2,
+    182.8,
+    45.1
+   ],
+   "subparts": [
+    {
+     "file": "stl/snut-r__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 4,
+    "name": "M4 hex nut",
+    "unit_cost_usd": 0.07,
+    "mass_g": 0.6
+   }
+  },
+  {
+   "file": "stl/lid-clamp-1.stl",
+   "name": "Lid clamp 1",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3f47",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    24.0,
+    28.9,
+    29.1
+   ]
+  },
+  {
+   "file": "stl/m4x25-thumb-screw-1.stl",
+   "name": "M4x25 thumb screw 1",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9c9c9",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    14.0,
+    32.2,
+    15.3
+   ]
+  },
+  {
+   "file": "stl/lid-clamp-2.stl",
+   "name": "Lid clamp 2",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3f47",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    24.0,
+    28.9,
+    29.1
+   ]
+  },
+  {
+   "file": "stl/m4x25-thumb-screw-2.stl",
+   "name": "M4x25 thumb screw 2",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9c9c9",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    14.0,
+    32.2,
+    15.3
+   ]
+  },
+  {
+   "file": "stl/m3-10-button-head-screw-4.stl",
+   "name": "M3\u00d710 button head screw \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    0.849,
+    0.528
+   ],
+   "bbox": [
+    209.7,
+    6.3,
+    11.9
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-button-head-screw-4__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M3\u00d710 button head screw",
+    "unit_cost_usd": 0.099,
+    "mass_g": 0.8
+   }
+  },
+  {
+   "file": "stl/m3-hex-nut-4.stl",
+   "name": "M3 hex nut \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.0,
+    0.858,
+    0.514
+   ],
+   "bbox": [
+    210.4,
+    5.6,
+    3.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-hex-nut-4__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 4,
+    "name": "M3 hex nut",
+    "unit_cost_usd": 0.06,
+    "mass_g": 0.3
+   }
+  }
+ ],
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 8
+ }
+}

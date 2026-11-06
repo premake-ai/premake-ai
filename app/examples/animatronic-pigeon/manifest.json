@@ -1,0 +1,747 @@
+{
+ "t": 1793327766.575225,
+ "title": "Animatronic Pigeon",
+ "parts": [
+  {
+   "file": "stl/base.stl",
+   "name": "Base",
+   "group": "case",
+   "process": "print",
+   "color": "#55585e",
+   "explode": [
+    -0.0,
+    -0.092,
+    -0.996
+   ],
+   "bbox": [
+    124.5,
+    192.5,
+    16.4
+   ]
+  },
+  {
+   "file": "stl/base-bottom.stl",
+   "name": "Base Bottom",
+   "group": "case",
+   "process": "laser",
+   "color": "#c9a878",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    119.0,
+    187.1,
+    3.3
+   ]
+  },
+  {
+   "file": "stl/legs-and-feet.stl",
+   "name": "Legs and Feet",
+   "group": "case",
+   "process": "print",
+   "color": "#c9686e",
+   "explode": [
+    0.0,
+    -0.224,
+    -0.975
+   ],
+   "bbox": [
+    51.5,
+    30.0,
+    90.0
+   ]
+  },
+  {
+   "file": "stl/body-lower.stl",
+   "name": "Body Lower",
+   "group": "case",
+   "process": "print",
+   "color": "#9aa2b0",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    93.7,
+    188.6,
+    53.8
+   ]
+  },
+  {
+   "file": "stl/chassis.stl",
+   "name": "Chassis",
+   "group": "case",
+   "process": "print",
+   "color": "#e0e0e0",
+   "explode": [
+    0.001,
+    -0.996,
+    -0.088
+   ],
+   "bbox": [
+    72.2,
+    148.2,
+    12.1
+   ]
+  },
+  {
+   "file": "stl/body-upper.stl",
+   "name": "Body Upper",
+   "group": "case",
+   "process": "print",
+   "color": "#8f97a6",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    92.1,
+    191.3,
+    59.9
+   ]
+  },
+  {
+   "file": "stl/neck.stl",
+   "name": "Neck",
+   "group": "case",
+   "process": "print",
+   "color": "#4f7d6c",
+   "explode": [
+    0.0,
+    -0.3,
+    1.0
+   ],
+   "bbox": [
+    54.5,
+    54.5,
+    48.6
+   ]
+  },
+  {
+   "file": "stl/head.stl",
+   "name": "Head",
+   "group": "case",
+   "process": "print",
+   "color": "#6d7584",
+   "explode": [
+    0.0,
+    -0.5,
+    1.0
+   ],
+   "bbox": [
+    46.8,
+    56.8,
+    48.5
+   ]
+  },
+  {
+   "file": "stl/beak.stl",
+   "name": "Beak",
+   "group": "case",
+   "process": "print",
+   "color": "#2c2c30",
+   "explode": [
+    0.0,
+    -0.83,
+    0.558
+   ],
+   "bbox": [
+    10.2,
+    20.2,
+    8.4
+   ]
+  },
+  {
+   "file": "stl/cere.stl",
+   "name": "Cere",
+   "group": "case",
+   "process": "print",
+   "color": "#eeeeea",
+   "explode": [
+    0.0,
+    -0.795,
+    0.607
+   ],
+   "bbox": [
+    10.1,
+    11.1,
+    7.5
+   ]
+  },
+  {
+   "file": "stl/eyes.stl",
+   "name": "Safety Eyes 8mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#e4682a",
+   "explode": [
+    0.0,
+    -0.741,
+    0.671
+   ],
+   "bbox": [
+    39.0,
+    8.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/wl.stl",
+   "name": "Left Wing",
+   "group": "case",
+   "process": "print",
+   "color": "#a6aebb",
+   "explode": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    43.6,
+    148.5,
+    67.6
+   ]
+  },
+  {
+   "file": "stl/pl.stl",
+   "name": "Left Primaries",
+   "group": "case",
+   "process": "print",
+   "color": "#3b3e46",
+   "explode": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    18.0,
+    75.0,
+    33.0
+   ]
+  },
+  {
+   "file": "stl/bl.stl",
+   "name": "Left Wing Bars",
+   "group": "case",
+   "process": "print",
+   "color": "#222326",
+   "explode": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    2.1,
+    18.2,
+    30.2
+   ]
+  },
+  {
+   "file": "stl/wr.stl",
+   "name": "Right Wing",
+   "group": "case",
+   "process": "print",
+   "color": "#a6aebb",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    43.5,
+    148.5,
+    67.6
+   ]
+  },
+  {
+   "file": "stl/pr.stl",
+   "name": "Right Primaries",
+   "group": "case",
+   "process": "print",
+   "color": "#3b3e46",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    18.0,
+    75.0,
+    33.0
+   ]
+  },
+  {
+   "file": "stl/br.stl",
+   "name": "Right Wing Bars",
+   "group": "case",
+   "process": "print",
+   "color": "#222326",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    2.1,
+    18.2,
+    30.2
+   ]
+  },
+  {
+   "file": "stl/tail.stl",
+   "name": "Tail",
+   "group": "case",
+   "process": "print",
+   "color": "#7b8392",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    56.6,
+    58.0,
+    19.3
+   ]
+  },
+  {
+   "file": "stl/tail-band.stl",
+   "name": "Tail Band",
+   "group": "case",
+   "process": "print",
+   "color": "#26272b",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    59.1,
+    13.1,
+    8.1
+   ]
+  },
+  {
+   "file": "stl/sg90-micro-servo.stl",
+   "name": "SG90 micro servo",
+   "group": "component",
+   "process": "bought",
+   "color": "#2c5fbf",
+   "explode": [
+    -0.147,
+    -0.96,
+    0.24
+   ],
+   "bbox": [
+    45.5,
+    12.2,
+    29.9
+   ],
+   "subparts": [
+    {
+     "file": "stl/sg90-micro-servo__0.stl",
+     "color": "#2c5fbf",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/sg90-micro-servo__1.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/sg90-micro-servo__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/sg90-micro-servo__3.stl",
+     "color": "#f3f1ea",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/sg90-micro-servo__4.stl",
+     "color": "#6b3a1f",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/sg90-micro-servo__5.stl",
+     "color": "#d23b2e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/sg90-micro-servo__6.stl",
+     "color": "#f08a1c",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "sg90",
+    "qty": 1,
+    "name": "SG90 micro servo",
+    "unit_cost_usd": 2.5,
+    "mass_g": 9.0
+   }
+  },
+  {
+   "file": "stl/tilt.stl",
+   "name": "SG90 micro servo (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2c5fbf",
+   "explode": [
+    0.008,
+    -0.734,
+    0.679
+   ],
+   "bbox": [
+    29.9,
+    12.2,
+    45.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/tilt__0.stl",
+     "color": "#2c5fbf",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tilt__1.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tilt__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/tilt__3.stl",
+     "color": "#f3f1ea",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/tilt__4.stl",
+     "color": "#6b3a1f",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tilt__5.stl",
+     "color": "#d23b2e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tilt__6.stl",
+     "color": "#f08a1c",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "sg90",
+    "qty": 1,
+    "name": "SG90 micro servo",
+    "unit_cost_usd": 2.5,
+    "mass_g": 9.0
+   }
+  },
+  {
+   "file": "stl/sl.stl",
+   "name": "SG90 micro servo (3)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2c5fbf",
+   "explode": [
+    -0.902,
+    -0.401,
+    0.164
+   ],
+   "bbox": [
+    12.2,
+    29.9,
+    45.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/sl__0.stl",
+     "color": "#2c5fbf",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/sl__1.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/sl__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/sl__3.stl",
+     "color": "#f3f1ea",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/sl__4.stl",
+     "color": "#6b3a1f",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/sl__5.stl",
+     "color": "#d23b2e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/sl__6.stl",
+     "color": "#f08a1c",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "sg90",
+    "qty": 1,
+    "name": "SG90 micro servo",
+    "unit_cost_usd": 2.5,
+    "mass_g": 9.0
+   }
+  },
+  {
+   "file": "stl/sr.stl",
+   "name": "SG90 micro servo (4)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2c5fbf",
+   "explode": [
+    0.902,
+    -0.4,
+    0.164
+   ],
+   "bbox": [
+    12.2,
+    29.9,
+    45.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/sr__0.stl",
+     "color": "#2c5fbf",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/sr__1.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/sr__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/sr__3.stl",
+     "color": "#f3f1ea",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/sr__4.stl",
+     "color": "#6b3a1f",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/sr__5.stl",
+     "color": "#d23b2e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/sr__6.stl",
+     "color": "#f08a1c",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "sg90",
+    "qty": 1,
+    "name": "SG90 micro servo",
+    "unit_cost_usd": 2.5,
+    "mass_g": 9.0
+   }
+  },
+  {
+   "file": "stl/esp32-c3-supermini.stl",
+   "name": "ESP32-C3 SuperMini",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    -0.057,
+    0.992,
+    -0.117
+   ],
+   "bbox": [
+    23.5,
+    18.0,
+    4.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/esp32-c3-supermini__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__4.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__6.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    }
+   ],
+   "lib": {
+    "key": "esp32_c3_supermini",
+    "qty": 1,
+    "name": "ESP32-C3 SuperMini",
+    "unit_cost_usd": 4.0,
+    "mass_g": 2.0
+   }
+  },
+  {
+   "file": "stl/usb-c-power-breakout.stl",
+   "name": "USB-C power breakout",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    0.0,
+    0.598,
+    -0.802
+   ],
+   "bbox": [
+    12.0,
+    15.0,
+    4.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/usb-c-power-breakout__0.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/usb-c-power-breakout__1.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/usb-c-power-breakout__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/usb-c-power-breakout__3.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/usb-c-power-breakout__4.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/usb-c-power-breakout__5.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "usbc_breakout",
+    "qty": 1,
+    "name": "USB-C power breakout",
+    "unit_cost_usd": 0.9,
+    "mass_g": 2.0
+   }
+  },
+  {
+   "file": "stl/dfplayer-mini-microsd.stl",
+   "name": "DFPlayer Mini + microSD",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d4fa0",
+   "explode": [
+    0.0,
+    1.0,
+    0.022
+   ],
+   "bbox": [
+    21.0,
+    21.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/speaker-28mm-8ohm.stl",
+   "name": "Speaker 28mm 8ohm",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    0.0,
+    -0.974,
+    -0.226
+   ],
+   "bbox": [
+    28.0,
+    28.0,
+    5.0
+   ]
+  },
+  {
+   "file": "stl/am312-pir-sensor.stl",
+   "name": "AM312 PIR sensor",
+   "group": "component",
+   "process": "bought",
+   "color": "#f2f2f2",
+   "explode": [
+    0.0,
+    -0.675,
+    -0.738
+   ],
+   "bbox": [
+    10.0,
+    24.0,
+    10.0
+   ]
+  }
+ ],
+ "motion": {
+  "file": "motion.json",
+  "duration": 8.0,
+  "frames": 90,
+  "parts": 12
+ }
+}

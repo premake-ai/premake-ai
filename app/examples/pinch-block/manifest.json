@@ -1,0 +1,74 @@
+{
+ "t": 1793242564.800124,
+ "title": "Pinch block",
+ "parts": [
+  {
+   "file": "stl/pinch-block-body.stl",
+   "name": "Pinch block body",
+   "group": "case",
+   "process": "print",
+   "color": "#e4572e",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    42.0,
+    34.0,
+    78.0
+   ]
+  },
+  {
+   "file": "stl/width-shim-left.stl",
+   "name": "Width shim left",
+   "group": "case",
+   "process": "print",
+   "color": "#2d3047",
+   "explode": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    7.3,
+    34.1,
+    72.1
+   ]
+  },
+  {
+   "file": "stl/width-shim-right.stl",
+   "name": "Width shim right",
+   "group": "case",
+   "process": "print",
+   "color": "#2d3047",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    7.3,
+    34.1,
+    72.1
+   ]
+  },
+  {
+   "file": "stl/m8-x-100-eye-bolt-nyloc.stl",
+   "name": "M8 x 100 eye bolt + nyloc",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa0a6",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    26.0,
+    18.0,
+    109.0
+   ]
+  }
+ ]
+}

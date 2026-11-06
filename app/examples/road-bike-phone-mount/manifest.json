@@ -1,0 +1,204 @@
+{
+ "t": 1793336190.132307,
+ "title": "Road Bike Phone Mount",
+ "parts": [
+  {
+   "file": "stl/cradle.stl",
+   "name": "Cradle",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    0.126,
+    -0.942,
+    0.312
+   ],
+   "bbox": [
+    100.0,
+    113.5,
+    37.7
+   ]
+  },
+  {
+   "file": "stl/clamp-lower.stl",
+   "name": "Clamp lower",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    18.1,
+    59.8,
+    20.7
+   ]
+  },
+  {
+   "file": "stl/m4-16-socket-head-screw-2.stl",
+   "name": "M4\u00d716 socket head screw \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.98,
+    -0.071,
+    -0.188
+   ],
+   "bbox": [
+    7.0,
+    54.8,
+    20.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-16-socket-head-screw-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 2,
+    "name": "M4\u00d716 socket head screw",
+    "unit_cost_usd": 0.139,
+    "mass_g": 2.6
+   }
+  },
+  {
+   "file": "stl/m4-hex-nut-2.stl",
+   "name": "M4 hex nut \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.995,
+    -0.072,
+    -0.065
+   ],
+   "bbox": [
+    8.1,
+    54.8,
+    3.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-hex-nut-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 2,
+    "name": "M4 hex nut",
+    "unit_cost_usd": 0.07,
+    "mass_g": 0.6
+   }
+  },
+  {
+   "file": "stl/rubber-band-front.stl",
+   "name": "Rubber band front",
+   "group": "component",
+   "process": "bought",
+   "color": "#e4572e",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    82.5,
+    3.5,
+    18.8
+   ]
+  },
+  {
+   "file": "stl/rubber-band-rear.stl",
+   "name": "Rubber band rear",
+   "group": "component",
+   "process": "bought",
+   "color": "#e4572e",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    82.5,
+    3.5,
+    18.8
+   ]
+  },
+  {
+   "file": "stl/bar-liner.stl",
+   "name": "Bar liner",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    0.975,
+    -0.07,
+    -0.209
+   ],
+   "bbox": [
+    18.0,
+    33.8,
+    33.8
+   ]
+  },
+  {
+   "file": "stl/handlebar-ref.stl",
+   "name": "Handlebar (ref)",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa0a6",
+   "explode": [
+    0.0,
+    -0.319,
+    -0.948
+   ],
+   "bbox": [
+    240.0,
+    31.8,
+    31.8
+   ]
+  },
+  {
+   "file": "stl/stem-ref.stl",
+   "name": "Stem (ref)",
+   "group": "component",
+   "process": "bought",
+   "color": "#55595f",
+   "explode": [
+    0.0,
+    0.954,
+    -0.299
+   ],
+   "bbox": [
+    42.0,
+    112.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/phone-ref.stl",
+   "name": "Phone (ref)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1a1a",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    71.6,
+    147.6,
+    7.8
+   ]
+  }
+ ]
+}

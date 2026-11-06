@@ -1,0 +1,14 @@
+{
+  "name": "Home Camera",
+  "short_name": "Camera",
+  "theme": "#3a5ba0",
+  "icon": "icon.svg",
+  "fields": {
+    "online": { "label": "Stream", "unit": "" },
+    "uptime_min": { "label": "Uptime", "unit": "min" },
+    "rssi": { "label": "Wi-Fi signal", "unit": "dBm" }
+  },
+  "controls": {
+    "flash": { "type": "toggle", "label": "Flash LED" }
+  }
+}

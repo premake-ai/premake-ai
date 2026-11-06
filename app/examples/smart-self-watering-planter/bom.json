@@ -1,0 +1,85 @@
+{
+ "parts": [
+  {
+   "name": "18650 holder, 1 cell",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=18650+battery+holder+1+slot&rh=p_85%3A2470955011",
+   "notes": "search: 18650 battery holder 1 slot",
+   "auto": "lib"
+  },
+  {
+   "name": "18650 Li-ion cell",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=18650+battery+protected+3000mAh&rh=p_85%3A2470955011",
+   "notes": "search: 18650 battery protected 3000mAh",
+   "auto": "lib"
+  },
+  {
+   "name": "12\u00d712 mm tactile button",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.2,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=12x12mm+tactile+push+button&rh=p_85%3A2470955011",
+   "notes": "search: 12x12mm tactile push button",
+   "auto": "lib"
+  },
+  {
+   "name": "5 mm LED (red)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=5mm+LED+assortment&rh=p_85%3A2470955011",
+   "notes": "search: 5mm LED assortment",
+   "auto": "lib"
+  },
+  {
+   "name": "ESP32-C3 SuperMini",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=ESP32-C3+SuperMini&rh=p_85%3A2470955011",
+   "notes": "search: ESP32-C3 SuperMini",
+   "auto": "lib"
+  },
+  {
+   "name": "M3 heat-set insert",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.12,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+heat+set+insert+brass&rh=p_85%3A2470955011",
+   "notes": "search: M3 heat set insert brass",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 0,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/planter-body.stl",
+   "name": "Planter body",
+   "grams": 122.5,
+   "print_hours": 6.12,
+   "bbox": [
+    126.6,
+    156.3,
+    140.4
+   ]
+  },
+  {
+   "file": "stl/back-cover.stl",
+   "name": "Back cover",
+   "grams": 8.2,
+   "print_hours": 0.41,
+   "bbox": [
+    60.0,
+    2.4,
+    82.0
+   ]
+  }
+ ],
+ "fabricated": []
+}

@@ -1,0 +1,66 @@
+{
+ "parts": [
+  {
+   "name": "M8 x 100 mm long-shank eye bolt, zinc",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 3.2,
+   "supplier": "Home Depot / Amazon",
+   "url": "",
+   "notes": "Search 'M8 eye bolt 100mm'. Load hangs from the eye; the nut bears on the top cap."
+  },
+  {
+   "name": "M8 nyloc nut",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.15,
+   "supplier": "McMaster-Carr / hardware store",
+   "url": "",
+   "notes": "Sits in the hex pocket on top"
+  },
+  {
+   "name": "M8 fender washer 24 mm",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.12,
+   "supplier": "Hardware store",
+   "url": "",
+   "notes": "Under the eye collar, spreads load on the bottom cap"
+  }
+ ],
+ "assembly_minutes": 3,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/pinch-block-body.stl",
+   "name": "Pinch block body",
+   "grams": 38.3,
+   "print_hours": 1.92,
+   "bbox": [
+    42.0,
+    34.0,
+    78.0
+   ]
+  },
+  {
+   "file": "stl/width-shim-left.stl",
+   "name": "Width shim left",
+   "grams": 8.4,
+   "print_hours": 0.42,
+   "bbox": [
+    7.3,
+    34.1,
+    72.1
+   ]
+  },
+  {
+   "file": "stl/width-shim-right.stl",
+   "name": "Width shim right",
+   "grams": 8.4,
+   "print_hours": 0.42,
+   "bbox": [
+    7.3,
+    34.1,
+    72.1
+   ]
+  }
+ ],
+ "fabricated": []
+}

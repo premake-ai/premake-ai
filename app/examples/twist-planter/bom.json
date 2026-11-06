@@ -1,0 +1,38 @@
+{
+ "parts": [
+  {
+   "name": "Fiberglass drainage mesh square",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.2,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Cut from a sheet"
+  }
+ ],
+ "assembly_minutes": 1,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/planter-pot.stl",
+   "name": "Planter pot",
+   "grams": 80.7,
+   "print_hours": 4.03,
+   "bbox": [
+    133.0,
+    139.4,
+    125.4
+   ]
+  },
+  {
+   "file": "stl/drip-saucer.stl",
+   "name": "Drip saucer",
+   "grams": 34.2,
+   "print_hours": 1.71,
+   "bbox": [
+    152.0,
+    152.0,
+    16.5
+   ]
+  }
+ ]
+}

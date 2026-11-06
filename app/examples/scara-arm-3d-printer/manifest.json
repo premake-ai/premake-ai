@@ -1,0 +1,1205 @@
+{
+ "t": 1793910958.82171,
+ "title": "SCARA Arm 3D Printer",
+ "parts": [
+  {
+   "file": "stl/2020-x-400.stl",
+   "name": "2020 x 400",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    0.0,
+    -0.7,
+    -0.714
+   ],
+   "bbox": [
+    400.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium",
+   "step": "step/2020-x-400.step"
+  },
+  {
+   "file": "stl/2020-x-400-2.stl",
+   "name": "2020 x 400",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    0.0,
+    0.217,
+    -0.976
+   ],
+   "bbox": [
+    400.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium",
+   "step": "step/2020-x-400-2.step"
+  },
+  {
+   "file": "stl/2020-x-300.stl",
+   "name": "2020 x 300",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    -0.555,
+    -0.295,
+    -0.777
+   ],
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ],
+   "material": "aluminium",
+   "step": "step/2020-x-300.step"
+  },
+  {
+   "file": "stl/2020-x-300-2.stl",
+   "name": "2020 x 300",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    0.555,
+    -0.295,
+    -0.777
+   ],
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ],
+   "material": "aluminium",
+   "step": "step/2020-x-300-2.step"
+  },
+  {
+   "file": "stl/z-column-2020-x-450.stl",
+   "name": "Z column 2020 x 450",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    -0.747,
+    0.588,
+    -0.309
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    450.0
+   ],
+   "material": "aluminium",
+   "step": "step/z-column-2020-x-450.step"
+  },
+  {
+   "file": "stl/z-column-2020-x-450-2.stl",
+   "name": "Z column 2020 x 450",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    0.747,
+    0.588,
+    -0.309
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    450.0
+   ],
+   "material": "aluminium",
+   "step": "step/z-column-2020-x-450-2.step"
+  },
+  {
+   "file": "stl/top-bar-2020-x-200.stl",
+   "name": "Top bar 2020 x 200",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    0.0,
+    0.278,
+    0.961
+   ],
+   "bbox": [
+    200.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium",
+   "step": "step/top-bar-2020-x-200.step"
+  },
+  {
+   "file": "stl/2020-l-joining-plate.stl",
+   "name": "2020 L joining plate",
+   "group": "component",
+   "process": "bought",
+   "color": "#8e949b",
+   "explode": [
+    -0.32,
+    0.347,
+    0.881
+   ],
+   "bbox": [
+    60.0,
+    3.0,
+    70.0
+   ]
+  },
+  {
+   "file": "stl/rear-outrigger-2020-x-200.stl",
+   "name": "Rear outrigger 2020 x 200",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    -0.232,
+    0.522,
+    -0.821
+   ],
+   "bbox": [
+    20.0,
+    200.0,
+    20.0
+   ],
+   "material": "aluminium",
+   "step": "step/rear-outrigger-2020-x-200.step"
+  },
+  {
+   "file": "stl/2020-diagonal-support-bracket.stl",
+   "name": "2020 diagonal support bracket",
+   "group": "component",
+   "process": "bought",
+   "color": "#8e949b",
+   "explode": [
+    -0.31,
+    0.658,
+    -0.687
+   ],
+   "bbox": [
+    18.0,
+    180.0,
+    180.0
+   ]
+  },
+  {
+   "file": "stl/outrigger-foot.stl",
+   "name": "Outrigger foot",
+   "group": "case",
+   "process": "print",
+   "color": "#222222",
+   "explode": [
+    -0.194,
+    0.667,
+    -0.719
+   ],
+   "bbox": [
+    24.0,
+    27.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/mgn12-rail-400-mm.stl",
+   "name": "MGN12 rail 400 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#6d737a",
+   "explode": [
+    -0.759,
+    0.455,
+    -0.465
+   ],
+   "bbox": [
+    12.0,
+    8.0,
+    400.0
+   ]
+  },
+  {
+   "file": "stl/mgn12h-block.stl",
+   "name": "MGN12H block",
+   "group": "component",
+   "process": "bought",
+   "color": "#3b4046",
+   "explode": [
+    -0.427,
+    0.231,
+    -0.874
+   ],
+   "bbox": [
+    27.0,
+    9.0,
+    45.0
+   ]
+  },
+  {
+   "file": "stl/2020-l-joining-plate-2.stl",
+   "name": "2020 L joining plate",
+   "group": "component",
+   "process": "bought",
+   "color": "#8e949b",
+   "explode": [
+    0.32,
+    0.347,
+    0.881
+   ],
+   "bbox": [
+    60.0,
+    3.0,
+    70.0
+   ]
+  },
+  {
+   "file": "stl/rear-outrigger-2020-x-200-2.stl",
+   "name": "Rear outrigger 2020 x 200",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    0.232,
+    0.522,
+    -0.821
+   ],
+   "bbox": [
+    20.0,
+    200.0,
+    20.0
+   ],
+   "material": "aluminium",
+   "step": "step/rear-outrigger-2020-x-200-2.step"
+  },
+  {
+   "file": "stl/2020-diagonal-support-bracket-2.stl",
+   "name": "2020 diagonal support bracket",
+   "group": "component",
+   "process": "bought",
+   "color": "#8e949b",
+   "explode": [
+    0.31,
+    0.658,
+    -0.687
+   ],
+   "bbox": [
+    18.0,
+    180.0,
+    180.0
+   ]
+  },
+  {
+   "file": "stl/outrigger-foot-2.stl",
+   "name": "Outrigger foot",
+   "group": "case",
+   "process": "print",
+   "color": "#222222",
+   "explode": [
+    0.194,
+    0.667,
+    -0.719
+   ],
+   "bbox": [
+    24.0,
+    27.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/mgn12-rail-400-mm-2.stl",
+   "name": "MGN12 rail 400 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#6d737a",
+   "explode": [
+    0.759,
+    0.455,
+    -0.465
+   ],
+   "bbox": [
+    12.0,
+    8.0,
+    400.0
+   ]
+  },
+  {
+   "file": "stl/mgn12h-block-2.stl",
+   "name": "MGN12H block",
+   "group": "component",
+   "process": "bought",
+   "color": "#3b4046",
+   "explode": [
+    0.427,
+    0.231,
+    -0.874
+   ],
+   "bbox": [
+    27.0,
+    9.0,
+    45.0
+   ]
+  },
+  {
+   "file": "stl/2020-corner-bracket.stl",
+   "name": "2020 corner bracket",
+   "group": "component",
+   "process": "bought",
+   "color": "#8e949b",
+   "explode": [
+    0.0,
+    -0.892,
+    -0.452
+   ],
+   "bbox": [
+    360.0,
+    340.0,
+    470.0
+   ]
+  },
+  {
+   "file": "stl/2020-flat-l-plate.stl",
+   "name": "2020 flat L plate",
+   "group": "component",
+   "process": "bought",
+   "color": "#8e949b",
+   "explode": [
+    -0.413,
+    -0.59,
+    -0.694
+   ],
+   "bbox": [
+    70.0,
+    70.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/2020-flat-l-plate-2.stl",
+   "name": "2020 flat L plate",
+   "group": "component",
+   "process": "bought",
+   "color": "#8e949b",
+   "explode": [
+    -0.508,
+    0.105,
+    -0.855
+   ],
+   "bbox": [
+    70.0,
+    70.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/2020-flat-l-plate-3.stl",
+   "name": "2020 flat L plate",
+   "group": "component",
+   "process": "bought",
+   "color": "#8e949b",
+   "explode": [
+    0.413,
+    -0.59,
+    -0.694
+   ],
+   "bbox": [
+    70.0,
+    70.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/2020-flat-l-plate-4.stl",
+   "name": "2020 flat L plate",
+   "group": "component",
+   "process": "bought",
+   "color": "#8e949b",
+   "explode": [
+    0.508,
+    0.105,
+    -0.855
+   ],
+   "bbox": [
+    70.0,
+    70.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/base-plate.stl",
+   "name": "Base plate",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8b98a",
+   "explode": [
+    0.0,
+    -0.371,
+    -0.929
+   ],
+   "bbox": [
+    400.0,
+    340.0,
+    6.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/bed-plate.stl",
+   "name": "Bed plate",
+   "group": "case",
+   "process": "sheet",
+   "color": "#9aa0a6",
+   "explode": [
+    0.0,
+    -0.481,
+    -0.877
+   ],
+   "bbox": [
+    200.0,
+    200.0,
+    3.0
+   ],
+   "material": "aluminium",
+   "step": "step/bed-plate.step"
+  },
+  {
+   "file": "stl/pei-spring-steel-sheet.stl",
+   "name": "PEI spring steel sheet",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9a227",
+   "explode": [
+    0.0,
+    -0.485,
+    -0.875
+   ],
+   "bbox": [
+    200.0,
+    200.0,
+    1.0
+   ]
+  },
+  {
+   "file": "stl/m3-10-brass-standoff-4.stl",
+   "name": "M3\u00d710 brass standoff \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    0.0,
+    -0.471,
+    -0.882
+   ],
+   "bbox": [
+    185.8,
+    185.0,
+    10.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-brass-standoff-4__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "standoff",
+    "qty": 4,
+    "name": "M3\u00d710 brass standoff",
+    "unit_cost_usd": 0.18,
+    "mass_g": 1.4
+   }
+  },
+  {
+   "file": "stl/z-motor-plate.stl",
+   "name": "Z motor plate",
+   "group": "case",
+   "process": "sheet",
+   "color": "#9aa0a6",
+   "explode": [
+    0.0,
+    0.183,
+    0.983
+   ],
+   "bbox": [
+    60.0,
+    58.0,
+    3.0
+   ],
+   "material": "aluminium",
+   "step": "step/z-motor-plate.step"
+  },
+  {
+   "file": "stl/nema17-stepper-motor-40-mm.stl",
+   "name": "NEMA17 stepper motor 40 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    0.0,
+    0.174,
+    0.985
+   ],
+   "bbox": [
+    42.3,
+    47.7,
+    64.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 40 mm",
+    "unit_cost_usd": 11.0,
+    "mass_g": 280.0
+   }
+  },
+  {
+   "file": "stl/flexible-coupler-5-8-mm.stl",
+   "name": "Flexible coupler 5-8 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#a0a6ad",
+   "explode": [
+    0.0,
+    0.185,
+    0.983
+   ],
+   "bbox": [
+    19.0,
+    19.0,
+    25.0
+   ]
+  },
+  {
+   "file": "stl/t8-lead-screw-400-mm.stl",
+   "name": "T8 lead screw 400 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#d0d0d0",
+   "explode": [
+    0.0,
+    0.959,
+    -0.285
+   ],
+   "bbox": [
+    8.0,
+    8.0,
+    400.0
+   ]
+  },
+  {
+   "file": "stl/carriage.stl",
+   "name": "Carriage",
+   "group": "case",
+   "process": "sheet",
+   "color": "#9aa0a6",
+   "explode": [
+    0.0,
+    0.125,
+    -0.992
+   ],
+   "bbox": [
+    180.0,
+    90.0,
+    50.0
+   ],
+   "material": "aluminium",
+   "step": "step/carriage.step"
+  },
+  {
+   "file": "stl/t8-brass-nut.stl",
+   "name": "T8 brass nut",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a14a",
+   "explode": [
+    0.0,
+    0.281,
+    -0.96
+   ],
+   "bbox": [
+    22.0,
+    22.0,
+    25.0
+   ]
+  },
+  {
+   "file": "stl/nema17-stepper-motor-48-mm-2.stl",
+   "name": "NEMA17 stepper motor 48 mm \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    0.0,
+    0.249,
+    -0.969
+   ],
+   "bbox": [
+    122.3,
+    47.7,
+    72.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/nema17-stepper-motor-48-mm-2__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-48-mm-2__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-48-mm-2__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-48-mm-2__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-48-mm-2__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-48-mm-2__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 2,
+    "name": "NEMA17 stepper motor 48 mm",
+    "unit_cost_usd": 13.0,
+    "mass_g": 360.0
+   }
+  },
+  {
+   "file": "stl/gt2-pulley-20t-5-mm-bore-2.stl",
+   "name": "GT2 pulley 20T 5 mm bore \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#c7ccd2",
+   "explode": [
+    0.0,
+    0.329,
+    -0.944
+   ],
+   "bbox": [
+    96.1,
+    16.1,
+    28.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/gt2-pulley-20t-5-mm-bore-2__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/gt2-pulley-20t-5-mm-bore-2__1.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "gt2_pulley_20t",
+    "qty": 2,
+    "name": "GT2 pulley 20T 5 mm bore",
+    "unit_cost_usd": 1.5,
+    "mass_g": 6.2
+   }
+  },
+  {
+   "file": "stl/608zz-bearing-2.stl",
+   "name": "608ZZ bearing \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9cdd2",
+   "explode": [
+    0.533,
+    -0.201,
+    -0.822
+   ],
+   "bbox": [
+    165.9,
+    64.4,
+    44.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/608zz-bearing-2__0.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/608zz-bearing-2__1.stl",
+     "color": "#a9aeb5",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/608zz-bearing-2__2.stl",
+     "color": "#8e939a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bearing_608",
+    "qty": 2,
+    "name": "608ZZ bearing",
+    "unit_cost_usd": 0.6,
+    "mass_g": 17.4
+   }
+  },
+  {
+   "file": "stl/shoulder-shaft-8-mm.stl",
+   "name": "Shoulder shaft 8 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#d0d0d0",
+   "explode": [
+    0.0,
+    -0.057,
+    -0.998
+   ],
+   "bbox": [
+    8.0,
+    8.0,
+    62.0
+   ]
+  },
+  {
+   "file": "stl/shoulder-pulley.stl",
+   "name": "Shoulder pulley",
+   "group": "case",
+   "process": "print",
+   "color": "#333333",
+   "explode": [
+    0.0,
+    -0.051,
+    -0.999
+   ],
+   "bbox": [
+    40.0,
+    40.0,
+    12.0
+   ]
+  },
+  {
+   "file": "stl/elbow-drive-pulley.stl",
+   "name": "Elbow drive pulley",
+   "group": "case",
+   "process": "print",
+   "color": "#555555",
+   "explode": [
+    0.0,
+    -0.068,
+    -0.998
+   ],
+   "bbox": [
+    40.0,
+    40.0,
+    48.0
+   ]
+  },
+  {
+   "file": "stl/link-1.stl",
+   "name": "Link 1",
+   "group": "case",
+   "process": "print",
+   "color": "#e8702a",
+   "explode": [
+    0.62,
+    -0.234,
+    -0.749
+   ],
+   "bbox": [
+    187.9,
+    86.4,
+    26.1
+   ]
+  },
+  {
+   "file": "stl/elbow-pulley.stl",
+   "name": "Elbow pulley",
+   "group": "case",
+   "process": "print",
+   "color": "#555555",
+   "explode": [
+    0.863,
+    -0.29,
+    -0.414
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/link-2.stl",
+   "name": "Link 2",
+   "group": "case",
+   "process": "print",
+   "color": "#e8702a",
+   "explode": [
+    0.616,
+    -0.689,
+    -0.383
+   ],
+   "bbox": [
+    149.9,
+    133.7,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/gt2-belts-closed-loops.stl",
+   "name": "GT2 belts (closed loops)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1a1a",
+   "explode": [
+    0.497,
+    -0.06,
+    -0.866
+   ],
+   "bbox": [
+    203.4,
+    106.9,
+    55.0
+   ]
+  },
+  {
+   "file": "stl/hotend-mount.stl",
+   "name": "Hotend mount",
+   "group": "case",
+   "process": "print",
+   "color": "#e8702a",
+   "explode": [
+    0.169,
+    -0.821,
+    -0.545
+   ],
+   "bbox": [
+    32.0,
+    32.0,
+    66.0
+   ]
+  },
+  {
+   "file": "stl/v6-style-hotend-24-v.stl",
+   "name": "V6-style hotend 24 V",
+   "group": "component",
+   "process": "bought",
+   "color": "#c0c0c0",
+   "explode": [
+    0.143,
+    -0.686,
+    -0.714
+   ],
+   "bbox": [
+    23.0,
+    22.0,
+    44.0
+   ]
+  },
+  {
+   "file": "stl/5v-fan-30-30-10.stl",
+   "name": "5V fan 30\u00d730\u00d710",
+   "group": "component",
+   "process": "bought",
+   "color": "#1c1d20",
+   "explode": [
+    0.151,
+    -0.676,
+    -0.721
+   ],
+   "bbox": [
+    30.0,
+    10.0,
+    40.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/5v-fan-30-30-10__0.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/5v-fan-30-30-10__1.stl",
+     "color": "#ece6d4",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/5v-fan-30-30-10__2.stl",
+     "color": "#232428",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/5v-fan-30-30-10__3.stl",
+     "color": "#d23b2e",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "fan_30",
+    "qty": 1,
+    "name": "5V fan 30\u00d730\u00d710",
+    "unit_cost_usd": 3.0,
+    "mass_g": 8.0
+   }
+  },
+  {
+   "file": "stl/nema17-stepper-motor-40-mm-2.stl",
+   "name": "NEMA17 stepper motor 40 mm (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    -0.268,
+    0.215,
+    0.939
+   ],
+   "bbox": [
+    42.3,
+    47.7,
+    64.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/nema17-stepper-motor-40-mm-2__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm-2__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm-2__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm-2__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm-2__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm-2__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 40 mm",
+    "unit_cost_usd": 11.0,
+    "mass_g": 280.0
+   }
+  },
+  {
+   "file": "stl/bowden-extruder-kit.stl",
+   "name": "Bowden extruder kit",
+   "group": "component",
+   "process": "bought",
+   "color": "#c0392b",
+   "explode": [
+    -0.248,
+    0.209,
+    0.946
+   ],
+   "bbox": [
+    44.0,
+    42.0,
+    25.0
+   ]
+  },
+  {
+   "file": "stl/spool-holder.stl",
+   "name": "Spool holder",
+   "group": "case",
+   "process": "print",
+   "color": "#e8702a",
+   "explode": [
+    0.257,
+    0.4,
+    0.88
+   ],
+   "bbox": [
+    44.0,
+    120.0,
+    52.0
+   ]
+  },
+  {
+   "file": "stl/electronics-box.stl",
+   "name": "Electronics box",
+   "group": "case",
+   "process": "print",
+   "color": "#333333",
+   "explode": [
+    0.528,
+    -0.04,
+    -0.848
+   ],
+   "bbox": [
+    90.0,
+    90.0,
+    34.0
+   ]
+  },
+  {
+   "file": "stl/electronics-lid.stl",
+   "name": "Electronics lid",
+   "group": "case",
+   "process": "laser",
+   "color": "#cfe8ff",
+   "explode": [
+    0.56,
+    -0.042,
+    -0.828
+   ],
+   "bbox": [
+    90.0,
+    90.0,
+    3.0
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/32-bit-printer-board-4-tmc2209.stl",
+   "name": "32-bit printer board (4 TMC2209)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f6f3f",
+   "explode": [
+    0.521,
+    -0.04,
+    -0.852
+   ],
+   "bbox": [
+    70.0,
+    76.0,
+    12.0
+   ]
+  },
+  {
+   "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1.stl",
+   "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9cdd2",
+   "explode": [
+    0.618,
+    0.03,
+    -0.786
+   ],
+   "bbox": [
+    16.6,
+    14.0,
+    16.2
+   ],
+   "port": {
+    "type": "dc-barrel",
+    "at": [
+     191.6,
+     110.0,
+     42.99
+    ],
+    "dir": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "wide": [
+     0.0,
+     1.0,
+     0.0
+    ]
+   },
+   "subparts": [
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__0.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__1.stl",
+     "color": "#b9bec4",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__3.stl",
+     "color": "#e0e2e4",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__4.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "dc_jack_panel",
+    "qty": 1,
+    "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+    "unit_cost_usd": 0.8,
+    "mass_g": 6.0
+   }
+  }
+ ]
+}

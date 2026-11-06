@@ -1,0 +1,200 @@
+{
+ "parts": [
+  {
+   "name": "M3\u00d78 button head screw",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.097,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x8+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M3x8 button head screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M3 heat-set insert",
+   "qty_per_unit": 8,
+   "unit_cost_usd": 0.12,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+heat+set+insert+brass&rh=p_85%3A2470955011",
+   "notes": "search: M3 heat set insert brass",
+   "auto": "lib"
+  },
+  {
+   "name": "SG90 micro servo",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.5,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=SG90+micro+servo&rh=p_85%3A2470955011",
+   "notes": "search: SG90 micro servo",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d716 socket head screw",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.104,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x16+socket+head+cap+screw&rh=p_85%3A2470955011",
+   "notes": "search: M3x16 socket head cap screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d725 button head screw",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.112,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x25+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M3x25 button head screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M3 nylock nut",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.09,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+nylon+lock+nut&rh=p_85%3A2470955011",
+   "notes": "search: M3 nylon lock nut",
+   "auto": "lib"
+  },
+  {
+   "name": "18650 Li-ion cell",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=18650+battery+protected+3000mAh&rh=p_85%3A2470955011",
+   "notes": "search: 18650 battery protected 3000mAh",
+   "auto": "lib"
+  },
+  {
+   "name": "ESP32-C3 SuperMini",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=ESP32-C3+SuperMini&rh=p_85%3A2470955011",
+   "notes": "search: ESP32-C3 SuperMini",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d710 button head screw",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.099,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x10+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M3x10 button head screw",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 0,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/chassis.stl",
+   "name": "Chassis",
+   "grams": 38.2,
+   "print_hours": 1.91,
+   "bbox": [
+    106.0,
+    100.0,
+    34.0
+   ]
+  },
+  {
+   "file": "stl/top-cover.stl",
+   "name": "Top cover",
+   "grams": 29.1,
+   "print_hours": 1.45,
+   "bbox": [
+    106.0,
+    100.0,
+    26.3
+   ]
+  },
+  {
+   "file": "stl/face.stl",
+   "name": "Face mount",
+   "grams": 4.6,
+   "print_hours": 0.25,
+   "bbox": [
+    84.0,
+    7.8,
+    75.1
+   ]
+  },
+  {
+   "file": "stl/headback.stl",
+   "name": "Head back",
+   "grams": 11.7,
+   "print_hours": 0.59,
+   "bbox": [
+    84.0,
+    22.4,
+    82.0
+   ]
+  },
+  {
+   "file": "stl/track-l.stl",
+   "name": "Track L",
+   "grams": 7.1,
+   "print_hours": 0.35,
+   "bbox": [
+    14.0,
+    98.0,
+    36.0
+   ]
+  },
+  {
+   "file": "stl/dwl.stl",
+   "name": "Drive wheel L",
+   "grams": 4.3,
+   "print_hours": 0.25,
+   "bbox": [
+    14.0,
+    28.6,
+    28.6
+   ]
+  },
+  {
+   "file": "stl/iwl.stl",
+   "name": "Idler wheel L",
+   "grams": 4.2,
+   "print_hours": 0.25,
+   "bbox": [
+    14.0,
+    28.6,
+    28.6
+   ]
+  },
+  {
+   "file": "stl/track-r.stl",
+   "name": "Track R",
+   "grams": 7.1,
+   "print_hours": 0.35,
+   "bbox": [
+    14.0,
+    98.0,
+    36.0
+   ]
+  },
+  {
+   "file": "stl/dwr.stl",
+   "name": "Drive wheel R",
+   "grams": 4.3,
+   "print_hours": 0.25,
+   "bbox": [
+    14.0,
+    28.6,
+    28.6
+   ]
+  },
+  {
+   "file": "stl/iwr.stl",
+   "name": "Idler wheel R",
+   "grams": 4.2,
+   "print_hours": 0.25,
+   "bbox": [
+    14.0,
+    28.6,
+    28.6
+   ]
+  }
+ ],
+ "fabricated": []
+}

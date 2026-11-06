@@ -1,0 +1,11 @@
+{
+  "wires": [
+    {"from": {"part": "USB power adapter 5 V 1 A (UL listed)", "pin": "USB"}, "to": {"part": "ESP32 DevKitC (WROOM-32, 38 pin)", "pin": "USB"}, "color": "black", "kind": "usb"},
+    {"from": {"part": "ESP32 DevKitC (WROOM-32, 38 pin)", "pin": "3V3"}, "to": {"part": "DS18B20 adapter module", "pin": "VCC"}, "color": "red", "kind": "dupont"},
+    {"from": {"part": "ESP32 DevKitC (WROOM-32, 38 pin)", "pin": "GND"}, "to": {"part": "DS18B20 adapter module", "pin": "GND"}, "color": "black", "kind": "dupont"},
+    {"from": {"part": "ESP32 DevKitC (WROOM-32, 38 pin)", "pin": "GPIO4"}, "to": {"part": "DS18B20 adapter module", "pin": "DAT"}, "color": "yellow", "kind": "dupont"},
+    {"from": {"part": "DS18B20 waterproof probe", "pin": "red"}, "to": {"part": "DS18B20 adapter module", "pin": "VCC"}, "color": "red", "kind": "screw terminal"},
+    {"from": {"part": "DS18B20 waterproof probe", "pin": "black"}, "to": {"part": "DS18B20 adapter module", "pin": "GND"}, "color": "black", "kind": "screw terminal"},
+    {"from": {"part": "DS18B20 waterproof probe", "pin": "yellow"}, "to": {"part": "DS18B20 adapter module", "pin": "DAT"}, "color": "yellow", "kind": "screw terminal"}
+  ]
+}

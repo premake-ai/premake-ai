@@ -1,0 +1,39 @@
+{
+ "parts": [
+  {
+   "name": "Silicone lick mat 20 x 20 cm (optional bundle)",
+   "qty_per_unit": 0,
+   "unit_cost_usd": 3.5,
+   "supplier": "Amazon / Alibaba",
+   "url": "",
+   "notes": "Search 'silicone lick mat 20cm square'. Set qty 1 to sell as a bundle; measure the edge thickness and set mat_t."
+  }
+ ],
+ "assembly_minutes": 1,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/tray.stl",
+   "name": "Tray",
+   "grams": 46.6,
+   "print_hours": 2.33,
+   "bbox": [
+    208.2,
+    208.2,
+    16.2
+   ]
+  },
+  {
+   "file": "stl/grip-feet-tpu-x4.stl",
+   "name": "Grip feet (TPU, x4)",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    173.0,
+    173.0,
+    4.4
+   ]
+  }
+ ],
+ "fabricated": []
+}

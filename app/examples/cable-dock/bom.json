@@ -1,0 +1,35 @@
+{
+ "parts": [
+  {
+   "name": "3/8 in SAE steel flat washer",
+   "qty_per_unit": 16,
+   "unit_cost_usd": 0.14,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": "4 stacks of 4 for weight"
+  },
+  {
+   "name": "3M VHB double-sided tape pad",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.6,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Optional, sticks it to the desk"
+  }
+ ],
+ "assembly_minutes": 3,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/cable-dock-body.stl",
+   "name": "Cable dock body",
+   "grams": 40.3,
+   "print_hours": 2.01,
+   "bbox": [
+    112.1,
+    34.1,
+    24.0
+   ]
+  }
+ ]
+}

@@ -1,0 +1,70 @@
+{
+ "t": 1793164697.533953,
+ "title": "Monitor riser",
+ "parts": [
+  {
+   "file": "stl/leg-left.stl",
+   "name": "Leg left",
+   "group": "case",
+   "color": "#3d5a80",
+   "explode": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    34.0,
+    241.0,
+    98.0
+   ]
+  },
+  {
+   "file": "stl/leg-right.stl",
+   "name": "Leg right",
+   "group": "case",
+   "color": "#3d5a80",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    34.0,
+    241.0,
+    98.0
+   ]
+  },
+  {
+   "file": "stl/pine-board-1x10-x-24-in.stl",
+   "name": "Pine board 1x10 x 24 in",
+   "group": "component",
+   "color": "#e0c097",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    610.0,
+    235.0,
+    19.0
+   ]
+  },
+  {
+   "file": "stl/felt-pads-4x.stl",
+   "name": "Felt pads (4x)",
+   "group": "component",
+   "color": "#555555",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    468.0,
+    235.0,
+    1.5
+   ]
+  }
+ ]
+}

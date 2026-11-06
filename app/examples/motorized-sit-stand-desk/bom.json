@@ -1,0 +1,717 @@
+{
+ "parts": [
+  {
+   "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 7.5,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=ESP32+DevKitC+WROOM-32+38+pin&rh=p_85%3A2470955011",
+   "notes": "search: ESP32 DevKitC WROOM-32 38 pin",
+   "auto": "lib"
+  },
+  {
+   "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.8,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=DC-022+panel+mount+barrel+jack+5.5x2.1&rh=p_85%3A2470955011",
+   "notes": "search: DC-022 panel mount barrel jack 5.5x2.1",
+   "auto": "lib"
+  },
+  {
+   "name": "M3 heat-set insert",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.12,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+heat+set+insert+brass&rh=p_85%3A2470955011",
+   "notes": "search: M3 heat set insert brass",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d78 button head screw",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.097,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x8+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M3x8 button head screw",
+   "auto": "lib"
+  },
+  {
+   "name": "WS2812B LED strip, 84 LEDs",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 14.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=WS2812B+60+LED%2Fm+5V&rh=p_85%3A2470955011",
+   "notes": "search: WS2812B 60 LED/m 5V",
+   "auto": "lib"
+  },
+  {
+   "name": "WS2812B LED strip, 54 LEDs",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 9.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=WS2812B+60+LED%2Fm+5V&rh=p_85%3A2470955011",
+   "notes": "search: WS2812B 60 LED/m 5V",
+   "auto": "lib"
+  },
+  {
+   "name": "2020 corner bracket",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.6,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=2020+corner+bracket&rh=p_85%3A2470955011",
+   "notes": "search: 2020 corner bracket",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 0,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/trayrail0.stl",
+   "name": "Tray rail",
+   "grams": 12.5,
+   "print_hours": 0.62,
+   "bbox": [
+    8.0,
+    279.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/trayrail1.stl",
+   "name": "Tray rail",
+   "grams": 12.5,
+   "print_hours": 0.62,
+   "bbox": [
+    8.0,
+    279.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/ebox.stl",
+   "name": "Controller box",
+   "grams": 20.5,
+   "print_hours": 1.03,
+   "bbox": [
+    96.0,
+    46.0,
+    24.0
+   ]
+  },
+  {
+   "file": "stl/elid.stl",
+   "name": "Controller lid",
+   "grams": 7.6,
+   "print_hours": 0.38,
+   "bbox": [
+    96.0,
+    46.0,
+    13.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/rpost1.stl",
+   "name": "Riser post",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 100.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 100.0,
+    "minutes": 5.0,
+    "material_usd": 0.6
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/rpost2.stl",
+   "name": "Riser post",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 100.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 100.0,
+    "minutes": 5.0,
+    "material_usd": 0.6
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/rpost3.stl",
+   "name": "Riser post",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 100.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 100.0,
+    "minutes": 5.0,
+    "material_usd": 0.6
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/rpost4.stl",
+   "name": "Riser post",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 100.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 100.0,
+    "minutes": 5.0,
+    "material_usd": 0.6
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/rpost5.stl",
+   "name": "Riser post",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 100.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 100.0,
+    "minutes": 5.0,
+    "material_usd": 0.6
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/rpost6.stl",
+   "name": "Riser post",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 100.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 100.0,
+    "minutes": 5.0,
+    "material_usd": 0.6
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/rrail0.stl",
+   "name": "Riser rail",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 1500.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1500.0,
+    "minutes": 5.0,
+    "material_usd": 9.0
+   },
+   "bbox": [
+    1500.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/rrail1.stl",
+   "name": "Riser rail",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 1500.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1500.0,
+    "minutes": 5.0,
+    "material_usd": 9.0
+   },
+   "bbox": [
+    1500.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/upost0.stl",
+   "name": "Upper post",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 500.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 500.0,
+    "minutes": 5.0,
+    "material_usd": 3.0
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    500.0
+   ]
+  },
+  {
+   "file": "stl/upost1.stl",
+   "name": "Upper post",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 500.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 500.0,
+    "minutes": 5.0,
+    "material_usd": 3.0
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    500.0
+   ]
+  },
+  {
+   "file": "stl/upost2.stl",
+   "name": "Upper post",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 500.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 500.0,
+    "minutes": 5.0,
+    "material_usd": 3.0
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    500.0
+   ]
+  },
+  {
+   "file": "stl/upost3.stl",
+   "name": "Upper post",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 500.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 500.0,
+    "minutes": 5.0,
+    "material_usd": 3.0
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    500.0
+   ]
+  },
+  {
+   "file": "stl/upost4.stl",
+   "name": "Upper post",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 500.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 500.0,
+    "minutes": 5.0,
+    "material_usd": 3.0
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    500.0
+   ]
+  },
+  {
+   "file": "stl/trail0.stl",
+   "name": "Top rail",
+   "process": "extrusion",
+   "params": {
+    "profile": "2040",
+    "length_mm": 1500.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1500.0,
+    "minutes": 5.0,
+    "material_usd": 15.0
+   },
+   "bbox": [
+    1500.0,
+    20.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/trail1.stl",
+   "name": "Top rail",
+   "process": "extrusion",
+   "params": {
+    "profile": "2040",
+    "length_mm": 1500.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1500.0,
+    "minutes": 5.0,
+    "material_usd": 15.0
+   },
+   "bbox": [
+    1500.0,
+    20.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/rshelf0.stl",
+   "name": "Riser shelf",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1665.7,
+    "area_cm2": 1366.4,
+    "minutes": 4.5,
+    "material_usd": 9.84
+   },
+   "bbox": [
+    500.0,
+    300.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/tshelf0.stl",
+   "name": "Top shelf",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1662.2,
+    "area_cm2": 1374.0,
+    "minutes": 4.5,
+    "material_usd": 9.89
+   },
+   "bbox": [
+    500.0,
+    300.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/rshelf1.stl",
+   "name": "Riser shelf",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1891.7,
+    "area_cm2": 1344.1,
+    "minutes": 4.9,
+    "material_usd": 9.68
+   },
+   "bbox": [
+    500.0,
+    300.0,
+    5.6
+   ]
+  },
+  {
+   "file": "stl/tshelf1.stl",
+   "name": "Top shelf",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1662.2,
+    "area_cm2": 1374.0,
+    "minutes": 4.5,
+    "material_usd": 9.89
+   },
+   "bbox": [
+    500.0,
+    300.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/rshelf2.stl",
+   "name": "Riser shelf",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1854.2,
+    "area_cm2": 1340.4,
+    "minutes": 4.9,
+    "material_usd": 9.65
+   },
+   "bbox": [
+    500.0,
+    300.0,
+    5.6
+   ]
+  },
+  {
+   "file": "stl/tshelf2.stl",
+   "name": "Top shelf",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1662.2,
+    "area_cm2": 1374.0,
+    "minutes": 4.5,
+    "material_usd": 9.89
+   },
+   "bbox": [
+    500.0,
+    300.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/hanger0.stl",
+   "name": "Drawer hanger",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1219.6,
+    "area_cm2": 286.9,
+    "minutes": 3.5,
+    "material_usd": 2.07
+   },
+   "bbox": [
+    5.5,
+    300.0,
+    130.0
+   ]
+  },
+  {
+   "file": "stl/hanger1.stl",
+   "name": "Drawer hanger",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1219.6,
+    "area_cm2": 286.9,
+    "minutes": 3.5,
+    "material_usd": 2.07
+   },
+   "bbox": [
+    5.5,
+    300.0,
+    130.0
+   ]
+  },
+  {
+   "file": "stl/dbottom.stl",
+   "name": "Drawer bottom",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1453.4,
+    "area_cm2": 1042.5,
+    "minutes": 4.0,
+    "material_usd": 7.51
+   },
+   "bbox": [
+    383.6,
+    300.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/dsidel.stl",
+   "name": "Drawer side",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 831.0,
+    "area_cm2": 290.4,
+    "minutes": 2.7,
+    "material_usd": 2.09
+   },
+   "bbox": [
+    5.5,
+    300.0,
+    110.0
+   ]
+  },
+  {
+   "file": "stl/dsider.stl",
+   "name": "Drawer side",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 831.0,
+    "area_cm2": 290.4,
+    "minutes": 2.7,
+    "material_usd": 2.09
+   },
+   "bbox": [
+    5.5,
+    300.0,
+    110.0
+   ]
+  },
+  {
+   "file": "stl/dfront.stl",
+   "name": "Drawer inner front",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 976.2,
+    "area_cm2": 359.9,
+    "minutes": 3.0,
+    "material_usd": 2.59
+   },
+   "bbox": [
+    372.6,
+    5.5,
+    110.0
+   ]
+  },
+  {
+   "file": "stl/dback.stl",
+   "name": "Drawer back",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 2116.3,
+    "area_cm2": 292.9,
+    "minutes": 5.4,
+    "material_usd": 2.11
+   },
+   "bbox": [
+    372.6,
+    5.5,
+    110.0
+   ]
+  },
+  {
+   "file": "stl/dface.stl",
+   "name": "Drawer face",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 3318.5,
+    "area_cm2": 420.2,
+    "minutes": 7.9,
+    "material_usd": 3.03
+   },
+   "bbox": [
+    420.0,
+    5.5,
+    125.0
+   ]
+  },
+  {
+   "file": "stl/tray.stl",
+   "name": "Organiser tray",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1498.5,
+    "area_cm2": 962.0,
+    "minutes": 4.1,
+    "material_usd": 6.93
+   },
+   "bbox": [
+    370.6,
+    287.0,
+    5.5
+   ]
+  }
+ ]
+}

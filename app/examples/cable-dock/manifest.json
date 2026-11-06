@@ -1,0 +1,54 @@
+{
+ "t": 1793164629.147509,
+ "title": "Cable dock",
+ "parts": [
+  {
+   "file": "stl/cable-dock-body.stl",
+   "name": "Cable dock body",
+   "group": "case",
+   "color": "#4dd0c8",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    112.1,
+    34.1,
+    24.0
+   ]
+  },
+  {
+   "file": "stl/3-8-in-sae-steel-washers-weight.stl",
+   "name": "3/8 in SAE steel washers (weight)",
+   "group": "component",
+   "color": "#9aa0a6",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    82.6,
+    20.6,
+    6.4
+   ]
+  },
+  {
+   "file": "stl/charging-cables-not-included.stl",
+   "name": "Charging cables (not included)",
+   "group": "component",
+   "color": "#f2f2f2",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    84.5,
+    90.0,
+    4.5
+   ]
+  }
+ ]
+}

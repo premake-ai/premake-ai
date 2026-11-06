@@ -1,0 +1,57 @@
+{
+ "t": 1793314569.75737,
+ "title": "Dual Controller Wall Mount",
+ "parts": [
+  {
+   "file": "stl/wall-mount.stl",
+   "name": "Wall Mount",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    50.0,
+    70.5,
+    222.0
+   ]
+  },
+  {
+   "file": "stl/controller-1-reference.stl",
+   "name": "Controller 1 (reference)",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8d8dc",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    150.1,
+    50.1,
+    101.1
+   ]
+  },
+  {
+   "file": "stl/controller-2-reference.stl",
+   "name": "Controller 2 (reference)",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8d8dc",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    150.1,
+    50.1,
+    101.1
+   ]
+  }
+ ]
+}

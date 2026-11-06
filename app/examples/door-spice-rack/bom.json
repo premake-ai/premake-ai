@@ -1,0 +1,28 @@
+{
+ "parts": [
+  {
+   "name": "#6 x 1/2 in flat-head wood screw",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.05,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": "Into the cabinet door; or use 2 large removable adhesive strips instead"
+  }
+ ],
+ "assembly_minutes": 2,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/spice-rack.stl",
+   "name": "Spice rack",
+   "grams": 55.2,
+   "print_hours": 2.76,
+   "bbox": [
+    219.8,
+    53.5,
+    58.1
+   ]
+  }
+ ],
+ "fabricated": []
+}

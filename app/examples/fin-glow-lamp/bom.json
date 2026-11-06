@@ -1,0 +1,185 @@
+{
+ "parts": [
+  {
+   "name": "1.5 mm 5052 aluminium channel, laser cut + 4 bends, 240 x 190 mm blank",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 14.0,
+   "supplier": "Local sheet-metal shop",
+   "url": "",
+   "notes": "Brushed or bead-blasted finish",
+   "fabricated": true
+  },
+  {
+   "name": "3 mm opal acrylic fin, laser cut",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Local laser shop",
+   "url": "",
+   "notes": "Edge polished bottom edge for light entry",
+   "fabricated": true
+  },
+  {
+   "name": "ESP32-C3 SuperMini",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"ESP32-C3 SuperMini\""
+  },
+  {
+   "name": "WS2812B strip 60/m, 5 V (12 LEDs used)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 3.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "From a 5 m roll ~$20; search \"WS2812B 60 LED/m 5V IP30\""
+  },
+  {
+   "name": "EC11 rotary encoder with push switch",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.2,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"EC11 rotary encoder 20mm shaft\""
+  },
+  {
+   "name": "330 ohm resistor + 470 uF 10 V capacitor",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.2,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "From assortment kits"
+  },
+  {
+   "name": "22 AWG silicone wire + Dupont jumpers",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.6,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "M3 x 6 button head screw",
+   "qty_per_unit": 8,
+   "unit_cost_usd": 0.06,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Channel to end caps"
+  },
+  {
+   "name": "M3 heat-set insert, 4 mm",
+   "qty_per_unit": 8,
+   "unit_cost_usd": 0.08,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "Rubber bumper feet 10 mm",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "USB-C cable 1.5 m",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "5 V 2 A charger not included"
+  }
+ ],
+ "assembly_minutes": 30,
+ "kit_ok": false,
+ "printed": [
+  {
+   "file": "stl/led-rail.stl",
+   "name": "LED rail",
+   "grams": 26.4,
+   "print_hours": 1.32,
+   "bbox": [
+    200.0,
+    18.0,
+    36.6
+   ]
+  },
+  {
+   "file": "stl/end-cap-usb.stl",
+   "name": "End cap, USB",
+   "grams": 11.8,
+   "print_hours": 0.59,
+   "bbox": [
+    16.0,
+    61.0,
+    40.5
+   ]
+  },
+  {
+   "file": "stl/end-cap-dial.stl",
+   "name": "End cap, dial",
+   "grams": 11.8,
+   "print_hours": 0.59,
+   "bbox": [
+    16.0,
+    61.0,
+    40.5
+   ]
+  },
+  {
+   "file": "stl/dial-knob.stl",
+   "name": "Dial knob",
+   "grams": 2.3,
+   "print_hours": 0.25,
+   "bbox": [
+    14.0,
+    18.0,
+    18.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/folded-aluminium-channel.stl",
+   "name": "Folded aluminium channel",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 5052",
+    "thickness_mm": 1.5,
+    "bends": 4
+   },
+   "est": {
+    "area_cm2": 444.6,
+    "bends": 4,
+    "minutes": 14.4,
+    "material_usd": 2.67
+   },
+   "bbox": [
+    240.0,
+    60.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/opal-acrylic-fin.stl",
+   "name": "Opal acrylic fin",
+   "process": "laser",
+   "params": {
+    "material": "opal acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 598.7,
+    "area_cm2": 237.8,
+    "minutes": 1.5,
+    "material_usd": 2.5
+   },
+   "bbox": [
+    193.3,
+    3.3,
+    137.0
+   ]
+  }
+ ]
+}

@@ -1,0 +1,696 @@
+{
+ "parts": [
+  {
+   "name": "12V 5A power adapter, 5.5x2.1 barrel, UL listed",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 13.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 12V 5A power supply 5.5x2.1 UL listed"
+  },
+  {
+   "name": "Mild steel flat bar 1/4 x 1 x 12 in",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 9.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "magnet track; search: steel flat bar 1/4 x 1 x 12"
+  },
+  {
+   "name": "Brass strip 0.064 x 1/4 x 12 in",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 4.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "power rails (+12V front, GND back); search: K&S brass strip .064 x 1/4 x 12"
+  },
+  {
+   "name": "PTC resettable fuse 4A hold",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.4,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "inline on +12V in the base channel; search: PPTC resettable fuse 4A radial"
+  },
+  {
+   "name": "Spring pogo pin, 3 mm, 3A",
+   "qty_per_unit": 16,
+   "unit_cost_usd": 0.35,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "4 per module (2 per rail); search: spring loaded pogo pin 3mm solder"
+  },
+  {
+   "name": "Neodymium magnet 10x3 mm",
+   "qty_per_unit": 15,
+   "unit_cost_usd": 0.12,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "glued flush in module floors; search: neodymium magnet 10x3mm"
+  },
+  {
+   "name": "Rubber bumper feet 12.7 x 4 mm",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.08,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: clear rubber bumper feet 1/2 inch"
+  },
+  {
+   "name": "15W Qi wireless charger module, 12V input",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 9.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "PCB 45x45x4.6, coil 48.4 dia; search: 15W wireless charger module PCBA 12V"
+  },
+  {
+   "name": "2 in full-range speaker 4 ohm 5W",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 2 inch full range speaker 4 ohm 5W"
+  },
+  {
+   "name": "Bluetooth 5.0 amplifier board, 5V, 5W",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "fed by MP1584 at 5V; search: bluetooth 5.0 amplifier board 5V 5W"
+  },
+  {
+   "name": "12V COB LED strip 8 mm warm white (2 x 200 mm)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "cut from a 5 m reel (~$12); search: COB LED strip 12V 8mm warm white"
+  },
+  {
+   "name": "12 mm latching push button switch",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "lamp on/off in the tower cap; search: 12mm latching push button switch"
+  },
+  {
+   "name": "2.9 in e-paper module 296x128 (SPI)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 21.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Waveshare-type, PCB 89.5 x 38; search: 2.9 inch e-paper module SPI 296x128"
+  },
+  {
+   "name": "Hookup wire 22 AWG + 18 AWG",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "share of spools; 18 AWG for rails and charger"
+  },
+  {
+   "name": "Wood glue",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "share of a bottle; all plywood layers glued"
+  },
+  {
+   "name": "DC barrel jack, PCB 5.5\u00d72.1",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.4,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=DC-005+barrel+jack+PCB&rh=p_85%3A2470955011",
+   "notes": "search: DC-005 barrel jack PCB",
+   "auto": "lib"
+  },
+  {
+   "name": "MP1584 mini buck converter",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 1.2,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=MP1584EN+buck+module&rh=p_85%3A2470955011",
+   "notes": "search: MP1584EN buck module",
+   "auto": "lib"
+  },
+  {
+   "name": "ESP32-C3 SuperMini",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=ESP32-C3+SuperMini&rh=p_85%3A2470955011",
+   "notes": "search: ESP32-C3 SuperMini",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 120,
+ "kit_ok": false,
+ "printed": [],
+ "fabricated": [
+  {
+   "file": "stl/base-bottom.stl",
+   "name": "Base bottom",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 965.0,
+    "area_cm2": 393.0,
+    "minutes": 3.0,
+    "material_usd": 2.83
+   },
+   "bbox": [
+    360.0,
+    120.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/base-middle.stl",
+   "name": "Base middle",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1734.8,
+    "area_cm2": 307.7,
+    "minutes": 4.6,
+    "material_usd": 2.22
+   },
+   "bbox": [
+    360.0,
+    120.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/base-top.stl",
+   "name": "Base top",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 2847.0,
+    "area_cm2": 308.7,
+    "minutes": 3.4,
+    "material_usd": 1.11
+   },
+   "bbox": [
+    360.0,
+    120.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/ch-floor.stl",
+   "name": "Charger floor",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 463.5,
+    "area_cm2": 61.8,
+    "minutes": 1.4,
+    "material_usd": 0.22
+   },
+   "bbox": [
+    86.0,
+    80.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/ch-ring1.stl",
+   "name": "Charger ring 1",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 548.5,
+    "area_cm2": 19.6,
+    "minutes": 2.1,
+    "material_usd": 0.14
+   },
+   "bbox": [
+    86.0,
+    80.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/ch-ring2.stl",
+   "name": "Charger ring 2",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 548.5,
+    "area_cm2": 19.6,
+    "minutes": 2.1,
+    "material_usd": 0.14
+   },
+   "bbox": [
+    86.0,
+    80.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/ch-top.stl",
+   "name": "Charger top",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 297.7,
+    "area_cm2": 65.4,
+    "minutes": 1.2,
+    "material_usd": 0.24
+   },
+   "bbox": [
+    86.0,
+    80.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/speaker-floor.stl",
+   "name": "Speaker floor",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 460.7,
+    "area_cm2": 56.4,
+    "minutes": 1.4,
+    "material_usd": 0.2
+   },
+   "bbox": [
+    76.0,
+    80.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/speaker-front.stl",
+   "name": "Speaker front",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 865.4,
+    "area_cm2": 55.3,
+    "minutes": 2.8,
+    "material_usd": 0.4
+   },
+   "bbox": [
+    76.0,
+    5.5,
+    86.5
+   ]
+  },
+  {
+   "file": "stl/speaker-back.stl",
+   "name": "Speaker back",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 375.3,
+    "area_cm2": 58.4,
+    "minutes": 1.8,
+    "material_usd": 0.42
+   },
+   "bbox": [
+    76.0,
+    5.5,
+    86.5
+   ]
+  },
+  {
+   "file": "stl/speaker-side-l.stl",
+   "name": "Speaker side L",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 311.0,
+    "area_cm2": 54.7,
+    "minutes": 1.6,
+    "material_usd": 0.39
+   },
+   "bbox": [
+    5.5,
+    69.0,
+    86.5
+   ]
+  },
+  {
+   "file": "stl/speaker-side-r.stl",
+   "name": "Speaker side R",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 311.0,
+    "area_cm2": 54.7,
+    "minutes": 1.6,
+    "material_usd": 0.39
+   },
+   "bbox": [
+    5.5,
+    69.0,
+    86.5
+   ]
+  },
+  {
+   "file": "stl/speaker-top.stl",
+   "name": "Speaker top",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 312.0,
+    "area_cm2": 55.7,
+    "minutes": 1.6,
+    "material_usd": 0.4
+   },
+   "bbox": [
+    76.0,
+    80.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/lamp-floor.stl",
+   "name": "Lamp floor",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 393.2,
+    "area_cm2": 44.0,
+    "minutes": 1.3,
+    "material_usd": 0.16
+   },
+   "bbox": [
+    60.0,
+    80.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/lamp-foot-ring.stl",
+   "name": "Lamp foot ring",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 474.8,
+    "area_cm2": 15.2,
+    "minutes": 2.0,
+    "material_usd": 0.11
+   },
+   "bbox": [
+    60.0,
+    80.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/lamp-foot-top.stl",
+   "name": "Lamp foot top",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 390.0,
+    "area_cm2": 33.6,
+    "minutes": 1.8,
+    "material_usd": 0.24
+   },
+   "bbox": [
+    60.0,
+    80.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/lamp-diffuser.stl",
+   "name": "Lamp diffuser",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 520.0,
+    "area_cm2": 88.0,
+    "minutes": 1.4,
+    "material_usd": 0.92
+   },
+   "bbox": [
+    40.0,
+    3.0,
+    220.0
+   ]
+  },
+  {
+   "file": "stl/lamp-spine.stl",
+   "name": "Lamp spine",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 520.0,
+    "area_cm2": 80.7,
+    "minutes": 2.1,
+    "material_usd": 0.58
+   },
+   "bbox": [
+    40.0,
+    5.5,
+    220.0
+   ]
+  },
+  {
+   "file": "stl/lamp-side-l.stl",
+   "name": "Lamp side L",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 472.0,
+    "area_cm2": 32.3,
+    "minutes": 2.0,
+    "material_usd": 0.23
+   },
+   "bbox": [
+    5.5,
+    16.0,
+    220.0
+   ]
+  },
+  {
+   "file": "stl/lamp-side-r.stl",
+   "name": "Lamp side R",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 472.0,
+    "area_cm2": 32.3,
+    "minutes": 2.0,
+    "material_usd": 0.23
+   },
+   "bbox": [
+    5.5,
+    16.0,
+    220.0
+   ]
+  },
+  {
+   "file": "stl/lamp-cap.stl",
+   "name": "Lamp cap",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 123.8,
+    "area_cm2": 8.9,
+    "minutes": 1.3,
+    "material_usd": 0.06
+   },
+   "bbox": [
+    40.0,
+    24.5,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/display-floor.stl",
+   "name": "Display floor",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 516.7,
+    "area_cm2": 78.8,
+    "minutes": 1.4,
+    "material_usd": 0.28
+   },
+   "bbox": [
+    104.0,
+    80.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/display-cheek-l.stl",
+   "name": "Display cheek L",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 251.5,
+    "area_cm2": 36.7,
+    "minutes": 1.5,
+    "material_usd": 0.26
+   },
+   "bbox": [
+    5.5,
+    74.7,
+    62.0
+   ]
+  },
+  {
+   "file": "stl/display-cheek-r.stl",
+   "name": "Display cheek R",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 251.5,
+    "area_cm2": 36.7,
+    "minutes": 1.5,
+    "material_usd": 0.26
+   },
+   "bbox": [
+    5.5,
+    74.7,
+    62.0
+   ]
+  },
+  {
+   "file": "stl/display-face.stl",
+   "name": "Display face",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 301.0,
+    "area_cm2": 35.5,
+    "minutes": 1.3,
+    "material_usd": 0.13
+   },
+   "bbox": [
+    93.0,
+    23.4,
+    57.5
+   ]
+  },
+  {
+   "file": "stl/display-top.stl",
+   "name": "Display top",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 290.9,
+    "area_cm2": 44.7,
+    "minutes": 1.6,
+    "material_usd": 0.32
+   },
+   "bbox": [
+    93.0,
+    52.4,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/display-back.stl",
+   "name": "Display back",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 331.3,
+    "area_cm2": 47.6,
+    "minutes": 1.7,
+    "material_usd": 0.34
+   },
+   "bbox": [
+    93.0,
+    5.5,
+    56.5
+   ]
+  }
+ ]
+}

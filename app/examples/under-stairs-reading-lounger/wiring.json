@@ -1,0 +1,4 @@
+{"wires": [
+  {"from": {"part": "USB wall charger 5 V 2 A (UL listed)", "pin": "USB-A"},
+   "to": {"part": "Gooseneck reading lamp", "pin": "USB plug"}, "color": "black", "kind": "jst"}
+]}

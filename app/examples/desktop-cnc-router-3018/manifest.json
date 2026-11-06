@@ -1,0 +1,1248 @@
+{
+ "t": 1793914690.4397671,
+ "title": "Desktop CNC Router 3018",
+ "parts": [
+  {
+   "file": "stl/base-profile-2040-l.stl",
+   "name": "Base profile 2040 L",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#c9ccd1",
+   "explode": [
+    -0.883,
+    0.008,
+    -0.47
+   ],
+   "bbox": [
+    20.0,
+    290.0,
+    40.0
+   ],
+   "material": "aluminium",
+   "step": "step/base-profile-2040-l.step"
+  },
+  {
+   "file": "stl/base-profile-2040-r.stl",
+   "name": "Base profile 2040 R",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#c9ccd1",
+   "explode": [
+    0.797,
+    0.01,
+    -0.603
+   ],
+   "bbox": [
+    20.0,
+    290.0,
+    40.0
+   ],
+   "material": "aluminium",
+   "step": "step/base-profile-2040-r.step"
+  },
+  {
+   "file": "stl/plate-a-inner.stl",
+   "name": "Plate A inner",
+   "group": "case",
+   "process": "laser",
+   "color": "#1b1b1d",
+   "explode": [
+    -0.167,
+    -0.826,
+    -0.539
+   ],
+   "bbox": [
+    382.0,
+    5.5,
+    62.0
+   ],
+   "material": "pla"
+  },
+  {
+   "file": "stl/plate-a-outer.stl",
+   "name": "Plate A outer",
+   "group": "case",
+   "process": "laser",
+   "color": "#1b1b1d",
+   "explode": [
+    -0.163,
+    -0.835,
+    -0.525
+   ],
+   "bbox": [
+    382.0,
+    5.5,
+    62.0
+   ],
+   "material": "pla"
+  },
+  {
+   "file": "stl/plate-b-inner.stl",
+   "name": "Plate B inner",
+   "group": "case",
+   "process": "laser",
+   "color": "#1b1b1d",
+   "explode": [
+    -0.164,
+    0.832,
+    -0.53
+   ],
+   "bbox": [
+    382.0,
+    5.5,
+    62.0
+   ],
+   "material": "pla"
+  },
+  {
+   "file": "stl/plate-b-outer.stl",
+   "name": "Plate B outer",
+   "group": "case",
+   "process": "laser",
+   "color": "#1b1b1d",
+   "explode": [
+    -0.16,
+    0.841,
+    -0.517
+   ],
+   "bbox": [
+    382.0,
+    5.5,
+    62.0
+   ],
+   "material": "pla"
+  },
+  {
+   "file": "stl/y-rail-10-x-290.stl",
+   "name": "Y rail 10 x 290",
+   "group": "component",
+   "process": "bought",
+   "color": "#d9dde2",
+   "explode": [
+    -0.877,
+    0.011,
+    -0.48
+   ],
+   "bbox": [
+    10.0,
+    301.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/y-rail-10-x-290-2.stl",
+   "name": "Y rail 10 x 290",
+   "group": "component",
+   "process": "bought",
+   "color": "#d9dde2",
+   "explode": [
+    0.726,
+    0.015,
+    -0.688
+   ],
+   "bbox": [
+    10.0,
+    301.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/608zz-bearing.stl",
+   "name": "608ZZ bearing",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9cdd2",
+   "explode": [
+    -0.17,
+    -0.85,
+    -0.498
+   ],
+   "bbox": [
+    22.0,
+    7.0,
+    22.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/608zz-bearing__0.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/608zz-bearing__1.stl",
+     "color": "#a9aeb5",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/608zz-bearing__2.stl",
+     "color": "#8e939a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bearing_608",
+    "qty": 1,
+    "name": "608ZZ bearing",
+    "unit_cost_usd": 0.6,
+    "mass_g": 17.4
+   }
+  },
+  {
+   "file": "stl/y-lead-screw-295.stl",
+   "name": "Y lead screw 295",
+   "group": "component",
+   "process": "bought",
+   "color": "#b0b4b8",
+   "explode": [
+    -0.323,
+    -0.02,
+    -0.946
+   ],
+   "bbox": [
+    8.0,
+    295.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/shaft-coupler-y.stl",
+   "name": "Shaft coupler (Y)",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa0a6",
+   "explode": [
+    -0.179,
+    0.833,
+    -0.524
+   ],
+   "bbox": [
+    19.0,
+    25.0,
+    19.0
+   ]
+  },
+  {
+   "file": "stl/y-motor.stl",
+   "name": "Y motor",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    -0.155,
+    0.871,
+    -0.467
+   ],
+   "bbox": [
+    42.3,
+    64.6,
+    47.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/y-motor__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/y-motor__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/y-motor__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/y-motor__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/y-motor__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/y-motor__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 40 mm",
+    "unit_cost_usd": 11.0,
+    "mass_g": 280.0
+   }
+  },
+  {
+   "file": "stl/worktable.stl",
+   "name": "Worktable 300 x 180 T-slot",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9ccd1",
+   "explode": [
+    -0.484,
+    0.028,
+    -0.875
+   ],
+   "bbox": [
+    300.0,
+    180.0,
+    20.0
+   ],
+   "material": "aluminium",
+   "step": "step/worktable.step"
+  },
+  {
+   "file": "stl/slider-lf.stl",
+   "name": "Slider SC10UU",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9ccd1",
+   "explode": [
+    -0.832,
+    -0.318,
+    -0.455
+   ],
+   "bbox": [
+    40.0,
+    35.0,
+    26.0
+   ]
+  },
+  {
+   "file": "stl/slider-lb.stl",
+   "name": "Slider SC10UU",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9ccd1",
+   "explode": [
+    -0.826,
+    0.336,
+    -0.452
+   ],
+   "bbox": [
+    40.0,
+    35.0,
+    26.0
+   ]
+  },
+  {
+   "file": "stl/slider-rf.stl",
+   "name": "Slider SC10UU",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9ccd1",
+   "explode": [
+    0.654,
+    -0.433,
+    -0.62
+   ],
+   "bbox": [
+    40.0,
+    35.0,
+    26.0
+   ]
+  },
+  {
+   "file": "stl/slider-rb.stl",
+   "name": "Slider SC10UU",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9ccd1",
+   "explode": [
+    0.646,
+    0.455,
+    -0.612
+   ],
+   "bbox": [
+    40.0,
+    35.0,
+    26.0
+   ]
+  },
+  {
+   "file": "stl/y-nut-seat.stl",
+   "name": "Y nut seat",
+   "group": "case",
+   "process": "print",
+   "color": "#1b1b1d",
+   "explode": [
+    -0.349,
+    0.02,
+    -0.937
+   ],
+   "bbox": [
+    44.0,
+    20.0,
+    32.0
+   ]
+  },
+  {
+   "file": "stl/y-nut.stl",
+   "name": "Copper nut (Y)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9a227",
+   "explode": [
+    -0.323,
+    0.035,
+    -0.946
+   ],
+   "bbox": [
+    22.0,
+    23.0,
+    22.0
+   ]
+  },
+  {
+   "file": "stl/pillar-c-inner-left.stl",
+   "name": "Pillar C inner (left)",
+   "group": "case",
+   "process": "laser",
+   "color": "#1b1b1d",
+   "explode": [
+    -0.964,
+    0.255,
+    -0.074
+   ],
+   "bbox": [
+    5.5,
+    110.0,
+    220.0
+   ],
+   "material": "pla"
+  },
+  {
+   "file": "stl/pillar-c-outer-left.stl",
+   "name": "Pillar C outer (left)",
+   "group": "case",
+   "process": "laser",
+   "color": "#1b1b1d",
+   "explode": [
+    -0.966,
+    0.249,
+    -0.072
+   ],
+   "bbox": [
+    5.5,
+    110.0,
+    220.0
+   ],
+   "material": "pla"
+  },
+  {
+   "file": "stl/pillar-d-inner-right.stl",
+   "name": "Pillar D inner (right)",
+   "group": "case",
+   "process": "laser",
+   "color": "#1b1b1d",
+   "explode": [
+    0.934,
+    0.343,
+    -0.099
+   ],
+   "bbox": [
+    5.5,
+    110.0,
+    220.0
+   ],
+   "material": "pla"
+  },
+  {
+   "file": "stl/pillar-d-outer-right.stl",
+   "name": "Pillar D outer (right)",
+   "group": "case",
+   "process": "laser",
+   "color": "#1b1b1d",
+   "explode": [
+    0.938,
+    0.332,
+    -0.096
+   ],
+   "bbox": [
+    5.5,
+    110.0,
+    220.0
+   ],
+   "material": "pla"
+  },
+  {
+   "file": "stl/gantry-profile-2020-lower.stl",
+   "name": "Gantry profile 2020 lower",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#c9ccd1",
+   "explode": [
+    -0.302,
+    0.939,
+    -0.167
+   ],
+   "bbox": [
+    360.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium",
+   "step": "step/gantry-profile-2020-lower.step"
+  },
+  {
+   "file": "stl/gantry-profile-2020-upper.stl",
+   "name": "Gantry profile 2020 upper",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#c9ccd1",
+   "explode": [
+    -0.231,
+    0.719,
+    0.656
+   ],
+   "bbox": [
+    360.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium",
+   "step": "step/gantry-profile-2020-upper.step"
+  },
+  {
+   "file": "stl/x-rail-10-x-360.stl",
+   "name": "X rail 10 x 360",
+   "group": "component",
+   "process": "bought",
+   "color": "#d9dde2",
+   "explode": [
+    -0.461,
+    0.886,
+    0.058
+   ],
+   "bbox": [
+    360.0,
+    10.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/x-rail-10-x-360-2.stl",
+   "name": "X rail 10 x 360",
+   "group": "component",
+   "process": "bought",
+   "color": "#d9dde2",
+   "explode": [
+    -0.327,
+    0.628,
+    0.706
+   ],
+   "bbox": [
+    360.0,
+    10.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/608zz-bearing-2.stl",
+   "name": "608ZZ bearing (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9cdd2",
+   "explode": [
+    -0.957,
+    0.251,
+    0.149
+   ],
+   "bbox": [
+    7.0,
+    22.0,
+    22.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/608zz-bearing-2__0.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/608zz-bearing-2__1.stl",
+     "color": "#a9aeb5",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/608zz-bearing-2__2.stl",
+     "color": "#8e939a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bearing_608",
+    "qty": 1,
+    "name": "608ZZ bearing",
+    "unit_cost_usd": 0.6,
+    "mass_g": 17.4
+   }
+  },
+  {
+   "file": "stl/x-lead-screw-365.stl",
+   "name": "X lead screw 365",
+   "group": "component",
+   "process": "bought",
+   "color": "#b0b4b8",
+   "explode": [
+    -0.479,
+    0.755,
+    0.448
+   ],
+   "bbox": [
+    365.0,
+    8.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/shaft-coupler-x.stl",
+   "name": "Shaft coupler (X)",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa0a6",
+   "explode": [
+    0.91,
+    0.356,
+    0.212
+   ],
+   "bbox": [
+    25.0,
+    19.0,
+    19.0
+   ]
+  },
+  {
+   "file": "stl/x-motor.stl",
+   "name": "X motor",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    0.936,
+    0.298,
+    0.186
+   ],
+   "bbox": [
+    64.6,
+    47.7,
+    42.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/x-motor__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-motor__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/x-motor__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-motor__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-motor__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/x-motor__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 40 mm",
+    "unit_cost_usd": 11.0,
+    "mass_g": 280.0
+   }
+  },
+  {
+   "file": "stl/x-z-block.stl",
+   "name": "X-Z block",
+   "group": "case",
+   "process": "print",
+   "color": "#1b1b1d",
+   "explode": [
+    -0.498,
+    0.654,
+    0.569
+   ],
+   "bbox": [
+    76.0,
+    60.0,
+    104.0
+   ]
+  },
+  {
+   "file": "stl/lm10uu-x-130.stl",
+   "name": "LM10UU bearing (X, pair)",
+   "group": "component",
+   "process": "bought",
+   "color": "#8d9196",
+   "explode": [
+    -0.461,
+    0.886,
+    0.058
+   ],
+   "bbox": [
+    76.0,
+    19.0,
+    19.0
+   ]
+  },
+  {
+   "file": "stl/lm10uu-x-190.stl",
+   "name": "LM10UU bearing (X, pair)",
+   "group": "component",
+   "process": "bought",
+   "color": "#8d9196",
+   "explode": [
+    -0.327,
+    0.628,
+    0.706
+   ],
+   "bbox": [
+    76.0,
+    19.0,
+    19.0
+   ]
+  },
+  {
+   "file": "stl/x-nut.stl",
+   "name": "Copper nut (X)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9a227",
+   "explode": [
+    -0.408,
+    0.785,
+    0.466
+   ],
+   "bbox": [
+    28.0,
+    10.2,
+    10.2
+   ]
+  },
+  {
+   "file": "stl/z-rod-1.stl",
+   "name": "Z rod 10 x 100",
+   "group": "component",
+   "process": "bought",
+   "color": "#d9dde2",
+   "explode": [
+    -0.813,
+    0.335,
+    0.477
+   ],
+   "bbox": [
+    10.0,
+    10.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/z-rod-1-2.stl",
+   "name": "Z rod 10 x 100",
+   "group": "component",
+   "process": "bought",
+   "color": "#d9dde2",
+   "explode": [
+    -0.036,
+    0.575,
+    0.817
+   ],
+   "bbox": [
+    10.0,
+    10.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/z-screw.stl",
+   "name": "Z lead screw 100",
+   "group": "component",
+   "process": "bought",
+   "color": "#b0b4b8",
+   "explode": [
+    -0.629,
+    0.505,
+    0.591
+   ],
+   "bbox": [
+    8.0,
+    8.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/z-coupler.stl",
+   "name": "Shaft coupler (Z)",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa0a6",
+   "explode": [
+    -0.362,
+    0.291,
+    0.886
+   ],
+   "bbox": [
+    19.0,
+    19.0,
+    25.0
+   ]
+  },
+  {
+   "file": "stl/z-motor.stl",
+   "name": "Z motor",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    -0.289,
+    0.259,
+    0.922
+   ],
+   "bbox": [
+    42.3,
+    47.7,
+    64.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/z-motor__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/z-motor__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/z-motor__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/z-motor__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/z-motor__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/z-motor__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 40 mm",
+    "unit_cost_usd": 11.0,
+    "mass_g": 280.0
+   }
+  },
+  {
+   "file": "stl/z-slide.stl",
+   "name": "Z slide / spindle holder",
+   "group": "case",
+   "process": "print",
+   "color": "#1b1b1d",
+   "explode": [
+    -0.592,
+    -0.212,
+    0.777
+   ],
+   "bbox": [
+    81.0,
+    93.5,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/lm10uu-z-1.stl",
+   "name": "LM10UU bearing (Z)",
+   "group": "component",
+   "process": "bought",
+   "color": "#8d9196",
+   "explode": [
+    -0.788,
+    0.325,
+    0.523
+   ],
+   "bbox": [
+    19.0,
+    19.0,
+    29.0
+   ]
+  },
+  {
+   "file": "stl/lm10uu-z-1-2.stl",
+   "name": "LM10UU bearing (Z)",
+   "group": "component",
+   "process": "bought",
+   "color": "#8d9196",
+   "explode": [
+    -0.033,
+    0.527,
+    0.849
+   ],
+   "bbox": [
+    19.0,
+    19.0,
+    29.0
+   ]
+  },
+  {
+   "file": "stl/z-nut.stl",
+   "name": "Copper nut (Z)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9a227",
+   "explode": [
+    -0.545,
+    0.438,
+    0.715
+   ],
+   "bbox": [
+    10.2,
+    10.2,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/spindle.stl",
+   "name": "775 spindle 24 V",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2b2b",
+   "explode": [
+    -0.512,
+    -0.387,
+    0.767
+   ],
+   "bbox": [
+    42.0,
+    42.0,
+    71.0
+   ]
+  },
+  {
+   "file": "stl/collet.stl",
+   "name": "ER11 extension + bit",
+   "group": "component",
+   "process": "bought",
+   "color": "#b9bdc2",
+   "explode": [
+    -0.737,
+    -0.557,
+    -0.382
+   ],
+   "bbox": [
+    19.0,
+    19.0,
+    48.0
+   ]
+  },
+  {
+   "file": "stl/band-lower.stl",
+   "name": "Spindle marker band lower",
+   "group": "component",
+   "process": "bought",
+   "color": "#f2f2f2",
+   "explode": [
+    -0.719,
+    -0.544,
+    0.432
+   ],
+   "bbox": [
+    44.0,
+    44.0,
+    14.1
+   ]
+  },
+  {
+   "file": "stl/band-upper.stl",
+   "name": "Spindle marker band upper",
+   "group": "component",
+   "process": "bought",
+   "color": "#f2f2f2",
+   "explode": [
+    -0.405,
+    -0.306,
+    0.861
+   ],
+   "bbox": [
+    44.0,
+    44.0,
+    20.1
+   ]
+  },
+  {
+   "file": "stl/marker-dots.stl",
+   "name": "Marker dots",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    -0.559,
+    -0.422,
+    0.714
+   ],
+   "bbox": [
+    44.8,
+    44.8,
+    46.0
+   ]
+  },
+  {
+   "file": "stl/collet-dot.stl",
+   "name": "Collet marker dot",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    -0.559,
+    -0.712,
+    -0.425
+   ],
+   "bbox": [
+    3.3,
+    3.3,
+    4.0
+   ]
+  },
+  {
+   "file": "stl/phone-mount-r.stl",
+   "name": "Phone mount R",
+   "group": "case",
+   "process": "print",
+   "color": "#e8590c",
+   "explode": [
+    0.963,
+    -0.271,
+    0.002
+   ],
+   "bbox": [
+    45.0,
+    46.0,
+    87.0
+   ]
+  },
+  {
+   "file": "stl/phone-r.stl",
+   "name": "Phone R (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2c2c30",
+   "explode": [
+    0.632,
+    -0.775,
+    -0.003
+   ],
+   "bbox": [
+    10.2,
+    160.0,
+    76.0
+   ],
+   "fx": {
+    "screen": {
+     "text": "tilt cam",
+     "bg": "#101418",
+     "fg": "#ffffff",
+     "face": "+x"
+    }
+   }
+  },
+  {
+   "file": "stl/mount-screw-r.stl",
+   "name": "M5\u00d712 button head screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.904,
+    -0.153,
+    -0.399
+   ],
+   "bbox": [
+    9.5,
+    9.5,
+    14.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/mount-screw-r__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 1,
+    "name": "M5\u00d712 button head screw",
+    "unit_cost_usd": 0.179,
+    "mass_g": 3.0
+   }
+  },
+  {
+   "file": "stl/phone-mount-f.stl",
+   "name": "Phone mount F",
+   "group": "case",
+   "process": "print",
+   "color": "#e8590c",
+   "explode": [
+    -0.615,
+    -0.789,
+    0.002
+   ],
+   "bbox": [
+    109.0,
+    87.0,
+    87.0
+   ]
+  },
+  {
+   "file": "stl/phone-f.stl",
+   "name": "Phone F (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2c2c30",
+   "explode": [
+    -0.615,
+    -0.788,
+    -0.002
+   ],
+   "bbox": [
+    160.0,
+    10.2,
+    76.0
+   ],
+   "fx": {
+    "screen": {
+     "text": "tilt cam",
+     "bg": "#101418",
+     "fg": "#ffffff",
+     "face": "-y"
+    }
+   }
+  },
+  {
+   "file": "stl/mount-screw-f.stl",
+   "name": "M5\u00d712 button head screw (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.849,
+    -0.429,
+    -0.309
+   ],
+   "bbox": [
+    9.5,
+    9.5,
+    14.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/mount-screw-f__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 1,
+    "name": "M5\u00d712 button head screw",
+    "unit_cost_usd": 0.179,
+    "mass_g": 3.0
+   }
+  },
+  {
+   "file": "stl/grbl-controller-board.stl",
+   "name": "GRBL controller board",
+   "group": "component",
+   "process": "bought",
+   "color": "#202022",
+   "explode": [
+    -0.879,
+    -0.332,
+    -0.343
+   ],
+   "bbox": [
+    34.0,
+    100.0,
+    70.0
+   ]
+  },
+  {
+   "file": "stl/offline-controller-grbl-handheld.stl",
+   "name": "Offline controller (GRBL handheld)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2a2a2c",
+   "explode": [
+    0.757,
+    -0.512,
+    -0.405
+   ],
+   "bbox": [
+    60.0,
+    105.0,
+    22.0
+   ],
+   "fx": {
+    "screen": {
+     "text": "X 0.00\nY 0.00",
+     "bg": "#000000",
+     "fg": "#33ccff"
+    }
+   }
+  }
+ ],
+ "scene": "desk",
+ "wiring": {
+  "file": "wiring.json",
+  "wires": 18,
+  "parts": [
+   "24 V 5 A power adapter",
+   "775 spindle 24 V",
+   "GRBL controller board",
+   "Inline fuse holder 5 A + barrel screw-terminal pigtails",
+   "Offline controller (GRBL handheld)",
+   "X motor",
+   "Y motor",
+   "Z motor"
+  ],
+  "ok": true
+ },
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 30
+ }
+}

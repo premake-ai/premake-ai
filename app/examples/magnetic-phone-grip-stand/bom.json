@@ -1,0 +1,135 @@
+{
+ "parts": [
+  {
+   "name": "MagSafe magnet ring (DIY, accessory side, N52)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 6.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B0GGNLD59P",
+   "notes": "~54 OD / 46 ID x 3 mm, glued flush in the carrier groove (CA or epoxy); search 'magnet ring circle DIY compatible with MagSafe accessories side'"
+  },
+  {
+   "name": "Steel ring sticker for non-MagSafe phones (56/46/0.55 mm)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.7,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B0B2DN32F1",
+   "notes": "12-pack ~$8; one included per grip, sticks on the phone or case back"
+  },
+  {
+   "name": "M3\u00d730 button head screw",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.117,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x30+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M3x30 button head screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M3 washer",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.03,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+flat+washer&rh=p_85%3A2470955011",
+   "notes": "search: M3 flat washer",
+   "auto": "lib"
+  },
+  {
+   "name": "M3 nylock nut",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.09,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+nylon+lock+nut&rh=p_85%3A2470955011",
+   "notes": "search: M3 nylon lock nut",
+   "auto": "lib"
+  },
+  {
+   "name": "M2\u00d75 countersunk screw",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.074,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M2x5+countersunk+screw&rh=p_85%3A2470955011",
+   "notes": "search: M2x5 countersunk screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M2\u00d74 countersunk screw",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.073,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M2x4+countersunk+screw&rh=p_85%3A2470955011",
+   "notes": "search: M2x4 countersunk screw",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 8,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/leaf-knuckle.stl",
+   "name": "Leaf knuckle",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    9.5,
+    16.7,
+    6.4
+   ]
+  },
+  {
+   "file": "stl/magnet-carrier.stl",
+   "name": "Magnet carrier",
+   "grams": 8.6,
+   "print_hours": 0.43,
+   "bbox": [
+    62.4,
+    68.9,
+    11.4
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/leaf.stl",
+   "name": "Flip leaf",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 5052",
+    "thickness_mm": 2.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 20.0,
+    "bends": 0,
+    "minutes": 4.2,
+    "material_usd": 0.16
+   },
+   "bbox": [
+    62.1,
+    63.5,
+    2.1
+   ]
+  },
+  {
+   "file": "stl/base-plate.stl",
+   "name": "Base plate",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 5052",
+    "thickness_mm": 2.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 29.9,
+    "bends": 0,
+    "minutes": 4.3,
+    "material_usd": 0.24
+   },
+   "bbox": [
+    62.0,
+    62.1,
+    2.1
+   ]
+  }
+ ]
+}

@@ -1,0 +1,166 @@
+{
+ "parts": [
+  {
+   "name": "Meat probe, 2.5 mm plug",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 9.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/Upgraded-Replacement-Thermopro-Thermometers-TP-07S/dp/B0B5TPRRSL",
+   "notes": "ThermoPro-compatible replacement probe: ~100k NTC, 2.5 mm plug, 0-300 C, ~1.2 m steel-braid cable. Calibrate once in ice water + boiling water (web page)."
+  },
+  {
+   "name": "2.5 mm stereo panel jack",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.7,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 2.5mm stereo panel mount jack (Philmore 666J type: 15/64 in hole, panel up to 0.075 in)"
+  },
+  {
+   "name": "TP4056 USB-C charger",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.8,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: TP4056 USB-C protection (the 6-pad version with DW01 battery protection, OUT+/OUT-)"
+  },
+  {
+   "name": "18650 holder, 1 cell",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 18650 battery holder 1 slot with leads (77 x 21 x 19)"
+  },
+  {
+   "name": "12 mm push button",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 12mm momentary push button metal waterproof (12 mm hole)"
+  },
+  {
+   "name": "Active buzzer 3 V, 12 mm",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.3,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 3V active buzzer 12mm (12 x 9.5 mm, ~25 mA)"
+  },
+  {
+   "name": "100k 1% resistor",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 1% metal film resistor assortment (probe divider)"
+  },
+  {
+   "name": "470k resistor",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "battery voltage divider, from the same assortment"
+  },
+  {
+   "name": "100nF ceramic capacitor",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 100nF ceramic capacitor (ADC filter on probe and battery sense)"
+  },
+  {
+   "name": "Neodymium magnet 10 x 3 mm",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.15,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 10x3mm neodymium magnets; CA-glue into the bottom pockets"
+  },
+  {
+   "name": "Silicone hookup wire 26 AWG",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 26 AWG silicone wire kit; ~1 m used per unit"
+  },
+  {
+   "name": "ESP32-C3 SuperMini",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=ESP32-C3+SuperMini&rh=p_85%3A2470955011",
+   "notes": "search: ESP32-C3 SuperMini",
+   "auto": "lib"
+  },
+  {
+   "name": "0.96\" OLED display (SSD1306)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 3.5,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=0.96+inch+OLED+SSD1306+I2C&rh=p_85%3A2470955011",
+   "notes": "search: 0.96 inch OLED SSD1306 I2C",
+   "auto": "lib"
+  },
+  {
+   "name": "18650 Li-ion cell",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=18650+battery+protected+3000mAh&rh=p_85%3A2470955011",
+   "notes": "search: 18650 battery protected 3000mAh",
+   "auto": "lib"
+  },
+  {
+   "name": "M2\u00d75 self-tapping screw for plastic",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.044,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M2+x+5mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M2 x 5mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d710 self-tapping screw for plastic",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.059,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+x+10mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M3 x 10mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 45,
+ "kit_ok": true,
+ "needs_soldering": true,
+ "soldering_reason": "The probe jack, button, buzzer, divider resistors and battery leads are soldered straight to the ESP32-C3 so everything fits in the pocket-sized case.",
+ "printed": [
+  {
+   "file": "stl/base.stl",
+   "name": "Base",
+   "grams": 34.4,
+   "print_hours": 1.72,
+   "bbox": [
+    104.0,
+    60.0,
+    31.5
+   ]
+  },
+  {
+   "file": "stl/lid.stl",
+   "name": "Lid",
+   "grams": 11.7,
+   "print_hours": 0.58,
+   "bbox": [
+    104.0,
+    60.0,
+    8.8
+   ]
+  }
+ ],
+ "fabricated": []
+}

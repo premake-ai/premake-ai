@@ -1,0 +1,12 @@
+{
+ "title": "Rock Climbing Hold",
+ "description": "Jug-style climbing hold with finger scoop, mounts to standard 3/8\"-16 T-nut climbing wall hardware.",
+ "creator": "Premake",
+ "tags": [
+  "climbing",
+  "sports",
+  "wall mount"
+ ],
+ "created": "2026-10-28T20:42:34.438Z",
+ "demo": true
+}

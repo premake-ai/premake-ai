@@ -1,0 +1,172 @@
+{
+ "t": 1793677095.825547,
+ "title": "Magnetic Barbell Rep Tracker",
+ "parts": [
+  {
+   "file": "stl/pod-body.stl",
+   "name": "Pod body",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    62.0,
+    37.0,
+    21.0
+   ]
+  },
+  {
+   "file": "stl/bezel.stl",
+   "name": "Bezel",
+   "group": "case",
+   "process": "print",
+   "color": "#e8542a",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    62.0,
+    31.0,
+    2.5
+   ]
+  },
+  {
+   "file": "stl/m5stickc-plus2.stl",
+   "name": "M5StickC PLUS2",
+   "group": "component",
+   "process": "bought",
+   "color": "#f28c1e",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    48.0,
+    24.0,
+    13.5
+   ],
+   "cable": {
+    "type": "usb-c",
+    "at": [
+     -31.0,
+     0.0,
+     40.9
+    ],
+    "dir": [
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "length_mm": 300.0
+   },
+   "fx": {
+    "screen": {
+     "text": "REP 5\n0.62 m/s",
+     "bg": "#000000",
+     "fg": "#7cff6b"
+    }
+   }
+  },
+  {
+   "file": "stl/magnet-10x3-n52.stl",
+   "name": "Magnet 10x3 N52",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f98",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    46.0,
+    34.5,
+    3.0
+   ],
+   "material": "steel"
+  },
+  {
+   "file": "stl/hook-and-loop-strap-20-mm.stl",
+   "name": "Hook-and-loop strap 20 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    20.0,
+    41.0,
+    34.3
+   ]
+  },
+  {
+   "file": "stl/m2-5-8-self-tapping-screw-for-plastic-4.stl",
+   "name": "M2.5\u00d78 self-tapping screw for plastic \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    60.0,
+    25.0,
+    9.9
+   ],
+   "subparts": [
+    {
+     "file": "stl/m2-5-8-self-tapping-screw-for-plastic-4__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 4,
+    "name": "M2.5\u00d78 self-tapping screw for plastic",
+    "unit_cost_usd": 0.052,
+    "mass_g": 0.5
+   }
+  },
+  {
+   "file": "stl/barbell-shaft-yours.stl",
+   "name": "Barbell shaft (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa0a6",
+   "explode": [
+    0.0,
+    0.001,
+    -1.0
+   ],
+   "bbox": [
+    300.0,
+    28.0,
+    28.0
+   ],
+   "material": "steel"
+  }
+ ],
+ "scene": "floor",
+ "wiring": {
+  "file": "wiring.json",
+  "wires": 1,
+  "parts": [
+   "M5StickC PLUS2",
+   "USB-C cable (included with M5StickC PLUS2)"
+  ],
+  "ok": true
+ }
+}

@@ -1,0 +1,349 @@
+{
+ "t": 1793654990.927553,
+ "title": "Sticker Printer Box",
+ "parts": [
+  {
+   "file": "stl/case.stl",
+   "name": "Case",
+   "group": "case",
+   "process": "print",
+   "color": "#ffd23f",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    122.0,
+    100.0,
+    88.0
+   ]
+  },
+  {
+   "file": "stl/base.stl",
+   "name": "Base",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b382",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    122.0,
+    100.0,
+    3.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/thermal-printer-58-mm.stl",
+   "name": "Thermal printer 58 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2b2b",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    111.0,
+    65.0,
+    58.0
+   ]
+  },
+  {
+   "file": "stl/push-button-24-mm.stl",
+   "name": "Push button 24 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#ff4d6d",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    28.0,
+    28.0,
+    32.0
+   ]
+  },
+  {
+   "file": "stl/inmp441-mic.stl",
+   "name": "INMP441 mic",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f6feb",
+   "explode": [
+    0.0,
+    -0.983,
+    0.183
+   ],
+   "bbox": [
+    14.0,
+    2.0,
+    14.0
+   ]
+  },
+  {
+   "file": "stl/usb-c-pd-trigger.stl",
+   "name": "USB-C PD trigger",
+   "group": "component",
+   "process": "bought",
+   "color": "#2d6a4f",
+   "explode": [
+    0.0,
+    0.634,
+    -0.773
+   ],
+   "bbox": [
+    10.0,
+    28.0,
+    4.0
+   ]
+  },
+  {
+   "file": "stl/esp32-s3-devkitc-1.stl",
+   "name": "ESP32-S3-DevKitC-1",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    0.211,
+    -0.452,
+    -0.867
+   ],
+   "bbox": [
+    63.5,
+    25.5,
+    13.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/esp32-s3-devkitc-1__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-s3-devkitc-1__1.stl",
+     "color": "#232a36",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-s3-devkitc-1__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-s3-devkitc-1__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32-s3-devkitc-1__4.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-s3-devkitc-1__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-s3-devkitc-1__6.stl",
+     "color": "#f3eccb",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/esp32-s3-devkitc-1__7.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-s3-devkitc-1__8.stl",
+     "color": "#b48a5c",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-s3-devkitc-1__9.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    }
+   ],
+   "lib": {
+    "key": "esp32_s3_devkitc",
+    "qty": 1,
+    "name": "ESP32-S3-DevKitC-1",
+    "unit_cost_usd": 14.0,
+    "mass_g": 12.0
+   }
+  },
+  {
+   "file": "stl/mp1584-mini-buck-converter.stl",
+   "name": "MP1584 mini buck converter",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d5e3b",
+   "explode": [
+    -0.547,
+    0.208,
+    -0.811
+   ],
+   "bbox": [
+    22.0,
+    17.0,
+    4.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/mp1584-mini-buck-converter__0.stl",
+     "color": "#1d5e3b",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__1.stl",
+     "color": "#26282c",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__3.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__4.stl",
+     "color": "#2a6ad0",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__5.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__6.stl",
+     "color": "#b48a5c",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__7.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    }
+   ],
+   "lib": {
+    "key": "mp1584",
+    "qty": 1,
+    "name": "MP1584 mini buck converter",
+    "unit_cost_usd": 1.2,
+    "mass_g": 2.0
+   }
+  },
+  {
+   "file": "stl/5-mm-led-red.stl",
+   "name": "5 mm LED (red)",
+   "group": "component",
+   "process": "bought",
+   "color": "#e8483d",
+   "explode": [
+    0.0,
+    -0.983,
+    -0.185
+   ],
+   "bbox": [
+    5.8,
+    31.8,
+    5.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/5-mm-led-red__0.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/5-mm-led-red__1.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "led_5mm",
+    "qty": 1,
+    "name": "5 mm LED (red)",
+    "unit_cost_usd": 0.05,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m3-heat-set-insert-4.stl",
+   "name": "M3 heat-set insert \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    0.0,
+    0.032,
+    -0.999
+   ],
+   "bbox": [
+    108.6,
+    86.6,
+    5.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-heat-set-insert-4__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "insert",
+    "qty": 4,
+    "name": "M3 heat-set insert",
+    "unit_cost_usd": 0.12,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m3-10-button-head-screw-4.stl",
+   "name": "M3\u00d710 button head screw \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    0.03,
+    -1.0
+   ],
+   "bbox": [
+    109.7,
+    87.7,
+    11.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-button-head-screw-4__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M3\u00d710 button head screw",
+    "unit_cost_usd": 0.099,
+    "mass_g": 0.8
+   }
+  }
+ ]
+}

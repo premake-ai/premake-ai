@@ -1,0 +1,91 @@
+{
+ "t": 1793242617.570527,
+ "title": "Handlebar phone mount",
+ "parts": [
+  {
+   "file": "stl/phone-cradle.stl",
+   "name": "Phone cradle",
+   "group": "case",
+   "process": "print",
+   "color": "#3d405b",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    94.1,
+    112.3,
+    59.9
+   ]
+  },
+  {
+   "file": "stl/bar-saddle.stl",
+   "name": "Bar saddle",
+   "group": "case",
+   "process": "print",
+   "color": "#81b29a",
+   "explode": [
+    0.0,
+    0.0,
+    0.2
+   ],
+   "bbox": [
+    30.0,
+    53.0,
+    35.6
+   ]
+  },
+  {
+   "file": "stl/bar-strap-tpu.stl",
+   "name": "Bar strap (TPU)",
+   "group": "case",
+   "process": "print",
+   "color": "#e07a5f",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    18.0,
+    72.0,
+    30.2
+   ]
+  },
+  {
+   "file": "stl/phone-band-tpu.stl",
+   "name": "Phone band (TPU)",
+   "group": "case",
+   "process": "print",
+   "color": "#e07a5f",
+   "explode": [
+    0.0,
+    -0.4,
+    1.0
+   ],
+   "bbox": [
+    97.0,
+    13.7,
+    7.1
+   ]
+  },
+  {
+   "file": "stl/handlebar-not-included.stl",
+   "name": "Handlebar (not included)",
+   "group": "component",
+   "process": "bought",
+   "color": "#b0b4ba",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    220.0,
+    31.8,
+    31.8
+   ]
+  }
+ ]
+}

@@ -1,0 +1,540 @@
+{
+ "parts": [],
+ "assembly_minutes": 0,
+ "kit_ok": true,
+ "needs_soldering": false,
+ "printed": [
+  {
+   "file": "stl/pad-carriage.stl",
+   "name": "Pad carriage",
+   "grams": 110.4,
+   "print_hours": 5.52,
+   "bbox": [
+    70.0,
+    36.0,
+    160.0
+   ]
+  },
+  {
+   "file": "stl/pad-carriage-2.stl",
+   "name": "Pad carriage",
+   "grams": 110.4,
+   "print_hours": 5.52,
+   "bbox": [
+    70.0,
+    36.0,
+    160.0
+   ]
+  },
+  {
+   "file": "stl/yoke-1.stl",
+   "name": "Spring yoke",
+   "grams": 66.2,
+   "print_hours": 3.31,
+   "bbox": [
+    104.0,
+    30.0,
+    32.0
+   ]
+  },
+  {
+   "file": "stl/spring-park-bar.stl",
+   "name": "Spring park bar",
+   "grams": 20.6,
+   "print_hours": 1.03,
+   "bbox": [
+    150.0,
+    16.0,
+    30.5
+   ]
+  },
+  {
+   "file": "stl/hip-pulley-block.stl",
+   "name": "Hip pulley block",
+   "grams": 154.8,
+   "print_hours": 7.74,
+   "bbox": [
+    150.0,
+    73.0,
+    105.0
+   ]
+  },
+  {
+   "file": "stl/front-pulley-block.stl",
+   "name": "Front pulley block",
+   "grams": 200.4,
+   "print_hours": 10.02,
+   "bbox": [
+    150.0,
+    65.0,
+    82.0
+   ]
+  },
+  {
+   "file": "stl/yoke1.stl",
+   "name": "Spring yoke",
+   "grams": 66.2,
+   "print_hours": 3.31,
+   "bbox": [
+    104.0,
+    30.0,
+    32.0
+   ]
+  },
+  {
+   "file": "stl/spring-park-bar-2.stl",
+   "name": "Spring park bar",
+   "grams": 20.6,
+   "print_hours": 1.03,
+   "bbox": [
+    150.0,
+    16.0,
+    30.5
+   ]
+  },
+  {
+   "file": "stl/hip-pulley-block-2.stl",
+   "name": "Hip pulley block",
+   "grams": 154.8,
+   "print_hours": 7.74,
+   "bbox": [
+    150.0,
+    73.0,
+    105.0
+   ]
+  },
+  {
+   "file": "stl/front-pulley-block-2.stl",
+   "name": "Front pulley block",
+   "grams": 200.4,
+   "print_hours": 10.02,
+   "bbox": [
+    150.0,
+    65.0,
+    82.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/inner-rail.stl",
+   "name": "Inner rail",
+   "process": "extrusion",
+   "params": {
+    "profile": "2040",
+    "length_mm": 1200.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1200.0,
+    "minutes": 5.0,
+    "material_usd": 12.0
+   },
+   "bbox": [
+    20.0,
+    1200.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/outer-rail.stl",
+   "name": "Outer rail",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 1200.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1200.0,
+    "minutes": 5.0,
+    "material_usd": 7.2
+   },
+   "bbox": [
+    20.0,
+    1200.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/end-crossbar.stl",
+   "name": "End crossbar",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 800.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 800.0,
+    "minutes": 5.0,
+    "material_usd": 4.8
+   },
+   "bbox": [
+    800.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/upright.stl",
+   "name": "Upright",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 350.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 350.0,
+    "minutes": 5.0,
+    "material_usd": 2.1
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    350.0
+   ]
+  },
+  {
+   "file": "stl/inner-rail-2.stl",
+   "name": "Inner rail",
+   "process": "extrusion",
+   "params": {
+    "profile": "2040",
+    "length_mm": 1200.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1200.0,
+    "minutes": 5.0,
+    "material_usd": 12.0
+   },
+   "bbox": [
+    20.0,
+    1200.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/outer-rail-2.stl",
+   "name": "Outer rail",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 1200.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1200.0,
+    "minutes": 5.0,
+    "material_usd": 7.2
+   },
+   "bbox": [
+    20.0,
+    1200.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/end-crossbar-2.stl",
+   "name": "End crossbar",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 800.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 800.0,
+    "minutes": 5.0,
+    "material_usd": 4.8
+   },
+   "bbox": [
+    800.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/upright-2.stl",
+   "name": "Upright",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 350.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 350.0,
+    "minutes": 5.0,
+    "material_usd": 2.1
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    350.0
+   ]
+  },
+  {
+   "file": "stl/foot-bar.stl",
+   "name": "Foot bar",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 550.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 550.0,
+    "minutes": 5.0,
+    "material_usd": 3.3
+   },
+   "bbox": [
+    550.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/foot-bar-2.stl",
+   "name": "Foot bar",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 550.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 550.0,
+    "minutes": 5.0,
+    "material_usd": 3.3
+   },
+   "bbox": [
+    550.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/foot-plate-lower.stl",
+   "name": "Foot plate lower",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1749.3,
+    "area_cm2": 1432.9,
+    "minutes": 4.6,
+    "material_usd": 10.32
+   },
+   "bbox": [
+    560.0,
+    280.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/foot-plate-top.stl",
+   "name": "Foot plate top",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1841.7,
+    "area_cm2": 1432.3,
+    "minutes": 4.8,
+    "material_usd": 10.31
+   },
+   "bbox": [
+    560.0,
+    280.0,
+    5.6
+   ]
+  },
+  {
+   "file": "stl/gusset.stl",
+   "name": "Gusset",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1261.7,
+    "area_cm2": 314.6,
+    "minutes": 3.6,
+    "material_usd": 2.27
+   },
+   "bbox": [
+    5.5,
+    150.0,
+    373.0
+   ]
+  },
+  {
+   "file": "stl/gusset-2.stl",
+   "name": "Gusset",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1261.7,
+    "area_cm2": 314.6,
+    "minutes": 3.6,
+    "material_usd": 2.27
+   },
+   "bbox": [
+    5.5,
+    150.0,
+    373.0
+   ]
+  },
+  {
+   "file": "stl/hipbar.stl",
+   "name": "Hip bar",
+   "process": "extrusion",
+   "params": {
+    "profile": "2040",
+    "length_mm": 650.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 650.0,
+    "minutes": 5.0,
+    "material_usd": 6.5
+   },
+   "bbox": [
+    650.0,
+    20.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/side-skirt.stl",
+   "name": "Side skirt",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1024.8,
+    "area_cm2": 341.9,
+    "minutes": 3.1,
+    "material_usd": 2.46
+   },
+   "bbox": [
+    5.5,
+    411.0,
+    91.0
+   ]
+  },
+  {
+   "file": "stl/side-skirt-2.stl",
+   "name": "Side skirt",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1026.8,
+    "area_cm2": 342.7,
+    "minutes": 3.1,
+    "material_usd": 2.47
+   },
+   "bbox": [
+    5.5,
+    412.0,
+    91.0
+   ]
+  },
+  {
+   "file": "stl/side-skirt-3.stl",
+   "name": "Side skirt",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1024.8,
+    "area_cm2": 341.9,
+    "minutes": 3.1,
+    "material_usd": 2.46
+   },
+   "bbox": [
+    5.5,
+    411.0,
+    91.0
+   ]
+  },
+  {
+   "file": "stl/side-skirt-4.stl",
+   "name": "Side skirt",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1024.8,
+    "area_cm2": 341.9,
+    "minutes": 3.1,
+    "material_usd": 2.46
+   },
+   "bbox": [
+    5.5,
+    411.0,
+    91.0
+   ]
+  },
+  {
+   "file": "stl/side-skirt-5.stl",
+   "name": "Side skirt",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1026.8,
+    "area_cm2": 342.7,
+    "minutes": 3.1,
+    "material_usd": 2.47
+   },
+   "bbox": [
+    5.5,
+    412.0,
+    91.0
+   ]
+  },
+  {
+   "file": "stl/side-skirt-6.stl",
+   "name": "Side skirt",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1024.8,
+    "area_cm2": 341.9,
+    "minutes": 3.1,
+    "material_usd": 2.46
+   },
+   "bbox": [
+    5.5,
+    411.0,
+    91.0
+   ]
+  }
+ ]
+}

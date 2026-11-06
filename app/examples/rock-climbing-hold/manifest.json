@@ -1,0 +1,38 @@
+{
+ "t": 1793222964.348594,
+ "title": "Rock climbing hold",
+ "parts": [
+  {
+   "file": "stl/climbing-hold.stl",
+   "name": "Climbing Hold",
+   "group": "case",
+   "color": "#e8913a",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    154.2,
+    104.1,
+    69.2
+   ]
+  },
+  {
+   "file": "stl/3-8-16-t-nuts.stl",
+   "name": "3/8\"-16 T-Nuts",
+   "group": "component",
+   "color": "#888888",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    102.0,
+    42.0,
+    12.0
+   ]
+  }
+ ]
+}

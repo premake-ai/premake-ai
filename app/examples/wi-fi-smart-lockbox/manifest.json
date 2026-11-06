@@ -1,0 +1,108 @@
+{
+ "t": 1793253781.900373,
+ "title": "Safe that is controllabe via wifi",
+ "parts": [
+  {
+   "file": "stl/base.stl",
+   "name": "Base",
+   "group": "case",
+   "process": "print",
+   "color": "#30343a",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    195.0,
+    110.0,
+    47.0
+   ]
+  },
+  {
+   "file": "stl/lid.stl",
+   "name": "Lid",
+   "group": "case",
+   "process": "print",
+   "color": "#4a5058",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    195.0,
+    110.0,
+    26.0
+   ]
+  },
+  {
+   "file": "stl/sg90-servo.stl",
+   "name": "SG90 servo",
+   "group": "component",
+   "process": "bought",
+   "color": "#2060c0",
+   "explode": [
+    0.987,
+    -0.155,
+    -0.052
+   ],
+   "bbox": [
+    13.0,
+    23.0,
+    29.0
+   ]
+  },
+  {
+   "file": "stl/esp32-c3-supermini.stl",
+   "name": "ESP32-C3 SuperMini",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d5e2a",
+   "explode": [
+    0.964,
+    0.112,
+    -0.241
+   ],
+   "bbox": [
+    18.0,
+    23.3,
+    4.8
+   ]
+  },
+  {
+   "file": "stl/hinge-pin-3-mm.stl",
+   "name": "Hinge pin 3 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#b0b0b0",
+   "explode": [
+    0.0,
+    0.952,
+    0.305
+   ],
+   "bbox": [
+    185.0,
+    3.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/phones-reference.stl",
+   "name": "Phones (reference)",
+   "group": "component",
+   "process": "bought",
+   "color": "#888888",
+   "explode": [
+    -0.319,
+    -0.319,
+    -0.893
+   ],
+   "bbox": [
+    150.0,
+    76.0,
+    18.0
+   ]
+  }
+ ]
+}

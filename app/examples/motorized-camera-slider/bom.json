@@ -1,0 +1,18 @@
+{
+ "parts": [
+  {"name": "V-slot solid wheel kit (24 mm wheel, 625 bearings, 2 eccentric + 2 plain spacers)", "qty_per_unit": 4, "unit_cost_usd": 2.0, "supplier": "Amazon", "url": "", "notes": "search: V-slot wheel kit eccentric spacer 2020; M5 screws/nylocks listed separately"},
+  {"name": "GT2 belt 6 mm, 1.4 m cut from 5 m roll", "qty_per_unit": 1, "unit_cost_usd": 2.0, "supplier": "Amazon", "url": "", "notes": "search: GT2 timing belt 6mm 5m"},
+  {"name": "GT2 toothless idler 20T, 5 mm bore", "qty_per_unit": 1, "unit_cost_usd": 1.5, "supplier": "Amazon", "url": "", "notes": "search: GT2 idler 20 tooth 5mm bore toothless"},
+  {"name": "1/4\"-20 hex nut (camera stud + 2 tripod mounts)", "qty_per_unit": 3, "unit_cost_usd": 0.1, "supplier": "Hardware store", "url": "", "notes": "7/16\" across flats, 7/32\" thick"},
+  {"name": "1/4\"-20 x 3/4\" camera stud (set screw)", "qty_per_unit": 1, "unit_cost_usd": 0.5, "supplier": "Hardware store", "url": "", "notes": "lock with threadlocker; ball head screws on top"},
+  {"name": "Micro limit switch KW10 (lever)", "qty_per_unit": 1, "unit_cost_usd": 0.4, "supplier": "Amazon", "url": "", "notes": "search: KW10 micro limit switch lever"},
+  {"name": "M2 x 10 self-tapping screw", "qty_per_unit": 2, "unit_cost_usd": 0.05, "supplier": "Amazon", "url": "", "notes": "fixes the limit switch to the printed arm"},
+  {"name": "12 V 2 A plug-in adapter, 5.5 x 2.1 (UL listed)", "qty_per_unit": 1, "unit_cost_usd": 9.0, "supplier": "Amazon", "url": "", "notes": "search: 12V 2A power supply 5.5x2.1"},
+  {"name": "Inline 5x20 fuse holder + 1.5 A fuse", "qty_per_unit": 1, "unit_cost_usd": 1.5, "supplier": "Amazon", "url": "", "notes": "on the +12 V lead inside the box"},
+  {"name": "100 uF 35 V electrolytic capacitor", "qty_per_unit": 1, "unit_cost_usd": 0.1, "supplier": "Amazon", "url": "", "notes": "across TMC2209 VM/GND"},
+  {"name": "Dupont jumper wires F-F + 22 AWG hookup wire", "qty_per_unit": 1, "unit_cost_usd": 1.0, "supplier": "Amazon", "url": "", "notes": "share of a kit"},
+  {"name": "Zip ties 100 mm", "qty_per_unit": 2, "unit_cost_usd": 0.03, "supplier": "Amazon", "url": "", "notes": "fold-back belt ends at the carriage"}
+ ],
+ "assembly_minutes": 60,
+ "kit_ok": false
+}

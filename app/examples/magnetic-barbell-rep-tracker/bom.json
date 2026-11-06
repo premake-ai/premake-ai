@@ -1,0 +1,81 @@
+{
+ "parts": [
+  {
+   "name": "M5StickC PLUS2",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 25.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B0F3XQ22XS",
+   "notes": "M5Stack M5StickC PLUS2: ESP32-PICO-V3-02, MPU6886 6-axis IMU, 200 mAh LiPo with built-in USB-C charging, 1.14in screen, 3 buttons. Comes with a USB-C cable. Search 'M5StickC PLUS2' if this listing is out of stock."
+  },
+  {
+   "name": "Magnet 10x3 N52",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.18,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "10 x 3 mm N52 neodymium disc magnets (pack of 50, ~$9). Press into the rail pockets with a drop of super glue, same pole facing out on all four."
+  },
+  {
+   "name": "Hook-and-loop strap 20 mm",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.6,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "20 mm x 300 mm hook-and-loop cinch strap (pack of ~20). Threads through the tunnel under the pod and wraps a 25-50 mm bar or dumbbell handle."
+  },
+  {
+   "name": "Super glue (CA) gel",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Share of a small tube of CA gel super glue, for the 4 magnets."
+  },
+  {
+   "name": "USB-C cable (included with M5StickC PLUS2)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Ships in the M5StickC PLUS2 box. Charge from any 5 V USB charger."
+  },
+  {
+   "name": "M2.5\u00d78 self-tapping screw for plastic",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.052,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M2.5+x+8mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M2.5 x 8mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 12,
+ "kit_ok": true,
+ "needs_soldering": false,
+ "printed": [
+  {
+   "file": "stl/pod-body.stl",
+   "name": "Pod body",
+   "grams": 13.1,
+   "print_hours": 0.65,
+   "bbox": [
+    62.0,
+    37.0,
+    21.0
+   ]
+  },
+  {
+   "file": "stl/bezel.stl",
+   "name": "Bezel",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    62.0,
+    31.0,
+    2.5
+   ]
+  }
+ ],
+ "fabricated": []
+}

@@ -1,0 +1,2183 @@
+{
+ "t": 1793921208.986776,
+ "title": "Desktop CNC Router 1610 PRO",
+ "parts": [
+  {
+   "file": "stl/front-end-plate.stl",
+   "name": "Front end plate",
+   "group": "case",
+   "process": "laser",
+   "color": "#1b1b1b",
+   "explode": [
+    -0.081,
+    -0.698,
+    -0.711
+   ],
+   "bbox": [
+    250.0,
+    10.0,
+    46.0
+   ]
+  },
+  {
+   "file": "stl/rear-end-plate.stl",
+   "name": "Rear end plate",
+   "group": "case",
+   "process": "laser",
+   "color": "#1b1b1b",
+   "explode": [
+    -0.092,
+    0.58,
+    -0.809
+   ],
+   "bbox": [
+    250.0,
+    10.0,
+    46.0
+   ]
+  },
+  {
+   "file": "stl/left-base-rail.stl",
+   "name": "Left base rail",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#c4c8cc",
+   "explode": [
+    -0.706,
+    -0.095,
+    -0.702
+   ],
+   "bbox": [
+    20.0,
+    210.0,
+    40.0
+   ],
+   "material": "aluminium",
+   "step": "step/left-base-rail.step"
+  },
+  {
+   "file": "stl/right-base-rail.stl",
+   "name": "Right base rail",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#c4c8cc",
+   "explode": [
+    0.608,
+    -0.107,
+    -0.787
+   ],
+   "bbox": [
+    20.0,
+    210.0,
+    40.0
+   ],
+   "material": "aluminium",
+   "step": "step/right-base-rail.step"
+  },
+  {
+   "file": "stl/left-y-rod.stl",
+   "name": "Left Y rod",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8dadc",
+   "explode": [
+    -0.485,
+    -0.117,
+    -0.867
+   ],
+   "bbox": [
+    10.0,
+    210.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/right-y-rod.stl",
+   "name": "Right Y rod",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8dadc",
+   "explode": [
+    0.308,
+    -0.127,
+    -0.943
+   ],
+   "bbox": [
+    10.0,
+    210.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/y-lead-screw.stl",
+   "name": "Y lead screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8dadc",
+   "explode": [
+    -0.113,
+    -0.215,
+    -0.97
+   ],
+   "bbox": [
+    8.0,
+    202.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/y-coupler.stl",
+   "name": "Y coupler",
+   "group": "component",
+   "process": "bought",
+   "color": "#c4c8cc",
+   "explode": [
+    -0.099,
+    0.506,
+    -0.857
+   ],
+   "bbox": [
+    19.0,
+    25.0,
+    19.0
+   ]
+  },
+  {
+   "file": "stl/608-bearing.stl",
+   "name": "608 bearing",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9cdd2",
+   "explode": [
+    -0.781,
+    -0.304,
+    -0.545
+   ],
+   "bbox": [
+    140.5,
+    200.7,
+    173.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/608-bearing__0.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/608-bearing__1.stl",
+     "color": "#a9aeb5",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/608-bearing__2.stl",
+     "color": "#8e939a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bearing_608",
+    "qty": 2,
+    "name": "608ZZ bearing",
+    "unit_cost_usd": 0.6,
+    "mass_g": 17.4
+   }
+  },
+  {
+   "file": "stl/y-motor.stl",
+   "name": "Y motor",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    -0.089,
+    0.618,
+    -0.781
+   ],
+   "bbox": [
+    42.3,
+    58.6,
+    47.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/y-motor__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/y-motor__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/y-motor__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/y-motor__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/y-motor__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/y-motor__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 34 mm",
+    "unit_cost_usd": 9.0,
+    "mass_g": 230.0
+   }
+  },
+  {
+   "file": "stl/y-motor-screw-m3x14.stl",
+   "name": "Y motor screw M3x14",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.093,
+    0.588,
+    -0.804
+   ],
+   "bbox": [
+    36.5,
+    17.0,
+    36.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/y-motor-screw-m3x14__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 4,
+    "name": "M3\u00d714 socket head screw",
+    "unit_cost_usd": 0.103,
+    "mass_g": 1.3
+   }
+  },
+  {
+   "file": "stl/end-plate-screw-m5x16.stl",
+   "name": "End plate screw M5x16",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.115,
+    -0.134,
+    -0.984
+   ],
+   "bbox": [
+    233.5,
+    240.0,
+    28.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/end-plate-screw-m5x16__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 8,
+    "name": "M5\u00d716 socket head screw",
+    "unit_cost_usd": 0.186,
+    "mass_g": 4.3
+   }
+  },
+  {
+   "file": "stl/bed-t-slot-bed.stl",
+   "name": "T-slot bed",
+   "group": "component",
+   "process": "bought",
+   "color": "#c4c8cc",
+   "explode": [
+    -0.146,
+    -0.143,
+    -0.979
+   ],
+   "bbox": [
+    180.0,
+    100.0,
+    15.0
+   ],
+   "material": "aluminium",
+   "step": "step/bed-t-slot-bed.step"
+  },
+  {
+   "file": "stl/bed-y-slider-block-sc10uu-x4.stl",
+   "name": "Y slider block (SC10UU) x4",
+   "group": "component",
+   "process": "bought",
+   "color": "#c4c8cc",
+   "explode": [
+    -0.118,
+    -0.116,
+    -0.986
+   ],
+   "bbox": [
+    147.0,
+    100.0,
+    34.0
+   ],
+   "material": "aluminium",
+   "step": "step/bed-y-slider-block-sc10uu-x4.step"
+  },
+  {
+   "file": "stl/bed-y-nut-mount.stl",
+   "name": "Y nut mount",
+   "group": "case",
+   "process": "print",
+   "color": "#2a2a2a",
+   "explode": [
+    -0.119,
+    -0.117,
+    -0.986
+   ],
+   "bbox": [
+    30.0,
+    20.0,
+    32.0
+   ]
+  },
+  {
+   "file": "stl/bed-y-anti-backlash-nut.stl",
+   "name": "Y anti-backlash nut",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9a24a",
+   "explode": [
+    -0.115,
+    -0.091,
+    -0.989
+   ],
+   "bbox": [
+    22.0,
+    32.5,
+    22.0
+   ]
+  },
+  {
+   "file": "stl/bed-phone-mount-front.stl",
+   "name": "Phone mount (front)",
+   "group": "case",
+   "process": "print",
+   "color": "#f2f2f2",
+   "explode": [
+    -0.12,
+    -0.562,
+    -0.818
+   ],
+   "bbox": [
+    60.0,
+    29.0,
+    28.0
+   ]
+  },
+  {
+   "file": "stl/bed-phone-mount-side.stl",
+   "name": "Phone mount (side)",
+   "group": "case",
+   "process": "print",
+   "color": "#f2f2f2",
+   "explode": [
+    -0.733,
+    -0.097,
+    -0.674
+   ],
+   "bbox": [
+    29.0,
+    60.0,
+    28.0
+   ]
+  },
+  {
+   "file": "stl/bed-phone-looking-along-y-yours.stl",
+   "name": "Phone looking along Y (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2a3b49",
+   "explode": [
+    -0.147,
+    -0.741,
+    -0.655
+   ],
+   "bbox": [
+    147.6,
+    10.5,
+    72.3
+   ],
+   "ref_model": {
+    "key": "iphone_16",
+    "m": [
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.01
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -57.55
+     ],
+     [
+      -1.0,
+      0.0,
+      0.0,
+      86.5
+     ],
+     [
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "yours": true
+   }
+  },
+  {
+   "file": "stl/bed-phone-looking-along-x-yours.stl",
+   "name": "Phone looking along X (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2a3b49",
+   "explode": [
+    -0.862,
+    -0.109,
+    -0.495
+   ],
+   "bbox": [
+    10.5,
+    147.6,
+    72.3
+   ],
+   "ref_model": {
+    "key": "iphone_16",
+    "m": [
+     [
+      0.0,
+      1.0,
+      0.0,
+      -100.25
+     ],
+     [
+      -0.0,
+      0.0,
+      -1.0,
+      2.69
+     ],
+     [
+      -1.0,
+      0.0,
+      0.0,
+      86.5
+     ],
+     [
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "yours": true
+   }
+  },
+  {
+   "file": "stl/bed-mount-thumb-screw-m4x8.stl",
+   "name": "Mount thumb screw M4x8",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.438,
+    -0.284,
+    -0.853
+   ],
+   "bbox": [
+    93.0,
+    53.0,
+    12.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/bed-mount-thumb-screw-m4x8__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 2,
+    "name": "M4\u00d78 socket head screw",
+    "unit_cost_usd": 0.13,
+    "mass_g": 1.8
+   }
+  },
+  {
+   "file": "stl/left-gantry-plate.stl",
+   "name": "Left gantry plate",
+   "group": "case",
+   "process": "laser",
+   "color": "#1b1b1b",
+   "explode": [
+    -0.906,
+    0.385,
+    -0.175
+   ],
+   "bbox": [
+    10.0,
+    119.5,
+    250.0
+   ]
+  },
+  {
+   "file": "stl/right-gantry-plate.stl",
+   "name": "Right gantry plate",
+   "group": "case",
+   "process": "laser",
+   "color": "#1b1b1b",
+   "explode": [
+    0.861,
+    0.463,
+    -0.21
+   ],
+   "bbox": [
+    10.0,
+    119.5,
+    250.0
+   ]
+  },
+  {
+   "file": "stl/lower-x-rod.stl",
+   "name": "Lower X rod",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8dadc",
+   "explode": [
+    -0.233,
+    0.952,
+    -0.197
+   ],
+   "bbox": [
+    245.0,
+    10.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/upper-x-rod.stl",
+   "name": "Upper X rod",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8dadc",
+   "explode": [
+    -0.171,
+    0.7,
+    0.694
+   ],
+   "bbox": [
+    245.0,
+    10.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/lower-gantry-profile.stl",
+   "name": "Lower gantry profile",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#c4c8cc",
+   "explode": [
+    -0.163,
+    0.977,
+    -0.138
+   ],
+   "bbox": [
+    245.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium",
+   "step": "step/lower-gantry-profile.step"
+  },
+  {
+   "file": "stl/upper-gantry-profile.stl",
+   "name": "Upper gantry profile",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#c4c8cc",
+   "explode": [
+    -0.135,
+    0.805,
+    0.578
+   ],
+   "bbox": [
+    245.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium",
+   "step": "step/upper-gantry-profile.step"
+  },
+  {
+   "file": "stl/x-lead-screw.stl",
+   "name": "X lead screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8dadc",
+   "explode": [
+    -0.365,
+    0.865,
+    0.344
+   ],
+   "bbox": [
+    237.5,
+    8.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/x-coupler.stl",
+   "name": "X coupler",
+   "group": "component",
+   "process": "bought",
+   "color": "#c4c8cc",
+   "explode": [
+    0.826,
+    0.524,
+    0.208
+   ],
+   "bbox": [
+    24.5,
+    19.0,
+    19.0
+   ]
+  },
+  {
+   "file": "stl/x-motor.stl",
+   "name": "X motor",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    0.891,
+    0.419,
+    0.174
+   ],
+   "bbox": [
+    58.6,
+    47.7,
+    42.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/x-motor__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-motor__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/x-motor__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-motor__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-motor__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/x-motor__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 34 mm",
+    "unit_cost_usd": 9.0,
+    "mass_g": 230.0
+   }
+  },
+  {
+   "file": "stl/x-motor-screw-m3x14.stl",
+   "name": "X motor screw M3x14",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.867,
+    0.463,
+    0.184
+   ],
+   "bbox": [
+    17.0,
+    36.5,
+    36.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/x-motor-screw-m3x14__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 4,
+    "name": "M3\u00d714 socket head screw",
+    "unit_cost_usd": 0.103,
+    "mass_g": 1.3
+   }
+  },
+  {
+   "file": "stl/profile-end-screw-m5x16.stl",
+   "name": "Profile end screw M5x16",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.159,
+    0.949,
+    0.273
+   ],
+   "bbox": [
+    275.0,
+    8.5,
+    84.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/profile-end-screw-m5x16__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 4,
+    "name": "M5\u00d716 socket head screw",
+    "unit_cost_usd": 0.186,
+    "mass_g": 4.3
+   }
+  },
+  {
+   "file": "stl/gantry-foot-screw-m5x10.stl",
+   "name": "Gantry foot screw M5x10",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.109,
+    0.335,
+    -0.936
+   ],
+   "bbox": [
+    270.5,
+    54.5,
+    29.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/gantry-foot-screw-m5x10__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 8,
+    "name": "M5\u00d710 button head screw",
+    "unit_cost_usd": 0.176,
+    "mass_g": 2.7
+   }
+  },
+  {
+   "file": "stl/controller-case.stl",
+   "name": "Controller case",
+   "group": "case",
+   "process": "print",
+   "color": "#2a2a2a",
+   "explode": [
+    -0.49,
+    0.85,
+    0.193
+   ],
+   "bbox": [
+    90.0,
+    28.0,
+    96.0
+   ]
+  },
+  {
+   "file": "stl/grbl-controller-board.stl",
+   "name": "GRBL controller board",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f5f3a",
+   "explode": [
+    -0.505,
+    0.845,
+    0.175
+   ],
+   "bbox": [
+    76.0,
+    1.6,
+    66.0
+   ],
+   "material": "pcb"
+  },
+  {
+   "file": "stl/controller-cover.stl",
+   "name": "Controller cover",
+   "group": "case",
+   "process": "print",
+   "color": "#2a2a2a",
+   "explode": [
+    -0.445,
+    0.878,
+    0.175
+   ],
+   "bbox": [
+    90.0,
+    2.5,
+    96.0
+   ]
+  },
+  {
+   "file": "stl/board-screw-m3x6.stl",
+   "name": "Board screw M3x6",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.509,
+    0.842,
+    0.177
+   ],
+   "bbox": [
+    65.6,
+    8.2,
+    55.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/board-screw-m3x6__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 4,
+    "name": "M3\u00d76 self-tapping screw for plastic",
+    "unit_cost_usd": 0.057,
+    "mass_g": 0.6
+   }
+  },
+  {
+   "file": "stl/cover-screw-m3x10.stl",
+   "name": "Cover screw M3x10",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.453,
+    0.874,
+    0.178
+   ],
+   "bbox": [
+    83.6,
+    12.2,
+    89.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/cover-screw-m3x10__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 4,
+    "name": "M3\u00d710 self-tapping screw for plastic",
+    "unit_cost_usd": 0.059,
+    "mass_g": 0.8
+   }
+  },
+  {
+   "file": "stl/case-mount-screw-m5x8.stl",
+   "name": "Case mount screw M5x8",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.529,
+    0.823,
+    0.208
+   ],
+   "bbox": [
+    59.5,
+    10.8,
+    85.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/case-mount-screw-m5x8__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M5\u00d78 button head screw",
+    "unit_cost_usd": 0.173,
+    "mass_g": 2.4
+   }
+  },
+  {
+   "file": "stl/x-x-z-carriage.stl",
+   "name": "X/Z carriage",
+   "group": "case",
+   "process": "print",
+   "color": "#2a2a2a",
+   "explode": [
+    -0.32,
+    0.925,
+    0.205
+   ],
+   "bbox": [
+    70.0,
+    70.0,
+    128.0
+   ]
+  },
+  {
+   "file": "stl/x-lm10uu-carriage-x4.stl",
+   "name": "LM10UU (carriage) x4",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8dadc",
+   "explode": [
+    -0.222,
+    0.908,
+    0.356
+   ],
+   "bbox": [
+    66.0,
+    19.0,
+    91.5
+   ]
+  },
+  {
+   "file": "stl/x-x-anti-backlash-nut.stl",
+   "name": "X anti-backlash nut",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9a24a",
+   "explode": [
+    0.114,
+    0.923,
+    0.367
+   ],
+   "bbox": [
+    32.5,
+    22.0,
+    22.0
+   ]
+  },
+  {
+   "file": "stl/x-z-rods-8x100.stl",
+   "name": "Z rods 8x100",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8dadc",
+   "explode": [
+    -0.459,
+    0.887,
+    0.046
+   ],
+   "bbox": [
+    46.0,
+    8.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/x-z-lead-screw.stl",
+   "name": "Z lead screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8dadc",
+   "explode": [
+    -0.459,
+    0.888,
+    -0.016
+   ],
+   "bbox": [
+    8.0,
+    8.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/x-z-coupler.stl",
+   "name": "Z coupler",
+   "group": "component",
+   "process": "bought",
+   "color": "#c4c8cc",
+   "explode": [
+    -0.239,
+    0.461,
+    0.855
+   ],
+   "bbox": [
+    19.0,
+    19.0,
+    25.0
+   ]
+  },
+  {
+   "file": "stl/x-z-motor.stl",
+   "name": "Z motor",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    -0.172,
+    0.364,
+    0.915
+   ],
+   "bbox": [
+    42.3,
+    47.7,
+    58.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/x-z-motor__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-z-motor__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/x-z-motor__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-z-motor__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-z-motor__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/x-z-motor__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 34 mm",
+    "unit_cost_usd": 9.0,
+    "mass_g": 230.0
+   }
+  },
+  {
+   "file": "stl/x-z-motor-screw-m3x30.stl",
+   "name": "Z motor screw M3x30",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.209,
+    0.404,
+    0.89
+   ],
+   "bbox": [
+    36.5,
+    36.5,
+    33.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/x-z-motor-screw-m3x30__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 4,
+    "name": "M3\u00d730 socket head screw",
+    "unit_cost_usd": 0.117,
+    "mass_g": 2.1
+   }
+  },
+  {
+   "file": "stl/z-z-slider-spindle-clamp.stl",
+   "name": "Z slider / spindle clamp",
+   "group": "case",
+   "process": "print",
+   "color": "#2a2a2a",
+   "explode": [
+    -0.521,
+    -0.209,
+    -0.828
+   ],
+   "bbox": [
+    60.0,
+    96.5,
+    38.1
+   ]
+  },
+  {
+   "file": "stl/z-lm8suu-x4.stl",
+   "name": "LM8SUU x4",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8dadc",
+   "explode": [
+    -0.36,
+    0.696,
+    -0.621
+   ],
+   "bbox": [
+    53.0,
+    15.0,
+    34.0
+   ]
+  },
+  {
+   "file": "stl/z-z-anti-backlash-nut.stl",
+   "name": "Z anti-backlash nut",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9a24a",
+   "explode": [
+    -0.405,
+    0.783,
+    -0.473
+   ],
+   "bbox": [
+    22.0,
+    22.0,
+    32.5
+   ]
+  },
+  {
+   "file": "stl/z-775-spindle-motor.stl",
+   "name": "775 spindle motor",
+   "group": "component",
+   "process": "bought",
+   "color": "#3a3a3a",
+   "explode": [
+    -0.671,
+    -0.658,
+    -0.341
+   ],
+   "bbox": [
+    45.0,
+    45.0,
+    74.0
+   ]
+  },
+  {
+   "file": "stl/z-er11-extension-collet-nut.stl",
+   "name": "ER11 extension + collet nut",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8dadc",
+   "explode": [
+    -0.235,
+    -0.23,
+    -0.944
+   ],
+   "bbox": [
+    19.0,
+    19.0,
+    30.0
+   ]
+  },
+  {
+   "file": "stl/z-end-mill-3-175.stl",
+   "name": "End mill 3.175",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa0a6",
+   "explode": [
+    -0.173,
+    -0.169,
+    -0.97
+   ],
+   "bbox": [
+    3.2,
+    3.2,
+    17.0
+   ]
+  },
+  {
+   "file": "stl/z-clamp-bolt-m4x20.stl",
+   "name": "Clamp bolt M4x20",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.22,
+    -0.862,
+    -0.457
+   ],
+   "bbox": [
+    24.0,
+    7.0,
+    7.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/z-clamp-bolt-m4x20__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 1,
+    "name": "M4\u00d720 socket head screw",
+    "unit_cost_usd": 0.144,
+    "mass_g": 3.0
+   }
+  },
+  {
+   "file": "stl/z-clamp-nut-m4.stl",
+   "name": "Clamp nut M4",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.464,
+    -0.782,
+    -0.415
+   ],
+   "bbox": [
+    3.2,
+    7.0,
+    8.1
+   ],
+   "subparts": [
+    {
+     "file": "stl/z-clamp-nut-m4__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 1,
+    "name": "M4 hex nut",
+    "unit_cost_usd": 0.07,
+    "mass_g": 0.6
+   }
+  },
+  {
+   "file": "stl/x-z-motor-saddle.stl",
+   "name": "Z motor saddle",
+   "group": "case",
+   "process": "print",
+   "color": "#ececec",
+   "explode": [
+    0.219,
+    0.043,
+    0.975
+   ],
+   "bbox": [
+    139.0,
+    147.0,
+    46.0
+   ]
+  },
+  {
+   "file": "stl/x-saddle-screw-m3x16.stl",
+   "name": "Saddle screw M3x16",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.152,
+    0.623,
+    0.767
+   ],
+   "bbox": [
+    65.6,
+    34.1,
+    18.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/x-saddle-screw-m3x16__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 5,
+    "name": "M3\u00d716 self-tapping screw for plastic",
+    "unit_cost_usd": 0.063,
+    "mass_g": 1.1
+   }
+  },
+  {
+   "file": "stl/x-x-pull-motor.stl",
+   "name": "X pull motor",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    0.486,
+    -0.137,
+    0.863
+   ],
+   "bbox": [
+    42.3,
+    47.7,
+    58.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/x-x-pull-motor__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-x-pull-motor__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/x-x-pull-motor__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-x-pull-motor__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-x-pull-motor__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/x-x-pull-motor__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 34 mm",
+    "unit_cost_usd": 9.0,
+    "mass_g": 230.0
+   }
+  },
+  {
+   "file": "stl/x-x-pull-motor-screw-m3x16.stl",
+   "name": "X pull motor screw M3x16",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.515,
+    -0.165,
+    0.841
+   ],
+   "bbox": [
+    36.5,
+    36.5,
+    19.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/x-x-pull-motor-screw-m3x16__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 4,
+    "name": "M3\u00d716 socket head screw",
+    "unit_cost_usd": 0.104,
+    "mass_g": 1.4
+   }
+  },
+  {
+   "file": "stl/x-x-cord-spool.stl",
+   "name": "X cord spool",
+   "group": "case",
+   "process": "print",
+   "color": "#ff7a1a",
+   "explode": [
+    0.547,
+    -0.175,
+    0.818
+   ],
+   "bbox": [
+    24.0,
+    24.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/x-y-pull-motor.stl",
+   "name": "Y pull motor",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    0.249,
+    0.249,
+    0.936
+   ],
+   "bbox": [
+    42.3,
+    47.7,
+    58.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/x-y-pull-motor__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-y-pull-motor__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/x-y-pull-motor__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-y-pull-motor__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-y-pull-motor__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/x-y-pull-motor__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 34 mm",
+    "unit_cost_usd": 9.0,
+    "mass_g": 230.0
+   }
+  },
+  {
+   "file": "stl/x-y-pull-motor-screw-m3x16.stl",
+   "name": "Y pull motor screw M3x16",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.269,
+    0.247,
+    0.931
+   ],
+   "bbox": [
+    36.5,
+    36.5,
+    19.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/x-y-pull-motor-screw-m3x16__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 4,
+    "name": "M3\u00d716 socket head screw",
+    "unit_cost_usd": 0.104,
+    "mass_g": 1.4
+   }
+  },
+  {
+   "file": "stl/x-y-cord-spool.stl",
+   "name": "Y cord spool",
+   "group": "case",
+   "process": "print",
+   "color": "#ff7a1a",
+   "explode": [
+    0.291,
+    0.267,
+    0.919
+   ],
+   "bbox": [
+    24.0,
+    24.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/x-tilt-shuttle.stl",
+   "name": "Tilt shuttle",
+   "group": "case",
+   "process": "print",
+   "color": "#ececec",
+   "explode": [
+    0.236,
+    -0.136,
+    0.962
+   ],
+   "bbox": [
+    34.0,
+    34.0,
+    25.1
+   ]
+  },
+  {
+   "file": "stl/x-lm8uu-shuttle.stl",
+   "name": "LM8UU (shuttle)",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8dadc",
+   "explode": [
+    0.234,
+    -0.135,
+    0.963
+   ],
+   "bbox": [
+    15.0,
+    15.0,
+    24.0
+   ]
+  },
+  {
+   "file": "stl/x-x-tilt-cord.stl",
+   "name": "X tilt cord",
+   "group": "component",
+   "process": "bought",
+   "color": "#ff3b30",
+   "explode": [
+    0.477,
+    -0.123,
+    0.87
+   ],
+   "bbox": [
+    28.0,
+    0.8,
+    0.8
+   ]
+  },
+  {
+   "file": "stl/x-y-tilt-cord.stl",
+   "name": "Y tilt cord",
+   "group": "component",
+   "process": "bought",
+   "color": "#ff3b30",
+   "explode": [
+    0.236,
+    0.154,
+    0.959
+   ],
+   "bbox": [
+    0.8,
+    28.0,
+    0.8
+   ]
+  },
+  {
+   "file": "stl/x-x-return-spring.stl",
+   "name": "X return spring",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8dadc",
+   "explode": [
+    -0.061,
+    -0.14,
+    0.988
+   ],
+   "bbox": [
+    29.0,
+    7.0,
+    7.0
+   ]
+  },
+  {
+   "file": "stl/x-y-return-spring.stl",
+   "name": "Y return spring",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8dadc",
+   "explode": [
+    0.219,
+    -0.398,
+    0.891
+   ],
+   "bbox": [
+    7.0,
+    28.7,
+    7.0
+   ]
+  },
+  {
+   "file": "stl/z-spindle-lever-sleeve-dot-band.stl",
+   "name": "Spindle lever sleeve (dot band)",
+   "group": "case",
+   "process": "print",
+   "color": "#ffffff",
+   "explode": [
+    -0.031,
+    -0.771,
+    0.636
+   ],
+   "bbox": [
+    79.6,
+    51.1,
+    29.1
+   ]
+  },
+  {
+   "file": "stl/z-lever-rod-8x150.stl",
+   "name": "Lever rod 8x150",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8dadc",
+   "explode": [
+    0.323,
+    -0.186,
+    0.928
+   ],
+   "bbox": [
+    8.0,
+    8.0,
+    150.0
+   ]
+  },
+  {
+   "file": "stl/z-sleeve-clamp-bolt-m4x20.stl",
+   "name": "Sleeve clamp bolt M4x20",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.787,
+    -0.489,
+    0.377
+   ],
+   "bbox": [
+    26.5,
+    24.0,
+    22.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/z-sleeve-clamp-bolt-m4x20__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 4,
+    "name": "M4\u00d720 socket head screw",
+    "unit_cost_usd": 0.144,
+    "mass_g": 3.0
+   }
+  },
+  {
+   "file": "stl/z-sleeve-clamp-nut-m4.stl",
+   "name": "Sleeve clamp nut M4",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.688,
+    -0.647,
+    0.33
+   ],
+   "bbox": [
+    27.6,
+    3.9,
+    22.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/z-sleeve-clamp-nut-m4__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/z-sleeve-clamp-nut-m4__1.stl",
+     "color": "#e8e4d6",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 4,
+    "name": "M4 nylock nut",
+    "unit_cost_usd": 0.1,
+    "mass_g": 0.8
+   }
+  },
+  {
+   "file": "stl/tilt-driver-box.stl",
+   "name": "Tilt driver box",
+   "group": "case",
+   "process": "print",
+   "color": "#e0e0e0",
+   "explode": [
+    0.247,
+    0.946,
+    0.209
+   ],
+   "bbox": [
+    70.0,
+    34.0,
+    96.0
+   ]
+  },
+  {
+   "file": "stl/tilt-driver-cover.stl",
+   "name": "Tilt driver cover",
+   "group": "case",
+   "process": "print",
+   "color": "#e0e0e0",
+   "explode": [
+    0.217,
+    0.959,
+    0.183
+   ],
+   "bbox": [
+    70.0,
+    2.5,
+    96.0
+   ]
+  },
+  {
+   "file": "stl/tilt-perfboard.stl",
+   "name": "Tilt perfboard",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a165",
+   "explode": [
+    0.262,
+    0.939,
+    0.221
+   ],
+   "bbox": [
+    50.0,
+    1.6,
+    76.0
+   ],
+   "material": "pcb"
+  },
+  {
+   "file": "stl/perfboard-screw-m3x6.stl",
+   "name": "Perfboard screw M3x6",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.264,
+    0.938,
+    0.223
+   ],
+   "bbox": [
+    49.6,
+    8.2,
+    75.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/perfboard-screw-m3x6__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 4,
+    "name": "M3\u00d76 self-tapping screw for plastic",
+    "unit_cost_usd": 0.057,
+    "mass_g": 0.6
+   }
+  },
+  {
+   "file": "stl/tilt-cover-screw-m3x10.stl",
+   "name": "Tilt cover screw M3x10",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.221,
+    0.957,
+    0.186
+   ],
+   "bbox": [
+    63.6,
+    12.2,
+    89.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/tilt-cover-screw-m3x10__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 4,
+    "name": "M3\u00d710 self-tapping screw for plastic",
+    "unit_cost_usd": 0.059,
+    "mass_g": 0.8
+   }
+  },
+  {
+   "file": "stl/tilt-box-screw-m5x8.stl",
+   "name": "Tilt box screw M5x8",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.279,
+    0.931,
+    0.235
+   ],
+   "bbox": [
+    9.5,
+    10.8,
+    85.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/tilt-box-screw-m5x8__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 2,
+    "name": "M5\u00d78 button head screw",
+    "unit_cost_usd": 0.173,
+    "mass_g": 2.4
+   }
+  },
+  {
+   "file": "stl/tilt-esp32.stl",
+   "name": "Tilt ESP32",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    0.269,
+    0.911,
+    0.311
+   ],
+   "bbox": [
+    55.4,
+    13.2,
+    27.9
+   ],
+   "port": {
+    "type": "usb-c",
+    "at": [
+     76.7,
+     137.7,
+     192.0
+    ],
+    "dir": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "wide": [
+     -0.0,
+     0.0,
+     1.0
+    ]
+   },
+   "subparts": [
+    {
+     "file": "stl/tilt-esp32__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/tilt-esp32__1.stl",
+     "color": "#232a36",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/tilt-esp32__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/tilt-esp32__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/tilt-esp32__4.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tilt-esp32__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tilt-esp32__6.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/tilt-esp32__7.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/tilt-esp32__8.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tilt-esp32__9.stl",
+     "color": "#b48a5c",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "esp32_devkitc",
+    "qty": 1,
+    "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+    "unit_cost_usd": 7.5,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/x-pull-driver.stl",
+   "name": "X pull driver",
+   "group": "component",
+   "process": "bought",
+   "color": "#2f2547",
+   "explode": [
+    0.144,
+    0.988,
+    0.063
+   ],
+   "bbox": [
+    20.3,
+    18.0,
+    15.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/x-pull-driver__0.stl",
+     "color": "#2f2547",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/x-pull-driver__1.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/x-pull-driver__2.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/x-pull-driver__3.stl",
+     "color": "#9aa3ad",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-pull-driver__4.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/x-pull-driver__5.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-pull-driver__6.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/x-pull-driver__7.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "tmc2209",
+    "qty": 1,
+    "name": "TMC2209 stepper driver",
+    "unit_cost_usd": 5.0,
+    "mass_g": 4.0
+   }
+  },
+  {
+   "file": "stl/y-pull-driver.stl",
+   "name": "Y pull driver",
+   "group": "component",
+   "process": "bought",
+   "color": "#2f2547",
+   "explode": [
+    0.343,
+    0.937,
+    0.059
+   ],
+   "bbox": [
+    20.3,
+    18.0,
+    15.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/y-pull-driver__0.stl",
+     "color": "#2f2547",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/y-pull-driver__1.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/y-pull-driver__2.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/y-pull-driver__3.stl",
+     "color": "#9aa3ad",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/y-pull-driver__4.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/y-pull-driver__5.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/y-pull-driver__6.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/y-pull-driver__7.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "tmc2209",
+    "qty": 1,
+    "name": "TMC2209 stepper driver",
+    "unit_cost_usd": 5.0,
+    "mass_g": 4.0
+   }
+  }
+ ],
+ "scene": "desk",
+ "wiring": {
+  "file": "wiring.json",
+  "wires": 46,
+  "parts": [
+   "100uF 35V electrolytic capacitor",
+   "12V 2A power adapter (tilt rig)",
+   "24V 5A power adapter",
+   "775 spindle motor",
+   "DC barrel pigtail 5.5 x 2.1",
+   "GRBL controller board",
+   "Inline fuse holder 3 A (tilt rig)",
+   "Inline fuse holder 7.5 A",
+   "Tilt ESP32",
+   "X motor",
+   "X pull driver",
+   "X pull motor",
+   "Y motor",
+   "Y pull driver",
+   "Y pull motor",
+   "Z motor"
+  ],
+  "ok": true
+ },
+ "motion": {
+  "file": "motion.json",
+  "duration": 7.0,
+  "frames": 90,
+  "parts": 43
+ }
+}

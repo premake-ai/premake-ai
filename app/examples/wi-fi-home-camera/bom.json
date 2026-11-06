@@ -1,0 +1,128 @@
+{
+ "parts": [
+  {
+   "name": "XIAO ESP32S3 Sense",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 14.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Seeed Studio XIAO ESP32S3 Sense (camera + mic + microSD expansion board included)"
+  },
+  {
+   "name": "Camera module",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "OV2640/OV3660/OV5640, included in the XIAO ESP32S3 Sense kit"
+  },
+  {
+   "name": "AM312 PIR sensor",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.8,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "AM312 mini PIR motion sensor 3.3V (usually 5-pack ~$9)"
+  },
+  {
+   "name": "Silicone hook-up wire 28 AWG",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.3,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "3 x 120 mm, PIR to XIAO pads; '28AWG silicone wire kit'"
+  },
+  {
+   "name": "USB-C cable 2 m",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "USB-A to USB-C, slim plug (< 12.5 x 7 mm overmould)"
+  },
+  {
+   "name": "USB 5V 1A wall adapter",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "UL listed 5V 1A USB charger; camera draws ~0.35 A"
+  },
+  {
+   "name": "Double-sided VHB tape",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.2,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "0.25 mm thin VHB, two strips hold the front strip on the tube"
+  },
+  {
+   "name": "Aluminium tube",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 13.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B0CZ4GZVLZ",
+   "notes": "DMiotech 6061 round tube 45 mm OD x 42 mm ID x 300 mm (makes 2 bodies). Hacksaw to 145 mm, square and deburr the ends; using the printed front strip as a template, step-drill 2 x 12 mm holes (lens, PIR) and drill 2 x 2.9 mm screw holes at the back, 6 mm up from the bottom."
+  },
+  {
+   "name": "M2.5\u00d78 self-tapping screw for plastic",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.052,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M2.5+x+8mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M2.5 x 8mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 45,
+ "kit_ok": true,
+ "needs_soldering": true,
+ "soldering_reason": "The PIR sensor's three wires solder to the XIAO's 3V3, GND and D1 pads (you said you solder).",
+ "printed": [
+  {
+   "file": "stl/base.stl",
+   "name": "Base",
+   "grams": 13.9,
+   "print_hours": 0.7,
+   "bbox": [
+    45.1,
+    45.1,
+    18.1
+   ]
+  },
+  {
+   "file": "stl/chassis.stl",
+   "name": "Chassis",
+   "grams": 13.8,
+   "print_hours": 0.69,
+   "bbox": [
+    40.8,
+    19.7,
+    132.0
+   ]
+  },
+  {
+   "file": "stl/top-cap.stl",
+   "name": "Top cap",
+   "grams": 5.8,
+   "print_hours": 0.29,
+   "bbox": [
+    45.0,
+    45.0,
+    10.1
+   ]
+  },
+  {
+   "file": "stl/front-strip.stl",
+   "name": "Front strip",
+   "grams": 2.7,
+   "print_hours": 0.25,
+   "bbox": [
+    20.1,
+    4.4,
+    100.1
+   ]
+  }
+ ],
+ "fabricated": []
+}

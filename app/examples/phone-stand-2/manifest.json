@@ -1,0 +1,22 @@
+{
+ "t": 1793163534.102956,
+ "title": "A simple phone stand, one printed",
+ "parts": [
+  {
+   "file": "stl/phone-stand.stl",
+   "name": "Phone Stand",
+   "group": "case",
+   "color": "#5b8c6e",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    80.0,
+    91.7,
+    92.3
+   ]
+  }
+ ]
+}

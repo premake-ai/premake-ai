@@ -1,0 +1,49 @@
+{
+ "parts": [
+  {
+   "name": "Cork drawer liner sheet (optional)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Cut to fit"
+  }
+ ],
+ "assembly_minutes": 1,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/long-bin.stl",
+   "name": "Long bin",
+   "grams": 40.9,
+   "print_hours": 2.04,
+   "bbox": [
+    159.4,
+    79.4,
+    44.0
+   ]
+  },
+  {
+   "file": "stl/square-bin.stl",
+   "name": "Square bin",
+   "grams": 20.9,
+   "print_hours": 1.05,
+   "bbox": [
+    79.4,
+    79.4,
+    44.0
+   ]
+  },
+  {
+   "file": "stl/wide-bin.stl",
+   "name": "Wide bin",
+   "grams": 58.2,
+   "print_hours": 2.91,
+   "bbox": [
+    239.4,
+    79.4,
+    44.0
+   ]
+  }
+ ]
+}

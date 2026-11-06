@@ -1,0 +1,183 @@
+{
+  "parts": [
+    {
+      "name": "H13 HEPA + carbon filter, Levoit Core 300-compatible (193 OD x 147 H, 114 bore)",
+      "qty_per_unit": 1,
+      "unit_cost_usd": 10,
+      "supplier": "Amazon",
+      "url": "",
+      "notes": "Sold in 2-packs ~$20: \"Core 300 replacement filter H13\""
+    },
+    {
+      "name": "120 mm 12 V 4-pin PWM fan, high static pressure (e.g. Arctic P12 PWM PST)",
+      "qty_per_unit": 1,
+      "unit_cost_usd": 8,
+      "supplier": "Amazon / Micro Center",
+      "url": "",
+      "notes": "\"Arctic P12 PWM PST\""
+    },
+    {
+      "name": "12 V 4-pin PWM fan speed controller with knob",
+      "qty_per_unit": 1,
+      "unit_cost_usd": 7,
+      "supplier": "Amazon",
+      "url": "",
+      "notes": "\"12V PWM fan speed controller 4 pin knob\"; pot through a 7.5 mm hole"
+    },
+    {
+      "name": "12 V 1 A plug-in adapter, 5.5x2.1 barrel, UL listed",
+      "qty_per_unit": 1,
+      "unit_cost_usd": 8,
+      "supplier": "Amazon",
+      "url": "",
+      "notes": "\"12V 1A power supply 5.5x2.1\"; fan draws ~0.1 A, so no fuse needed"
+    },
+    {
+      "name": "M4 acorn (cap) nut",
+      "qty_per_unit": 4,
+      "unit_cost_usd": 0.15,
+      "supplier": "McMaster / hardware store",
+      "url": "",
+      "notes": "Tops of the fan clamp screws"
+    },
+    {
+      "name": "Stick-on rubber feet 12 mm",
+      "qty_per_unit": 4,
+      "unit_cost_usd": 0.1,
+      "supplier": "Amazon",
+      "url": "",
+      "notes": "\"rubber bumper feet 12mm\""
+    },
+    {
+      "name": "22 AWG hook-up wire + 2 Wago 221 connectors",
+      "qty_per_unit": 1,
+      "unit_cost_usd": 1,
+      "supplier": "Amazon",
+      "url": "",
+      "notes": "Jack leads to the controller input"
+    },
+    {
+      "name": "Wood glue",
+      "qty_per_unit": 1,
+      "unit_cost_usd": 0.1,
+      "supplier": "Hardware store",
+      "url": "",
+      "notes": "Locator ring to base, spigot ring to top plate"
+    },
+    {
+      "name": "DC barrel jack, panel mount 5.5×2.1",
+      "qty_per_unit": 1,
+      "unit_cost_usd": 0.8,
+      "supplier": "Amazon",
+      "url": "https://www.amazon.com/s?k=DC-022+panel+mount+barrel+jack+5.5x2.1",
+      "notes": "search: DC-022 panel mount barrel jack 5.5x2.1",
+      "auto": "lib"
+    },
+    {
+      "name": "M4×40 countersunk screw",
+      "qty_per_unit": 4,
+      "unit_cost_usd": 0.168,
+      "supplier": "Amazon",
+      "url": "https://www.amazon.com/s?k=M4x40+countersunk+screw",
+      "notes": "search: M4x40 countersunk screw",
+      "auto": "lib"
+    }
+  ],
+  "assembly_minutes": 25,
+  "kit_ok": false,
+  "printed": [
+    {
+      "file": "stl/fan-shroud.stl",
+      "name": "Fan shroud",
+      "grams": 48.3,
+      "print_hours": 2.41,
+      "bbox": [
+        176.3,
+        176.4,
+        27.8
+      ]
+    }
+  ],
+  "fabricated": [
+    {
+      "file": "stl/base.stl",
+      "name": "Base",
+      "process": "laser",
+      "params": {
+        "material": "plywood",
+        "thickness_mm": 6
+      },
+      "est": {
+        "cut_length_mm": 644,
+        "area_cm2": 330.1,
+        "minutes": 2.3,
+        "material_usd": 2.38
+      },
+      "bbox": [
+        205.1,
+        205.2,
+        6.3
+      ]
+    },
+    {
+      "file": "stl/filter-locator-ring.stl",
+      "name": "Filter locator ring",
+      "process": "laser",
+      "params": {
+        "material": "plywood",
+        "thickness_mm": 6
+      },
+      "est": {
+        "cut_length_mm": 1259.8,
+        "area_cm2": 28.3,
+        "minutes": 3.6,
+        "material_usd": 0.2
+      },
+      "bbox": [
+        205.1,
+        205.2,
+        6.3
+      ]
+    },
+    {
+      "file": "stl/spigot-ring.stl",
+      "name": "Spigot ring",
+      "process": "laser",
+      "params": {
+        "material": "plywood",
+        "thickness_mm": 6
+      },
+      "est": {
+        "cut_length_mm": 672.3,
+        "area_cm2": 16.8,
+        "minutes": 2.4,
+        "material_usd": 0.12
+      },
+      "bbox": [
+        112.1,
+        112.1,
+        6.1
+      ]
+    },
+    {
+      "file": "stl/top-plate.stl",
+      "name": "Top plate",
+      "process": "laser",
+      "params": {
+        "material": "plywood",
+        "thickness_mm": 6
+      },
+      "est": {
+        "cut_length_mm": 1021,
+        "area_cm2": 247.7,
+        "minutes": 3.1,
+        "material_usd": 1.78
+      },
+      "bbox": [
+        205.1,
+        205.2,
+        6.3
+      ]
+    }
+  ]
+}

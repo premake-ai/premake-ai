@@ -1,0 +1,1276 @@
+{
+ "t": 1793413465.888911,
+ "title": "Under-Stairs Reading Lounger",
+ "parts": [
+  {
+   "file": "stl/long-rail-1.stl",
+   "name": "Long rail 1",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.151,
+    -0.256,
+    -0.955
+   ],
+   "bbox": [
+    1500.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/long-rail-2.stl",
+   "name": "Long rail 2",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.156,
+    0.072,
+    -0.985
+   ],
+   "bbox": [
+    1500.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/long-rail-3.stl",
+   "name": "Long rail 3",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.145,
+    0.379,
+    -0.914
+   ],
+   "bbox": [
+    1500.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/cross-rail-1.stl",
+   "name": "Cross rail 1",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -0.532,
+    -0.082,
+    -0.843
+   ],
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/cross-rail-2.stl",
+   "name": "Cross rail 2",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -0.523,
+    0.202,
+    -0.828
+   ],
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/cross-rail-3.stl",
+   "name": "Cross rail 3",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -0.234,
+    -0.094,
+    -0.968
+   ],
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/cross-rail-4.stl",
+   "name": "Cross rail 4",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -0.229,
+    0.231,
+    -0.946
+   ],
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/cross-rail-5.stl",
+   "name": "Cross rail 5",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.156,
+    -0.096,
+    -0.983
+   ],
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/cross-rail-6.stl",
+   "name": "Cross rail 6",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.152,
+    0.234,
+    -0.96
+   ],
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/cross-rail-7.stl",
+   "name": "Cross rail 7",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.486,
+    -0.085,
+    -0.87
+   ],
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/cross-rail-8.stl",
+   "name": "Cross rail 8",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.477,
+    0.208,
+    -0.854
+   ],
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/cross-rail-9.stl",
+   "name": "Cross rail 9",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.686,
+    -0.071,
+    -0.724
+   ],
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/cross-rail-10.stl",
+   "name": "Cross rail 10",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.678,
+    0.174,
+    -0.715
+   ],
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/leg-1.stl",
+   "name": "Leg 1",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -0.499,
+    -0.212,
+    -0.84
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/leg-2.stl",
+   "name": "Leg 2",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -0.509,
+    0.059,
+    -0.859
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/leg-3.stl",
+   "name": "Leg 3",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -0.484,
+    0.318,
+    -0.815
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/leg-4.stl",
+   "name": "Leg 4",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.143,
+    -0.242,
+    -0.96
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/leg-5.stl",
+   "name": "Leg 5",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.147,
+    0.068,
+    -0.987
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/leg-6.stl",
+   "name": "Leg 6",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.137,
+    0.36,
+    -0.923
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/leg-7.stl",
+   "name": "Leg 7",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.654,
+    -0.185,
+    -0.734
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/leg-8.stl",
+   "name": "Leg 8",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.664,
+    0.051,
+    -0.746
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/leg-9.stl",
+   "name": "Leg 9",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.639,
+    0.279,
+    -0.717
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    100.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/2020-corner-bracket-4.stl",
+   "name": "2020 corner bracket \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#c7ccd2",
+   "explode": [
+    -0.204,
+    0.07,
+    -0.977
+   ],
+   "bbox": [
+    763.0,
+    660.0,
+    23.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/2020-corner-bracket-4__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bracket_2020",
+    "qty": 4,
+    "name": "2020 corner bracket",
+    "unit_cost_usd": 0.6,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/2020-corner-bracket-6.stl",
+   "name": "2020 corner bracket \u00d76",
+   "group": "component",
+   "process": "bought",
+   "color": "#c7ccd2",
+   "explode": [
+    0.153,
+    -0.072,
+    -0.986
+   ],
+   "bbox": [
+    1500.0,
+    343.0,
+    23.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/2020-corner-bracket-6__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bracket_2020",
+    "qty": 6,
+    "name": "2020 corner bracket",
+    "unit_cost_usd": 0.6,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/2020-corner-bracket-6-2.stl",
+   "name": "2020 corner bracket \u00d76 (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c7ccd2",
+   "explode": [
+    0.15,
+    0.209,
+    -0.966
+   ],
+   "bbox": [
+    1500.0,
+    343.0,
+    23.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/2020-corner-bracket-6-2__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bracket_2020",
+    "qty": 6,
+    "name": "2020 corner bracket",
+    "unit_cost_usd": 0.6,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/2020-corner-bracket-2.stl",
+   "name": "2020 corner bracket \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#c7ccd2",
+   "explode": [
+    0.67,
+    0.053,
+    -0.741
+   ],
+   "bbox": [
+    23.0,
+    660.0,
+    23.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/2020-corner-bracket-2__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bracket_2020",
+    "qty": 2,
+    "name": "2020 corner bracket",
+    "unit_cost_usd": 0.6,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/2020-corner-bracket-2-2.stl",
+   "name": "2020 corner bracket \u00d72 (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c7ccd2",
+   "explode": [
+    0.678,
+    -0.055,
+    -0.733
+   ],
+   "bbox": [
+    23.0,
+    343.0,
+    20.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/2020-corner-bracket-2-2__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bracket_2020",
+    "qty": 2,
+    "name": "2020 corner bracket",
+    "unit_cost_usd": 0.6,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/2020-corner-bracket-8.stl",
+   "name": "2020 corner bracket \u00d78",
+   "group": "component",
+   "process": "bought",
+   "color": "#c7ccd2",
+   "explode": [
+    -0.013,
+    -0.074,
+    -0.997
+   ],
+   "bbox": [
+    1138.0,
+    343.0,
+    20.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/2020-corner-bracket-8__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bracket_2020",
+    "qty": 8,
+    "name": "2020 corner bracket",
+    "unit_cost_usd": 0.6,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/2020-corner-bracket-2-3.stl",
+   "name": "2020 corner bracket \u00d72 (3)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c7ccd2",
+   "explode": [
+    0.67,
+    0.16,
+    -0.725
+   ],
+   "bbox": [
+    23.0,
+    343.0,
+    20.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/2020-corner-bracket-2-3__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bracket_2020",
+    "qty": 2,
+    "name": "2020 corner bracket",
+    "unit_cost_usd": 0.6,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/2020-corner-bracket-8-2.stl",
+   "name": "2020 corner bracket \u00d78 (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c7ccd2",
+   "explode": [
+    -0.013,
+    0.216,
+    -0.976
+   ],
+   "bbox": [
+    1138.0,
+    343.0,
+    20.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/2020-corner-bracket-8-2__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bracket_2020",
+    "qty": 8,
+    "name": "2020 corner bracket",
+    "unit_cost_usd": 0.6,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/deck-panel-1.stl",
+   "name": "Deck panel 1",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    -0.407,
+    -0.095,
+    -0.909
+   ],
+   "bbox": [
+    375.0,
+    330.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/deck-panel-2.stl",
+   "name": "Deck panel 2",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    -0.042,
+    -0.104,
+    -0.994
+   ],
+   "bbox": [
+    375.0,
+    330.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/deck-panel-3.stl",
+   "name": "Deck panel 3",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.34,
+    -0.098,
+    -0.935
+   ],
+   "bbox": [
+    375.0,
+    330.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/deck-panel-4.stl",
+   "name": "Deck panel 4",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.608,
+    -0.082,
+    -0.79
+   ],
+   "bbox": [
+    375.0,
+    330.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/deck-panel-5.stl",
+   "name": "Deck panel 5",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    -0.398,
+    0.225,
+    -0.889
+   ],
+   "bbox": [
+    375.0,
+    330.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/deck-panel-6.stl",
+   "name": "Deck panel 6",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    -0.041,
+    0.245,
+    -0.969
+   ],
+   "bbox": [
+    375.0,
+    330.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/deck-panel-7.stl",
+   "name": "Deck panel 7",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.332,
+    0.231,
+    -0.914
+   ],
+   "bbox": [
+    375.0,
+    330.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/deck-panel-8.stl",
+   "name": "Deck panel 8",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    0.598,
+    0.196,
+    -0.777
+   ],
+   "bbox": [
+    375.0,
+    330.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/m5-12-button-head-screw-32.stl",
+   "name": "M5\u00d712 button head screw \u00d732",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.158,
+    0.073,
+    -0.985
+   ],
+   "bbox": [
+    1489.5,
+    649.5,
+    14.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/m5-12-button-head-screw-32__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 32,
+    "name": "M5\u00d712 button head screw",
+    "unit_cost_usd": 0.179,
+    "mass_g": 3.0
+   }
+  },
+  {
+   "file": "stl/foot-cap-1.stl",
+   "name": "Foot cap 1",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3a3a",
+   "explode": [
+    -0.483,
+    -0.205,
+    -0.851
+   ],
+   "bbox": [
+    26.0,
+    26.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/foot-cap-2.stl",
+   "name": "Foot cap 2",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3a3a",
+   "explode": [
+    -0.493,
+    0.057,
+    -0.868
+   ],
+   "bbox": [
+    26.0,
+    26.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/foot-cap-3.stl",
+   "name": "Foot cap 3",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3a3a",
+   "explode": [
+    -0.469,
+    0.308,
+    -0.827
+   ],
+   "bbox": [
+    26.0,
+    26.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/foot-cap-4.stl",
+   "name": "Foot cap 4",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3a3a",
+   "explode": [
+    0.137,
+    -0.232,
+    -0.963
+   ],
+   "bbox": [
+    26.0,
+    26.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/foot-cap-5.stl",
+   "name": "Foot cap 5",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3a3a",
+   "explode": [
+    0.141,
+    0.065,
+    -0.988
+   ],
+   "bbox": [
+    26.0,
+    26.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/foot-cap-6.stl",
+   "name": "Foot cap 6",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3a3a",
+   "explode": [
+    0.132,
+    0.346,
+    -0.929
+   ],
+   "bbox": [
+    26.0,
+    26.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/foot-cap-7.stl",
+   "name": "Foot cap 7",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3a3a",
+   "explode": [
+    0.638,
+    -0.181,
+    -0.749
+   ],
+   "bbox": [
+    26.0,
+    26.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/foot-cap-8.stl",
+   "name": "Foot cap 8",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3a3a",
+   "explode": [
+    0.648,
+    0.05,
+    -0.76
+   ],
+   "bbox": [
+    26.0,
+    26.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/foot-cap-9.stl",
+   "name": "Foot cap 9",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3a3a",
+   "explode": [
+    0.624,
+    0.273,
+    -0.732
+   ],
+   "bbox": [
+    26.0,
+    26.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/bookcase-left-side.stl",
+   "name": "Bookcase left side",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    -0.757,
+    0.167,
+    -0.632
+   ],
+   "bbox": [
+    5.6,
+    400.0,
+    600.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/bookcase-right-side.stl",
+   "name": "Bookcase right side",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    -0.614,
+    0.202,
+    -0.763
+   ],
+   "bbox": [
+    5.6,
+    400.0,
+    600.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/bookcase-bottom.stl",
+   "name": "Bookcase bottom",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    -0.595,
+    0.153,
+    -0.789
+   ],
+   "bbox": [
+    300.0,
+    388.5,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/bookcase-shelf.stl",
+   "name": "Bookcase shelf",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    -0.707,
+    0.181,
+    -0.684
+   ],
+   "bbox": [
+    300.0,
+    388.5,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/bookcase-top.stl",
+   "name": "Bookcase top",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    -0.834,
+    0.214,
+    -0.508
+   ],
+   "bbox": [
+    300.0,
+    388.5,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/bookcase-back.stl",
+   "name": "Bookcase back",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98c",
+   "explode": [
+    -0.666,
+    0.345,
+    -0.662
+   ],
+   "bbox": [
+    300.0,
+    5.5,
+    585.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/m5-12-button-head-screw-2.stl",
+   "name": "M5\u00d712 button head screw \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.53,
+    0.197,
+    -0.825
+   ],
+   "bbox": [
+    14.8,
+    159.5,
+    9.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m5-12-button-head-screw-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 2,
+    "name": "M5\u00d712 button head screw",
+    "unit_cost_usd": 0.179,
+    "mass_g": 3.0
+   }
+  },
+  {
+   "file": "stl/gooseneck-reading-lamp.stl",
+   "name": "Gooseneck reading lamp",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    -0.865,
+    0.358,
+    -0.351
+   ],
+   "bbox": [
+    274.8,
+    186.2,
+    385.0
+   ]
+  },
+  {
+   "file": "stl/lamp-head.stl",
+   "name": "Lamp head",
+   "group": "component",
+   "process": "bought",
+   "color": "#2a2a2a",
+   "explode": [
+    -0.933,
+    0.326,
+    -0.154
+   ],
+   "bbox": [
+    68.5,
+    61.7,
+    75.8
+   ],
+   "fx": {
+    "glow": {
+     "color": "#ffc27a"
+    }
+   }
+  },
+  {
+   "file": "stl/seat.stl",
+   "name": "Floor lounger seat",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a6f5a",
+   "explode": [
+    0.035,
+    0.083,
+    -0.996
+   ],
+   "bbox": [
+    700.3,
+    600.3,
+    200.3
+   ]
+  },
+  {
+   "file": "stl/backrest.stl",
+   "name": "Floor lounger backrest",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a6f5a",
+   "explode": [
+    -0.51,
+    0.092,
+    -0.855
+   ],
+   "bbox": [
+    401.8,
+    600.3,
+    537.3
+   ]
+  },
+  {
+   "file": "stl/floor-cushion.stl",
+   "name": "Floor cushion",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8875f",
+   "explode": [
+    0.601,
+    0.064,
+    -0.797
+   ],
+   "bbox": [
+    510.3,
+    510.3,
+    150.3
+   ]
+  },
+  {
+   "file": "stl/staircase-underside-yours.stl",
+   "name": "Staircase underside (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9c2b8",
+   "explode": [
+    -0.006,
+    -0.006,
+    1.0
+   ],
+   "bbox": [
+    1800.0,
+    800.0,
+    1620.0
+   ]
+  }
+ ],
+ "scene": "floor",
+ "assembly_order": [
+  [
+   "Foot cap 1"
+  ],
+  [
+   "Long rail 1",
+   "Long rail 2",
+   "Long rail 3"
+  ],
+  [
+   "Cross rail 1"
+  ],
+  [
+   "Leg 1"
+  ],
+  [
+   "Deck panel 1"
+  ],
+  [
+   "Bookcase left side",
+   "Bookcase right side",
+   "Bookcase bottom",
+   "Bookcase shelf",
+   "Bookcase top",
+   "Bookcase back"
+  ],
+  [
+   "Gooseneck reading lamp",
+   "Lamp head"
+  ],
+  [
+   "Floor lounger seat",
+   "Floor lounger backrest",
+   "Floor cushion"
+  ]
+ ],
+ "wiring": {
+  "file": "wiring.json",
+  "wires": 1,
+  "parts": [
+   "Gooseneck reading lamp",
+   "USB wall charger 5 V 2 A (UL listed)"
+  ],
+  "ok": true
+ },
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 1
+ }
+}

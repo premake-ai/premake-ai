@@ -42,10 +42,10 @@ const APP = path.resolve(__dirname, '..');
 const WEB = path.join(APP, 'web');
 const assetver = require('./assetver').init(WEB);
 const fusion = require('./fusion'); // fusion: buy parts from inside Autodesk Fusion (server/fusion.js, add-in in fusion-addin/), init at the bottom // assetver: fingerprinted studio code (cached a year, never stale)
-// Writable data (projects, deploys, orders). Examples ship with the app and stay in APP/data/examples.
+// Writable data (projects, deploys, orders). Examples ship with the app in APP/examples (scripts/import-examples.sh refreshes them).
 const DATA = process.env.FORMA_DATA_DIR ? path.resolve(process.env.FORMA_DATA_DIR) : path.join(APP, 'data');
 const PROJECTS = path.join(DATA, 'projects');
-const EXAMPLES = path.join(APP, 'data', 'examples');
+const EXAMPLES = process.env.FORMA_EXAMPLES_DIR ? path.resolve(process.env.FORMA_EXAMPLES_DIR) : path.join(APP, 'examples');
 const ORDERS = path.join(DATA, 'orders.json');
 const brain = require('./agentbrain'); // agentbrain: question cards, per-user prefs (answers, effort), stop reasons, auto titles
 const prefs = brain.store(DATA);

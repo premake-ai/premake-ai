@@ -1,0 +1,459 @@
+{
+ "parts": [
+  {
+   "name": "MG996R metal-gear servo",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 5.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: MG996R servo 4 pack. 25T spline, 4.8-7.2 V; run at 5 V here."
+  },
+  {
+   "name": "25T aluminium servo horn arm, M3 holes 12/16/20 mm",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 2.25,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B0CD5ZYTLB",
+   "notes": "4-pack. The link pins in the 20 mm hole (M3 threaded)."
+  },
+  {
+   "name": "M3 aluminium rod end + ball stud",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 1.2,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: M3 aluminum tie rod end ball joint with ball stud (RC 1/10). Snap-on ball socket, M3 female thread."
+  },
+  {
+   "name": "M3x12 set screw (grub screw)",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.06,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: M3x12 set screw. Joins each rod end to its printed link; thread-locker on the link side. Gives +-2 mm length trim."
+  },
+  {
+   "name": "8in 4-wire resistive touch panel 183x141",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 22.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B01G5EDOBQ",
+   "notes": "NJYTouch 8\" 4:3, 183 x 141 mm, view area 164 x 124, 4-pin FPC tail, activation < 80 g."
+  },
+  {
+   "name": "Adafruit TSC2007 I2C resistive touch controller (STEMMA QT)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.95,
+   "supplier": "Adafruit",
+   "url": "https://www.adafruit.com/product/5423",
+   "manual_order": true,
+   "notes": "Not sold on Amazon. 1 mm FPC socket takes the panel tail with no soldering; reads X, Y and pressure."
+  },
+  {
+   "name": "STEMMA QT / Qwiic to male Dupont cable, 300 mm",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: Qwiic JST SH 4 pin to male dupont 300mm. TSC2007 under the plate to the ESP32 terminals; slack for tilt."
+  },
+  {
+   "name": "ESP32 screw-terminal breakout (38 pin)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 7.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: ESP32 38 pin screw terminal breakout DevKitC. Must match the DevKitC's 25.4 mm row spacing. Stuck down with foam tape."
+  },
+  {
+   "name": "PCA9685 16-channel servo driver",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: PCA9685 servo driver pre-soldered headers. Servo plugs go straight on; V+ screw terminal for 5 V."
+  },
+  {
+   "name": "1000uF 16V electrolytic capacitor",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.3,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 1000uF 16V capacitor. Clamped in the PCA9685 V+/GND terminal with the supply wires."
+  },
+  {
+   "name": "5V 5A power adapter (UL), 5.5x2.1",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 13.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 5V 5A power supply 5.5x2.1 UL listed. 3 servos ~3 A typical peaks + ESP32 0.3 A."
+  },
+  {
+   "name": "DC jack, panel mount, pre-wired",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 5.5x2.1 panel mount DC jack with wire leads. 11 mm hole in the base shell."
+  },
+  {
+   "name": "Inline fuse holder 5A",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: inline mini blade fuse holder 18AWG with 5A fuse."
+  },
+  {
+   "name": "Wago 221-413 (5V)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.6,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: Wago 221-413. 5 V rail."
+  },
+  {
+   "name": "Wago 221-413 (GND)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.6,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: Wago 221-413. Ground rail."
+  },
+  {
+   "name": "Wago 221-412 (fuse)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: Wago 221-412. Jack + to fuse holder."
+  },
+  {
+   "name": "18 AWG silicone wire, red + black",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 3.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 18 AWG silicone wire red black. Four 12 cm pieces, ends stripped 11 mm (Wago strip gauge)."
+  },
+  {
+   "name": "Dupont jumper wires, female-male",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: dupont jumper wires female to male 20cm. PCA9685 logic header to the ESP32 terminals (4 used)."
+  },
+  {
+   "name": "Rubber feet",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 1/2 inch self adhesive rubber bumpers 5mm. 3 used."
+  },
+  {
+   "name": "Double-sided foam tape (VHB)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 3M VHB tape 1 inch. Panel to plate, boards to the bottom disc."
+  },
+  {
+   "name": "Ping-pong ball",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.8,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 40mm ping pong balls 6 pack. 2.7 g: probably too light to register on a resistive panel."
+  },
+  {
+   "name": "Steel ball 1-1/4in",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 6.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 1-1/4 inch chrome steel ball. 131 g, well over the panel's 80 g activation force: the ball that reliably works."
+  },
+  {
+   "name": "M3\u00d712 button head screw",
+   "qty_per_unit": 18,
+   "unit_cost_usd": 0.101,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x12+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M3x12 button head screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M3 hex nut",
+   "qty_per_unit": 21,
+   "unit_cost_usd": 0.06,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+hex+nut&rh=p_85%3A2470955011",
+   "notes": "search: M3 hex nut",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d716 socket head screw",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.104,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x16+socket+head+cap+screw&rh=p_85%3A2470955011",
+   "notes": "search: M3x16 socket head cap screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M3 nylock nut",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.09,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+nylon+lock+nut&rh=p_85%3A2470955011",
+   "notes": "search: M3 nylon lock nut",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d716 self-tapping screw for plastic",
+   "qty_per_unit": 6,
+   "unit_cost_usd": 0.063,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+x+16mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M3 x 16mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  },
+  {
+   "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 7.5,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=ESP32+DevKitC+WROOM-32+38+pin&rh=p_85%3A2470955011",
+   "notes": "search: ESP32 DevKitC WROOM-32 38 pin",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 100,
+ "kit_ok": true,
+ "needs_soldering": false,
+ "printed": [
+  {
+   "file": "stl/base-shell.stl",
+   "name": "Base shell",
+   "grams": 42.1,
+   "print_hours": 2.11,
+   "bbox": [
+    194.3,
+    194.4,
+    58.7
+   ]
+  },
+  {
+   "file": "stl/link-a.stl",
+   "name": "Link A",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    6.0,
+    11.0,
+    35.5
+   ]
+  },
+  {
+   "file": "stl/bracket-a.stl",
+   "name": "Joint bracket A",
+   "grams": 4.1,
+   "print_hours": 0.25,
+   "bbox": [
+    27.0,
+    46.5,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/link-b.stl",
+   "name": "Link B",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    12.5,
+    10.7,
+    35.5
+   ]
+  },
+  {
+   "file": "stl/bracket-b.stl",
+   "name": "Joint bracket B",
+   "grams": 4.1,
+   "print_hours": 0.25,
+   "bbox": [
+    52.7,
+    30.8,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/link-c.stl",
+   "name": "Link C",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    12.5,
+    10.7,
+    35.5
+   ]
+  },
+  {
+   "file": "stl/bracket-c.stl",
+   "name": "Joint bracket C",
+   "grams": 4.1,
+   "print_hours": 0.25,
+   "bbox": [
+    44.2,
+    45.5,
+    15.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/bottom-plate.stl",
+   "name": "Bottom plate",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 780.7,
+    "area_cm2": 268.9,
+    "minutes": 2.6,
+    "material_usd": 5.65
+   },
+   "bbox": [
+    194.1,
+    194.2,
+    5.7
+   ]
+  },
+  {
+   "file": "stl/top-deck.stl",
+   "name": "Top deck",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 1010.9,
+    "area_cm2": 283.3,
+    "minutes": 1.8,
+    "material_usd": 2.97
+   },
+   "bbox": [
+    194.1,
+    194.2,
+    3.2
+   ]
+  },
+  {
+   "file": "stl/servo-tower-a.stl",
+   "name": "Servo tower A",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 459.9,
+    "area_cm2": 17.5,
+    "minutes": 2.0,
+    "material_usd": 0.37
+   },
+   "bbox": [
+    5.5,
+    47.6,
+    67.0
+   ]
+  },
+  {
+   "file": "stl/servo-tower-b.stl",
+   "name": "Servo tower B",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 222.0,
+    "area_cm2": 17.5,
+    "minutes": 1.5,
+    "material_usd": 0.37
+   },
+   "bbox": [
+    44.0,
+    28.6,
+    67.0
+   ]
+  },
+  {
+   "file": "stl/servo-tower-c.stl",
+   "name": "Servo tower C",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 222.0,
+    "area_cm2": 17.5,
+    "minutes": 1.5,
+    "material_usd": 0.37
+   },
+   "bbox": [
+    44.0,
+    28.6,
+    67.0
+   ]
+  },
+  {
+   "file": "stl/plate.stl",
+   "name": "Plate",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 909.2,
+    "area_cm2": 481.6,
+    "minutes": 1.8,
+    "material_usd": 5.06
+   },
+   "bbox": [
+    248.2,
+    248.2,
+    3.3
+   ]
+  },
+  {
+   "file": "stl/rim.stl",
+   "name": "Ball rim",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1578.3,
+    "area_cm2": 48.1,
+    "minutes": 4.3,
+    "material_usd": 1.01
+   },
+   "bbox": [
+    248.2,
+    248.2,
+    5.8
+   ]
+  }
+ ]
+}

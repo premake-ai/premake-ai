@@ -1,0 +1,58 @@
+{
+ "t": 1793732031.950803,
+ "title": "Wall Mounted Headphone Hook",
+ "parts": [
+  {
+   "file": "stl/headphone-hook.stl",
+   "name": "Headphone hook",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    40.0,
+    71.0,
+    110.0
+   ]
+  },
+  {
+   "file": "stl/screw0.stl",
+   "name": "#8 wood screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8b8b8",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    9.1,
+    34.5,
+    9.1
+   ]
+  },
+  {
+   "file": "stl/screw1.stl",
+   "name": "#8 wood screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8b8b8",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    9.1,
+    34.5,
+    9.1
+   ]
+  }
+ ],
+ "scene": "wall"
+}

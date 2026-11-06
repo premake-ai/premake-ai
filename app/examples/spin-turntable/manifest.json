@@ -1,0 +1,244 @@
+{
+ "t": 1793237654.5695722,
+ "title": "Spin turntable",
+ "parts": [
+  {
+   "file": "stl/platter-black-acrylic-6-mm.stl",
+   "name": "Platter, black acrylic 6 mm",
+   "group": "case",
+   "process": "laser",
+   "color": "#2b2e34",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    240.1,
+    240.2,
+    6.3
+   ]
+  },
+  {
+   "file": "stl/drum-ring.stl",
+   "name": "Drum ring",
+   "group": "case",
+   "process": "print",
+   "color": "#efe9dd",
+   "explode": [
+    -0.003,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    180.1,
+    180.2,
+    47.5
+   ]
+  },
+  {
+   "file": "stl/lid-birch-plywood-3-mm.stl",
+   "name": "Lid, birch plywood 3 mm",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98a",
+   "explode": [
+    0.0,
+    0.0,
+    0.5
+   ],
+   "bbox": [
+    180.1,
+    180.2,
+    3.2
+   ]
+  },
+  {
+   "file": "stl/base-birch-plywood-3-mm.stl",
+   "name": "Base, birch plywood 3 mm",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b98a",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    186.1,
+    186.2,
+    3.2
+   ]
+  },
+  {
+   "file": "stl/shaft-hub.stl",
+   "name": "Shaft hub",
+   "group": "case",
+   "process": "print",
+   "color": "#ff7a45",
+   "explode": [
+    0.0,
+    0.0,
+    0.6
+   ],
+   "bbox": [
+    30.0,
+    30.0,
+    7.5
+   ]
+  },
+  {
+   "file": "stl/speed-knob.stl",
+   "name": "Speed knob",
+   "group": "case",
+   "process": "print",
+   "color": "#ff7a45",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    20.0,
+    14.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/swivel-bearing-120-mm.stl",
+   "name": "Swivel bearing 120 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f98",
+   "explode": [
+    0.0,
+    0.0,
+    0.8
+   ],
+   "bbox": [
+    120.1,
+    120.1,
+    8.1
+   ]
+  },
+  {
+   "file": "stl/nema17-stepper-40-mm.stl",
+   "name": "NEMA17 stepper 40 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f98",
+   "explode": [
+    0.0,
+    0.0,
+    -0.5
+   ],
+   "bbox": [
+    42.3,
+    42.3,
+    64.0
+   ]
+  },
+  {
+   "file": "stl/m3-x-10-standoffs.stl",
+   "name": "M3 x 10 standoffs",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a24a",
+   "explode": [
+    0.0,
+    0.0,
+    -0.5
+   ],
+   "bbox": [
+    36.5,
+    36.5,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/esp32-devkit-v1.stl",
+   "name": "ESP32 DevKit V1",
+   "group": "component",
+   "process": "bought",
+   "color": "#3a6ea5",
+   "explode": [
+    0.4,
+    0.4,
+    -0.5
+   ],
+   "bbox": [
+    52.3,
+    28.3,
+    13.3
+   ]
+  },
+  {
+   "file": "stl/tmc2209-driver.stl",
+   "name": "TMC2209 driver",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f98",
+   "explode": [
+    -0.4,
+    0.4,
+    -0.5
+   ],
+   "bbox": [
+    20.3,
+    15.2,
+    15.1
+   ]
+  },
+  {
+   "file": "stl/mp1584-12-v-to-5-v.stl",
+   "name": "MP1584 12 V to 5 V",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f98",
+   "explode": [
+    -0.4,
+    0.0,
+    -0.5
+   ],
+   "bbox": [
+    22.0,
+    17.0,
+    4.7
+   ]
+  },
+  {
+   "file": "stl/16-mm-push-button.stl",
+   "name": "16 mm push button",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f98",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    16.0,
+    22.0,
+    16.0
+   ]
+  },
+  {
+   "file": "stl/dc-jack-5-5-x-2-1.stl",
+   "name": "DC jack 5.5 x 2.1",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f98",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    11.0,
+    14.0,
+    11.0
+   ]
+  }
+ ]
+}

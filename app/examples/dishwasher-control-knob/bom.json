@@ -1,0 +1,19 @@
+{
+ "parts": [],
+ "assembly_minutes": 0,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/knob.stl",
+   "name": "Knob",
+   "grams": 10.1,
+   "print_hours": 0.51,
+   "bbox": [
+    44.1,
+    44.1,
+    22.1
+   ]
+  }
+ ],
+ "fabricated": []
+}

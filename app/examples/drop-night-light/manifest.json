@@ -1,0 +1,57 @@
+{
+ "t": 1793242648.7044742,
+ "title": "Drop night light",
+ "parts": [
+  {
+   "file": "stl/base.stl",
+   "name": "Base",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3a3c",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    76.2,
+    76.2,
+    25.7
+   ]
+  },
+  {
+   "file": "stl/diffuser-dome.stl",
+   "name": "Diffuser dome",
+   "group": "case",
+   "process": "print",
+   "color": "#fff4d6",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    76.3,
+    76.3,
+    80.7
+   ]
+  },
+  {
+   "file": "stl/esp32-c3-supermini-ws2812b-8-led-ring-6-mm-switch.stl",
+   "name": "ESP32-C3 SuperMini + WS2812B 8-LED ring + 6 mm switch",
+   "group": "component",
+   "process": "bought",
+   "color": "#2e7d32",
+   "explode": [
+    0.0,
+    0.0,
+    0.3
+   ],
+   "bbox": [
+    32.0,
+    63.6,
+    24.8
+   ]
+  }
+ ]
+}

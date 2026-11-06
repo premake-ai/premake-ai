@@ -1,0 +1,10 @@
+{
+ "wires": [
+  {
+   "from": {"part": "USB-C cable (included with M5StickC PLUS2)", "pin": "USB-C"},
+   "to": {"part": "M5StickC PLUS2", "pin": "USB-C"},
+   "color": "black",
+   "kind": "jst"
+  }
+ ]
+}

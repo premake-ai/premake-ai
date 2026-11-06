@@ -1,0 +1,38 @@
+{
+ "t": 1793164623.031389,
+ "title": "Bike bottle cage",
+ "parts": [
+  {
+   "file": "stl/bottle-cage.stl",
+   "name": "Bottle cage",
+   "group": "case",
+   "color": "#06d6a0",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    81.2,
+    81.2,
+    128.1
+   ]
+  },
+  {
+   "file": "stl/m5-x-12-stainless-bolts-2x.stl",
+   "name": "M5 x 12 stainless bolts (2x)",
+   "group": "component",
+   "color": "#b0b5bb",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    8.5,
+    15.4,
+    72.5
+   ]
+  }
+ ]
+}

@@ -1,0 +1,101 @@
+{
+ "t": 1793858426.2152698,
+ "title": "Design a product based on this",
+ "parts": [
+  {
+   "file": "stl/body.stl",
+   "name": "Body",
+   "group": "case",
+   "process": "print",
+   "color": "#4a4d50",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    215.2,
+    110.2,
+    79.4
+   ]
+  },
+  {
+   "file": "stl/lid-gasket.stl",
+   "name": "Lid gasket",
+   "group": "case",
+   "process": "print",
+   "color": "#1a1a1a",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    96.1,
+    96.1,
+    1.1
+   ],
+   "material": "rubber"
+  },
+  {
+   "file": "stl/lid.stl",
+   "name": "Lid",
+   "group": "case",
+   "process": "print",
+   "color": "#5a5e62",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    96.5,
+    96.5,
+    3.1
+   ]
+  },
+  {
+   "file": "stl/m3-10-self-tapping-screw-for-plastic-2.stl",
+   "name": "M3\u00d710 self-tapping screw for plastic \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.052,
+    0.0,
+    0.999
+   ],
+   "bbox": [
+    92.6,
+    5.6,
+    12.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-self-tapping-screw-for-plastic-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 2,
+    "name": "M3\u00d710 self-tapping screw for plastic",
+    "unit_cost_usd": 0.059,
+    "mass_g": 0.8
+   }
+  }
+ ],
+ "scene": "desk",
+ "assembly_order": [
+  [
+   "Body"
+  ],
+  [
+   "Lid gasket"
+  ],
+  [
+   "Lid"
+  ]
+ ]
+}

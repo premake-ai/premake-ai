@@ -1,0 +1,346 @@
+{
+ "parts": [
+  {
+   "name": "16 mm aluminium tube 300 mm",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 9.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: 16mm OD 14mm ID aluminum round tube 300mm (often a 2-4 pack; one per lamp)"
+  },
+  {
+   "name": "5V COB LED strip",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 9.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: 5V USB COB LED strip warm white 8mm; ~330 mm used, cut into 5 rows"
+  },
+  {
+   "name": "12 mm latching push button",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.6,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: 12mm self-locking latching push button switch (pack of 5)"
+  },
+  {
+   "name": "1 A resettable fuse (PPTC)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.2,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: PPTC resettable fuse 1.1A radial; inline in the 5 V lead"
+  },
+  {
+   "name": "2-core 22 AWG wire 1 m",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: 22AWG 2 pin red black wire; runs up the pole and along the arm"
+  },
+  {
+   "name": "Heat-shrink tubing",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.3,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: heat shrink tubing assortment; covers the solder joints"
+  },
+  {
+   "name": "Adhesive rubber foot",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: 12.7mm x 3.5mm clear rubber bumper feet"
+  },
+  {
+   "name": "USB-C charger 5V 2A + cable",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 8.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: UL listed USB-C wall charger 5V 3A with cable; any phone charger works"
+  },
+  {
+   "name": "USB-C power breakout",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.9,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=USB-C+female+breakout+board&rh=p_85%3A2470955011",
+   "notes": "search: USB-C female breakout board",
+   "auto": "lib"
+  },
+  {
+   "name": "M4\u00d716 countersunk screw",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.139,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M4x16+countersunk+screw&rh=p_85%3A2470955011",
+   "notes": "search: M4x16 countersunk screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d720 self-tapping screw for plastic",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.065,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+x+20mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M3 x 20mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  },
+  {
+   "name": "M5\u00d725 socket head screw",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.2,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M5x25+socket+head+cap+screw&rh=p_85%3A2470955011",
+   "notes": "search: M5x25 socket head cap screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M5 washer",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.04,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M5+flat+washer&rh=p_85%3A2470955011",
+   "notes": "search: M5 flat washer",
+   "auto": "lib"
+  },
+  {
+   "name": "M5 nylock nut",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.11,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M5+nylon+lock+nut&rh=p_85%3A2470955011",
+   "notes": "search: M5 nylon lock nut",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d720 socket head screw",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.108,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x20+socket+head+cap+screw&rh=p_85%3A2470955011",
+   "notes": "search: M3x20 socket head cap screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M3 nylock nut",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.09,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+nylon+lock+nut&rh=p_85%3A2470955011",
+   "notes": "search: M3 nylon lock nut",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d710 self-tapping screw for plastic",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.059,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+x+10mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M3 x 10mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d78 self-tapping screw for plastic",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.058,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+x+8mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M3 x 8mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 45,
+ "kit_ok": true,
+ "needs_soldering": true,
+ "soldering_reason": "The LED rows, fuse, button and wire to the USB-C breakout are small solder joints.",
+ "printed": [
+  {
+   "file": "stl/hub.stl",
+   "name": "Hub",
+   "grams": 24.6,
+   "print_hours": 1.23,
+   "bbox": [
+    64.5,
+    64.5,
+    34.3
+   ]
+  },
+  {
+   "file": "stl/cap.stl",
+   "name": "Pole cap",
+   "grams": 9.6,
+   "print_hours": 0.48,
+   "bbox": [
+    24.1,
+    24.1,
+    55.0
+   ]
+  },
+  {
+   "file": "stl/sp1.stl",
+   "name": "Arm spacer 1",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    9.0,
+    12.0,
+    9.0
+   ]
+  },
+  {
+   "file": "stl/sp2.stl",
+   "name": "Arm spacer 2",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    9.0,
+    12.0,
+    9.0
+   ]
+  },
+  {
+   "file": "stl/shade.stl",
+   "name": "Shade",
+   "grams": 37.9,
+   "print_hours": 1.9,
+   "bbox": [
+    96.1,
+    96.1,
+    91.1
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/disc-bottom.stl",
+   "name": "Base disc (bottom)",
+   "process": "sheet",
+   "params": {
+    "material": "stainless 304",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 200.0,
+    "bends": 0,
+    "minutes": 6.0,
+    "material_usd": 3.0
+   },
+   "bbox": [
+    160.1,
+    160.2,
+    3.2
+   ]
+  },
+  {
+   "file": "stl/disc-top.stl",
+   "name": "Base disc (top)",
+   "process": "sheet",
+   "params": {
+    "material": "stainless 304",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 200.3,
+    "bends": 0,
+    "minutes": 6.0,
+    "material_usd": 3.01
+   },
+   "bbox": [
+    160.1,
+    160.2,
+    3.2
+   ]
+  },
+  {
+   "file": "stl/bar-l.stl",
+   "name": "Arm bar (left)",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 5052",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 48.5,
+    "bends": 0,
+    "minutes": 4.5,
+    "material_usd": 0.58
+   },
+   "bbox": [
+    228.5,
+    3.0,
+    117.2
+   ]
+  },
+  {
+   "file": "stl/bar-r.stl",
+   "name": "Arm bar (right)",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 5052",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 48.5,
+    "bends": 0,
+    "minutes": 4.5,
+    "material_usd": 0.58
+   },
+   "bbox": [
+    228.5,
+    3.0,
+    117.2
+   ]
+  },
+  {
+   "file": "stl/plate.stl",
+   "name": "LED plate",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 5052",
+    "thickness_mm": 1.5,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 50.0,
+    "bends": 0,
+    "minutes": 4.5,
+    "material_usd": 0.3
+   },
+   "bbox": [
+    80.0,
+    80.1,
+    1.6
+   ]
+  },
+  {
+   "file": "stl/diffuser.stl",
+   "name": "Diffuser",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 319.8,
+    "area_cm2": 65.6,
+    "minutes": 1.3,
+    "material_usd": 0.69
+   },
+   "bbox": [
+    91.7,
+    91.7,
+    3.1
+   ]
+  }
+ ]
+}

@@ -1,0 +1,179 @@
+{
+ "parts": [
+  {
+   "name": "Slotted tube",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 40.0,
+   "supplier": "NYC machine shop / Xometry",
+   "url": "https://www.onlinemetals.com/en/buy/aluminum/2-5-od-x-0-065-wall-x-2-37-id-aluminum-round-tube-6061-t6-extruded-seamless/pid/23883",
+   "manual_order": true,
+   "notes": "Machined part. Stock: 2.5\" OD x 0.065\" wall x 2.37\" ID 6061-T6 seamless tube (OnlineMetals #23883, also McMaster). Shop ops (kept minimal): saw + face to 104.0 mm, mill one 14 mm wide x 70 mm full-radius slot on the front (18-88 mm from the bottom end), drill 2 x 3.4 mm holes at the back 24 mm apart, 4 mm from the bottom end, deburr, Type II anodize black (or clear). Estimate ~$130 for 1 (setup + anodize lot charge), ~$40 each at 10, ~$14 at 100, ~$8 at 500. Cheapest one-off: skip anodizing and ask for a brushed (Scotch-Brite) finish, saves the ~$75 anodize minimum."
+  },
+  {
+   "name": "ESP32-CAM (AI-Thinker) + ESP32-CAM-MB kit",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 13.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B09TNVYSVJ",
+   "notes": "ESP32-CAM + OV2640 + ESP32-CAM-MB (CH340, micro-USB, used only for flashing). Board 27 x 40.5 x 4.5 mm (Ai-Thinker datasheet), MB 40 x 27 x 10 mm. Price estimated, check listing."
+  },
+  {
+   "name": "TP4056 USB-C charger",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "TP4056 USB-C module WITH protection (DW01, OUT+/OUT- pads), 28 x 17 x 4 mm. Search \"TP4056 USB-C protection\"."
+  },
+  {
+   "name": "MT3608 boost 5V",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "MT3608 boost module 36 x 17 x 6 mm; set the trim pot to 5.1 V before fitting. Search \"MT3608 boost module\"."
+  },
+  {
+   "name": "JST-PH 2-pin pigtail pair",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.3,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Plug between boost and ESP32-CAM: unplug it before flashing over the MB's micro-USB. Search \"JST PH 2.0 2 pin pigtail\"."
+  },
+  {
+   "name": "AS568-035 Buna-N O-ring",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.8,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "56.87 mm ID x 1.78 mm CS. Twist-cap friction and retention. Search \"AS568-035 Buna-N O-ring\"."
+  },
+  {
+   "name": "Solar panel 5V 53x30",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.5,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/Pieces-NUZAMAS-53X30mm-Science-Projects/dp/B06ZZCV99D",
+   "notes": "NUZAMAS 4-pack, 53 x 30 x 2 mm, 5 V 30 mA (Voc 5.5 V). Sits in a 1.5 mm pocket in the twist cap. Trickle charge only: ~0.15 W in full sun, a few mW indoors. Price per panel estimated from the 4-pack."
+  },
+  {
+   "name": "1N5819 Schottky diode",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Blocks USB 5 V from back-feeding the panel. Search \"1N5819 Schottky diode\"."
+  },
+  {
+   "name": "220 ohm resistor",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.02,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Series resistor for the status LED. Search \"1/4W resistor assortment\"."
+  },
+  {
+   "name": "USB-C cable 2 m",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "USB-A to USB-C, plug overmould <= 12.5 x 7 mm. Search \"USB A to USB C cable 6ft\"."
+  },
+  {
+   "name": "5V 2A USB wall adapter",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 7.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "UL-listed USB-A 5 V 2 A. Search \"5V 2A USB wall charger UL\"."
+  },
+  {
+   "name": "18650 holder, 1 cell",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=18650+battery+holder+1+slot&rh=p_85%3A2470955011",
+   "notes": "search: 18650 battery holder 1 slot",
+   "auto": "lib"
+  },
+  {
+   "name": "18650 Li-ion cell",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=18650+battery+protected+3000mAh&rh=p_85%3A2470955011",
+   "notes": "search: 18650 battery protected 3000mAh",
+   "auto": "lib"
+  },
+  {
+   "name": "5 mm LED (red)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=5mm+LED+assortment&rh=p_85%3A2470955011",
+   "notes": "search: 5mm LED assortment",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d710 self-tapping screw for plastic",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.059,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+x+10mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M3 x 10mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 25,
+ "kit_ok": true,
+ "needs_soldering": true,
+ "soldering_reason": "The LED, charger, boost board and battery holder leads are soldered; the MB board covers every ESP32-CAM header pin.",
+ "printed": [
+  {
+   "file": "stl/base-chassis.stl",
+   "name": "Base chassis",
+   "grams": 41.5,
+   "print_hours": 2.07,
+   "bbox": [
+    63.7,
+    63.7,
+    97.1
+   ]
+  },
+  {
+   "file": "stl/cap.stl",
+   "name": "Twist cap",
+   "grams": 19.5,
+   "print_hours": 0.97,
+   "bbox": [
+    63.7,
+    63.7,
+    54.2
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/smoked-window.stl",
+   "name": "Smoked window",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 208.3,
+    "area_cm2": 17.0,
+    "minutes": 1.2,
+    "material_usd": 0.18
+   },
+   "bbox": [
+    20.0,
+    3.0,
+    85.0
+   ]
+  }
+ ]
+}

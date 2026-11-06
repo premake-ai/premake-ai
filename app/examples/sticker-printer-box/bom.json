@@ -1,0 +1,159 @@
+{
+ "parts": [
+  {
+   "name": "58 mm embedded panel thermal printer, TTL serial, 5-9 V",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 32.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"58mm embedded thermal printer TTL panel mount\" (Adafruit Mini Thermal Printer is a $50 alternative)"
+  },
+  {
+   "name": "57 mm thermal sticker paper roll (self-adhesive)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 3.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"57mm thermal sticker paper roll\", 40 mm max roll diameter"
+  },
+  {
+   "name": "24 mm momentary push button (panel)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"24mm arcade push button\""
+  },
+  {
+   "name": "INMP441 I2S MEMS microphone module",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 3.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"INMP441 I2S microphone\""
+  },
+  {
+   "name": "USB-C PD trigger board, set to 9 V",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 3.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"USB-C PD trigger 9V\"; replaces the plain USB-C breakout as the power input"
+  },
+  {
+   "name": "Polyfuse 2.5 A hold (PTC resettable)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.3,
+   "supplier": "DigiKey",
+   "url": "",
+   "notes": "inline on the 9 V rail"
+  },
+  {
+   "name": "USB-C PD charger 20 W+ with cable",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 10.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "must offer 9 V PD; printer peaks ~2 A"
+  },
+  {
+   "name": "Dupont + JST-PH wire set",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "mic, button, LED, printer TTL"
+  },
+  {
+   "name": "Rubber feet 10 mm",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "self-adhesive bumpers"
+  },
+  {
+   "name": "ESP32-S3-DevKitC-1",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 14.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=ESP32-S3-DevKitC-1+N16R8&rh=p_85%3A2470955011",
+   "notes": "search: ESP32-S3-DevKitC-1 N16R8",
+   "auto": "lib"
+  },
+  {
+   "name": "MP1584 mini buck converter",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.2,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=MP1584EN+buck+module&rh=p_85%3A2470955011",
+   "notes": "search: MP1584EN buck module",
+   "auto": "lib"
+  },
+  {
+   "name": "5 mm LED (red)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=5mm+LED+assortment&rh=p_85%3A2470955011",
+   "notes": "search: 5mm LED assortment",
+   "auto": "lib"
+  },
+  {
+   "name": "M3 heat-set insert",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.12,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+heat+set+insert+brass&rh=p_85%3A2470955011",
+   "notes": "search: M3 heat set insert brass",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d710 button head screw",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.099,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x10+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M3x10 button head screw",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 40,
+ "kit_ok": false,
+ "printed": [
+  {
+   "file": "stl/case.stl",
+   "name": "Case",
+   "grams": 68.5,
+   "print_hours": 3.42,
+   "bbox": [
+    122.0,
+    100.0,
+    88.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/base.stl",
+   "name": "Base",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 459.3,
+    "area_cm2": 119.4,
+    "minutes": 1.4,
+    "material_usd": 0.43
+   },
+   "bbox": [
+    122.0,
+    100.0,
+    3.0
+   ]
+  }
+ ],
+ "needs_soldering": false
+}

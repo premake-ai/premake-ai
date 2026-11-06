@@ -1,0 +1,91 @@
+{
+ "t": 1793311594.9862149,
+ "title": "Kitchen Drawer Dividers",
+ "parts": [
+  {
+   "file": "stl/long-divider-1.stl",
+   "name": "Long divider 1",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8b98a",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    5.5,
+    497.0,
+    55.0
+   ]
+  },
+  {
+   "file": "stl/long-divider-2.stl",
+   "name": "Long divider 2",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8b98a",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    5.5,
+    497.0,
+    55.0
+   ]
+  },
+  {
+   "file": "stl/long-divider-3.stl",
+   "name": "Long divider 3",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8b98a",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    5.5,
+    497.0,
+    55.0
+   ]
+  },
+  {
+   "file": "stl/cross-divider-1.stl",
+   "name": "Cross divider 1",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8b98a",
+   "explode": [
+    0.0,
+    0.0,
+    -0.3
+   ],
+   "bbox": [
+    397.0,
+    5.5,
+    55.0
+   ]
+  },
+  {
+   "file": "stl/your-drawer-reference.stl",
+   "name": "Your drawer (reference)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9ccd1",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    424.0,
+    524.0,
+    82.0
+   ]
+  }
+ ]
+}

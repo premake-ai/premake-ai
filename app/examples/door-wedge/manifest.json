@@ -1,0 +1,38 @@
+{
+ "t": 1793164641.203476,
+ "title": "Grip door wedge",
+ "parts": [
+  {
+   "file": "stl/door-wedge.stl",
+   "name": "Door wedge",
+   "group": "case",
+   "color": "#ef476f",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    42.0,
+    118.0,
+    28.0
+   ]
+  },
+  {
+   "file": "stl/silicone-anti-slip-pad.stl",
+   "name": "Silicone anti-slip pad",
+   "group": "component",
+   "color": "#333333",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    32.0,
+    50.0,
+    1.2
+   ]
+  }
+ ]
+}

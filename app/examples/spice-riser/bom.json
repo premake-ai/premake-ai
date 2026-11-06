@@ -1,0 +1,35 @@
+{
+ "parts": [
+  {
+   "name": "4 oz glass spice jars with shaker lids, 12-pack",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 15.99,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "Clear rubber bumper feet 12 mm",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.12,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  }
+ ],
+ "assembly_minutes": 5,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/spice-riser.stl",
+   "name": "Spice riser",
+   "grams": 167.3,
+   "print_hours": 8.36,
+   "bbox": [
+    240.0,
+    156.0,
+    72.0
+   ]
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{"wires": [
+ {"from": {"part": "24 V 5 A power adapter", "pin": "+"}, "to": {"part": "Inline fuse holder 5 A + barrel screw-terminal pigtails", "pin": "IN"}, "color": "red", "kind": "screw terminal"},
+ {"from": {"part": "Inline fuse holder 5 A + barrel screw-terminal pigtails", "pin": "OUT"}, "to": {"part": "GRBL controller board", "pin": "DC IN +"}, "color": "red", "kind": "screw terminal"},
+ {"from": {"part": "24 V 5 A power adapter", "pin": "-"}, "to": {"part": "GRBL controller board", "pin": "DC IN -"}, "color": "black", "kind": "screw terminal"},
+ {"from": {"part": "GRBL controller board", "pin": "SPINDLE +"}, "to": {"part": "775 spindle 24 V", "pin": "+"}, "color": "red", "kind": "jst"},
+ {"from": {"part": "GRBL controller board", "pin": "SPINDLE -"}, "to": {"part": "775 spindle 24 V", "pin": "-"}, "color": "black", "kind": "jst"},
+ {"from": {"part": "GRBL controller board", "pin": "X A+"}, "to": {"part": "X motor", "pin": "A+"}, "color": "black", "kind": "jst"},
+ {"from": {"part": "GRBL controller board", "pin": "X A-"}, "to": {"part": "X motor", "pin": "A-"}, "color": "green", "kind": "jst"},
+ {"from": {"part": "GRBL controller board", "pin": "X B+"}, "to": {"part": "X motor", "pin": "B+"}, "color": "red", "kind": "jst"},
+ {"from": {"part": "GRBL controller board", "pin": "X B-"}, "to": {"part": "X motor", "pin": "B-"}, "color": "blue", "kind": "jst"},
+ {"from": {"part": "GRBL controller board", "pin": "Y A+"}, "to": {"part": "Y motor", "pin": "A+"}, "color": "black", "kind": "jst"},
+ {"from": {"part": "GRBL controller board", "pin": "Y A-"}, "to": {"part": "Y motor", "pin": "A-"}, "color": "green", "kind": "jst"},
+ {"from": {"part": "GRBL controller board", "pin": "Y B+"}, "to": {"part": "Y motor", "pin": "B+"}, "color": "red", "kind": "jst"},
+ {"from": {"part": "GRBL controller board", "pin": "Y B-"}, "to": {"part": "Y motor", "pin": "B-"}, "color": "blue", "kind": "jst"},
+ {"from": {"part": "GRBL controller board", "pin": "Z A+"}, "to": {"part": "Z motor", "pin": "A+"}, "color": "black", "kind": "jst"},
+ {"from": {"part": "GRBL controller board", "pin": "Z A-"}, "to": {"part": "Z motor", "pin": "A-"}, "color": "green", "kind": "jst"},
+ {"from": {"part": "GRBL controller board", "pin": "Z B+"}, "to": {"part": "Z motor", "pin": "B+"}, "color": "red", "kind": "jst"},
+ {"from": {"part": "GRBL controller board", "pin": "Z B-"}, "to": {"part": "Z motor", "pin": "B-"}, "color": "blue", "kind": "jst"},
+ {"from": {"part": "GRBL controller board", "pin": "OFFLINE"}, "to": {"part": "Offline controller (GRBL handheld)", "pin": "IN"}, "color": "white", "kind": "dupont"}
+]}

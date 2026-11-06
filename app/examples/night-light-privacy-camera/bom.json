@@ -1,0 +1,185 @@
+{
+ "parts": [
+  {
+   "name": "Frosted tube",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 9.75,
+   "supplier": "ePlastics",
+   "url": "https://www.eplastics.com/shapes/plexiglass/tube/frost-color/EATWHT24472-000X1-750X72",
+   "manual_order": true,
+   "notes": "2447 white translucent extruded acrylic tube, 2.000\" OD x 1.750\" ID x 72\", ordered with cutting to 4.000\" pieces. Not on Amazon in a translucent grade. Sold only as a full 6 ft stick: $145.63 + $20 cutting = $165.63, which makes 17 tubes, so $9.75 each across a batch of 17. A one-off build still pays for the whole stick."
+  },
+  {
+   "name": "ESP32-CAM (AI-Thinker, OV2640) + ESP32-CAM-MB programmer",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 11.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B09TNVYSVJ",
+   "notes": "1 pc ESP32-CAM + ESP32-CAM-MB (CH340G, micro-USB) + OV2640. AI-Thinker pin map. Board 27 x 40.5 x 4.5 mm (Ai-Thinker datasheet)."
+  },
+  {
+   "name": "WS2812B 12-LED ring",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B0C7C86PVC",
+   "notes": "DIYmall 12-bit WS2812B ring, 37 mm OD / 23 mm ID, 4-7 V. No leads: solder 3 wires."
+  },
+  {
+   "name": "Micro-USB panel extension",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 8.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B07BK4WZV9",
+   "notes": "zdyCGTime 30 cm micro-USB male to micro-USB female panel-mount cable with screw ears, data + power. The flange drops into the slot in the base (no ear screws). Flange size estimated at 33 x 9.6 x 2 mm: check it before printing."
+  },
+  {
+   "name": "5 V 2 A USB wall adapter + micro-USB cable",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 8.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "UL-listed 5V 2A USB charger with a 1.5 m micro-USB data cable. Search: \"5V 2A micro USB charger UL listed\"."
+  },
+  {
+   "name": "220 ohm resistor",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.02,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Status LED series resistor, 1/4 W. Search: \"resistor assortment kit 1/4W\"."
+  },
+  {
+   "name": "330 ohm resistor",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.02,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "In series with the ring's data line, same assortment kit."
+  },
+  {
+   "name": "PTC resettable fuse 0.5 A",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Radial polyfuse, 0.5 A hold, in the ring's 5 V lead. Search: \"PTC resettable fuse assortment\"."
+  },
+  {
+   "name": "Silicone hook-up wire 26 AWG + heat-shrink",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "About 40 cm total for the ring and LED leads. Search: \"26 AWG silicone wire kit\"."
+  },
+  {
+   "name": "Rubber bumper feet 8 mm",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Clear self-adhesive 8 x 2.5 mm bumpers, in the 1 mm recesses under the base. Search: \"clear rubber bumper feet 8mm\"."
+  },
+  {
+   "name": "5 mm LED (red)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=5mm+LED+assortment&rh=p_85%3A2470955011",
+   "notes": "search: 5mm LED assortment",
+   "auto": "lib"
+  },
+  {
+   "name": "M2\u00d76 self-tapping screw for plastic",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.045,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M2+x+6mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M2 x 6mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d712 self-tapping screw for plastic",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.06,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+x+12mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M3 x 12mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 20,
+ "kit_ok": true,
+ "needs_soldering": true,
+ "soldering_reason": "The LED ring, status LED, resistors and fuse are wired to the ESP32-CAM's header pins with 8 small solder joints.",
+ "printed": [
+  {
+   "file": "stl/base-cap.stl",
+   "name": "Base cap",
+   "grams": 12.1,
+   "print_hours": 0.61,
+   "bbox": [
+    56.2,
+    56.2,
+    24.2
+   ]
+  },
+  {
+   "file": "stl/ring-tray.stl",
+   "name": "Ring tray",
+   "grams": 3.2,
+   "print_hours": 0.25,
+   "bbox": [
+    51.0,
+    51.0,
+    5.0
+   ]
+  },
+  {
+   "file": "stl/head-chassis.stl",
+   "name": "Head & chassis",
+   "grams": 34.3,
+   "print_hours": 1.72,
+   "bbox": [
+    56.1,
+    56.1,
+    163.1
+   ]
+  },
+  {
+   "file": "stl/shutter.stl",
+   "name": "Privacy shutter",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    14.0,
+    6.0,
+    29.3
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/faceplate.stl",
+   "name": "Faceplate",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 5052",
+    "thickness_mm": 1.5,
+    "bends": 2
+   },
+   "est": {
+    "area_cm2": 18.8,
+    "bends": 2,
+    "minutes": 7.2,
+    "material_usd": 0.11
+   },
+   "bbox": [
+    32.0,
+    7.5,
+    46.0
+   ]
+  }
+ ]
+}

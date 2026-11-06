@@ -1,0 +1,128 @@
+{
+ "parts": [
+  {
+   "name": "Rubber bumper 12 mm",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.08,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 12.7mm clear rubber bumper feet self adhesive"
+  },
+  {
+   "name": "330 ohm resistor (LED data line)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.02,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 330 ohm resistor 1/4W"
+  },
+  {
+   "name": "470 uF 10 V electrolytic capacitor",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "across strip 5V/GND; search: 470uF 10V capacitor"
+  },
+  {
+   "name": "22 AWG silicone wire, 3 colours x 15 cm",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.15,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 22AWG silicone wire kit"
+  },
+  {
+   "name": "USB-C cable 1.5 m",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 3.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "user's own 5 V 2 A USB charger powers it; search: USB-C cable 5ft"
+  },
+  {
+   "name": "WS2812B LED strip, 12 LEDs",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=WS2812B+60+LED%2Fm+5V",
+   "notes": "search: WS2812B 60 LED/m 5V",
+   "auto": "lib"
+  },
+  {
+   "name": "ESP32-C3 SuperMini",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=ESP32-C3+SuperMini",
+   "notes": "search: ESP32-C3 SuperMini",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d78 countersunk screw",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.097,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x8+countersunk+screw",
+   "notes": "search: M3x8 countersunk screw",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 25,
+ "kit_ok": false,
+ "printed": [
+  {
+   "file": "stl/base.stl",
+   "name": "Base",
+   "grams": 66.3,
+   "print_hours": 3.32,
+   "bbox": [
+    220.0,
+    45.1,
+    26.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/sign-panel.stl",
+   "name": "Sign panel",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 606.3,
+    "area_cm2": 211.1,
+    "minutes": 2.3,
+    "material_usd": 4.43
+   },
+   "bbox": [
+    200.0,
+    6.0,
+    110.0
+   ]
+  },
+  {
+   "file": "stl/bottom-plate.stl",
+   "name": "Bottom plate",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 555.6,
+    "area_cm2": 97.5,
+    "minutes": 1.5,
+    "material_usd": 1.02
+   },
+   "bbox": [
+    220.0,
+    45.0,
+    3.0
+   ]
+  }
+ ]
+}

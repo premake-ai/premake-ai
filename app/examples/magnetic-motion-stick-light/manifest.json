@@ -1,0 +1,402 @@
+{
+ "t": 1793827650.3238661,
+ "title": "Magnetic Motion Stick Light",
+ "parts": [
+  {
+   "file": "stl/body.stl",
+   "name": "Body",
+   "group": "case",
+   "process": "print",
+   "color": "#7a5232",
+   "explode": [
+    -0.0,
+    -0.035,
+    0.999
+   ],
+   "bbox": [
+    28.0,
+    30.0,
+    150.0
+   ]
+  },
+  {
+   "file": "stl/diffuser.stl",
+   "name": "Diffuser",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f1ea",
+   "explode": [
+    -0.0,
+    -0.027,
+    -1.0
+   ],
+   "bbox": [
+    28.1,
+    30.1,
+    120.0
+   ],
+   "material": "acrylic_frosted"
+  },
+  {
+   "file": "stl/wall-disc.stl",
+   "name": "Wall disc",
+   "group": "case",
+   "process": "print",
+   "color": "#6b4529",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    56.1,
+    10.1,
+    56.1
+   ]
+  },
+  {
+   "file": "stl/tp4056-usb-c-charger-protected.stl",
+   "name": "TP4056 USB-C charger (protected)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d4fa0",
+   "explode": [
+    -0.0,
+    0.057,
+    0.998
+   ],
+   "bbox": [
+    17.0,
+    4.8,
+    28.0
+   ]
+  },
+  {
+   "file": "stl/am312-mini-pir-sensor.stl",
+   "name": "AM312 mini PIR sensor",
+   "group": "component",
+   "process": "bought",
+   "color": "#e8e8e8",
+   "explode": [
+    -0.0,
+    -0.114,
+    0.993
+   ],
+   "bbox": [
+    12.0,
+    17.4,
+    12.0
+   ],
+   "material": "acrylic_frosted"
+  },
+  {
+   "file": "stl/stick-magnet-10x3.stl",
+   "name": "Stick magnet 10x3",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f98",
+   "explode": [
+    -0.0,
+    0.151,
+    0.989
+   ],
+   "bbox": [
+    10.0,
+    3.0,
+    40.0
+   ],
+   "material": "steel",
+   "step": "step/stick-magnet-10x3.step"
+  },
+  {
+   "file": "stl/disc-magnet-10x3.stl",
+   "name": "Disc magnet 10x3",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f98",
+   "explode": [
+    -0.0,
+    0.208,
+    0.978
+   ],
+   "bbox": [
+    10.0,
+    3.0,
+    40.0
+   ],
+   "material": "steel",
+   "step": "step/disc-magnet-10x3.step"
+  },
+  {
+   "file": "stl/ws2812b-led-strip-6-leds.stl",
+   "name": "WS2812B LED strip, 6 LEDs",
+   "group": "component",
+   "process": "bought",
+   "color": "#f1f0ea",
+   "explode": [
+    -0.0,
+    0.139,
+    -0.99
+   ],
+   "bbox": [
+    10.0,
+    1.9,
+    100.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/ws2812b-led-strip-6-leds__0.stl",
+     "color": "#f1f0ea",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/ws2812b-led-strip-6-leds__1.stl",
+     "color": "#f6f4ee",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/ws2812b-led-strip-6-leds__2.stl",
+     "color": "#f7efc9",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/ws2812b-led-strip-6-leds__3.stl",
+     "color": "#b48a5c",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/ws2812b-led-strip-6-leds__4.stl",
+     "color": "#c47a4c",
+     "finish": "gold"
+    }
+   ],
+   "fx": {
+    "glow": {
+     "color": "#ffd59a",
+     "mode": "solid"
+    }
+   },
+   "lib": {
+    "key": "ws2812_strip",
+    "qty": 1,
+    "name": "WS2812B LED strip, 6 LEDs",
+    "unit_cost_usd": 1.0,
+    "mass_g": 0.7
+   }
+  },
+  {
+   "file": "stl/esp32-c3-supermini.stl",
+   "name": "ESP32-C3 SuperMini",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    -0.002,
+    0.914,
+    0.406
+   ],
+   "bbox": [
+    18.0,
+    4.3,
+    23.5
+   ],
+   "port": {
+    "type": "usb-c",
+    "at": [
+     -0.0,
+     -6.83,
+     121.25
+    ],
+    "dir": [
+     -0.0,
+     -0.0,
+     -1.0
+    ],
+    "wide": [
+     -1.0,
+     0.0,
+     0.0
+    ]
+   },
+   "subparts": [
+    {
+     "file": "stl/esp32-c3-supermini__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__4.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__6.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    }
+   ],
+   "lib": {
+    "key": "esp32_c3_supermini",
+    "qty": 1,
+    "name": "ESP32-C3 SuperMini",
+    "unit_cost_usd": 4.0,
+    "mass_g": 2.0
+   }
+  },
+  {
+   "file": "stl/18650-holder-1-cell.stl",
+   "name": "18650 holder, 1 cell",
+   "group": "component",
+   "process": "bought",
+   "color": "#1c1d20",
+   "explode": [
+    -0.0,
+    0.025,
+    1.0
+   ],
+   "bbox": [
+    21.0,
+    15.0,
+    105.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/18650-holder-1-cell__0.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/18650-holder-1-cell__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/18650-holder-1-cell__2.stl",
+     "color": "#d23b2e",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "holder_18650",
+    "qty": 1,
+    "name": "18650 holder, 1 cell",
+    "unit_cost_usd": 1.0,
+    "mass_g": 8.0
+   }
+  },
+  {
+   "file": "stl/18650-li-ion-cell.stl",
+   "name": "18650 Li-ion cell",
+   "group": "component",
+   "process": "bought",
+   "color": "#2f6fd0",
+   "explode": [
+    -0.0,
+    -0.027,
+    1.0
+   ],
+   "bbox": [
+    18.4,
+    18.4,
+    66.1
+   ],
+   "subparts": [
+    {
+     "file": "stl/18650-li-ion-cell__0.stl",
+     "color": "#2f6fd0",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/18650-li-ion-cell__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/18650-li-ion-cell__2.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "cell_18650",
+    "qty": 1,
+    "name": "18650 Li-ion cell",
+    "unit_cost_usd": 5.0,
+    "mass_g": 46.0
+   }
+  },
+  {
+   "file": "stl/m2-5-6-self-tapping-screw-for-plastic.stl",
+   "name": "M2.5\u00d76 self-tapping screw for plastic",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.001,
+    0.516,
+    -0.856
+   ],
+   "bbox": [
+    5.0,
+    7.9,
+    5.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m2-5-6-self-tapping-screw-for-plastic__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M2.5\u00d76 self-tapping screw for plastic",
+    "unit_cost_usd": 0.051,
+    "mass_g": 0.4
+   }
+  }
+ ],
+ "cables": false,
+ "scene": "wall",
+ "wiring": {
+  "file": "wiring.json",
+  "wires": 14,
+  "parts": [
+   "100k resistor (bottom)",
+   "100k resistor (top)",
+   "18650 holder, 1 cell",
+   "AM312 mini PIR sensor",
+   "ESP32-C3 SuperMini",
+   "TP4056 USB-C charger (protected)",
+   "WS2812B LED strip, 6 LEDs"
+  ],
+  "ok": true
+ },
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 9
+ }
+}

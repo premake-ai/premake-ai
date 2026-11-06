@@ -1,0 +1,14 @@
+{
+ "title": "Desktop CNC Router 3018",
+ "description": "A 3018-class desktop CNC router (300 x 180 x 45 mm work area) with a 2040 extrusion frame, 10 mm rods, T8 lead screws, 3 NEMA17 motors, a 24 V 775 spindle and a GRBL controller.",
+ "creator": "Premake",
+ "tags": [
+  "cnc",
+  "router",
+  "grbl",
+  "extrusion",
+  "3018"
+ ],
+ "created": "2026-11-05T20:37:30.200Z",
+ "demo": true
+}

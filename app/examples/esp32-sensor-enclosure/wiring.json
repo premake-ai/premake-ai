@@ -1,0 +1,6 @@
+{"wires": [
+  {"from": {"part": "ESP32 DevKitC (WROOM-32, 38 pin)", "pin": "3V3"}, "to": {"part": "BME280 sensor", "pin": "VIN"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "ESP32 DevKitC (WROOM-32, 38 pin)", "pin": "GND"}, "to": {"part": "BME280 sensor", "pin": "GND"}, "color": "black", "kind": "solder"},
+  {"from": {"part": "ESP32 DevKitC (WROOM-32, 38 pin)", "pin": "GPIO22"}, "to": {"part": "BME280 sensor", "pin": "SCL"}, "color": "yellow", "kind": "solder"},
+  {"from": {"part": "ESP32 DevKitC (WROOM-32, 38 pin)", "pin": "GPIO21"}, "to": {"part": "BME280 sensor", "pin": "SDA"}, "color": "blue", "kind": "solder"}
+]}

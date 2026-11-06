@@ -1,0 +1,19 @@
+{
+ "parts": [],
+ "assembly_minutes": 0,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/cup.stl",
+   "name": "Cup",
+   "grams": 58.9,
+   "print_hours": 2.95,
+   "bbox": [
+    109.2,
+    84.4,
+    100.1
+   ]
+  }
+ ],
+ "fabricated": []
+}

@@ -1,0 +1,58 @@
+{
+ "parts": [
+  {
+   "name": "#8 x 1-1/4 in flat-head wood screw",
+   "qty_per_unit": 6,
+   "unit_cost_usd": 0.1,
+   "supplier": "Hardware store / Amazon",
+   "url": "",
+   "notes": "2 per part; into studs or anchors"
+  },
+  {
+   "name": "#8 plastic drywall anchor",
+   "qty_per_unit": 6,
+   "unit_cost_usd": 0.12,
+   "supplier": "Hardware store / Amazon",
+   "url": "",
+   "notes": "\"#8 plastic wall anchors\"; skip if screwing into a stud"
+  }
+ ],
+ "assembly_minutes": 10,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/console-cradle.stl",
+   "name": "Console Cradle",
+   "grams": 37.1,
+   "print_hours": 1.86,
+   "bbox": [
+    185.0,
+    22.5,
+    45.0
+   ]
+  },
+  {
+   "file": "stl/left-joy-con-holder.stl",
+   "name": "Left Joy-Con Holder",
+   "grams": 13.4,
+   "print_hours": 0.67,
+   "bbox": [
+    50.0,
+    35.8,
+    50.0
+   ]
+  },
+  {
+   "file": "stl/right-joy-con-holder.stl",
+   "name": "Right Joy-Con Holder",
+   "grams": 13.4,
+   "print_hours": 0.67,
+   "bbox": [
+    50.0,
+    35.8,
+    50.0
+   ]
+  }
+ ],
+ "fabricated": []
+}

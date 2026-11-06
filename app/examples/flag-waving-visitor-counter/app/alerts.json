@@ -1,0 +1,7 @@
+{
+  "rules": [
+    { "id": "offline", "stale_h": 2, "severity": "low", "message": "{name} has gone offline", "cooldown_h": 24 },
+    { "id": "weak_wifi", "field": "rssi", "below": -82, "sustain_h": 1, "severity": "low", "message": "{name} has a weak Wi-Fi signal ({value} {unit})", "cooldown_h": 24 },
+    { "id": "big_day", "field": "visits", "above": "profile.visits_max", "severity": "low", "message": "Busy day: {value} visits so far", "cooldown_h": 20 }
+  ]
+}

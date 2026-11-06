@@ -1,0 +1,54 @@
+{
+ "parts": [
+  {
+   "name": "Pine common board 1 in x 8 in x 2 ft",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 6.28,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": "19 x 184 x 610 mm actual"
+  },
+  {
+   "name": "#10 x 3 in wood screw",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.25,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": "Into studs"
+  },
+  {
+   "name": "#6 x 5/8 in wood screw",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.06,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": "Bracket to shelf"
+  }
+ ],
+ "assembly_minutes": 10,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/bracket-left.stl",
+   "name": "Bracket left",
+   "grams": 81.4,
+   "print_hours": 4.07,
+   "bbox": [
+    11.4,
+    176.0,
+    150.0
+   ]
+  },
+  {
+   "file": "stl/bracket-right.stl",
+   "name": "Bracket right",
+   "grams": 81.4,
+   "print_hours": 4.07,
+   "bbox": [
+    11.4,
+    176.0,
+    150.0
+   ]
+  }
+ ]
+}

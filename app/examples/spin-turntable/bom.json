@@ -1,0 +1,217 @@
+{
+ "parts": [
+  {
+   "name": "6 mm black acrylic platter, laser cut 240 mm dia",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 12.0,
+   "supplier": "Local laser shop",
+   "url": "",
+   "notes": "",
+   "fabricated": true
+  },
+  {
+   "name": "3 mm birch plywood lid + base, laser cut",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Local laser shop",
+   "url": "",
+   "notes": "Two 180-186 mm discs",
+   "fabricated": true
+  },
+  {
+   "name": "NEMA17 stepper 40 mm, 1.5 A, with cable",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 11.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"NEMA17 stepper 40mm\""
+  },
+  {
+   "name": "TMC2209 stepstick driver",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"TMC2209 stepstick\""
+  },
+  {
+   "name": "ESP32 DevKit V1 30-pin",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 6.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"ESP32 DevKit V1 30 pin\""
+  },
+  {
+   "name": "MP1584 buck converter",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Set to 5.0 V"
+  },
+  {
+   "name": "12 V 2 A power adapter, 5.5 x 2.1 mm",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 8.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "UL listed"
+  },
+  {
+   "name": "Panel DC jack 5.5 x 2.1 + inline 2 A blade fuse",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "120 mm round swivel turntable bearing",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 6.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"lazy susan bearing 120mm round\""
+  },
+  {
+   "name": "16 mm momentary push button",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.2,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "B10K 16 mm potentiometer",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.8,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "M3 x 10 brass standoffs",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Motor to lid"
+  },
+  {
+   "name": "M3 / M4 screws, heat-set inserts, 100 uF cap, wire",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Assorted"
+  },
+  {
+   "name": "Rubber feet 10 mm",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  }
+ ],
+ "assembly_minutes": 45,
+ "kit_ok": false,
+ "printed": [
+  {
+   "file": "stl/drum-ring.stl",
+   "name": "Drum ring",
+   "grams": 47.4,
+   "print_hours": 2.37,
+   "bbox": [
+    180.1,
+    180.2,
+    47.5
+   ]
+  },
+  {
+   "file": "stl/shaft-hub.stl",
+   "name": "Shaft hub",
+   "grams": 3.5,
+   "print_hours": 0.25,
+   "bbox": [
+    30.0,
+    30.0,
+    7.5
+   ]
+  },
+  {
+   "file": "stl/speed-knob.stl",
+   "name": "Speed knob",
+   "grams": 3.0,
+   "print_hours": 0.25,
+   "bbox": [
+    20.0,
+    14.0,
+    20.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/platter-black-acrylic-6-mm.stl",
+   "name": "Platter, black acrylic 6 mm",
+   "process": "laser",
+   "params": {
+    "material": "black acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 861.4,
+    "area_cm2": 451.2,
+    "minutes": 2.8,
+    "material_usd": 9.48
+   },
+   "bbox": [
+    240.1,
+    240.2,
+    6.3
+   ]
+  },
+  {
+   "file": "stl/lid-birch-plywood-3-mm.stl",
+   "name": "Lid, birch plywood 3 mm",
+   "process": "laser",
+   "params": {
+    "material": "birch plywood",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 779.7,
+    "area_cm2": 249.0,
+    "minutes": 1.6,
+    "material_usd": 0.9
+   },
+   "bbox": [
+    180.1,
+    180.2,
+    3.2
+   ]
+  },
+  {
+   "file": "stl/base-birch-plywood-3-mm.stl",
+   "name": "Base, birch plywood 3 mm",
+   "process": "laser",
+   "params": {
+    "material": "birch plywood",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 842.6,
+    "area_cm2": 268.1,
+    "minutes": 1.7,
+    "material_usd": 0.96
+   },
+   "bbox": [
+    186.1,
+    186.2,
+    3.2
+   ]
+  }
+ ]
+}

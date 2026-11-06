@@ -1,0 +1,41 @@
+{
+ "parts": [],
+ "assembly_minutes": 2,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/pot.stl",
+   "name": "Pot",
+   "grams": 56.3,
+   "print_hours": 2.82,
+   "bbox": [
+    116.3,
+    116.3,
+    100.2
+   ]
+  },
+  {
+   "file": "stl/wicking-cone.stl",
+   "name": "Wicking Cone",
+   "grams": 17.3,
+   "print_hours": 0.87,
+   "bbox": [
+    113.1,
+    112.4,
+    56.4
+   ]
+  },
+  {
+   "file": "stl/level-float.stl",
+   "name": "Level Float",
+   "grams": 3.1,
+   "print_hours": 0.25,
+   "bbox": [
+    21.0,
+    21.0,
+    96.9
+   ]
+  }
+ ],
+ "fabricated": []
+}

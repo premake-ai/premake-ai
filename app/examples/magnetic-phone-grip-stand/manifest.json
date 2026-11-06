@@ -1,0 +1,342 @@
+{
+ "t": 1793392584.126627,
+ "title": "Magnetic Phone Grip Stand",
+ "parts": [
+  {
+   "file": "stl/leaf.stl",
+   "name": "Flip leaf",
+   "group": "case",
+   "process": "sheet",
+   "color": "#a9b1bb",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    62.1,
+    63.5,
+    2.1
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/leaf-knuckle.stl",
+   "name": "Leaf knuckle",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2e",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    9.5,
+    16.7,
+    6.4
+   ]
+  },
+  {
+   "file": "stl/base-plate.stl",
+   "name": "Base plate",
+   "group": "case",
+   "process": "sheet",
+   "color": "#a9b1bb",
+   "explode": [
+    0.005,
+    -0.002,
+    -1.0
+   ],
+   "bbox": [
+    62.0,
+    62.1,
+    2.1
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/magnet-carrier.stl",
+   "name": "Magnet carrier",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2e",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    62.4,
+    68.9,
+    11.4
+   ]
+  },
+  {
+   "file": "stl/magsafe-magnet-ring.stl",
+   "name": "MagSafe magnet ring",
+   "group": "component",
+   "process": "bought",
+   "color": "#9a9a9a",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    54.0,
+    54.1,
+    3.1
+   ]
+  },
+  {
+   "file": "stl/steel-ring-sticker.stl",
+   "name": "Steel ring sticker",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8c8c8",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    56.0,
+    56.1,
+    0.6
+   ]
+  },
+  {
+   "file": "stl/m3-30-button-head-screw.stl",
+   "name": "M3\u00d730 button head screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.033,
+    0.981,
+    -0.191
+   ],
+   "bbox": [
+    31.6,
+    5.7,
+    5.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-30-button-head-screw__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 1,
+    "name": "M3\u00d730 button head screw",
+    "unit_cost_usd": 0.117,
+    "mass_g": 1.9
+   }
+  },
+  {
+   "file": "stl/m3-washer.stl",
+   "name": "M3 washer",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.353,
+    0.918,
+    -0.179
+   ],
+   "bbox": [
+    0.5,
+    7.0,
+    7.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-washer__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "washer",
+    "qty": 1,
+    "name": "M3 washer",
+    "unit_cost_usd": 0.03,
+    "mass_g": 0.1
+   }
+  },
+  {
+   "file": "stl/m3-nylock-nut.stl",
+   "name": "M3 nylock nut",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.392,
+    0.903,
+    -0.176
+   ],
+   "bbox": [
+    3.0,
+    5.5,
+    6.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-nylock-nut__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/m3-nylock-nut__1.stl",
+     "color": "#e8e4d6",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 1,
+    "name": "M3 nylock nut",
+    "unit_cost_usd": 0.09,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m2-5-countersunk-screw-4.stl",
+   "name": "M2\u00d75 countersunk screw \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.001,
+    -0.004,
+    -1.0
+   ],
+   "bbox": [
+    27.8,
+    27.8,
+    5.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m2-5-countersunk-screw-4__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "csk",
+    "qty": 4,
+    "name": "M2\u00d75 countersunk screw",
+    "unit_cost_usd": 0.074,
+    "mass_g": 0.1
+   }
+  },
+  {
+   "file": "stl/leaf-screws.stl",
+   "name": "M2\u00d74 countersunk screw \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    0.957,
+    -0.289
+   ],
+   "bbox": [
+    3.8,
+    9.3,
+    4.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/leaf-screws__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "csk",
+    "qty": 2,
+    "name": "M2\u00d74 countersunk screw",
+    "unit_cost_usd": 0.073,
+    "mass_g": 0.1
+   }
+  },
+  {
+   "file": "stl/android-phone-galaxy-s25-size-yours.stl",
+   "name": "Android phone (Galaxy S25 size) (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2a2a32",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    71.2,
+    146.9,
+    8.4
+   ],
+   "ref_model": {
+    "key": "android_phone",
+    "m": [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.01
+     ],
+     [
+      0.0,
+      -1.0,
+      0.0,
+      16.25
+     ],
+     [
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "yours": true
+   }
+  }
+ ],
+ "scene": "desk",
+ "assembly_order": [
+  [
+   "Magnet carrier"
+  ],
+  [
+   "MagSafe magnet ring"
+  ],
+  [
+   "Base plate"
+  ],
+  [
+   "Flip leaf",
+   "Leaf knuckle"
+  ],
+  [
+   "Steel ring sticker"
+  ]
+ ],
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 3
+ }
+}

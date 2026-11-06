@@ -1,0 +1,129 @@
+{
+ "parts": [
+  {
+   "name": "1-1/2 in steel butt hinge (2 holes per leaf)",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon / hardware store",
+   "url": "",
+   "notes": "\"1.5 inch small butt hinge\"; ~38 x 38 mm open, 1.5 mm leaf"
+  },
+  {
+   "name": "#4 x 1/4 in flat head wood screw",
+   "qty_per_unit": 8,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon / hardware store",
+   "url": "",
+   "notes": "hinge leaves into 6 mm ply; 1/4 in so it doesn't poke through"
+  },
+  {
+   "name": "#4 x 3/8 in pan head wood screw",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon / hardware store",
+   "url": "",
+   "notes": "stop bar to deck"
+  },
+  {
+   "name": "Rubber bumper 1/2 in x 0.14 in, self-adhesive",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "\"clear rubber bumper pads 12.7mm\""
+  },
+  {
+   "name": "Neoprene strip 1/4 in x 1/16 in, self-adhesive (2 x 40 mm)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.2,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "grip on leg foot"
+  },
+  {
+   "name": "Wood glue (lip tabs)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.1,
+   "supplier": "hardware store",
+   "url": "",
+   "notes": "a few drops"
+  }
+ ],
+ "assembly_minutes": 12,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/stop-bar.stl",
+   "name": "Stop bar",
+   "grams": 13.4,
+   "print_hours": 0.67,
+   "bbox": [
+    120.0,
+    16.7,
+    15.6
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/deck.stl",
+   "name": "Deck",
+   "process": "laser",
+   "params": {
+    "material": "birch plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1015.2,
+    "area_cm2": 533.3,
+    "minutes": 3.1,
+    "material_usd": 3.84
+   },
+   "bbox": [
+    280.0,
+    227.6,
+    87.8
+   ]
+  },
+  {
+   "file": "stl/lip.stl",
+   "name": "Lip",
+   "process": "laser",
+   "params": {
+    "material": "birch plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 561.8,
+    "area_cm2": 41.6,
+    "minutes": 2.2,
+    "material_usd": 0.3
+   },
+   "bbox": [
+    260.0,
+    12.5,
+    20.9
+   ]
+  },
+  {
+   "file": "stl/leg.stl",
+   "name": "Leg",
+   "process": "laser",
+   "params": {
+    "material": "birch plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 627.4,
+    "area_cm2": 135.0,
+    "minutes": 2.3,
+    "material_usd": 0.97
+   },
+   "bbox": [
+    240.0,
+    31.7,
+    73.7
+   ]
+  }
+ ]
+}

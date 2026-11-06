@@ -1,0 +1,278 @@
+{
+ "t": 1793164667.2225878,
+ "title": "Adjustable grip trainer",
+ "parts": [
+  {
+   "file": "stl/body-left.stl",
+   "name": "Body left",
+   "group": "case",
+   "color": "#c9ccd2",
+   "explode": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    16.1,
+    163.3,
+    158.6
+   ]
+  },
+  {
+   "file": "stl/body-right.stl",
+   "name": "Body right",
+   "group": "case",
+   "color": "#aeb3bb",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    16.1,
+    163.3,
+    158.6
+   ]
+  },
+  {
+   "file": "stl/lever.stl",
+   "name": "Palm lever",
+   "group": "case",
+   "color": "#5aa9ff",
+   "explode": [
+    0.0,
+    0.6,
+    -0.8
+   ],
+   "bbox": [
+    22.1,
+    67.2,
+    141.4
+   ]
+  },
+  {
+   "file": "stl/pusher.stl",
+   "name": "Spring pusher",
+   "group": "case",
+   "color": "#6fbf73",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    25.4,
+    14.0,
+    25.4
+   ]
+  },
+  {
+   "file": "stl/seat.stl",
+   "name": "Preload seat (nut carrier)",
+   "group": "case",
+   "color": "#6fbf73",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    19.9,
+    10.0,
+    22.2
+   ]
+  },
+  {
+   "file": "stl/knob.stl",
+   "name": "Adjust knob",
+   "group": "case",
+   "color": "#6fbf73",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    30.0,
+    16.0,
+    30.0
+   ]
+  },
+  {
+   "file": "stl/back-plate.stl",
+   "name": "Plunger back plate",
+   "group": "case",
+   "color": "#8e9aaf",
+   "explode": [
+    0.0,
+    0.978,
+    -0.208
+   ],
+   "bbox": [
+    26.0,
+    21.1,
+    86.1
+   ]
+  },
+  {
+   "file": "stl/plunger-1.stl",
+   "name": "Plunger 1",
+   "group": "case",
+   "color": "#ffd166",
+   "explode": [
+    0.0,
+    -0.978,
+    0.208
+   ],
+   "bbox": [
+    16.0,
+    31.9,
+    17.6
+   ]
+  },
+  {
+   "file": "stl/plunger-2.stl",
+   "name": "Plunger 2",
+   "group": "case",
+   "color": "#ffd166",
+   "explode": [
+    0.0,
+    -0.978,
+    0.208
+   ],
+   "bbox": [
+    16.0,
+    31.9,
+    17.6
+   ]
+  },
+  {
+   "file": "stl/plunger-3.stl",
+   "name": "Plunger 3",
+   "group": "case",
+   "color": "#ffd166",
+   "explode": [
+    0.0,
+    -0.978,
+    0.208
+   ],
+   "bbox": [
+    16.0,
+    31.9,
+    17.6
+   ]
+  },
+  {
+   "file": "stl/plunger-4.stl",
+   "name": "Plunger 4",
+   "group": "case",
+   "color": "#ffd166",
+   "explode": [
+    0.0,
+    -0.978,
+    0.208
+   ],
+   "bbox": [
+    16.0,
+    31.9,
+    17.6
+   ]
+  },
+  {
+   "file": "stl/spring-main.stl",
+   "name": "Hillman #53 main spring",
+   "group": "component",
+   "color": "#ff9f43",
+   "explode": [
+    0.0,
+    0.0,
+    1.2
+   ],
+   "bbox": [
+    19.2,
+    67.8,
+    19.2
+   ]
+  },
+  {
+   "file": "stl/spring-finger.stl",
+   "name": "Ace 5062936 finger springs (4x)",
+   "group": "component",
+   "color": "#ff9f43",
+   "explode": [
+    0.0,
+    0.978,
+    -0.208
+   ],
+   "bbox": [
+    11.3,
+    42.4,
+    81.0
+   ]
+  },
+  {
+   "file": "stl/bolt-adjuster.stl",
+   "name": "5/16-18 adjuster bolt",
+   "group": "component",
+   "color": "#555b63",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    14.7,
+    81.6,
+    12.7
+   ]
+  },
+  {
+   "file": "stl/nut-adjuster.stl",
+   "name": "5/16-18 nut (in seat)",
+   "group": "component",
+   "color": "#555b63",
+   "explode": [
+    0.0,
+    0.0,
+    1.2
+   ],
+   "bbox": [
+    14.7,
+    6.9,
+    12.7
+   ]
+  },
+  {
+   "file": "stl/bolt-pivot.stl",
+   "name": "1/4-20 pivot bolt + nylock + washers",
+   "group": "component",
+   "color": "#555b63",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    54.9,
+    18.6,
+    18.6
+   ]
+  },
+  {
+   "file": "stl/screws.stl",
+   "name": "#4 screws",
+   "group": "component",
+   "color": "#555b63",
+   "explode": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    25.5,
+    127.8,
+    147.9
+   ]
+  }
+ ]
+}

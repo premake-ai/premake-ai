@@ -1,0 +1,301 @@
+{
+ "t": 1793686928.200376,
+ "title": "OLED Desk Buddy",
+ "parts": [
+  {
+   "file": "stl/base.stl",
+   "name": "Base",
+   "group": "case",
+   "process": "print",
+   "color": "#f07a2a",
+   "explode": [
+    0.033,
+    0.0,
+    -0.999
+   ],
+   "bbox": [
+    66.0,
+    64.0,
+    36.0
+   ]
+  },
+  {
+   "file": "stl/bottom-plate.stl",
+   "name": "Bottom plate",
+   "group": "case",
+   "process": "print",
+   "color": "#f07a2a",
+   "explode": [
+    0.022,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    60.8,
+    58.8,
+    7.4
+   ]
+  },
+  {
+   "file": "stl/head.stl",
+   "name": "Head",
+   "group": "case",
+   "process": "print",
+   "color": "#f2efe8",
+   "explode": [
+    0.038,
+    -0.24,
+    0.97
+   ],
+   "bbox": [
+    52.0,
+    46.0,
+    44.0
+   ]
+  },
+  {
+   "file": "stl/back-cover.stl",
+   "name": "Back cover",
+   "group": "case",
+   "process": "print",
+   "color": "#f2efe8",
+   "explode": [
+    0.032,
+    0.543,
+    0.839
+   ],
+   "bbox": [
+    47.3,
+    2.2,
+    38.5
+   ]
+  },
+  {
+   "file": "stl/sg90-micro-servo.stl",
+   "name": "SG90 micro servo",
+   "group": "component",
+   "process": "bought",
+   "color": "#2c5fbf",
+   "explode": [
+    -0.663,
+    -0.355,
+    -0.659
+   ],
+   "bbox": [
+    45.5,
+    12.2,
+    29.9
+   ],
+   "subparts": [
+    {
+     "file": "stl/sg90-micro-servo__0.stl",
+     "color": "#2c5fbf",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/sg90-micro-servo__1.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/sg90-micro-servo__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/sg90-micro-servo__3.stl",
+     "color": "#f3f1ea",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/sg90-micro-servo__4.stl",
+     "color": "#6b3a1f",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/sg90-micro-servo__5.stl",
+     "color": "#d23b2e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/sg90-micro-servo__6.stl",
+     "color": "#f08a1c",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "sg90",
+    "qty": 1,
+    "name": "SG90 micro servo",
+    "unit_cost_usd": 2.5,
+    "mass_g": 9.0
+   }
+  },
+  {
+   "file": "stl/esp32-devkitc-wroom-32-38-pin.stl",
+   "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    -0.043,
+    0.397,
+    -0.917
+   ],
+   "bbox": [
+    55.4,
+    13.2,
+    27.9
+   ],
+   "port": {
+    "type": "usb-c",
+    "at": [
+     -30.0,
+     7.7,
+     17.4
+    ],
+    "dir": [
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "wide": [
+     0.0,
+     0.0,
+     1.0
+    ]
+   },
+   "subparts": [
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__1.stl",
+     "color": "#232a36",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__4.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__6.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__7.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__8.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__9.stl",
+     "color": "#b48a5c",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "esp32_devkitc",
+    "qty": 1,
+    "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+    "unit_cost_usd": 7.5,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/0-96-oled-display-ssd1306.stl",
+   "name": "0.96\" OLED display (SSD1306)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a3a6b",
+   "explode": [
+    0.029,
+    -0.644,
+    0.765
+   ],
+   "bbox": [
+    27.3,
+    11.3,
+    27.9
+   ],
+   "subparts": [
+    {
+     "file": "stl/0-96-oled-display-ssd1306__0.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/0-96-oled-display-ssd1306__1.stl",
+     "color": "#1a3a6b",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/0-96-oled-display-ssd1306__2.stl",
+     "color": "#0f1013",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/0-96-oled-display-ssd1306__3.stl",
+     "color": "#08090c",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/0-96-oled-display-ssd1306__4.stl",
+     "color": "#0d1b2a",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/0-96-oled-display-ssd1306__5.stl",
+     "color": "#c9a24a",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/0-96-oled-display-ssd1306__6.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "oled_096",
+    "qty": 1,
+    "name": "0.96\" OLED display (SSD1306)",
+    "unit_cost_usd": 3.5,
+    "mass_g": 4.0
+   }
+  }
+ ],
+ "scene": "desk",
+ "wiring": {
+  "file": "wiring.json",
+  "wires": 7,
+  "parts": [
+   "0.96\" OLED display (SSD1306)",
+   "ESP32 DevKitC (WROOM-32, 38 pin)",
+   "SG90 micro servo"
+  ],
+  "ok": true
+ }
+}

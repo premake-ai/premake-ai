@@ -1,0 +1,129 @@
+{
+ "parts": [
+  {
+   "name": "Female-to-female Dupont jumper wires 20 cm",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.06,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "In your ELEGOO kit. ESP32 header pins to the OLED's 4 pins (VCC, GND, SDA, SCL). Leave ~10 cm slack through the neck so the head can turn."
+  },
+  {
+   "name": "Male-to-female Dupont jumper wires 20 cm",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.06,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "In your ELEGOO kit. Male ends into the servo's 3-pin plug, female ends onto the ESP32 (5V, GND, GPIO13)."
+  },
+  {
+   "name": "M3x10 self-tapping screw for plastic",
+   "qty_per_unit": 6,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "4 hold the bottom plate, 2 hold the head's back cover."
+  },
+  {
+   "name": "M2x6 self-tapping screw for plastic",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "OLED to the head's standoffs. The servo's own screws (in its bag) fix its tabs and the horn."
+  },
+  {
+   "name": "Rubber feet 10 mm",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.06,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Under the bottom plate corners."
+  },
+  {
+   "name": "USB-C data cable",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Use the one in your ELEGOO kit; powers it and flashes the code."
+  },
+  {
+   "name": "SG90 micro servo",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.5,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=SG90+micro+servo&rh=p_85%3A2470955011",
+   "notes": "search: SG90 micro servo",
+   "auto": "lib"
+  },
+  {
+   "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 7.5,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=ESP32+DevKitC+WROOM-32+38+pin&rh=p_85%3A2470955011",
+   "notes": "search: ESP32 DevKitC WROOM-32 38 pin",
+   "auto": "lib"
+  },
+  {
+   "name": "0.96\" OLED display (SSD1306)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 3.5,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=0.96+inch+OLED+SSD1306+I2C&rh=p_85%3A2470955011",
+   "notes": "search: 0.96 inch OLED SSD1306 I2C",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 20,
+ "kit_ok": true,
+ "needs_soldering": false,
+ "printed": [
+  {
+   "file": "stl/base.stl",
+   "name": "Base",
+   "grams": 22.5,
+   "print_hours": 1.12,
+   "bbox": [
+    66.0,
+    64.0,
+    36.0
+   ]
+  },
+  {
+   "file": "stl/bottom-plate.stl",
+   "name": "Bottom plate",
+   "grams": 5.9,
+   "print_hours": 0.3,
+   "bbox": [
+    60.8,
+    58.8,
+    7.4
+   ]
+  },
+  {
+   "file": "stl/head.stl",
+   "name": "Head",
+   "grams": 15.5,
+   "print_hours": 0.78,
+   "bbox": [
+    52.0,
+    46.0,
+    44.0
+   ]
+  },
+  {
+   "file": "stl/back-cover.stl",
+   "name": "Back cover",
+   "grams": 2.8,
+   "print_hours": 0.25,
+   "bbox": [
+    47.3,
+    2.2,
+    38.5
+   ]
+  }
+ ],
+ "fabricated": []
+}

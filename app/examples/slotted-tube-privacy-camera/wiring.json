@@ -1,0 +1,17 @@
+{"wires": [
+  {"from": {"part": "5V 2A USB wall adapter", "pin": "USB-A"}, "to": {"part": "USB-C cable 2 m", "pin": "USB-A"}, "color": "black", "kind": "usb"},
+  {"from": {"part": "USB-C cable 2 m", "pin": "USB-C"}, "to": {"part": "TP4056 USB-C charger", "pin": "USB-C"}, "color": "black", "kind": "usb"},
+  {"from": {"part": "Solar panel 5V 53x30", "pin": "+"}, "to": {"part": "1N5819 Schottky diode", "pin": "A"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "1N5819 Schottky diode", "pin": "K"}, "to": {"part": "TP4056 USB-C charger", "pin": "IN+"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "Solar panel 5V 53x30", "pin": "-"}, "to": {"part": "TP4056 USB-C charger", "pin": "IN-"}, "color": "black", "kind": "solder"},
+  {"from": {"part": "TP4056 USB-C charger", "pin": "B+"}, "to": {"part": "18650 holder, 1 cell", "pin": "+"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "TP4056 USB-C charger", "pin": "B-"}, "to": {"part": "18650 holder, 1 cell", "pin": "-"}, "color": "black", "kind": "solder"},
+  {"from": {"part": "TP4056 USB-C charger", "pin": "OUT+"}, "to": {"part": "MT3608 boost 5V", "pin": "VIN+"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "TP4056 USB-C charger", "pin": "OUT-"}, "to": {"part": "MT3608 boost 5V", "pin": "VIN-"}, "color": "black", "kind": "solder"},
+  {"from": {"part": "MT3608 boost 5V", "pin": "VOUT+"}, "to": {"part": "ESP32-CAM (AI-Thinker)", "pin": "5V"}, "color": "red", "kind": "jst"},
+  {"from": {"part": "MT3608 boost 5V", "pin": "VOUT-"}, "to": {"part": "ESP32-CAM (AI-Thinker)", "pin": "GND"}, "color": "black", "kind": "jst"},
+  {"from": {"part": "ESP32-CAM (AI-Thinker)", "pin": "GPIO13"}, "to": {"part": "220 ohm resistor", "pin": "1"}, "color": "green", "kind": "solder"},
+  {"from": {"part": "220 ohm resistor", "pin": "2"}, "to": {"part": "5 mm LED (green)", "pin": "+"}, "color": "green", "kind": "solder"},
+  {"from": {"part": "5 mm LED (green)", "pin": "-"}, "to": {"part": "ESP32-CAM (AI-Thinker)", "pin": "GND"}, "color": "black", "kind": "solder"},
+  {"from": {"part": "ESP32-CAM-MB", "pin": "GND"}, "to": {"part": "ESP32-CAM (AI-Thinker)", "pin": "GND"}, "color": "black", "kind": "header"}
+]}

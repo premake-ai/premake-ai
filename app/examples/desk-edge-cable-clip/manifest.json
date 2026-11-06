@@ -1,0 +1,91 @@
+{
+ "t": 1793335886.66056,
+ "title": "Desk cable organizer that clips onto",
+ "parts": [
+  {
+   "file": "stl/desk-clamp-organizer.stl",
+   "name": "Desk Clamp Organizer",
+   "group": "case",
+   "process": "print",
+   "color": "#2f3640",
+   "explode": [
+    0.0,
+    -0.978,
+    0.207
+   ],
+   "bbox": [
+    80.0,
+    45.0,
+    60.0
+   ]
+  },
+  {
+   "file": "stl/m5x30-thumb-screw.stl",
+   "name": "M5x30 thumb screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#b0b4b8",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    16.0,
+    16.0,
+    35.0
+   ]
+  },
+  {
+   "file": "stl/m5-hex-nut.stl",
+   "name": "M5 hex nut",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa0a6",
+   "explode": [
+    0.0,
+    -0.916,
+    -0.401
+   ],
+   "bbox": [
+    9.2,
+    8.0,
+    4.0
+   ]
+  },
+  {
+   "file": "stl/desk-reference.stl",
+   "name": "Desk (reference)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a27a",
+   "explode": [
+    0.0,
+    0.92,
+    0.391
+   ],
+   "bbox": [
+    200.0,
+    160.0,
+    25.0
+   ]
+  },
+  {
+   "file": "stl/cables-reference.stl",
+   "name": "Cables (reference)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1b1b1b",
+   "explode": [
+    -0.221,
+    -0.397,
+    0.891
+   ],
+   "bbox": [
+    53.7,
+    170.0,
+    6.4
+   ]
+  }
+ ]
+}

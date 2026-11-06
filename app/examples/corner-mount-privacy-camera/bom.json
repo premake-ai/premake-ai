@@ -1,0 +1,179 @@
+{
+ "parts": [
+  {
+   "name": "ESP32-CAM (AI-Thinker, OV2640)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 8.5,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/AITRIP-ESP32-CAM-ESP32-CAM-MB-Compatible-Raspberry/dp/B097BLT24K",
+   "notes": "AITRIP 2-pack (~$17): ESP32-CAM 27 x 40.5 x 4.5 mm + OV2640 + ESP32-CAM-MB (CH340, micro-USB). Price is half the pack. Search: ESP32-CAM-MB OV2640 2 pack"
+  },
+  {
+   "name": "ESP32-CAM-MB USB programmer",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/AITRIP-ESP32-CAM-ESP32-CAM-MB-Compatible-Raspberry/dp/B097BLT24K",
+   "notes": "Included with the ESP32-CAM line above (40 x 27 mm, micro-USB)"
+  },
+  {
+   "name": "5 V 2 A USB wall adapter",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 8.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/clp/B0FM8QR217",
+   "notes": "UL certified 5V 2A single-port USB-A charger. Search: UL listed 5V 2A USB wall charger"
+  },
+  {
+   "name": "Micro-USB cable 3 m",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 7.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/Android-Charger-Charging-Samsung-Durable/dp/B01GGT4FCM",
+   "notes": "White 10 ft USB-A to micro-USB; runs from the ceiling corner down to the outlet"
+  },
+  {
+   "name": "Removable mounting strips",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.2,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/Command-Refill-Strips-Medium-9-Strips/dp/B0014CQGW4",
+   "notes": "Command medium refill strips, 2 per unit (one on the wall flange, one on the ceiling flange), from a 9-pack (~$5). No drilling; pull-tab removal"
+  },
+  {
+   "name": "220 ohm resistor",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Status LED series resistor, inline in heat-shrink. Search: 220 ohm resistor 1/4W"
+  },
+  {
+   "name": "Hook-up wire and heat-shrink",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.3,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "2 x 60 mm of 26 AWG wire + heat-shrink for the status LED. Search: 26 AWG silicone wire kit"
+  },
+  {
+   "name": "5 mm LED (red)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=5mm+LED+assortment&rh=p_85%3A2470955011",
+   "notes": "search: 5mm LED assortment",
+   "auto": "lib"
+  },
+  {
+   "name": "M4 heat-set insert",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.14,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M4+heat+set+insert+brass&rh=p_85%3A2470955011",
+   "notes": "search: M4 heat set insert brass",
+   "auto": "lib"
+  },
+  {
+   "name": "M4\u00d78 button head screw",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.13,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M4x8+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M4x8 button head screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M2.5\u00d78 self-tapping screw for plastic",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.052,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M2.5+x+8mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M2.5 x 8mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 18,
+ "kit_ok": true,
+ "needs_soldering": true,
+ "soldering_reason": "The status LED and its resistor are soldered to the ESP32-CAM's GPIO13 and GND pins, because the MB board's socket covers the headers.",
+ "printed": [
+  {
+   "file": "stl/pod-shell.stl",
+   "name": "Pod shell",
+   "grams": 20.4,
+   "print_hours": 1.02,
+   "bbox": [
+    58.0,
+    33.5,
+    64.0
+   ]
+  },
+  {
+   "file": "stl/back-cap.stl",
+   "name": "Back cap",
+   "grams": 7.8,
+   "print_hours": 0.39,
+   "bbox": [
+    56.0,
+    11.6,
+    64.0
+   ]
+  },
+  {
+   "file": "stl/shutter.stl",
+   "name": "Privacy shutter",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    18.0,
+    1.6,
+    30.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/front-panel.stl",
+   "name": "Front panel",
+   "process": "laser",
+   "params": {
+    "material": "smoked acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 235.4,
+    "area_cm2": 20.7,
+    "minutes": 1.2,
+    "material_usd": 0.22
+   },
+   "bbox": [
+    44.0,
+    3.0,
+    52.0
+   ]
+  },
+  {
+   "file": "stl/corner-bracket.stl",
+   "name": "Corner bracket",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 5052",
+    "thickness_mm": 1.5,
+    "bends": 3,
+    "finish": "black powder coat"
+   },
+   "est": {
+    "area_cm2": 87.1,
+    "bends": 3,
+    "minutes": 9.4,
+    "material_usd": 0.52
+   },
+   "bbox": [
+    61.0,
+    64.8,
+    46.8
+   ]
+  }
+ ]
+}

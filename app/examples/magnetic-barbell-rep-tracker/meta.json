@@ -1,0 +1,13 @@
+{
+ "title": "Magnetic Barbell Rep Tracker",
+ "description": "Matchbox-size magnetic gym sensor that counts reps and measures bar speed with an IMU and syncs each set over Wi-Fi to the phone app.",
+ "creator": "Premake",
+ "tags": [
+  "fitness",
+  "ESP32",
+  "imu",
+  "Wi-Fi"
+ ],
+ "created": "2026-11-03T03:30:02.928Z",
+ "demo": true
+}

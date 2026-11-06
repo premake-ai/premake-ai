@@ -1,0 +1,14 @@
+{
+ "title": "Private Home Monitoring Camera",
+ "description": "Local-only Wi-Fi camera in a two-tone folded aluminium shell, with a sliding privacy shutter and a status light.",
+ "creator": "Premake",
+ "tags": [
+  "camera",
+  "esp32 cam",
+  "privacy",
+  "sheet metal",
+  "home"
+ ],
+ "created": "2026-11-03T21:01:59.251Z",
+ "demo": true
+}

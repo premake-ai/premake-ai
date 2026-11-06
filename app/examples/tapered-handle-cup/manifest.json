@@ -1,0 +1,23 @@
+{
+ "t": 1793314256.950123,
+ "title": "Cup",
+ "parts": [
+  {
+   "file": "stl/cup.stl",
+   "name": "Cup",
+   "group": "case",
+   "process": "print",
+   "color": "#e8e2d6",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    109.2,
+    84.4,
+    100.1
+   ]
+  }
+ ]
+}

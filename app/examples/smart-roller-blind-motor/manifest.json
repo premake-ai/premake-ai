@@ -1,0 +1,331 @@
+{
+ "t": 1793399046.665344,
+ "title": "Smart Roller Blind Motor",
+ "parts": [
+  {
+   "file": "stl/housing.stl",
+   "name": "Housing",
+   "group": "case",
+   "process": "print",
+   "color": "#ece8e0",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    142.0,
+    43.5,
+    76.0
+   ]
+  },
+  {
+   "file": "stl/front-cover.stl",
+   "name": "Front Cover",
+   "group": "case",
+   "process": "print",
+   "color": "#ece8e0",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    110.0,
+    14.5,
+    76.0
+   ]
+  },
+  {
+   "file": "stl/sprocket.stl",
+   "name": "Sprocket",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3a3a",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    27.1,
+    7.0,
+    27.1
+   ]
+  },
+  {
+   "file": "stl/blind-bead-chain-yours.stl",
+   "name": "Blind bead chain (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#f4f4f4",
+   "explode": [
+    0.782,
+    -0.529,
+    0.33
+   ],
+   "bbox": [
+    27.7,
+    4.5,
+    166.1
+   ]
+  },
+  {
+   "file": "stl/28byj-48-geared-stepper-5-v.stl",
+   "name": "28BYJ-48 geared stepper 5 V",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa4ad",
+   "explode": [
+    0.432,
+    -0.118,
+    -0.894
+   ],
+   "bbox": [
+    42.0,
+    32.0,
+    28.0
+   ]
+  },
+  {
+   "file": "stl/uln2003-driver-board.stl",
+   "name": "ULN2003 driver board",
+   "group": "component",
+   "process": "bought",
+   "color": "#2a7a3a",
+   "explode": [
+    -0.29,
+    0.265,
+    -0.92
+   ],
+   "bbox": [
+    35.0,
+    10.6,
+    32.0
+   ]
+  },
+  {
+   "file": "stl/12-mm-push-button.stl",
+   "name": "12 mm push button",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    -0.497,
+    -0.086,
+    -0.863
+   ],
+   "bbox": [
+    15.0,
+    22.5,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/esp32-devkitc-wroom-32-38-pin.stl",
+   "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    -0.491,
+    0.359,
+    -0.794
+   ],
+   "bbox": [
+    55.4,
+    13.2,
+    27.9
+   ],
+   "subparts": [
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__1.stl",
+     "color": "#232a36",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__4.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__6.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__7.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__8.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__9.stl",
+     "color": "#b48a5c",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "esp32_devkitc",
+    "qty": 1,
+    "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+    "unit_cost_usd": 7.5,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/m3-6-button-head-screw-2.stl",
+   "name": "M3\u00d76 button head screw \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.425,
+    -0.217,
+    -0.879
+   ],
+   "bbox": [
+    40.7,
+    7.6,
+    5.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-6-button-head-screw-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 2,
+    "name": "M3\u00d76 button head screw",
+    "unit_cost_usd": 0.095,
+    "mass_g": 0.6
+   }
+  },
+  {
+   "file": "stl/m3-10-button-head-screw-4.stl",
+   "name": "M3\u00d710 button head screw \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    -0.215,
+    -0.977
+   ],
+   "bbox": [
+    101.7,
+    11.6,
+    67.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-button-head-screw-4__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M3\u00d710 button head screw",
+    "unit_cost_usd": 0.099,
+    "mass_g": 0.8
+   }
+  },
+  {
+   "file": "stl/m3-heat-set-insert-4.stl",
+   "name": "M3 heat-set insert \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    0.0,
+    -0.196,
+    -0.981
+   ],
+   "bbox": [
+    100.6,
+    5.7,
+    66.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-heat-set-insert-4__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "insert",
+    "qty": 4,
+    "name": "M3 heat-set insert",
+    "unit_cost_usd": 0.12,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m3-heat-set-insert-2.stl",
+   "name": "M3 heat-set insert \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    0.423,
+    -0.237,
+    -0.875
+   ],
+   "bbox": [
+    39.6,
+    5.7,
+    4.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-heat-set-insert-2__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "insert",
+    "qty": 2,
+    "name": "M3 heat-set insert",
+    "unit_cost_usd": 0.12,
+    "mass_g": 0.4
+   }
+  }
+ ],
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 1
+ }
+}

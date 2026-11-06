@@ -1,0 +1,11 @@
+{"wires": [
+  {"from": {"part": "5V 2A USB wall adapter", "pin": "USB"}, "to": {"part": "ESP32-CAM-MB programmer", "pin": "Micro-USB"}, "color": "black", "kind": "jst"},
+  {"from": {"part": "ESP32-CAM-MB programmer", "pin": "5V"}, "to": {"part": "ESP32-CAM (AI-Thinker)", "pin": "5V"}, "color": "red", "kind": "dupont"},
+  {"from": {"part": "ESP32-CAM-MB programmer", "pin": "GND"}, "to": {"part": "ESP32-CAM (AI-Thinker)", "pin": "GND"}, "color": "black", "kind": "dupont"},
+  {"from": {"part": "ESP32-CAM-MB programmer", "pin": "U0T"}, "to": {"part": "ESP32-CAM (AI-Thinker)", "pin": "U0R"}, "color": "yellow", "kind": "dupont"},
+  {"from": {"part": "ESP32-CAM-MB programmer", "pin": "U0R"}, "to": {"part": "ESP32-CAM (AI-Thinker)", "pin": "U0T"}, "color": "green", "kind": "dupont"},
+  {"from": {"part": "ESP32-CAM-MB programmer", "pin": "IO0"}, "to": {"part": "ESP32-CAM (AI-Thinker)", "pin": "IO0"}, "color": "white", "kind": "dupont"},
+  {"from": {"part": "ESP32-CAM (AI-Thinker)", "pin": "IO13"}, "to": {"part": "220 ohm resistor", "pin": "1"}, "color": "blue", "kind": "solder"},
+  {"from": {"part": "220 ohm resistor", "pin": "2"}, "to": {"part": "Status LED (3 mm)", "pin": "+"}, "color": "blue", "kind": "solder"},
+  {"from": {"part": "Status LED (3 mm)", "pin": "-"}, "to": {"part": "ESP32-CAM (AI-Thinker)", "pin": "GND"}, "color": "black", "kind": "solder"}
+]}

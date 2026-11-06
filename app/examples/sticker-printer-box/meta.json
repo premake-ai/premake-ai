@@ -1,0 +1,8 @@
+{
+ "title": "Sticker Printer Box",
+ "description": "A sticker printer box: press the big button, say what you want, and a built-in 58 mm thermal printer prints it as a sticker, run by an ESP32-S3 with a microphone.",
+ "creator": "Premake",
+ "tags": [],
+ "created": "2026-10-29T20:30:34.404Z",
+ "demo": true
+}

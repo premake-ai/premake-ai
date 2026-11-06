@@ -1,0 +1,329 @@
+{
+ "t": 1793311884.737757,
+ "title": "Desktop HEPA Air Purifier",
+ "parts": [
+  {
+   "file": "stl/body-ring.stl",
+   "name": "Body ring",
+   "group": "case",
+   "process": "print",
+   "color": "#e9e6df",
+   "explode": [
+    -0.003,
+    0.399,
+    -0.917
+   ],
+   "bbox": [
+    204.2,
+    204.2,
+    74.3
+   ]
+  },
+  {
+   "file": "stl/cap-ring.stl",
+   "name": "Cap ring",
+   "group": "case",
+   "process": "print",
+   "color": "#5b6b73",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    204.3,
+    204.4,
+    36.3
+   ]
+  },
+  {
+   "file": "stl/floor-disc.stl",
+   "name": "Floor disc",
+   "group": "case",
+   "process": "laser",
+   "color": "#2a2a2a",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    199.5,
+    199.6,
+    3.2
+   ]
+  },
+  {
+   "file": "stl/deck-disc.stl",
+   "name": "Deck disc",
+   "group": "case",
+   "process": "laser",
+   "color": "#2a2a2a",
+   "explode": [
+    0.0,
+    0.0,
+    0.7
+   ],
+   "bbox": [
+    199.5,
+    199.6,
+    3.2
+   ]
+  },
+  {
+   "file": "stl/top-grille-disc.stl",
+   "name": "Top grille disc",
+   "group": "case",
+   "process": "laser",
+   "color": "#3c4a52",
+   "explode": [
+    0.0,
+    0.0,
+    1.3
+   ],
+   "bbox": [
+    199.5,
+    199.6,
+    3.2
+   ]
+  },
+  {
+   "file": "stl/fan-frame.stl",
+   "name": "120 mm 12 V PWM fan",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2b2b",
+   "explode": [
+    0.0,
+    0.0,
+    1.15
+   ],
+   "bbox": [
+    120.0,
+    120.0,
+    25.2
+   ]
+  },
+  {
+   "file": "stl/fan-rotor.stl",
+   "name": "Fan rotor",
+   "group": "component",
+   "process": "bought",
+   "color": "#3a3a3a",
+   "explode": [
+    0.0,
+    0.0,
+    1.15
+   ],
+   "bbox": [
+    106.8,
+    109.5,
+    19.1
+   ]
+  },
+  {
+   "file": "stl/hepa-filter-radial-190-x-62.stl",
+   "name": "HEPA filter (radial, 190 x 62)",
+   "group": "component",
+   "process": "bought",
+   "color": "#f4f4f0",
+   "explode": [
+    0.0,
+    0.0,
+    0.4
+   ],
+   "bbox": [
+    190.6,
+    190.7,
+    62.2
+   ]
+  },
+  {
+   "file": "stl/pwm-speed-controller-board.stl",
+   "name": "PWM speed controller board",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f6f3f",
+   "explode": [
+    0.0,
+    0.0,
+    1.15
+   ],
+   "bbox": [
+    28.0,
+    45.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/speed-knob-pot.stl",
+   "name": "Speed knob + pot",
+   "group": "component",
+   "process": "bought",
+   "color": "#1c1c1c",
+   "explode": [
+    0.229,
+    -0.914,
+    0.335
+   ],
+   "bbox": [
+    23.5,
+    29.1,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/16-mm-latching-power-button.stl",
+   "name": "16 mm latching power button",
+   "group": "component",
+   "process": "bought",
+   "color": "#c0c4c8",
+   "explode": [
+    -0.232,
+    -0.9,
+    0.369
+   ],
+   "bbox": [
+    21.5,
+    26.1,
+    19.0
+   ]
+  },
+  {
+   "file": "stl/rubber-feet-12-7-x-8.stl",
+   "name": "Rubber feet 12.7 x 8",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    -0.001,
+    0.115,
+    -0.993
+   ],
+   "bbox": [
+    125.9,
+    125.9,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/m4-35-button-head-screw-4.stl",
+   "name": "M4\u00d735 button head screw \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.001,
+    0.157,
+    0.988
+   ],
+   "bbox": [
+    112.6,
+    112.6,
+    37.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-35-button-head-screw-4__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M4\u00d735 button head screw",
+    "unit_cost_usd": 0.162,
+    "mass_g": 4.0
+   }
+  },
+  {
+   "file": "stl/m4-hex-nut-4.stl",
+   "name": "M4 hex nut \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.002,
+    0.235,
+    0.972
+   ],
+   "bbox": [
+    113.1,
+    112.0,
+    3.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-hex-nut-4__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 4,
+    "name": "M4 hex nut",
+    "unit_cost_usd": 0.07,
+    "mass_g": 0.6
+   }
+  },
+  {
+   "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1.stl",
+   "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9cdd2",
+   "explode": [
+    -0.001,
+    0.954,
+    0.3
+   ],
+   "bbox": [
+    16.2,
+    16.6,
+    14.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__0.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__1.stl",
+     "color": "#b9bec4",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__3.stl",
+     "color": "#e0e2e4",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__4.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "dc_jack_panel",
+    "qty": 1,
+    "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+    "unit_cost_usd": 0.8,
+    "mass_g": 6.0
+   }
+  }
+ ],
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 1
+ }
+}

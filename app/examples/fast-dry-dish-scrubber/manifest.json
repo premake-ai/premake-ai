@@ -1,0 +1,24 @@
+{
+ "t": 1793391739.2726889,
+ "title": "Fast-Dry Dish Scrubber",
+ "parts": [
+  {
+   "file": "stl/scrubber-pad.stl",
+   "name": "Scrubber pad",
+   "group": "case",
+   "process": "print",
+   "color": "#3fb59a",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    110.0,
+    72.0,
+    12.0
+   ]
+  }
+ ],
+ "scene": "counter"
+}

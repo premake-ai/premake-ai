@@ -1,0 +1,8 @@
+{
+ "title": "Phone-Face Desk Robot",
+ "description": "A tracked desk robot that uses your phone as its face: the phone snaps on with a MagSafe-style charger, and the head tilts to nod.",
+ "creator": "Premake",
+ "tags": [],
+ "created": "2026-10-30T20:22:35.296Z",
+ "demo": true
+}

@@ -1,0 +1,91 @@
+{
+ "parts": [
+  {
+   "name": "Neodymium disc magnet 10 x 3 mm, N52",
+   "qty_per_unit": 10,
+   "unit_cost_usd": 0.12,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search '10x3mm neodymium magnets'. Press fit, add a drop of CA glue; check polarity so rail and clip attract."
+  },
+  {
+   "name": "3M VHB double-sided tape strip 100 x 14 mm",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Sticks the rail to the desk edge"
+  }
+ ],
+ "assembly_minutes": 5,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/desk-rail.stl",
+   "name": "Desk rail",
+   "grams": 7.6,
+   "print_hours": 0.38,
+   "bbox": [
+    129.0,
+    20.0,
+    6.0
+   ]
+  },
+  {
+   "file": "stl/clip-3-6-mm.stl",
+   "name": "Clip 3.6 mm",
+   "grams": 2.9,
+   "print_hours": 0.25,
+   "bbox": [
+    21.0,
+    21.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/clip-4-4-mm.stl",
+   "name": "Clip 4.4 mm",
+   "grams": 2.8,
+   "print_hours": 0.25,
+   "bbox": [
+    21.0,
+    21.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/clip-5-2-mm.stl",
+   "name": "Clip 5.2 mm",
+   "grams": 2.7,
+   "print_hours": 0.25,
+   "bbox": [
+    21.0,
+    21.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/clip-6-0-mm.stl",
+   "name": "Clip 6.0 mm",
+   "grams": 2.6,
+   "print_hours": 0.25,
+   "bbox": [
+    21.1,
+    21.0,
+    15.1
+   ]
+  },
+  {
+   "file": "stl/clip-7-2-mm.stl",
+   "name": "Clip 7.2 mm",
+   "grams": 2.3,
+   "print_hours": 0.25,
+   "bbox": [
+    21.1,
+    21.0,
+    15.1
+   ]
+  }
+ ],
+ "fabricated": []
+}

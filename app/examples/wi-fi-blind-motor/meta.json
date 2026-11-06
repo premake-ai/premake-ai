@@ -1,0 +1,12 @@
+{
+ "title": "Wi-Fi Blind Motor",
+ "description": "Wall-mounted stepper drive that pulls a roller blind's bead chain, controlled from a phone over Wi-Fi.",
+ "creator": "Premake",
+ "tags": [
+  "smart home",
+  "ESP32",
+  "stepper"
+ ],
+ "created": "2026-10-29T21:31:58.604Z",
+ "demo": true
+}

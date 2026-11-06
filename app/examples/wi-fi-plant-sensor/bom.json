@@ -1,0 +1,122 @@
+{
+ "parts": [
+  {
+   "name": "Capacitive soil moisture sensor v1.2",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: capacitive soil moisture sensor v1.2 (5-pack ~$10), 98 x 23 mm, comes with PH2.0 3-pin cable"
+  },
+  {
+   "name": "TP4056 USB-C charger with protection",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.9,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: TP4056 USB-C protection (28 x 17 mm, with OUT+/OUT- pads)"
+  },
+  {
+   "name": "BH1750 GY-302 light sensor",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.7,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B00M0F29OS",
+   "notes": "HiLetgo 3-pack; 18.5 x 13.9 mm"
+  },
+  {
+   "name": "BME280 temp/humidity module 3.3 V",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: BME280 3.3V I2C module"
+  },
+  {
+   "name": "18650 battery spring contact plates (pair)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.3,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 18650 battery spring contact plate; flat plate in bay floor, spring glued in cap rim"
+  },
+  {
+   "name": "100k resistor (battery divider)",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.03,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: resistor assortment 1/4W"
+  },
+  {
+   "name": "Silicone wire 26 AWG + heat shrink",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 26 AWG silicone wire kit"
+  },
+  {
+   "name": "Neutral-cure silicone sealant (dab)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.3,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: clear RTV silicone sealant; seals probe slot and holds the light sensor"
+  },
+  {
+   "name": "18650 Li-ion cell",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=18650+battery+protected+3000mAh&rh=p_85%3A2470955011",
+   "notes": "search: 18650 battery protected 3000mAh",
+   "auto": "lib"
+  },
+  {
+   "name": "ESP32-C3 SuperMini",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=ESP32-C3+SuperMini&rh=p_85%3A2470955011",
+   "notes": "search: ESP32-C3 SuperMini",
+   "auto": "lib"
+  },
+  {
+   "name": "M2\u00d78 button head screw",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.076,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M2x8+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M2x8 button head screw",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 35,
+ "kit_ok": false,
+ "printed": [
+  {
+   "file": "stl/body.stl",
+   "name": "Body",
+   "grams": 38.5,
+   "print_hours": 1.93,
+   "bbox": [
+    48.0,
+    39.0,
+    80.0
+   ]
+  },
+  {
+   "file": "stl/cap.stl",
+   "name": "Cap",
+   "grams": 6.9,
+   "print_hours": 0.35,
+   "bbox": [
+    48.1,
+    39.1,
+    17.0
+   ]
+  }
+ ],
+ "fabricated": []
+}

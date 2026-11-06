@@ -1,0 +1,52 @@
+{
+ "parts": [],
+ "assembly_minutes": 0,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/human-half.stl",
+   "name": "Human half",
+   "grams": 1307.6,
+   "print_hours": 65.38,
+   "bbox": [
+    260.0,
+    160.0,
+    45.0
+   ]
+  },
+  {
+   "file": "stl/robot-half.stl",
+   "name": "Robot half",
+   "grams": 1307.6,
+   "print_hours": 65.38,
+   "bbox": [
+    260.0,
+    160.0,
+    45.0
+   ]
+  },
+  {
+   "file": "stl/tower.stl",
+   "name": "Tower",
+   "grams": 388.9,
+   "print_hours": 19.45,
+   "bbox": [
+    160.0,
+    58.0,
+    60.0
+   ]
+  },
+  {
+   "file": "stl/link-1.stl",
+   "name": "Link 1",
+   "grams": 17.0,
+   "print_hours": 0.85,
+   "bbox": [
+    130.0,
+    34.0,
+    5.5
+   ]
+  }
+ ],
+ "fabricated": []
+}

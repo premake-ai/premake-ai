@@ -1,0 +1,57 @@
+{
+ "t": 1793242576.635222,
+ "title": "Fold-flat phone stand",
+ "parts": [
+  {
+   "file": "stl/fold-flat-stand-print-in-place-base.stl",
+   "name": "Fold-flat stand (print-in-place): base",
+   "group": "case",
+   "process": "print",
+   "color": "#5b3fd6",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    74.0,
+    224.5,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/fold-flat-stand-print-in-place-leaf.stl",
+   "name": "Fold-flat stand (print-in-place): leaf",
+   "group": "case",
+   "process": "print",
+   "color": "#8f7bff",
+   "explode": [
+    0.0,
+    -0.6,
+    0.6
+   ],
+   "bbox": [
+    62.0,
+    50.0,
+    88.5
+   ]
+  },
+  {
+   "file": "stl/fold-flat-stand-print-in-place-strut.stl",
+   "name": "Fold-flat stand (print-in-place): strut",
+   "group": "case",
+   "process": "print",
+   "color": "#3e2a9c",
+   "explode": [
+    0.0,
+    1.0,
+    0.4
+   ],
+   "bbox": [
+    46.0,
+    84.2,
+    43.7
+   ]
+  }
+ ]
+}

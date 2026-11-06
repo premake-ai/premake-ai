@@ -1,0 +1,627 @@
+{
+ "parts": [
+  {
+   "name": "V6-style hotend kit 24 V 40 W (with thermistor)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 12.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: V6 hotend kit 24V 1.75mm bowden"
+  },
+  {
+   "name": "Bowden extruder kit (MK8 aluminium)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 8.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: MK8 aluminium bowden extruder 1.75"
+  },
+  {
+   "name": "PTFE tube 2x4 mm, 1 m + fittings",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: PTFE tube 1.75 bowden kit"
+  },
+  {
+   "name": "32-bit printer board with 4 x TMC2209 (SKR Mini E3 V3 class)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 35.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: SKR Mini E3 V3; runs Marlin MP_SCARA"
+  },
+  {
+   "name": "T8 lead screw 400 mm + brass nut + flexible 5-8 mm coupler",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 10.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: T8 lead screw 400mm kit"
+  },
+  {
+   "name": "8 mm steel shaft 100 mm",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 2.0,
+   "supplier": "McMaster-Carr",
+   "url": "",
+   "notes": "shoulder and elbow axles"
+  },
+  {
+   "name": "GT2 6 mm closed belt",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 2.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: GT2 closed loop belt 6mm assortment (two motor belts + elbow belt)"
+  },
+  {
+   "name": "Magnetic PEI spring steel sheet 220 mm",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 15.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: PEI spring steel sheet 220x220 magnetic, trim to 200"
+  },
+  {
+   "name": "MGN12 linear rail 400 mm with MGN12H block",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 18.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: MGN12H 400mm linear rail; bolts to the front slot of each column with M3 + T-nuts"
+  },
+  {
+   "name": "Mechanical endstop switch",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Z, shoulder and elbow homing"
+  },
+  {
+   "name": "24 V 5 A power adapter, 5.5x2.1 (UL listed)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 18.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 24V 5A power supply 5.5x2.1 UL"
+  },
+  {
+   "name": "Inline blade fuse holder + 7.5 A fuse",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: inline blade fuse holder 18AWG"
+  },
+  {
+   "name": "2020 corner bracket 90 deg (with screws + T-nuts)",
+   "qty_per_unit": 14,
+   "unit_cost_usd": 0.6,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 2020 corner bracket kit; 4 base corners, 4 column feet, 2 under top bar, 4 outriggers"
+  },
+  {
+   "name": "2020 diagonal corner support bracket, ~150 mm (steel)",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 3.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 2020 aluminum extrusion diagonal brace support bracket; column back slot to rear outrigger top slot"
+  },
+  {
+   "name": "2020 L joining plate, 5 hole",
+   "qty_per_unit": 6,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 2020 L shape joining plate 5 hole (2 on back of top joints, 4 under base corners)"
+  },
+  {
+   "name": "M5x10 button head + T-nut",
+   "qty_per_unit": 70,
+   "unit_cost_usd": 0.15,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "brackets, plates, base plate to frame"
+  },
+  {
+   "name": "2020 extrusion, stock lengths (no cutting, no tapping)",
+   "qty_per_unit": 0,
+   "unit_cost_usd": 0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "for reference: 2x400, 2x300, 2x450, 1x200, 2x200 outriggers (priced in the quote as extrusion parts)"
+  },
+  {
+   "name": "M3 screw assortment (8-30 mm) + nuts",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "motors, bed, links, box"
+  },
+  {
+   "name": "Rubber feet 20 mm",
+   "qty_per_unit": 6,
+   "unit_cost_usd": 0.3,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "under corner plates and outrigger feet"
+  },
+  {
+   "name": "Wiring: stepper cable extensions, 18 AWG, JST-XH kit",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 8.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: stepper motor cable 1m 4 pin"
+  },
+  {
+   "name": "M3\u00d710 brass standoff",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.18,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+brass+standoff+10mm&rh=p_85%3A2470955011",
+   "notes": "search: M3 brass standoff 10mm",
+   "auto": "lib"
+  },
+  {
+   "name": "NEMA17 stepper motor 40 mm",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 11.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=NEMA17+stepper+motor+40mm&rh=p_85%3A2470955011",
+   "notes": "search: NEMA17 stepper motor 40mm",
+   "auto": "lib"
+  },
+  {
+   "name": "NEMA17 stepper motor 48 mm",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 13.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=NEMA17+stepper+motor+48mm&rh=p_85%3A2470955011",
+   "notes": "search: NEMA17 stepper motor 48mm",
+   "auto": "lib"
+  },
+  {
+   "name": "GT2 pulley 20T 5 mm bore",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=GT2+20T+pulley+5mm+bore&rh=p_85%3A2470955011",
+   "notes": "search: GT2 20T pulley 5mm bore",
+   "auto": "lib"
+  },
+  {
+   "name": "608ZZ bearing",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.6,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=608ZZ+bearing&rh=p_85%3A2470955011",
+   "notes": "search: 608ZZ bearing",
+   "auto": "lib"
+  },
+  {
+   "name": "5V fan 30\u00d730\u00d710",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 3.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=5V+fan+30x30x10mm&rh=p_85%3A2470955011",
+   "notes": "search: 5V fan 30x30x10mm",
+   "auto": "lib"
+  },
+  {
+   "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.8,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=DC-022+panel+mount+barrel+jack+5.5x2.1&rh=p_85%3A2470955011",
+   "notes": "search: DC-022 panel mount barrel jack 5.5x2.1",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 240,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/outrigger-foot.stl",
+   "name": "Outrigger foot",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    24.0,
+    27.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/outrigger-foot-2.stl",
+   "name": "Outrigger foot",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    24.0,
+    27.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/shoulder-pulley.stl",
+   "name": "Shoulder pulley",
+   "grams": 10.1,
+   "print_hours": 0.5,
+   "bbox": [
+    40.0,
+    40.0,
+    12.0
+   ]
+  },
+  {
+   "file": "stl/elbow-drive-pulley.stl",
+   "name": "Elbow drive pulley",
+   "grams": 12.1,
+   "print_hours": 0.61,
+   "bbox": [
+    40.0,
+    40.0,
+    48.0
+   ]
+  },
+  {
+   "file": "stl/link-1.stl",
+   "name": "Link 1",
+   "grams": 119.9,
+   "print_hours": 6.0,
+   "bbox": [
+    187.9,
+    86.4,
+    26.1
+   ]
+  },
+  {
+   "file": "stl/elbow-pulley.stl",
+   "name": "Elbow pulley",
+   "grams": 2.2,
+   "print_hours": 0.25,
+   "bbox": [
+    20.0,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/link-2.stl",
+   "name": "Link 2",
+   "grams": 70.9,
+   "print_hours": 3.54,
+   "bbox": [
+    149.9,
+    133.7,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/hotend-mount.stl",
+   "name": "Hotend mount",
+   "grams": 27.6,
+   "print_hours": 1.38,
+   "bbox": [
+    32.0,
+    32.0,
+    66.0
+   ]
+  },
+  {
+   "file": "stl/spool-holder.stl",
+   "name": "Spool holder",
+   "grams": 59.7,
+   "print_hours": 2.99,
+   "bbox": [
+    44.0,
+    120.0,
+    52.0
+   ]
+  },
+  {
+   "file": "stl/electronics-box.stl",
+   "name": "Electronics box",
+   "grams": 29.7,
+   "print_hours": 1.49,
+   "bbox": [
+    90.0,
+    90.0,
+    34.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/2020-x-400.stl",
+   "name": "2020 x 400",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 400.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 400.0,
+    "minutes": 5.0,
+    "material_usd": 2.4
+   },
+   "bbox": [
+    400.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/2020-x-400-2.stl",
+   "name": "2020 x 400",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 400.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 400.0,
+    "minutes": 5.0,
+    "material_usd": 2.4
+   },
+   "bbox": [
+    400.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/2020-x-300.stl",
+   "name": "2020 x 300",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 300.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 300.0,
+    "minutes": 5.0,
+    "material_usd": 1.8
+   },
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/2020-x-300-2.stl",
+   "name": "2020 x 300",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 300.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 300.0,
+    "minutes": 5.0,
+    "material_usd": 1.8
+   },
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/z-column-2020-x-450.stl",
+   "name": "Z column 2020 x 450",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 450.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 450.0,
+    "minutes": 5.0,
+    "material_usd": 2.7
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    450.0
+   ]
+  },
+  {
+   "file": "stl/z-column-2020-x-450-2.stl",
+   "name": "Z column 2020 x 450",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 450.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 450.0,
+    "minutes": 5.0,
+    "material_usd": 2.7
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    450.0
+   ]
+  },
+  {
+   "file": "stl/top-bar-2020-x-200.stl",
+   "name": "Top bar 2020 x 200",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 200.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 200.0,
+    "minutes": 5.0,
+    "material_usd": 1.2
+   },
+   "bbox": [
+    200.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/rear-outrigger-2020-x-200.stl",
+   "name": "Rear outrigger 2020 x 200",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 200.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 200.0,
+    "minutes": 5.0,
+    "material_usd": 1.2
+   },
+   "bbox": [
+    20.0,
+    200.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/rear-outrigger-2020-x-200-2.stl",
+   "name": "Rear outrigger 2020 x 200",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 200.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 200.0,
+    "minutes": 5.0,
+    "material_usd": 1.2
+   },
+   "bbox": [
+    20.0,
+    200.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/base-plate.stl",
+   "name": "Base plate",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1735.0,
+    "area_cm2": 1328.3,
+    "minutes": 4.6,
+    "material_usd": 9.56
+   },
+   "bbox": [
+    400.0,
+    340.0,
+    6.0
+   ]
+  },
+  {
+   "file": "stl/bed-plate.stl",
+   "name": "Bed plate",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 5052",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 398.8,
+    "bends": 0,
+    "minutes": 8.0,
+    "material_usd": 4.79
+   },
+   "bbox": [
+    200.0,
+    200.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/z-motor-plate.stl",
+   "name": "Z motor plate",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 5052",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 29.9,
+    "bends": 0,
+    "minutes": 4.3,
+    "material_usd": 0.36
+   },
+   "bbox": [
+    60.0,
+    58.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/carriage.stl",
+   "name": "Carriage",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 5052",
+    "thickness_mm": 3.0,
+    "bends": 2
+   },
+   "est": {
+    "area_cm2": 154.6,
+    "bends": 2,
+    "minutes": 8.5,
+    "material_usd": 1.86
+   },
+   "bbox": [
+    180.0,
+    90.0,
+    50.0
+   ]
+  },
+  {
+   "file": "stl/electronics-lid.stl",
+   "name": "Electronics lid",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 342.8,
+    "area_cm2": 80.1,
+    "minutes": 1.3,
+    "material_usd": 0.84
+   },
+   "bbox": [
+    90.0,
+    90.0,
+    3.0
+   ]
+  }
+ ],
+ "needs_soldering": false
+}

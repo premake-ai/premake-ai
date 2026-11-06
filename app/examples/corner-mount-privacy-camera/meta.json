@@ -1,0 +1,14 @@
+{
+ "title": "Corner Mount Privacy Camera",
+ "description": "Local-only Wi-Fi camera for keeping an eye on elderly relatives, which sits in a wall-ceiling corner with no drilling and has a sliding privacy shutter and adjustable tilt.",
+ "creator": "Premake",
+ "tags": [
+  "camera",
+  "esp32 cam",
+  "privacy",
+  "elder care",
+  "wall"
+ ],
+ "created": "2026-11-03T21:11:29.516Z",
+ "demo": true
+}

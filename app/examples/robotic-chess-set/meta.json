@@ -1,0 +1,8 @@
+{
+ "title": "Robotic Chess Set",
+ "description": "A portable robotic chess set that folds out of a case into a board, with a small arm that moves the computer's pieces so you can play a real board against Stockfish.",
+ "creator": "Premake",
+ "tags": [],
+ "created": "2026-10-30T20:56:41.869Z",
+ "demo": true
+}

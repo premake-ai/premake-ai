@@ -1,0 +1,80 @@
+{
+ "t": 1793825677.6306932,
+ "title": "Design a product based on this",
+ "parts": [
+  {
+   "file": "stl/pot-body.stl",
+   "name": "Pot body",
+   "group": "case",
+   "process": "print",
+   "color": "#3d4044",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    207.4,
+    110.6,
+    55.4
+   ]
+  },
+  {
+   "file": "stl/lid.stl",
+   "name": "Lid",
+   "group": "case",
+   "process": "print",
+   "color": "#55595e",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    105.7,
+    105.8,
+    4.1
+   ]
+  },
+  {
+   "file": "stl/m3-10-self-tapping-screw-for-plastic-2.stl",
+   "name": "M3\u00d710 self-tapping screw for plastic \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.075,
+    0.0,
+    0.997
+   ],
+   "bbox": [
+    74.7,
+    74.7,
+    12.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-self-tapping-screw-for-plastic-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 2,
+    "name": "M3\u00d710 self-tapping screw for plastic",
+    "unit_cost_usd": 0.059,
+    "mass_g": 0.8
+   }
+  }
+ ],
+ "scene": "desk",
+ "assembly_order": [
+  [
+   "Pot body"
+  ],
+  [
+   "Lid"
+  ]
+ ]
+}

@@ -1,0 +1,63 @@
+{
+ "t": 1793336798.327981,
+ "title": "Self-Watering Herb Pot",
+ "parts": [
+  {
+   "file": "stl/pot.stl",
+   "name": "Pot",
+   "group": "case",
+   "process": "print",
+   "color": "#e8e2d6",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    116.3,
+    116.3,
+    100.2
+   ]
+  },
+  {
+   "file": "stl/wicking-cone.stl",
+   "name": "Wicking Cone",
+   "group": "case",
+   "process": "print",
+   "color": "#7a8f6a",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    113.1,
+    112.4,
+    56.4
+   ]
+  },
+  {
+   "file": "stl/level-float.stl",
+   "name": "Level Float",
+   "group": "case",
+   "process": "print",
+   "color": "#d9482b",
+   "explode": [
+    0.0,
+    0.0,
+    1.6
+   ],
+   "bbox": [
+    21.0,
+    21.0,
+    96.9
+   ]
+  }
+ ],
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 1
+ }
+}

@@ -1,0 +1,126 @@
+{
+ "parts": [
+  {
+   "name": "28BYJ-48 5 V geared stepper + ULN2003 driver board",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 3.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 28BYJ-48 ULN2003 (5-packs ~ $13); motor cable plugs straight into the board"
+  },
+  {
+   "name": "Dupont jumper wires female-female 20 cm",
+   "qty_per_unit": 8,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: dupont jumper wires female to female"
+  },
+  {
+   "name": "12 mm momentary push button, pre-wired leads",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 12mm momentary push button pre-wired"
+  },
+  {
+   "name": "USB charger 5 V 2 A, UL listed",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "any phone charger works"
+  },
+  {
+   "name": "USB cable 2 m to match the ESP32 board (micro-USB or USB-C)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 3.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "enters the left side of the housing"
+  },
+  {
+   "name": "Wall screw #8 x 1-1/4in + anchor",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.2,
+   "supplier": "Hardware store",
+   "url": "",
+   "notes": "through the two slotted ears"
+  },
+  {
+   "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 7.5,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=ESP32+DevKitC+WROOM-32+38+pin&rh=p_85%3A2470955011",
+   "notes": "search: ESP32 DevKitC WROOM-32 38 pin",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d76 button head screw",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.095,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x6+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M3x6 button head screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d710 button head screw",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.099,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x10+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M3x10 button head screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M3 heat-set insert",
+   "qty_per_unit": 6,
+   "unit_cost_usd": 0.12,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+heat+set+insert+brass&rh=p_85%3A2470955011",
+   "notes": "search: M3 heat set insert brass",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 25,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/housing.stl",
+   "name": "Housing",
+   "grams": 44.8,
+   "print_hours": 2.24,
+   "bbox": [
+    142.0,
+    43.5,
+    76.0
+   ]
+  },
+  {
+   "file": "stl/front-cover.stl",
+   "name": "Front Cover",
+   "grams": 23.4,
+   "print_hours": 1.17,
+   "bbox": [
+    110.0,
+    14.5,
+    76.0
+   ]
+  },
+  {
+   "file": "stl/sprocket.stl",
+   "name": "Sprocket",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    27.1,
+    7.0,
+    27.1
+   ]
+  }
+ ],
+ "fabricated": []
+}

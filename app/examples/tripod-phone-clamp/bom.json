@@ -1,0 +1,55 @@
+{
+ "parts": [
+  {
+   "name": "1/4-20 hex nut, zinc steel",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.1,
+   "supplier": "Bolt Depot / hardware store",
+   "url": "",
+   "notes": "7/16\" AF x 7/32\" thick; one for landscape, one for portrait"
+  },
+  {
+   "name": "M5x12 knurled thumb screw, low type (DIN 653)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.6,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"M5 x 12 knurled thumb screw DIN 653\"; 20 mm head, no shoulder"
+  },
+  {
+   "name": "M5 hex nut",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon / hardware store",
+   "url": "",
+   "notes": "8 mm AF, captured in slider boss"
+  }
+ ],
+ "assembly_minutes": 3,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/body.stl",
+   "name": "Body",
+   "grams": 25.5,
+   "print_hours": 1.27,
+   "bbox": [
+    50.0,
+    31.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/slider.stl",
+   "name": "Slider Jaw",
+   "grams": 9.9,
+   "print_hours": 0.49,
+   "bbox": [
+    30.0,
+    37.1,
+    50.0
+   ]
+  }
+ ],
+ "fabricated": []
+}

@@ -1,0 +1,286 @@
+{
+ "parts": [
+  {
+   "name": "#8 x 1-1/4\" pan-head wood screw + drywall anchor",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.15,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: \"#8 drywall anchors with screws kit\". Two screws through the back panel; skip the anchors when screwing into a stud."
+  },
+  {
+   "name": "Wood glue (PVA), 4 oz",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: \"Titebond II wood glue 4 oz\". Glues the tab-and-slot joints."
+  }
+ ],
+ "assembly_minutes": 20,
+ "kit_ok": true,
+ "needs_soldering": false,
+ "printed": [],
+ "fabricated": [
+  {
+   "file": "stl/back-panel.stl",
+   "name": "Back panel",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1833.4,
+    "area_cm2": 456.7,
+    "minutes": 4.8,
+    "material_usd": 3.29
+   },
+   "bbox": [
+    266.0,
+    5.5,
+    195.0
+   ]
+  },
+  {
+   "file": "stl/shelf.stl",
+   "name": "Shelf",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 922.9,
+    "area_cm2": 145.6,
+    "minutes": 2.9,
+    "material_usd": 1.05
+   },
+   "bbox": [
+    266.0,
+    65.5,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/shelf-lip.stl",
+   "name": "Shelf lip",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 543.1,
+    "area_cm2": 35.0,
+    "minutes": 2.1,
+    "material_usd": 0.25
+   },
+   "bbox": [
+    250.0,
+    5.5,
+    19.5
+   ]
+  },
+  {
+   "file": "stl/gusset-l.stl",
+   "name": "Gusset L",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 192.7,
+    "area_cm2": 13.6,
+    "minutes": 1.4,
+    "material_usd": 0.1
+   },
+   "bbox": [
+    5.5,
+    55.5,
+    55.5
+   ]
+  },
+  {
+   "file": "stl/gusset-r.stl",
+   "name": "Gusset R",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 192.7,
+    "area_cm2": 13.6,
+    "minutes": 1.4,
+    "material_usd": 0.1
+   },
+   "bbox": [
+    5.5,
+    55.5,
+    55.5
+   ]
+  },
+  {
+   "file": "stl/pocket-bottom.stl",
+   "name": "Pocket bottom",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 592.0,
+    "area_cm2": 71.2,
+    "minutes": 2.2,
+    "material_usd": 0.51
+   },
+   "bbox": [
+    246.0,
+    39.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/pocket-side-l.stl",
+   "name": "Pocket side L",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 208.0,
+    "area_cm2": 19.7,
+    "minutes": 1.4,
+    "material_usd": 0.14
+   },
+   "bbox": [
+    5.5,
+    39.0,
+    65.0
+   ]
+  },
+  {
+   "file": "stl/pocket-side-r.stl",
+   "name": "Pocket side R",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 208.0,
+    "area_cm2": 19.7,
+    "minutes": 1.4,
+    "material_usd": 0.14
+   },
+   "bbox": [
+    5.5,
+    39.0,
+    65.0
+   ]
+  },
+  {
+   "file": "stl/pocket-front.stl",
+   "name": "Pocket front",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 976.5,
+    "area_cm2": 151.2,
+    "minutes": 3.0,
+    "material_usd": 1.09
+   },
+   "bbox": [
+    266.0,
+    5.5,
+    65.0
+   ]
+  },
+  {
+   "file": "stl/hook-1.stl",
+   "name": "Hook 1",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 218.0,
+    "area_cm2": 8.5,
+    "minutes": 1.5,
+    "material_usd": 0.06
+   },
+   "bbox": [
+    5.5,
+    47.5,
+    44.0
+   ]
+  },
+  {
+   "file": "stl/hook-2.stl",
+   "name": "Hook 2",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 218.0,
+    "area_cm2": 8.5,
+    "minutes": 1.5,
+    "material_usd": 0.06
+   },
+   "bbox": [
+    5.5,
+    47.5,
+    44.0
+   ]
+  },
+  {
+   "file": "stl/hook-3.stl",
+   "name": "Hook 3",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 218.0,
+    "area_cm2": 8.5,
+    "minutes": 1.5,
+    "material_usd": 0.06
+   },
+   "bbox": [
+    5.5,
+    47.5,
+    44.0
+   ]
+  },
+  {
+   "file": "stl/hook-4.stl",
+   "name": "Hook 4",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 218.0,
+    "area_cm2": 8.5,
+    "minutes": 1.5,
+    "material_usd": 0.06
+   },
+   "bbox": [
+    5.5,
+    47.5,
+    44.0
+   ]
+  }
+ ]
+}

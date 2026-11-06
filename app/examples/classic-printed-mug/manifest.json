@@ -1,0 +1,23 @@
+{
+ "t": 1793314054.904746,
+ "title": "Mug",
+ "parts": [
+  {
+   "file": "stl/mug.stl",
+   "name": "Mug",
+   "group": "case",
+   "process": "print",
+   "color": "#e8e2d6",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    114.1,
+    84.2,
+    96.1
+   ]
+  }
+ ]
+}

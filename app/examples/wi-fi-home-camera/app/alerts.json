@@ -1,0 +1,9 @@
+{
+  "rules": [
+    { "id": "offline", "stale_h": 1, "severity": "high", "message": "{name} is offline", "cooldown_h": 6 },
+    { "id": "stream_down", "field": "online", "below": 0.5, "sustain_h": 0.5, "severity": "high", "message": "{name}'s video stream stopped", "cooldown_h": 6 },
+    { "id": "very_weak_wifi", "field": "rssi", "below": -85, "sustain_h": 0.5, "severity": "high", "message": "{name} keeps losing Wi-Fi", "cooldown_h": 12 },
+    { "id": "weak_wifi", "field": "rssi", "below": "profile.rssi_min", "sustain_h": 2, "severity": "low", "message": "{name} has a weak Wi-Fi signal", "cooldown_h": 24 },
+    { "id": "restarted", "field": "uptime_min", "below": 10, "severity": "low", "message": "{name} restarted. Check its power cable", "cooldown_h": 12 }
+  ]
+}

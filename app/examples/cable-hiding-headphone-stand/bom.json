@@ -1,0 +1,151 @@
+{
+ "parts": [
+  {
+   "name": "M5 T-nut for 2020 slot (drop-in)",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.15,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 2020 M5 drop in T nut; one for the corner bracket, one for the plug dock"
+  },
+  {
+   "name": "2020 slot cover strip, 6 mm, black (105 mm)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.6,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 2020 slot cover strip 6mm; press-in PVC hides the cable in the rear slot, cut with scissors"
+  },
+  {
+   "name": "Rubber bumper feet 12.7 x 6 mm, adhesive",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.12,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: rubber bumper feet 1/2 inch; lift the plate so the cable runs underneath"
+  },
+  {
+   "name": "2020 corner bracket",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.6,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=2020+corner+bracket",
+   "notes": "search: 2020 corner bracket",
+   "auto": "lib"
+  },
+  {
+   "name": "M5\u00d720 countersunk screw",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.192,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M5x20+countersunk+screw",
+   "notes": "search: M5x20 countersunk screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M5\u00d710 button head screw",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.176,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M5x10+button+head+screw",
+   "notes": "search: M5x10 button head screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M5\u00d712 button head screw",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.179,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M5x12+button+head+screw",
+   "notes": "search: M5x12 button head screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M5\u00d716 button head screw",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.186,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M5x16+button+head+screw",
+   "notes": "search: M5x16 button head screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M5 hex nut",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.08,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M5+hex+nut",
+   "notes": "search: M5 hex nut",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 10,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/saddle.stl",
+   "name": "Saddle",
+   "grams": 43.6,
+   "print_hours": 2.18,
+   "bbox": [
+    110.9,
+    40.9,
+    39.5
+   ]
+  },
+  {
+   "file": "stl/plug-dock.stl",
+   "name": "Plug Dock",
+   "grams": 12.2,
+   "print_hours": 0.61,
+   "bbox": [
+    26.0,
+    21.5,
+    40.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/base-plate.stl",
+   "name": "Base Plate",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 3.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 160.6,
+    "bends": 0,
+    "minutes": 5.6,
+    "material_usd": 0.72
+   },
+   "bbox": [
+    140.1,
+    120.1,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/post.stl",
+   "name": "Post",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 250.0,
+    "tapped_ends": 2
+   },
+   "est": {
+    "length_mm": 250.0,
+    "minutes": 5.0,
+    "material_usd": 1.5
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    250.0
+   ]
+  }
+ ]
+}

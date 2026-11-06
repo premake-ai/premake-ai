@@ -1,0 +1,13 @@
+{
+ "title": "Peltier bed cooler",
+ "description": "Twin-TEC water chiller in a 3D-printed tower case that cools a printer bed loop, with a slide-out reservoir and a 12 V-only electronics bay.",
+ "creator": "Premake",
+ "tags": [
+  "3d printing",
+  "electronics",
+  "cooling",
+  "12V"
+ ],
+ "created": "2026-10-27T21:05:00Z",
+ "demo": true
+}

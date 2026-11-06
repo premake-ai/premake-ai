@@ -1,0 +1,334 @@
+{
+ "t": 1793739696.757754,
+ "title": "Privacy Shutter Tube Camera",
+ "parts": [
+  {
+   "file": "stl/tube.stl",
+   "name": "Tube",
+   "group": "case",
+   "process": "bought",
+   "color": "#1b1b1d",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    50.9,
+    50.9,
+    101.7
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/sled.stl",
+   "name": "Sled",
+   "group": "case",
+   "process": "print",
+   "color": "#2a2a2a",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    47.0,
+    34.5,
+    83.7
+   ]
+  },
+  {
+   "file": "stl/faceplate.stl",
+   "name": "Faceplate",
+   "group": "case",
+   "process": "sheet",
+   "color": "#141414",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    35.4,
+    7.6,
+    55.4
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/shutter.stl",
+   "name": "Privacy shutter",
+   "group": "case",
+   "process": "sheet",
+   "color": "#202022",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    21.5,
+    6.7,
+    13.0
+   ],
+   "material": "steel"
+  },
+  {
+   "file": "stl/top-cap.stl",
+   "name": "Top cap",
+   "group": "case",
+   "process": "print",
+   "color": "#1e1e1e",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    47.3,
+    47.5,
+    25.9
+   ]
+  },
+  {
+   "file": "stl/bottom-cap.stl",
+   "name": "Bottom cap",
+   "group": "case",
+   "process": "print",
+   "color": "#1e1e1e",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    47.4,
+    47.4,
+    10.2
+   ]
+  },
+  {
+   "file": "stl/esp32-cam-ai-thinker.stl",
+   "name": "ESP32-CAM (AI-Thinker)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d3a6b",
+   "explode": [
+    -0.002,
+    -0.621,
+    0.784
+   ],
+   "bbox": [
+    27.0,
+    4.0,
+    40.5
+   ]
+  },
+  {
+   "file": "stl/esp32-cam-mb-programmer.stl",
+   "name": "ESP32-CAM-MB programmer",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1a1a",
+   "explode": [
+    -0.003,
+    0.368,
+    0.93
+   ],
+   "bbox": [
+    27.0,
+    9.1,
+    40.5
+   ]
+  },
+  {
+   "file": "stl/ov2640-camera.stl",
+   "name": "OV2640 camera",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    -0.001,
+    -0.414,
+    0.91
+   ],
+   "bbox": [
+    8.5,
+    6.6,
+    8.5
+   ]
+  },
+  {
+   "file": "stl/status-led-3-mm.stl",
+   "name": "Status LED (3 mm)",
+   "group": "component",
+   "process": "bought",
+   "color": "#44ff66",
+   "explode": [
+    -0.001,
+    -0.96,
+    -0.282
+   ],
+   "bbox": [
+    3.8,
+    6.3,
+    3.8
+   ],
+   "fx": {
+    "glow": {
+     "color": "#44ff66",
+     "mode": "pulse"
+    }
+   }
+  },
+  {
+   "file": "stl/6x2-mm-magnet.stl",
+   "name": "6x2 mm magnet",
+   "group": "component",
+   "process": "bought",
+   "color": "#b0b0b0",
+   "explode": [
+    -0.424,
+    -0.545,
+    0.723
+   ],
+   "bbox": [
+    6.0,
+    2.0,
+    19.0
+   ],
+   "material": "steel"
+  },
+  {
+   "file": "stl/rubber-bumper-feet.stl",
+   "name": "Rubber bumper feet",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    -0.0,
+    -0.0,
+    -1.0
+   ],
+   "bbox": [
+    32.0,
+    32.0,
+    2.5
+   ],
+   "material": "rubber"
+  },
+  {
+   "file": "stl/m2-5-8-self-tapping-screw-for-plastic-4.stl",
+   "name": "M2.5\u00d78 self-tapping screw for plastic \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.001,
+    -0.718,
+    0.697
+   ],
+   "bbox": [
+    28.0,
+    9.9,
+    53.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m2-5-8-self-tapping-screw-for-plastic-4__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 4,
+    "name": "M2.5\u00d78 self-tapping screw for plastic",
+    "unit_cost_usd": 0.052,
+    "mass_g": 0.5
+   }
+  },
+  {
+   "file": "stl/m3-16-self-tapping-screw-for-plastic-2.stl",
+   "name": "M3\u00d716 self-tapping screw for plastic \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.0,
+    -0.267,
+    -0.964
+   ],
+   "bbox": [
+    35.6,
+    5.6,
+    18.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-16-self-tapping-screw-for-plastic-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 2,
+    "name": "M3\u00d716 self-tapping screw for plastic",
+    "unit_cost_usd": 0.063,
+    "mass_g": 1.1
+   }
+  }
+ ],
+ "scene": "shelf",
+ "assembly_order": [
+  [
+   "Sled"
+  ],
+  [
+   "Status LED (3 mm)",
+   "6x2 mm magnet"
+  ],
+  [
+   "ESP32-CAM-MB programmer",
+   "ESP32-CAM (AI-Thinker)",
+   "OV2640 camera"
+  ],
+  [
+   "Tube"
+  ],
+  [
+   "Privacy shutter"
+  ],
+  [
+   "Faceplate"
+  ],
+  [
+   "Top cap"
+  ],
+  [
+   "Bottom cap"
+  ],
+  [
+   "Rubber bumper feet"
+  ]
+ ],
+ "wiring": {
+  "file": "wiring.json",
+  "wires": 9,
+  "parts": [
+   "220 ohm resistor",
+   "5V 2A USB wall adapter",
+   "ESP32-CAM (AI-Thinker)",
+   "ESP32-CAM-MB programmer",
+   "Status LED (3 mm)"
+  ],
+  "ok": true
+ },
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 1
+ }
+}

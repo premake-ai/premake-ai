@@ -1,0 +1,159 @@
+{
+ "t": 1793242825.9407701,
+ "title": "Projector wall mount for kodak luma",
+ "parts": [
+  {
+   "file": "stl/wall-arm.stl",
+   "name": "Wall arm",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    76.1,
+    148.1,
+    76.1
+   ]
+  },
+  {
+   "file": "stl/pan-yoke.stl",
+   "name": "Pan yoke",
+   "group": "case",
+   "process": "print",
+   "color": "#4a5260",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    36.1,
+    36.1,
+    30.0
+   ]
+  },
+  {
+   "file": "stl/tilt-platform.stl",
+   "name": "Tilt platform",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    96.0,
+    96.0,
+    30.0
+   ]
+  },
+  {
+   "file": "stl/kodak-luma-350-yours.stl",
+   "name": "Kodak Luma 350 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8d8d8",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    112.0,
+    115.0,
+    32.0
+   ]
+  },
+  {
+   "file": "stl/m6x45-tilt-bolt.stl",
+   "name": "M6x45 tilt bolt",
+   "group": "component",
+   "process": "bought",
+   "color": "#999999",
+   "explode": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    44.0,
+    6.0,
+    6.0
+   ]
+  },
+  {
+   "file": "stl/m6-tilt-knob.stl",
+   "name": "M6 tilt knob",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    10.0,
+    24.0,
+    24.0
+   ]
+  },
+  {
+   "file": "stl/m6x30-pan-bolt.stl",
+   "name": "M6x30 pan bolt",
+   "group": "component",
+   "process": "bought",
+   "color": "#999999",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    6.0,
+    6.0,
+    30.0
+   ]
+  },
+  {
+   "file": "stl/m6-pan-knob.stl",
+   "name": "M6 pan knob",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    24.0,
+    24.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/1-4-20-thumb-screw.stl",
+   "name": "1/4-20 thumb screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#888888",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    19.0
+   ]
+  }
+ ]
+}

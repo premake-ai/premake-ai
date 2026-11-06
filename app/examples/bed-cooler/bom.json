@@ -1,0 +1,246 @@
+{
+ "parts": [
+  {
+   "name": "TEC1-12706 Peltier module 40x40 mm",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 4.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Sold in multi-packs"
+  },
+  {
+   "name": "Aluminium water cooling block 40x40 mm",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 5.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Two barbs on one edge"
+  },
+  {
+   "name": "Thermalright Assassin X120 Refined SE tower cooler",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 18.9,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Hot side of each TEC"
+  },
+  {
+   "name": "DollaTek 12V DC submersible pump",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 9.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Sits inside the reservoir"
+  },
+  {
+   "name": "LocknLock HPL824 1.6 L container",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 8.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Reservoir; lid gets drilled"
+  },
+  {
+   "name": "Mean Well GST220A12 12V 15A power brick (4-pin DIN)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 52.0,
+   "supplier": "Digi-Key",
+   "url": "",
+   "notes": "Keeps mains outside the case"
+  },
+  {
+   "name": "W1209 digital thermostat board",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "40 A 12V automotive relay with socket",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 6.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Switches the TECs"
+  },
+  {
+   "name": "ZABLL 12V RF remote relay switch",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 18.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Remote on/off"
+  },
+  {
+   "name": "Vinyl tubing 5/16 in ID, 10 ft",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 8.0,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "Panel-mount quick disconnect couplings, pair",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 14.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Bed loop in/out"
+  },
+  {
+   "name": "Inline ATC fuse holder + fuse",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 3.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "15 A TEC, 3 A pump/logic"
+  },
+  {
+   "name": "Panel-mount 4-pin power DIN socket",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 6.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "Float switch, M10 (optional dry-run cutoff)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "M3 heat-set inserts + M3 screws + springs",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Clamp stacks and panels"
+  },
+  {
+   "name": "Neoprene sheet 1/4 in + thermal paste",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 6.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Insulation round the cold blocks"
+  }
+ ],
+ "assembly_minutes": 90,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/case-bottom-l.stl",
+   "name": "Bottom shell L",
+   "grams": 125.0,
+   "print_hours": 6.25,
+   "bbox": [
+    135.0,
+    202.0,
+    82.0
+   ]
+  },
+  {
+   "file": "stl/case-bottom-r.stl",
+   "name": "Bottom shell R",
+   "grams": 124.9,
+   "print_hours": 6.24,
+   "bbox": [
+    135.0,
+    202.0,
+    82.0
+   ]
+  },
+  {
+   "file": "stl/case-top-l.stl",
+   "name": "Top shell L",
+   "grams": 174.0,
+   "print_hours": 8.7,
+   "bbox": [
+    135.1,
+    202.0,
+    218.1
+   ]
+  },
+  {
+   "file": "stl/case-top-r.stl",
+   "name": "Top shell R",
+   "grams": 172.2,
+   "print_hours": 8.61,
+   "bbox": [
+    135.1,
+    202.0,
+    218.1
+   ]
+  },
+  {
+   "file": "stl/case-drip-tray.stl",
+   "name": "Drip tray",
+   "grams": 202.1,
+   "print_hours": 10.1,
+   "bbox": [
+    255.0,
+    194.5,
+    18.0
+   ]
+  },
+  {
+   "file": "stl/case-elec-tray.stl",
+   "name": "Electronics tray",
+   "grams": 75.4,
+   "print_hours": 3.77,
+   "bbox": [
+    255.0,
+    148.0,
+    10.5
+   ]
+  },
+  {
+   "file": "stl/case-back-upper.stl",
+   "name": "Back panel (upper)",
+   "grams": 49.2,
+   "print_hours": 2.46,
+   "bbox": [
+    241.4,
+    2.5,
+    194.4
+   ]
+  },
+  {
+   "file": "stl/case-back-door.stl",
+   "name": "Back door (reservoir)",
+   "grams": 36.6,
+   "print_hours": 1.83,
+   "bbox": [
+    241.4,
+    4.9,
+    89.8
+   ]
+  },
+  {
+   "file": "stl/case-clamp-l.stl",
+   "name": "Clamp plate L",
+   "grams": 19.0,
+   "print_hours": 0.95,
+   "bbox": [
+    60.0,
+    60.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/case-clamp-r.stl",
+   "name": "Clamp plate R",
+   "grams": 19.0,
+   "print_hours": 0.95,
+   "bbox": [
+    60.0,
+    60.0,
+    8.0
+   ]
+  }
+ ]
+}

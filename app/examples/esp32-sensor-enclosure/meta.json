@@ -1,0 +1,13 @@
+{
+ "title": "ESP32 Sensor Enclosure",
+ "description": "Vented desk enclosure for an ESP32 DevKitC and a BME280 temperature/humidity sensor, with a baffled sensor chamber, screw posts and a snap-on lid.",
+ "creator": "Premake",
+ "tags": [
+  "ESP32",
+  "sensor",
+  "enclosure",
+  "temperature"
+ ],
+ "created": "2026-11-04T21:16:54.583Z",
+ "demo": true
+}

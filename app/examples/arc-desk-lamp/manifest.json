@@ -1,0 +1,102 @@
+{
+ "t": 1793164598.709451,
+ "title": "Arc LED desk lamp",
+ "parts": [
+  {
+   "file": "stl/lamp-base.stl",
+   "name": "Lamp base",
+   "group": "case",
+   "color": "#22223b",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    124.2,
+    124.2,
+    16.2
+   ]
+  },
+  {
+   "file": "stl/arc-arm.stl",
+   "name": "Arc arm",
+   "group": "case",
+   "color": "#f2e9e4",
+   "explode": [
+    0.0,
+    0.4,
+    0.3
+   ],
+   "bbox": [
+    25.0,
+    159.9,
+    246.7
+   ]
+  },
+  {
+   "file": "stl/lamp-head.stl",
+   "name": "Lamp head",
+   "group": "case",
+   "color": "#22223b",
+   "explode": [
+    0.0,
+    -0.6,
+    1.0
+   ],
+   "bbox": [
+    200.0,
+    30.0,
+    16.0
+   ]
+  },
+  {
+   "file": "stl/aluminium-led-channel-usb-led-strip.stl",
+   "name": "Aluminium LED channel + USB LED strip",
+   "group": "component",
+   "color": "#fff3b0",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    186.0,
+    17.0,
+    8.2
+   ]
+  },
+  {
+   "file": "stl/2-in-fender-washers-weight-4x.stl",
+   "name": "2 in fender washers (weight, 4x)",
+   "group": "component",
+   "color": "#9aa0a6",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    50.8,
+    50.8,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/inline-usb-dimmer.stl",
+   "name": "Inline USB dimmer",
+   "group": "component",
+   "color": "#4a4e69",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    38.0,
+    14.0,
+    8.0
+   ]
+  }
+ ]
+}

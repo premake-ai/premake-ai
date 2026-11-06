@@ -1,0 +1,12 @@
+{
+ "title": "Edge-Lit Name Sign",
+ "description": "A USB-powered edge-lit acrylic sign with your name engraved, lit by a rainbow LED strip in a printed base.",
+ "creator": "Premake",
+ "tags": [
+  "LED",
+  "acrylic",
+  "ESP32"
+ ],
+ "created": "2026-10-30T05:06:44.338Z",
+ "demo": true
+}

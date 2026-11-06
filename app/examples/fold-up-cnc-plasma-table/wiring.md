@@ -1,0 +1,9 @@
+# Fold-up plasma table wiring notes
+
+- **Supply:** 24 V 5 A UL-listed brick into the panel jack on the control box. Chain: jack + -> 5 A inline fuse -> E-stop (NC) -> 24V bus bar. The E-stop cuts power to everything, so the drivers, the ESP32 and the torch relay all drop out together.
+- **Power budget:** four NEMA17s at about 1.2 A RMS each pull roughly 3 A from 24 V in total (chopper drivers draw less from the supply than the phase current). The ESP32 and relay add about 0.15 A at 24 V, giving about 3.2 A, so a 5 A brick leaves enough headroom. Fuse: 5 A.
+- **TMC2209 carriers:** jumper MS1 and MS2 high for 1/16 microstepping (firmware: 80 steps/mm on X/Y with GT2 20T, 400 steps/mm on Z with an 8 mm lead screw). Set the driver Vref to about 1.2 A RMS with the motor unplugged and power off between adjustments. Never unplug a motor while it is powered. Each carrier needs its 100 uF cap across VM/GND (most carriers have one already).
+- **Switches:** all five (X, Y1, Y2, Z, float) are wired **NC to GND**, so a broken wire reads as "triggered" and stops the machine. They use the ESP32's internal pull-ups.
+- **Torch relay:** set the relay module's jumper to **high-level trigger**. COM/NO go only to your cutter's CNC start contacts, which are a low-voltage dry contact. Never wire the relay to mains.
+- **Plasma noise (important):** use a **blowback-start (non-HF) cutter**, because HF start can reset the ESP32. Use shielded stepper cables with the shield grounded at the control box only. Clamp the cutter's work lead to the slats and run a separate ground wire from the steel frame to a good earth ground. Keep the torch lead about 150 mm away from the signal cables in the drag chains where you can.
+- **Y2 direction:** the two Y motors face the same way, so Y2's DIR is inverted in the firmware (`DIR_INVERT`). If Y2 runs backwards on the first jog, cut power and flip that flag.

@@ -1,0 +1,98 @@
+{
+ "parts": [
+  {
+   "name": "12V 1A DC power adapter (5.5x2.1)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 8.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "UL listed plug-in adapter; 12 W is plenty for a 3-7 W 12 V LED bulb, so no fuse needed. Search: 12V 1A power supply 5.5x2.1 UL"
+  },
+  {
+   "name": "DC jack screw-terminal adapter",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.8,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "5.5x2.1 female barrel to screw terminal (10 pack ~$8). Search: DC female barrel jack screw terminal adapter"
+  },
+  {
+   "name": "KCD1 rocker switch",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.6,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "21x15 mm SPST ON-OFF, snaps into a 19.2x13.2 cutout (pack price). Search: KCD1-101 rocker switch 2 pin"
+  },
+  {
+   "name": "Lamp wire 2-core 18 AWG",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "~1 m, runs up the lamp pipe to your 12 V lamp head. Search: 18 AWG 2 conductor lamp wire"
+  },
+  {
+   "name": "1/8 IPS lamp pipe",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "3 in threaded lamp pipe nipple, 1/8 IPS (10.3 mm OD). Search: 1/8 IPS threaded lamp pipe 3 inch"
+  },
+  {
+   "name": "Lamp pipe lock nuts",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.3,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "1/8 IPS hex lock nuts, one each side of the top. Search: 1/8 IPS lamp lock nut"
+  },
+  {
+   "name": "Rubber feet 12.7 mm",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Self-adhesive bumpers 12.7 x 3.5 mm (3M Bumpon SJ5302 class); they cover the screw heads"
+  },
+  {
+   "name": "M3\u00d710 self-tapping screw for plastic",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.059,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+x+10mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M3 x 10mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 20,
+ "kit_ok": true,
+ "needs_soldering": true,
+ "soldering_reason": "Two lamp-wire joints are soldered to the rocker switch's spade lugs.",
+ "printed": [
+  {
+   "file": "stl/lamp-base-body.stl",
+   "name": "Lamp base body",
+   "grams": 49.6,
+   "print_hours": 2.48,
+   "bbox": [
+    130.2,
+    130.2,
+    29.2
+   ]
+  },
+  {
+   "file": "stl/bottom-plate.stl",
+   "name": "Bottom plate",
+   "grams": 24.6,
+   "print_hours": 1.23,
+   "bbox": [
+    123.5,
+    123.5,
+    6.1
+   ]
+  }
+ ],
+ "fabricated": []
+}

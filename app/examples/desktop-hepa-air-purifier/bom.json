@@ -1,0 +1,191 @@
+{
+ "parts": [
+  {
+   "name": "120 mm 12 V fan, high static pressure (PWM, runs full speed with PWM unconnected)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 9.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 120mm 12V PWM static pressure fan; ~0.1-0.2 A"
+  },
+  {
+   "name": "Round True HEPA + carbon filter, LV-H132 compatible (7.5 in dia x 2.4 in)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 11.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: LV-H132 compatible replacement filter; ~$20 per 2-pack"
+  },
+  {
+   "name": "12 V 1 A plug-in adapter, 5.5 x 2.1 mm, UL listed",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 7.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 12V 1A power supply 5.5x2.1 UL"
+  },
+  {
+   "name": "16 mm latching push button (metal, flat)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 16mm latching push button switch 12V"
+  },
+  {
+   "name": "Wago 221-412 lever connector",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.45,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "joins fan leads to supply wires without soldering"
+  },
+  {
+   "name": "PWM DC motor speed controller 12 V, 3 A, potentiometer on cable with knob",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: PWM DC motor speed controller 12V knob potentiometer panel mount; screw terminals, ~15 kHz+; pot panel nut M7 in a 7.5 mm hole"
+  },
+  {
+   "name": "VHB double-sided foam tape",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.2,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "~5 cm, holds the speed board under the top disc"
+  },
+  {
+   "name": "22 AWG hookup wire + 2.8 mm spade crimp terminals",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.6,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "~40 cm; spades for jack and button lugs"
+  },
+  {
+   "name": "Rubber bumper feet 12.7 x 8 mm, adhesive",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.12,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: rubber bumper feet 1/2 inch 8mm tall"
+  },
+  {
+   "name": "M4\u00d735 button head screw",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.162,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M4x35+button+head+screw",
+   "notes": "search: M4x35 button head screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M4 hex nut",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.07,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M4+hex+nut",
+   "notes": "search: M4 hex nut",
+   "auto": "lib"
+  },
+  {
+   "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.8,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=DC-022+panel+mount+barrel+jack+5.5x2.1",
+   "notes": "search: DC-022 panel mount barrel jack 5.5x2.1",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 15,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/body-ring.stl",
+   "name": "Body ring",
+   "grams": 59.5,
+   "print_hours": 2.97,
+   "bbox": [
+    204.2,
+    204.2,
+    74.3
+   ]
+  },
+  {
+   "file": "stl/cap-ring.stl",
+   "name": "Cap ring",
+   "grams": 37.4,
+   "print_hours": 1.87,
+   "bbox": [
+    204.3,
+    204.4,
+    36.3
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/floor-disc.stl",
+   "name": "Floor disc",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 626.4,
+    "area_cm2": 312.3,
+    "minutes": 1.5,
+    "material_usd": 3.28
+   },
+   "bbox": [
+    199.5,
+    199.6,
+    3.2
+   ]
+  },
+  {
+   "file": "stl/deck-disc.stl",
+   "name": "Deck disc",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 934.3,
+    "area_cm2": 236.8,
+    "minutes": 1.8,
+    "material_usd": 2.49
+   },
+   "bbox": [
+    199.5,
+    199.6,
+    3.2
+   ]
+  },
+  {
+   "file": "stl/top-grille-disc.stl",
+   "name": "Top grille disc",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 4406.4,
+    "area_cm2": 263.2,
+    "minutes": 4.7,
+    "material_usd": 2.76
+   },
+   "bbox": [
+    199.5,
+    199.6,
+    3.2
+   ]
+  }
+ ]
+}

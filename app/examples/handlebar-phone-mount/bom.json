@@ -1,0 +1,61 @@
+{
+ "parts": [
+  {
+   "name": "Self-adhesive EPDM rubber strip 1.5 x 20 mm, 40 mm long",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.15,
+   "supplier": "Amazon / hardware store",
+   "url": "",
+   "notes": "Lines the saddle so it can't rotate on carbon or painted bars"
+  }
+ ],
+ "assembly_minutes": 2,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/phone-cradle.stl",
+   "name": "Phone cradle",
+   "grams": 23.2,
+   "print_hours": 1.16,
+   "bbox": [
+    94.1,
+    112.3,
+    59.9
+   ]
+  },
+  {
+   "file": "stl/bar-saddle.stl",
+   "name": "Bar saddle",
+   "grams": 13.6,
+   "print_hours": 0.68,
+   "bbox": [
+    30.0,
+    53.0,
+    35.6
+   ]
+  },
+  {
+   "file": "stl/bar-strap-tpu.stl",
+   "name": "Bar strap (TPU)",
+   "grams": 3.0,
+   "print_hours": 0.25,
+   "bbox": [
+    18.0,
+    72.0,
+    30.2
+   ]
+  },
+  {
+   "file": "stl/phone-band-tpu.stl",
+   "name": "Phone band (TPU)",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    97.0,
+    13.7,
+    7.1
+   ]
+  }
+ ],
+ "fabricated": []
+}

@@ -1,0 +1,159 @@
+{
+ "t": 1793237648.3959,
+ "title": "Fin glow lamp",
+ "parts": [
+  {
+   "file": "stl/folded-aluminium-channel.stl",
+   "name": "Folded aluminium channel",
+   "group": "case",
+   "process": "sheet",
+   "color": "#b9c0c8",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    240.0,
+    60.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/opal-acrylic-fin.stl",
+   "name": "Opal acrylic fin",
+   "group": "case",
+   "process": "laser",
+   "color": "#fff1d6",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    193.3,
+    3.3,
+    137.0
+   ]
+  },
+  {
+   "file": "stl/led-rail.stl",
+   "name": "LED rail",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    0.0,
+    0.0,
+    0.4
+   ],
+   "bbox": [
+    200.0,
+    18.0,
+    36.6
+   ]
+  },
+  {
+   "file": "stl/end-cap-usb.stl",
+   "name": "End cap, USB",
+   "group": "case",
+   "process": "print",
+   "color": "#ff6b4a",
+   "explode": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    16.0,
+    61.0,
+    40.5
+   ]
+  },
+  {
+   "file": "stl/end-cap-dial.stl",
+   "name": "End cap, dial",
+   "group": "case",
+   "process": "print",
+   "color": "#ff6b4a",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    16.0,
+    61.0,
+    40.5
+   ]
+  },
+  {
+   "file": "stl/dial-knob.stl",
+   "name": "Dial knob",
+   "group": "case",
+   "process": "print",
+   "color": "#ff6b4a",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    14.0,
+    18.0,
+    18.0
+   ]
+  },
+  {
+   "file": "stl/ws2812b-strip-12-leds.stl",
+   "name": "WS2812B strip, 12 LEDs",
+   "group": "component",
+   "process": "bought",
+   "color": "#e8e8e8",
+   "explode": [
+    0.0,
+    0.0,
+    0.6
+   ],
+   "bbox": [
+    199.0,
+    10.0,
+    2.0
+   ]
+  },
+  {
+   "file": "stl/esp32-c3-supermini.stl",
+   "name": "ESP32-C3 SuperMini",
+   "group": "component",
+   "process": "bought",
+   "color": "#3a6ea5",
+   "explode": [
+    -0.6,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    23.3,
+    18.0,
+    4.8
+   ]
+  },
+  {
+   "file": "stl/ec11-rotary-encoder.stl",
+   "name": "EC11 rotary encoder",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f98",
+   "explode": [
+    0.6,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    16.5,
+    12.0,
+    12.0
+   ]
+  }
+ ]
+}

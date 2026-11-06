@@ -1,0 +1,136 @@
+{
+ "parts": [
+  {
+   "name": "Waveshare RGB LED matrix P2.5 64x32 (160 x 80 mm, HUB75)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 29.99,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B0BQYDLHY9",
+   "notes": "Comes with HUB75 ribbon and 5 V power cable. Price estimated."
+  },
+  {
+   "name": "Adafruit MatrixPortal S3 (ESP32-S3, plugs onto the panel's HUB75 input)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 30.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: Adafruit MatrixPortal S3 5778. Amazon resellers ~$30 (Adafruit list $19.95)."
+  },
+  {
+   "name": "Raspberry Pi 15W USB-C power supply 5.1 V 3 A (UL listed, 1.5 m cable)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 8.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B07W8XHMJZ",
+   "notes": "Powers board + panel over USB-C; brightness capped in Tronbyt to stay under 3 A."
+  },
+  {
+   "name": "Adhesive EVA foam pads 5 mm (12 x 12 mm)",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.08,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 5mm adhesive EVA foam pads. Cushion the standoffs against the panel back."
+  },
+  {
+   "name": "Clear rubber bumper feet 10 mm x 3 mm",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.06,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 10mm clear rubber bumper pads adhesive"
+  },
+  {
+   "name": "Small zip tie (cable strain relief)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.03,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 4 inch zip ties"
+  },
+  {
+   "name": "M3\u00d710 brass standoff",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.18,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+brass+standoff+10mm&rh=p_85%3A2470955011",
+   "notes": "search: M3 brass standoff 10mm",
+   "auto": "lib"
+  },
+  {
+   "name": "M3 heat-set insert",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.12,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+heat+set+insert+brass&rh=p_85%3A2470955011",
+   "notes": "search: M3 heat set insert brass",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d78 button head screw",
+   "qty_per_unit": 8,
+   "unit_cost_usd": 0.097,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x8+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M3x8 button head screw",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 20,
+ "kit_ok": false,
+ "printed": [
+  {
+   "file": "stl/case.stl",
+   "name": "Case",
+   "grams": 53.7,
+   "print_hours": 2.68,
+   "bbox": [
+    186.0,
+    38.0,
+    106.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/smoked-front.stl",
+   "name": "Smoked front",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 591.9,
+    "area_cm2": 175.8,
+    "minutes": 1.5,
+    "material_usd": 1.85
+   },
+   "bbox": [
+    180.6,
+    3.0,
+    100.6
+   ]
+  },
+  {
+   "file": "stl/back-cover.stl",
+   "name": "Back cover",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 1464.6,
+    "area_cm2": 167.3,
+    "minutes": 2.2,
+    "material_usd": 0.6
+   },
+   "bbox": [
+    180.6,
+    3.0,
+    100.6
+   ]
+  }
+ ]
+}

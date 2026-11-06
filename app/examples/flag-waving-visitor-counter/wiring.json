@@ -1,0 +1,15 @@
+{
+ "wires": [
+  {"from": {"part": "ESP32 DevKit (yours, ELEGOO)", "pin": "5V"}, "to": {"part": "Mini breadboard (170 points)", "pin": "5V column (top)"}, "color": "red", "kind": "dupont"},
+  {"from": {"part": "ESP32 DevKit (yours, ELEGOO)", "pin": "GND (next to 5V)"}, "to": {"part": "Mini breadboard (170 points)", "pin": "GND column (next to 5V)"}, "color": "black", "kind": "dupont"},
+  {"from": {"part": "Mini breadboard (170 points)", "pin": "5V column (top)"}, "to": {"part": "SG90 micro servo", "pin": "V+ (red)"}, "color": "red", "kind": "dupont"},
+  {"from": {"part": "Mini breadboard (170 points)", "pin": "GND column (next to 5V)"}, "to": {"part": "SG90 micro servo", "pin": "GND (brown)"}, "color": "black", "kind": "dupont"},
+  {"from": {"part": "Mini breadboard (170 points)", "pin": "5V column (top)"}, "to": {"part": "470 uF 10 V electrolytic capacitor", "pin": "+ (long leg)"}, "color": "red", "kind": "breadboard"},
+  {"from": {"part": "Mini breadboard (170 points)", "pin": "GND column (next to 5V)"}, "to": {"part": "470 uF 10 V electrolytic capacitor", "pin": "- (stripe)"}, "color": "black", "kind": "breadboard"},
+  {"from": {"part": "ESP32 DevKit (yours, ELEGOO)", "pin": "GPIO18"}, "to": {"part": "SG90 micro servo", "pin": "SIG (orange)"}, "color": "orange", "kind": "dupont"},
+  {"from": {"part": "ESP32 DevKit (yours, ELEGOO)", "pin": "3V3"}, "to": {"part": "0.96\" OLED display (SSD1306)", "pin": "VCC"}, "color": "red", "kind": "dupont"},
+  {"from": {"part": "ESP32 DevKit (yours, ELEGOO)", "pin": "GND (next to 3V3)"}, "to": {"part": "0.96\" OLED display (SSD1306)", "pin": "GND"}, "color": "black", "kind": "dupont"},
+  {"from": {"part": "ESP32 DevKit (yours, ELEGOO)", "pin": "GPIO21"}, "to": {"part": "0.96\" OLED display (SSD1306)", "pin": "SDA"}, "color": "blue", "kind": "dupont"},
+  {"from": {"part": "ESP32 DevKit (yours, ELEGOO)", "pin": "GPIO22"}, "to": {"part": "0.96\" OLED display (SSD1306)", "pin": "SCL"}, "color": "yellow", "kind": "dupont"}
+ ]
+}

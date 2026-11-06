@@ -1,0 +1,6 @@
+{"wires": [
+  {"from": {"part": "USB-C power breakout", "pin": "VBUS"}, "to": {"part": "1 A resettable fuse (PPTC)", "pin": "1"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "1 A resettable fuse (PPTC)", "pin": "2"}, "to": {"part": "12 mm latching push button", "pin": "COM"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "12 mm latching push button", "pin": "NO"}, "to": {"part": "5V COB LED strip", "pin": "+"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "USB-C power breakout", "pin": "GND"}, "to": {"part": "5V COB LED strip", "pin": "-"}, "color": "black", "kind": "solder"}
+]}

@@ -1,0 +1,18 @@
+{
+  "name": "Flag Waving Visitor Counter",
+  "short_name": "Flag Buddy",
+  "theme": "#c2410c",
+  "icon": "icon.svg",
+  "fields": {
+    "visits": { "label": "Visits today", "unit": "visits" },
+    "designs": { "label": "Designs today", "unit": "designs" },
+    "rssi": { "label": "Wi-Fi signal", "unit": "dBm" }
+  },
+  "controls": {
+    "angle": { "type": "range", "label": "Flag angle", "min": 0, "max": 180, "step": 1, "unit": "°" },
+    "wave": { "type": "button", "label": "Wave now" },
+    "mode": { "type": "choice", "label": "Wave for", "options": ["all", "designs", "quiet"] },
+    "brightness": { "type": "range", "label": "Screen brightness", "min": 0, "max": 100, "step": 5, "unit": "%" }
+  },
+  "primary": "visits"
+}

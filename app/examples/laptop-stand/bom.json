@@ -1,0 +1,46 @@
+{
+ "parts": [
+  {
+   "name": "Oak round dowel 1/2 in x 36 in",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 3.98,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": "Cut into two 260 mm pieces"
+  },
+  {
+   "name": "Adhesive rubber feet strip",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.15,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  }
+ ],
+ "assembly_minutes": 8,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/side-frame-left.stl",
+   "name": "Side frame left",
+   "grams": 48.8,
+   "print_hours": 2.44,
+   "bbox": [
+    10.0,
+    230.0,
+    81.0
+   ]
+  },
+  {
+   "file": "stl/side-frame-right.stl",
+   "name": "Side frame right",
+   "grams": 48.8,
+   "print_hours": 2.44,
+   "bbox": [
+    10.0,
+    230.0,
+    81.0
+   ]
+  }
+ ]
+}

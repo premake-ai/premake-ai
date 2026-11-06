@@ -1,0 +1,131 @@
+{
+ "t": 1793336047.508472,
+ "title": "Phone holder that screws onto",
+ "parts": [
+  {
+   "file": "stl/body.stl",
+   "name": "Body",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2f36",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    50.0,
+    31.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/slider.stl",
+   "name": "Slider Jaw",
+   "group": "case",
+   "process": "print",
+   "color": "#e8833a",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    30.0,
+    37.1,
+    50.0
+   ]
+  },
+  {
+   "file": "stl/thumb.stl",
+   "name": "M5x12 thumb screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#c0c4c8",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    20.0,
+    16.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/m5nut.stl",
+   "name": "M5 hex nut",
+   "group": "component",
+   "process": "bought",
+   "color": "#a8acb0",
+   "explode": [
+    0.0,
+    0.482,
+    0.876
+   ],
+   "bbox": [
+    9.2,
+    4.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/1-4-20-hex-nut-landscape.stl",
+   "name": "1/4-20 hex nut (landscape)",
+   "group": "component",
+   "process": "bought",
+   "color": "#a8acb0",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    12.8,
+    11.1,
+    5.6
+   ]
+  },
+  {
+   "file": "stl/1-4-20-hex-nut-portrait.stl",
+   "name": "1/4-20 hex nut (portrait)",
+   "group": "component",
+   "process": "bought",
+   "color": "#a8acb0",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    5.6,
+    12.8,
+    11.1
+   ]
+  },
+  {
+   "file": "stl/reference-phone-not-included.stl",
+   "name": "Reference phone (not included)",
+   "group": "component",
+   "process": "bought",
+   "color": "#151515",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    160.0,
+    9.0,
+    75.0
+   ]
+  }
+ ],
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 3
+ }
+}

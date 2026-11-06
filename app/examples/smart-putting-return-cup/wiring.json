@@ -1,0 +1,36 @@
+{
+  "wires": [
+    {"from": {"part": "USB wall charger 5 V 2 A + 2 m USB cable", "pin": "USB"}, "to": {"part": "ESP32 DevKitC (WROOM-32, 38 pin)", "pin": "USB"}, "color": "black", "kind": "usb"},
+
+    {"from": {"part": "ESP32 screw-terminal breakout", "pin": "5V"}, "to": {"part": "5V bus A", "pin": "1"}, "color": "red", "kind": "screw terminal"},
+    {"from": {"part": "5V bus A", "pin": "5"}, "to": {"part": "5V bus B", "pin": "1"}, "color": "red", "kind": "wago"},
+    {"from": {"part": "ESP32 screw-terminal breakout", "pin": "GND"}, "to": {"part": "GND bus A", "pin": "1"}, "color": "black", "kind": "screw terminal"},
+    {"from": {"part": "GND bus A", "pin": "5"}, "to": {"part": "GND bus B", "pin": "1"}, "color": "black", "kind": "wago"},
+    {"from": {"part": "1000 uF 16 V capacitor", "pin": "+"}, "to": {"part": "ESP32 screw-terminal breakout", "pin": "5V"}, "color": "red", "kind": "screw terminal"},
+    {"from": {"part": "1000 uF 16 V capacitor", "pin": "-"}, "to": {"part": "ESP32 screw-terminal breakout", "pin": "GND"}, "color": "black", "kind": "screw terminal"},
+
+    {"from": {"part": "Attempt beam emitter", "pin": "VCC"}, "to": {"part": "5V bus A", "pin": "2"}, "color": "red", "kind": "wago"},
+    {"from": {"part": "Attempt beam emitter", "pin": "GND"}, "to": {"part": "GND bus A", "pin": "2"}, "color": "black", "kind": "wago"},
+    {"from": {"part": "Attempt beam receiver", "pin": "VCC"}, "to": {"part": "5V bus A", "pin": "3"}, "color": "red", "kind": "wago"},
+    {"from": {"part": "Attempt beam receiver", "pin": "GND"}, "to": {"part": "GND bus A", "pin": "3"}, "color": "black", "kind": "wago"},
+    {"from": {"part": "Attempt beam receiver", "pin": "OUT"}, "to": {"part": "ESP32 screw-terminal breakout", "pin": "GPIO32"}, "color": "white", "kind": "screw terminal"},
+
+    {"from": {"part": "Cup beam emitter", "pin": "VCC"}, "to": {"part": "5V bus A", "pin": "4"}, "color": "red", "kind": "wago"},
+    {"from": {"part": "Cup beam emitter", "pin": "GND"}, "to": {"part": "GND bus A", "pin": "4"}, "color": "black", "kind": "wago"},
+    {"from": {"part": "Cup beam receiver", "pin": "VCC"}, "to": {"part": "5V bus B", "pin": "2"}, "color": "red", "kind": "wago"},
+    {"from": {"part": "Cup beam receiver", "pin": "GND"}, "to": {"part": "GND bus B", "pin": "2"}, "color": "black", "kind": "wago"},
+    {"from": {"part": "Cup beam receiver", "pin": "OUT"}, "to": {"part": "ESP32 screw-terminal breakout", "pin": "GPIO33"}, "color": "white", "kind": "screw terminal"},
+
+    {"from": {"part": "Exit beam emitter", "pin": "VCC"}, "to": {"part": "5V bus B", "pin": "3"}, "color": "red", "kind": "wago"},
+    {"from": {"part": "Exit beam emitter", "pin": "GND"}, "to": {"part": "GND bus B", "pin": "3"}, "color": "black", "kind": "wago"},
+    {"from": {"part": "Exit beam receiver", "pin": "VCC"}, "to": {"part": "5V bus B", "pin": "4"}, "color": "red", "kind": "wago"},
+    {"from": {"part": "Exit beam receiver", "pin": "GND"}, "to": {"part": "GND bus B", "pin": "4"}, "color": "black", "kind": "wago"},
+    {"from": {"part": "Exit beam receiver", "pin": "OUT"}, "to": {"part": "ESP32 screw-terminal breakout", "pin": "GPIO25"}, "color": "white", "kind": "screw terminal"},
+
+    {"from": {"part": "WS2812B LED strip, 10 LEDs", "pin": "5V"}, "to": {"part": "5V bus B", "pin": "5"}, "color": "red", "kind": "wago"},
+    {"from": {"part": "WS2812B LED strip, 10 LEDs", "pin": "GND"}, "to": {"part": "GND bus B", "pin": "5"}, "color": "black", "kind": "wago"},
+    {"from": {"part": "330 ohm resistor", "pin": "1"}, "to": {"part": "ESP32 screw-terminal breakout", "pin": "GPIO26"}, "color": "green", "kind": "screw terminal"},
+    {"from": {"part": "330 ohm resistor", "pin": "2"}, "to": {"part": "LED data joint", "pin": "1"}, "color": "green", "kind": "wago"},
+    {"from": {"part": "WS2812B LED strip, 10 LEDs", "pin": "DIN"}, "to": {"part": "LED data joint", "pin": "2"}, "color": "green", "kind": "wago"}
+  ]
+}

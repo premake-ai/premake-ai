@@ -1,0 +1,13 @@
+{
+ "title": "Smart Putting Return Cup",
+ "description": "Wi-Fi smart putting cup with a low 12.5° ramp, IR-beam make/miss/short detection, an LED result bar and a gravity ball return channel.",
+ "creator": "Premake",
+ "tags": [
+  "golf",
+  "ESP32",
+  "laser cut",
+  "sensors"
+ ],
+ "created": "2026-11-03T03:54:28.566Z",
+ "demo": true
+}

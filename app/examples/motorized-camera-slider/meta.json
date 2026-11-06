@@ -1,0 +1,13 @@
+{
+ "title": "Motorized Camera Slider",
+ "description": "A 600 mm 2040 V-slot camera slider with a belt-driven NEMA17 carriage, Wi-Fi control from a phone, a homing switch and 1/4\"-20 tripod mounts.",
+ "creator": "Premake",
+ "tags": [
+  "camera",
+  "extrusion",
+  "stepper",
+  "ESP32"
+ ],
+ "created": "2026-10-30T05:05:19.299Z",
+ "demo": true
+}

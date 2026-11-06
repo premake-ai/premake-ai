@@ -1,0 +1,14 @@
+{
+ "title": "Peltier Bed Chiller",
+ "description": "A 12 V Peltier water chiller with a pump and reservoir that circulates cool water through a mattress pad.",
+ "creator": "Premake",
+ "tags": [
+  "bed cooling",
+  "peltier",
+  "water cooling",
+  "ESP32",
+  "sheet metal"
+ ],
+ "created": "2026-10-29T02:50:25.972Z",
+ "demo": true
+}

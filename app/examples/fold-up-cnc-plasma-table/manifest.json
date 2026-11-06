@@ -1,0 +1,2702 @@
+{
+ "t": 1793856363.956883,
+ "title": "Design this: a fold-up CNC plasma",
+ "parts": [
+  {
+   "file": "stl/stand-runner-left.stl",
+   "name": "Stand runner left",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#2f3237",
+   "explode": [
+    -0.688,
+    0.511,
+    -0.516
+   ],
+   "bbox": [
+    40.0,
+    700.0,
+    40.0
+   ],
+   "material": "steel",
+   "step": "step/stand-runner-left.step"
+  },
+  {
+   "file": "stl/stand-post-left.stl",
+   "name": "Stand post left",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#2f3237",
+   "explode": [
+    -0.754,
+    0.64,
+    -0.144
+   ],
+   "bbox": [
+    40.0,
+    40.0,
+    810.0
+   ],
+   "material": "steel",
+   "step": "step/stand-post-left.step"
+  },
+  {
+   "file": "stl/hinge-plate-left.stl",
+   "name": "Hinge plate left",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    -0.754,
+    0.608,
+    0.248
+   ],
+   "bbox": [
+    3.0,
+    130.0,
+    75.0
+   ],
+   "material": "steel",
+   "step": "step/hinge-plate-left.step"
+  },
+  {
+   "file": "stl/post-gusset-left.stl",
+   "name": "Post gusset left",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    -0.703,
+    0.538,
+    -0.466
+   ],
+   "bbox": [
+    3.0,
+    120.0,
+    120.0
+   ],
+   "material": "steel",
+   "step": "step/post-gusset-left.step"
+  },
+  {
+   "file": "stl/crossbar-gusset-left.stl",
+   "name": "Crossbar gusset left",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    -0.734,
+    0.673,
+    -0.097
+   ],
+   "bbox": [
+    120.0,
+    3.0,
+    120.0
+   ],
+   "material": "steel",
+   "step": "step/crossbar-gusset-left.step"
+  },
+  {
+   "file": "stl/strut-bracket-stand-left.stl",
+   "name": "Strut bracket, stand left",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    -0.775,
+    0.61,
+    -0.166
+   ],
+   "bbox": [
+    65.0,
+    3.0,
+    50.0
+   ],
+   "material": "steel",
+   "step": "step/strut-bracket-stand-left.step"
+  },
+  {
+   "file": "stl/stand-runner-right.stl",
+   "name": "Stand runner right",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#2f3237",
+   "explode": [
+    0.688,
+    0.511,
+    -0.516
+   ],
+   "bbox": [
+    40.0,
+    700.0,
+    40.0
+   ],
+   "material": "steel",
+   "step": "step/stand-runner-right.step"
+  },
+  {
+   "file": "stl/stand-post-right.stl",
+   "name": "Stand post right",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#2f3237",
+   "explode": [
+    0.754,
+    0.64,
+    -0.144
+   ],
+   "bbox": [
+    40.0,
+    40.0,
+    810.0
+   ],
+   "material": "steel",
+   "step": "step/stand-post-right.step"
+  },
+  {
+   "file": "stl/hinge-plate-right.stl",
+   "name": "Hinge plate right",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    0.754,
+    0.608,
+    0.248
+   ],
+   "bbox": [
+    3.0,
+    130.0,
+    75.0
+   ],
+   "material": "steel",
+   "step": "step/hinge-plate-right.step"
+  },
+  {
+   "file": "stl/post-gusset-right.stl",
+   "name": "Post gusset right",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    0.703,
+    0.538,
+    -0.466
+   ],
+   "bbox": [
+    3.0,
+    120.0,
+    120.0
+   ],
+   "material": "steel",
+   "step": "step/post-gusset-right.step"
+  },
+  {
+   "file": "stl/crossbar-gusset-right.stl",
+   "name": "Crossbar gusset right",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    0.734,
+    0.673,
+    -0.097
+   ],
+   "bbox": [
+    120.0,
+    3.0,
+    120.0
+   ],
+   "material": "steel",
+   "step": "step/crossbar-gusset-right.step"
+  },
+  {
+   "file": "stl/strut-bracket-stand-right.stl",
+   "name": "Strut bracket, stand right",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    0.775,
+    0.61,
+    -0.166
+   ],
+   "bbox": [
+    65.0,
+    3.0,
+    50.0
+   ],
+   "material": "steel",
+   "step": "step/strut-bracket-stand-right.step"
+  },
+  {
+   "file": "stl/stand-crossbar.stl",
+   "name": "Stand crossbar",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#2f3237",
+   "explode": [
+    0.0,
+    0.967,
+    -0.255
+   ],
+   "bbox": [
+    1480.0,
+    40.0,
+    40.0
+   ],
+   "material": "steel",
+   "step": "step/stand-crossbar.step"
+  },
+  {
+   "file": "stl/stand-rear-foot.stl",
+   "name": "Stand rear foot",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#2f3237",
+   "explode": [
+    0.0,
+    0.843,
+    -0.537
+   ],
+   "bbox": [
+    1480.0,
+    40.0,
+    40.0
+   ],
+   "material": "steel",
+   "step": "step/stand-rear-foot.step"
+  },
+  {
+   "file": "stl/hinge-bolts-m12-spacers.stl",
+   "name": "Hinge bolts M12 + spacers",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc2",
+   "explode": [
+    0.0,
+    0.92,
+    0.391
+   ],
+   "bbox": [
+    1512.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/bed-side-tube-left.stl",
+   "name": "Bed side tube left",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#2f3237",
+   "explode": [
+    -0.919,
+    -0.223,
+    0.324
+   ],
+   "bbox": [
+    40.0,
+    1500.0,
+    40.0
+   ],
+   "material": "steel",
+   "step": "step/bed-side-tube-left.step"
+  },
+  {
+   "file": "stl/hinge-lug-left.stl",
+   "name": "Hinge lug left",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    -0.757,
+    0.602,
+    0.254
+   ],
+   "bbox": [
+    3.0,
+    55.0,
+    50.0
+   ],
+   "material": "steel",
+   "step": "step/hinge-lug-left.step"
+  },
+  {
+   "file": "stl/bed-side-tube-right.stl",
+   "name": "Bed side tube right",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#2f3237",
+   "explode": [
+    0.919,
+    -0.223,
+    0.324
+   ],
+   "bbox": [
+    40.0,
+    1500.0,
+    40.0
+   ],
+   "material": "steel",
+   "step": "step/bed-side-tube-right.step"
+  },
+  {
+   "file": "stl/hinge-lug-right.stl",
+   "name": "Hinge lug right",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    0.757,
+    0.602,
+    0.254
+   ],
+   "bbox": [
+    3.0,
+    55.0,
+    50.0
+   ],
+   "material": "steel",
+   "step": "step/hinge-lug-right.step"
+  },
+  {
+   "file": "stl/bed-cross-tube-front.stl",
+   "name": "Bed cross tube front",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#2f3237",
+   "explode": [
+    0.0,
+    -0.966,
+    0.259
+   ],
+   "bbox": [
+    1320.0,
+    40.0,
+    40.0
+   ],
+   "material": "steel",
+   "step": "step/bed-cross-tube-front.step"
+  },
+  {
+   "file": "stl/bed-cross-tube-middle.stl",
+   "name": "Bed cross tube middle",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#2f3237",
+   "explode": [
+    0.0,
+    0.86,
+    0.51
+   ],
+   "bbox": [
+    1320.0,
+    40.0,
+    40.0
+   ],
+   "material": "steel",
+   "step": "step/bed-cross-tube-middle.step"
+  },
+  {
+   "file": "stl/bed-cross-tube-rear.stl",
+   "name": "Bed cross tube rear",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#2f3237",
+   "explode": [
+    0.0,
+    0.92,
+    0.391
+   ],
+   "bbox": [
+    1320.0,
+    40.0,
+    40.0
+   ],
+   "material": "steel",
+   "step": "step/bed-cross-tube-rear.step"
+  },
+  {
+   "file": "stl/frame-corner-bracket-1.stl",
+   "name": "Frame corner bracket 1",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    -0.581,
+    -0.782,
+    0.225
+   ],
+   "bbox": [
+    80.0,
+    80.0,
+    36.0
+   ],
+   "material": "steel",
+   "step": "step/frame-corner-bracket-1.step"
+  },
+  {
+   "file": "stl/frame-corner-bracket-2.stl",
+   "name": "Frame corner bracket 2",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    -0.828,
+    0.461,
+    0.32
+   ],
+   "bbox": [
+    80.0,
+    80.0,
+    36.0
+   ],
+   "material": "steel",
+   "step": "step/frame-corner-bracket-2.step"
+  },
+  {
+   "file": "stl/frame-corner-bracket-3.stl",
+   "name": "Frame corner bracket 3",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    -0.743,
+    0.605,
+    0.287
+   ],
+   "bbox": [
+    80.0,
+    80.0,
+    36.0
+   ],
+   "material": "steel",
+   "step": "step/frame-corner-bracket-3.step"
+  },
+  {
+   "file": "stl/frame-corner-bracket-4.stl",
+   "name": "Frame corner bracket 4",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    0.581,
+    -0.782,
+    0.225
+   ],
+   "bbox": [
+    80.0,
+    80.0,
+    36.0
+   ],
+   "material": "steel",
+   "step": "step/frame-corner-bracket-4.step"
+  },
+  {
+   "file": "stl/frame-corner-bracket-5.stl",
+   "name": "Frame corner bracket 5",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    0.828,
+    0.461,
+    0.32
+   ],
+   "bbox": [
+    80.0,
+    80.0,
+    36.0
+   ],
+   "material": "steel",
+   "step": "step/frame-corner-bracket-5.step"
+  },
+  {
+   "file": "stl/frame-corner-bracket-6.stl",
+   "name": "Frame corner bracket 6",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    0.743,
+    0.605,
+    0.287
+   ],
+   "bbox": [
+    80.0,
+    80.0,
+    36.0
+   ],
+   "material": "steel",
+   "step": "step/frame-corner-bracket-6.step"
+  },
+  {
+   "file": "stl/slat-comb-front-1.stl",
+   "name": "Slat comb front 1",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    -0.421,
+    -0.875,
+    0.24
+   ],
+   "bbox": [
+    416.0,
+    72.5,
+    62.0
+   ],
+   "material": "steel",
+   "step": "step/slat-comb-front-1.step"
+  },
+  {
+   "file": "stl/slat-comb-front-2.stl",
+   "name": "Slat comb front 2",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    0.0,
+    -0.964,
+    0.265
+   ],
+   "bbox": [
+    424.0,
+    72.5,
+    62.0
+   ],
+   "material": "steel",
+   "step": "step/slat-comb-front-2.step"
+  },
+  {
+   "file": "stl/slat-comb-front-3.stl",
+   "name": "Slat comb front 3",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    0.421,
+    -0.875,
+    0.24
+   ],
+   "bbox": [
+    416.0,
+    72.5,
+    62.0
+   ],
+   "material": "steel",
+   "step": "step/slat-comb-front-3.step"
+  },
+  {
+   "file": "stl/slat-comb-rear-1.stl",
+   "name": "Slat comb rear 1",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    -0.679,
+    0.623,
+    0.388
+   ],
+   "bbox": [
+    416.0,
+    72.5,
+    62.0
+   ],
+   "material": "steel",
+   "step": "step/slat-comb-rear-1.step"
+  },
+  {
+   "file": "stl/slat-comb-rear-2.stl",
+   "name": "Slat comb rear 2",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    0.0,
+    0.849,
+    0.529
+   ],
+   "bbox": [
+    424.0,
+    72.5,
+    62.0
+   ],
+   "material": "steel",
+   "step": "step/slat-comb-rear-2.step"
+  },
+  {
+   "file": "stl/slat-comb-rear-3.stl",
+   "name": "Slat comb rear 3",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    0.679,
+    0.623,
+    0.388
+   ],
+   "bbox": [
+    416.0,
+    72.5,
+    62.0
+   ],
+   "material": "steel",
+   "step": "step/slat-comb-rear-3.step"
+  },
+  {
+   "file": "stl/steel-slats-1-8-x-1-1-2-x-48-in-25.stl",
+   "name": "Steel slats 1/8 x 1-1/2 x 48 in (25)",
+   "group": "component",
+   "process": "bought",
+   "color": "#6b6f75",
+   "explode": [
+    0.0,
+    -0.684,
+    0.729
+   ],
+   "bbox": [
+    1203.0,
+    1219.2,
+    38.0
+   ],
+   "material": "steel",
+   "step": "step/steel-slats-1-8-x-1-1-2-x-48-in-25.step"
+  },
+  {
+   "file": "stl/y-rail-left-2040-v-slot.stl",
+   "name": "Y rail left (2040 V-slot)",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#c9ccd1",
+   "explode": [
+    -0.925,
+    -0.095,
+    0.367
+   ],
+   "bbox": [
+    40.0,
+    1500.0,
+    20.0
+   ],
+   "material": "aluminium",
+   "step": "step/y-rail-left-2040-v-slot.step"
+  },
+  {
+   "file": "stl/y-rail-right-2040-v-slot.stl",
+   "name": "Y rail right (2040 V-slot)",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#c9ccd1",
+   "explode": [
+    0.925,
+    -0.095,
+    0.367
+   ],
+   "bbox": [
+    40.0,
+    1500.0,
+    20.0
+   ],
+   "material": "aluminium",
+   "step": "step/y-rail-right-2040-v-slot.step"
+  },
+  {
+   "file": "stl/y-belt-anchor-left-front.stl",
+   "name": "Y belt anchor left front",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    -0.64,
+    -0.727,
+    0.246
+   ],
+   "bbox": [
+    100.0,
+    33.0,
+    26.0
+   ],
+   "material": "steel",
+   "step": "step/y-belt-anchor-left-front.step"
+  },
+  {
+   "file": "stl/y-belt-anchor-left-rear.stl",
+   "name": "Y belt anchor left rear",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    -0.702,
+    0.659,
+    0.27
+   ],
+   "bbox": [
+    100.0,
+    33.0,
+    26.0
+   ],
+   "material": "steel",
+   "step": "step/y-belt-anchor-left-rear.step"
+  },
+  {
+   "file": "stl/y-belt-anchor-right-front.stl",
+   "name": "Y belt anchor right front",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    0.64,
+    -0.727,
+    0.246
+   ],
+   "bbox": [
+    100.0,
+    33.0,
+    26.0
+   ],
+   "material": "steel",
+   "step": "step/y-belt-anchor-right-front.step"
+  },
+  {
+   "file": "stl/y-belt-anchor-right-rear.stl",
+   "name": "Y belt anchor right rear",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    0.702,
+    0.659,
+    0.27
+   ],
+   "bbox": [
+    100.0,
+    33.0,
+    26.0
+   ],
+   "material": "steel",
+   "step": "step/y-belt-anchor-right-rear.step"
+  },
+  {
+   "file": "stl/y-belts-gt2-6-mm.stl",
+   "name": "Y belts (GT2 6 mm)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f22",
+   "explode": [
+    0.0,
+    -0.277,
+    0.961
+   ],
+   "bbox": [
+    1495.6,
+    1500.0,
+    6.0
+   ]
+  },
+  {
+   "file": "stl/limit-switch-y1.stl",
+   "name": "Limit switch Y1",
+   "group": "component",
+   "process": "bought",
+   "color": "#d23a2a",
+   "explode": [
+    -0.705,
+    0.646,
+    0.292
+   ],
+   "bbox": [
+    18.0,
+    20.0,
+    14.0
+   ]
+  },
+  {
+   "file": "stl/limit-switch-y2.stl",
+   "name": "Limit switch Y2",
+   "group": "component",
+   "process": "bought",
+   "color": "#d23a2a",
+   "explode": [
+    0.705,
+    0.646,
+    0.292
+   ],
+   "bbox": [
+    18.0,
+    20.0,
+    14.0
+   ]
+  },
+  {
+   "file": "stl/y-chain-bracket.stl",
+   "name": "Y chain bracket",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    0.94,
+    -0.157,
+    0.304
+   ],
+   "bbox": [
+    100.0,
+    40.0,
+    34.0
+   ],
+   "material": "steel",
+   "step": "step/y-chain-bracket.step"
+  },
+  {
+   "file": "stl/strut-bracket-bed-left.stl",
+   "name": "Strut bracket, bed left",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    -0.909,
+    0.316,
+    0.272
+   ],
+   "bbox": [
+    125.0,
+    40.0,
+    63.0
+   ],
+   "material": "steel",
+   "step": "step/strut-bracket-bed-left.step"
+  },
+  {
+   "file": "stl/leg-hinge-bracket-left.stl",
+   "name": "Leg hinge bracket left",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    -0.613,
+    -0.77,
+    0.178
+   ],
+   "bbox": [
+    46.0,
+    60.0,
+    45.0
+   ],
+   "material": "steel",
+   "step": "step/leg-hinge-bracket-left.step"
+  },
+  {
+   "file": "stl/strut-bracket-bed-right.stl",
+   "name": "Strut bracket, bed right",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    0.909,
+    0.316,
+    0.272
+   ],
+   "bbox": [
+    125.0,
+    40.0,
+    63.0
+   ],
+   "material": "steel",
+   "step": "step/strut-bracket-bed-right.step"
+  },
+  {
+   "file": "stl/leg-hinge-bracket-right.stl",
+   "name": "Leg hinge bracket right",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    0.613,
+    -0.77,
+    0.178
+   ],
+   "bbox": [
+    46.0,
+    60.0,
+    45.0
+   ],
+   "material": "steel",
+   "step": "step/leg-hinge-bracket-right.step"
+  },
+  {
+   "file": "stl/leg-pivot-bolts-m10.stl",
+   "name": "Leg pivot bolts M10",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc2",
+   "explode": [
+    0.0,
+    -0.976,
+    0.217
+   ],
+   "bbox": [
+    1428.0,
+    18.0,
+    18.0
+   ]
+  },
+  {
+   "file": "stl/bed-lock-pins-quick-release.stl",
+   "name": "Bed lock pins (quick-release)",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc2",
+   "explode": [
+    0.0,
+    0.914,
+    0.406
+   ],
+   "bbox": [
+    1516.0,
+    18.0,
+    18.0
+   ]
+  },
+  {
+   "file": "stl/gantry-end-plate-left.stl",
+   "name": "Gantry end plate left",
+   "group": "case",
+   "process": "sheet",
+   "color": "#c9ccd1",
+   "explode": [
+    -0.881,
+    -0.304,
+    0.362
+   ],
+   "bbox": [
+    180.0,
+    160.0,
+    3.0
+   ],
+   "material": "steel",
+   "step": "step/gantry-end-plate-left.step"
+  },
+  {
+   "file": "stl/y1-stepper-nema17-48-mm.stl",
+   "name": "Y1 stepper (NEMA17 48 mm)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    -0.9,
+    -0.228,
+    0.371
+   ],
+   "bbox": [
+    42.3,
+    47.7,
+    72.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/y1-stepper-nema17-48-mm__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/y1-stepper-nema17-48-mm__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/y1-stepper-nema17-48-mm__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/y1-stepper-nema17-48-mm__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/y1-stepper-nema17-48-mm__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/y1-stepper-nema17-48-mm__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 48 mm",
+    "unit_cost_usd": 13.0,
+    "mass_g": 360.0
+   }
+  },
+  {
+   "file": "stl/gantry-end-plate-right.stl",
+   "name": "Gantry end plate right",
+   "group": "case",
+   "process": "sheet",
+   "color": "#c9ccd1",
+   "explode": [
+    0.881,
+    -0.304,
+    0.362
+   ],
+   "bbox": [
+    180.0,
+    160.0,
+    3.0
+   ],
+   "material": "steel",
+   "step": "step/gantry-end-plate-right.step"
+  },
+  {
+   "file": "stl/y2-stepper-nema17-48-mm.stl",
+   "name": "Y2 stepper (NEMA17 48 mm)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    0.9,
+    -0.228,
+    0.371
+   ],
+   "bbox": [
+    42.3,
+    47.7,
+    72.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/y2-stepper-nema17-48-mm__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/y2-stepper-nema17-48-mm__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/y2-stepper-nema17-48-mm__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/y2-stepper-nema17-48-mm__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/y2-stepper-nema17-48-mm__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/y2-stepper-nema17-48-mm__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 48 mm",
+    "unit_cost_usd": 13.0,
+    "mass_g": 360.0
+   }
+  },
+  {
+   "file": "stl/y-v-wheels-8.stl",
+   "name": "Y V-wheels (8)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f22",
+   "explode": [
+    0.0,
+    -0.662,
+    0.749
+   ],
+   "bbox": [
+    1448.0,
+    134.0,
+    25.5
+   ]
+  },
+  {
+   "file": "stl/gt2-pulley-20t-5-mm-bore-3.stl",
+   "name": "GT2 pulley 20T 5 mm bore \u00d73",
+   "group": "component",
+   "process": "bought",
+   "color": "#c7ccd2",
+   "explode": [
+    0.0,
+    -0.56,
+    0.828
+   ],
+   "bbox": [
+    1496.1,
+    113.0,
+    161.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/gt2-pulley-20t-5-mm-bore-3__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/gt2-pulley-20t-5-mm-bore-3__1.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "gt2_pulley_20t",
+    "qty": 3,
+    "name": "GT2 pulley 20T 5 mm bore",
+    "unit_cost_usd": 1.5,
+    "mass_g": 6.2
+   }
+  },
+  {
+   "file": "stl/belt-idlers-625-2rs.stl",
+   "name": "Belt idlers (625-2RS)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9cdd2",
+   "explode": [
+    0.0,
+    -0.55,
+    0.835
+   ],
+   "bbox": [
+    1527.6,
+    135.0,
+    143.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/belt-idlers-625-2rs__0.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/belt-idlers-625-2rs__1.stl",
+     "color": "#202124",
+     "finish": "rubber"
+    },
+    {
+     "file": "stl/belt-idlers-625-2rs__2.stl",
+     "color": "#8e939a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bearing_625",
+    "qty": 6,
+    "name": "625-2RS bearing",
+    "unit_cost_usd": 0.8,
+    "mass_g": 6.4
+   }
+  },
+  {
+   "file": "stl/gantry-beam-2-x-4-in-tube.stl",
+   "name": "Gantry beam (2 x 4 in tube)",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#2f3237",
+   "explode": [
+    0.0,
+    -0.581,
+    0.814
+   ],
+   "bbox": [
+    1500.0,
+    50.0,
+    100.0
+   ],
+   "material": "steel",
+   "step": "step/gantry-beam-2-x-4-in-tube.step"
+  },
+  {
+   "file": "stl/x-rail-2040-v-slot.stl",
+   "name": "X rail (2040 V-slot)",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#c9ccd1",
+   "explode": [
+    0.0,
+    -0.6,
+    0.8
+   ],
+   "bbox": [
+    1500.0,
+    20.0,
+    40.0
+   ],
+   "material": "aluminium",
+   "step": "step/x-rail-2040-v-slot.step"
+  },
+  {
+   "file": "stl/x-belt-gt2-6-mm.stl",
+   "name": "X belt (GT2 6 mm)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f22",
+   "explode": [
+    0.0,
+    -0.571,
+    0.821
+   ],
+   "bbox": [
+    1520.0,
+    6.0,
+    1.4
+   ]
+  },
+  {
+   "file": "stl/x-belt-clamp-left.stl",
+   "name": "X belt clamp left",
+   "group": "case",
+   "process": "print",
+   "color": "#e8792b",
+   "explode": [
+    -0.837,
+    -0.311,
+    0.451
+   ],
+   "bbox": [
+    22.0,
+    36.0,
+    30.0
+   ]
+  },
+  {
+   "file": "stl/x-belt-clamp-right.stl",
+   "name": "X belt clamp right",
+   "group": "case",
+   "process": "print",
+   "color": "#e8792b",
+   "explode": [
+    0.837,
+    -0.311,
+    0.451
+   ],
+   "bbox": [
+    22.0,
+    36.0,
+    30.0
+   ]
+  },
+  {
+   "file": "stl/limit-switch-x.stl",
+   "name": "Limit switch X",
+   "group": "component",
+   "process": "bought",
+   "color": "#d23a2a",
+   "explode": [
+    -0.843,
+    -0.335,
+    0.42
+   ],
+   "bbox": [
+    20.0,
+    7.0,
+    16.0
+   ]
+  },
+  {
+   "file": "stl/x-carriage-plate.stl",
+   "name": "X carriage plate",
+   "group": "case",
+   "process": "sheet",
+   "color": "#c9ccd1",
+   "explode": [
+    0.0,
+    -0.568,
+    0.823
+   ],
+   "bbox": [
+    140.0,
+    70.0,
+    138.0
+   ],
+   "material": "steel",
+   "step": "step/x-carriage-plate.step"
+  },
+  {
+   "file": "stl/x-v-wheels-4.stl",
+   "name": "X V-wheels (4)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f22",
+   "explode": [
+    0.0,
+    -0.608,
+    0.794
+   ],
+   "bbox": [
+    114.0,
+    22.5,
+    88.0
+   ]
+  },
+  {
+   "file": "stl/x-stepper-nema17-48-mm.stl",
+   "name": "X stepper (NEMA17 48 mm)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    0.049,
+    -0.589,
+    0.807
+   ],
+   "bbox": [
+    42.3,
+    72.6,
+    47.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/x-stepper-nema17-48-mm__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-stepper-nema17-48-mm__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/x-stepper-nema17-48-mm__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-stepper-nema17-48-mm__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-stepper-nema17-48-mm__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/x-stepper-nema17-48-mm__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 48 mm",
+    "unit_cost_usd": 13.0,
+    "mass_g": 360.0
+   }
+  },
+  {
+   "file": "stl/z-axis-slide-100-mm-stroke.stl",
+   "name": "Z axis slide, 100 mm stroke",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa0a8",
+   "explode": [
+    -0.073,
+    -0.624,
+    0.778
+   ],
+   "bbox": [
+    60.0,
+    50.0,
+    200.0
+   ],
+   "material": "aluminium",
+   "step": "step/z-axis-slide-100-mm-stroke.step"
+  },
+  {
+   "file": "stl/z-stepper-nema17-40-mm.stl",
+   "name": "Z stepper (NEMA17 40 mm)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    -0.063,
+    -0.531,
+    0.845
+   ],
+   "bbox": [
+    42.3,
+    47.7,
+    64.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/z-stepper-nema17-40-mm__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/z-stepper-nema17-40-mm__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/z-stepper-nema17-40-mm__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/z-stepper-nema17-40-mm__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/z-stepper-nema17-40-mm__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/z-stepper-nema17-40-mm__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 40 mm",
+    "unit_cost_usd": 11.0,
+    "mass_g": 280.0
+   }
+  },
+  {
+   "file": "stl/float-plate.stl",
+   "name": "Float plate",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    -0.072,
+    -0.668,
+    0.741
+   ],
+   "bbox": [
+    50.0,
+    3.0,
+    100.0
+   ],
+   "material": "steel",
+   "step": "step/float-plate.step"
+  },
+  {
+   "file": "stl/torch-clamp-lower.stl",
+   "name": "Torch clamp lower",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    -0.071,
+    -0.716,
+    0.694
+   ],
+   "bbox": [
+    50.0,
+    57.0,
+    30.0
+   ],
+   "material": "steel",
+   "step": "step/torch-clamp-lower.step"
+  },
+  {
+   "file": "stl/torch-clamp-upper.stl",
+   "name": "Torch clamp upper",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    -0.067,
+    -0.671,
+    0.739
+   ],
+   "bbox": [
+    50.0,
+    57.0,
+    30.0
+   ],
+   "material": "steel",
+   "step": "step/torch-clamp-upper.step"
+  },
+  {
+   "file": "stl/machine-torch-yours.stl",
+   "name": "Machine torch (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#3c3c40",
+   "explode": [
+    -0.065,
+    -0.66,
+    0.748
+   ],
+   "bbox": [
+    34.9,
+    34.9,
+    307.0
+   ]
+  },
+  {
+   "file": "stl/float-switch.stl",
+   "name": "Float switch",
+   "group": "component",
+   "process": "bought",
+   "color": "#d23a2a",
+   "explode": [
+    -0.091,
+    -0.62,
+    0.779
+   ],
+   "bbox": [
+    20.0,
+    11.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/limit-switch-z.stl",
+   "name": "Limit switch Z",
+   "group": "component",
+   "process": "bought",
+   "color": "#d23a2a",
+   "explode": [
+    -0.122,
+    -0.545,
+    0.83
+   ],
+   "bbox": [
+    10.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/y-drag-chain.stl",
+   "name": "Y drag chain",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f22",
+   "explode": [
+    0.887,
+    -0.356,
+    0.294
+   ],
+   "bbox": [
+    25.1,
+    417.5,
+    55.1
+   ]
+  },
+  {
+   "file": "stl/x-drag-chain.stl",
+   "name": "X drag chain",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f22",
+   "explode": [
+    0.362,
+    -0.468,
+    0.806
+   ],
+   "bbox": [
+    378.5,
+    30.1,
+    57.1
+   ]
+  },
+  {
+   "file": "stl/gantry-lock-knobs-m5.stl",
+   "name": "Gantry lock knobs M5",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f22",
+   "explode": [
+    0.0,
+    -0.718,
+    0.696
+   ],
+   "bbox": [
+    1384.0,
+    24.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/leg-left.stl",
+   "name": "Leg left",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#2f3237",
+   "explode": [
+    -0.614,
+    -0.772,
+    -0.163
+   ],
+   "bbox": [
+    40.0,
+    40.0,
+    770.0
+   ],
+   "material": "steel",
+   "step": "step/leg-left.step"
+  },
+  {
+   "file": "stl/leg-brace-bracket-left.stl",
+   "name": "Leg brace bracket left",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    -0.577,
+    -0.729,
+    -0.367
+   ],
+   "bbox": [
+    80.0,
+    3.0,
+    80.0
+   ],
+   "material": "steel",
+   "step": "step/leg-brace-bracket-left.step"
+  },
+  {
+   "file": "stl/leg-right.stl",
+   "name": "Leg right",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#2f3237",
+   "explode": [
+    0.614,
+    -0.772,
+    -0.163
+   ],
+   "bbox": [
+    40.0,
+    40.0,
+    770.0
+   ],
+   "material": "steel",
+   "step": "step/leg-right.step"
+  },
+  {
+   "file": "stl/leg-brace-bracket-right.stl",
+   "name": "Leg brace bracket right",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    0.577,
+    -0.729,
+    -0.367
+   ],
+   "bbox": [
+    80.0,
+    3.0,
+    80.0
+   ],
+   "material": "steel",
+   "step": "step/leg-brace-bracket-right.step"
+  },
+  {
+   "file": "stl/leg-brace.stl",
+   "name": "Leg brace",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#2f3237",
+   "explode": [
+    0.0,
+    -0.898,
+    -0.441
+   ],
+   "bbox": [
+    1320.0,
+    40.0,
+    40.0
+   ],
+   "material": "steel",
+   "step": "step/leg-brace.step"
+  },
+  {
+   "file": "stl/levelling-feet-m10.stl",
+   "name": "Levelling feet M10",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f22",
+   "explode": [
+    0.0,
+    -0.829,
+    -0.56
+   ],
+   "bbox": [
+    1410.0,
+    50.0,
+    25.0
+   ]
+  },
+  {
+   "file": "stl/leg-lock-pins.stl",
+   "name": "Leg lock pins",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc2",
+   "explode": [
+    0.0,
+    -0.974,
+    0.225
+   ],
+   "bbox": [
+    1426.0,
+    16.0,
+    16.0
+   ]
+  },
+  {
+   "file": "stl/e-stop-station-22-mm-nc.stl",
+   "name": "E-stop station (22 mm, NC)",
+   "group": "component",
+   "process": "bought",
+   "color": "#e0b400",
+   "explode": [
+    -0.649,
+    -0.757,
+    0.077
+   ],
+   "bbox": [
+    70.0,
+    84.0,
+    75.0
+   ]
+  },
+  {
+   "file": "stl/gas-strut-left-body.stl",
+   "name": "Gas strut left body",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f22",
+   "explode": [
+    -0.842,
+    0.536,
+    -0.066
+   ],
+   "bbox": [
+    22.0,
+    214.0,
+    227.0
+   ]
+  },
+  {
+   "file": "stl/gas-strut-left-rod.stl",
+   "name": "Gas strut left rod",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc2",
+   "explode": [
+    -0.892,
+    0.449,
+    0.057
+   ],
+   "bbox": [
+    8.0,
+    292.4,
+    312.5
+   ]
+  },
+  {
+   "file": "stl/gas-strut-right-body.stl",
+   "name": "Gas strut right body",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f22",
+   "explode": [
+    0.842,
+    0.536,
+    -0.066
+   ],
+   "bbox": [
+    22.0,
+    214.0,
+    227.0
+   ]
+  },
+  {
+   "file": "stl/gas-strut-right-rod.stl",
+   "name": "Gas strut right rod",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc2",
+   "explode": [
+    0.892,
+    0.449,
+    0.057
+   ],
+   "bbox": [
+    8.0,
+    292.4,
+    312.5
+   ]
+  },
+  {
+   "file": "stl/control-box.stl",
+   "name": "Control box",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    0.0,
+    0.982,
+    -0.19
+   ],
+   "bbox": [
+    257.0,
+    140.0,
+    70.0
+   ],
+   "material": "steel",
+   "step": "step/control-box.step"
+  },
+  {
+   "file": "stl/control-box-end-cap-left.stl",
+   "name": "Control box end cap left",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    -0.209,
+    0.96,
+    -0.186
+   ],
+   "bbox": [
+    1.5,
+    140.0,
+    70.0
+   ],
+   "material": "steel",
+   "step": "step/control-box-end-cap-left.step"
+  },
+  {
+   "file": "stl/control-box-end-cap-right.stl",
+   "name": "Control box end cap right",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    0.209,
+    0.96,
+    -0.186
+   ],
+   "bbox": [
+    1.5,
+    140.0,
+    70.0
+   ],
+   "material": "steel",
+   "step": "step/control-box-end-cap-right.step"
+  },
+  {
+   "file": "stl/control-box-lid.stl",
+   "name": "Control box lid",
+   "group": "case",
+   "process": "sheet",
+   "color": "#4a4e55",
+   "explode": [
+    0.0,
+    0.991,
+    -0.132
+   ],
+   "bbox": [
+    260.0,
+    140.0,
+    1.5
+   ],
+   "material": "steel",
+   "step": "step/control-box-lid.step"
+  },
+  {
+   "file": "stl/esp32-screw-terminal-breakout.stl",
+   "name": "ESP32 screw-terminal breakout",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f7a3a",
+   "explode": [
+    -0.153,
+    0.959,
+    -0.237
+   ],
+   "bbox": [
+    75.0,
+    65.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/esp32-devkitc-wroom-32.stl",
+   "name": "ESP32 DevKitC (WROOM-32)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    -0.173,
+    0.959,
+    -0.225
+   ],
+   "bbox": [
+    55.4,
+    27.9,
+    13.2
+   ],
+   "port": {
+    "type": "usb-c",
+    "at": [
+     -129.0,
+     807.5,
+     462.9
+    ],
+    "dir": [
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "wide": [
+     0.0,
+     1.0,
+     0.0
+    ]
+   },
+   "subparts": [
+    {
+     "file": "stl/esp32-devkitc-wroom-32__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32__1.stl",
+     "color": "#232a36",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32__4.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32__6.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32__7.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32__8.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32__9.stl",
+     "color": "#b48a5c",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "esp32_devkitc",
+    "qty": 1,
+    "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+    "unit_cost_usd": 7.5,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/driver-carrier-x.stl",
+   "name": "Driver carrier X",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f5fa8",
+   "explode": [
+    -0.046,
+    0.976,
+    -0.212
+   ],
+   "bbox": [
+    38.0,
+    40.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/x-driver-tmc2209.stl",
+   "name": "X driver (TMC2209)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2f2547",
+   "explode": [
+    -0.046,
+    0.978,
+    -0.205
+   ],
+   "bbox": [
+    20.3,
+    15.2,
+    18.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/x-driver-tmc2209__0.stl",
+     "color": "#2f2547",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/x-driver-tmc2209__1.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/x-driver-tmc2209__2.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/x-driver-tmc2209__3.stl",
+     "color": "#9aa3ad",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-driver-tmc2209__4.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/x-driver-tmc2209__5.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/x-driver-tmc2209__6.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/x-driver-tmc2209__7.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "tmc2209",
+    "qty": 1,
+    "name": "TMC2209 stepper driver",
+    "unit_cost_usd": 5.0,
+    "mass_g": 4.0
+   }
+  },
+  {
+   "file": "stl/driver-carrier-y1.stl",
+   "name": "Driver carrier Y1",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f5fa8",
+   "explode": [
+    0.018,
+    0.977,
+    -0.212
+   ],
+   "bbox": [
+    38.0,
+    40.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/y1-driver-tmc2209.stl",
+   "name": "Y1 driver (TMC2209)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2f2547",
+   "explode": [
+    0.018,
+    0.979,
+    -0.205
+   ],
+   "bbox": [
+    20.3,
+    15.2,
+    18.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/y1-driver-tmc2209__0.stl",
+     "color": "#2f2547",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/y1-driver-tmc2209__1.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/y1-driver-tmc2209__2.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/y1-driver-tmc2209__3.stl",
+     "color": "#9aa3ad",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/y1-driver-tmc2209__4.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/y1-driver-tmc2209__5.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/y1-driver-tmc2209__6.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/y1-driver-tmc2209__7.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "tmc2209",
+    "qty": 1,
+    "name": "TMC2209 stepper driver",
+    "unit_cost_usd": 5.0,
+    "mass_g": 4.0
+   }
+  },
+  {
+   "file": "stl/driver-carrier-y2.stl",
+   "name": "Driver carrier Y2",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f5fa8",
+   "explode": [
+    0.082,
+    0.974,
+    -0.212
+   ],
+   "bbox": [
+    38.0,
+    40.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/y2-driver-tmc2209.stl",
+   "name": "Y2 driver (TMC2209)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2f2547",
+   "explode": [
+    0.083,
+    0.975,
+    -0.204
+   ],
+   "bbox": [
+    20.3,
+    15.2,
+    18.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/y2-driver-tmc2209__0.stl",
+     "color": "#2f2547",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/y2-driver-tmc2209__1.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/y2-driver-tmc2209__2.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/y2-driver-tmc2209__3.stl",
+     "color": "#9aa3ad",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/y2-driver-tmc2209__4.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/y2-driver-tmc2209__5.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/y2-driver-tmc2209__6.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/y2-driver-tmc2209__7.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "tmc2209",
+    "qty": 1,
+    "name": "TMC2209 stepper driver",
+    "unit_cost_usd": 5.0,
+    "mass_g": 4.0
+   }
+  },
+  {
+   "file": "stl/driver-carrier-z.stl",
+   "name": "Driver carrier Z",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f5fa8",
+   "explode": [
+    0.145,
+    0.967,
+    -0.21
+   ],
+   "bbox": [
+    38.0,
+    40.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/z-driver-tmc2209.stl",
+   "name": "Z driver (TMC2209)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2f2547",
+   "explode": [
+    0.146,
+    0.968,
+    -0.203
+   ],
+   "bbox": [
+    20.3,
+    15.2,
+    18.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/z-driver-tmc2209__0.stl",
+     "color": "#2f2547",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/z-driver-tmc2209__1.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/z-driver-tmc2209__2.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/z-driver-tmc2209__3.stl",
+     "color": "#9aa3ad",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/z-driver-tmc2209__4.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/z-driver-tmc2209__5.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/z-driver-tmc2209__6.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/z-driver-tmc2209__7.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "tmc2209",
+    "qty": 1,
+    "name": "TMC2209 stepper driver",
+    "unit_cost_usd": 5.0,
+    "mass_g": 4.0
+   }
+  },
+  {
+   "file": "stl/lm2596-buck-24-v-to-5-v.stl",
+   "name": "LM2596 buck (24 V to 5 V)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a3a6b",
+   "explode": [
+    -0.035,
+    0.97,
+    -0.241
+   ],
+   "bbox": [
+    43.0,
+    21.2,
+    12.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/lm2596-buck-24-v-to-5-v__0.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/lm2596-buck-24-v-to-5-v__1.stl",
+     "color": "#1a3a6b",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/lm2596-buck-24-v-to-5-v__2.stl",
+     "color": "#1d2a4a",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/lm2596-buck-24-v-to-5-v__3.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/lm2596-buck-24-v-to-5-v__4.stl",
+     "color": "#24262a",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/lm2596-buck-24-v-to-5-v__5.stl",
+     "color": "#c47a4c",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/lm2596-buck-24-v-to-5-v__6.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/lm2596-buck-24-v-to-5-v__7.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/lm2596-buck-24-v-to-5-v__8.stl",
+     "color": "#2a6ad0",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/lm2596-buck-24-v-to-5-v__9.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "lm2596",
+    "qty": 1,
+    "name": "LM2596 buck converter",
+    "unit_cost_usd": 2.0,
+    "mass_g": 12.0
+   }
+  },
+  {
+   "file": "stl/torch-relay-5-v.stl",
+   "name": "Torch relay (5 V)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f4fb4",
+   "explode": [
+    0.07,
+    0.969,
+    -0.237
+   ],
+   "bbox": [
+    50.0,
+    26.0,
+    17.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/torch-relay-5-v__0.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/torch-relay-5-v__1.stl",
+     "color": "#1a3a6b",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/torch-relay-5-v__2.stl",
+     "color": "#1f4fb4",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/torch-relay-5-v__3.stl",
+     "color": "#e9e6dd",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/torch-relay-5-v__4.stl",
+     "color": "#2a6ad0",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/torch-relay-5-v__5.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/torch-relay-5-v__6.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/torch-relay-5-v__7.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/torch-relay-5-v__8.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/torch-relay-5-v__9.stl",
+     "color": "#3be06a",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/torch-relay-5-v__10.stl",
+     "color": "#b48a5c",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/torch-relay-5-v__11.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/torch-relay-5-v__12.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "relay_5v",
+    "qty": 1,
+    "name": "5V relay module, 1 channel",
+    "unit_cost_usd": 2.5,
+    "mass_g": 16.0
+   }
+  },
+  {
+   "file": "stl/inline-fuse-holder-5-a.stl",
+   "name": "Inline fuse holder (5 A)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c0392b",
+   "explode": [
+    0.172,
+    0.954,
+    -0.244
+   ],
+   "bbox": [
+    30.0,
+    14.0,
+    12.0
+   ]
+  },
+  {
+   "file": "stl/dc-jack-24-v-in.stl",
+   "name": "DC jack (24 V in)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9cdd2",
+   "explode": [
+    0.215,
+    0.956,
+    -0.198
+   ],
+   "bbox": [
+    16.6,
+    14.0,
+    16.2
+   ],
+   "port": {
+    "type": "dc-barrel",
+    "at": [
+     133.1,
+     800.0,
+     474.99
+    ],
+    "dir": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "wide": [
+     0.0,
+     1.0,
+     0.0
+    ]
+   },
+   "subparts": [
+    {
+     "file": "stl/dc-jack-24-v-in__0.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-jack-24-v-in__1.stl",
+     "color": "#b9bec4",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-jack-24-v-in__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/dc-jack-24-v-in__3.stl",
+     "color": "#e0e2e4",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-jack-24-v-in__4.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "dc_jack_panel",
+    "qty": 1,
+    "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+    "unit_cost_usd": 0.8,
+    "mass_g": 6.0
+   }
+  }
+ ],
+ "scene": "floor",
+ "assembly_order": [
+  [
+   "Stand runner left",
+   "Stand runner right",
+   "Stand rear foot"
+  ],
+  [
+   "Stand post left",
+   "Stand post right",
+   "Stand crossbar"
+  ],
+  [
+   "Bed side tube left",
+   "Bed side tube right",
+   "Bed cross tube front",
+   "Bed cross tube middle",
+   "Bed cross tube rear"
+  ],
+  [
+   "Leg left",
+   "Leg right",
+   "Leg brace"
+  ],
+  [
+   "Y rail left (2040 V-slot)",
+   "Y rail right (2040 V-slot)"
+  ],
+  [
+   "Gantry beam (2 x 4 in tube)"
+  ],
+  [
+   "X carriage plate"
+  ],
+  [
+   "Control box"
+  ],
+  [
+   "Control box lid"
+  ]
+ ],
+ "wiring": {
+  "file": "wiring.json",
+  "wires": 64,
+  "parts": [
+   "24 V 5 A power adapter (5.5 x 2.1)",
+   "24V bus bar",
+   "DC jack (24 V in)",
+   "Driver carrier X",
+   "Driver carrier Y1",
+   "Driver carrier Y2",
+   "Driver carrier Z",
+   "E-stop station (22 mm, NC)",
+   "ESP32 DevKitC (WROOM-32)",
+   "Float switch",
+   "GND bus bar",
+   "Inline fuse holder (5 A)",
+   "LM2596 buck (24 V to 5 V)",
+   "Limit switch X",
+   "Limit switch Y1",
+   "Limit switch Y2",
+   "Limit switch Z",
+   "Plasma CNC start cable (to your cutter)",
+   "Torch relay (5 V)",
+   "X stepper (NEMA17 48 mm)",
+   "Y1 stepper (NEMA17 48 mm)",
+   "Y2 stepper (NEMA17 48 mm)",
+   "Z stepper (NEMA17 40 mm)"
+  ],
+  "ok": true
+ },
+ "motion": {
+  "file": "motion.json",
+  "duration": 8.0,
+  "frames": 120,
+  "parts": 75
+ }
+}

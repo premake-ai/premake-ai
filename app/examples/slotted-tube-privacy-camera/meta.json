@@ -1,0 +1,14 @@
+{
+ "title": "Slotted Tube Privacy Camera",
+ "description": "Local-only Wi-Fi care camera in a black-anodized slotted aluminium tube with a smoked window and a twist-to-close privacy shutter.",
+ "creator": "Premake",
+ "tags": [
+  "camera",
+  "esp32 cam",
+  "privacy",
+  "aluminium",
+  "home"
+ ],
+ "created": "2026-11-03T20:52:43.803Z",
+ "demo": true
+}

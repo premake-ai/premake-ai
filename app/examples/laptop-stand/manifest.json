@@ -1,0 +1,70 @@
+{
+ "t": 1793164691.773387,
+ "title": "Laptop stand",
+ "parts": [
+  {
+   "file": "stl/side-frame-left.stl",
+   "name": "Side frame left",
+   "group": "case",
+   "color": "#6c757d",
+   "explode": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    10.0,
+    230.0,
+    81.0
+   ]
+  },
+  {
+   "file": "stl/side-frame-right.stl",
+   "name": "Side frame right",
+   "group": "case",
+   "color": "#6c757d",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    10.0,
+    230.0,
+    81.0
+   ]
+  },
+  {
+   "file": "stl/1-2-in-oak-dowels-2x-260-mm.stl",
+   "name": "1/2 in oak dowels (2x 260 mm)",
+   "group": "component",
+   "color": "#c69c6d",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    260.0,
+    192.7,
+    65.4
+   ]
+  },
+  {
+   "file": "stl/rubber-feet-strips-4x.stl",
+   "name": "Rubber feet strips (4x)",
+   "group": "component",
+   "color": "#222222",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    249.0,
+    222.0,
+    1.5
+   ]
+  }
+ ]
+}

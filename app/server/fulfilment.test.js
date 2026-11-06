@@ -16,7 +16,7 @@ const writeJSON = (f, v) => fs.writeFileSync(f, JSON.stringify(v, null, 2));
 function setup() {
   const DATA = fs.mkdtempSync(path.join(os.tmpdir(), 'ful-'));
   const ORDERS = path.join(DATA, 'orders.json');
-  const exDir = (s) => (/^[\w-]+$/.test(s) ? path.join(APP, 'data', 'examples', s) : null);
+  const exDir = (s) => (/^[\w-]+$/.test(s) ? path.join(APP, 'examples', s) : null);
   const sourcing = require('./sourcing').init({ DATA, projDir: () => null, exDir, exists: fs.existsSync, readJSON, writeJSON, send: () => {}, quote: () => ({ tiers: [] }) });
   const sent = [];
   const send = (res, code, body) => { sent.push({ code, body }); };
@@ -50,7 +50,7 @@ test('trackingUrl picks the carrier', () => {
   assert.equal(F.trackingUrl('', ''), null);
 });
 
-test('onPaid creates a plan with printed, fabricated and bought jobs x order qty', { skip: 'needs the example designs in data/examples, not in the open-source repo' }, () => {
+test('onPaid creates a plan with printed, fabricated and bought jobs x order qty', () => {
   const { ORDERS, ful, DATA } = setup();
   const o = order();
   writeJSON(ORDERS, [o]);
@@ -107,7 +107,7 @@ test('planJobs skips the kit-contents groups the customer left out', () => {
   assert.deepEqual(some, ['bought']);
 });
 
-test('admin API: view, supplier switch, placed -> order printing, drop-ship tracking -> shipped', { skip: 'needs the example designs in data/examples, not in the open-source repo' }, async () => {
+test('admin API: view, supplier switch, placed -> order printing, drop-ship tracking -> shipped', async () => {
   const { ORDERS, ful, sent } = setup();
   const o = order();
   writeJSON(ORDERS, [o]);

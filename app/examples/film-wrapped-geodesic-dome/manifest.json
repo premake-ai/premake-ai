@@ -1,0 +1,4868 @@
+{
+ "t": 1793745856.371625,
+ "title": "Film-Wrapped Geodesic Dome",
+ "parts": [
+  {
+   "file": "stl/hub-5-way.stl",
+   "name": "Hub 5-way",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    0.0,
+    -0.0,
+    1.0
+   ],
+   "bbox": [
+    90.9,
+    88.8,
+    38.2
+   ]
+  },
+  {
+   "file": "stl/hub-6-way.stl",
+   "name": "Hub 6-way",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    -0.30901699437494734,
+    -0.42532540417602,
+    0.85065080835204
+   ],
+   "bbox": [
+    88.5,
+    87.1,
+    67.7
+   ]
+  },
+  {
+   "file": "stl/hub-6-way-2.stl",
+   "name": "Hub 6-way",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    0.30901699437494745,
+    -0.42532540417601994,
+    0.85065080835204
+   ],
+   "bbox": [
+    88.5,
+    87.1,
+    67.7
+   ]
+  },
+  {
+   "file": "stl/hub-5-way-2.stl",
+   "name": "Hub 5-way",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    -0.5257311121191336,
+    -0.723606797749979,
+    0.447213595499958
+   ],
+   "bbox": [
+    80.6,
+    76.3,
+    86.1
+   ]
+  },
+  {
+   "file": "stl/hub-6-way-3.stl",
+   "name": "Hub 6-way",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    0.0,
+    -0.8506508083520401,
+    0.5257311121191336
+   ],
+   "bbox": [
+    92.9,
+    61.9,
+    79.6
+   ]
+  },
+  {
+   "file": "stl/hub-5-way-3.stl",
+   "name": "Hub 5-way",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    0.5257311121191336,
+    -0.7236067977499789,
+    0.447213595499958
+   ],
+   "bbox": [
+    80.6,
+    76.3,
+    86.1
+   ]
+  },
+  {
+   "file": "stl/hub-6-way-4.stl",
+   "name": "Hub 6-way",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    -0.5,
+    0.16245984811645325,
+    0.85065080835204
+   ],
+   "bbox": [
+    85.2,
+    90.9,
+    67.7
+   ]
+  },
+  {
+   "file": "stl/hub-6-way-5.stl",
+   "name": "Hub 6-way",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    -0.8090169943749475,
+    -0.26286555605956674,
+    0.5257311121191337
+   ],
+   "bbox": [
+    71.1,
+    90.9,
+    79.6
+   ]
+  },
+  {
+   "file": "stl/hub-5-way-4.stl",
+   "name": "Hub 5-way",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    -0.8506508083520399,
+    0.2763932022500211,
+    0.4472135954999579
+   ],
+   "bbox": [
+    64.6,
+    87.5,
+    86.1
+   ]
+  },
+  {
+   "file": "stl/hub-6-way-6.stl",
+   "name": "Hub 6-way",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    0.5,
+    0.16245984811645311,
+    0.85065080835204
+   ],
+   "bbox": [
+    85.2,
+    90.9,
+    67.7
+   ]
+  },
+  {
+   "file": "stl/hub-6-way-7.stl",
+   "name": "Hub 6-way",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    0.8090169943749473,
+    -0.26286555605956674,
+    0.5257311121191336
+   ],
+   "bbox": [
+    71.1,
+    90.9,
+    79.6
+   ]
+  },
+  {
+   "file": "stl/hub-5-way-5.stl",
+   "name": "Hub 5-way",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    0.8506508083520401,
+    0.2763932022500209,
+    0.447213595499958
+   ],
+   "bbox": [
+    64.6,
+    87.5,
+    86.1
+   ]
+  },
+  {
+   "file": "stl/hub-6-way-8.stl",
+   "name": "Hub 6-way",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    0.0,
+    0.5257311121191336,
+    0.85065080835204
+   ],
+   "bbox": [
+    86.3,
+    86.7,
+    67.7
+   ]
+  },
+  {
+   "file": "stl/hub-6-way-9.stl",
+   "name": "Hub 6-way",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    0.5,
+    0.6881909602355867,
+    0.5257311121191336
+   ],
+   "bbox": [
+    85.2,
+    76.7,
+    79.6
+   ]
+  },
+  {
+   "file": "stl/hub-5-way-6.stl",
+   "name": "Hub 5-way",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    -5.551115123125783e-17,
+    0.8944271909999159,
+    0.447213595499958
+   ],
+   "bbox": [
+    90.9,
+    59.0,
+    86.1
+   ]
+  },
+  {
+   "file": "stl/hub-6-way-10.stl",
+   "name": "Hub 6-way",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    -0.4999999999999999,
+    0.6881909602355867,
+    0.5257311121191336
+   ],
+   "bbox": [
+    85.2,
+    76.7,
+    79.6
+   ]
+  },
+  {
+   "file": "stl/hub-4-way-base.stl",
+   "name": "Hub 4-way base",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    -0.3090169943749473,
+    -0.9510565162951536,
+    0.0
+   ],
+   "bbox": [
+    88.5,
+    71.4,
+    62.2
+   ]
+  },
+  {
+   "file": "stl/hub-4-way-base-2.stl",
+   "name": "Hub 4-way base",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    0.3090169943749474,
+    -0.9510565162951534,
+    0.0
+   ],
+   "bbox": [
+    88.5,
+    71.4,
+    62.2
+   ]
+  },
+  {
+   "file": "stl/hub-4-way-base-3.stl",
+   "name": "Hub 4-way base",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    -0.8090169943749475,
+    -0.5877852522924731,
+    0.0
+   ],
+   "bbox": [
+    76.7,
+    83.9,
+    62.2
+   ]
+  },
+  {
+   "file": "stl/hub-4-way-base-4.stl",
+   "name": "Hub 4-way base",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    -1.0,
+    1.6653345369377348e-16,
+    0.0
+   ],
+   "bbox": [
+    62.1,
+    93.0,
+    62.2
+   ]
+  },
+  {
+   "file": "stl/hub-4-way-base-5.stl",
+   "name": "Hub 4-way base",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    0.8090169943749475,
+    -0.587785252292473,
+    0.0
+   ],
+   "bbox": [
+    76.7,
+    83.9,
+    62.2
+   ]
+  },
+  {
+   "file": "stl/hub-4-way-base-6.stl",
+   "name": "Hub 4-way base",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    1.0,
+    -1.1102230246251565e-16,
+    0.0
+   ],
+   "bbox": [
+    62.1,
+    93.0,
+    62.2
+   ]
+  },
+  {
+   "file": "stl/hub-4-way-base-7.stl",
+   "name": "Hub 4-way base",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    0.8090169943749475,
+    0.5877852522924731,
+    0.0
+   ],
+   "bbox": [
+    76.7,
+    83.9,
+    62.2
+   ]
+  },
+  {
+   "file": "stl/hub-4-way-base-8.stl",
+   "name": "Hub 4-way base",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    0.30901699437494745,
+    0.9510565162951535,
+    0.0
+   ],
+   "bbox": [
+    88.5,
+    71.4,
+    62.2
+   ]
+  },
+  {
+   "file": "stl/hub-4-way-base-9.stl",
+   "name": "Hub 4-way base",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    -0.3090169943749474,
+    0.9510565162951534,
+    0.0
+   ],
+   "bbox": [
+    88.5,
+    71.4,
+    62.2
+   ]
+  },
+  {
+   "file": "stl/hub-4-way-base-10.stl",
+   "name": "Hub 4-way base",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    -0.8090169943749473,
+    0.5877852522924731,
+    0.0
+   ],
+   "bbox": [
+    76.7,
+    83.9,
+    62.2
+   ]
+  },
+  {
+   "file": "stl/struts-a-30-x-502-mm-dowel.stl",
+   "name": "Struts A (30 x 502 mm dowel)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c89b62",
+   "explode": [
+    0.0,
+    0.366,
+    0.93
+   ],
+   "bbox": [
+    2006.3,
+    1908.8,
+    990.6
+   ],
+   "material": "wood"
+  },
+  {
+   "file": "stl/struts-b-35-x-574-mm-dowel.stl",
+   "name": "Struts B (35 x 574 mm dowel)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c89b62",
+   "explode": [
+    -0.0,
+    -0.0,
+    -1.0
+   ],
+   "bbox": [
+    2004.5,
+    1921.2,
+    869.7
+   ],
+   "material": "wood"
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.034,
+    -0.048,
+    0.998
+   ],
+   "bbox": [
+    8.5,
+    9.5,
+    22.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-2.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.057,
+    0.018,
+    0.998
+   ],
+   "bbox": [
+    10.2,
+    7.6,
+    22.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-3.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (3)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.0,
+    0.06,
+    0.998
+   ],
+   "bbox": [
+    7.5,
+    10.4,
+    22.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-3__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-4.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (4)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.057,
+    0.018,
+    0.998
+   ],
+   "bbox": [
+    10.2,
+    7.6,
+    22.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-4__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-5.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (5)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.034,
+    -0.048,
+    0.998
+   ],
+   "bbox": [
+    8.5,
+    9.5,
+    22.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-5__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-6.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (6)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.504,
+    -0.695,
+    0.512
+   ],
+   "bbox": [
+    13.1,
+    16.3,
+    17.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-6__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-7.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (7)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.531,
+    -0.662,
+    0.529
+   ],
+   "bbox": [
+    16.2,
+    11.8,
+    18.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-7__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-8.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (8)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.516,
+    -0.641,
+    0.568
+   ],
+   "bbox": [
+    13.0,
+    8.1,
+    21.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-8__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-9.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (9)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.476,
+    -0.655,
+    0.587
+   ],
+   "bbox": [
+    8.5,
+    9.5,
+    22.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-9__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-10.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (10)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.451,
+    -0.689,
+    0.567
+   ],
+   "bbox": [
+    7.5,
+    13.4,
+    21.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-10__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-11.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (11)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.465,
+    -0.71,
+    0.529
+   ],
+   "bbox": [
+    8.5,
+    17.7,
+    18.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-11__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-12.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (12)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.504,
+    -0.695,
+    0.512
+   ],
+   "bbox": [
+    13.1,
+    16.3,
+    17.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-12__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-13.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (13)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.465,
+    -0.71,
+    0.529
+   ],
+   "bbox": [
+    8.5,
+    17.7,
+    18.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-13__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-14.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (14)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.451,
+    -0.689,
+    0.567
+   ],
+   "bbox": [
+    7.5,
+    13.4,
+    21.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-14__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-15.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (15)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.476,
+    -0.655,
+    0.587
+   ],
+   "bbox": [
+    8.5,
+    9.5,
+    22.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-15__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-16.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (16)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.516,
+    -0.641,
+    0.568
+   ],
+   "bbox": [
+    13.0,
+    8.1,
+    21.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-16__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-17.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (17)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.531,
+    -0.662,
+    0.529
+   ],
+   "bbox": [
+    16.2,
+    11.8,
+    18.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-17__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-18.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (18)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.601,
+    -0.794,
+    -0.09
+   ],
+   "bbox": [
+    18.2,
+    17.9,
+    9.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-18__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-19.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (19)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.613,
+    -0.788,
+    -0.057
+   ],
+   "bbox": [
+    18.2,
+    14.7,
+    14.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-19__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-20.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (20)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.587,
+    -0.809,
+    -0.036
+   ],
+   "bbox": [
+    13.1,
+    16.3,
+    17.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-20__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-21.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (21)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.56,
+    -0.827,
+    -0.057
+   ],
+   "bbox": [
+    10.4,
+    20.4,
+    14.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-21__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-22.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (22)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.569,
+    -0.818,
+    -0.09
+   ],
+   "bbox": [
+    13.1,
+    21.3,
+    9.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-22__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-23.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (23)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.035,
+    -0.999,
+    0.023
+   ],
+   "bbox": [
+    10.4,
+    20.4,
+    14.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-23__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-24.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (24)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.018,
+    -0.999,
+    0.049
+   ],
+   "bbox": [
+    8.5,
+    17.7,
+    18.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-24__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-25.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (25)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.018,
+    -0.999,
+    0.049
+   ],
+   "bbox": [
+    8.5,
+    17.7,
+    18.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-25__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-26.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (26)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.035,
+    -0.999,
+    0.023
+   ],
+   "bbox": [
+    10.4,
+    20.4,
+    14.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-26__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-27.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (27)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.017,
+    -1.0,
+    -0.004
+   ],
+   "bbox": [
+    8.5,
+    22.5,
+    10.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-27__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-28.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (28)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.017,
+    -1.0,
+    -0.004
+   ],
+   "bbox": [
+    8.5,
+    22.5,
+    10.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-28__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-29.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (29)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.56,
+    -0.827,
+    -0.057
+   ],
+   "bbox": [
+    10.4,
+    20.4,
+    14.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-29__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-30.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (30)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.587,
+    -0.809,
+    -0.036
+   ],
+   "bbox": [
+    13.1,
+    16.3,
+    17.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-30__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-31.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (31)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.613,
+    -0.788,
+    -0.057
+   ],
+   "bbox": [
+    18.2,
+    14.7,
+    14.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-31__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-32.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (32)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.601,
+    -0.794,
+    -0.09
+   ],
+   "bbox": [
+    18.2,
+    17.9,
+    9.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-32__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-33.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (33)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.569,
+    -0.818,
+    -0.09
+   ],
+   "bbox": [
+    13.1,
+    21.3,
+    9.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-33__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-34.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (34)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.794,
+    0.299,
+    0.529
+   ],
+   "bbox": [
+    15.0,
+    13.4,
+    18.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-34__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-35.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (35)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.77,
+    0.292,
+    0.568
+   ],
+   "bbox": [
+    10.2,
+    11.8,
+    21.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-35__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-36.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (36)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.77,
+    0.25,
+    0.587
+   ],
+   "bbox": [
+    10.2,
+    7.6,
+    22.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-36__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-37.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (37)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.795,
+    0.217,
+    0.567
+   ],
+   "bbox": [
+    13.0,
+    8.1,
+    21.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-37__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-38.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (38)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.819,
+    0.225,
+    0.528
+   ],
+   "bbox": [
+    18.1,
+    7.5,
+    18.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-38__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-39.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (39)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.817,
+    0.264,
+    0.512
+   ],
+   "bbox": [
+    18.3,
+    9.6,
+    17.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-39__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-40.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (40)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.939,
+    -0.342,
+    0.023
+   ],
+   "bbox": [
+    18.2,
+    14.7,
+    14.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-40__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-41.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (41)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.946,
+    -0.325,
+    -0.004
+   ],
+   "bbox": [
+    21.0,
+    13.4,
+    10.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-41__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-42.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (42)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.957,
+    -0.291,
+    -0.004
+   ],
+   "bbox": [
+    22.6,
+    8.1,
+    10.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-42__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-43.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (43)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.961,
+    -0.275,
+    0.023
+   ],
+   "bbox": [
+    21.2,
+    7.5,
+    14.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-43__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-44.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (44)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.956,
+    -0.29,
+    0.049
+   ],
+   "bbox": [
+    18.1,
+    7.5,
+    18.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-44__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-45.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (45)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.944,
+    -0.326,
+    0.049
+   ],
+   "bbox": [
+    16.2,
+    11.8,
+    18.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-45__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-46.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (46)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.953,
+    0.288,
+    -0.09
+   ],
+   "bbox": [
+    22.7,
+    8.2,
+    9.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-46__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-47.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (47)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.941,
+    0.326,
+    -0.09
+   ],
+   "bbox": [
+    21.2,
+    13.4,
+    9.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-47__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-48.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (48)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.939,
+    0.339,
+    -0.057
+   ],
+   "bbox": [
+    18.3,
+    14.5,
+    14.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-48__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-49.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (49)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.951,
+    0.308,
+    -0.036
+   ],
+   "bbox": [
+    18.3,
+    9.6,
+    17.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-49__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-50.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (50)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.959,
+    0.277,
+    -0.057
+   ],
+   "bbox": [
+    21.2,
+    7.5,
+    14.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-50__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-51.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (51)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.817,
+    0.264,
+    0.512
+   ],
+   "bbox": [
+    18.3,
+    9.6,
+    17.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-51__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-52.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (52)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.819,
+    0.225,
+    0.528
+   ],
+   "bbox": [
+    18.1,
+    7.5,
+    18.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-52__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-53.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (53)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.795,
+    0.217,
+    0.567
+   ],
+   "bbox": [
+    13.0,
+    8.1,
+    21.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-53__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-54.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (54)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.77,
+    0.25,
+    0.587
+   ],
+   "bbox": [
+    10.2,
+    7.6,
+    22.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-54__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-55.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (55)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.77,
+    0.292,
+    0.568
+   ],
+   "bbox": [
+    10.2,
+    11.8,
+    21.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-55__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-56.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (56)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.794,
+    0.299,
+    0.529
+   ],
+   "bbox": [
+    15.0,
+    13.4,
+    18.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-56__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-57.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (57)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.944,
+    -0.326,
+    0.049
+   ],
+   "bbox": [
+    16.2,
+    11.8,
+    18.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-57__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-58.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (58)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.956,
+    -0.29,
+    0.049
+   ],
+   "bbox": [
+    18.1,
+    7.5,
+    18.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-58__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-59.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (59)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.961,
+    -0.275,
+    0.023
+   ],
+   "bbox": [
+    21.2,
+    7.5,
+    14.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-59__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-60.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (60)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.957,
+    -0.291,
+    -0.004
+   ],
+   "bbox": [
+    22.6,
+    8.1,
+    10.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-60__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-61.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (61)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.946,
+    -0.325,
+    -0.004
+   ],
+   "bbox": [
+    21.0,
+    13.4,
+    10.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-61__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-62.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (62)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.939,
+    -0.342,
+    0.023
+   ],
+   "bbox": [
+    18.2,
+    14.7,
+    14.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-62__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-63.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (63)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.941,
+    0.326,
+    -0.09
+   ],
+   "bbox": [
+    21.2,
+    13.4,
+    9.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-63__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-64.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (64)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.953,
+    0.288,
+    -0.09
+   ],
+   "bbox": [
+    22.7,
+    8.2,
+    9.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-64__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-65.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (65)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.959,
+    0.277,
+    -0.057
+   ],
+   "bbox": [
+    21.2,
+    7.5,
+    14.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-65__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-66.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (66)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.951,
+    0.308,
+    -0.036
+   ],
+   "bbox": [
+    18.3,
+    9.6,
+    17.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-66__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-67.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (67)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.939,
+    0.339,
+    -0.057
+   ],
+   "bbox": [
+    18.3,
+    14.5,
+    14.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-67__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-68.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (68)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.0,
+    0.81,
+    0.587
+   ],
+   "bbox": [
+    7.5,
+    10.4,
+    22.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-68__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-69.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (69)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.039,
+    0.823,
+    0.567
+   ],
+   "bbox": [
+    10.2,
+    11.8,
+    21.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-69__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-70.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (70)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.039,
+    0.848,
+    0.529
+   ],
+   "bbox": [
+    10.2,
+    17.1,
+    18.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-70__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-71.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (71)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.0,
+    0.859,
+    0.512
+   ],
+   "bbox": [
+    7.5,
+    19.0,
+    17.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-71__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-72.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (72)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.039,
+    0.848,
+    0.529
+   ],
+   "bbox": [
+    10.2,
+    17.1,
+    18.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-72__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-73.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (73)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.039,
+    0.823,
+    0.567
+   ],
+   "bbox": [
+    10.2,
+    11.8,
+    21.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-73__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-74.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (74)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.602,
+    0.797,
+    0.049
+   ],
+   "bbox": [
+    15.0,
+    13.4,
+    18.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-74__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-75.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (75)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.571,
+    0.819,
+    0.049
+   ],
+   "bbox": [
+    10.2,
+    17.1,
+    18.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-75__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-76.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (76)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.558,
+    0.83,
+    0.023
+   ],
+   "bbox": [
+    10.2,
+    20.5,
+    14.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-76__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-77.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (77)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.572,
+    0.82,
+    -0.004
+   ],
+   "bbox": [
+    13.0,
+    21.2,
+    10.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-77__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-78.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (78)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.602,
+    0.798,
+    -0.004
+   ],
+   "bbox": [
+    18.1,
+    17.7,
+    10.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-78__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-79.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (79)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.616,
+    0.787,
+    0.023
+   ],
+   "bbox": [
+    18.3,
+    14.5,
+    14.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-79__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-80.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (80)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.031,
+    0.998,
+    -0.057
+   ],
+   "bbox": [
+    10.2,
+    20.5,
+    14.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-80__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-81.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (81)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.0,
+    0.999,
+    -0.036
+   ],
+   "bbox": [
+    7.5,
+    19.0,
+    17.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-81__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-82.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (82)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.031,
+    0.998,
+    -0.057
+   ],
+   "bbox": [
+    10.2,
+    20.5,
+    14.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-82__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-83.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (83)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.019,
+    0.996,
+    -0.09
+   ],
+   "bbox": [
+    8.5,
+    22.7,
+    9.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-83__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-84.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (84)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.019,
+    0.996,
+    -0.09
+   ],
+   "bbox": [
+    8.5,
+    22.7,
+    9.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-84__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-85.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (85)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.616,
+    0.787,
+    0.023
+   ],
+   "bbox": [
+    18.3,
+    14.5,
+    14.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-85__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-86.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (86)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.602,
+    0.798,
+    -0.004
+   ],
+   "bbox": [
+    18.1,
+    17.7,
+    10.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-86__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-87.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (87)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.572,
+    0.82,
+    -0.004
+   ],
+   "bbox": [
+    13.0,
+    21.2,
+    10.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-87__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-88.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (88)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.558,
+    0.83,
+    0.023
+   ],
+   "bbox": [
+    10.2,
+    20.5,
+    14.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-88__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-89.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (89)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.571,
+    0.819,
+    0.049
+   ],
+   "bbox": [
+    10.2,
+    17.1,
+    18.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-89__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-90.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (90)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.602,
+    0.797,
+    0.049
+   ],
+   "bbox": [
+    15.0,
+    13.4,
+    18.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-90__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-91.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (91)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.3,
+    -0.84,
+    -0.452
+   ],
+   "bbox": [
+    16.2,
+    20.3,
+    7.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-91__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-92.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (92)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.291,
+    -0.853,
+    -0.433
+   ],
+   "bbox": [
+    13.1,
+    21.3,
+    9.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-92__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-93.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (93)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.266,
+    -0.861,
+    -0.433
+   ],
+   "bbox": [
+    8.5,
+    22.5,
+    10.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-93__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-94.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (94)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.25,
+    -0.857,
+    -0.451
+   ],
+   "bbox": [
+    7.5,
+    22.8,
+    7.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-94__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-95.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (95)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.25,
+    -0.857,
+    -0.451
+   ],
+   "bbox": [
+    7.5,
+    22.8,
+    7.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-95__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-96.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (96)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.266,
+    -0.861,
+    -0.433
+   ],
+   "bbox": [
+    8.5,
+    22.5,
+    10.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-96__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-97.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (97)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.291,
+    -0.853,
+    -0.433
+   ],
+   "bbox": [
+    13.1,
+    21.3,
+    9.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-97__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-98.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (98)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.3,
+    -0.84,
+    -0.452
+   ],
+   "bbox": [
+    16.2,
+    20.3,
+    7.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-98__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-99.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (99)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.738,
+    -0.502,
+    -0.452
+   ],
+   "bbox": [
+    22.6,
+    11.0,
+    7.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-99__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-100.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (100)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.737,
+    -0.519,
+    -0.433
+   ],
+   "bbox": [
+    21.0,
+    13.4,
+    10.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-100__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-101.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (101)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.721,
+    -0.541,
+    -0.433
+   ],
+   "bbox": [
+    18.2,
+    17.9,
+    9.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-101__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-102.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (102)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.706,
+    -0.546,
+    -0.452
+   ],
+   "bbox": [
+    16.2,
+    20.3,
+    7.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-102__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-103.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (103)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.892,
+    0.026,
+    -0.451
+   ],
+   "bbox": [
+    22.6,
+    11.0,
+    7.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-103__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-104.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (104)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.901,
+    0.014,
+    -0.433
+   ],
+   "bbox": [
+    22.7,
+    8.2,
+    9.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-104__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-105.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (105)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.901,
+    -0.011,
+    -0.433
+   ],
+   "bbox": [
+    22.6,
+    8.1,
+    10.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-105__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-106.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (106)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.892,
+    -0.026,
+    -0.451
+   ],
+   "bbox": [
+    22.6,
+    11.0,
+    7.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-106__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-107.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (107)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.706,
+    -0.546,
+    -0.452
+   ],
+   "bbox": [
+    16.2,
+    20.3,
+    7.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-107__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-108.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (108)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.721,
+    -0.541,
+    -0.433
+   ],
+   "bbox": [
+    18.2,
+    17.9,
+    9.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-108__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-109.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (109)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.737,
+    -0.519,
+    -0.433
+   ],
+   "bbox": [
+    21.0,
+    13.4,
+    10.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-109__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-110.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (110)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.738,
+    -0.502,
+    -0.452
+   ],
+   "bbox": [
+    22.6,
+    11.0,
+    7.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-110__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-111.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (111)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.892,
+    -0.026,
+    -0.451
+   ],
+   "bbox": [
+    22.6,
+    11.0,
+    7.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-111__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-112.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (112)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.901,
+    -0.011,
+    -0.433
+   ],
+   "bbox": [
+    22.6,
+    8.1,
+    10.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-112__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-113.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (113)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.901,
+    0.014,
+    -0.433
+   ],
+   "bbox": [
+    22.7,
+    8.2,
+    9.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-113__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-114.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (114)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.892,
+    0.026,
+    -0.451
+   ],
+   "bbox": [
+    22.6,
+    11.0,
+    7.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-114__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-115.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (115)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.738,
+    0.502,
+    -0.452
+   ],
+   "bbox": [
+    22.6,
+    11.0,
+    7.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-115__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-116.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (116)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.738,
+    0.517,
+    -0.433
+   ],
+   "bbox": [
+    21.2,
+    13.4,
+    9.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-116__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-117.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (117)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.722,
+    0.539,
+    -0.433
+   ],
+   "bbox": [
+    18.1,
+    17.7,
+    10.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-117__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-118.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (118)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.706,
+    0.546,
+    -0.452
+   ],
+   "bbox": [
+    16.2,
+    20.3,
+    7.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-118__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-119.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (119)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.3,
+    0.84,
+    -0.452
+   ],
+   "bbox": [
+    16.2,
+    20.3,
+    7.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-119__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-120.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (120)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.289,
+    0.854,
+    -0.433
+   ],
+   "bbox": [
+    13.0,
+    21.2,
+    10.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-120__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-121.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (121)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.264,
+    0.862,
+    -0.433
+   ],
+   "bbox": [
+    8.5,
+    22.7,
+    9.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-121__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-122.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (122)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.25,
+    0.857,
+    -0.451
+   ],
+   "bbox": [
+    7.5,
+    22.8,
+    7.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-122__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-123.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (123)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.25,
+    0.857,
+    -0.451
+   ],
+   "bbox": [
+    7.5,
+    22.8,
+    7.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-123__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-124.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (124)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.264,
+    0.862,
+    -0.433
+   ],
+   "bbox": [
+    8.5,
+    22.7,
+    9.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-124__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-125.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (125)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.289,
+    0.854,
+    -0.433
+   ],
+   "bbox": [
+    13.0,
+    21.2,
+    10.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-125__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-126.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (126)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.3,
+    0.84,
+    -0.452
+   ],
+   "bbox": [
+    16.2,
+    20.3,
+    7.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-126__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-127.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (127)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.706,
+    0.546,
+    -0.452
+   ],
+   "bbox": [
+    16.2,
+    20.3,
+    7.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-127__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-128.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (128)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.722,
+    0.539,
+    -0.433
+   ],
+   "bbox": [
+    18.1,
+    17.7,
+    10.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-128__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-129.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (129)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.738,
+    0.517,
+    -0.433
+   ],
+   "bbox": [
+    21.2,
+    13.4,
+    9.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-129__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-130.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic (130)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.738,
+    0.502,
+    -0.452
+   ],
+   "bbox": [
+    22.6,
+    11.0,
+    7.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-130__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/ground-stakes-12-in-j-hook-driven-in.stl",
+   "name": "Ground stakes (12 in J-hook, driven in)",
+   "group": "component",
+   "process": "bought",
+   "color": "#555555",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    1949.1,
+    1854.2,
+    15.5
+   ],
+   "material": "steel",
+   "step": "step/ground-stakes-12-in-j-hook-driven-in.step"
+  },
+  {
+   "file": "stl/hinge0-3.stl",
+   "name": "Door hinge ring",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    0.204,
+    -0.917,
+    -0.342
+   ],
+   "bbox": [
+    53.3,
+    35.7,
+    38.2
+   ]
+  },
+  {
+   "file": "stl/hinge0-62.stl",
+   "name": "Door hinge ring",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    0.116,
+    -0.974,
+    -0.193
+   ],
+   "bbox": [
+    53.3,
+    35.7,
+    38.2
+   ]
+  },
+  {
+   "file": "stl/door-catch.stl",
+   "name": "Door catch",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f0",
+   "explode": [
+    -0.163,
+    -0.955,
+    -0.247
+   ],
+   "bbox": [
+    48.1,
+    30.2,
+    63.1
+   ]
+  },
+  {
+   "file": "stl/10x3-mm-neodymium-magnet.stl",
+   "name": "10x3 mm neodymium magnet",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa0a6",
+   "explode": [
+    -0.162,
+    -0.956,
+    -0.243
+   ],
+   "bbox": [
+    18.0,
+    7.4,
+    24.0
+   ],
+   "material": "steel",
+   "step": "step/10x3-mm-neodymium-magnet.step"
+  },
+  {
+   "file": "stl/washers.stl",
+   "name": "Steel fender washer (magnet strike)",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc0",
+   "explode": [
+    -0.161,
+    -0.957,
+    -0.242
+   ],
+   "bbox": [
+    24.0,
+    7.1,
+    29.6
+   ],
+   "material": "steel",
+   "step": "step/washers.step"
+  },
+  {
+   "file": "stl/handle.stl",
+   "name": "Door handle",
+   "group": "case",
+   "process": "print",
+   "color": "#2f6f8f",
+   "explode": [
+    -0.118,
+    -0.96,
+    -0.256
+   ],
+   "bbox": [
+    57.1,
+    46.2,
+    88.1
+   ]
+  },
+  {
+   "file": "stl/door.stl",
+   "name": "Door panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    3.6136701614476185e-16,
+    -0.9822469463768461,
+    0.18759247408507942
+   ],
+   "bbox": [
+    542.9,
+    76.7,
+    386.8
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/dscrew0.stl",
+   "name": "M3\u00d710 self-tapping screw for plastic",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.186,
+    -0.92,
+    -0.344
+   ],
+   "bbox": [
+    5.6,
+    12.4,
+    5.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/dscrew0__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M3\u00d710 self-tapping screw for plastic",
+    "unit_cost_usd": 0.059,
+    "mass_g": 0.8
+   }
+  },
+  {
+   "file": "stl/dscrew1.stl",
+   "name": "M3\u00d710 self-tapping screw for plastic (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.098,
+    -0.976,
+    -0.197
+   ],
+   "bbox": [
+    5.6,
+    12.4,
+    5.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/dscrew1__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M3\u00d710 self-tapping screw for plastic",
+    "unit_cost_usd": 0.059,
+    "mass_g": 0.8
+   }
+  },
+  {
+   "file": "stl/m4-16-self-tapping-screw-for-plastic.stl",
+   "name": "M4\u00d716 self-tapping screw for plastic",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.173,
+    -0.949,
+    -0.263
+   ],
+   "bbox": [
+    7.5,
+    19.0,
+    8.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-16-self-tapping-screw-for-plastic__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d716 self-tapping screw for plastic",
+    "unit_cost_usd": 0.084,
+    "mass_g": 2.1
+   }
+  },
+  {
+   "file": "stl/m4-16-self-tapping-screw-for-plastic-2.stl",
+   "name": "M4\u00d716 self-tapping screw for plastic (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.153,
+    -0.961,
+    -0.229
+   ],
+   "bbox": [
+    7.5,
+    19.0,
+    8.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-16-self-tapping-screw-for-plastic-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M4\u00d716 self-tapping screw for plastic",
+    "unit_cost_usd": 0.084,
+    "mass_g": 2.1
+   }
+  },
+  {
+   "file": "stl/hscrew2.stl",
+   "name": "M3\u00d710 self-tapping screw for plastic (3)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.137,
+    -0.947,
+    -0.291
+   ],
+   "bbox": [
+    5.6,
+    12.4,
+    5.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/hscrew2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M3\u00d710 self-tapping screw for plastic",
+    "unit_cost_usd": 0.059,
+    "mass_g": 0.8
+   }
+  },
+  {
+   "file": "stl/hscrew3.stl",
+   "name": "M3\u00d710 self-tapping screw for plastic (4)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.102,
+    -0.967,
+    -0.233
+   ],
+   "bbox": [
+    5.6,
+    12.4,
+    5.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/hscrew3__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M3\u00d710 self-tapping screw for plastic",
+    "unit_cost_usd": 0.059,
+    "mass_g": 0.8
+   }
+  },
+  {
+   "file": "stl/stretch-film-skin.stl",
+   "name": "Stretch film skin",
+   "group": "component",
+   "process": "bought",
+   "color": "#dfeff5",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    2028.4,
+    1929.1,
+    1014.2
+   ],
+   "material": "acrylic_clear"
+  }
+ ],
+ "scene": "floor",
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 9
+ }
+}

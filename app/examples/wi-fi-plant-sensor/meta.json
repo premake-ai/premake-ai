@@ -1,0 +1,14 @@
+{
+ "title": "Wi-Fi Plant Sensor",
+ "description": "Soil-stake plant monitor measuring soil moisture, light, temperature and humidity, reporting over Wi-Fi to Home Assistant on a rechargeable 18650.",
+ "creator": "Premake",
+ "tags": [
+  "plant",
+  "sensor",
+  "ESP32",
+  "home assistant",
+  "IoT"
+ ],
+ "created": "2026-10-30T19:14:13.379Z",
+ "demo": true
+}

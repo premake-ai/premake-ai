@@ -1,0 +1,44 @@
+{
+  "wires": [
+    {"from": {"part": "5V 5A power adapter (UL), 5.5x2.1", "pin": "+"}, "to": {"part": "DC jack, panel mount, pre-wired", "pin": "+"}, "color": "red", "kind": "18 AWG"},
+    {"from": {"part": "5V 5A power adapter (UL), 5.5x2.1", "pin": "-"}, "to": {"part": "DC jack, panel mount, pre-wired", "pin": "-"}, "color": "black", "kind": "18 AWG"},
+    {"from": {"part": "DC jack, panel mount, pre-wired", "pin": "+"}, "to": {"part": "Wago 221-412 (fuse)", "pin": "1"}, "color": "red", "kind": "wago"},
+    {"from": {"part": "Inline fuse holder 5A", "pin": "IN"}, "to": {"part": "Wago 221-412 (fuse)", "pin": "2"}, "color": "red", "kind": "wago"},
+    {"from": {"part": "Inline fuse holder 5A", "pin": "OUT"}, "to": {"part": "Wago 221-413 (5V)", "pin": "1"}, "color": "red", "kind": "wago"},
+    {"from": {"part": "DC jack, panel mount, pre-wired", "pin": "-"}, "to": {"part": "Wago 221-413 (GND)", "pin": "1"}, "color": "black", "kind": "wago"},
+
+    {"from": {"part": "Wago 221-413 (5V)", "pin": "2"}, "to": {"part": "PCA9685 servo driver", "pin": "V+"}, "color": "red", "kind": "18 AWG"},
+    {"from": {"part": "Wago 221-413 (GND)", "pin": "2"}, "to": {"part": "PCA9685 servo driver", "pin": "GND"}, "color": "black", "kind": "18 AWG"},
+    {"from": {"part": "Wago 221-413 (5V)", "pin": "3"}, "to": {"part": "ESP32 screw-terminal breakout", "pin": "5V"}, "color": "red", "kind": "18 AWG"},
+    {"from": {"part": "Wago 221-413 (GND)", "pin": "3"}, "to": {"part": "ESP32 screw-terminal breakout", "pin": "GND"}, "color": "black", "kind": "18 AWG"},
+    {"from": {"part": "1000uF capacitor", "pin": "+"}, "to": {"part": "PCA9685 servo driver", "pin": "V+"}, "color": "red", "kind": "screw terminal"},
+    {"from": {"part": "1000uF capacitor", "pin": "-"}, "to": {"part": "PCA9685 servo driver", "pin": "GND"}, "color": "black", "kind": "screw terminal"},
+
+    {"from": {"part": "ESP32 DevKitC (WROOM-32, 38 pin)", "pin": "38-pin header"}, "to": {"part": "ESP32 screw-terminal breakout", "pin": "socket"}, "color": "black", "kind": "breadboard"},
+
+    {"from": {"part": "ESP32 screw-terminal breakout", "pin": "3V3"}, "to": {"part": "PCA9685 servo driver", "pin": "VCC"}, "color": "red", "kind": "dupont"},
+    {"from": {"part": "ESP32 screw-terminal breakout", "pin": "GND"}, "to": {"part": "PCA9685 servo driver", "pin": "GND (logic)"}, "color": "black", "kind": "dupont"},
+    {"from": {"part": "ESP32 screw-terminal breakout", "pin": "GPIO21"}, "to": {"part": "PCA9685 servo driver", "pin": "SDA"}, "color": "blue", "kind": "dupont"},
+    {"from": {"part": "ESP32 screw-terminal breakout", "pin": "GPIO22"}, "to": {"part": "PCA9685 servo driver", "pin": "SCL"}, "color": "yellow", "kind": "dupont"},
+
+    {"from": {"part": "ESP32 screw-terminal breakout", "pin": "3V3"}, "to": {"part": "TSC2007 touch controller", "pin": "VIN"}, "color": "red", "kind": "qwiic"},
+    {"from": {"part": "ESP32 screw-terminal breakout", "pin": "GND"}, "to": {"part": "TSC2007 touch controller", "pin": "GND"}, "color": "black", "kind": "qwiic"},
+    {"from": {"part": "ESP32 screw-terminal breakout", "pin": "GPIO21"}, "to": {"part": "TSC2007 touch controller", "pin": "SDA"}, "color": "blue", "kind": "qwiic"},
+    {"from": {"part": "ESP32 screw-terminal breakout", "pin": "GPIO22"}, "to": {"part": "TSC2007 touch controller", "pin": "SCL"}, "color": "yellow", "kind": "qwiic"},
+
+    {"from": {"part": "8in resistive touch panel", "pin": "X+"}, "to": {"part": "TSC2007 touch controller", "pin": "X+"}, "color": "white", "kind": "jst"},
+    {"from": {"part": "8in resistive touch panel", "pin": "X-"}, "to": {"part": "TSC2007 touch controller", "pin": "X-"}, "color": "white", "kind": "jst"},
+    {"from": {"part": "8in resistive touch panel", "pin": "Y+"}, "to": {"part": "TSC2007 touch controller", "pin": "Y+"}, "color": "white", "kind": "jst"},
+    {"from": {"part": "8in resistive touch panel", "pin": "Y-"}, "to": {"part": "TSC2007 touch controller", "pin": "Y-"}, "color": "white", "kind": "jst"},
+
+    {"from": {"part": "Servo A", "pin": "signal (orange)"}, "to": {"part": "PCA9685 servo driver", "pin": "PWM0"}, "color": "orange", "kind": "dupont"},
+    {"from": {"part": "Servo A", "pin": "+ (red)"}, "to": {"part": "PCA9685 servo driver", "pin": "V+ 0"}, "color": "red", "kind": "dupont"},
+    {"from": {"part": "Servo A", "pin": "- (brown)"}, "to": {"part": "PCA9685 servo driver", "pin": "GND 0"}, "color": "black", "kind": "dupont"},
+    {"from": {"part": "Servo B", "pin": "signal (orange)"}, "to": {"part": "PCA9685 servo driver", "pin": "PWM1"}, "color": "orange", "kind": "dupont"},
+    {"from": {"part": "Servo B", "pin": "+ (red)"}, "to": {"part": "PCA9685 servo driver", "pin": "V+ 1"}, "color": "red", "kind": "dupont"},
+    {"from": {"part": "Servo B", "pin": "- (brown)"}, "to": {"part": "PCA9685 servo driver", "pin": "GND 1"}, "color": "black", "kind": "dupont"},
+    {"from": {"part": "Servo C", "pin": "signal (orange)"}, "to": {"part": "PCA9685 servo driver", "pin": "PWM2"}, "color": "orange", "kind": "dupont"},
+    {"from": {"part": "Servo C", "pin": "+ (red)"}, "to": {"part": "PCA9685 servo driver", "pin": "V+ 2"}, "color": "red", "kind": "dupont"},
+    {"from": {"part": "Servo C", "pin": "- (brown)"}, "to": {"part": "PCA9685 servo driver", "pin": "GND 2"}, "color": "black", "kind": "dupont"}
+  ]
+}

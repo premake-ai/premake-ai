@@ -1,0 +1,14 @@
+{
+ "title": "Privacy Shutter Tube Camera",
+ "description": "Local-only Wi-Fi home camera in a black-anodized aluminium tube with a flush metal faceplate and a magnetic sliding privacy shutter.",
+ "creator": "Premake",
+ "tags": [
+  "camera",
+  "esp32 cam",
+  "privacy",
+  "aluminium",
+  "sheet metal"
+ ],
+ "created": "2026-11-03T20:52:28.740Z",
+ "demo": true
+}

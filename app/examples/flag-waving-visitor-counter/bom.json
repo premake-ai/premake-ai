@@ -1,0 +1,127 @@
+{
+ "parts": [
+  {
+   "name": "Rubber feet",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.06,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 10mm self adhesive rubber bumper feet; stick under the body corners"
+  },
+  {
+   "name": "Mini breadboard (170 points)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.2,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: mini breadboard 170 tie points 47x35mm (usually a 6-pack ~$7). Used as the 5V/GND power strip; stands on edge against the right wall on its adhesive back. A full-size kit breadboard won't fit inside."
+  },
+  {
+   "name": "Dupont jumper wires 10-20 cm (F-F, F-M, M-M)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 6.99,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: dupont jumper wires female female male kit; skip if your ELEGOO kit has jumpers. 11 used: F-F ESP32 to OLED, F-M ESP32 to breadboard/servo, M-M breadboard to servo plug"
+  },
+  {
+   "name": "470 uF 10 V electrolytic capacitor",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: electrolytic capacitor assortment kit; legs plug into the breadboard across 5V/GND so the ESP32 doesn't reset when the servo starts"
+  },
+  {
+   "name": "Double-sided foam tape",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.2,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: double sided foam mounting tape; a 20 mm strip holds the ESP32 (upside down, on its metal module can) in the cradle"
+  },
+  {
+   "name": "USB-C cable 1 m",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: USB-C to USB-A cable 1m; any 5 V phone charger of 1 A or more powers it"
+  },
+  {
+   "name": "SG90 micro servo",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.5,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=SG90+micro+servo&rh=p_85%3A2470955011",
+   "notes": "search: SG90 micro servo",
+   "auto": "lib"
+  },
+  {
+   "name": "0.96\" OLED display (SSD1306)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 3.5,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=0.96+inch+OLED+SSD1306+I2C&rh=p_85%3A2470955011",
+   "notes": "search: 0.96 inch OLED SSD1306 I2C",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d710 self-tapping screw for plastic",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.059,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+x+10mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M3 x 10mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  },
+  {
+   "name": "M2\u00d76 self-tapping screw for plastic",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.045,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M2+x+6mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M2 x 6mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 25,
+ "kit_ok": true,
+ "needs_soldering": false,
+ "printed": [
+  {
+   "file": "stl/body.stl",
+   "name": "Body",
+   "grams": 47.8,
+   "print_hours": 2.39,
+   "bbox": [
+    74.0,
+    51.0,
+    75.0
+   ]
+  },
+  {
+   "file": "stl/lid.stl",
+   "name": "Lid",
+   "grams": 6.9,
+   "print_hours": 0.35,
+   "bbox": [
+    74.0,
+    48.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/flag.stl",
+   "name": "Flag",
+   "grams": 3.6,
+   "print_hours": 0.25,
+   "bbox": [
+    57.0,
+    4.0,
+    94.5
+   ]
+  }
+ ],
+ "fabricated": []
+}

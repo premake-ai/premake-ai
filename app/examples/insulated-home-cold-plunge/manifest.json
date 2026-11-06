@@ -1,0 +1,860 @@
+{
+ "t": 1793679231.4668689,
+ "title": "Insulated Home Cold Plunge",
+ "parts": [
+  {
+   "file": "stl/insulated-tub.stl",
+   "name": "Insulated tub",
+   "group": "component",
+   "process": "bought",
+   "color": "#23272e",
+   "explode": [
+    -0.997,
+    0.0,
+    -0.077
+   ],
+   "bbox": [
+    1350.7,
+    850.5,
+    650.6
+   ]
+  },
+  {
+   "file": "stl/lid.stl",
+   "name": "Insulated lid",
+   "group": "component",
+   "process": "bought",
+   "color": "#3b414b",
+   "explode": [
+    -0.789,
+    0.0,
+    0.614
+   ],
+   "bbox": [
+    1350.7,
+    850.5,
+    60.6
+   ]
+  },
+  {
+   "file": "stl/water-chiller.stl",
+   "name": "Water chiller",
+   "group": "component",
+   "process": "bought",
+   "color": "#1b1d20",
+   "explode": [
+    1.0,
+    0.0,
+    0.004
+   ],
+   "bbox": [
+    382.8,
+    482.7,
+    490.3
+   ]
+  },
+  {
+   "file": "stl/circulation-pump.stl",
+   "name": "Circulation pump",
+   "group": "component",
+   "process": "bought",
+   "color": "#2d2f33",
+   "explode": [
+    0.942,
+    -0.215,
+    -0.256
+   ],
+   "bbox": [
+    76.2,
+    183.6,
+    154.4
+   ]
+  },
+  {
+   "file": "stl/filter-housing.stl",
+   "name": "Filter housing",
+   "group": "component",
+   "process": "bought",
+   "color": "#a9c8e8",
+   "explode": [
+    0.966,
+    0.226,
+    -0.128
+   ],
+   "bbox": [
+    137.1,
+    162.0,
+    324.6
+   ]
+  },
+  {
+   "file": "stl/drain-tee-and-valve.stl",
+   "name": "Drain tee and valve",
+   "group": "component",
+   "process": "bought",
+   "color": "#d9d9d9",
+   "explode": [
+    0.935,
+    -0.342,
+    -0.097
+   ],
+   "bbox": [
+    76.0,
+    91.1,
+    46.1
+   ]
+  },
+  {
+   "file": "stl/clamp-knob-screw.stl",
+   "name": "Clamp knob screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    0.745,
+    0.003,
+    0.667
+   ],
+   "bbox": [
+    89.0,
+    29.8,
+    30.9
+   ]
+  },
+  {
+   "file": "stl/rim-manifold.stl",
+   "name": "Rim manifold",
+   "group": "case",
+   "process": "print",
+   "color": "#e8edf2",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    189.1,
+    57.1,
+    68.6
+   ]
+  },
+  {
+   "file": "stl/intake-strainer.stl",
+   "name": "Intake strainer",
+   "group": "case",
+   "process": "print",
+   "color": "#e8edf2",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    32.1,
+    32.1,
+    105.0
+   ]
+  },
+  {
+   "file": "stl/ds18b20-waterproof-probe.stl",
+   "name": "DS18B20 waterproof probe",
+   "group": "component",
+   "process": "bought",
+   "color": "#c0c0c0",
+   "explode": [
+    0.686,
+    0.0,
+    0.727
+   ],
+   "bbox": [
+    6.0,
+    6.0,
+    270.0
+   ]
+  },
+  {
+   "file": "stl/suction-drop-hose.stl",
+   "name": "Suction drop hose",
+   "group": "component",
+   "process": "bought",
+   "color": "#30343a",
+   "explode": [
+    0.802,
+    0.077,
+    0.592
+   ],
+   "bbox": [
+    27.0,
+    27.0,
+    279.0
+   ]
+  },
+  {
+   "file": "stl/return-drop-hose.stl",
+   "name": "Return drop hose",
+   "group": "component",
+   "process": "bought",
+   "color": "#30343a",
+   "explode": [
+    0.736,
+    -0.071,
+    0.673
+   ],
+   "bbox": [
+    27.0,
+    27.0,
+    213.0
+   ]
+  },
+  {
+   "file": "stl/suction-hose.stl",
+   "name": "Suction hose",
+   "group": "component",
+   "process": "bought",
+   "color": "#30343a",
+   "explode": [
+    0.902,
+    0.243,
+    0.358
+   ],
+   "bbox": [
+    273.2,
+    262.2,
+    315.8
+   ]
+  },
+  {
+   "file": "stl/filter-to-pump-hose.stl",
+   "name": "Filter to pump hose",
+   "group": "component",
+   "process": "bought",
+   "color": "#30343a",
+   "explode": [
+    0.992,
+    0.01,
+    -0.122
+   ],
+   "bbox": [
+    31.9,
+    138.6,
+    283.6
+   ]
+  },
+  {
+   "file": "stl/pump-to-chiller-hose.stl",
+   "name": "Pump to chiller hose",
+   "group": "component",
+   "process": "bought",
+   "color": "#30343a",
+   "explode": [
+    0.965,
+    -0.26,
+    -0.043
+   ],
+   "bbox": [
+    128.5,
+    83.9,
+    87.6
+   ]
+  },
+  {
+   "file": "stl/return-hose.stl",
+   "name": "Return hose",
+   "group": "component",
+   "process": "bought",
+   "color": "#30343a",
+   "explode": [
+    0.918,
+    -0.015,
+    0.397
+   ],
+   "bbox": [
+    363.1,
+    47.0,
+    251.5
+   ]
+  },
+  {
+   "file": "stl/rail0.stl",
+   "name": "Cart rail",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.907,
+    -0.276,
+    -0.318
+   ],
+   "bbox": [
+    600.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/rail1.stl",
+   "name": "Cart rail",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.907,
+    0.276,
+    -0.318
+   ],
+   "bbox": [
+    600.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/bar0.stl",
+   "name": "Cross bar",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.889,
+    0.0,
+    -0.457
+   ],
+   "bbox": [
+    20.0,
+    500.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/bar1.stl",
+   "name": "Cross bar",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.942,
+    0.0,
+    -0.336
+   ],
+   "bbox": [
+    20.0,
+    500.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/bar2.stl",
+   "name": "Cross bar",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.973,
+    0.0,
+    -0.232
+   ],
+   "bbox": [
+    20.0,
+    500.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/post0.stl",
+   "name": "Post",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.898,
+    -0.431,
+    -0.085
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    400.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/post1.stl",
+   "name": "Post",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.898,
+    0.431,
+    -0.085
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    400.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/filter-bar.stl",
+   "name": "Filter bar",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.99,
+    0.0,
+    0.139
+   ],
+   "bbox": [
+    20.0,
+    500.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/pump-deck.stl",
+   "name": "Pump deck",
+   "group": "case",
+   "process": "laser",
+   "color": "#222222",
+   "explode": [
+    0.927,
+    0.0,
+    -0.375
+   ],
+   "bbox": [
+    230.0,
+    500.0,
+    5.5
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/chiller-deck.stl",
+   "name": "Chiller deck",
+   "group": "case",
+   "process": "laser",
+   "color": "#222222",
+   "explode": [
+    0.965,
+    0.0,
+    -0.261
+   ],
+   "bbox": [
+    370.0,
+    500.0,
+    5.5
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/splash-shield.stl",
+   "name": "Splash shield",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.995,
+    0.0,
+    -0.096
+   ],
+   "bbox": [
+    5.5,
+    500.0,
+    400.0
+   ],
+   "material": "acrylic_frosted"
+  },
+  {
+   "file": "stl/locking-caster.stl",
+   "name": "Locking caster",
+   "group": "component",
+   "process": "bought",
+   "color": "#444444",
+   "explode": [
+    0.925,
+    0.0,
+    -0.379
+   ],
+   "bbox": [
+    580.0,
+    540.0,
+    67.0
+   ]
+  },
+  {
+   "file": "stl/cplate0.stl",
+   "name": "Caster plate",
+   "group": "case",
+   "process": "sheet",
+   "color": "#a9b1bb",
+   "explode": [
+    0.773,
+    -0.442,
+    -0.455
+   ],
+   "bbox": [
+    80.0,
+    80.0,
+    3.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/cplate1.stl",
+   "name": "Caster plate",
+   "group": "case",
+   "process": "sheet",
+   "color": "#a9b1bb",
+   "explode": [
+    0.813,
+    0.332,
+    -0.479
+   ],
+   "bbox": [
+    80.0,
+    80.0,
+    3.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/cplate2.stl",
+   "name": "Caster plate",
+   "group": "case",
+   "process": "sheet",
+   "color": "#a9b1bb",
+   "explode": [
+    0.929,
+    -0.258,
+    -0.266
+   ],
+   "bbox": [
+    80.0,
+    80.0,
+    3.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/cplate3.stl",
+   "name": "Caster plate",
+   "group": "case",
+   "process": "sheet",
+   "color": "#a9b1bb",
+   "explode": [
+    0.945,
+    0.187,
+    -0.27
+   ],
+   "bbox": [
+    80.0,
+    80.0,
+    3.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/pump-strap.stl",
+   "name": "Pump strap",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    0.933,
+    -0.231,
+    -0.274
+   ],
+   "bbox": [
+    98.0,
+    26.0,
+    142.9
+   ]
+  },
+  {
+   "file": "stl/controller-pod.stl",
+   "name": "Controller pod",
+   "group": "case",
+   "process": "print",
+   "color": "#e8edf2",
+   "explode": [
+    0.857,
+    -0.471,
+    0.208
+   ],
+   "bbox": [
+    72.4,
+    34.0,
+    34.0
+   ]
+  },
+  {
+   "file": "stl/pod-lid.stl",
+   "name": "Pod lid",
+   "group": "case",
+   "process": "print",
+   "color": "#3a7bd5",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    72.4,
+    8.1,
+    34.0
+   ]
+  },
+  {
+   "file": "stl/esp32-devkitc-wroom-32-38-pin.stl",
+   "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    0.852,
+    -0.481,
+    0.207
+   ],
+   "bbox": [
+    55.4,
+    13.2,
+    27.9
+   ],
+   "subparts": [
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__1.stl",
+     "color": "#232a36",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__4.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__6.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__7.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__8.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__9.stl",
+     "color": "#b48a5c",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "esp32_devkitc",
+    "qty": 1,
+    "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+    "unit_cost_usd": 7.5,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/ds18b20-adapter-module.stl",
+   "name": "DS18B20 adapter module",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f6f3f",
+   "explode": [
+    0.859,
+    -0.466,
+    0.213
+   ],
+   "bbox": [
+    26.0,
+    11.0,
+    19.0
+   ]
+  },
+  {
+   "file": "stl/pg7-cable-gland.stl",
+   "name": "PG7 cable gland",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    0.86,
+    -0.477,
+    0.179
+   ],
+   "bbox": [
+    13.0,
+    13.0,
+    12.0
+   ]
+  },
+  {
+   "file": "stl/m3-10-self-tapping-screw-for-plastic-4.stl",
+   "name": "M3\u00d710 self-tapping screw for plastic \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.847,
+    -0.491,
+    0.205
+   ],
+   "bbox": [
+    69.0,
+    12.2,
+    30.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-self-tapping-screw-for-plastic-4__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 4,
+    "name": "M3\u00d710 self-tapping screw for plastic",
+    "unit_cost_usd": 0.059,
+    "mass_g": 0.8
+   }
+  },
+  {
+   "file": "stl/m5-10-button-head-screw-2.stl",
+   "name": "M5\u00d710 button head screw \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.876,
+    -0.435,
+    0.206
+   ],
+   "bbox": [
+    9.5,
+    12.8,
+    25.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m5-10-button-head-screw-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 2,
+    "name": "M5\u00d710 button head screw",
+    "unit_cost_usd": 0.176,
+    "mass_g": 2.7
+   }
+  }
+ ],
+ "cables": false,
+ "scene": "floor",
+ "assembly_order": [
+  [
+   "Cart rail",
+   "Cart rail",
+   "Locking caster"
+  ],
+  [
+   "Cross bar",
+   "Cross bar",
+   "Cross bar"
+  ],
+  [
+   "Post",
+   "Post",
+   "Filter bar"
+  ],
+  [
+   "Pump deck",
+   "Chiller deck"
+  ],
+  [
+   "Splash shield"
+  ],
+  [
+   "Water chiller",
+   "Circulation pump",
+   "Filter housing"
+  ],
+  [
+   "Pump strap",
+   "Drain tee and valve"
+  ],
+  [
+   "Controller pod"
+  ],
+  [
+   "Rim manifold",
+   "Clamp knob screw",
+   "Suction drop hose",
+   "Return drop hose",
+   "Intake strainer",
+   "DS18B20 waterproof probe"
+  ],
+  [
+   "Suction hose",
+   "Filter to pump hose",
+   "Pump to chiller hose",
+   "Return hose"
+  ],
+  [
+   "Pod lid"
+  ]
+ ],
+ "wiring": {
+  "file": "wiring.json",
+  "wires": 7,
+  "parts": [
+   "DS18B20 adapter module",
+   "DS18B20 waterproof probe",
+   "ESP32 DevKitC (WROOM-32, 38 pin)",
+   "USB power adapter 5 V 1 A (UL listed)"
+  ],
+  "ok": true
+ },
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 1
+ }
+}

@@ -1,0 +1,271 @@
+{
+ "t": 1793392741.6206532,
+ "title": "Retro Pixel Desk Display",
+ "parts": [
+  {
+   "file": "stl/case.stl",
+   "name": "Case",
+   "group": "case",
+   "process": "print",
+   "color": "#e9dfc7",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    186.0,
+    38.0,
+    106.0
+   ],
+   "material": "pla"
+  },
+  {
+   "file": "stl/smoked-front.stl",
+   "name": "Smoked front",
+   "group": "case",
+   "process": "laser",
+   "color": "#3a3a3a",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    180.6,
+    3.0,
+    100.6
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/led-matrix-64x32-p2-5.stl",
+   "name": "LED matrix 64x32 P2.5",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    0.0,
+    0.4,
+    0.0
+   ],
+   "bbox": [
+    160.0,
+    15.0,
+    80.0
+   ],
+   "fx": {
+    "screen": {
+     "text": "10:42\n72F SUNNY",
+     "bg": "#000000",
+     "fg": "#ff9a1f",
+     "face": "-y"
+    }
+   }
+  },
+  {
+   "file": "stl/matrixportal-s3.stl",
+   "name": "MatrixPortal S3",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1d1d",
+   "explode": [
+    0.0,
+    0.8,
+    0.0
+   ],
+   "bbox": [
+    64.8,
+    10.0,
+    50.8
+   ],
+   "cable": {
+    "type": "usb-c",
+    "at": [
+     0.0,
+     19.0,
+     11.4
+    ],
+    "dir": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "length_mm": 400.0
+   }
+  },
+  {
+   "file": "stl/foam-pad.stl",
+   "name": "Foam pad",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    132.0,
+    4.5,
+    68.0
+   ]
+  },
+  {
+   "file": "stl/back-cover.stl",
+   "name": "Back cover",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    180.6,
+    3.0,
+    100.6
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/m3-10-brass-standoff-4.stl",
+   "name": "M3\u00d710 brass standoff \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    0.0,
+    0.989,
+    0.145
+   ],
+   "bbox": [
+    125.8,
+    10.0,
+    61.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-brass-standoff-4__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "standoff",
+    "qty": 4,
+    "name": "M3\u00d710 brass standoff",
+    "unit_cost_usd": 0.18,
+    "mass_g": 1.4
+   }
+  },
+  {
+   "file": "stl/m3-heat-set-insert-4.stl",
+   "name": "M3 heat-set insert \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    0.0,
+    0.993,
+    0.12
+   ],
+   "bbox": [
+    172.6,
+    5.7,
+    92.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-heat-set-insert-4__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "insert",
+    "qty": 4,
+    "name": "M3 heat-set insert",
+    "unit_cost_usd": 0.12,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m3-8-button-head-screw-8.stl",
+   "name": "M3\u00d78 button head screw \u00d78",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    0.995,
+    0.099
+   ],
+   "bbox": [
+    173.7,
+    9.6,
+    93.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-8-button-head-screw-8__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 8,
+    "name": "M3\u00d78 button head screw",
+    "unit_cost_usd": 0.097,
+    "mass_g": 0.7
+   }
+  },
+  {
+   "file": "stl/rubber-foot.stl",
+   "name": "Rubber foot",
+   "group": "component",
+   "process": "bought",
+   "color": "#2a2a2a",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    154.0,
+    32.0,
+    3.0
+   ],
+   "material": "rubber"
+  }
+ ],
+ "scene": "desk",
+ "assembly_order": [
+  [
+   "Case",
+   "M3 heat-set insert \u00d74"
+  ],
+  [
+   "Smoked front"
+  ],
+  [
+   "LED matrix 64x32 P2.5",
+   "MatrixPortal S3"
+  ],
+  [
+   "Foam pad"
+  ],
+  [
+   "M3\u00d710 brass standoff \u00d74",
+   "Back cover"
+  ],
+  [
+   "M3\u00d78 button head screw \u00d78"
+  ],
+  [
+   "Rubber foot"
+  ]
+ ]
+}

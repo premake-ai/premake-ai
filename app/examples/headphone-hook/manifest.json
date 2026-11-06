@@ -1,0 +1,54 @@
+{
+ "t": 1793164673.4529111,
+ "title": "Under-desk headphone hook",
+ "parts": [
+  {
+   "file": "stl/headphone-hook.stl",
+   "name": "Headphone hook",
+   "group": "case",
+   "color": "#9b8cff",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    34.0,
+    140.0,
+    78.0
+   ]
+  },
+  {
+   "file": "stl/felt-pad-strip.stl",
+   "name": "Felt pad strip",
+   "group": "component",
+   "color": "#444a55",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    28.0,
+    49.0,
+    1.5
+   ]
+  },
+  {
+   "file": "stl/8-x-5-8-in-wood-screws-2x.stl",
+   "name": "#8 x 5/8 in wood screws (2x)",
+   "group": "component",
+   "color": "#b0b5bb",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    8.7,
+    36.7,
+    16.8
+   ]
+  }
+ ]
+}

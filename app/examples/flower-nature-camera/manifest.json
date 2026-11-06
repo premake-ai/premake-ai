@@ -1,0 +1,932 @@
+{
+ "t": 1793394482.577675,
+ "title": "This",
+ "parts": [
+  {
+   "file": "stl/hotel-bottom.stl",
+   "name": "Hotel bottom",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    176.0,
+    196.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/hotel-top.stl",
+   "name": "Hotel top",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    176.0,
+    196.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/hotel-left-side.stl",
+   "name": "Hotel left side",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    -0.482,
+    0.08,
+    -0.872
+   ],
+   "bbox": [
+    5.5,
+    180.0,
+    150.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/hotel-right-side.stl",
+   "name": "Hotel right side",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.206,
+    0.089,
+    -0.975
+   ],
+   "bbox": [
+    5.5,
+    180.0,
+    150.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/hotel-back.stl",
+   "name": "Hotel back",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    -0.15,
+    0.458,
+    -0.876
+   ],
+   "bbox": [
+    160.0,
+    5.5,
+    150.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/planter-bottom.stl",
+   "name": "Planter bottom",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    -0.265,
+    0.142,
+    -0.954
+   ],
+   "bbox": [
+    176.0,
+    196.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/planter-left-side.stl",
+   "name": "Planter left side",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    5.5,
+    180.0,
+    120.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/planter-right-side.stl",
+   "name": "Planter right side",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    5.5,
+    180.0,
+    120.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/planter-back.stl",
+   "name": "Planter back",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    160.0,
+    5.5,
+    120.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/planter-front.stl",
+   "name": "Planter front",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    160.0,
+    5.5,
+    120.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/mason-bee-nesting-tubes-306.stl",
+   "name": "Mason bee nesting tubes (306)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9a46a",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    143.9,
+    152.0,
+    135.9
+   ]
+  },
+  {
+   "file": "stl/stem-socket.stl",
+   "name": "Stem socket",
+   "group": "case",
+   "process": "print",
+   "color": "#2f7d32",
+   "explode": [
+    -0.291,
+    0.325,
+    -0.9
+   ],
+   "bbox": [
+    64.0,
+    64.1,
+    30.1
+   ]
+  },
+  {
+   "file": "stl/stem.stl",
+   "name": "Stem",
+   "group": "case",
+   "process": "print",
+   "color": "#3f9a3a",
+   "explode": [
+    -0.667,
+    0.743,
+    0.063
+   ],
+   "bbox": [
+    25.0,
+    25.0,
+    250.0
+   ]
+  },
+  {
+   "file": "stl/solar-leaf.stl",
+   "name": "Solar leaf",
+   "group": "case",
+   "process": "print",
+   "color": "#4caf50",
+   "explode": [
+    0.62,
+    0.621,
+    0.479
+   ],
+   "bbox": [
+    194.1,
+    96.2,
+    14.1
+   ]
+  },
+  {
+   "file": "stl/perch-arm.stl",
+   "name": "Perch arm",
+   "group": "case",
+   "process": "print",
+   "color": "#2f7d32",
+   "explode": [
+    -0.291,
+    -0.227,
+    0.929
+   ],
+   "bbox": [
+    50.1,
+    179.0,
+    48.1
+   ]
+  },
+  {
+   "file": "stl/nectar-cup.stl",
+   "name": "Nectar cup",
+   "group": "case",
+   "process": "print",
+   "color": "#d62828",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    50.1,
+    50.1,
+    27.1
+   ]
+  },
+  {
+   "file": "stl/nectar-lid.stl",
+   "name": "Nectar lid",
+   "group": "case",
+   "process": "print",
+   "color": "#e63946",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    50.0,
+    50.0,
+    7.1
+   ]
+  },
+  {
+   "file": "stl/camera-pod.stl",
+   "name": "Camera pod",
+   "group": "case",
+   "process": "print",
+   "color": "#f6c21c",
+   "explode": [
+    -0.195,
+    0.198,
+    0.96
+   ],
+   "bbox": [
+    110.1,
+    45.2,
+    123.1
+   ]
+  },
+  {
+   "file": "stl/petal-ring.stl",
+   "name": "Petal ring",
+   "group": "case",
+   "process": "print",
+   "color": "#8e5bd6",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    202.0,
+    3.1,
+    202.0
+   ]
+  },
+  {
+   "file": "stl/back-cap-gasket.stl",
+   "name": "Back cap gasket",
+   "group": "case",
+   "process": "print",
+   "color": "#222222",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    92.1,
+    1.6,
+    92.1
+   ]
+  },
+  {
+   "file": "stl/back-cap.stl",
+   "name": "Back cap",
+   "group": "case",
+   "process": "print",
+   "color": "#2f7d32",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    92.1,
+    3.1,
+    92.1
+   ]
+  },
+  {
+   "file": "stl/camera-window.stl",
+   "name": "Camera window",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    -0.192,
+    0.092,
+    0.977
+   ],
+   "bbox": [
+    21.2,
+    3.0,
+    21.2
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/xiao-esp32s3-sense-camera-board.stl",
+   "name": "XIAO ESP32S3 Sense camera board",
+   "group": "component",
+   "process": "bought",
+   "color": "#1b5e20",
+   "explode": [
+    -0.191,
+    0.135,
+    0.972
+   ],
+   "bbox": [
+    21.0,
+    18.0,
+    17.8
+   ]
+  },
+  {
+   "file": "stl/am312-mini-pir.stl",
+   "name": "AM312 mini PIR",
+   "group": "component",
+   "process": "bought",
+   "color": "#eeeeee",
+   "explode": [
+    -0.224,
+    0.162,
+    0.961
+   ],
+   "bbox": [
+    10.0,
+    23.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/tp4056-usb-c-charger.stl",
+   "name": "TP4056 USB-C charger",
+   "group": "component",
+   "process": "bought",
+   "color": "#1565c0",
+   "explode": [
+    -0.165,
+    0.203,
+    0.965
+   ],
+   "bbox": [
+    17.0,
+    28.0,
+    4.0
+   ]
+  },
+  {
+   "file": "stl/6v-1w-solar-panel.stl",
+   "name": "6V 1W solar panel",
+   "group": "component",
+   "process": "bought",
+   "color": "#14213d",
+   "explode": [
+    0.75,
+    0.541,
+    0.379
+   ],
+   "bbox": [
+    110.0,
+    60.0,
+    2.5
+   ],
+   "material": "glass"
+  },
+  {
+   "file": "stl/18650-holder-1-cell.stl",
+   "name": "18650 holder, 1 cell",
+   "group": "component",
+   "process": "bought",
+   "color": "#1c1d20",
+   "explode": [
+    -0.186,
+    0.248,
+    0.951
+   ],
+   "bbox": [
+    105.0,
+    15.0,
+    21.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/18650-holder-1-cell__0.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/18650-holder-1-cell__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/18650-holder-1-cell__2.stl",
+     "color": "#d23b2e",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "holder_18650",
+    "qty": 1,
+    "name": "18650 holder, 1 cell",
+    "unit_cost_usd": 1.0,
+    "mass_g": 8.0
+   }
+  },
+  {
+   "file": "stl/m3-10-button-head-screw-3.stl",
+   "name": "M3\u00d710 button head screw \u00d73",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.179,
+    0.087,
+    0.98
+   ],
+   "bbox": [
+    92.3,
+    11.6,
+    80.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-button-head-screw-3__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 3,
+    "name": "M3\u00d710 button head screw",
+    "unit_cost_usd": 0.099,
+    "mass_g": 0.8
+   }
+  },
+  {
+   "file": "stl/m3-nylock-nut-3.stl",
+   "name": "M3 nylock nut \u00d73",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.179,
+    0.104,
+    0.978
+   ],
+   "bbox": [
+    93.0,
+    3.0,
+    80.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-nylock-nut-3__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/m3-nylock-nut-3__1.stl",
+     "color": "#e8e4d6",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 3,
+    "name": "M3 nylock nut",
+    "unit_cost_usd": 0.09,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m3-10-socket-head-screw-3.stl",
+   "name": "M3\u00d710 socket head screw \u00d73",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.174,
+    0.295,
+    0.94
+   ],
+   "bbox": [
+    76.5,
+    13.0,
+    67.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-socket-head-screw-3__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 3,
+    "name": "M3\u00d710 socket head screw",
+    "unit_cost_usd": 0.099,
+    "mass_g": 1.0
+   }
+  },
+  {
+   "file": "stl/m3-heat-set-insert-3.stl",
+   "name": "M3 heat-set insert \u00d73",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    -0.175,
+    0.277,
+    0.945
+   ],
+   "bbox": [
+    75.6,
+    5.7,
+    66.1
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-heat-set-insert-3__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "insert",
+    "qty": 3,
+    "name": "M3 heat-set insert",
+    "unit_cost_usd": 0.12,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m3-40-button-head-screw-2.stl",
+   "name": "M3\u00d740 button head screw \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.632,
+    0.77,
+    0.085
+   ],
+   "bbox": [
+    42.1,
+    5.7,
+    233.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-40-button-head-screw-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 2,
+    "name": "M3\u00d740 button head screw",
+    "unit_cost_usd": 0.126,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/m3-nylock-nut-2.stl",
+   "name": "M3 nylock nut \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.399,
+    0.912,
+    0.101
+   ],
+   "bbox": [
+    3.5,
+    5.5,
+    234.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-nylock-nut-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/m3-nylock-nut-2__1.stl",
+     "color": "#e8e4d6",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 2,
+    "name": "M3 nylock nut",
+    "unit_cost_usd": 0.09,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m3-16-socket-head-screw.stl",
+   "name": "M3\u00d716 socket head screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.746,
+    0.525,
+    0.411
+   ],
+   "bbox": [
+    5.5,
+    19.0,
+    5.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-16-socket-head-screw__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 1,
+    "name": "M3\u00d716 socket head screw",
+    "unit_cost_usd": 0.104,
+    "mass_g": 1.4
+   }
+  },
+  {
+   "file": "stl/m3-16-socket-head-screw-2.stl",
+   "name": "M3\u00d716 socket head screw (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.296,
+    0.505,
+    0.811
+   ],
+   "bbox": [
+    19.0,
+    5.5,
+    5.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-16-socket-head-screw-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 1,
+    "name": "M3\u00d716 socket head screw",
+    "unit_cost_usd": 0.104,
+    "mass_g": 1.4
+   }
+  },
+  {
+   "file": "stl/m3-nylock-nut.stl",
+   "name": "M3 nylock nut",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.783,
+    0.449,
+    0.431
+   ],
+   "bbox": [
+    6.4,
+    3.0,
+    5.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-nylock-nut__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/m3-nylock-nut__1.stl",
+     "color": "#e8e4d6",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 1,
+    "name": "M3 nylock nut",
+    "unit_cost_usd": 0.09,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m3-nylock-nut-2-2.stl",
+   "name": "M3 nylock nut (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.24,
+    0.513,
+    0.824
+   ],
+   "bbox": [
+    3.0,
+    5.5,
+    6.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-nylock-nut-2-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/m3-nylock-nut-2-2__1.stl",
+     "color": "#e8e4d6",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 1,
+    "name": "M3 nylock nut",
+    "unit_cost_usd": 0.09,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m4-16-countersunk-screw-3.stl",
+   "name": "M4\u00d716 countersunk screw \u00d73",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.262,
+    0.338,
+    -0.904
+   ],
+   "bbox": [
+    49.6,
+    44.0,
+    16.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-16-countersunk-screw-3__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "csk",
+    "qty": 3,
+    "name": "M4\u00d716 countersunk screw",
+    "unit_cost_usd": 0.139,
+    "mass_g": 1.8
+   }
+  },
+  {
+   "file": "stl/m4-hex-nut-3.stl",
+   "name": "M4 hex nut \u00d73",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.27,
+    0.347,
+    -0.898
+   ],
+   "bbox": [
+    49.7,
+    43.0,
+    3.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-hex-nut-3__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 3,
+    "name": "M4 hex nut",
+    "unit_cost_usd": 0.07,
+    "mass_g": 0.6
+   }
+  }
+ ],
+ "cables": false,
+ "scene": "floor",
+ "assembly_order": [
+  [
+   "Hotel bottom",
+   "Hotel left side",
+   "Hotel right side",
+   "Hotel back",
+   "Hotel top"
+  ],
+  [
+   "Planter bottom",
+   "Planter left side",
+   "Planter right side",
+   "Planter front",
+   "Planter back",
+   "Stem socket"
+  ],
+  [
+   "Stem",
+   "Solar leaf",
+   "6V 1W solar panel",
+   "Perch arm",
+   "Nectar cup",
+   "Nectar lid"
+  ],
+  [
+   "Camera pod",
+   "Camera window",
+   "XIAO ESP32S3 Sense camera board",
+   "AM312 mini PIR",
+   "TP4056 USB-C charger"
+  ],
+  [
+   "Petal ring",
+   "Back cap gasket",
+   "Back cap"
+  ]
+ ]
+}

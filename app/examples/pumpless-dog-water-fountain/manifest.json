@@ -1,0 +1,724 @@
+{
+ "t": 1793393190.689313,
+ "title": "This",
+ "parts": [
+  {
+   "file": "stl/base.stl",
+   "name": "Base",
+   "group": "case",
+   "process": "print",
+   "color": "#ece8e1",
+   "explode": [
+    -0.0,
+    -0.0,
+    -1.0
+   ],
+   "bbox": [
+    202.6,
+    202.8,
+    52.0
+   ]
+  },
+  {
+   "file": "stl/bottom-plate.stl",
+   "name": "Bottom plate",
+   "group": "case",
+   "process": "laser",
+   "color": "#202020",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    202.1,
+    202.2,
+    3.3
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/motor-mount.stl",
+   "name": "Motor mount",
+   "group": "case",
+   "process": "print",
+   "color": "#5a6b78",
+   "explode": [
+    -0.001,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    44.0,
+    44.0,
+    20.1
+   ]
+  },
+  {
+   "file": "stl/drive-hub.stl",
+   "name": "Drive hub",
+   "group": "case",
+   "process": "print",
+   "color": "#5a6b78",
+   "explode": [
+    -0.003,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    26.0,
+    26.0,
+    5.0
+   ],
+   "fx": {
+    "spin": {
+     "axis": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "rpm": 900.0
+    }
+   }
+  },
+  {
+   "file": "stl/hub-magnets-10x3.stl",
+   "name": "Hub magnets 10x3",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f96",
+   "explode": [
+    -0.003,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    25.0,
+    10.0,
+    3.0
+   ],
+   "fx": {
+    "spin": {
+     "axis": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "rpm": 900.0
+    }
+   }
+  },
+  {
+   "file": "stl/dc-motor-130.stl",
+   "name": "DC motor 130",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc2",
+   "explode": [
+    -0.002,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    20.4,
+    15.2,
+    31.5
+   ]
+  },
+  {
+   "file": "stl/bowl.stl",
+   "name": "Stainless bowl",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f98",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    251.2,
+    251.2,
+    83.4
+   ],
+   "material": "steel"
+  },
+  {
+   "file": "stl/pump-base.stl",
+   "name": "Pump base",
+   "group": "case",
+   "process": "print",
+   "color": "#4f8fae",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    80.1,
+    80.1,
+    17.1
+   ]
+  },
+  {
+   "file": "stl/impeller.stl",
+   "name": "Impeller",
+   "group": "case",
+   "process": "print",
+   "color": "#f2f2f2",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    29.0,
+    29.0,
+    8.5
+   ],
+   "fx": {
+    "spin": {
+     "axis": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "rpm": 900.0
+    }
+   }
+  },
+  {
+   "file": "stl/imp-mag.stl",
+   "name": "Impeller magnets 10x3",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f96",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    25.0,
+    10.0,
+    3.0
+   ],
+   "fx": {
+    "spin": {
+     "axis": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "rpm": 900.0
+    }
+   }
+  },
+  {
+   "file": "stl/pump-cover.stl",
+   "name": "Pump cover",
+   "group": "case",
+   "process": "print",
+   "color": "#4f8fae",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    37.0,
+    37.0,
+    4.0
+   ]
+  },
+  {
+   "file": "stl/foam.stl",
+   "name": "Foam filter",
+   "group": "component",
+   "process": "bought",
+   "color": "#2c3a44",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    71.8,
+    71.8,
+    12.3
+   ]
+  },
+  {
+   "file": "stl/dome.stl",
+   "name": "Spout dome",
+   "group": "case",
+   "process": "print",
+   "color": "#7fb8cf",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    77.5,
+    77.5,
+    66.3
+   ]
+  },
+  {
+   "file": "stl/usb-c-charger-tp4056.stl",
+   "name": "USB-C charger TP4056",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d4fa0",
+   "explode": [
+    -0.001,
+    0.954,
+    -0.299
+   ],
+   "bbox": [
+    17.0,
+    28.8,
+    4.8
+   ],
+   "cable": {
+    "type": "usb-c",
+    "at": [
+     0.0,
+     101.0,
+     38.2
+    ],
+    "dir": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "length_mm": 400.0
+   }
+  },
+  {
+   "file": "stl/mosfet-module.stl",
+   "name": "MOSFET module",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d4fa0",
+   "explode": [
+    0.752,
+    0.0,
+    -0.659
+   ],
+   "bbox": [
+    34.0,
+    17.0,
+    9.6
+   ]
+  },
+  {
+   "file": "stl/pir-sensor-am312.stl",
+   "name": "PIR sensor AM312",
+   "group": "component",
+   "process": "bought",
+   "color": "#f4f4f4",
+   "explode": [
+    -0.001,
+    -0.967,
+    -0.253
+   ],
+   "bbox": [
+    10.1,
+    28.0,
+    10.1
+   ]
+  },
+  {
+   "file": "stl/rubber-feet.stl",
+   "name": "Rubber feet",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    -0.001,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    172.7,
+    172.7,
+    3.5
+   ],
+   "material": "rubber"
+  },
+  {
+   "file": "stl/18650-holder-1-cell-2.stl",
+   "name": "18650 holder, 1 cell \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#1c1d20",
+   "explode": [
+    -0.002,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    105.0,
+    121.0,
+    15.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/18650-holder-1-cell-2__0.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/18650-holder-1-cell-2__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/18650-holder-1-cell-2__2.stl",
+     "color": "#d23b2e",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "holder_18650",
+    "qty": 2,
+    "name": "18650 holder, 1 cell",
+    "unit_cost_usd": 1.0,
+    "mass_g": 8.0
+   }
+  },
+  {
+   "file": "stl/18650-li-ion-cell-2.stl",
+   "name": "18650 Li-ion cell \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#2f6fd0",
+   "explode": [
+    0.01,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    66.1,
+    118.4,
+    18.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/18650-li-ion-cell-2__0.stl",
+     "color": "#2f6fd0",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/18650-li-ion-cell-2__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/18650-li-ion-cell-2__2.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "cell_18650",
+    "qty": 2,
+    "name": "18650 Li-ion cell",
+    "unit_cost_usd": 5.0,
+    "mass_g": 46.0
+   }
+  },
+  {
+   "file": "stl/esp32-c3-supermini.stl",
+   "name": "ESP32-C3 SuperMini",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    -0.745,
+    0.0,
+    -0.667
+   ],
+   "bbox": [
+    23.5,
+    18.0,
+    4.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/esp32-c3-supermini__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__4.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__6.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    }
+   ],
+   "lib": {
+    "key": "esp32_c3_supermini",
+    "qty": 1,
+    "name": "ESP32-C3 SuperMini",
+    "unit_cost_usd": 4.0,
+    "mass_g": 2.0
+   }
+  },
+  {
+   "file": "stl/5-mm-led-red.stl",
+   "name": "5 mm LED (red)",
+   "group": "component",
+   "process": "bought",
+   "color": "#e8483d",
+   "explode": [
+    0.263,
+    -0.932,
+    -0.251
+   ],
+   "bbox": [
+    5.8,
+    31.8,
+    5.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/5-mm-led-red__0.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/5-mm-led-red__1.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "led_5mm",
+    "qty": 1,
+    "name": "5 mm LED (red)",
+    "unit_cost_usd": 0.05,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m3-heat-set-insert-4.stl",
+   "name": "M3 heat-set insert \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    -0.001,
+    -0.0,
+    -1.0
+   ],
+   "bbox": [
+    139.7,
+    139.7,
+    5.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-heat-set-insert-4__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "insert",
+    "qty": 4,
+    "name": "M3 heat-set insert",
+    "unit_cost_usd": 0.12,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m3-8-button-head-screw-4.stl",
+   "name": "M3\u00d78 button head screw \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.001,
+    -0.0,
+    -1.0
+   ],
+   "bbox": [
+    140.8,
+    140.8,
+    9.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-8-button-head-screw-4__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M3\u00d78 button head screw",
+    "unit_cost_usd": 0.097,
+    "mass_g": 0.7
+   }
+  },
+  {
+   "file": "stl/m3-10-button-head-screw-2.stl",
+   "name": "M3\u00d710 button head screw \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.001,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    41.7,
+    5.7,
+    11.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-button-head-screw-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 2,
+    "name": "M3\u00d710 button head screw",
+    "unit_cost_usd": 0.099,
+    "mass_g": 0.8
+   }
+  },
+  {
+   "file": "stl/m3-hex-nut-2.stl",
+   "name": "M3 hex nut \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.001,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    42.4,
+    5.5,
+    2.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-hex-nut-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 2,
+    "name": "M3 hex nut",
+    "unit_cost_usd": 0.06,
+    "mass_g": 0.3
+   }
+  },
+  {
+   "file": "stl/m3-6-button-head-screw.stl",
+   "name": "M3\u00d76 button head screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.272,
+    0.0,
+    -0.962
+   ],
+   "bbox": [
+    7.6,
+    5.7,
+    5.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-6-button-head-screw__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 1,
+    "name": "M3\u00d76 button head screw",
+    "unit_cost_usd": 0.095,
+    "mass_g": 0.6
+   }
+  }
+ ],
+ "scene": "floor",
+ "assembly_order": [
+  [
+   "Base"
+  ],
+  [
+   "Motor mount",
+   "DC motor 130",
+   "Drive hub",
+   "Hub magnets 10x3"
+  ],
+  [
+   "USB-C charger TP4056",
+   "MOSFET module",
+   "PIR sensor AM312"
+  ],
+  [
+   "Bottom plate",
+   "Rubber feet"
+  ],
+  [
+   "Stainless bowl"
+  ],
+  [
+   "Pump base",
+   "Impeller",
+   "Impeller magnets 10x3",
+   "Pump cover",
+   "Foam filter",
+   "Spout dome"
+  ]
+ ],
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 7
+ }
+}

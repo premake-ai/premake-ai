@@ -1,0 +1,330 @@
+{
+ "parts": [
+  {
+   "name": "5-6 L food-grade PP storage container (sump)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 8.0,
+   "supplier": "Amazon / Container Store",
+   "url": "",
+   "notes": "search: 6 qt food storage container polypropylene; drill for 1/2 in. bulkheads"
+  },
+  {
+   "name": "12 V diaphragm pump, 6 L/min, ~80 W, self-priming",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 28.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 12V diaphragm water pump 6L/min 1/2 inch; must be rated for 60 C water"
+  },
+  {
+   "name": "Inline sediment + carbon cartridge (1/2 in.)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 14.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: inline water filter 2x6 inch carbon sediment; replace every ~3 months"
+  },
+  {
+   "name": "12 V UV-C LED inline water sterilizer, 1-2 GPM",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 32.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 12V UVC LED water sterilizer inline"
+  },
+  {
+   "name": "12 V solenoid valve 1/2 in., normally open (dump to drain)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 9.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 12V normally open solenoid valve 1/2 inch; open = fail-safe to drain"
+  },
+  {
+   "name": "DS18B20 waterproof temperature probe",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: DS18B20 waterproof probe"
+  },
+  {
+   "name": "Vertical float switch",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: vertical float switch water level sensor"
+  },
+  {
+   "name": "D4184 MOSFET module (pump, valve, UV)",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: D4184 MOSFET module"
+  },
+  {
+   "name": "MP1584 buck module 12 V -> 5 V",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: MP1584EN buck module, preset to 5 V"
+  },
+  {
+   "name": "12 V 10 A sealed power adapter, UL listed",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 22.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 12V 10A power supply 5.5x2.1 UL; plug outside the bathroom wet zone / into a GFCI outlet"
+  },
+  {
+   "name": "Inline blade fuse holder + 10 A fuse",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: inline blade fuse holder"
+  },
+  {
+   "name": "Wago 221 lever connectors",
+   "qty_per_unit": 6,
+   "unit_cost_usd": 0.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: Wago 221-412"
+  },
+  {
+   "name": "1/2 in. bulkhead fittings + hose barbs",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 3.0,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": "PP or brass, hot-water rated"
+  },
+  {
+   "name": "1/2 in. EPDM hot-water hose, 3 m",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 12.0,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "Hose clamps",
+   "qty_per_unit": 10,
+   "unit_cost_usd": 0.4,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "Shower diverter valve (fresh / recirculate)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 12.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: shower arm diverter valve 1/2 inch"
+  },
+  {
+   "name": "Rubber feet",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.3,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "adhesive, 20 mm"
+  },
+  {
+   "name": "ESP32-C3 SuperMini",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=ESP32-C3+SuperMini",
+   "notes": "search: ESP32-C3 SuperMini",
+   "auto": "lib"
+  },
+  {
+   "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.8,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=DC-022+panel+mount+barrel+jack+5.5x2.1",
+   "notes": "search: DC-022 panel mount barrel jack 5.5x2.1",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d78 button head screw",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.097,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x8+button+head+screw",
+   "notes": "search: M3x8 button head screw",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 75,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/hair-catcher-basket.stl",
+   "name": "Hair catcher basket",
+   "grams": 41.8,
+   "print_hours": 2.09,
+   "bbox": [
+    130.0,
+    100.0,
+    45.0
+   ]
+  },
+  {
+   "file": "stl/filter-clamp.stl",
+   "name": "Filter clamp",
+   "grams": 7.6,
+   "print_hours": 0.38,
+   "bbox": [
+    65.0,
+    65.1,
+    12.1
+   ]
+  },
+  {
+   "file": "stl/uv-clamp.stl",
+   "name": "UV clamp",
+   "grams": 5.7,
+   "print_hours": 0.29,
+   "bbox": [
+    50.0,
+    50.0,
+    12.1
+   ]
+  },
+  {
+   "file": "stl/controller-box.stl",
+   "name": "Controller box",
+   "grams": 18.2,
+   "print_hours": 0.91,
+   "bbox": [
+    80.0,
+    55.0,
+    35.0
+   ]
+  },
+  {
+   "file": "stl/controller-lid.stl",
+   "name": "Controller lid",
+   "grams": 9.2,
+   "print_hours": 0.46,
+   "bbox": [
+    80.0,
+    55.0,
+    3.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/cabinet-wrap.stl",
+   "name": "Cabinet wrap",
+   "process": "sheet",
+   "params": {
+    "material": "stainless 304",
+    "thickness_mm": 1.2,
+    "bends": 2
+   },
+   "est": {
+    "area_cm2": 1682.6,
+    "bends": 2,
+    "minutes": 23.8,
+    "material_usd": 10.1
+   },
+   "bbox": [
+    241.2,
+    181.2,
+    280.0
+   ]
+  },
+  {
+   "file": "stl/base-plate.stl",
+   "name": "Base plate",
+   "process": "sheet",
+   "params": {
+    "material": "stainless 304",
+    "thickness_mm": 1.2,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 428.9,
+    "bends": 0,
+    "minutes": 8.3,
+    "material_usd": 2.57
+   },
+   "bbox": [
+    240.0,
+    180.0,
+    1.2
+   ]
+  },
+  {
+   "file": "stl/back-panel.stl",
+   "name": "Back panel",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1255.4,
+    "area_cm2": 637.2,
+    "minutes": 3.6,
+    "material_usd": 13.38
+   },
+   "bbox": [
+    237.6,
+    6.0,
+    272.0
+   ]
+  },
+  {
+   "file": "stl/equipment-shelf.stl",
+   "name": "Equipment shelf",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 984.8,
+    "area_cm2": 397.0,
+    "minutes": 3.1,
+    "material_usd": 8.34
+   },
+   "bbox": [
+    236.6,
+    171.0,
+    6.0
+   ]
+  },
+  {
+   "file": "stl/service-lid.stl",
+   "name": "Service lid",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 840.0,
+    "area_cm2": 432.0,
+    "minutes": 2.8,
+    "material_usd": 9.07
+   },
+   "bbox": [
+    240.0,
+    180.0,
+    6.0
+   ]
+  }
+ ]
+}

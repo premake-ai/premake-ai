@@ -1,0 +1,51 @@
+{
+ "parts": [],
+ "assembly_minutes": 0,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/light-body.stl",
+   "name": "Light body",
+   "grams": 177.3,
+   "print_hours": 8.87,
+   "bbox": [
+    86.0,
+    36.0,
+    82.0
+   ]
+  },
+  {
+   "file": "stl/remote-base.stl",
+   "name": "Remote base",
+   "grams": 24.8,
+   "print_hours": 1.24,
+   "bbox": [
+    58.0,
+    34.0,
+    18.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/diffuser-lens.stl",
+   "name": "Diffuser lens",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 336.0,
+    "area_cm2": 70.5,
+    "minutes": 1.3,
+    "material_usd": 0.74
+   },
+   "bbox": [
+    86.0,
+    3.0,
+    82.0
+   ]
+  }
+ ]
+}

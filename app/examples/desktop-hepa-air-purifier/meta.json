@@ -1,0 +1,11 @@
+{
+ "title": "Desktop HEPA Air Purifier",
+ "description": "Round desktop air purifier that pulls air through a standard 7.5 in round HEPA filter with a quiet 120 mm 12 V fan.",
+ "creator": "Premake",
+ "tags": [
+  "air purifier",
+  "hepa"
+ ],
+ "created": "2026-10-29T21:35:58.700Z",
+ "demo": true
+}

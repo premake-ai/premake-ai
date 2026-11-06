@@ -1,0 +1,14 @@
+{
+ "title": "Animatronic Pigeon",
+ "description": "A life-size animatronic pigeon that turns and bobs its head, flaps its wings, coos and wakes up when someone walks by.",
+ "creator": "Premake",
+ "tags": [
+  "animatronic",
+  "robot",
+  "ESP32",
+  "servo",
+  "bird"
+ ],
+ "created": "2026-10-30T02:19:22.845Z",
+ "demo": true
+}

@@ -1,0 +1,314 @@
+{
+ "parts": [
+  {
+   "name": "Peltier module TEC1-12706 (12 V, 6 A)",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 4.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"TEC1-12706 Peltier\""
+  },
+  {
+   "name": "40x40 mm aluminium water cooling block, 2 barbs",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"40x40 water cooling block aluminum\""
+  },
+  {
+   "name": "Aluminium heatsink ~90x90x35",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 6.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"Peltier heatsink 90mm\"; clamp with 2x M3 + springs"
+  },
+  {
+   "name": "80 mm 12 V fan",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"80mm 12V fan 2 pin\""
+  },
+  {
+   "name": "80 mm fan grill",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"80mm fan guard\""
+  },
+  {
+   "name": "12 V brushless DC water pump (DC40-type)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 13.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"DC40 12V brushless pump\" ~0.6 A"
+  },
+  {
+   "name": "Cylinder reservoir 60x120 mm, G1/4 ports",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 12.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"PC water cooling reservoir 60mm G1/4\""
+  },
+  {
+   "name": "G1/4 bulkhead fitting",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 3.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "14 mm hole in back panel"
+  },
+  {
+   "name": "G1/4 to 3/8\" barb fitting",
+   "qty_per_unit": 6,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"G1/4 barb 10mm\""
+  },
+  {
+   "name": "Silicone tube 3/8\" ID (internal 1 m + 2x 2 m to pad)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 12.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "5 m"
+  },
+  {
+   "name": "Hose clamps",
+   "qty_per_unit": 10,
+   "unit_cost_usd": 0.25,
+   "supplier": "Hardware store",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "Thermal paste + closed-cell foam tape (cold-side insulation)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "insulate cold blocks against condensation"
+  },
+  {
+   "name": "ESP32-C3 SuperMini",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"ESP32-C3 SuperMini\""
+  },
+  {
+   "name": "MP1584 buck module (12 V to 5 V)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"MP1584EN buck module\""
+  },
+  {
+   "name": "D4184 MOSFET module",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "2x Peltier, 1x pump + fans"
+  },
+  {
+   "name": "EC11 rotary encoder + knob",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"EC11 rotary encoder\""
+  },
+  {
+   "name": "DS18B20 waterproof probe",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 2.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "1 in reservoir, 1 on a heatsink (overheat cutoff)"
+  },
+  {
+   "name": "5 mm LED + 220 ohm resistor",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "status"
+  },
+  {
+   "name": "12 V 20 A (240 W) UL-listed power adapter",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 35.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search \"12V 20A power supply adapter UL\"; sealed brick only"
+  },
+  {
+   "name": "XT60 panel mount + barrel-to-XT60 adapter cable",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "barrel jacks aren't rated for 13 A"
+  },
+  {
+   "name": "Inline blade fuse holder + 20 A fuse (14 AWG)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "Wire (14 AWG power, 22 AWG signal), Wago 221, JST",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "Small 20x20 L bracket, M3",
+   "qty_per_unit": 8,
+   "unit_cost_usd": 0.25,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "hold acrylic panels to chassis"
+  },
+  {
+   "name": "M3 screws/nuts/inserts assortment",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.0,
+   "supplier": "Shop stock",
+   "url": "",
+   "notes": "~40 pcs"
+  },
+  {
+   "name": "Rubber foot 12 mm",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.25,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  }
+ ],
+ "assembly_minutes": 90,
+ "kit_ok": false,
+ "printed": [
+  {
+   "file": "stl/tec-stand-1.stl",
+   "name": "TEC stand 1",
+   "grams": 23.7,
+   "print_hours": 1.19,
+   "bbox": [
+    70.0,
+    50.0,
+    48.0
+   ]
+  },
+  {
+   "file": "stl/tec-stand-2.stl",
+   "name": "TEC stand 2",
+   "grams": 23.7,
+   "print_hours": 1.19,
+   "bbox": [
+    70.0,
+    50.0,
+    48.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/chassis.stl",
+   "name": "Chassis",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 5052",
+    "thickness_mm": 1.5,
+    "bends": 2
+   },
+   "est": {
+    "area_cm2": 1009.6,
+    "bends": 2,
+    "minutes": 17.1,
+    "material_usd": 6.06
+   },
+   "bbox": [
+    240.0,
+    200.0,
+    140.0
+   ]
+  },
+  {
+   "file": "stl/lid.stl",
+   "name": "Lid",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 5052",
+    "thickness_mm": 1.5,
+    "bends": 2
+   },
+   "est": {
+    "area_cm2": 453.6,
+    "bends": 2,
+    "minutes": 11.5,
+    "material_usd": 2.72
+   },
+   "bbox": [
+    243.0,
+    200.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/front-panel.stl",
+   "name": "Front panel",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 1041.0,
+    "area_cm2": 314.6,
+    "minutes": 1.9,
+    "material_usd": 3.3
+   },
+   "bbox": [
+    237.0,
+    3.0,
+    138.5
+   ]
+  },
+  {
+   "file": "stl/back-panel.stl",
+   "name": "Back panel",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 1470.7,
+    "area_cm2": 313.4,
+    "minutes": 2.2,
+    "material_usd": 3.29
+   },
+   "bbox": [
+    237.0,
+    3.0,
+    138.5
+   ]
+  }
+ ]
+}

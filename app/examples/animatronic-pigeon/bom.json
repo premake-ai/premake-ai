@@ -1,0 +1,348 @@
+{
+ "parts": [
+  {
+   "name": "DFPlayer Mini MP3 module",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: DFPlayer Mini MP3 module"
+  },
+  {
+   "name": "microSD card 1-8 GB (coo sounds)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "any small microSD"
+  },
+  {
+   "name": "Speaker 28 mm 8 ohm 0.5 W",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 28mm 8 ohm speaker"
+  },
+  {
+   "name": "AM312 mini PIR sensor",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: AM312 mini PIR"
+  },
+  {
+   "name": "Safety eyes 8 mm orange (pair)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.4,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 8mm safety eyes orange"
+  },
+  {
+   "name": "5 V 3 A USB-C power adapter (UL listed)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 9.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 5V 3A USB-C power supply"
+  },
+  {
+   "name": "Polyfuse 3 A resettable",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.3,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: PTC resettable fuse 3A"
+  },
+  {
+   "name": "Capacitor 1000 uF 10 V",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.3,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "across servo 5 V rail"
+  },
+  {
+   "name": "Servo extension cables 15 cm",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "for neck/head servos"
+  },
+  {
+   "name": "28 AWG silicone wire, 3 colours",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "runs up the right leg"
+  },
+  {
+   "name": "M3x8 screws (body halves, chassis)",
+   "qty_per_unit": 8,
+   "unit_cost_usd": 0.08,
+   "supplier": "McMaster-Carr",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "M2x6 screws (servo tabs)",
+   "qty_per_unit": 8,
+   "unit_cost_usd": 0.06,
+   "supplier": "McMaster-Carr",
+   "url": "",
+   "notes": "usually included with SG90"
+  },
+  {
+   "name": "Rubber feet 8 mm",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "SG90 micro servo",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 2.5,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=SG90+micro+servo",
+   "notes": "search: SG90 micro servo",
+   "auto": "lib"
+  },
+  {
+   "name": "ESP32-C3 SuperMini",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=ESP32-C3+SuperMini",
+   "notes": "search: ESP32-C3 SuperMini",
+   "auto": "lib"
+  },
+  {
+   "name": "USB-C power breakout",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.9,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=USB-C+female+breakout+board",
+   "notes": "search: USB-C female breakout board",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 75,
+ "kit_ok": false,
+ "printed": [
+  {
+   "file": "stl/base.stl",
+   "name": "Base",
+   "grams": 39.7,
+   "print_hours": 1.98,
+   "bbox": [
+    124.5,
+    192.5,
+    16.4
+   ]
+  },
+  {
+   "file": "stl/legs-and-feet.stl",
+   "name": "Legs and Feet",
+   "grams": 9.0,
+   "print_hours": 0.45,
+   "bbox": [
+    51.5,
+    30.0,
+    90.0
+   ]
+  },
+  {
+   "file": "stl/body-lower.stl",
+   "name": "Body Lower",
+   "grams": 35.0,
+   "print_hours": 1.75,
+   "bbox": [
+    93.7,
+    188.6,
+    53.8
+   ]
+  },
+  {
+   "file": "stl/chassis.stl",
+   "name": "Chassis",
+   "grams": 26.8,
+   "print_hours": 1.34,
+   "bbox": [
+    72.2,
+    148.2,
+    12.1
+   ]
+  },
+  {
+   "file": "stl/body-upper.stl",
+   "name": "Body Upper",
+   "grams": 39.0,
+   "print_hours": 1.95,
+   "bbox": [
+    92.1,
+    191.3,
+    59.9
+   ]
+  },
+  {
+   "file": "stl/neck.stl",
+   "name": "Neck",
+   "grams": 10.3,
+   "print_hours": 0.51,
+   "bbox": [
+    54.5,
+    54.5,
+    48.6
+   ]
+  },
+  {
+   "file": "stl/head.stl",
+   "name": "Head",
+   "grams": 7.7,
+   "print_hours": 0.39,
+   "bbox": [
+    46.8,
+    56.8,
+    48.5
+   ]
+  },
+  {
+   "file": "stl/beak.stl",
+   "name": "Beak",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    10.2,
+    20.2,
+    8.4
+   ]
+  },
+  {
+   "file": "stl/cere.stl",
+   "name": "Cere",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    10.1,
+    11.1,
+    7.5
+   ]
+  },
+  {
+   "file": "stl/wl.stl",
+   "name": "Left Wing",
+   "grams": 32.1,
+   "print_hours": 1.6,
+   "bbox": [
+    43.6,
+    148.5,
+    67.6
+   ]
+  },
+  {
+   "file": "stl/pl.stl",
+   "name": "Left Primaries",
+   "grams": 7.1,
+   "print_hours": 0.36,
+   "bbox": [
+    18.0,
+    75.0,
+    33.0
+   ]
+  },
+  {
+   "file": "stl/bl.stl",
+   "name": "Left Wing Bars",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    2.1,
+    18.2,
+    30.2
+   ]
+  },
+  {
+   "file": "stl/wr.stl",
+   "name": "Right Wing",
+   "grams": 32.0,
+   "print_hours": 1.6,
+   "bbox": [
+    43.5,
+    148.5,
+    67.6
+   ]
+  },
+  {
+   "file": "stl/pr.stl",
+   "name": "Right Primaries",
+   "grams": 7.1,
+   "print_hours": 0.36,
+   "bbox": [
+    18.0,
+    75.0,
+    33.0
+   ]
+  },
+  {
+   "file": "stl/br.stl",
+   "name": "Right Wing Bars",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    2.1,
+    18.2,
+    30.2
+   ]
+  },
+  {
+   "file": "stl/tail.stl",
+   "name": "Tail",
+   "grams": 10.0,
+   "print_hours": 0.5,
+   "bbox": [
+    56.6,
+    58.0,
+    19.3
+   ]
+  },
+  {
+   "file": "stl/tail-band.stl",
+   "name": "Tail Band",
+   "grams": 2.6,
+   "print_hours": 0.25,
+   "bbox": [
+    59.1,
+    13.1,
+    8.1
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/base-bottom.stl",
+   "name": "Base Bottom",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 486.2,
+    "area_cm2": 174.3,
+    "minutes": 1.4,
+    "material_usd": 0.63
+   },
+   "bbox": [
+    119.0,
+    187.1,
+    3.3
+   ]
+  }
+ ]
+}

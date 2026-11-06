@@ -1,0 +1,51 @@
+{
+ "parts": [
+  {
+   "name": "3/8-16 x 4 in eye bolt, zinc",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 3.48,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "3/8-16 hex nut",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.2,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "3/8 in SAE flat washer",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.14,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "Locking carabiner, steel",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 7.99,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Clip to a loading pin or weight"
+  }
+ ],
+ "assembly_minutes": 5,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/edge-block.stl",
+   "name": "Edge block",
+   "grams": 157.4,
+   "print_hours": 7.87,
+   "bbox": [
+    110.0,
+    60.0,
+    62.0
+   ]
+  }
+ ]
+}

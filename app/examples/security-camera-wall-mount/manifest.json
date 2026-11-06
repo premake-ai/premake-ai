@@ -1,0 +1,149 @@
+{
+ "t": 1793829172.910034,
+ "title": "Security Camera Wall Mount",
+ "parts": [
+  {
+   "file": "stl/wall-plate.stl",
+   "name": "Wall plate",
+   "group": "case",
+   "process": "print",
+   "color": "#e8e8e4",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    76.0,
+    16.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/camera-hood.stl",
+   "name": "Camera hood",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2d30",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    58.0,
+    73.5,
+    60.5
+   ]
+  },
+  {
+   "file": "stl/wyze-cam-v3-yours.stl",
+   "name": "Wyze Cam v3 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#f4f4f4",
+   "explode": [
+    0.0,
+    -0.607,
+    0.795
+   ],
+   "bbox": [
+    51.0,
+    59.3,
+    52.0
+   ]
+  },
+  {
+   "file": "stl/1-4-20-camera-screw.stl",
+   "name": "1/4-20 camera screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#9a9ca0",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    12.0,
+    12.0,
+    11.0
+   ]
+  },
+  {
+   "file": "stl/m3-10-self-tapping-screw-for-plastic-2.stl",
+   "name": "M3\u00d710 self-tapping screw for plastic \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.617,
+    0.707,
+    0.344
+   ],
+   "bbox": [
+    12.2,
+    5.6,
+    35.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-self-tapping-screw-for-plastic-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 2,
+    "name": "M3\u00d710 self-tapping screw for plastic",
+    "unit_cost_usd": 0.059,
+    "mass_g": 0.8
+   }
+  },
+  {
+   "file": "stl/m3-10-self-tapping-screw-for-plastic-2-2.stl",
+   "name": "M3\u00d710 self-tapping screw for plastic \u00d72 (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.617,
+    0.707,
+    0.344
+   ],
+   "bbox": [
+    12.2,
+    5.6,
+    35.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-self-tapping-screw-for-plastic-2-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 2,
+    "name": "M3\u00d710 self-tapping screw for plastic",
+    "unit_cost_usd": 0.059,
+    "mass_g": 0.8
+   }
+  }
+ ],
+ "scene": "wall",
+ "assembly_order": [
+  [
+   "Wall plate"
+  ],
+  [
+   "Wyze Cam v3 (yours)",
+   "1/4-20 camera screw"
+  ],
+  [
+   "Camera hood"
+  ]
+ ]
+}

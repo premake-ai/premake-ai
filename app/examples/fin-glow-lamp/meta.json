@@ -1,0 +1,14 @@
+{
+ "title": "Fin glow lamp",
+ "description": "Edge-lit desk lamp: a folded aluminium channel, a laser-cut opal acrylic fin lit by a WS2812B strip, and an ESP32-C3 with a dial for brightness and colour modes.",
+ "creator": "Premake",
+ "tags": [
+  "lighting",
+  "sheet metal",
+  "laser cut",
+  "ESP32",
+  "LED"
+ ],
+ "created": "2026-10-28T02:10:00Z",
+ "demo": true
+}

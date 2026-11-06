@@ -1,0 +1,296 @@
+{
+ "parts": [
+  {
+   "name": "M5 drop-in T-nut",
+   "qty_per_unit": 6,
+   "unit_cost_usd": 0.16,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: M5 drop in T nut 2020 (pack of 50 ~$8). 4 for the post clamps, 2 for the arm mount."
+  },
+  {
+   "name": "2020 end cap",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.6,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 2020 aluminum extrusion end cap black (pack of 10 ~$6). Covers the bar's cut ends."
+  },
+  {
+   "name": "M6 star knob (male, 25 mm)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.8,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: M6 x 25mm male thread star knob (pack of 5 ~$9). Locks the serrated tilt joint."
+  },
+  {
+   "name": "Rubber bumper 12.7 mm",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.07,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: self adhesive rubber bumper pads 12.7mm x 3.5mm (pack of 100 ~$7). The iPad's back rests on these."
+  },
+  {
+   "name": "EPDM foam tape 12 mm x 1.5 mm",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.7,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: EPDM foam weather seal tape 1/2 inch x 1/16 inch (10 m roll ~$7, ~0.5 m used). Lines the post-clamp bores and the two wedge channels: no rattle, no scratches."
+  },
+  {
+   "name": "M5\u00d730 button head screw",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.208,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M5x30+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M5x30 button head screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M5\u00d710 button head screw",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.176,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M5x10+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M5x10 button head screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M6\u00d735 socket head screw",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.297,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M6x35+socket+head+cap+screw&rh=p_85%3A2470955011",
+   "notes": "search: M6x35 socket head cap screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M6 washer",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.045,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M6+flat+washer&rh=p_85%3A2470955011",
+   "notes": "search: M6 flat washer",
+   "auto": "lib"
+  },
+  {
+   "name": "M6 nylock nut",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.12,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M6+nylon+lock+nut&rh=p_85%3A2470955011",
+   "notes": "search: M6 nylon lock nut",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d710 self-tapping screw for plastic",
+   "qty_per_unit": 10,
+   "unit_cost_usd": 0.059,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+x+10mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M3 x 10mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d716 self-tapping screw for plastic",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.063,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+x+16mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M3 x 16mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  },
+  {
+   "name": "M6 hex nut",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.09,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M6+hex+nut&rh=p_85%3A2470955011",
+   "notes": "search: M6 hex nut",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 30,
+ "kit_ok": true,
+ "needs_soldering": false,
+ "printed": [
+  {
+   "file": "stl/post-clamp-l.stl",
+   "name": "Post clamp L",
+   "grams": 6.9,
+   "print_hours": 0.34,
+   "bbox": [
+    40.0,
+    13.5,
+    24.0
+   ]
+  },
+  {
+   "file": "stl/post-clamp-cap-l.stl",
+   "name": "Post clamp cap L",
+   "grams": 4.9,
+   "print_hours": 0.25,
+   "bbox": [
+    40.0,
+    10.5,
+    24.0
+   ]
+  },
+  {
+   "file": "stl/post-clamp-r.stl",
+   "name": "Post clamp R",
+   "grams": 6.9,
+   "print_hours": 0.34,
+   "bbox": [
+    40.0,
+    13.5,
+    24.0
+   ]
+  },
+  {
+   "file": "stl/post-clamp-cap-r.stl",
+   "name": "Post clamp cap R",
+   "grams": 4.9,
+   "print_hours": 0.25,
+   "bbox": [
+    40.0,
+    10.5,
+    24.0
+   ]
+  },
+  {
+   "file": "stl/arm-mount.stl",
+   "name": "Arm mount",
+   "grams": 8.5,
+   "print_hours": 0.42,
+   "bbox": [
+    50.0,
+    35.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/swivel-arm.stl",
+   "name": "Swivel arm",
+   "grams": 20.8,
+   "print_hours": 1.04,
+   "bbox": [
+    24.1,
+    62.1,
+    88.1
+   ]
+  },
+  {
+   "file": "stl/bottom-hook-l.stl",
+   "name": "Bottom hook L",
+   "grams": 6.4,
+   "print_hours": 0.32,
+   "bbox": [
+    34.0,
+    25.5,
+    26.0
+   ]
+  },
+  {
+   "file": "stl/bottom-hook-r.stl",
+   "name": "Bottom hook R",
+   "grams": 6.4,
+   "print_hours": 0.32,
+   "bbox": [
+    34.0,
+    25.5,
+    26.0
+   ]
+  },
+  {
+   "file": "stl/tilt-hub.stl",
+   "name": "Tilt hub",
+   "grams": 13.5,
+   "print_hours": 0.67,
+   "bbox": [
+    42.0,
+    46.0,
+    42.0
+   ]
+  },
+  {
+   "file": "stl/ratchet-rail.stl",
+   "name": "Ratchet rail",
+   "grams": 6.6,
+   "print_hours": 0.33,
+   "bbox": [
+    18.0,
+    11.0,
+    58.0
+   ]
+  },
+  {
+   "file": "stl/top-jaw.stl",
+   "name": "Top jaw",
+   "grams": 20.4,
+   "print_hours": 1.02,
+   "bbox": [
+    54.0,
+    54.5,
+    75.0
+   ]
+  },
+  {
+   "file": "stl/release-lever.stl",
+   "name": "Release lever",
+   "grams": 2.6,
+   "print_hours": 0.25,
+   "bbox": [
+    22.0,
+    14.9,
+    82.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/cross-bar-2020-x-200.stl",
+   "name": "Cross bar 2020 x 200",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 200.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 200.0,
+    "minutes": 5.0,
+    "material_usd": 1.2
+   },
+   "bbox": [
+    200.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/cradle-plate.stl",
+   "name": "Cradle plate",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 5052",
+    "thickness_mm": 2.0,
+    "bends": 0
+   },
+   "est": {
+    "area_cm2": 215.0,
+    "bends": 0,
+    "minutes": 6.1,
+    "material_usd": 1.72
+   },
+   "bbox": [
+    214.0,
+    2.0,
+    153.0
+   ]
+  }
+ ]
+}

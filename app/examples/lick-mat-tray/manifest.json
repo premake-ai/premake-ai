@@ -1,0 +1,40 @@
+{
+ "t": 1793242611.589788,
+ "title": "Lick mat tray",
+ "parts": [
+  {
+   "file": "stl/tray.stl",
+   "name": "Tray",
+   "group": "case",
+   "process": "print",
+   "color": "#f4a261",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    208.2,
+    208.2,
+    16.2
+   ]
+  },
+  {
+   "file": "stl/grip-feet-tpu-x4.stl",
+   "name": "Grip feet (TPU, x4)",
+   "group": "case",
+   "process": "print",
+   "color": "#264653",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    173.0,
+    173.0,
+    4.4
+   ]
+  }
+ ]
+}

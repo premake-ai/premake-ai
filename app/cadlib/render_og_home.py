@@ -10,7 +10,7 @@ glow = Image.new("RGBA", (W, H), (0, 0, 0, 0)); gd = ImageDraw.Draw(glow)
 gd.ellipse([620, 330, 1260, 820], fill=(232, 89, 12, 40)); glow = glow.filter(ImageFilter.GaussianBlur(90))
 img.paste(glow, (0, 0), glow)
 def place(slug, cx, cy, h):
-    im = hero_image(os.path.join("data/examples", slug))
+    im = hero_image(os.path.join("examples", slug))
     r = h / im.height; im = im.resize((int(im.width * r), int(h)), Image.LANCZOS)
     if im.width > 330: r = 330 / im.width; im = im.resize((330, int(im.height * r)), Image.LANCZOS)
     img.paste(im, (int(cx - im.width / 2), int(cy - im.height / 2)), im)

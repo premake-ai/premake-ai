@@ -115,7 +115,7 @@ async function waitUp(port) {
   throw new Error('server did not start');
 }
 
-test('checkout session → redirect URL → signed webhook → paid (idempotent)', { skip: 'needs the example designs in data/examples, not in the open-source repo' }, async (t) => {
+test('checkout session → redirect URL → signed webhook → paid (idempotent)', { skip: process.env.PREMAKE_TEST_CHECKOUT !== '1' && 'needs live supplier prices (network) or a warm sourcing cache; run with PREMAKE_TEST_CHECKOUT=1' }, async (t) => {
   const seen = [];
   let sessionState = null;
   const fake = http.createServer((req, res) => {

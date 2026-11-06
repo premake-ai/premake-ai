@@ -1,0 +1,28 @@
+{
+ "parts": [
+  {
+   "name": "Dishwasher D-shaft (reference)",
+   "qty_per_unit": 0,
+   "unit_cost_usd": 0,
+   "supplier": "",
+   "url": "",
+   "notes": "The customer's existing control shaft, shown only for fit; not supplied. Print the knob in ASA for heat and steam resistance."
+  }
+ ],
+ "assembly_minutes": 1,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/knob.stl",
+   "name": "Knob",
+   "grams": 10.3,
+   "print_hours": 0.52,
+   "bbox": [
+    40.0,
+    39.8,
+    22.0
+   ]
+  }
+ ],
+ "fabricated": []
+}

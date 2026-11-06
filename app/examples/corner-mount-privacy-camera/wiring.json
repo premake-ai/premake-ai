@@ -1,0 +1,14 @@
+{
+ "wires": [
+  {"from": {"part": "5 V 2 A USB wall adapter", "pin": "USB-A"}, "to": {"part": "Micro-USB cable 3 m", "pin": "USB-A"}, "color": "black", "kind": "jst"},
+  {"from": {"part": "Micro-USB cable 3 m", "pin": "micro-USB"}, "to": {"part": "ESP32-CAM-MB USB programmer", "pin": "micro-USB"}, "color": "black", "kind": "jst"},
+  {"from": {"part": "ESP32-CAM-MB USB programmer", "pin": "5V"}, "to": {"part": "ESP32-CAM (AI-Thinker, OV2640)", "pin": "5V"}, "color": "red", "kind": "dupont"},
+  {"from": {"part": "ESP32-CAM-MB USB programmer", "pin": "GND"}, "to": {"part": "ESP32-CAM (AI-Thinker, OV2640)", "pin": "GND"}, "color": "black", "kind": "dupont"},
+  {"from": {"part": "ESP32-CAM-MB USB programmer", "pin": "TXD"}, "to": {"part": "ESP32-CAM (AI-Thinker, OV2640)", "pin": "U0R"}, "color": "green", "kind": "dupont"},
+  {"from": {"part": "ESP32-CAM-MB USB programmer", "pin": "RXD"}, "to": {"part": "ESP32-CAM (AI-Thinker, OV2640)", "pin": "U0T"}, "color": "white", "kind": "dupont"},
+  {"from": {"part": "ESP32-CAM-MB USB programmer", "pin": "IO0"}, "to": {"part": "ESP32-CAM (AI-Thinker, OV2640)", "pin": "IO0"}, "color": "blue", "kind": "dupont"},
+  {"from": {"part": "ESP32-CAM (AI-Thinker, OV2640)", "pin": "IO13"}, "to": {"part": "220 ohm resistor", "pin": "1"}, "color": "yellow", "kind": "solder"},
+  {"from": {"part": "220 ohm resistor", "pin": "2"}, "to": {"part": "5 mm LED (red)", "pin": "+"}, "color": "yellow", "kind": "solder"},
+  {"from": {"part": "5 mm LED (red)", "pin": "-"}, "to": {"part": "ESP32-CAM (AI-Thinker, OV2640)", "pin": "GND"}, "color": "black", "kind": "solder"}
+ ]
+}

@@ -1,0 +1,142 @@
+{
+ "t": 1793242571.235185,
+ "title": "Magnetic cable clips",
+ "parts": [
+  {
+   "file": "stl/desk-rail.stl",
+   "name": "Desk rail",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3f47",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    129.0,
+    20.0,
+    6.0
+   ]
+  },
+  {
+   "file": "stl/clip-3-6-mm.stl",
+   "name": "Clip 3.6 mm",
+   "group": "case",
+   "process": "print",
+   "color": "#ff8a5b",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    21.0,
+    21.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/clip-4-4-mm.stl",
+   "name": "Clip 4.4 mm",
+   "group": "case",
+   "process": "print",
+   "color": "#ffd166",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    21.0,
+    21.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/clip-5-2-mm.stl",
+   "name": "Clip 5.2 mm",
+   "group": "case",
+   "process": "print",
+   "color": "#06d6a0",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    21.0,
+    21.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/clip-6-0-mm.stl",
+   "name": "Clip 6.0 mm",
+   "group": "case",
+   "process": "print",
+   "color": "#118ab2",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    21.1,
+    21.0,
+    15.1
+   ]
+  },
+  {
+   "file": "stl/clip-7-2-mm.stl",
+   "name": "Clip 7.2 mm",
+   "group": "case",
+   "process": "print",
+   "color": "#ef476f",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    21.1,
+    21.0,
+    15.1
+   ]
+  },
+  {
+   "file": "stl/10-x-3-mm-magnets-x10.stl",
+   "name": "10 x 3 mm magnets (x10)",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa0a6",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    110.0,
+    10.0,
+    6.0
+   ]
+  },
+  {
+   "file": "stl/cables-not-included.stl",
+   "name": "Cables (not included)",
+   "group": "component",
+   "process": "bought",
+   "color": "#f2f2f2",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    105.0,
+    90.0,
+    6.8
+   ]
+  }
+ ]
+}

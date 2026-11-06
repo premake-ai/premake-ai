@@ -1,0 +1,13 @@
+{
+ "title": "Recirculating Shower Unit",
+ "description": "A beside-the-shower unit that catches warm drain water, strains, filters and UV-sterilises it, and pumps it back to the shower head to cut water-heating costs.",
+ "creator": "Premake",
+ "tags": [
+  "shower",
+  "water saving",
+  "recirculating",
+  "ESP32"
+ ],
+ "created": "2026-10-29T21:06:49.101Z",
+ "demo": true
+}

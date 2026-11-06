@@ -1,0 +1,14 @@
+{
+ "title": "Drop night light",
+ "description": "USB-C glow drop with an ESP32-C3 and an 8-LED WS2812B ring under a snap-in printed diffuser; press the flexure wall button for warm, candle, colour-drift and red night modes.",
+ "creator": "Premake",
+ "tags": [
+  "lighting",
+  "ESP32",
+  "LED",
+  "electronics",
+  "kids room"
+ ],
+ "created": "2026-10-28T10:40:00Z",
+ "demo": true
+}

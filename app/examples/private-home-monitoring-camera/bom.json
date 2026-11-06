@@ -1,0 +1,166 @@
+{
+ "parts": [
+  {
+   "name": "ESP32-CAM (AI-Thinker, OV2640)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 9.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B0948ZFTQZ",
+   "notes": "Aideepen 2-pack ESP32-CAM + ESP32-CAM-MB (CH340G, micro-USB), AI-Thinker pinout, 4 MB PSRAM. Board 27 x 40.5 x 4.5 mm (DFRobot DFR0602 datasheet). Roughly $18 per 2-pack (price not shown in search, check page); cost here is per board+MB set. Search: ESP32-CAM-MB OV2640 2 pack"
+  },
+  {
+   "name": "ESP32-CAM-MB",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B0948ZFTQZ",
+   "notes": "Included with the ESP32-CAM line above (same pack). ~40 x 27 mm, micro-USB on the short edge (retailer listings, no official drawing)."
+  },
+  {
+   "name": "5V 2A USB wall adapter",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B0FGCDBCNM",
+   "notes": "MaxRenard 5 V 2 A UL-certified USB-A charger (model DF10A-050200-US), 2-pack ~$10. Search: 5V 2A USB wall charger UL listed"
+  },
+  {
+   "name": "Micro-USB cable (1.8 m)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 3.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "USB-A to micro-USB data cable, 6 ft, slim plug (overmould <= 12 x 8 mm to pass the bottom cap). Search: micro USB cable 6ft 3 pack"
+  },
+  {
+   "name": "220 ohm resistor",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "1/4 W, in line on the LED anode, covered with heat-shrink. Search: 220 ohm resistor 1/4W 100 pcs"
+  },
+  {
+   "name": "Heat-shrink tubing + 26 AWG wire",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.3,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Two 10 cm leads from the LED to the MB header joints. Use a green 5 mm LED for the status light. Search: heat shrink tubing kit"
+  },
+  {
+   "name": "5 mm LED (red)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=5mm+LED+assortment&rh=p_85%3A2470955011",
+   "notes": "search: 5mm LED assortment",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d716 self-tapping screw for plastic",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.063,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+x+16mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M3 x 16mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 18,
+ "kit_ok": true,
+ "needs_soldering": true,
+ "soldering_reason": "The status LED's leads (with an in-line 220 ohm resistor) solder to the IO13 and GND header joints on the back of the ESP32-CAM-MB, because the MB covers the camera board's pins.",
+ "printed": [
+  {
+   "file": "stl/top-cap-frame.stl",
+   "name": "Top cap + frame",
+   "grams": 25.2,
+   "print_hours": 1.26,
+   "bbox": [
+    62.0,
+    46.0,
+    77.0
+   ]
+  },
+  {
+   "file": "stl/bottom-cap.stl",
+   "name": "Bottom cap",
+   "grams": 17.8,
+   "print_hours": 0.89,
+   "bbox": [
+    62.0,
+    46.0,
+    36.0
+   ]
+  },
+  {
+   "file": "stl/shutter.stl",
+   "name": "Privacy shutter",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    27.0,
+    2.5,
+    39.0
+   ]
+  },
+  {
+   "file": "stl/knob.stl",
+   "name": "Shutter knob",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    14.0,
+    9.5,
+    5.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/front-shell.stl",
+   "name": "Front shell",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 5052",
+    "thickness_mm": 1.6,
+    "bends": 2,
+    "finish": "SendCutSend powder coat, Matte White"
+   },
+   "est": {
+    "area_cm2": 59.8,
+    "bends": 2,
+    "minutes": 7.6,
+    "material_usd": 0.38
+   },
+   "bbox": [
+    58.0,
+    20.8,
+    64.5
+   ]
+  },
+  {
+   "file": "stl/back-shell.stl",
+   "name": "Back shell",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 5052",
+    "thickness_mm": 1.6,
+    "bends": 2,
+    "finish": "SendCutSend powder coat, Metallic Gray"
+   },
+   "est": {
+    "area_cm2": 59.0,
+    "bends": 2,
+    "minutes": 7.6,
+    "material_usd": 0.38
+   },
+   "bbox": [
+    58.0,
+    20.8,
+    64.5
+   ]
+  }
+ ]
+}

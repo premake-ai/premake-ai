@@ -1,0 +1,14 @@
+{
+ "title": "Adjustable LED Desk Lamp",
+ "description": "A weighted desk lamp with an aluminium stem, a tilting head with a 24-LED ring behind an opal diffuser, a dimmer knob and iPhone control over Wi-Fi.",
+ "creator": "Premake",
+ "tags": [
+  "lamp",
+  "desk",
+  "LED",
+  "ESP32",
+  "Wi-Fi"
+ ],
+ "created": "2026-11-04T21:50:55.669Z",
+ "demo": true
+}

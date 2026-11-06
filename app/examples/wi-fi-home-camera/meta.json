@@ -1,0 +1,13 @@
+{
+ "title": "Wi-Fi Home Camera",
+ "description": "Slim cylindrical ESP32-S3 Wi-Fi camera with live stream and PIR motion detection.",
+ "creator": "Premake",
+ "tags": [
+  "camera",
+  "ESP32",
+  "smart home",
+  "motion sensor"
+ ],
+ "created": "2026-11-03T17:40:40.499Z",
+ "demo": true
+}

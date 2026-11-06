@@ -1,0 +1,13 @@
+{
+  "name": "Plant Sensor",
+  "short_name": "Plants",
+  "theme": "#2f7d4f",
+  "icon": "icon.svg",
+  "fields": {
+    "moisture": { "label": "Soil moisture", "unit": "%" },
+    "light": { "label": "Light", "unit": "lux" },
+    "temp": { "label": "Temperature", "unit": "°C" },
+    "humidity": { "label": "Humidity", "unit": "%" },
+    "battery": { "label": "Battery", "unit": "V" }
+  }
+}

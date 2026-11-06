@@ -1,0 +1,7 @@
+{"wires": [
+  {"from": {"part": "ESP32-CAM-MB", "pin": "IO13"}, "to": {"part": "220 ohm resistor", "pin": "1"}, "color": "green", "kind": "solder"},
+  {"from": {"part": "220 ohm resistor", "pin": "2"}, "to": {"part": "Status LED", "pin": "+"}, "color": "green", "kind": "solder"},
+  {"from": {"part": "Status LED", "pin": "-"}, "to": {"part": "ESP32-CAM-MB", "pin": "GND"}, "color": "black", "kind": "solder"},
+  {"from": {"part": "5V 2A USB wall adapter", "pin": "USB"}, "to": {"part": "Micro-USB cable (1.8 m)", "pin": "USB-A"}, "color": "black", "kind": "jst"},
+  {"from": {"part": "Micro-USB cable (1.8 m)", "pin": "Micro-USB"}, "to": {"part": "ESP32-CAM-MB", "pin": "Micro-USB"}, "color": "black", "kind": "jst"}
+]}

@@ -1,0 +1,37 @@
+{
+  "quiet": {
+    "name": "Quiet days",
+    "visits_min": 10, "visits_max": 80,
+    "designs_min": 1, "designs_max": 10,
+    "rssi_min": -80, "rssi_max": -30,
+    "notes": "Early days or a holiday week. Set the flag to wave for everything so every visitor feels like an event."
+  },
+  "weekend": {
+    "name": "Weekend",
+    "visits_min": 20, "visits_max": 150,
+    "designs_min": 2, "designs_max": 25,
+    "rssi_min": -80, "rssi_max": -30,
+    "notes": "Fewer people at their desks. A good time to switch the flag to designs only if it's in a shared room."
+  },
+  "everyday": {
+    "name": "Normal weekday",
+    "visits_min": 50, "visits_max": 300,
+    "designs_min": 5, "designs_max": 40,
+    "rssi_min": -80, "rssi_max": -30,
+    "notes": "A steady day. If the count stays under the range by lunchtime, it might be worth a post or a newsletter."
+  },
+  "growing": {
+    "name": "Growing fast",
+    "visits_min": 200, "visits_max": 1000,
+    "designs_min": 20, "designs_max": 150,
+    "rssi_min": -80, "rssi_max": -30,
+    "notes": "Lots of waving. Switch to designs only if the servo noise gets distracting; it's rated for this, but you might not be."
+  },
+  "launch": {
+    "name": "Launch day",
+    "visits_min": 1000, "visits_max": 10000,
+    "designs_min": 100, "designs_max": 1500,
+    "rssi_min": -80, "rssi_max": -30,
+    "notes": "Expect the flag to wave nearly nonstop. Keep it on a 1 A or better charger, and set it to quiet if you need to focus."
+  }
+}

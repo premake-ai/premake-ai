@@ -1,0 +1,14 @@
+{
+ "title": "SCARA Arm 3D Printer",
+ "description": "Desktop SCARA-arm 3D printer: 2020 extrusion frame, belt-driven 150+150 mm arm on a lead-screw Z column, 200 x 200 mm PEI bed, 24 V.",
+ "creator": "Premake",
+ "tags": [
+  "3d printer",
+  "scara",
+  "extrusion",
+  "stepper",
+  "marlin"
+ ],
+ "created": "2026-10-29T20:00:13.955Z",
+ "demo": true
+}

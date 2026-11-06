@@ -1,0 +1,41 @@
+{
+ "parts": [
+  {
+   "name": "M3\u00d710 self-tapping screw for plastic",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.059,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+x+10mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M3 x 10mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 2,
+ "kit_ok": true,
+ "needs_soldering": false,
+ "printed": [
+  {
+   "file": "stl/pot-body.stl",
+   "name": "Pot body",
+   "grams": 63.1,
+   "print_hours": 3.16,
+   "bbox": [
+    207.4,
+    110.6,
+    55.4
+   ]
+  },
+  {
+   "file": "stl/lid.stl",
+   "name": "Lid",
+   "grams": 20.3,
+   "print_hours": 1.02,
+   "bbox": [
+    105.7,
+    105.8,
+    4.1
+   ]
+  }
+ ],
+ "fabricated": []
+}

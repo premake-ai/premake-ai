@@ -1,0 +1,57 @@
+{
+ "parts": [
+  {
+   "name": "#8 x 1-1/4\" flat head wood screws + drywall anchors",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.15,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: \"#8 drywall anchors with screws kit\". Two per mount; skip the anchors when screwing into a stud or wood."
+  },
+  {
+   "name": "1/4-20 camera screw",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.4,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: \"1/4-20 x 3/8 button head screw\". Or reuse the screw that held the Wyze stand on."
+  },
+  {
+   "name": "M3\u00d710 self-tapping screw for plastic",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.059,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+x+10mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M3 x 10mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 8,
+ "kit_ok": true,
+ "needs_soldering": false,
+ "printed": [
+  {
+   "file": "stl/wall-plate.stl",
+   "name": "Wall plate",
+   "grams": 34.2,
+   "print_hours": 1.71,
+   "bbox": [
+    76.0,
+    16.0,
+    100.0
+   ]
+  },
+  {
+   "file": "stl/camera-hood.stl",
+   "name": "Camera hood",
+   "grams": 32.6,
+   "print_hours": 1.63,
+   "bbox": [
+    58.0,
+    73.5,
+    60.5
+   ]
+  }
+ ],
+ "fabricated": []
+}

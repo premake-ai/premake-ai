@@ -1,0 +1,193 @@
+{
+ "parts": [
+  {
+   "name": "Hillman #53 compression spring (3/4in OD x 3in)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.48,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": "Main squeeze spring, approx 10 N/mm"
+  },
+  {
+   "name": "Hillman small compression spring (7/16in OD x 1-7/16in)",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 1.29,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": "One per finger plunger"
+  },
+  {
+   "name": "1/4-20 x 2in hex bolt, zinc",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.42,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": "Lever pivot"
+  },
+  {
+   "name": "1/4-20 nylon insert lock nut",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.28,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": "Pivot"
+  },
+  {
+   "name": "1/4in flat washer",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.12,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": "Pivot"
+  },
+  {
+   "name": "5/16-18 x 3in hex bolt, zinc",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.78,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": "Preload adjuster, head trapped in knob"
+  },
+  {
+   "name": "5/16-18 hex nut",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.18,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": "Captured in preload seat"
+  },
+  {
+   "name": "#4 x 1/2in pan head sheet-metal screw",
+   "qty_per_unit": 10,
+   "unit_cost_usd": 0.07,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": "6 clamshell + 4 back plate"
+  }
+ ],
+ "assembly_minutes": 15,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/body-left.stl",
+   "name": "Body left",
+   "grams": 72.9,
+   "print_hours": 3.65,
+   "bbox": [
+    16.1,
+    163.3,
+    158.6
+   ]
+  },
+  {
+   "file": "stl/body-right.stl",
+   "name": "Body right",
+   "grams": 73.6,
+   "print_hours": 3.68,
+   "bbox": [
+    16.1,
+    163.3,
+    158.6
+   ]
+  },
+  {
+   "file": "stl/lever.stl",
+   "name": "Palm lever",
+   "grams": 33.7,
+   "print_hours": 1.68,
+   "bbox": [
+    22.1,
+    67.2,
+    141.4
+   ]
+  },
+  {
+   "file": "stl/pusher.stl",
+   "name": "Spring pusher",
+   "grams": 3.4,
+   "print_hours": 0.25,
+   "bbox": [
+    25.4,
+    14.0,
+    25.4
+   ]
+  },
+  {
+   "file": "stl/seat.stl",
+   "name": "Preload seat (nut carrier)",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    19.9,
+    10.0,
+    22.2
+   ]
+  },
+  {
+   "file": "stl/knob.stl",
+   "name": "Adjust knob",
+   "grams": 6.9,
+   "print_hours": 0.34,
+   "bbox": [
+    30.0,
+    16.0,
+    30.0
+   ]
+  },
+  {
+   "file": "stl/back-plate.stl",
+   "name": "Plunger back plate",
+   "grams": 4.7,
+   "print_hours": 0.25,
+   "bbox": [
+    26.0,
+    21.1,
+    86.1
+   ]
+  },
+  {
+   "file": "stl/plunger-1.stl",
+   "name": "Plunger 1",
+   "grams": 2.1,
+   "print_hours": 0.25,
+   "bbox": [
+    16.0,
+    31.9,
+    17.6
+   ]
+  },
+  {
+   "file": "stl/plunger-2.stl",
+   "name": "Plunger 2",
+   "grams": 2.1,
+   "print_hours": 0.25,
+   "bbox": [
+    16.0,
+    31.9,
+    17.6
+   ]
+  },
+  {
+   "file": "stl/plunger-3.stl",
+   "name": "Plunger 3",
+   "grams": 2.1,
+   "print_hours": 0.25,
+   "bbox": [
+    16.0,
+    31.9,
+    17.6
+   ]
+  },
+  {
+   "file": "stl/plunger-4.stl",
+   "name": "Plunger 4",
+   "grams": 2.1,
+   "print_hours": 0.25,
+   "bbox": [
+    16.0,
+    31.9,
+    17.6
+   ]
+  }
+ ]
+}

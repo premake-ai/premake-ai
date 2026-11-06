@@ -1,0 +1,621 @@
+{
+ "parts": [
+  {
+   "name": "MGN12H linear rail 500 mm with block",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 17.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search 'MGN12H 500mm linear rail'; trimmed to 480 mm"
+  },
+  {
+   "name": "Delta carbon arms 300 mm, magnetic ball joints (set of 6 + 12 balls)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 35.0,
+   "supplier": "Amazon / AliExpress",
+   "url": "",
+   "notes": "search 'delta magnetic arms 300mm carbon'; balls on M3 studs"
+  },
+  {
+   "name": "V6-style hotend 24 V, 0.4 mm nozzle, thermistor",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 12.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search 'V6 hotend 24V bowden'"
+  },
+  {
+   "name": "Heated bed 220 mm round 24 V (~150 W)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 28.0,
+   "supplier": "Amazon / AliExpress",
+   "url": "",
+   "notes": "search 'kossel heated bed 220mm 24V'"
+  },
+  {
+   "name": "PEI build sheet 220 mm round, magnetic",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 12.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search 'round PEI sheet 220mm'"
+  },
+  {
+   "name": "32-bit mainboard with 4x TMC2209 (BTT SKR Mini E3 V3 or similar)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 40.0,
+   "supplier": "Amazon / Micro Center",
+   "url": "",
+   "notes": "search 'SKR Mini E3 V3'"
+  },
+  {
+   "name": "Dual-gear Bowden extruder (BMG-style)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 12.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search 'BMG dual gear extruder bowden'"
+  },
+  {
+   "name": "4010 blower fan 24 V (part cooling)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search '4010 blower fan 24V'; order the 30 mm hotend fan as 24 V too"
+  },
+  {
+   "name": "GT2 6 mm belt (5 m roll)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 8.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "about 1.2 m per tower"
+  },
+  {
+   "name": "PTFE tube 2 mm ID + PC4-M6 fittings",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 6.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search 'PTFE bowden tube kit'"
+  },
+  {
+   "name": "Mechanical endstop switch",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "top of each tower"
+  },
+  {
+   "name": "24 V 10 A power adapter, UL listed",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 30.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search '24V 10A power supply adapter UL'"
+  },
+  {
+   "name": "DC barrel pigtail, 14 AWG (matching adapter plug)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 3.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "to mainboard screw terminals"
+  },
+  {
+   "name": "Inline blade fuse holder + 15 A fuse",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "on the 24 V positive lead"
+  },
+  {
+   "name": "Stepper / sensor cable set (JST-XH, 1 m)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 10.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search 'stepper motor cable 1m XH2.54 4 pack'"
+  },
+  {
+   "name": "M5x10 button head screw + drop-in T-nut",
+   "qty_per_unit": 36,
+   "unit_cost_usd": 0.2,
+   "supplier": "McMaster / Amazon",
+   "url": "",
+   "notes": "frame, vertices, rails"
+  },
+  {
+   "name": "M3 socket screws assorted (8-20 mm) + nuts",
+   "qty_per_unit": 50,
+   "unit_cost_usd": 0.06,
+   "supplier": "McMaster / Amazon",
+   "url": "",
+   "notes": "motors, carriages, effector, board"
+  },
+  {
+   "name": "M5x25 screw + nylock (idler axle)",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.3,
+   "supplier": "McMaster",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "Rubber feet 20 mm",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "under the bottom vertices"
+  },
+  {
+   "name": "NEMA17 stepper motor 40 mm",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 11.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=NEMA17+stepper+motor+40mm",
+   "notes": "search: NEMA17 stepper motor 40mm",
+   "auto": "lib"
+  },
+  {
+   "name": "GT2 pulley 20T 5 mm bore",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=GT2+20T+pulley+5mm+bore",
+   "notes": "search: GT2 20T pulley 5mm bore",
+   "auto": "lib"
+  },
+  {
+   "name": "625ZZ bearing",
+   "qty_per_unit": 6,
+   "unit_cost_usd": 0.8,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=625ZZ+bearing",
+   "notes": "search: 625ZZ bearing",
+   "auto": "lib"
+  },
+  {
+   "name": "5V fan 30\u00d730\u00d710",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 3.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=5V+fan+30x30x10mm",
+   "notes": "search: 5V fan 30x30x10mm",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d710 brass standoff",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.18,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+brass+standoff+10mm",
+   "notes": "search: M3 brass standoff 10mm",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 360,
+ "kit_ok": false,
+ "printed": [
+  {
+   "file": "stl/bottom-vertex.stl",
+   "name": "Bottom vertex",
+   "grams": 201.9,
+   "print_hours": 10.09,
+   "bbox": [
+    124.6,
+    86.0,
+    84.0
+   ]
+  },
+  {
+   "file": "stl/top-vertex.stl",
+   "name": "Top vertex",
+   "grams": 62.4,
+   "print_hours": 3.12,
+   "bbox": [
+    124.6,
+    64.0,
+    22.0
+   ]
+  },
+  {
+   "file": "stl/carriage.stl",
+   "name": "Carriage",
+   "grams": 26.8,
+   "print_hours": 1.34,
+   "bbox": [
+    60.0,
+    17.0,
+    50.0
+   ]
+  },
+  {
+   "file": "stl/bottom-vertex-2.stl",
+   "name": "Bottom vertex",
+   "grams": 201.9,
+   "print_hours": 10.09,
+   "bbox": [
+    109.5,
+    113.5,
+    84.0
+   ]
+  },
+  {
+   "file": "stl/top-vertex-2.stl",
+   "name": "Top vertex",
+   "grams": 62.4,
+   "print_hours": 3.12,
+   "bbox": [
+    81.4,
+    107.9,
+    22.0
+   ]
+  },
+  {
+   "file": "stl/carriage-2.stl",
+   "name": "Carriage",
+   "grams": 26.8,
+   "print_hours": 1.34,
+   "bbox": [
+    40.7,
+    57.0,
+    50.0
+   ]
+  },
+  {
+   "file": "stl/bottom-vertex-3.stl",
+   "name": "Bottom vertex",
+   "grams": 201.9,
+   "print_hours": 10.09,
+   "bbox": [
+    101.5,
+    127.4,
+    84.0
+   ]
+  },
+  {
+   "file": "stl/top-vertex-3.stl",
+   "name": "Top vertex",
+   "grams": 62.4,
+   "print_hours": 3.12,
+   "bbox": [
+    81.4,
+    107.9,
+    22.0
+   ]
+  },
+  {
+   "file": "stl/carriage-3.stl",
+   "name": "Carriage",
+   "grams": 26.8,
+   "print_hours": 1.34,
+   "bbox": [
+    40.7,
+    57.0,
+    50.0
+   ]
+  },
+  {
+   "file": "stl/extruder-mount.stl",
+   "name": "Extruder mount",
+   "grams": 8.1,
+   "print_hours": 0.41,
+   "bbox": [
+    66.0,
+    44.0,
+    4.0
+   ]
+  },
+  {
+   "file": "stl/effector.stl",
+   "name": "Effector",
+   "grams": 29.8,
+   "print_hours": 1.49,
+   "bbox": [
+    84.1,
+    84.1,
+    8.1
+   ]
+  },
+  {
+   "file": "stl/bed-clip.stl",
+   "name": "Bed clip",
+   "grams": 2.2,
+   "print_hours": 0.25,
+   "bbox": [
+    30.0,
+    26.0,
+    4.0
+   ]
+  },
+  {
+   "file": "stl/bed-clip-2.stl",
+   "name": "Bed clip",
+   "grams": 2.2,
+   "print_hours": 0.25,
+   "bbox": [
+    37.5,
+    39.0,
+    4.0
+   ]
+  },
+  {
+   "file": "stl/bed-clip-3.stl",
+   "name": "Bed clip",
+   "grams": 2.2,
+   "print_hours": 0.25,
+   "bbox": [
+    37.5,
+    39.0,
+    4.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/frame-bar.stl",
+   "name": "Frame bar",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 296.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 296.0,
+    "minutes": 5.0,
+    "material_usd": 1.78
+   },
+   "bbox": [
+    165.3,
+    266.3,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/frame-bar-2.stl",
+   "name": "Frame bar",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 296.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 296.0,
+    "minutes": 5.0,
+    "material_usd": 1.78
+   },
+   "bbox": [
+    165.3,
+    266.3,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/frame-bar-3.stl",
+   "name": "Frame bar",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 296.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 296.0,
+    "minutes": 5.0,
+    "material_usd": 1.78
+   },
+   "bbox": [
+    165.3,
+    266.3,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/frame-bar-4.stl",
+   "name": "Frame bar",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 296.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 296.0,
+    "minutes": 5.0,
+    "material_usd": 1.78
+   },
+   "bbox": [
+    296.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/frame-bar-5.stl",
+   "name": "Frame bar",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 296.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 296.0,
+    "minutes": 5.0,
+    "material_usd": 1.78
+   },
+   "bbox": [
+    296.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/frame-bar-6.stl",
+   "name": "Frame bar",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 296.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 296.0,
+    "minutes": 5.0,
+    "material_usd": 1.78
+   },
+   "bbox": [
+    296.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/frame-bar-7.stl",
+   "name": "Frame bar",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 296.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 296.0,
+    "minutes": 5.0,
+    "material_usd": 1.78
+   },
+   "bbox": [
+    165.3,
+    266.3,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/frame-bar-8.stl",
+   "name": "Frame bar",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 296.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 296.0,
+    "minutes": 5.0,
+    "material_usd": 1.78
+   },
+   "bbox": [
+    165.3,
+    266.3,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/frame-bar-9.stl",
+   "name": "Frame bar",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 296.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 296.0,
+    "minutes": 5.0,
+    "material_usd": 1.78
+   },
+   "bbox": [
+    165.3,
+    266.3,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/tower.stl",
+   "name": "Tower",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 600.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 600.0,
+    "minutes": 5.0,
+    "material_usd": 3.6
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    600.0
+   ]
+  },
+  {
+   "file": "stl/tower-2.stl",
+   "name": "Tower",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 600.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 600.0,
+    "minutes": 5.0,
+    "material_usd": 3.6
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    600.0
+   ]
+  },
+  {
+   "file": "stl/tower-3.stl",
+   "name": "Tower",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 600.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 600.0,
+    "minutes": 5.0,
+    "material_usd": 3.6
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    600.0
+   ]
+  },
+  {
+   "file": "stl/floor-plate.stl",
+   "name": "Floor plate",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 3.0
+   },
+   "est": {
+    "cut_length_mm": 1452.2,
+    "area_cm2": 500.4,
+    "minutes": 2.2,
+    "material_usd": 5.25
+   },
+   "bbox": [
+    291.5,
+    258.3,
+    3.3
+   ]
+  }
+ ]
+}

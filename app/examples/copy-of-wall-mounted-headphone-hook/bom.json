@@ -1,0 +1,37 @@
+{
+ "parts": [
+  {
+   "name": "#8 wood screw",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "#8 x 1-1/4 in flat-head wood screws; search \"#8 x 1-1/4 flat head wood screws\""
+  },
+  {
+   "name": "Drywall anchor #8",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Ribbed plastic anchors for #8 screws, only for drywall without a stud; search \"#8 plastic drywall anchors\""
+  }
+ ],
+ "assembly_minutes": 5,
+ "kit_ok": true,
+ "needs_soldering": false,
+ "printed": [
+  {
+   "file": "stl/headphone-hook.stl",
+   "name": "Headphone hook",
+   "grams": 48.1,
+   "print_hours": 2.41,
+   "bbox": [
+    40.0,
+    71.0,
+    110.0
+   ]
+  }
+ ],
+ "fabricated": []
+}

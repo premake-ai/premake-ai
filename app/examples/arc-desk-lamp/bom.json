@@ -1,0 +1,81 @@
+{
+ "parts": [
+  {
+   "name": "USB 5 V LED strip, 4000 K, 1 m",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 7.99,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Cut to 180 mm"
+  },
+  {
+   "name": "Aluminium LED channel 17 x 7 mm with diffuser, 1 m",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Cut to 185 mm"
+  },
+  {
+   "name": "Inline USB dimmer switch",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.99,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "2 in fender washer, zinc",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.38,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": "Base weight"
+  },
+  {
+   "name": "Cyanoacrylate glue (shared)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.3,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": "Arm into base and head"
+  }
+ ],
+ "assembly_minutes": 20,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/lamp-base.stl",
+   "name": "Lamp base",
+   "grams": 91.2,
+   "print_hours": 4.56,
+   "bbox": [
+    124.2,
+    124.2,
+    16.2
+   ]
+  },
+  {
+   "file": "stl/arc-arm.stl",
+   "name": "Arc arm",
+   "grams": 73.6,
+   "print_hours": 3.68,
+   "bbox": [
+    25.0,
+    159.9,
+    246.7
+   ]
+  },
+  {
+   "file": "stl/lamp-head.stl",
+   "name": "Lamp head",
+   "grams": 42.8,
+   "print_hours": 2.14,
+   "bbox": [
+    200.0,
+    30.0,
+    16.0
+   ]
+  }
+ ]
+}

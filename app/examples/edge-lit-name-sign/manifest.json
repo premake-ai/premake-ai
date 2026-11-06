@@ -1,0 +1,217 @@
+{
+ "t": 1793336944.984533,
+ "title": "Edge-Lit Name Sign",
+ "parts": [
+  {
+   "file": "stl/base.stl",
+   "name": "Base",
+   "group": "case",
+   "process": "print",
+   "color": "#222222",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    220.0,
+    45.1,
+    26.0
+   ]
+  },
+  {
+   "file": "stl/sign-panel.stl",
+   "name": "Sign panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#cfe8ff",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    200.0,
+    6.0,
+    110.0
+   ]
+  },
+  {
+   "file": "stl/bottom-plate.stl",
+   "name": "Bottom plate",
+   "group": "case",
+   "process": "laser",
+   "color": "#111111",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    220.0,
+    45.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/ws2812b-led-strip-12-leds.stl",
+   "name": "WS2812B LED strip, 12 LEDs",
+   "group": "component",
+   "process": "bought",
+   "color": "#f1f0ea",
+   "explode": [
+    0.0,
+    -0.0,
+    -1.0
+   ],
+   "bbox": [
+    200.5,
+    10.0,
+    1.9
+   ],
+   "subparts": [
+    {
+     "file": "stl/ws2812b-led-strip-12-leds__0.stl",
+     "color": "#f1f0ea",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/ws2812b-led-strip-12-leds__1.stl",
+     "color": "#f6f4ee",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/ws2812b-led-strip-12-leds__2.stl",
+     "color": "#f7efc9",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/ws2812b-led-strip-12-leds__3.stl",
+     "color": "#b48a5c",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/ws2812b-led-strip-12-leds__4.stl",
+     "color": "#c47a4c",
+     "finish": "gold"
+    }
+   ],
+   "lib": {
+    "key": "ws2812_strip",
+    "qty": 1,
+    "name": "WS2812B LED strip, 12 LEDs",
+    "unit_cost_usd": 2.0,
+    "mass_g": 1.3
+   }
+  },
+  {
+   "file": "stl/esp32-c3-supermini.stl",
+   "name": "ESP32-C3 SuperMini",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    -0.863,
+    0.044,
+    -0.503
+   ],
+   "bbox": [
+    23.5,
+    18.0,
+    4.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/esp32-c3-supermini__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__4.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__6.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    }
+   ],
+   "lib": {
+    "key": "esp32_c3_supermini",
+    "qty": 1,
+    "name": "ESP32-C3 SuperMini",
+    "unit_cost_usd": 4.0,
+    "mass_g": 2.0
+   }
+  },
+  {
+   "file": "stl/m3-8-countersunk-screw-4.stl",
+   "name": "M3\u00d78 countersunk screw \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    -0.0,
+    -1.0
+   ],
+   "bbox": [
+    206.0,
+    34.0,
+    8.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-8-countersunk-screw-4__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "csk",
+    "qty": 4,
+    "name": "M3\u00d78 countersunk screw",
+    "unit_cost_usd": 0.097,
+    "mass_g": 0.5
+   }
+  },
+  {
+   "file": "stl/rubber-bumper-12-mm.stl",
+   "name": "Rubber bumper 12 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#333333",
+   "explode": [
+    0.0,
+    -0.0,
+    -1.0
+   ],
+   "bbox": [
+    192.0,
+    36.0,
+    3.5
+   ]
+  }
+ ]
+}

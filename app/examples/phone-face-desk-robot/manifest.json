@@ -1,0 +1,812 @@
+{
+ "t": 1793392308.258347,
+ "title": "This",
+ "parts": [
+  {
+   "file": "stl/chassis.stl",
+   "name": "Chassis",
+   "group": "case",
+   "process": "print",
+   "color": "#f1efe9",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    106.0,
+    100.0,
+    34.0
+   ]
+  },
+  {
+   "file": "stl/top-cover.stl",
+   "name": "Top cover",
+   "group": "case",
+   "process": "print",
+   "color": "#f1efe9",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    106.0,
+    100.0,
+    26.3
+   ]
+  },
+  {
+   "file": "stl/face.stl",
+   "name": "Face mount",
+   "group": "case",
+   "process": "print",
+   "color": "#ff8a3d",
+   "explode": [
+    0.0,
+    -1.0,
+    1.0
+   ],
+   "bbox": [
+    84.0,
+    7.8,
+    75.1
+   ]
+  },
+  {
+   "file": "stl/headback.stl",
+   "name": "Head back",
+   "group": "case",
+   "process": "print",
+   "color": "#f1efe9",
+   "explode": [
+    0.0,
+    1.0,
+    1.0
+   ],
+   "bbox": [
+    84.0,
+    22.4,
+    82.0
+   ]
+  },
+  {
+   "file": "stl/track-l.stl",
+   "name": "Track L",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2b",
+   "explode": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    14.0,
+    98.0,
+    36.0
+   ],
+   "material": "rubber"
+  },
+  {
+   "file": "stl/dwl.stl",
+   "name": "Drive wheel L",
+   "group": "case",
+   "process": "print",
+   "color": "#ff8a3d",
+   "explode": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    14.0,
+    28.6,
+    28.6
+   ]
+  },
+  {
+   "file": "stl/iwl.stl",
+   "name": "Idler wheel L",
+   "group": "case",
+   "process": "print",
+   "color": "#ff8a3d",
+   "explode": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    14.0,
+    28.6,
+    28.6
+   ]
+  },
+  {
+   "file": "stl/track-r.stl",
+   "name": "Track R",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2b",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    14.0,
+    98.0,
+    36.0
+   ],
+   "material": "rubber"
+  },
+  {
+   "file": "stl/dwr.stl",
+   "name": "Drive wheel R",
+   "group": "case",
+   "process": "print",
+   "color": "#ff8a3d",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    14.0,
+    28.6,
+    28.6
+   ]
+  },
+  {
+   "file": "stl/iwr.stl",
+   "name": "Idler wheel R",
+   "group": "case",
+   "process": "print",
+   "color": "#ff8a3d",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    14.0,
+    28.6,
+    28.6
+   ]
+  },
+  {
+   "file": "stl/puck.stl",
+   "name": "Magnetic charger puck",
+   "group": "component",
+   "process": "bought",
+   "color": "#d9d9d9",
+   "explode": [
+    0.0,
+    -1.0,
+    1.0
+   ],
+   "bbox": [
+    58.5,
+    6.3,
+    58.6
+   ]
+  },
+  {
+   "file": "stl/headscrews.stl",
+   "name": "M3\u00d78 button head screw \u00d73",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.001,
+    0.046,
+    0.999
+   ],
+   "bbox": [
+    79.7,
+    9.6,
+    42.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/headscrews__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 3,
+    "name": "M3\u00d78 button head screw",
+    "unit_cost_usd": 0.097,
+    "mass_g": 0.7
+   }
+  },
+  {
+   "file": "stl/headinserts.stl",
+   "name": "M3 heat-set insert \u00d73",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    -0.001,
+    -0.18,
+    0.984
+   ],
+   "bbox": [
+    78.6,
+    5.7,
+    41.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/headinserts__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "insert",
+    "qty": 3,
+    "name": "M3 heat-set insert",
+    "unit_cost_usd": 0.12,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/phone.stl",
+   "name": "iPhone 16 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2a3b49",
+   "explode": [
+    0.0,
+    -0.376,
+    0.927
+   ],
+   "bbox": [
+    147.6,
+    10.5,
+    72.3
+   ],
+   "ref_model": {
+    "key": "iphone_16",
+    "m": [
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.01
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -11.25
+     ],
+     [
+      -1.0,
+      0.0,
+      0.0,
+      95.5
+     ],
+     [
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "yours": true
+   }
+  },
+  {
+   "file": "stl/sg90-micro-servo.stl",
+   "name": "SG90 micro servo",
+   "group": "component",
+   "process": "bought",
+   "color": "#2c5fbf",
+   "explode": [
+    0.942,
+    0.104,
+    -0.319
+   ],
+   "bbox": [
+    29.9,
+    45.5,
+    12.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/sg90-micro-servo__0.stl",
+     "color": "#2c5fbf",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/sg90-micro-servo__1.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/sg90-micro-servo__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/sg90-micro-servo__3.stl",
+     "color": "#f3f1ea",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/sg90-micro-servo__4.stl",
+     "color": "#6b3a1f",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/sg90-micro-servo__5.stl",
+     "color": "#d23b2e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/sg90-micro-servo__6.stl",
+     "color": "#f08a1c",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "sg90",
+    "qty": 1,
+    "name": "SG90 micro servo",
+    "unit_cost_usd": 2.5,
+    "mass_g": 9.0
+   }
+  },
+  {
+   "file": "stl/m3-16-socket-head-screw.stl",
+   "name": "M3\u00d716 socket head screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.788,
+    0.495,
+    -0.365
+   ],
+   "bbox": [
+    19.0,
+    5.5,
+    5.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-16-socket-head-screw__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 1,
+    "name": "M3\u00d716 socket head screw",
+    "unit_cost_usd": 0.104,
+    "mass_g": 1.4
+   }
+  },
+  {
+   "file": "stl/axleins.stl",
+   "name": "M3 heat-set insert (tilt axle)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    -0.722,
+    0.557,
+    -0.411
+   ],
+   "bbox": [
+    5.7,
+    4.6,
+    4.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/axleins__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "insert",
+    "qty": 1,
+    "name": "M3 heat-set insert",
+    "unit_cost_usd": 0.12,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/n20-gear-motor-6v-100rpm.stl",
+   "name": "N20 gear motor 6V 100rpm",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc2",
+   "explode": [
+    -0.55,
+    -0.471,
+    -0.69
+   ],
+   "bbox": [
+    24.0,
+    10.0,
+    12.0
+   ]
+  },
+  {
+   "file": "stl/n20-gear-motor-6v-100rpm-2.stl",
+   "name": "N20 gear motor 6V 100rpm",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc2",
+   "explode": [
+    0.55,
+    -0.471,
+    -0.69
+   ],
+   "bbox": [
+    24.0,
+    10.0,
+    12.0
+   ]
+  },
+  {
+   "file": "stl/m3-25-button-head-screw-2.stl",
+   "name": "M3\u00d725 button head screw \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.0,
+    0.54,
+    -0.842
+   ],
+   "bbox": [
+    140.3,
+    5.7,
+    5.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-25-button-head-screw-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 2,
+    "name": "M3\u00d725 button head screw",
+    "unit_cost_usd": 0.112,
+    "mass_g": 1.6
+   }
+  },
+  {
+   "file": "stl/m3-nylock-nut-2.stl",
+   "name": "M3 nylock nut \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.0,
+    0.54,
+    -0.842
+   ],
+   "bbox": [
+    102.0,
+    5.5,
+    6.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-nylock-nut-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/m3-nylock-nut-2__1.stl",
+     "color": "#e8e4d6",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 2,
+    "name": "M3 nylock nut",
+    "unit_cost_usd": 0.09,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/2x18650-battery-shield-usb-c.stl",
+   "name": "2x18650 battery shield (USB-C)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f6f3a",
+   "explode": [
+    -0.0,
+    -0.053,
+    -0.999
+   ],
+   "bbox": [
+    100.3,
+    48.3,
+    1.6
+   ]
+  },
+  {
+   "file": "stl/18650-li-ion-cell-2.stl",
+   "name": "18650 Li-ion cell \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#2f6fd0",
+   "explode": [
+    0.012,
+    -0.066,
+    -0.998
+   ],
+   "bbox": [
+    66.1,
+    40.4,
+    18.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/18650-li-ion-cell-2__0.stl",
+     "color": "#2f6fd0",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/18650-li-ion-cell-2__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/18650-li-ion-cell-2__2.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "cell_18650",
+    "qty": 2,
+    "name": "18650 Li-ion cell",
+    "unit_cost_usd": 5.0,
+    "mass_g": 46.0
+   }
+  },
+  {
+   "file": "stl/esp32-c3-supermini.stl",
+   "name": "ESP32-C3 SuperMini",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    -0.336,
+    0.552,
+    -0.763
+   ],
+   "bbox": [
+    23.5,
+    18.0,
+    4.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/esp32-c3-supermini__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__4.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__6.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    }
+   ],
+   "lib": {
+    "key": "esp32_c3_supermini",
+    "qty": 1,
+    "name": "ESP32-C3 SuperMini",
+    "unit_cost_usd": 4.0,
+    "mass_g": 2.0
+   }
+  },
+  {
+   "file": "stl/drv8833-motor-driver.stl",
+   "name": "DRV8833 motor driver",
+   "group": "component",
+   "process": "bought",
+   "color": "#2255aa",
+   "explode": [
+    0.031,
+    0.585,
+    -0.811
+   ],
+   "bbox": [
+    18.5,
+    16.0,
+    4.0
+   ]
+  },
+  {
+   "file": "stl/d4184-mosfet-module-charger-switch.stl",
+   "name": "D4184 MOSFET module (charger switch)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2255aa",
+   "explode": [
+    0.421,
+    0.533,
+    -0.734
+   ],
+   "bbox": [
+    34.0,
+    17.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/tcrt5000-cliff-sensor.stl",
+   "name": "TCRT5000 cliff sensor",
+   "group": "component",
+   "process": "bought",
+   "color": "#2255aa",
+   "explode": [
+    -0.282,
+    -0.683,
+    -0.674
+   ],
+   "bbox": [
+    14.0,
+    6.0,
+    32.0
+   ]
+  },
+  {
+   "file": "stl/tcrt5000-cliff-sensor-2.stl",
+   "name": "TCRT5000 cliff sensor",
+   "group": "component",
+   "process": "bought",
+   "color": "#2255aa",
+   "explode": [
+    0.281,
+    -0.683,
+    -0.674
+   ],
+   "bbox": [
+    14.0,
+    6.0,
+    32.0
+   ]
+  },
+  {
+   "file": "stl/usb-c-panel-extension.stl",
+   "name": "USB-C panel extension",
+   "group": "component",
+   "process": "bought",
+   "color": "#333333",
+   "explode": [
+    -0.312,
+    0.696,
+    -0.647
+   ],
+   "bbox": [
+    16.0,
+    22.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/mini-rocker-switch.stl",
+   "name": "Mini rocker switch",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    0.264,
+    0.717,
+    -0.645
+   ],
+   "bbox": [
+    13.0,
+    18.0,
+    9.0
+   ]
+  },
+  {
+   "file": "stl/m3-heat-set-insert-4.stl",
+   "name": "M3 heat-set insert \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    -0.0,
+    -0.035,
+    -0.999
+   ],
+   "bbox": [
+    92.6,
+    90.6,
+    5.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-heat-set-insert-4__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "insert",
+    "qty": 4,
+    "name": "M3 heat-set insert",
+    "unit_cost_usd": 0.12,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m3-10-button-head-screw-4.stl",
+   "name": "M3\u00d710 button head screw \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.0,
+    -0.031,
+    -1.0
+   ],
+   "bbox": [
+    93.7,
+    91.7,
+    11.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-button-head-screw-4__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M3\u00d710 button head screw",
+    "unit_cost_usd": 0.099,
+    "mass_g": 0.8
+   }
+  }
+ ],
+ "scene": "desk"
+}

@@ -1,0 +1,79 @@
+{
+ "parts": [
+  {
+   "name": "SG90 micro servo (bolt latch)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 2.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: SG90 servo"
+  },
+  {
+   "name": "ESP32-C3 SuperMini",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: ESP32-C3 SuperMini"
+  },
+  {
+   "name": "USB-C cable + 5V USB charger",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 6.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "powers ESP32 through the side port"
+  },
+  {
+   "name": "Hinge pin 3 mm steel rod, 185 mm",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.0,
+   "supplier": "Hardware store",
+   "url": "",
+   "notes": "cut from 3 mm rod"
+  },
+  {
+   "name": "Dupont jumper wires",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "servo to ESP32"
+  },
+  {
+   "name": "M2 screws for servo",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  }
+ ],
+ "assembly_minutes": 20,
+ "kit_ok": false,
+ "printed": [
+  {
+   "file": "stl/base.stl",
+   "name": "Base",
+   "grams": 101.5,
+   "print_hours": 5.07,
+   "bbox": [
+    195.0,
+    110.0,
+    47.0
+   ]
+  },
+  {
+   "file": "stl/lid.stl",
+   "name": "Lid",
+   "grams": 53.7,
+   "print_hours": 2.68,
+   "bbox": [
+    195.0,
+    110.0,
+    26.0
+   ]
+  }
+ ],
+ "fabricated": []
+}

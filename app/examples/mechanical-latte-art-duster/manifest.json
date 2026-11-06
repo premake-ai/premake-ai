@@ -1,0 +1,311 @@
+{
+ "t": 1793923632.548985,
+ "title": "Mechanical Latte Art Duster",
+ "parts": [
+  {
+   "file": "stl/camera-body.stl",
+   "name": "Camera body",
+   "group": "case",
+   "process": "print",
+   "color": "#f1ece1",
+   "explode": [
+    0.0,
+    0.979,
+    0.205
+   ],
+   "bbox": [
+    106.0,
+    98.1,
+    57.1
+   ]
+  },
+  {
+   "file": "stl/cup-rim-ring.stl",
+   "name": "Cup rim ring",
+   "group": "case",
+   "process": "print",
+   "color": "#c9a24a",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    102.1,
+    102.1,
+    15.8
+   ]
+  },
+  {
+   "file": "stl/silicone-lens-cap-stretch-lid.stl",
+   "name": "Silicone lens cap (stretch lid)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2b2b",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    105.1,
+    105.1,
+    6.3
+   ],
+   "material": "silicone"
+  },
+  {
+   "file": "stl/basket.stl",
+   "name": "Sieve basket",
+   "group": "case",
+   "process": "print",
+   "color": "#f1ece1",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    73.1,
+    56.2,
+    24.7
+   ]
+  },
+  {
+   "file": "stl/clamp.stl",
+   "name": "Mesh clamp ring",
+   "group": "case",
+   "process": "print",
+   "color": "#f1ece1",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    52.2,
+    52.2,
+    2.6
+   ]
+  },
+  {
+   "file": "stl/mesh.stl",
+   "name": "Stainless sieve mesh (40 mesh)",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8b8b8",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    51.8,
+    51.8,
+    0.4
+   ],
+   "material": "steel",
+   "step": "step/mesh.step"
+  },
+  {
+   "file": "stl/hopper-funnel.stl",
+   "name": "Hopper funnel",
+   "group": "case",
+   "process": "print",
+   "color": "#f1ece1",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    67.4,
+    67.5,
+    21.3
+   ]
+  },
+  {
+   "file": "stl/hopper-lid.stl",
+   "name": "Hopper lid",
+   "group": "case",
+   "process": "print",
+   "color": "#c9a24a",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    72.0,
+    72.1,
+    11.0
+   ]
+  },
+  {
+   "file": "stl/plunger.stl",
+   "name": "Shutter button",
+   "group": "case",
+   "process": "print",
+   "color": "#c9a24a",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    16.0,
+    16.0,
+    36.0
+   ]
+  },
+  {
+   "file": "stl/spring-bsk.stl",
+   "name": "Sieve return spring",
+   "group": "component",
+   "process": "bought",
+   "color": "#9a9a9a",
+   "explode": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    16.9,
+    6.0,
+    6.0
+   ]
+  },
+  {
+   "file": "stl/spring-btn.stl",
+   "name": "Button spring",
+   "group": "component",
+   "process": "bought",
+   "color": "#9a9a9a",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    11.0,
+    11.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/stencil-heart.stl",
+   "name": "Stencil: heart",
+   "group": "case",
+   "process": "sheet",
+   "color": "#a9b1bb",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    60.0,
+    88.0,
+    0.8
+   ],
+   "material": "steel",
+   "step": "step/stencil-heart.step"
+  },
+  {
+   "file": "stl/stencil-star.stl",
+   "name": "Stencil: star",
+   "group": "case",
+   "process": "sheet",
+   "color": "#a9b1bb",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    88.0,
+    0.8,
+    60.0
+   ],
+   "material": "steel",
+   "step": "step/stencil-star.step"
+  },
+  {
+   "file": "stl/stencil-smile.stl",
+   "name": "Stencil: smile",
+   "group": "case",
+   "process": "sheet",
+   "color": "#a9b1bb",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    88.0,
+    0.8,
+    60.0
+   ],
+   "material": "steel",
+   "step": "step/stencil-smile.step"
+  },
+  {
+   "file": "stl/stencil-snowflake.stl",
+   "name": "Stencil: snowflake",
+   "group": "case",
+   "process": "sheet",
+   "color": "#a9b1bb",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    88.0,
+    0.8,
+    60.0
+   ],
+   "material": "steel",
+   "step": "step/stencil-snowflake.step"
+  }
+ ],
+ "cables": false,
+ "scene": "counter",
+ "assembly_order": [
+  [
+   "Camera body"
+  ],
+  [
+   "Stainless sieve mesh (40 mesh)",
+   "Mesh clamp ring",
+   "Sieve basket",
+   "Sieve return spring"
+  ],
+  [
+   "Shutter button",
+   "Button spring"
+  ],
+  [
+   "Hopper funnel",
+   "Hopper lid"
+  ],
+  [
+   "Cup rim ring",
+   "Stencil: heart"
+  ],
+  [
+   "Stencil: star",
+   "Stencil: smile",
+   "Stencil: snowflake"
+  ],
+  [
+   "Silicone lens cap (stretch lid)"
+  ]
+ ],
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 4
+ }
+}

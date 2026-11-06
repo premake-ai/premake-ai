@@ -1,0 +1,125 @@
+{
+ "t": 1793242643.155303,
+ "title": "Hidden-cleat wall hooks",
+ "parts": [
+  {
+   "file": "stl/hook-1.stl",
+   "name": "Hook 1",
+   "group": "case",
+   "process": "print",
+   "color": "#264653",
+   "explode": [
+    0.0,
+    -1.0,
+    0.6
+   ],
+   "bbox": [
+    19.2,
+    42.2,
+    70.8
+   ]
+  },
+  {
+   "file": "stl/hook-2.stl",
+   "name": "Hook 2",
+   "group": "case",
+   "process": "print",
+   "color": "#2a9d8f",
+   "explode": [
+    0.0,
+    -1.0,
+    0.6
+   ],
+   "bbox": [
+    19.2,
+    42.2,
+    70.8
+   ]
+  },
+  {
+   "file": "stl/hook-3.stl",
+   "name": "Hook 3",
+   "group": "case",
+   "process": "print",
+   "color": "#e76f51",
+   "explode": [
+    0.0,
+    -1.0,
+    0.6
+   ],
+   "bbox": [
+    19.2,
+    42.2,
+    70.8
+   ]
+  },
+  {
+   "file": "stl/wall-cleat-1.stl",
+   "name": "Wall cleat 1",
+   "group": "case",
+   "process": "print",
+   "color": "#c9ccd2",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    14.0,
+    8.0,
+    28.0
+   ]
+  },
+  {
+   "file": "stl/wall-cleat-2.stl",
+   "name": "Wall cleat 2",
+   "group": "case",
+   "process": "print",
+   "color": "#c9ccd2",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    14.0,
+    8.0,
+    28.0
+   ]
+  },
+  {
+   "file": "stl/wall-cleat-3.stl",
+   "name": "Wall cleat 3",
+   "group": "case",
+   "process": "print",
+   "color": "#c9ccd2",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    14.0,
+    8.0,
+    28.0
+   ]
+  },
+  {
+   "file": "stl/8-flat-head-screws-x3.stl",
+   "name": "#8 flat-head screws (x3)",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa0a6",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    96.5,
+    32.1,
+    8.5
+   ]
+  }
+ ]
+}

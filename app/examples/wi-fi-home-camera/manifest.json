@@ -1,0 +1,280 @@
+{
+ "t": 1793742849.57906,
+ "title": "Wi-Fi Home Camera",
+ "parts": [
+  {
+   "file": "stl/base.stl",
+   "name": "Base",
+   "group": "case",
+   "process": "print",
+   "color": "#f2f2f0",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    45.1,
+    45.1,
+    18.1
+   ],
+   "cable": {
+    "type": "usb-c",
+    "at": [
+     0.0,
+     22.5,
+     2.5
+    ],
+    "dir": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "length_mm": 600.0
+   }
+  },
+  {
+   "file": "stl/aluminium-tube.stl",
+   "name": "Aluminium tube",
+   "group": "component",
+   "process": "bought",
+   "color": "#d2c4ae",
+   "explode": [
+    0.001,
+    0.271,
+    0.963
+   ],
+   "bbox": [
+    45.1,
+    45.1,
+    145.1
+   ],
+   "material": "aluminium",
+   "step": "step/aluminium-tube.step"
+  },
+  {
+   "file": "stl/chassis.stl",
+   "name": "Chassis",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3a3a",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    40.8,
+    19.7,
+    132.0
+   ]
+  },
+  {
+   "file": "stl/top-cap.stl",
+   "name": "Top cap",
+   "group": "case",
+   "process": "print",
+   "color": "#f2f2f0",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    45.0,
+    45.0,
+    10.1
+   ]
+  },
+  {
+   "file": "stl/front-strip.stl",
+   "name": "Front strip",
+   "group": "case",
+   "process": "print",
+   "color": "#141416",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    20.1,
+    4.4,
+    100.1
+   ]
+  },
+  {
+   "file": "stl/xiao-esp32s3-sense.stl",
+   "name": "XIAO ESP32S3 Sense",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d3b2a",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    17.8,
+    10.0,
+    21.0
+   ]
+  },
+  {
+   "file": "stl/camera-module.stl",
+   "name": "Camera module",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    8.5,
+    5.0,
+    8.5
+   ]
+  },
+  {
+   "file": "stl/am312-pir-sensor.stl",
+   "name": "AM312 PIR sensor",
+   "group": "component",
+   "process": "bought",
+   "color": "#f4f4f4",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    10.0,
+    23.1,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/m2-5-8-self-tapping-screw-for-plastic-2.stl",
+   "name": "M2.5\u00d78 self-tapping screw for plastic \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.0,
+    -0.042,
+    -0.999
+   ],
+   "bbox": [
+    29.0,
+    5.0,
+    9.9
+   ],
+   "subparts": [
+    {
+     "file": "stl/m2-5-8-self-tapping-screw-for-plastic-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 2,
+    "name": "M2.5\u00d78 self-tapping screw for plastic",
+    "unit_cost_usd": 0.052,
+    "mass_g": 0.5
+   }
+  },
+  {
+   "file": "stl/m2-5-8-self-tapping-screw-for-plastic.stl",
+   "name": "M2.5\u00d78 self-tapping screw for plastic",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.172,
+    0.254,
+    -0.952
+   ],
+   "bbox": [
+    7.5,
+    9.3,
+    5.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m2-5-8-self-tapping-screw-for-plastic__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M2.5\u00d78 self-tapping screw for plastic",
+    "unit_cost_usd": 0.052,
+    "mass_g": 0.5
+   }
+  },
+  {
+   "file": "stl/m2-5-8-self-tapping-screw-for-plastic-2-2.stl",
+   "name": "M2.5\u00d78 self-tapping screw for plastic (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.172,
+    0.254,
+    -0.952
+   ],
+   "bbox": [
+    7.5,
+    9.3,
+    5.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m2-5-8-self-tapping-screw-for-plastic-2-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M2.5\u00d78 self-tapping screw for plastic",
+    "unit_cost_usd": 0.052,
+    "mass_g": 0.5
+   }
+  }
+ ],
+ "scene": "shelf",
+ "assembly_order": [
+  [
+   "Base"
+  ],
+  [
+   "Chassis"
+  ],
+  [
+   "XIAO ESP32S3 Sense",
+   "Camera module",
+   "AM312 PIR sensor"
+  ],
+  [
+   "Aluminium tube"
+  ],
+  [
+   "Front strip"
+  ],
+  [
+   "Top cap"
+  ]
+ ],
+ "wiring": {
+  "file": "wiring.json",
+  "wires": 0,
+  "parts": [],
+  "ok": true
+ }
+}

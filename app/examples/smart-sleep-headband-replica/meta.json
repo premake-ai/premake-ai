@@ -1,0 +1,12 @@
+{
+ "title": "Smart Sleep Headband Replica",
+ "description": "Flux Sleep-style water-cooled mattress pad: a 340 x 176 x 125 mm Peltier chiller/heater with Eco/Max and a timer, pumping water through a pad.",
+ "creator": "Premake",
+ "tags": [
+  "sleep",
+  "peltier",
+  "cooling"
+ ],
+ "created": "2026-11-03T03:38:38.206Z",
+ "demo": true
+}

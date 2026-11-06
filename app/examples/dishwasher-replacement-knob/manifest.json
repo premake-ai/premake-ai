@@ -1,0 +1,46 @@
+{
+ "t": 1793336478.345666,
+ "title": "Dishwasher Replacement Knob",
+ "parts": [
+  {
+   "file": "stl/knob.stl",
+   "name": "Knob",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2d30",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    40.0,
+    39.8,
+    22.0
+   ]
+  },
+  {
+   "file": "stl/shaft.stl",
+   "name": "Dishwasher D-shaft (reference)",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8b8b8",
+   "explode": [
+    -0.0,
+    -0.148,
+    -0.989
+   ],
+   "bbox": [
+    6.0,
+    4.5,
+    28.0
+   ]
+  }
+ ],
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 2
+ }
+}

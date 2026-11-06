@@ -1,0 +1,54 @@
+{
+ "t": 1793164685.60428,
+ "title": "Magnetic knife bar",
+ "parts": [
+  {
+   "file": "stl/knife-bar.stl",
+   "name": "Knife bar",
+   "group": "case",
+   "color": "#c98b5a",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    240.0,
+    15.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/n52-bar-magnets-20x10x3-10x.stl",
+   "name": "N52 bar magnets 20x10x3 (10x)",
+   "group": "component",
+   "color": "#7a7f87",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    220.0,
+    3.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/8-x-1-1-2-in-pan-screws-anchors-2x.stl",
+   "name": "#8 x 1-1/2 in pan screws + anchors (2x)",
+   "group": "component",
+   "color": "#b0b5bb",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    168.4,
+    40.1,
+    8.4
+   ]
+  }
+ ]
+}

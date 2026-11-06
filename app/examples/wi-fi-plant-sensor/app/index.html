@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script src="/apps/sdk.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>Plant Sensor</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div id="banner" class="banner" role="status" hidden>
+    <span><b>Couldn't refresh</b><span id="banner-msg"></span></span>
+    <button type="button" class="link-btn" data-act="retry">Try again</button>
+  </div>
+
+  <main>
+    <section id="screen-plants" class="screen" aria-labelledby="plants-title">
+      <h1 id="plants-title" class="large-title">My plants</h1>
+      <p id="summary" class="summary" aria-live="polite"></p>
+      <div id="list"></div>
+      <button type="button" id="add-row" class="add-row" data-act="add" hidden>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        Add a sensor
+      </button>
+    </section>
+
+    <section id="screen-detail" class="screen" hidden>
+      <div class="nav-row">
+        <button type="button" class="back" data-act="back" aria-label="Back to my plants">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+          My plants
+        </button>
+      </div>
+      <div id="d-head" class="d-head"></div>
+      <div id="d-care" class="card"></div>
+      <div class="seg" role="group" aria-label="Chart period">
+        <button type="button" data-act="range" data-range="day" aria-pressed="false">Day</button>
+        <button type="button" data-act="range" data-range="week" class="on" aria-pressed="true">Week</button>
+        <button type="button" data-act="range" data-range="month" aria-pressed="false">Month</button>
+      </div>
+      <div id="d-charts"></div>
+      <div id="d-photos" class="card"></div>
+      <div id="d-info" class="card info-card"></div>
+    </section>
+
+    <section id="screen-find" class="screen" aria-labelledby="find-title" hidden>
+      <h1 id="find-title" class="large-title">Find plants</h1>
+      <p class="lede">Pick a sensor and see which plants would thrive where it sits, based on its last week of light, warmth and humidity.</p>
+      <div id="f-sensors"></div>
+      <div id="f-body"></div>
+    </section>
+  </main>
+
+  <nav class="tabbar" aria-label="Sections">
+    <button type="button" class="tab" data-act="tab" data-tab="plants" aria-current="page">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 14h10l-1.5 7h-7z"/><path d="M12 14V9"/><path d="M12 10c-.5-3.5-3-5.5-6.5-5 .4 3.5 3 5.4 6.5 5zM12 9c.5-3.5 3.2-5.6 7-5-.5 3.8-3.2 5.6-7 5z"/></svg>
+      <span>Plants</span>
+    </button>
+    <button type="button" class="tab" data-act="tab" data-tab="find">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg>
+      <span>Find plants</span>
+    </button>
+  </nav>
+
+  <div id="sheet" class="sheet-wrap" hidden>
+    <button type="button" class="sheet-backdrop" data-act="close-sheet" aria-label="Close" tabindex="-1"></button>
+    <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+      <div class="sheet-grab" aria-hidden="true"></div>
+      <div class="sheet-head">
+        <h2 id="sheet-title">Plant type</h2>
+        <button type="button" class="link-btn" data-act="close-sheet">Done</button>
+      </div>
+      <div class="sheet-search">
+        <label class="sr" for="sheet-search">Search plants</label>
+        <input id="sheet-search" type="search" placeholder="Search plants" autocomplete="off" enterkeyhint="search">
+      </div>
+      <div id="sheet-list" class="sheet-list"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

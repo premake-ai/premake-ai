@@ -1,0 +1,89 @@
+{
+ "t": 1793831150.080053,
+ "title": "Desk Watering Pot",
+ "parts": [
+  {
+   "file": "stl/pot-body.stl",
+   "name": "Pot body",
+   "group": "case",
+   "process": "print",
+   "color": "#55595e",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    193.0,
+    93.7,
+    52.9
+   ]
+  },
+  {
+   "file": "stl/lid-gasket-tpu.stl",
+   "name": "Lid gasket (TPU)",
+   "group": "case",
+   "process": "print",
+   "color": "#1d1d1f",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    84.8,
+    84.8,
+    1.1
+   ]
+  },
+  {
+   "file": "stl/lid.stl",
+   "name": "Lid",
+   "group": "case",
+   "process": "print",
+   "color": "#686c71",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    85.0,
+    85.0,
+    2.1
+   ]
+  },
+  {
+   "file": "stl/m3-10-self-tapping-screw-for-plastic-2.stl",
+   "name": "M3\u00d710 self-tapping screw for plastic \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.416,
+    0.0,
+    0.91
+   ],
+   "bbox": [
+    52.2,
+    61.1,
+    12.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-self-tapping-screw-for-plastic-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 2,
+    "name": "M3\u00d710 self-tapping screw for plastic",
+    "unit_cost_usd": 0.059,
+    "mass_g": 0.8
+   }
+  }
+ ],
+ "scene": "desk"
+}

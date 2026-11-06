@@ -1,0 +1,533 @@
+{
+ "parts": [
+  {
+   "name": "Worktable 300 x 180 T-slot",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 35.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 3018 CNC aluminum T-slot worktable 300x180 (the original's aluminium bed profile)"
+  },
+  {
+   "name": "775 spindle 24 V",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 22.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 775 spindle motor 24V ER11 extension rod (with ER11 collets)"
+  },
+  {
+   "name": "GRBL controller board",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 30.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 3018 CNC GRBL 1.1 control board with case and fan, offline controller port (pre-flashed)"
+  },
+  {
+   "name": "Offline controller (GRBL handheld)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 32.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 3018 CNC offline controller GRBL"
+  },
+  {
+   "name": "24 V 5 A power adapter",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 16.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 24V 5A power supply 5.5x2.1 UL listed"
+  },
+  {
+   "name": "Inline fuse holder 5 A + barrel screw-terminal pigtails",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 7.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: inline blade fuse holder + 5.5x2.1 barrel screw terminal pigtails; 5 A fuse"
+  },
+  {
+   "name": "Y rail 10 x 290",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 8.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 10mm linear rod 300mm (cut to 290, or buy 3018 replacement rods)"
+  },
+  {
+   "name": "X rail 10 x 360",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 9.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 10mm linear rod 360mm (3018 replacement)"
+  },
+  {
+   "name": "Z rod 10 x 100",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 10mm linear rod 100mm"
+  },
+  {
+   "name": "Y lead screw 295",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 10.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: T8 lead screw 300mm with copper nut + anti-backlash spring (original 295)"
+  },
+  {
+   "name": "X lead screw 365",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 11.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: T8 lead screw 365mm 3018 with copper nut"
+  },
+  {
+   "name": "Z lead screw 100",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 7.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: T8 lead screw 100mm with copper nut"
+  },
+  {
+   "name": "Slider SC10UU",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 3.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: SC10UU linear bearing block; the 4 worktable sliders"
+  },
+  {
+   "name": "LM10UU bearing",
+   "qty_per_unit": 6,
+   "unit_cost_usd": 1.2,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: LM10UU linear bearing; 4 in the X-Z block, 2 in the Z slide"
+  },
+  {
+   "name": "Shaft coupler 5-8",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 2.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: flexible shaft coupler 5mm to 8mm"
+  },
+  {
+   "name": "M5 x 16 socket screw",
+   "qty_per_unit": 34,
+   "unit_cost_usd": 0.08,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "as in the original kit: plates to profiles, pillars, sliders, nut seat"
+  },
+  {
+   "name": "M5 x 10 socket screw",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.07,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "controller case to the base profile"
+  },
+  {
+   "name": "M3 x 14 socket screw",
+   "qty_per_unit": 12,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "motors to plates, copper nut flanges, spindle pinch"
+  },
+  {
+   "name": "T-nut 20 series M5",
+   "qty_per_unit": 16,
+   "unit_cost_usd": 0.12,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: M5 T-nut 2020 drop-in"
+  },
+  {
+   "name": "T-nut 30 series M5",
+   "qty_per_unit": 12,
+   "unit_cost_usd": 0.15,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "worktable slots: nut seat, sliders, clamps"
+  },
+  {
+   "name": "Hold-down clamps",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 2.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 3018 CNC hold down clamp kit"
+  },
+  {
+   "name": "Milling cutters (10 pc)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 10.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 1/8 shank CNC engraving bit set"
+  },
+  {
+   "name": "Stepper cables JST-XH 4-pin",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: NEMA17 stepper cable XH2.54 1m"
+  },
+  {
+   "name": "Spiral wire wrap",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "cable management, as in the original kit"
+  },
+  {
+   "name": "Marker stickers (white vinyl band + black dots)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 6.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: matte white vinyl tape 3/4 inch + black dot stickers 1/4 inch; two band strips either side of the spindle clamp, 8 dots 40 mm apart at 0/90/180/270 deg, 1 dot on the collet nut"
+  },
+  {
+   "name": "608ZZ bearing",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.6,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=608ZZ+bearing&rh=p_85%3A2470955011",
+   "notes": "search: 608ZZ bearing",
+   "auto": "lib"
+  },
+  {
+   "name": "NEMA17 stepper motor 40 mm",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 11.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=NEMA17+stepper+motor+40mm&rh=p_85%3A2470955011",
+   "notes": "search: NEMA17 stepper motor 40mm",
+   "auto": "lib"
+  },
+  {
+   "name": "M5\u00d712 button head screw",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.179,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M5x12+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M5x12 button head screw",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 180,
+ "kit_ok": true,
+ "needs_soldering": false,
+ "printed": [
+  {
+   "file": "stl/y-nut-seat.stl",
+   "name": "Y nut seat",
+   "grams": 9.7,
+   "print_hours": 0.48,
+   "bbox": [
+    44.0,
+    20.0,
+    32.0
+   ]
+  },
+  {
+   "file": "stl/x-z-block.stl",
+   "name": "X-Z block",
+   "grams": 60.6,
+   "print_hours": 3.03,
+   "bbox": [
+    76.0,
+    60.0,
+    104.0
+   ]
+  },
+  {
+   "file": "stl/z-slide.stl",
+   "name": "Z slide / spindle holder",
+   "grams": 48.2,
+   "print_hours": 2.41,
+   "bbox": [
+    81.0,
+    93.5,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/phone-mount-r.stl",
+   "name": "Phone mount R",
+   "grams": 27.5,
+   "print_hours": 1.38,
+   "bbox": [
+    45.0,
+    46.0,
+    87.0
+   ]
+  },
+  {
+   "file": "stl/phone-mount-f.stl",
+   "name": "Phone mount F",
+   "grams": 33.4,
+   "print_hours": 1.67,
+   "bbox": [
+    109.0,
+    87.0,
+    87.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/base-profile-2040-l.stl",
+   "name": "Base profile 2040 L",
+   "process": "extrusion",
+   "params": {
+    "profile": "2040",
+    "length_mm": 290.0,
+    "tapped_ends": 2
+   },
+   "est": {
+    "length_mm": 290.0,
+    "minutes": 5.0,
+    "material_usd": 2.9
+   },
+   "bbox": [
+    20.0,
+    290.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/base-profile-2040-r.stl",
+   "name": "Base profile 2040 R",
+   "process": "extrusion",
+   "params": {
+    "profile": "2040",
+    "length_mm": 290.0,
+    "tapped_ends": 2
+   },
+   "est": {
+    "length_mm": 290.0,
+    "minutes": 5.0,
+    "material_usd": 2.9
+   },
+   "bbox": [
+    20.0,
+    290.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/plate-a-inner.stl",
+   "name": "Plate A inner",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1107.1,
+    "area_cm2": 195.6,
+    "minutes": 3.3,
+    "material_usd": 4.11
+   },
+   "bbox": [
+    382.0,
+    5.5,
+    62.0
+   ]
+  },
+  {
+   "file": "stl/plate-a-outer.stl",
+   "name": "Plate A outer",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1107.1,
+    "area_cm2": 195.6,
+    "minutes": 3.3,
+    "material_usd": 4.11
+   },
+   "bbox": [
+    382.0,
+    5.5,
+    62.0
+   ]
+  },
+  {
+   "file": "stl/plate-b-inner.stl",
+   "name": "Plate B inner",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1152.6,
+    "area_cm2": 195.0,
+    "minutes": 3.4,
+    "material_usd": 4.09
+   },
+   "bbox": [
+    382.0,
+    5.5,
+    62.0
+   ]
+  },
+  {
+   "file": "stl/plate-b-outer.stl",
+   "name": "Plate B outer",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1152.6,
+    "area_cm2": 195.0,
+    "minutes": 3.4,
+    "material_usd": 4.09
+   },
+   "bbox": [
+    382.0,
+    5.5,
+    62.0
+   ]
+  },
+  {
+   "file": "stl/pillar-c-inner-left.stl",
+   "name": "Pillar C inner (left)",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 859.1,
+    "area_cm2": 179.0,
+    "minutes": 2.8,
+    "material_usd": 3.76
+   },
+   "bbox": [
+    5.5,
+    110.0,
+    220.0
+   ]
+  },
+  {
+   "file": "stl/pillar-c-outer-left.stl",
+   "name": "Pillar C outer (left)",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 859.1,
+    "area_cm2": 179.0,
+    "minutes": 2.8,
+    "material_usd": 3.76
+   },
+   "bbox": [
+    5.5,
+    110.0,
+    220.0
+   ]
+  },
+  {
+   "file": "stl/pillar-d-inner-right.stl",
+   "name": "Pillar D inner (right)",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 904.6,
+    "area_cm2": 178.4,
+    "minutes": 2.9,
+    "material_usd": 3.75
+   },
+   "bbox": [
+    5.5,
+    110.0,
+    220.0
+   ]
+  },
+  {
+   "file": "stl/pillar-d-outer-right.stl",
+   "name": "Pillar D outer (right)",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 904.6,
+    "area_cm2": 178.4,
+    "minutes": 2.9,
+    "material_usd": 3.75
+   },
+   "bbox": [
+    5.5,
+    110.0,
+    220.0
+   ]
+  },
+  {
+   "file": "stl/gantry-profile-2020-lower.stl",
+   "name": "Gantry profile 2020 lower",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 360.0,
+    "tapped_ends": 2
+   },
+   "est": {
+    "length_mm": 360.0,
+    "minutes": 5.0,
+    "material_usd": 2.16
+   },
+   "bbox": [
+    360.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/gantry-profile-2020-upper.stl",
+   "name": "Gantry profile 2020 upper",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 360.0,
+    "tapped_ends": 2
+   },
+   "est": {
+    "length_mm": 360.0,
+    "minutes": 5.0,
+    "material_usd": 2.16
+   },
+   "bbox": [
+    360.0,
+    20.0,
+    20.0
+   ]
+  }
+ ]
+}

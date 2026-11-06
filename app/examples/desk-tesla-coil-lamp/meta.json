@@ -1,0 +1,14 @@
+{
+ "title": "Desk Tesla Coil Lamp",
+ "description": "A USB-C powered desk replica of a Tesla coil, with a copper-wound secondary coil and a toroid that flickers with LED lightning.",
+ "creator": "Premake",
+ "tags": [
+  "lamp",
+  "decor",
+  "LED",
+  "ESP32",
+  "science"
+ ],
+ "created": "2026-10-30T15:17:55.747Z",
+ "demo": true
+}

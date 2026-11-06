@@ -1,0 +1,486 @@
+{
+ "t": 1793164611.9603179,
+ "title": "Peltier bed cooler",
+ "parts": [
+  {
+   "file": "stl/case-bottom-l.stl",
+   "name": "Bottom shell L",
+   "group": "case",
+   "color": "#5aa9ff",
+   "explode": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    135.0,
+    202.0,
+    82.0
+   ]
+  },
+  {
+   "file": "stl/case-bottom-r.stl",
+   "name": "Bottom shell R",
+   "group": "case",
+   "color": "#5aa9ff",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    135.0,
+    202.0,
+    82.0
+   ]
+  },
+  {
+   "file": "stl/case-top-l.stl",
+   "name": "Top shell L",
+   "group": "case",
+   "color": "#c9ccd2",
+   "explode": [
+    -0.5,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    135.1,
+    202.0,
+    218.1
+   ]
+  },
+  {
+   "file": "stl/case-top-r.stl",
+   "name": "Top shell R",
+   "group": "case",
+   "color": "#c9ccd2",
+   "explode": [
+    0.5,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    135.1,
+    202.0,
+    218.1
+   ]
+  },
+  {
+   "file": "stl/case-drip-tray.stl",
+   "name": "Drip tray",
+   "group": "case",
+   "color": "#6fbf73",
+   "explode": [
+    0.0,
+    0.0,
+    0.3
+   ],
+   "bbox": [
+    255.0,
+    194.5,
+    18.0
+   ]
+  },
+  {
+   "file": "stl/case-elec-tray.stl",
+   "name": "Electronics tray",
+   "group": "case",
+   "color": "#9b8cff",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    255.0,
+    148.0,
+    10.5
+   ]
+  },
+  {
+   "file": "stl/case-back-upper.stl",
+   "name": "Back panel (upper)",
+   "group": "case",
+   "color": "#e0a96d",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    241.4,
+    2.5,
+    194.4
+   ]
+  },
+  {
+   "file": "stl/case-back-door.stl",
+   "name": "Back door (reservoir)",
+   "group": "case",
+   "color": "#d48a4a",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    241.4,
+    4.9,
+    89.8
+   ]
+  },
+  {
+   "file": "stl/case-clamp-l.stl",
+   "name": "Clamp plate L",
+   "group": "case",
+   "color": "#f5f5a0",
+   "explode": [
+    0.0,
+    0.0,
+    -0.2
+   ],
+   "bbox": [
+    60.0,
+    60.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/case-clamp-r.stl",
+   "name": "Clamp plate R",
+   "group": "case",
+   "color": "#f5f5a0",
+   "explode": [
+    0.0,
+    0.0,
+    -0.2
+   ],
+   "bbox": [
+    60.0,
+    60.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/comp-tower-l.stl",
+   "name": "Tower cooler L",
+   "group": "component",
+   "color": "#b8c0c8",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    125.0,
+    71.0,
+    148.0
+   ]
+  },
+  {
+   "file": "stl/comp-tec-l.stl",
+   "name": "TEC1-12706 L",
+   "group": "component",
+   "color": "#f2f2f2",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    40.0,
+    40.0,
+    3.6
+   ]
+  },
+  {
+   "file": "stl/comp-block-l.stl",
+   "name": "Water block L",
+   "group": "component",
+   "color": "#4fa3ff",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    40.0,
+    55.0,
+    12.0
+   ]
+  },
+  {
+   "file": "stl/comp-neoprene-l.stl",
+   "name": "Neoprene wrap L",
+   "group": "component",
+   "color": "#3a3a3a",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    52.7,
+    52.7,
+    15.6
+   ]
+  },
+  {
+   "file": "stl/comp-clamp-hw-l.stl",
+   "name": "Clamp screws + springs L",
+   "group": "component",
+   "color": "#ffb000",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    62.0,
+    62.0,
+    45.6
+   ]
+  },
+  {
+   "file": "stl/comp-tower-r.stl",
+   "name": "Tower cooler R",
+   "group": "component",
+   "color": "#b8c0c8",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    125.0,
+    71.0,
+    148.0
+   ]
+  },
+  {
+   "file": "stl/comp-tec-r.stl",
+   "name": "TEC1-12706 R",
+   "group": "component",
+   "color": "#f2f2f2",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    40.0,
+    40.0,
+    3.6
+   ]
+  },
+  {
+   "file": "stl/comp-block-r.stl",
+   "name": "Water block R",
+   "group": "component",
+   "color": "#4fa3ff",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    40.0,
+    55.0,
+    12.0
+   ]
+  },
+  {
+   "file": "stl/comp-neoprene-r.stl",
+   "name": "Neoprene wrap R",
+   "group": "component",
+   "color": "#3a3a3a",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    52.7,
+    52.7,
+    15.6
+   ]
+  },
+  {
+   "file": "stl/comp-clamp-hw-r.stl",
+   "name": "Clamp screws + springs R",
+   "group": "component",
+   "color": "#ffb000",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    62.0,
+    62.0,
+    45.6
+   ]
+  },
+  {
+   "file": "stl/comp-reservoir.stl",
+   "name": "Reservoir HPL824",
+   "group": "component",
+   "color": "#66ccff",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    232.0,
+    165.0,
+    74.0
+   ]
+  },
+  {
+   "file": "stl/comp-pump.stl",
+   "name": "Pump (in reservoir)",
+   "group": "component",
+   "color": "#2266aa",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    40.0,
+    50.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/comp-float-switch.stl",
+   "name": "Float switch (optional)",
+   "group": "component",
+   "color": "#aaaaaa",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    25.0,
+    25.0,
+    57.0
+   ]
+  },
+  {
+   "file": "stl/comp-tubes.stl",
+   "name": "Tubing 11.1 OD",
+   "group": "component",
+   "color": "#9be7ff",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    186.2,
+    89.5,
+    44.6
+   ]
+  },
+  {
+   "file": "stl/comp-couplings.stl",
+   "name": "QD couplings x2",
+   "group": "component",
+   "color": "#ff8844",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    54.0,
+    75.5,
+    24.0
+   ]
+  },
+  {
+   "file": "stl/comp-din-inlet.stl",
+   "name": "Power DIN inlet",
+   "group": "component",
+   "color": "#2b2b2b",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    38.0,
+    35.6,
+    30.0
+   ]
+  },
+  {
+   "file": "stl/comp-rf-relay.stl",
+   "name": "RF relay ZABLL",
+   "group": "component",
+   "color": "#ddcc33",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    105.0,
+    51.0,
+    30.0
+   ]
+  },
+  {
+   "file": "stl/comp-relay40.stl",
+   "name": "40 A relay",
+   "group": "component",
+   "color": "#cc3333",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    40.0,
+    28.0,
+    28.0
+   ]
+  },
+  {
+   "file": "stl/comp-w1209.stl",
+   "name": "W1209 thermostat",
+   "group": "component",
+   "color": "#33cc66",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    48.5,
+    40.0,
+    14.0
+   ]
+  },
+  {
+   "file": "stl/comp-fuse-holders.stl",
+   "name": "ATC fuse holders x2",
+   "group": "component",
+   "color": "#ff66aa",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    60.0,
+    45.0,
+    15.0
+   ]
+  }
+ ]
+}

@@ -1,0 +1,197 @@
+{
+ "parts": [
+  {
+   "name": "Tube",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 14.0,
+   "supplier": "Online Metals",
+   "url": "https://www.onlinemetals.com/en/buy/aluminum/2-od-x-0-065-wall-x-1-87-id-aluminum-round-tube-6061-t6-drawn/pid/4368",
+   "manual_order": true,
+   "notes": "2\" OD x 0.065\" wall x 1.87\" ID 6061-T6 drawn round tube, cut to 4.00\" (101.6 mm). Price estimated (short cut piece). McMaster's anodized 6061 tube line may also have this in black: check before ordering; if so the anodize step drops out."
+  },
+  {
+   "name": "Tube window + black anodize (local NYC machine shop)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 70.0,
+   "supplier": "Local machine shop",
+   "url": "",
+   "manual_order": true,
+   "notes": "Estimate. Mill one 36 x 56 mm window (3 mm corner radius) through the tube front, 36-92 mm from the bottom end; deburr; Type II black anodize. ~$70 one-off, ~$15-20 each in a batch of 50+. Drawing = Tube STL."
+  },
+  {
+   "name": "ESP32-CAM (AI-Thinker)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 10.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: \"ESP32-CAM-MB with OV2640 camera\". Kit = ESP32-CAM + ESP32-CAM-MB + OV2640 (66 deg). Board 27 x 40.5 x 4.5 mm."
+  },
+  {
+   "name": "ESP32-CAM-MB programmer",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Included in the ESP32-CAM kit. 40 x 27 mm, CH340, micro-USB."
+  },
+  {
+   "name": "OV2640 camera",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Included in the ESP32-CAM kit."
+  },
+  {
+   "name": "Status LED (3 mm)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: \"3mm LED assortment\" (use a green one)."
+  },
+  {
+   "name": "220 ohm resistor",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.02,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: \"1/4W resistor assortment\". In series with the LED."
+  },
+  {
+   "name": "6x2 mm magnet",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: \"6x2mm neodymium magnets\". Press-fit into the sled; detents for the steel shutter (open / closed)."
+  },
+  {
+   "name": "Rubber bumper feet",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: \"8mm x 2.5mm black bumper feet adhesive\"."
+  },
+  {
+   "name": "Micro-USB cable 2 m",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: \"micro USB cable 6ft black\". Plug body must be <= 11 x 8 mm."
+  },
+  {
+   "name": "5V 2A USB wall adapter",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 7.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search: \"5V 2A USB wall charger UL listed\"."
+  },
+  {
+   "name": "M2.5\u00d78 self-tapping screw for plastic",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.052,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M2.5+x+8mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M2.5 x 8mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d716 self-tapping screw for plastic",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.063,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+x+16mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M3 x 16mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 18,
+ "kit_ok": true,
+ "needs_soldering": true,
+ "soldering_reason": "The status LED and its resistor are soldered to two header pins on the ESP32-CAM (3 small joints).",
+ "printed": [
+  {
+   "file": "stl/sled.stl",
+   "name": "Sled",
+   "grams": 47.7,
+   "print_hours": 2.38,
+   "bbox": [
+    47.0,
+    34.5,
+    83.7
+   ]
+  },
+  {
+   "file": "stl/top-cap.stl",
+   "name": "Top cap",
+   "grams": 8.8,
+   "print_hours": 0.44,
+   "bbox": [
+    47.3,
+    47.5,
+    25.9
+   ]
+  },
+  {
+   "file": "stl/bottom-cap.stl",
+   "name": "Bottom cap",
+   "grams": 10.3,
+   "print_hours": 0.52,
+   "bbox": [
+    47.4,
+    47.4,
+    10.2
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/faceplate.stl",
+   "name": "Faceplate",
+   "process": "sheet",
+   "params": {
+    "material": "aluminium 5052",
+    "thickness_mm": 1.6,
+    "bends": 2,
+    "finish": "black powder coat"
+   },
+   "est": {
+    "area_cm2": 23.7,
+    "bends": 2,
+    "minutes": 7.2,
+    "material_usd": 0.15
+   },
+   "bbox": [
+    35.4,
+    7.6,
+    55.4
+   ]
+  },
+  {
+   "file": "stl/shutter.stl",
+   "name": "Privacy shutter",
+   "process": "sheet",
+   "params": {
+    "material": "mild steel",
+    "thickness_mm": 1.2,
+    "bends": 1,
+    "finish": "black powder coat"
+   },
+   "est": {
+    "area_cm2": 3.0,
+    "bends": 1,
+    "minutes": 5.5,
+    "material_usd": 0.01
+   },
+   "bbox": [
+    21.5,
+    6.7,
+    13.0
+   ]
+  }
+ ]
+}

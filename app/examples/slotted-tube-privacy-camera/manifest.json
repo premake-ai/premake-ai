@@ -1,0 +1,384 @@
+{
+ "t": 1793743488.086018,
+ "title": "Slotted Tube Privacy Camera",
+ "parts": [
+  {
+   "file": "stl/slotted-tube.stl",
+   "name": "Slotted tube",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1d20",
+   "explode": [
+    0.003,
+    -0.269,
+    0.963
+   ],
+   "bbox": [
+    63.5,
+    63.6,
+    104.1
+   ],
+   "material": "aluminium",
+   "step": "step/slotted-tube.step"
+  },
+  {
+   "file": "stl/smoked-window.stl",
+   "name": "Smoked window",
+   "group": "case",
+   "process": "laser",
+   "color": "#2b2b30",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    20.0,
+    3.0,
+    85.0
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/base-chassis.stl",
+   "name": "Base chassis",
+   "group": "case",
+   "process": "print",
+   "color": "#26262a",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    63.7,
+    63.7,
+    97.1
+   ]
+  },
+  {
+   "file": "stl/cap.stl",
+   "name": "Twist cap",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3a3f",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    63.7,
+    63.7,
+    54.2
+   ]
+  },
+  {
+   "file": "stl/pv.stl",
+   "name": "Solar panel 5V 53x30",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a2a4a",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    53.0,
+    30.0,
+    2.0
+   ]
+  },
+  {
+   "file": "stl/esp32-cam-ai-thinker.stl",
+   "name": "ESP32-CAM (AI-Thinker)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1b4f8a",
+   "explode": [
+    -0.001,
+    -0.797,
+    0.604
+   ],
+   "bbox": [
+    27.0,
+    17.3,
+    40.5
+   ]
+  },
+  {
+   "file": "stl/esp32-cam-mb.stl",
+   "name": "ESP32-CAM-MB",
+   "group": "component",
+   "process": "bought",
+   "color": "#202020",
+   "explode": [
+    -0.001,
+    -0.324,
+    0.946
+   ],
+   "bbox": [
+    27.0,
+    4.6,
+    40.5
+   ]
+  },
+  {
+   "file": "stl/tp4056-usb-c-charger.stl",
+   "name": "TP4056 USB-C charger",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f4fa0",
+   "explode": [
+    -0.0,
+    0.266,
+    -0.964
+   ],
+   "bbox": [
+    17.0,
+    28.0,
+    4.8
+   ],
+   "cable": {
+    "type": "usb-c",
+    "at": [
+     0.0,
+     31.75,
+     7.2
+    ],
+    "dir": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "length_mm": 400.0
+   }
+  },
+  {
+   "file": "stl/mt3608-boost-5v.stl",
+   "name": "MT3608 boost 5V",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f4fa0",
+   "explode": [
+    -0.0,
+    -0.297,
+    -0.955
+   ],
+   "bbox": [
+    36.0,
+    17.0,
+    6.0
+   ]
+  },
+  {
+   "file": "stl/18650-holder-1-cell.stl",
+   "name": "18650 holder, 1 cell",
+   "group": "component",
+   "process": "bought",
+   "color": "#1c1d20",
+   "explode": [
+    -0.001,
+    0.996,
+    -0.092
+   ],
+   "bbox": [
+    21.0,
+    15.0,
+    105.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/18650-holder-1-cell__0.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/18650-holder-1-cell__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/18650-holder-1-cell__2.stl",
+     "color": "#d23b2e",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "holder_18650",
+    "qty": 1,
+    "name": "18650 holder, 1 cell",
+    "unit_cost_usd": 1.0,
+    "mass_g": 8.0
+   }
+  },
+  {
+   "file": "stl/18650-li-ion-cell.stl",
+   "name": "18650 Li-ion cell",
+   "group": "component",
+   "process": "bought",
+   "color": "#2f6fd0",
+   "explode": [
+    -0.001,
+    0.99,
+    -0.142
+   ],
+   "bbox": [
+    18.4,
+    18.4,
+    66.1
+   ],
+   "subparts": [
+    {
+     "file": "stl/18650-li-ion-cell__0.stl",
+     "color": "#2f6fd0",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/18650-li-ion-cell__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/18650-li-ion-cell__2.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "cell_18650",
+    "qty": 1,
+    "name": "18650 Li-ion cell",
+    "unit_cost_usd": 5.0,
+    "mass_g": 46.0
+   }
+  },
+  {
+   "file": "stl/5-mm-led-green.stl",
+   "name": "5 mm LED (green)",
+   "group": "component",
+   "process": "bought",
+   "color": "#3bd06a",
+   "explode": [
+    -0.0,
+    -0.454,
+    -0.891
+   ],
+   "bbox": [
+    5.8,
+    31.8,
+    5.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/5-mm-led-green__0.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/5-mm-led-green__1.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "led_5mm",
+    "qty": 1,
+    "name": "5 mm LED (red)",
+    "unit_cost_usd": 0.05,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m3-10-self-tapping-screw-for-plastic-2.stl",
+   "name": "M3\u00d710 self-tapping screw for plastic \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.0,
+    0.518,
+    -0.855
+   ],
+   "bbox": [
+    29.6,
+    12.2,
+    5.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-self-tapping-screw-for-plastic-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 2,
+    "name": "M3\u00d710 self-tapping screw for plastic",
+    "unit_cost_usd": 0.059,
+    "mass_g": 0.8
+   }
+  }
+ ],
+ "scene": "shelf",
+ "assembly_order": [
+  [
+   "Base chassis"
+  ],
+  [
+   "TP4056 USB-C charger",
+   "MT3608 boost 5V"
+  ],
+  [
+   "5 mm LED (green)"
+  ],
+  [
+   "ESP32-CAM-MB",
+   "ESP32-CAM (AI-Thinker)"
+  ],
+  [
+   "18650 holder, 1 cell"
+  ],
+  [
+   "18650 Li-ion cell"
+  ],
+  [
+   "Smoked window"
+  ],
+  [
+   "Slotted tube"
+  ],
+  [
+   "Twist cap"
+  ],
+  [
+   "Solar panel 5V 53x30"
+  ]
+ ],
+ "wiring": {
+  "file": "wiring.json",
+  "wires": 15,
+  "parts": [
+   "18650 holder, 1 cell",
+   "1N5819 Schottky diode",
+   "220 ohm resistor",
+   "5 mm LED (green)",
+   "5V 2A USB wall adapter",
+   "ESP32-CAM (AI-Thinker)",
+   "ESP32-CAM-MB",
+   "MT3608 boost 5V",
+   "Solar panel 5V 53x30",
+   "TP4056 USB-C charger",
+   "USB-C cable 2 m"
+  ],
+  "ok": true
+ },
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 2
+ }
+}

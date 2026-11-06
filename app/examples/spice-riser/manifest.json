@@ -1,0 +1,54 @@
+{
+ "t": 1793164715.917664,
+ "title": "Three-tier spice riser",
+ "parts": [
+  {
+   "file": "stl/spice-riser.stl",
+   "name": "Spice riser",
+   "group": "case",
+   "color": "#e9e4d8",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    240.0,
+    156.0,
+    72.0
+   ]
+  },
+  {
+   "file": "stl/4-oz-glass-spice-jars-12x.stl",
+   "name": "4 oz glass spice jars (12x)",
+   "group": "component",
+   "color": "#cfe8ef",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    221.0,
+    151.1,
+    128.1
+   ]
+  },
+  {
+   "file": "stl/jar-shaker-lids-12x.stl",
+   "name": "Jar shaker lids (12x)",
+   "group": "component",
+   "color": "#2b2d42",
+   "explode": [
+    0.0,
+    0.0,
+    1.4
+   ],
+   "bbox": [
+    218.0,
+    148.0,
+    70.1
+   ]
+  }
+ ]
+}

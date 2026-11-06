@@ -1,0 +1,1537 @@
+{
+ "t": 1793681037.269888,
+ "title": "Ball Balancing Platform",
+ "parts": [
+  {
+   "file": "stl/bottom-plate.stl",
+   "name": "Bottom plate",
+   "group": "case",
+   "process": "laser",
+   "color": "#1d1e21",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    194.1,
+    194.2,
+    5.7
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/top-deck.stl",
+   "name": "Top deck",
+   "group": "case",
+   "process": "laser",
+   "color": "#1d1e21",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    194.1,
+    194.2,
+    3.2
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/base-shell.stl",
+   "name": "Base shell",
+   "group": "case",
+   "process": "print",
+   "color": "#eceef0",
+   "explode": [
+    0.0,
+    0.0,
+    0.6
+   ],
+   "bbox": [
+    194.3,
+    194.4,
+    58.7
+   ]
+  },
+  {
+   "file": "stl/servo-tower-a.stl",
+   "name": "Servo tower A",
+   "group": "case",
+   "process": "laser",
+   "color": "#1d1e21",
+   "explode": [
+    0.028,
+    0.884,
+    -0.467
+   ],
+   "bbox": [
+    5.5,
+    47.6,
+    67.0
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/servo-tower-b.stl",
+   "name": "Servo tower B",
+   "group": "case",
+   "process": "laser",
+   "color": "#1d1e21",
+   "explode": [
+    -0.922,
+    -0.14,
+    -0.362
+   ],
+   "bbox": [
+    44.0,
+    28.6,
+    67.0
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/servo-tower-c.stl",
+   "name": "Servo tower C",
+   "group": "case",
+   "process": "laser",
+   "color": "#1d1e21",
+   "explode": [
+    0.374,
+    -0.773,
+    -0.513
+   ],
+   "bbox": [
+    44.0,
+    28.6,
+    67.0
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/rubber-feet.stl",
+   "name": "Rubber feet",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    -0.271,
+    -0.264,
+    -0.926
+   ],
+   "bbox": [
+    154.7,
+    135.7,
+    5.0
+   ],
+   "material": "rubber"
+  },
+  {
+   "file": "stl/servo-a.stl",
+   "name": "Servo A",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1a1c",
+   "explode": [
+    0.064,
+    0.872,
+    -0.485
+   ],
+   "bbox": [
+    42.9,
+    19.7,
+    54.0
+   ]
+  },
+  {
+   "file": "stl/horn-a.stl",
+   "name": "Servo horn A",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8ccd2",
+   "explode": [
+    -0.19,
+    0.93,
+    -0.315
+   ],
+   "bbox": [
+    6.3,
+    29.5,
+    10.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/link-a.stl",
+   "name": "Link A",
+   "group": "case",
+   "process": "print",
+   "color": "#ff6a3d",
+   "explode": [
+    -0.246,
+    0.959,
+    -0.141
+   ],
+   "bbox": [
+    6.0,
+    11.0,
+    35.5
+   ]
+  },
+  {
+   "file": "stl/rodend-a.stl",
+   "name": "Rod end A",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa1aa",
+   "explode": [
+    -0.244,
+    0.952,
+    0.185
+   ],
+   "bbox": [
+    6.0,
+    11.0,
+    20.5
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/setscrew-a.stl",
+   "name": "Set screw A",
+   "group": "component",
+   "process": "bought",
+   "color": "#333333",
+   "explode": [
+    -0.248,
+    0.967,
+    0.061
+   ],
+   "bbox": [
+    3.0,
+    3.0,
+    13.0
+   ],
+   "material": "steel"
+  },
+  {
+   "file": "stl/stud-a.stl",
+   "name": "Ball stud A",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc2",
+   "explode": [
+    -0.285,
+    0.929,
+    0.234
+   ],
+   "bbox": [
+    14.7,
+    6.5,
+    6.5
+   ],
+   "material": "steel"
+  },
+  {
+   "file": "stl/bracket-a.stl",
+   "name": "Joint bracket A",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f5",
+   "explode": [
+    -0.207,
+    0.955,
+    0.213
+   ],
+   "bbox": [
+    27.0,
+    46.5,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/m3-12-button-head-screw-4.stl",
+   "name": "M3\u00d712 button head screw \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.029,
+    0.873,
+    -0.486
+   ],
+   "bbox": [
+    13.6,
+    15.7,
+    55.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-12-button-head-screw-4__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M3\u00d712 button head screw",
+    "unit_cost_usd": 0.101,
+    "mass_g": 0.9
+   }
+  },
+  {
+   "file": "stl/m3-hex-nut-4.stl",
+   "name": "M3 hex nut \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.085,
+    0.871,
+    -0.485
+   ],
+   "bbox": [
+    2.4,
+    16.4,
+    55.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-hex-nut-4__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 4,
+    "name": "M3 hex nut",
+    "unit_cost_usd": 0.06,
+    "mass_g": 0.3
+   }
+  },
+  {
+   "file": "stl/pivot-a.stl",
+   "name": "M3\u00d716 socket head screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.201,
+    0.939,
+    -0.279
+   ],
+   "bbox": [
+    19.0,
+    5.5,
+    5.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/pivot-a__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 1,
+    "name": "M3\u00d716 socket head screw",
+    "unit_cost_usd": 0.104,
+    "mass_g": 1.4
+   }
+  },
+  {
+   "file": "stl/nylock-a.stl",
+   "name": "M3 nylock nut",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.154,
+    0.947,
+    -0.281
+   ],
+   "bbox": [
+    3.0,
+    6.4,
+    5.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/nylock-a__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nylock-a__1.stl",
+     "color": "#e8e4d6",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 1,
+    "name": "M3 nylock nut",
+    "unit_cost_usd": 0.09,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/studnut-a.stl",
+   "name": "M3 hex nut",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.337,
+    0.913,
+    0.23
+   ],
+   "bbox": [
+    2.4,
+    6.4,
+    5.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/studnut-a__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 1,
+    "name": "M3 hex nut",
+    "unit_cost_usd": 0.06,
+    "mass_g": 0.3
+   }
+  },
+  {
+   "file": "stl/servo-b.stl",
+   "name": "Servo B",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1a1c",
+   "explode": [
+    -0.93,
+    -0.075,
+    -0.36
+   ],
+   "bbox": [
+    35.4,
+    43.6,
+    54.0
+   ]
+  },
+  {
+   "file": "stl/horn-b.stl",
+   "name": "Servo horn B",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8ccd2",
+   "explode": [
+    -0.91,
+    -0.323,
+    -0.259
+   ],
+   "bbox": [
+    27.1,
+    20.2,
+    10.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/link-b.stl",
+   "name": "Link B",
+   "group": "case",
+   "process": "print",
+   "color": "#ff6a3d",
+   "explode": [
+    -0.907,
+    -0.404,
+    -0.119
+   ],
+   "bbox": [
+    12.5,
+    10.7,
+    35.5
+   ]
+  },
+  {
+   "file": "stl/rodend-b.stl",
+   "name": "Rod end B",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa1aa",
+   "explode": [
+    -0.902,
+    -0.402,
+    0.156
+   ],
+   "bbox": [
+    12.5,
+    10.7,
+    20.5
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/setscrew-b.stl",
+   "name": "Set screw B",
+   "group": "component",
+   "process": "bought",
+   "color": "#333333",
+   "explode": [
+    -0.912,
+    -0.406,
+    0.051
+   ],
+   "bbox": [
+    3.0,
+    3.0,
+    13.0
+   ],
+   "material": "steel"
+  },
+  {
+   "file": "stl/stud-b.stl",
+   "name": "Ball stud B",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc2",
+   "explode": [
+    -0.877,
+    -0.436,
+    0.201
+   ],
+   "bbox": [
+    10.3,
+    13.9,
+    6.5
+   ],
+   "material": "steel"
+  },
+  {
+   "file": "stl/bracket-b.stl",
+   "name": "Joint bracket B",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f5",
+   "explode": [
+    -0.866,
+    -0.466,
+    0.18
+   ],
+   "bbox": [
+    52.7,
+    30.8,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/m3-12-button-head-screw-4-2.stl",
+   "name": "M3\u00d712 button head screw \u00d74 (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.921,
+    -0.12,
+    -0.371
+   ],
+   "bbox": [
+    18.5,
+    18.3,
+    55.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-12-button-head-screw-4-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M3\u00d712 button head screw",
+    "unit_cost_usd": 0.101,
+    "mass_g": 0.9
+   }
+  },
+  {
+   "file": "stl/m3-hex-nut-4-2.stl",
+   "name": "M3 hex nut \u00d74 (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.928,
+    -0.079,
+    -0.363
+   ],
+   "bbox": [
+    14.8,
+    9.6,
+    55.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-hex-nut-4-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 4,
+    "name": "M3 hex nut",
+    "unit_cost_usd": 0.06,
+    "mass_g": 0.3
+   }
+  },
+  {
+   "file": "stl/pivot-b.stl",
+   "name": "M3\u00d716 socket head screw (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.899,
+    -0.37,
+    -0.235
+   ],
+   "bbox": [
+    12.8,
+    18.2,
+    5.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/pivot-b__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 1,
+    "name": "M3\u00d716 socket head screw",
+    "unit_cost_usd": 0.104,
+    "mass_g": 1.4
+   }
+  },
+  {
+   "file": "stl/nylock-b.stl",
+   "name": "M3 nylock nut (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.915,
+    -0.329,
+    -0.233
+   ],
+   "bbox": [
+    6.2,
+    5.1,
+    5.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/nylock-b__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nylock-b__1.stl",
+     "color": "#e8e4d6",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 1,
+    "name": "M3 nylock nut",
+    "unit_cost_usd": 0.09,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/studnut-b.stl",
+   "name": "M3 hex nut (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.854,
+    -0.479,
+    0.202
+   ],
+   "bbox": [
+    6.1,
+    4.6,
+    5.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/studnut-b__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 1,
+    "name": "M3 hex nut",
+    "unit_cost_usd": 0.06,
+    "mass_g": 0.3
+   }
+  },
+  {
+   "file": "stl/servo-c.stl",
+   "name": "Servo C",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1a1c",
+   "explode": [
+    0.272,
+    -0.814,
+    -0.513
+   ],
+   "bbox": [
+    35.4,
+    43.6,
+    54.0
+   ]
+  },
+  {
+   "file": "stl/horn-c.stl",
+   "name": "Servo horn C",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8ccd2",
+   "explode": [
+    0.63,
+    -0.663,
+    -0.404
+   ],
+   "bbox": [
+    28.7,
+    17.4,
+    10.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/link-c.stl",
+   "name": "Link C",
+   "group": "case",
+   "process": "print",
+   "color": "#ff6a3d",
+   "explode": [
+    0.76,
+    -0.623,
+    -0.184
+   ],
+   "bbox": [
+    12.5,
+    10.7,
+    35.5
+   ]
+  },
+  {
+   "file": "stl/rodend-c.stl",
+   "name": "Rod end C",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa1aa",
+   "explode": [
+    0.751,
+    -0.616,
+    0.239
+   ],
+   "bbox": [
+    12.5,
+    10.7,
+    20.5
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/setscrew-c.stl",
+   "name": "Set screw C",
+   "group": "component",
+   "process": "bought",
+   "color": "#333333",
+   "explode": [
+    0.771,
+    -0.632,
+    0.08
+   ],
+   "bbox": [
+    3.0,
+    3.0,
+    13.0
+   ],
+   "material": "steel"
+  },
+  {
+   "file": "stl/stud-c.stl",
+   "name": "Ball stud C",
+   "group": "component",
+   "process": "bought",
+   "color": "#b8bcc2",
+   "explode": [
+    0.773,
+    -0.555,
+    0.308
+   ],
+   "bbox": [
+    10.3,
+    13.9,
+    6.5
+   ],
+   "material": "steel"
+  },
+  {
+   "file": "stl/bracket-c.stl",
+   "name": "Joint bracket C",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f5",
+   "explode": [
+    0.79,
+    -0.559,
+    0.252
+   ],
+   "bbox": [
+    44.2,
+    45.5,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/m3-12-button-head-screw-4-3.stl",
+   "name": "M3\u00d712 button head screw \u00d74 (3)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.331,
+    -0.78,
+    -0.53
+   ],
+   "bbox": [
+    18.5,
+    18.3,
+    55.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-12-button-head-screw-4-3__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M3\u00d712 button head screw",
+    "unit_cost_usd": 0.101,
+    "mass_g": 0.9
+   }
+  },
+  {
+   "file": "stl/m3-hex-nut-4-3.stl",
+   "name": "M3 hex nut \u00d74 (3)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.284,
+    -0.81,
+    -0.513
+   ],
+   "bbox": [
+    14.8,
+    9.6,
+    55.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-hex-nut-4-3__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 4,
+    "name": "M3 hex nut",
+    "unit_cost_usd": 0.06,
+    "mass_g": 0.3
+   }
+  },
+  {
+   "file": "stl/pivot-c.stl",
+   "name": "M3\u00d716 socket head screw (3)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.699,
+    -0.625,
+    -0.348
+   ],
+   "bbox": [
+    12.8,
+    18.2,
+    5.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/pivot-c__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 1,
+    "name": "M3\u00d716 socket head screw",
+    "unit_cost_usd": 0.104,
+    "mass_g": 1.4
+   }
+  },
+  {
+   "file": "stl/nylock-c.stl",
+   "name": "M3 nylock nut (3)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.655,
+    -0.673,
+    -0.344
+   ],
+   "bbox": [
+    6.2,
+    5.1,
+    5.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/nylock-c__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nylock-c__1.stl",
+     "color": "#e8e4d6",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 1,
+    "name": "M3 nylock nut",
+    "unit_cost_usd": 0.09,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/studnut-c.stl",
+   "name": "M3 hex nut (3)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.814,
+    -0.492,
+    0.308
+   ],
+   "bbox": [
+    6.1,
+    4.6,
+    5.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/studnut-c__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 1,
+    "name": "M3 hex nut",
+    "unit_cost_usd": 0.06,
+    "mass_g": 0.3
+   }
+  },
+  {
+   "file": "stl/m3-12-button-head-screw-3.stl",
+   "name": "M3\u00d712 button head screw \u00d73",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.449,
+    0.131,
+    -0.884
+   ],
+   "bbox": [
+    140.8,
+    142.7,
+    13.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-12-button-head-screw-3__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 3,
+    "name": "M3\u00d712 button head screw",
+    "unit_cost_usd": 0.101,
+    "mass_g": 0.9
+   }
+  },
+  {
+   "file": "stl/m3-12-button-head-screw-3-2.stl",
+   "name": "M3\u00d712 button head screw \u00d73 (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.938,
+    0.273,
+    -0.216
+   ],
+   "bbox": [
+    140.8,
+    142.7,
+    13.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-12-button-head-screw-3-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 3,
+    "name": "M3\u00d712 button head screw",
+    "unit_cost_usd": 0.101,
+    "mass_g": 0.9
+   }
+  },
+  {
+   "file": "stl/m3-hex-nut-6.stl",
+   "name": "M3 hex nut \u00d76",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.672,
+    0.195,
+    -0.714
+   ],
+   "bbox": [
+    141.5,
+    142.5,
+    52.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-hex-nut-6__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 6,
+    "name": "M3 hex nut",
+    "unit_cost_usd": 0.06,
+    "mass_g": 0.3
+   }
+  },
+  {
+   "file": "stl/plate.stl",
+   "name": "Plate",
+   "group": "case",
+   "process": "laser",
+   "color": "#1d1e21",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    248.2,
+    248.2,
+    3.3
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/rim.stl",
+   "name": "Ball rim",
+   "group": "case",
+   "process": "laser",
+   "color": "#1d1e21",
+   "explode": [
+    0.0,
+    0.0,
+    1.3
+   ],
+   "bbox": [
+    248.2,
+    248.2,
+    5.8
+   ],
+   "material": "acrylic_clear"
+  },
+  {
+   "file": "stl/panel.stl",
+   "name": "8in resistive touch panel",
+   "group": "component",
+   "process": "bought",
+   "color": "#b9c6cc",
+   "explode": [
+    0.0,
+    0.0,
+    1.15
+   ],
+   "bbox": [
+    183.0,
+    141.0,
+    1.6
+   ],
+   "material": "glass"
+  },
+  {
+   "file": "stl/plate-screws.stl",
+   "name": "M3\u00d716 self-tapping screw for plastic \u00d76",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.456,
+    0.576,
+    0.679
+   ],
+   "bbox": [
+    221.4,
+    192.5,
+    18.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/plate-screws__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 6,
+    "name": "M3\u00d716 self-tapping screw for plastic",
+    "unit_cost_usd": 0.063,
+    "mass_g": 1.1
+   }
+  },
+  {
+   "file": "stl/tsc.stl",
+   "name": "TSC2007 touch controller",
+   "group": "component",
+   "process": "bought",
+   "color": "#1b3f8f",
+   "explode": [
+    -0.945,
+    0.0,
+    0.328
+   ],
+   "bbox": [
+    25.5,
+    19.0,
+    4.6
+   ],
+   "material": "pcb"
+  },
+  {
+   "file": "stl/ball.stl",
+   "name": "Ping-pong ball",
+   "group": "component",
+   "process": "bought",
+   "color": "#fafafa",
+   "explode": [
+    -0.361,
+    0.0,
+    0.933
+   ],
+   "bbox": [
+    40.4,
+    40.3,
+    40.4
+   ]
+  },
+  {
+   "file": "stl/steel-ball-1-1-4in.stl",
+   "name": "Steel ball 1-1/4in",
+   "group": "component",
+   "process": "bought",
+   "color": "#d6d9de",
+   "explode": [
+    0.793,
+    -0.492,
+    -0.359
+   ],
+   "bbox": [
+    32.0,
+    32.0,
+    32.1
+   ],
+   "material": "steel"
+  },
+  {
+   "file": "stl/esp32-screw-terminal-breakout.stl",
+   "name": "ESP32 screw-terminal breakout",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f6b3a",
+   "explode": [
+    -0.347,
+    0.0,
+    -0.938
+   ],
+   "bbox": [
+    65.0,
+    75.0,
+    11.0
+   ],
+   "material": "pcb"
+  },
+  {
+   "file": "stl/esp32-devkitc-wroom-32-38-pin.stl",
+   "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    -0.377,
+    -0.009,
+    -0.926
+   ],
+   "bbox": [
+    27.9,
+    55.4,
+    13.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__1.stl",
+     "color": "#232a36",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__4.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__6.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__7.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__8.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__9.stl",
+     "color": "#b48a5c",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "esp32_devkitc",
+    "qty": 1,
+    "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+    "unit_cost_usd": 7.5,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/pca9685-servo-driver.stl",
+   "name": "PCA9685 servo driver",
+   "group": "component",
+   "process": "bought",
+   "color": "#1b3f8f",
+   "explode": [
+    0.671,
+    0.166,
+    -0.722
+   ],
+   "bbox": [
+    35.9,
+    66.0,
+    13.0
+   ],
+   "material": "pcb"
+  },
+  {
+   "file": "stl/1000uf-capacitor.stl",
+   "name": "1000uF capacitor",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b4fa0",
+   "explode": [
+    0.365,
+    0.381,
+    -0.85
+   ],
+   "bbox": [
+    10.0,
+    10.0,
+    16.0
+   ]
+  },
+  {
+   "file": "stl/wago-221-413-5v.stl",
+   "name": "Wago 221-413 (5V)",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8d8d8",
+   "explode": [
+    -0.762,
+    0.294,
+    -0.577
+   ],
+   "bbox": [
+    20.0,
+    13.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/wago-221-413-gnd.stl",
+   "name": "Wago 221-413 (GND)",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8d8d8",
+   "explode": [
+    -0.719,
+    0.432,
+    -0.544
+   ],
+   "bbox": [
+    20.0,
+    13.0,
+    8.0
+   ]
+  },
+  {
+   "file": "stl/inline-fuse-holder-5a.stl",
+   "name": "Inline fuse holder 5A",
+   "group": "component",
+   "process": "bought",
+   "color": "#d13b2e",
+   "explode": [
+    -0.502,
+    0.547,
+    -0.67
+   ],
+   "bbox": [
+    38.0,
+    12.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/dc-jack-panel-mount-pre-wired.stl",
+   "name": "DC jack, panel mount, pre-wired",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    -0.426,
+    0.828,
+    -0.364
+   ],
+   "bbox": [
+    16.2,
+    20.5,
+    13.0
+   ],
+   "cable": {
+    "type": "dc-barrel",
+    "at": [
+     -25.62,
+     95.63,
+     36.0
+    ],
+    "dir": [
+     -0.2588,
+     0.9659,
+     0.0
+    ],
+    "length_mm": 600.0
+   }
+  },
+  {
+   "file": "stl/wago-221-412-fuse.stl",
+   "name": "Wago 221-412 (fuse)",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8d8d8",
+   "explode": [
+    -0.411,
+    0.687,
+    -0.6
+   ],
+   "bbox": [
+    16.0,
+    13.0,
+    8.0
+   ]
+  }
+ ],
+ "scene": "desk",
+ "assembly_order": [
+  [
+   "Bottom plate",
+   "Rubber feet"
+  ],
+  [
+   "Servo tower A",
+   "Servo tower B",
+   "Servo tower C"
+  ],
+  [
+   "Servo A",
+   "Servo B",
+   "Servo C"
+  ],
+  [
+   "ESP32 screw-terminal breakout",
+   "ESP32 DevKitC (WROOM-32, 38 pin)",
+   "PCA9685 servo driver",
+   "1000uF capacitor",
+   "Wago 221-412 (fuse)",
+   "Wago 221-413 (5V)",
+   "Wago 221-413 (GND)",
+   "Inline fuse holder 5A"
+  ],
+  [
+   "Base shell",
+   "DC jack, panel mount, pre-wired"
+  ],
+  [
+   "Servo horn A",
+   "Servo horn B",
+   "Servo horn C"
+  ],
+  [
+   "Link A",
+   "Link B",
+   "Link C",
+   "Set screw A",
+   "Set screw B",
+   "Set screw C",
+   "Rod end A",
+   "Rod end B",
+   "Rod end C"
+  ],
+  [
+   "Top deck"
+  ],
+  [
+   "Joint bracket A",
+   "Joint bracket B",
+   "Joint bracket C",
+   "Ball stud A",
+   "Ball stud B",
+   "Ball stud C"
+  ],
+  [
+   "Plate",
+   "8in resistive touch panel",
+   "TSC2007 touch controller"
+  ],
+  [
+   "Ball rim"
+  ],
+  [
+   "Steel ball 1-1/4in",
+   "Ping-pong ball"
+  ]
+ ],
+ "wiring": {
+  "file": "wiring.json",
+  "wires": 34,
+  "parts": [
+   "1000uF capacitor",
+   "5V 5A power adapter (UL), 5.5x2.1",
+   "8in resistive touch panel",
+   "DC jack, panel mount, pre-wired",
+   "ESP32 DevKitC (WROOM-32, 38 pin)",
+   "ESP32 screw-terminal breakout",
+   "Inline fuse holder 5A",
+   "PCA9685 servo driver",
+   "Servo A",
+   "Servo B",
+   "Servo C",
+   "TSC2007 touch controller",
+   "Wago 221-412 (fuse)",
+   "Wago 221-413 (5V)",
+   "Wago 221-413 (GND)"
+  ],
+  "ok": true
+ },
+ "motion": {
+  "file": "motion.json",
+  "duration": 8.0,
+  "frames": 120,
+  "parts": 33
+ }
+}

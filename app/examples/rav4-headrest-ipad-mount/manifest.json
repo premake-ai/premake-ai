@@ -1,0 +1,706 @@
+{
+ "t": 1793680294.53311,
+ "title": "RAV4 Headrest iPad Mount",
+ "parts": [
+  {
+   "file": "stl/cross-bar-2020-x-200.stl",
+   "name": "Cross bar 2020 x 200",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.0,
+    0.187,
+    -0.982
+   ],
+   "bbox": [
+    200.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/2020-end-cap.stl",
+   "name": "2020 end cap",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1a1a",
+   "explode": [
+    0.0,
+    0.187,
+    -0.982
+   ],
+   "bbox": [
+    206.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/post-clamp-l.stl",
+   "name": "Post clamp L",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2b",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    40.0,
+    13.5,
+    24.0
+   ]
+  },
+  {
+   "file": "stl/post-clamp-cap-l.stl",
+   "name": "Post clamp cap L",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2b",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    40.0,
+    10.5,
+    24.0
+   ]
+  },
+  {
+   "file": "stl/post-clamp-r.stl",
+   "name": "Post clamp R",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2b",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    40.0,
+    13.5,
+    24.0
+   ]
+  },
+  {
+   "file": "stl/post-clamp-cap-r.stl",
+   "name": "Post clamp cap R",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2b",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    40.0,
+    10.5,
+    24.0
+   ]
+  },
+  {
+   "file": "stl/m5-30-button-head-screw-4.stl",
+   "name": "M5\u00d730 button head screw \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    0.36,
+    -0.933
+   ],
+   "bbox": [
+    187.5,
+    32.8,
+    9.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m5-30-button-head-screw-4__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M5\u00d730 button head screw",
+    "unit_cost_usd": 0.208,
+    "mass_g": 5.8
+   }
+  },
+  {
+   "file": "stl/m5-drop-in-t-nut.stl",
+   "name": "M5 drop-in T-nut",
+   "group": "component",
+   "process": "bought",
+   "color": "#b0b0b0",
+   "explode": [
+    0.0,
+    0.187,
+    -0.982
+   ],
+   "bbox": [
+    188.0,
+    20.0,
+    6.0
+   ]
+  },
+  {
+   "file": "stl/arm-mount.stl",
+   "name": "Arm mount",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2b",
+   "explode": [
+    0.0,
+    -0.062,
+    -0.998
+   ],
+   "bbox": [
+    50.0,
+    35.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/m5-10-button-head-screw-2.stl",
+   "name": "M5\u00d710 button head screw \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    0.076,
+    -0.997
+   ],
+   "bbox": [
+    47.5,
+    12.8,
+    9.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m5-10-button-head-screw-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 2,
+    "name": "M5\u00d710 button head screw",
+    "unit_cost_usd": 0.176,
+    "mass_g": 2.7
+   }
+  },
+  {
+   "file": "stl/swivel-arm.stl",
+   "name": "Swivel arm",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2b",
+   "explode": [
+    -0.0,
+    -0.422,
+    -0.906
+   ],
+   "bbox": [
+    24.1,
+    62.1,
+    88.1
+   ]
+  },
+  {
+   "file": "stl/m6-35-socket-head-screw.stl",
+   "name": "M6\u00d735 socket head screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    -0.107,
+    -0.994
+   ],
+   "bbox": [
+    10.0,
+    10.0,
+    41.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m6-35-socket-head-screw__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 1,
+    "name": "M6\u00d735 socket head screw",
+    "unit_cost_usd": 0.297,
+    "mass_g": 10.8
+   }
+  },
+  {
+   "file": "stl/m6-washer.stl",
+   "name": "M6 washer",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.0,
+    -0.114,
+    -0.993
+   ],
+   "bbox": [
+    12.0,
+    12.0,
+    1.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m6-washer__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "washer",
+    "qty": 1,
+    "name": "M6 washer",
+    "unit_cost_usd": 0.045,
+    "mass_g": 1.0
+   }
+  },
+  {
+   "file": "stl/m6-nylock-nut.stl",
+   "name": "M6 nylock nut",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.0,
+    -0.119,
+    -0.993
+   ],
+   "bbox": [
+    11.5,
+    10.0,
+    6.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m6-nylock-nut__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/m6-nylock-nut__1.stl",
+     "color": "#e8e4d6",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 1,
+    "name": "M6 nylock nut",
+    "unit_cost_usd": 0.12,
+    "mass_g": 2.3
+   }
+  },
+  {
+   "file": "stl/m6-star-knob-male-25-mm.stl",
+   "name": "M6 star knob (male, 25 mm)",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    35.0,
+    34.7,
+    33.5
+   ]
+  },
+  {
+   "file": "stl/cradle-plate.stl",
+   "name": "Cradle plate",
+   "group": "case",
+   "process": "sheet",
+   "color": "#c9ccd1",
+   "explode": [
+    0.0,
+    -0.9,
+    -0.436
+   ],
+   "bbox": [
+    214.0,
+    2.0,
+    153.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/bottom-hook-l.stl",
+   "name": "Bottom hook L",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2b",
+   "explode": [
+    -0.444,
+    -0.595,
+    -0.67
+   ],
+   "bbox": [
+    34.0,
+    25.5,
+    26.0
+   ]
+  },
+  {
+   "file": "stl/bottom-hook-r.stl",
+   "name": "Bottom hook R",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2b",
+   "explode": [
+    0.444,
+    -0.595,
+    -0.67
+   ],
+   "bbox": [
+    34.0,
+    25.5,
+    26.0
+   ]
+  },
+  {
+   "file": "stl/tilt-hub.stl",
+   "name": "Tilt hub",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2b",
+   "explode": [
+    0.0,
+    -0.784,
+    -0.621
+   ],
+   "bbox": [
+    42.0,
+    46.0,
+    42.0
+   ]
+  },
+  {
+   "file": "stl/ratchet-rail.stl",
+   "name": "Ratchet rail",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3a3a",
+   "explode": [
+    0.0,
+    -0.912,
+    0.409
+   ],
+   "bbox": [
+    18.0,
+    11.0,
+    58.0
+   ]
+  },
+  {
+   "file": "stl/top-jaw.stl",
+   "name": "Top jaw",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2b2b",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    54.0,
+    54.5,
+    75.0
+   ]
+  },
+  {
+   "file": "stl/release-lever.stl",
+   "name": "Release lever",
+   "group": "case",
+   "process": "print",
+   "color": "#e0582a",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    22.0,
+    14.9,
+    82.0
+   ]
+  },
+  {
+   "file": "stl/rubber-bumper-12-7-mm.stl",
+   "name": "Rubber bumper 12.7 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#151515",
+   "explode": [
+    0.0,
+    -0.954,
+    -0.301
+   ],
+   "bbox": [
+    210.7,
+    3.5,
+    118.7
+   ],
+   "material": "rubber"
+  },
+  {
+   "file": "stl/m3-10-self-tapping-screw-for-plastic-6.stl",
+   "name": "M3\u00d710 self-tapping screw for plastic \u00d76",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.0,
+    -0.99,
+    -0.141
+   ],
+   "bbox": [
+    33.6,
+    12.2,
+    91.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-self-tapping-screw-for-plastic-6__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 6,
+    "name": "M3\u00d710 self-tapping screw for plastic",
+    "unit_cost_usd": 0.059,
+    "mass_g": 0.8
+   }
+  },
+  {
+   "file": "stl/m3-10-self-tapping-screw-for-plastic-4.stl",
+   "name": "M3\u00d710 self-tapping screw for plastic \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.0,
+    -0.583,
+    -0.812
+   ],
+   "bbox": [
+    155.6,
+    12.2,
+    5.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-self-tapping-screw-for-plastic-4__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 4,
+    "name": "M3\u00d710 self-tapping screw for plastic",
+    "unit_cost_usd": 0.059,
+    "mass_g": 0.8
+   }
+  },
+  {
+   "file": "stl/m3-16-self-tapping-screw-for-plastic.stl",
+   "name": "M3\u00d716 self-tapping screw for plastic",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.02,
+    -0.73,
+    0.683
+   ],
+   "bbox": [
+    18.2,
+    5.6,
+    5.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-16-self-tapping-screw-for-plastic__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 1,
+    "name": "M3\u00d716 self-tapping screw for plastic",
+    "unit_cost_usd": 0.063,
+    "mass_g": 1.1
+   }
+  },
+  {
+   "file": "stl/m6-hex-nut.stl",
+   "name": "M6 hex nut",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.109,
+    -0.738,
+    -0.666
+   ],
+   "bbox": [
+    5.2,
+    10.0,
+    11.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m6-hex-nut__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 1,
+    "name": "M6 hex nut",
+    "unit_cost_usd": 0.09,
+    "mass_g": 2.0
+   }
+  },
+  {
+   "file": "stl/ipad-air-11-yours.stl",
+   "name": "iPad Air 11 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2e3238",
+   "explode": [
+    0.0,
+    -0.996,
+    -0.095
+   ],
+   "bbox": [
+    247.6,
+    6.1,
+    178.5
+   ],
+   "fx": {
+    "screen": {
+     "text": "Movie time",
+     "bg": "#1d4f91",
+     "fg": "#ffffff",
+     "face": "-y"
+    }
+   }
+  },
+  {
+   "file": "stl/rav4-headrest-posts-yours.stl",
+   "name": "RAV4 headrest posts (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8d91",
+   "explode": [
+    0.0,
+    0.449,
+    -0.894
+   ],
+   "bbox": [
+    164.0,
+    14.0,
+    90.0
+   ],
+   "material": "steel"
+  },
+  {
+   "file": "stl/rav4-front-headrest-yours.stl",
+   "name": "RAV4 front headrest (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#3b3b3b",
+   "explode": [
+    0.0,
+    0.87,
+    0.494
+   ],
+   "bbox": [
+    250.1,
+    115.1,
+    220.1
+   ]
+  }
+ ],
+ "scene": "floor",
+ "assembly_order": [
+  [
+   "Cradle plate"
+  ],
+  [
+   "Bottom hook L",
+   "Bottom hook R",
+   "Tilt hub",
+   "Ratchet rail",
+   "Rubber bumper 12.7 mm"
+  ],
+  [
+   "Cross bar 2020 x 200",
+   "M5 drop-in T-nut"
+  ],
+  [
+   "Post clamp L",
+   "Post clamp R"
+  ],
+  [
+   "Post clamp cap L",
+   "Post clamp cap R"
+  ],
+  [
+   "Arm mount"
+  ],
+  [
+   "Swivel arm"
+  ],
+  [
+   "M6 star knob (male, 25 mm)"
+  ],
+  [
+   "Top jaw",
+   "Release lever"
+  ],
+  [
+   "iPad Air 11 (yours)"
+  ]
+ ],
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 13
+ }
+}

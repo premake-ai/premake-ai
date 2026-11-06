@@ -1,0 +1,863 @@
+{
+ "parts": [
+  {
+   "name": "Band rails: red oak dowel 1-1/4 in x 36 in (2-pack)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 22.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B0CTNL5K6F",
+   "notes": "Used full length, no cutting. Red oak, 31.75 mm."
+  },
+  {
+   "name": "Hip bar: red oak dowel 1-1/4 in x 36 in",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 12.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B00H2BANQ6",
+   "notes": "Used full length; the ends double as handles."
+  },
+  {
+   "name": "Hip bar pad (hook-and-loop barbell pad, ~16 x 4 in)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 15.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B01M7U09WB",
+   "notes": "Wraps around the 1-1/4 in dowel; pick grey or beige if offered."
+  },
+  {
+   "name": "41 in loop resistance bands, 5-band set",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 30.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B0H2W4W5TT",
+   "notes": "Two sets so every resistance level is a matched left/right pair. Bands up to 2.5 in wide fit the bar."
+  },
+  {
+   "name": "Upholstery foam 2 in x 18 in x 24 in, firm",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 25.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B07V65WJT7",
+   "notes": "Back pad. Laid on the 556 x 398 mm pad board, the extra wraps over the edges."
+  },
+  {
+   "name": "Boucle upholstery fabric, beige, 1.64 yd x 59 in",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 26.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B0D2DSXY2Z",
+   "notes": "Pad cover; about 800 x 700 mm is used."
+  },
+  {
+   "name": "Staple gun with staples",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 16.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: heavy duty staple gun with 3/8 in staples. Tool for stapling the fabric under the pad board."
+  },
+  {
+   "name": "M5 T-nuts for 2020 slot (100 pack)",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 10.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/dp/B01FOC6A8E",
+   "notes": "110 used: 78 panel and bracket bolts plus 32 for the corner brackets."
+  },
+  {
+   "name": "M5 x 8 socket screws for corner brackets",
+   "qty_per_unit": 32,
+   "unit_cost_usd": 0.12,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: M5x8 socket head screw black 50 pack"
+  },
+  {
+   "name": "M5 tee nut",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.25,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: M5 4-prong furniture tee nut. Tapped into the pad board so the pad bolts to the cap from below."
+  },
+  {
+   "name": "Rubber feet",
+   "qty_per_unit": 12,
+   "unit_cost_usd": 0.35,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 3/4 in square adhesive rubber bumper pads 3 mm. 8 under the rails, 4 on the back for standing it upright."
+  },
+  {
+   "name": "2020 corner bracket",
+   "qty_per_unit": 16,
+   "unit_cost_usd": 0.6,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=2020+corner+bracket&rh=p_85%3A2470955011",
+   "notes": "search: 2020 corner bracket",
+   "auto": "lib"
+  },
+  {
+   "name": "M5\u00d710 countersunk screw",
+   "qty_per_unit": 70,
+   "unit_cost_usd": 0.176,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M5x10+countersunk+screw&rh=p_85%3A2470955011",
+   "notes": "search: M5x10 countersunk screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M5\u00d716 countersunk screw",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.186,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M5x16+countersunk+screw&rh=p_85%3A2470955011",
+   "notes": "search: M5x16 countersunk screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M5\u00d720 button head screw",
+   "qty_per_unit": 8,
+   "unit_cost_usd": 0.192,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M5x20+button+head+screw&rh=p_85%3A2470955011",
+   "notes": "search: M5x20 button head screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M4\u00d720 self-tapping screw for plastic",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.086,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M4+x+20mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M4 x 20mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d716 self-tapping screw for plastic",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.063,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+x+16mm+pan+head+self+tapping+screws+for+plastic&rh=p_85%3A2470955011",
+   "notes": "search: M3 x 16mm pan head self tapping screws for plastic",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 150,
+ "kit_ok": true,
+ "needs_soldering": false,
+ "printed": [
+  {
+   "file": "stl/pin-10.stl",
+   "name": "Height pin",
+   "grams": 2.6,
+   "print_hours": 0.25,
+   "bbox": [
+    22.6,
+    22.1,
+    21.9
+   ]
+  },
+  {
+   "file": "stl/pin-11.stl",
+   "name": "Height pin",
+   "grams": 2.6,
+   "print_hours": 0.25,
+   "bbox": [
+    22.6,
+    22.1,
+    21.9
+   ]
+  },
+  {
+   "file": "stl/pin10.stl",
+   "name": "Height pin",
+   "grams": 2.6,
+   "print_hours": 0.25,
+   "bbox": [
+    22.6,
+    22.1,
+    21.9
+   ]
+  },
+  {
+   "file": "stl/pin11.stl",
+   "name": "Height pin",
+   "grams": 2.6,
+   "print_hours": 0.25,
+   "bbox": [
+    22.6,
+    22.1,
+    21.9
+   ]
+  },
+  {
+   "file": "stl/rail-bracket-l1.stl",
+   "name": "Rail bracket L1",
+   "grams": 9.7,
+   "print_hours": 0.49,
+   "bbox": [
+    43.1,
+    28.1,
+    54.3
+   ]
+  },
+  {
+   "file": "stl/rail-bracket-l2.stl",
+   "name": "Rail bracket L2",
+   "grams": 9.7,
+   "print_hours": 0.49,
+   "bbox": [
+    43.1,
+    28.1,
+    54.3
+   ]
+  },
+  {
+   "file": "stl/rail-bracket-r1.stl",
+   "name": "Rail bracket R1",
+   "grams": 9.7,
+   "print_hours": 0.49,
+   "bbox": [
+    43.1,
+    28.1,
+    54.3
+   ]
+  },
+  {
+   "file": "stl/rail-bracket-r2.stl",
+   "name": "Rail bracket R2",
+   "grams": 9.7,
+   "print_hours": 0.49,
+   "bbox": [
+    43.1,
+    28.1,
+    54.3
+   ]
+  },
+  {
+   "file": "stl/band-ring-l1.stl",
+   "name": "Band ring L1",
+   "grams": 2.7,
+   "print_hours": 0.25,
+   "bbox": [
+    6.1,
+    44.1,
+    44.1
+   ]
+  },
+  {
+   "file": "stl/band-ring-r1.stl",
+   "name": "Band ring R1",
+   "grams": 2.7,
+   "print_hours": 0.25,
+   "bbox": [
+    6.1,
+    44.1,
+    44.1
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/side-rail-l.stl",
+   "name": "Side rail L",
+   "process": "extrusion",
+   "params": {
+    "profile": "2040",
+    "length_mm": 1200.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1200.0,
+    "minutes": 5.0,
+    "material_usd": 12.0
+   },
+   "bbox": [
+    20.0,
+    1200.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/side-rail-r.stl",
+   "name": "Side rail R",
+   "process": "extrusion",
+   "params": {
+    "profile": "2040",
+    "length_mm": 1200.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1200.0,
+    "minutes": 5.0,
+    "material_usd": 12.0
+   },
+   "bbox": [
+    20.0,
+    1200.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/cross-bar-1.stl",
+   "name": "Cross bar 1",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 450.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 450.0,
+    "minutes": 5.0,
+    "material_usd": 2.7
+   },
+   "bbox": [
+    450.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/cross-bar-2.stl",
+   "name": "Cross bar 2",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 450.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 450.0,
+    "minutes": 5.0,
+    "material_usd": 2.7
+   },
+   "bbox": [
+    450.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/cross-bar-3.stl",
+   "name": "Cross bar 3",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 450.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 450.0,
+    "minutes": 5.0,
+    "material_usd": 2.7
+   },
+   "bbox": [
+    450.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/cross-bar-4.stl",
+   "name": "Cross bar 4",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 450.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 450.0,
+    "minutes": 5.0,
+    "material_usd": 2.7
+   },
+   "bbox": [
+    450.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/cross-bar-5.stl",
+   "name": "Cross bar 5",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 450.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 450.0,
+    "minutes": 5.0,
+    "material_usd": 2.7
+   },
+   "bbox": [
+    450.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/cross-bar-6.stl",
+   "name": "Cross bar 6",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 450.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 450.0,
+    "minutes": 5.0,
+    "material_usd": 2.7
+   },
+   "bbox": [
+    450.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/box-post-1.stl",
+   "name": "Box post 1",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 250.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 250.0,
+    "minutes": 5.0,
+    "material_usd": 1.5
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    250.0
+   ]
+  },
+  {
+   "file": "stl/box-post-2.stl",
+   "name": "Box post 2",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 250.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 250.0,
+    "minutes": 5.0,
+    "material_usd": 1.5
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    250.0
+   ]
+  },
+  {
+   "file": "stl/box-post-3.stl",
+   "name": "Box post 3",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 250.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 250.0,
+    "minutes": 5.0,
+    "material_usd": 1.5
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    250.0
+   ]
+  },
+  {
+   "file": "stl/box-post-4.stl",
+   "name": "Box post 4",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 250.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 250.0,
+    "minutes": 5.0,
+    "material_usd": 1.5
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    250.0
+   ]
+  },
+  {
+   "file": "stl/deck-panel-1.stl",
+   "name": "Deck panel 1",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 2183.8,
+    "area_cm2": 1832.5,
+    "minutes": 5.5,
+    "material_usd": 13.19
+   },
+   "bbox": [
+    501.0,
+    400.0,
+    5.6
+   ]
+  },
+  {
+   "file": "stl/deck-panel-2.stl",
+   "name": "Deck panel 2",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 2128.7,
+    "area_cm2": 1833.7,
+    "minutes": 5.4,
+    "material_usd": 13.2
+   },
+   "bbox": [
+    501.0,
+    400.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/front-panel.stl",
+   "name": "Front panel",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1117.3,
+    "area_cm2": 208.0,
+    "minutes": 3.3,
+    "material_usd": 1.5
+   },
+   "bbox": [
+    501.0,
+    5.6,
+    45.5
+   ]
+  },
+  {
+   "file": "stl/skirt-l1.stl",
+   "name": "Skirt L1",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 949.7,
+    "area_cm2": 145.6,
+    "minutes": 3.0,
+    "material_usd": 1.05
+   },
+   "bbox": [
+    5.5,
+    400.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/skirt-l2.stl",
+   "name": "Skirt L2",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 949.7,
+    "area_cm2": 145.6,
+    "minutes": 3.0,
+    "material_usd": 1.05
+   },
+   "bbox": [
+    5.5,
+    400.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/box-side-l.stl",
+   "name": "Box side L",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1761.2,
+    "area_cm2": 1074.2,
+    "minutes": 4.7,
+    "material_usd": 7.73
+   },
+   "bbox": [
+    5.6,
+    400.0,
+    295.5
+   ]
+  },
+  {
+   "file": "stl/skirt-r1.stl",
+   "name": "Skirt R1",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 980.5,
+    "area_cm2": 145.6,
+    "minutes": 3.0,
+    "material_usd": 1.05
+   },
+   "bbox": [
+    5.5,
+    400.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/skirt-r2.stl",
+   "name": "Skirt R2",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 980.5,
+    "area_cm2": 145.6,
+    "minutes": 3.0,
+    "material_usd": 1.05
+   },
+   "bbox": [
+    5.5,
+    400.0,
+    40.0
+   ]
+  },
+  {
+   "file": "stl/box-side-r.stl",
+   "name": "Box side R",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1884.4,
+    "area_cm2": 1074.2,
+    "minutes": 4.9,
+    "material_usd": 7.73
+   },
+   "bbox": [
+    5.6,
+    400.0,
+    295.5
+   ]
+  },
+  {
+   "file": "stl/box-front.stl",
+   "name": "Box front",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1560.1,
+    "area_cm2": 1146.3,
+    "minutes": 4.3,
+    "material_usd": 8.25
+   },
+   "bbox": [
+    490.0,
+    5.5,
+    255.5
+   ]
+  },
+  {
+   "file": "stl/box-back.stl",
+   "name": "Box back",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1783.9,
+    "area_cm2": 1355.0,
+    "minutes": 4.7,
+    "material_usd": 9.76
+   },
+   "bbox": [
+    501.0,
+    5.6,
+    295.5
+   ]
+  },
+  {
+   "file": "stl/box-top.stl",
+   "name": "Box top",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1769.0,
+    "area_cm2": 1772.0,
+    "minutes": 4.7,
+    "material_usd": 12.76
+   },
+   "bbox": [
+    490.0,
+    394.5,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/capbar-1.stl",
+   "name": "Cap bar L",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 350.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 350.0,
+    "minutes": 5.0,
+    "material_usd": 2.1
+   },
+   "bbox": [
+    20.0,
+    350.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/capskirt-1.stl",
+   "name": "Cap skirt L",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1210.2,
+    "area_cm2": 526.2,
+    "minutes": 3.5,
+    "material_usd": 3.79
+   },
+   "bbox": [
+    5.6,
+    400.0,
+    144.5
+   ]
+  },
+  {
+   "file": "stl/capbar1.stl",
+   "name": "Cap bar R",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 350.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 350.0,
+    "minutes": 5.0,
+    "material_usd": 2.1
+   },
+   "bbox": [
+    20.0,
+    350.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/capskirt1.stl",
+   "name": "Cap skirt R",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1256.3,
+    "area_cm2": 526.2,
+    "minutes": 3.6,
+    "material_usd": 3.79
+   },
+   "bbox": [
+    5.6,
+    400.0,
+    144.5
+   ]
+  },
+  {
+   "file": "stl/capboard.stl",
+   "name": "Cap board",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 2074.0,
+    "area_cm2": 1876.9,
+    "minutes": 5.3,
+    "material_usd": 13.51
+   },
+   "bbox": [
+    513.0,
+    400.0,
+    5.6
+   ]
+  },
+  {
+   "file": "stl/padboard.stl",
+   "name": "Pad board",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1946.8,
+    "area_cm2": 2022.3,
+    "minutes": 5.1,
+    "material_usd": 14.56
+   },
+   "bbox": [
+    556.1,
+    398.1,
+    5.6
+   ]
+  }
+ ]
+}

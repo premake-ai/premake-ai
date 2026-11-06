@@ -1,0 +1,6 @@
+{"wires": [
+  {"from": {"part": "12V 1A DC power adapter (5.5x2.1)", "pin": "plug"}, "to": {"part": "DC jack screw-terminal adapter", "pin": "jack"}, "color": "black", "kind": "jst"},
+  {"from": {"part": "DC jack screw-terminal adapter", "pin": "+"}, "to": {"part": "KCD1 rocker switch", "pin": "1"}, "color": "red", "kind": "screw terminal"},
+  {"from": {"part": "KCD1 rocker switch", "pin": "2"}, "to": {"part": "Lamp wire 2-core 18 AWG", "pin": "+"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "DC jack screw-terminal adapter", "pin": "-"}, "to": {"part": "Lamp wire 2-core 18 AWG", "pin": "-"}, "color": "black", "kind": "screw terminal"}
+]}

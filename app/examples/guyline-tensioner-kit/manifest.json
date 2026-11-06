@@ -1,0 +1,125 @@
+{
+ "t": 1793242655.239143,
+ "title": "Guyline tensioner kit",
+ "parts": [
+  {
+   "file": "stl/tensioner-1.stl",
+   "name": "Tensioner 1",
+   "group": "case",
+   "process": "print",
+   "color": "#c8f7c5",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    17.1,
+    46.1,
+    4.7
+   ]
+  },
+  {
+   "file": "stl/tensioner-2.stl",
+   "name": "Tensioner 2",
+   "group": "case",
+   "process": "print",
+   "color": "#c8f7c5",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    17.1,
+    46.1,
+    4.7
+   ]
+  },
+  {
+   "file": "stl/tensioner-3.stl",
+   "name": "Tensioner 3",
+   "group": "case",
+   "process": "print",
+   "color": "#c8f7c5",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    17.1,
+    46.1,
+    4.7
+   ]
+  },
+  {
+   "file": "stl/tensioner-4.stl",
+   "name": "Tensioner 4",
+   "group": "case",
+   "process": "print",
+   "color": "#c8f7c5",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    17.1,
+    46.1,
+    4.7
+   ]
+  },
+  {
+   "file": "stl/tensioner-5.stl",
+   "name": "Tensioner 5",
+   "group": "case",
+   "process": "print",
+   "color": "#c8f7c5",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    17.1,
+    46.1,
+    4.7
+   ]
+  },
+  {
+   "file": "stl/tensioner-6.stl",
+   "name": "Tensioner 6",
+   "group": "case",
+   "process": "print",
+   "color": "#c8f7c5",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    17.1,
+    46.1,
+    4.7
+   ]
+  },
+  {
+   "file": "stl/cord-winder.stl",
+   "name": "Cord winder",
+   "group": "case",
+   "process": "print",
+   "color": "#ff9f1c",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    34.0,
+    74.0,
+    4.0
+   ]
+  }
+ ]
+}

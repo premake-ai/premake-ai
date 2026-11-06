@@ -1,0 +1,29 @@
+{
+ "parts": [
+  {
+   "name": "Rubber foot",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.08,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "10 mm dia x 2.5 mm self-adhesive bumper pads (\"10mm rubber bumper feet adhesive\")"
+  }
+ ],
+ "assembly_minutes": 1,
+ "kit_ok": true,
+ "needs_soldering": false,
+ "printed": [
+  {
+   "file": "stl/stand.stl",
+   "name": "Stand",
+   "grams": 69.7,
+   "print_hours": 3.48,
+   "bbox": [
+    70.0,
+    98.7,
+    134.0
+   ]
+  }
+ ],
+ "fabricated": []
+}

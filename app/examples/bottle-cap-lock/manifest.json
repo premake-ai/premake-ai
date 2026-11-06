@@ -1,0 +1,108 @@
+{
+ "t": 1793242206.540491,
+ "title": "Make one of these",
+ "parts": [
+  {
+   "file": "stl/back-half.stl",
+   "name": "Back half",
+   "group": "case",
+   "process": "print",
+   "color": "#d92b25",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    81.0,
+    32.1,
+    17.1
+   ]
+  },
+  {
+   "file": "stl/front-half.stl",
+   "name": "Front half",
+   "group": "case",
+   "process": "print",
+   "color": "#d92b25",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    81.0,
+    32.1,
+    17.1
+   ]
+  },
+  {
+   "file": "stl/m3x14-hinge-screw.stl",
+   "name": "M3x14 hinge screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9a24a",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    5.5,
+    5.5,
+    17.0
+   ]
+  },
+  {
+   "file": "stl/m3-nyloc-nut.stl",
+   "name": "M3 nyloc nut",
+   "group": "component",
+   "process": "bought",
+   "color": "#999999",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    7.4,
+    6.4,
+    4.0
+   ]
+  },
+  {
+   "file": "stl/30-mm-padlock.stl",
+   "name": "30 mm padlock",
+   "group": "component",
+   "process": "bought",
+   "color": "#d4b048",
+   "explode": [
+    1.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    30.0,
+    15.0,
+    48.0
+   ]
+  },
+  {
+   "file": "stl/bottle-top-reference.stl",
+   "name": "Bottle top (reference)",
+   "group": "component",
+   "process": "bought",
+   "color": "#3a2a1a",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    28.7,
+    28.7,
+    51.3
+   ]
+  }
+ ]
+}

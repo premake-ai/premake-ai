@@ -1,0 +1,8 @@
+{
+ "title": "CoreXY 3D Printer",
+ "description": "A CoreXY 3D printer with a 220 x 220 x 250 mm build volume in a 2020 aluminium extrusion frame, with linear rails and stacked belt loops.",
+ "creator": "Premake",
+ "tags": [],
+ "created": "2026-10-29T02:50:39.028Z",
+ "demo": true
+}

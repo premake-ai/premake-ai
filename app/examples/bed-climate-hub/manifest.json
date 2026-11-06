@@ -1,0 +1,943 @@
+{
+ "t": 1793326687.3363168,
+ "title": "Bed Climate Hub",
+ "parts": [
+  {
+   "file": "stl/cover.stl",
+   "name": "Cover",
+   "group": "case",
+   "process": "sheet",
+   "color": "#d8dadc",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    240.0,
+    170.0,
+    123.8
+   ]
+  },
+  {
+   "file": "stl/base-tray.stl",
+   "name": "Base Tray",
+   "group": "case",
+   "process": "sheet",
+   "color": "#b9bcc0",
+   "explode": [
+    0.0,
+    -0.036,
+    -0.999
+   ],
+   "bbox": [
+    237.0,
+    170.0,
+    16.0
+   ]
+  },
+  {
+   "file": "stl/front-panel.stl",
+   "name": "Front Panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#1e1f22",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    240.0,
+    3.0,
+    127.0
+   ]
+  },
+  {
+   "file": "stl/rear-panel.stl",
+   "name": "Rear Panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#1e1f22",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    240.0,
+    3.0,
+    127.0
+   ]
+  },
+  {
+   "file": "stl/front-top-rail.stl",
+   "name": "Front Top Rail",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3c40",
+   "explode": [
+    0.0,
+    -0.825,
+    0.565
+   ],
+   "bbox": [
+    178.0,
+    12.0,
+    12.0
+   ]
+  },
+  {
+   "file": "stl/rear-top-rail.stl",
+   "name": "Rear Top Rail",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3c40",
+   "explode": [
+    0.0,
+    0.811,
+    0.585
+   ],
+   "bbox": [
+    178.0,
+    12.0,
+    12.0
+   ]
+  },
+  {
+   "file": "stl/tec-cradle.stl",
+   "name": "TEC Cradle",
+   "group": "case",
+   "process": "print",
+   "color": "#3a3c40",
+   "explode": [
+    0.712,
+    0.273,
+    -0.647
+   ],
+   "bbox": [
+    70.0,
+    60.0,
+    14.0
+   ]
+  },
+  {
+   "file": "stl/knob.stl",
+   "name": "Knob",
+   "group": "case",
+   "process": "print",
+   "color": "#e8e8e8",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    25.9,
+    16.0,
+    25.9
+   ]
+  },
+  {
+   "file": "stl/water-block-40mm.stl",
+   "name": "Water Block 40mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa0a6",
+   "explode": [
+    0.729,
+    0.279,
+    -0.625
+   ],
+   "bbox": [
+    40.0,
+    40.0,
+    12.0
+   ]
+  },
+  {
+   "file": "stl/peltier-tec1-12706.stl",
+   "name": "Peltier TEC1-12706",
+   "group": "component",
+   "process": "bought",
+   "color": "#f2f2f2",
+   "explode": [
+    0.773,
+    0.296,
+    -0.561
+   ],
+   "bbox": [
+    40.0,
+    40.0,
+    3.9
+   ]
+  },
+  {
+   "file": "stl/heatsink-92mm.stl",
+   "name": "Heatsink 92mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#c0c4c8",
+   "explode": [
+    0.895,
+    0.343,
+    -0.284
+   ],
+   "bbox": [
+    92.0,
+    92.0,
+    45.0
+   ]
+  },
+  {
+   "file": "stl/fan-92mm.stl",
+   "name": "Fan 92mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    0.906,
+    0.347,
+    0.242
+   ],
+   "bbox": [
+    92.0,
+    92.0,
+    25.1
+   ]
+  },
+  {
+   "file": "stl/pump-12v-dc.stl",
+   "name": "Pump 12V DC",
+   "group": "component",
+   "process": "bought",
+   "color": "#333333",
+   "explode": [
+    -0.879,
+    -0.253,
+    -0.404
+   ],
+   "bbox": [
+    40.1,
+    45.0,
+    45.1
+   ]
+  },
+  {
+   "file": "stl/reservoir-250ml.stl",
+   "name": "Reservoir 250ml",
+   "group": "component",
+   "process": "bought",
+   "color": "#a8d8f0",
+   "explode": [
+    -0.913,
+    0.408,
+    -0.027
+   ],
+   "bbox": [
+    60.0,
+    60.1,
+    118.1
+   ]
+  },
+  {
+   "file": "stl/fill-cap.stl",
+   "name": "Fill Cap",
+   "group": "component",
+   "process": "bought",
+   "color": "#1e1f22",
+   "explode": [
+    -0.749,
+    0.335,
+    0.572
+   ],
+   "bbox": [
+    30.0,
+    30.0,
+    6.0
+   ]
+  },
+  {
+   "file": "stl/6mm-hose-bulkhead.stl",
+   "name": "6mm Hose Bulkhead",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9a24a",
+   "explode": [
+    -0.234,
+    0.915,
+    -0.328
+   ],
+   "bbox": [
+    35.0,
+    30.0,
+    12.0
+   ]
+  },
+  {
+   "file": "stl/esp32-screw-terminal-board.stl",
+   "name": "ESP32 Screw Terminal Board",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d5c2e",
+   "explode": [
+    -0.222,
+    -0.622,
+    -0.751
+   ],
+   "bbox": [
+    75.0,
+    65.0,
+    1.6
+   ]
+  },
+  {
+   "file": "stl/esp32-devkitc-wroom-32-38-pin.stl",
+   "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    -0.249,
+    -0.674,
+    -0.696
+   ],
+   "bbox": [
+    55.4,
+    27.9,
+    13.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__1.stl",
+     "color": "#232a36",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__4.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__6.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__7.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__8.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__9.stl",
+     "color": "#b48a5c",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "esp32_devkitc",
+    "qty": 1,
+    "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+    "unit_cost_usd": 7.5,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/m3-10-brass-standoff-4.stl",
+   "name": "M3\u00d710 brass standoff \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    -0.208,
+    -0.583,
+    -0.785
+   ],
+   "bbox": [
+    71.8,
+    61.0,
+    10.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-brass-standoff-4__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "standoff",
+    "qty": 4,
+    "name": "M3\u00d710 brass standoff",
+    "unit_cost_usd": 0.18,
+    "mass_g": 1.4
+   }
+  },
+  {
+   "file": "stl/bts7960-h-bridge.stl",
+   "name": "BTS7960 H-Bridge",
+   "group": "component",
+   "process": "bought",
+   "color": "#a33a2a",
+   "explode": [
+    0.629,
+    -0.597,
+    -0.498
+   ],
+   "bbox": [
+    50.0,
+    50.0,
+    28.0
+   ]
+  },
+  {
+   "file": "stl/0-96-oled-display-ssd1306.stl",
+   "name": "0.96\" OLED display (SSD1306)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a3a6b",
+   "explode": [
+    -0.237,
+    -0.936,
+    0.26
+   ],
+   "bbox": [
+    27.3,
+    11.3,
+    27.9
+   ],
+   "subparts": [
+    {
+     "file": "stl/0-96-oled-display-ssd1306__0.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/0-96-oled-display-ssd1306__1.stl",
+     "color": "#1a3a6b",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/0-96-oled-display-ssd1306__2.stl",
+     "color": "#0f1013",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/0-96-oled-display-ssd1306__3.stl",
+     "color": "#08090c",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/0-96-oled-display-ssd1306__4.stl",
+     "color": "#0d1b2a",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/0-96-oled-display-ssd1306__5.stl",
+     "color": "#c9a24a",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/0-96-oled-display-ssd1306__6.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "oled_096",
+    "qty": 1,
+    "name": "0.96\" OLED display (SSD1306)",
+    "unit_cost_usd": 3.5,
+    "mass_g": 4.0
+   }
+  },
+  {
+   "file": "stl/ec11-encoder.stl",
+   "name": "EC11 Encoder",
+   "group": "component",
+   "process": "bought",
+   "color": "#555555",
+   "explode": [
+    0.536,
+    -0.824,
+    0.183
+   ],
+   "bbox": [
+    12.0,
+    29.5,
+    9.0
+   ]
+  },
+  {
+   "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1.stl",
+   "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9cdd2",
+   "explode": [
+    0.227,
+    0.899,
+    -0.374
+   ],
+   "bbox": [
+    16.2,
+    16.6,
+    14.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__0.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__1.stl",
+     "color": "#b9bec4",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__3.stl",
+     "color": "#e0e2e4",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__4.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "dc_jack_panel",
+    "qty": 1,
+    "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+    "unit_cost_usd": 0.8,
+    "mass_g": 6.0
+   }
+  },
+  {
+   "file": "stl/rubber-foot.stl",
+   "name": "Rubber Foot",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    0.0,
+    -0.03,
+    -1.0
+   ],
+   "bbox": [
+    202.0,
+    142.0,
+    5.0
+   ]
+  },
+  {
+   "file": "stl/m3-12-button-head-screw-4.stl",
+   "name": "M3\u00d712 button head screw \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    -1.0,
+    -0.011
+   ],
+   "bbox": [
+    165.7,
+    13.6,
+    115.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-12-button-head-screw-4__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M3\u00d712 button head screw",
+    "unit_cost_usd": 0.101,
+    "mass_g": 0.9
+   }
+  },
+  {
+   "file": "stl/m3-12-button-head-screw-4-2.stl",
+   "name": "M3\u00d712 button head screw \u00d74 (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    1.0,
+    -0.011
+   ],
+   "bbox": [
+    165.7,
+    13.6,
+    115.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-12-button-head-screw-4-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M3\u00d712 button head screw",
+    "unit_cost_usd": 0.101,
+    "mass_g": 0.9
+   }
+  },
+  {
+   "file": "stl/m3-12-button-head-screw-2.stl",
+   "name": "M3\u00d712 button head screw \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.908,
+    -0.016,
+    -0.419
+   ],
+   "bbox": [
+    13.6,
+    115.7,
+    5.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-12-button-head-screw-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 2,
+    "name": "M3\u00d712 button head screw",
+    "unit_cost_usd": 0.101,
+    "mass_g": 0.9
+   }
+  },
+  {
+   "file": "stl/m3-12-button-head-screw-2-2.stl",
+   "name": "M3\u00d712 button head screw \u00d72 (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.908,
+    -0.016,
+    -0.419
+   ],
+   "bbox": [
+    13.6,
+    115.7,
+    5.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-12-button-head-screw-2-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 2,
+    "name": "M3\u00d712 button head screw",
+    "unit_cost_usd": 0.101,
+    "mass_g": 0.9
+   }
+  },
+  {
+   "file": "stl/m3-12-button-head-screw-4-3.stl",
+   "name": "M3\u00d712 button head screw \u00d74 (3)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    -0.035,
+    0.999
+   ],
+   "bbox": [
+    125.7,
+    160.7,
+    13.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-12-button-head-screw-4-3__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M3\u00d712 button head screw",
+    "unit_cost_usd": 0.101,
+    "mass_g": 0.9
+   }
+  },
+  {
+   "file": "stl/m3-heat-set-insert-4.stl",
+   "name": "M3 heat-set insert \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    0.0,
+    -0.035,
+    0.999
+   ],
+   "bbox": [
+    124.6,
+    159.6,
+    5.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-heat-set-insert-4__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "insert",
+    "qty": 4,
+    "name": "M3 heat-set insert",
+    "unit_cost_usd": 0.12,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m3-heat-set-insert-2.stl",
+   "name": "M3 heat-set insert \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    0.0,
+    -0.833,
+    0.553
+   ],
+   "bbox": [
+    164.6,
+    5.7,
+    4.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-heat-set-insert-2__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "insert",
+    "qty": 2,
+    "name": "M3 heat-set insert",
+    "unit_cost_usd": 0.12,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m3-heat-set-insert-2-2.stl",
+   "name": "M3 heat-set insert \u00d72 (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    0.0,
+    0.82,
+    0.572
+   ],
+   "bbox": [
+    164.6,
+    5.7,
+    4.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-heat-set-insert-2-2__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "insert",
+    "qty": 2,
+    "name": "M3 heat-set insert",
+    "unit_cost_usd": 0.12,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m3-hex-nut-2.stl",
+   "name": "M3 hex nut \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.0,
+    -0.833,
+    -0.553
+   ],
+   "bbox": [
+    166.4,
+    2.4,
+    5.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-hex-nut-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 2,
+    "name": "M3 hex nut",
+    "unit_cost_usd": 0.06,
+    "mass_g": 0.3
+   }
+  },
+  {
+   "file": "stl/m3-hex-nut-2-2.stl",
+   "name": "M3 hex nut \u00d72 (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.0,
+    0.82,
+    -0.572
+   ],
+   "bbox": [
+    166.4,
+    2.4,
+    5.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-hex-nut-2-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 2,
+    "name": "M3 hex nut",
+    "unit_cost_usd": 0.06,
+    "mass_g": 0.3
+   }
+  },
+  {
+   "file": "stl/m3-hex-nut-2-3.stl",
+   "name": "M3 hex nut \u00d72 (3)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.906,
+    -0.016,
+    -0.423
+   ],
+   "bbox": [
+    2.4,
+    115.5,
+    6.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-hex-nut-2-3__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 2,
+    "name": "M3 hex nut",
+    "unit_cost_usd": 0.06,
+    "mass_g": 0.3
+   }
+  },
+  {
+   "file": "stl/m3-hex-nut-2-4.stl",
+   "name": "M3 hex nut \u00d72 (4)",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.906,
+    -0.016,
+    -0.423
+   ],
+   "bbox": [
+    2.4,
+    115.5,
+    6.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-hex-nut-2-4__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 2,
+    "name": "M3 hex nut",
+    "unit_cost_usd": 0.06,
+    "mass_g": 0.3
+   }
+  }
+ ],
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 2
+ }
+}

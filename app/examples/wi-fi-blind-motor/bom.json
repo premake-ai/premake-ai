@@ -1,0 +1,187 @@
+{
+ "parts": [
+  {
+   "name": "12 V 2 A plug-in power adapter, 5.5x2.1 (UL listed)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 9.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 12V 2A power supply 5.5x2.1"
+  },
+  {
+   "name": "Polyfuse 1.5 A (inline on 12 V)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.3,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: PTC resettable fuse 1.5A radial"
+  },
+  {
+   "name": "Perfboard 50x70 mm + female headers",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 50x70 perfboard prototype; cut to 52x34; holds TMC2209 + ESP32 + buck"
+  },
+  {
+   "name": "100 uF 35 V electrolytic capacitor",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "across driver VM/GND"
+  },
+  {
+   "name": "330 ohm (LED) + 1 kohm (TMC2209 UART) resistors",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.02,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "resistor assortment"
+  },
+  {
+   "name": "M2.5x6 screw (perfboard to posts)",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "self-tap into printed posts"
+  },
+  {
+   "name": "4 mm x 30 pan-head wood screw + 4 mm washer + wall anchor",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.2,
+   "supplier": "Hardware store",
+   "url": "",
+   "notes": "through the slotted side ears; pull the box down to tension the chain, then tighten"
+  },
+  {
+   "name": "22 AWG hookup wire",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "~1 m used"
+  },
+  {
+   "name": "NEMA17 stepper motor 48 mm",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 13.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=NEMA17+stepper+motor+48mm",
+   "notes": "search: NEMA17 stepper motor 48mm",
+   "auto": "lib"
+  },
+  {
+   "name": "TMC2209 stepper driver",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 5.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=TMC2209+stepstick",
+   "notes": "search: TMC2209 stepstick",
+   "auto": "lib"
+  },
+  {
+   "name": "MP1584 mini buck converter",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.2,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=MP1584EN+buck+module",
+   "notes": "search: MP1584EN buck module",
+   "auto": "lib"
+  },
+  {
+   "name": "ESP32-C3 SuperMini",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 4.0,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=ESP32-C3+SuperMini",
+   "notes": "search: ESP32-C3 SuperMini",
+   "auto": "lib"
+  },
+  {
+   "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.8,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=DC-022+panel+mount+barrel+jack+5.5x2.1",
+   "notes": "search: DC-022 panel mount barrel jack 5.5x2.1",
+   "auto": "lib"
+  },
+  {
+   "name": "M3 heat-set insert",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.12,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3+heat+set+insert+brass",
+   "notes": "search: M3 heat set insert brass",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d710 socket head screw",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.099,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x10+socket+head+cap+screw",
+   "notes": "search: M3x10 socket head cap screw",
+   "auto": "lib"
+  },
+  {
+   "name": "M3\u00d78 socket head screw",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.097,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=M3x8+socket+head+cap+screw",
+   "notes": "search: M3x8 socket head cap screw",
+   "auto": "lib"
+  },
+  {
+   "name": "5 mm LED (red)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "https://www.amazon.com/s?k=5mm+LED+assortment",
+   "notes": "search: 5mm LED assortment",
+   "auto": "lib"
+  }
+ ],
+ "assembly_minutes": 60,
+ "kit_ok": false,
+ "printed": [
+  {
+   "file": "stl/body.stl",
+   "name": "Body",
+   "grams": 83.7,
+   "print_hours": 4.19,
+   "bbox": [
+    104.0,
+    60.0,
+    135.0
+   ]
+  },
+  {
+   "file": "stl/front-plate.stl",
+   "name": "Front plate",
+   "grams": 28.4,
+   "print_hours": 1.42,
+   "bbox": [
+    72.0,
+    22.0,
+    135.0
+   ]
+  },
+  {
+   "file": "stl/sprocket.stl",
+   "name": "Sprocket",
+   "grams": 5.2,
+   "print_hours": 0.26,
+   "bbox": [
+    39.0,
+    13.0,
+    39.0
+   ]
+  }
+ ],
+ "fabricated": []
+}

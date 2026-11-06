@@ -1,0 +1,70 @@
+{
+ "t": 1793164647.727214,
+ "title": "Modular drawer bins",
+ "parts": [
+  {
+   "file": "stl/long-bin.stl",
+   "name": "Long bin",
+   "group": "case",
+   "color": "#ff9f1c",
+   "explode": [
+    -0.707,
+    -0.707,
+    0.026
+   ],
+   "bbox": [
+    159.4,
+    79.4,
+    44.0
+   ]
+  },
+  {
+   "file": "stl/square-bin.stl",
+   "name": "Square bin",
+   "group": "case",
+   "color": "#2ec4b6",
+   "explode": [
+    0.894,
+    -0.447,
+    0.017
+   ],
+   "bbox": [
+    79.4,
+    79.4,
+    44.0
+   ]
+  },
+  {
+   "file": "stl/wide-bin.stl",
+   "name": "Wide bin",
+   "group": "case",
+   "color": "#cbf3f0",
+   "explode": [
+    0.0,
+    0.999,
+    0.037
+   ],
+   "bbox": [
+    239.4,
+    79.4,
+    44.0
+   ]
+  },
+  {
+   "file": "stl/drawer-liner-cork-optional.stl",
+   "name": "Drawer liner (cork, optional)",
+   "group": "component",
+   "color": "#c8a27a",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    250.0,
+    170.0,
+    3.0
+   ]
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "parts": [
+  {
+   "name": "Clear silicone bumper feet 8 x 2 mm",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.04,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Search 'clear bumper pads 8mm'. Stops it sliding on glass desks."
+  }
+ ],
+ "assembly_minutes": 1,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/fold-flat-stand-print-in-place-base.stl",
+   "name": "Fold-flat stand (print-in-place): base",
+   "grams": 26.7,
+   "print_hours": 1.33,
+   "bbox": [
+    74.0,
+    224.5,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/fold-flat-stand-print-in-place-leaf.stl",
+   "name": "Fold-flat stand (print-in-place): leaf",
+   "grams": 18.1,
+   "print_hours": 0.9,
+   "bbox": [
+    62.0,
+    50.0,
+    88.5
+   ]
+  },
+  {
+   "file": "stl/fold-flat-stand-print-in-place-strut.stl",
+   "name": "Fold-flat stand (print-in-place): strut",
+   "grams": 10.9,
+   "print_hours": 0.54,
+   "bbox": [
+    46.0,
+    84.2,
+    43.7
+   ]
+  }
+ ],
+ "fabricated": []
+}

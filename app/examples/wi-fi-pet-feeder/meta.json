@@ -1,0 +1,13 @@
+{
+ "title": "Wi-Fi Pet Feeder",
+ "description": "Scheduled dry-food feeder: a 2 L clear acrylic hopper, a stepper-driven portion wheel and a chute into a stainless bowl, set over Wi-Fi.",
+ "creator": "Premake",
+ "tags": [
+  "pet",
+  "ESP32",
+  "stepper",
+  "laser cut"
+ ],
+ "created": "2026-10-30T04:54:33.960Z",
+ "demo": true
+}

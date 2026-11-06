@@ -1,0 +1,92 @@
+{
+ "t": 1793413682.359228,
+ "title": "In-Wall Laundry Vacuum Chute",
+ "parts": [
+  {
+   "file": "stl/catch-chamber.stl",
+   "name": "Catch chamber",
+   "group": "case",
+   "process": "print",
+   "color": "#c9a979",
+   "explode": [
+    0.447,
+    0.0,
+    -0.894
+   ],
+   "bbox": [
+    390.0,
+    390.0,
+    600.0
+   ]
+  },
+  {
+   "file": "stl/blower-dust-collector.stl",
+   "name": "Blower (dust collector)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2f6fb0",
+   "explode": [
+    0.905,
+    0.0,
+    -0.425
+   ],
+   "bbox": [
+    380.0,
+    480.0,
+    800.0
+   ]
+  },
+  {
+   "file": "stl/riser-pipe.stl",
+   "name": "Riser pipe",
+   "group": "component",
+   "process": "bought",
+   "color": "#f2f2f2",
+   "explode": [
+    0.6,
+    0.0,
+    0.8
+   ],
+   "bbox": [
+    159.5,
+    159.5,
+    900.2
+   ]
+  },
+  {
+   "file": "stl/inlet-port-1.stl",
+   "name": "Inlet port 1",
+   "group": "case",
+   "process": "print",
+   "color": "#5aa9ff",
+   "explode": [
+    -0.812,
+    0.334,
+    0.478
+   ],
+   "bbox": [
+    220.0,
+    40.0,
+    240.0
+   ]
+  },
+  {
+   "file": "stl/inlet-port-2.stl",
+   "name": "Inlet port 2",
+   "group": "case",
+   "process": "print",
+   "color": "#6fbf73",
+   "explode": [
+    -0.938,
+    0.199,
+    0.284
+   ],
+   "bbox": [
+    220.0,
+    40.0,
+    240.0
+   ]
+  }
+ ],
+ "scene": "floor"
+}

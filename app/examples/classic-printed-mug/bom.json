@@ -1,0 +1,19 @@
+{
+ "parts": [],
+ "assembly_minutes": 0,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/mug.stl",
+   "name": "Mug",
+   "grams": 76.1,
+   "print_hours": 3.81,
+   "bbox": [
+    114.1,
+    84.2,
+    96.1
+   ]
+  }
+ ],
+ "fabricated": []
+}

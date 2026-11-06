@@ -1,0 +1,40 @@
+{
+ "t": 1793242604.298632,
+ "title": "Door spice rack",
+ "parts": [
+  {
+   "file": "stl/spice-rack.stl",
+   "name": "Spice rack",
+   "group": "case",
+   "process": "print",
+   "color": "#2a9d8f",
+   "explode": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    219.8,
+    53.5,
+    58.1
+   ]
+  },
+  {
+   "file": "stl/spice-jars-not-included.stl",
+   "name": "Spice jars (not included)",
+   "group": "component",
+   "process": "bought",
+   "color": "#e9e4d8",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    154.4,
+    46.0,
+    102.1
+   ]
+  }
+ ]
+}

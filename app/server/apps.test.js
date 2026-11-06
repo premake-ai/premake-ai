@@ -56,7 +56,7 @@ function fixture() {
   fs.symlinkSync(app, path.join(P, BID, 'app')); // a whole app/ that is a link
   fs.writeFileSync(path.join(data, 'owners.json'), JSON.stringify({ [A]: ALICE, [BID]: ALICE, [C]: BOB, [D]: ALICE }));
   // app-preview: a repo example with an app (public at /apps/ex/<slug>, demo data) and one without
-  const ex = path.join(root, 'data', 'examples');
+  const ex = path.join(root, 'examples');
   fs.mkdirSync(path.join(ex, 'flag-counter', 'app'), { recursive: true });
   fs.writeFileSync(path.join(ex, 'flag-counter', 'meta.json'), JSON.stringify({ title: 'Flag counter' }));
   fs.writeFileSync(path.join(ex, 'flag-counter', 'app', 'index.html'), '<!doctype html><script src="/apps/sdk.js"></script><script src="app.js"></script><p>Flag</p>');

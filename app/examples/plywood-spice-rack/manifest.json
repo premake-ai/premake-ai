@@ -1,0 +1,567 @@
+{
+ "t": 1793335945.595396,
+ "title": "Plywood Spice Rack",
+ "parts": [
+  {
+   "file": "stl/back-board.stl",
+   "name": "Back Board",
+   "group": "case",
+   "process": "laser",
+   "color": "#c9a46c",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    236.0,
+    6.1,
+    470.0
+   ]
+  },
+  {
+   "file": "stl/left-side.stl",
+   "name": "Left Side",
+   "group": "case",
+   "process": "laser",
+   "color": "#d4b07a",
+   "explode": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    6.0,
+    62.0,
+    470.0
+   ]
+  },
+  {
+   "file": "stl/right-side.stl",
+   "name": "Right Side",
+   "group": "case",
+   "process": "laser",
+   "color": "#d4b07a",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    6.0,
+    62.0,
+    470.0
+   ]
+  },
+  {
+   "file": "stl/shelf-1.stl",
+   "name": "Shelf 1",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b886",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    236.0,
+    58.0,
+    6.0
+   ]
+  },
+  {
+   "file": "stl/front-rail-1.stl",
+   "name": "Front Rail 1",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b886",
+   "explode": [
+    0.0,
+    -1.0,
+    0.3
+   ],
+   "bbox": [
+    236.0,
+    6.0,
+    22.0
+   ]
+  },
+  {
+   "file": "stl/spice-jar-1-yours.stl",
+   "name": "Spice jar 1 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#e8e4dc",
+   "explode": [
+    -0.432,
+    -0.005,
+    -0.902
+   ],
+   "bbox": [
+    48.0,
+    48.1,
+    87.1
+   ]
+  },
+  {
+   "file": "stl/jar-cap-1-yours.stl",
+   "name": "Jar cap 1 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2b2b",
+   "explode": [
+    -0.564,
+    -0.007,
+    -0.826
+   ],
+   "bbox": [
+    47.0,
+    47.0,
+    18.1
+   ]
+  },
+  {
+   "file": "stl/spice-jar-2-yours.stl",
+   "name": "Spice jar 2 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#e8e4dc",
+   "explode": [
+    -0.157,
+    -0.006,
+    -0.988
+   ],
+   "bbox": [
+    48.0,
+    48.1,
+    87.1
+   ]
+  },
+  {
+   "file": "stl/jar-cap-2-yours.stl",
+   "name": "Jar cap 2 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2b2b",
+   "explode": [
+    -0.222,
+    -0.008,
+    -0.975
+   ],
+   "bbox": [
+    47.0,
+    47.0,
+    18.1
+   ]
+  },
+  {
+   "file": "stl/spice-jar-3-yours.stl",
+   "name": "Spice jar 3 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#e8e4dc",
+   "explode": [
+    0.158,
+    -0.006,
+    -0.987
+   ],
+   "bbox": [
+    48.0,
+    48.1,
+    87.1
+   ]
+  },
+  {
+   "file": "stl/jar-cap-3-yours.stl",
+   "name": "Jar cap 3 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2b2b",
+   "explode": [
+    0.222,
+    -0.008,
+    -0.975
+   ],
+   "bbox": [
+    47.0,
+    47.0,
+    18.1
+   ]
+  },
+  {
+   "file": "stl/spice-jar-4-yours.stl",
+   "name": "Spice jar 4 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#e8e4dc",
+   "explode": [
+    0.432,
+    -0.005,
+    -0.902
+   ],
+   "bbox": [
+    48.0,
+    48.1,
+    87.1
+   ]
+  },
+  {
+   "file": "stl/jar-cap-4-yours.stl",
+   "name": "Jar cap 4 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2b2b",
+   "explode": [
+    0.564,
+    -0.007,
+    -0.826
+   ],
+   "bbox": [
+    47.0,
+    47.0,
+    18.1
+   ]
+  },
+  {
+   "file": "stl/shelf-2.stl",
+   "name": "Shelf 2",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b886",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    236.0,
+    58.0,
+    6.0
+   ]
+  },
+  {
+   "file": "stl/front-rail-2.stl",
+   "name": "Front Rail 2",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b886",
+   "explode": [
+    0.0,
+    -1.0,
+    0.3
+   ],
+   "bbox": [
+    236.0,
+    6.0,
+    22.0
+   ]
+  },
+  {
+   "file": "stl/spice-jar-5-yours.stl",
+   "name": "Spice jar 5 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#e8e4dc",
+   "explode": [
+    -0.957,
+    -0.011,
+    -0.291
+   ],
+   "bbox": [
+    48.0,
+    48.1,
+    87.1
+   ]
+  },
+  {
+   "file": "stl/jar-cap-5-yours.stl",
+   "name": "Jar cap 5 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2b2b",
+   "explode": [
+    -0.952,
+    -0.011,
+    0.306
+   ],
+   "bbox": [
+    47.0,
+    47.0,
+    18.1
+   ]
+  },
+  {
+   "file": "stl/spice-jar-6-yours.stl",
+   "name": "Spice jar 6 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#e8e4dc",
+   "explode": [
+    -0.739,
+    -0.026,
+    -0.673
+   ],
+   "bbox": [
+    48.0,
+    48.1,
+    87.1
+   ]
+  },
+  {
+   "file": "stl/jar-cap-6-yours.stl",
+   "name": "Jar cap 6 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2b2b",
+   "explode": [
+    -0.719,
+    -0.026,
+    0.694
+   ],
+   "bbox": [
+    47.0,
+    47.0,
+    18.1
+   ]
+  },
+  {
+   "file": "stl/spice-jar-7-yours.stl",
+   "name": "Spice jar 7 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#e8e4dc",
+   "explode": [
+    0.739,
+    -0.026,
+    -0.673
+   ],
+   "bbox": [
+    48.0,
+    48.1,
+    87.1
+   ]
+  },
+  {
+   "file": "stl/jar-cap-7-yours.stl",
+   "name": "Jar cap 7 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2b2b",
+   "explode": [
+    0.72,
+    -0.026,
+    0.694
+   ],
+   "bbox": [
+    47.0,
+    47.0,
+    18.1
+   ]
+  },
+  {
+   "file": "stl/spice-jar-8-yours.stl",
+   "name": "Spice jar 8 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#e8e4dc",
+   "explode": [
+    0.957,
+    -0.011,
+    -0.29
+   ],
+   "bbox": [
+    48.0,
+    48.1,
+    87.1
+   ]
+  },
+  {
+   "file": "stl/jar-cap-8-yours.stl",
+   "name": "Jar cap 8 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2b2b",
+   "explode": [
+    0.952,
+    -0.011,
+    0.306
+   ],
+   "bbox": [
+    47.0,
+    47.0,
+    18.1
+   ]
+  },
+  {
+   "file": "stl/shelf-3.stl",
+   "name": "Shelf 3",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b886",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    236.0,
+    58.0,
+    6.0
+   ]
+  },
+  {
+   "file": "stl/front-rail-3.stl",
+   "name": "Front Rail 3",
+   "group": "case",
+   "process": "laser",
+   "color": "#d9b886",
+   "explode": [
+    0.0,
+    -1.0,
+    0.3
+   ],
+   "bbox": [
+    236.0,
+    6.0,
+    22.0
+   ]
+  },
+  {
+   "file": "stl/spice-jar-9-yours.stl",
+   "name": "Spice jar 9 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#e8e4dc",
+   "explode": [
+    -0.559,
+    -0.007,
+    0.829
+   ],
+   "bbox": [
+    48.0,
+    48.1,
+    87.1
+   ]
+  },
+  {
+   "file": "stl/jar-cap-9-yours.stl",
+   "name": "Jar cap 9 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2b2b",
+   "explode": [
+    -0.429,
+    -0.005,
+    0.903
+   ],
+   "bbox": [
+    47.0,
+    47.0,
+    18.1
+   ]
+  },
+  {
+   "file": "stl/spice-jar-10-yours.stl",
+   "name": "Spice jar 10 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#e8e4dc",
+   "explode": [
+    -0.219,
+    -0.008,
+    0.976
+   ],
+   "bbox": [
+    48.0,
+    48.1,
+    87.1
+   ]
+  },
+  {
+   "file": "stl/jar-cap-10-yours.stl",
+   "name": "Jar cap 10 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2b2b",
+   "explode": [
+    -0.156,
+    -0.006,
+    0.988
+   ],
+   "bbox": [
+    47.0,
+    47.0,
+    18.1
+   ]
+  },
+  {
+   "file": "stl/spice-jar-11-yours.stl",
+   "name": "Spice jar 11 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#e8e4dc",
+   "explode": [
+    0.22,
+    -0.008,
+    0.976
+   ],
+   "bbox": [
+    48.0,
+    48.1,
+    87.1
+   ]
+  },
+  {
+   "file": "stl/jar-cap-11-yours.stl",
+   "name": "Jar cap 11 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2b2b",
+   "explode": [
+    0.156,
+    -0.006,
+    0.988
+   ],
+   "bbox": [
+    47.0,
+    47.0,
+    18.1
+   ]
+  },
+  {
+   "file": "stl/spice-jar-12-yours.stl",
+   "name": "Spice jar 12 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#e8e4dc",
+   "explode": [
+    0.559,
+    -0.007,
+    0.829
+   ],
+   "bbox": [
+    48.0,
+    48.1,
+    87.1
+   ]
+  },
+  {
+   "file": "stl/jar-cap-12-yours.stl",
+   "name": "Jar cap 12 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2b2b",
+   "explode": [
+    0.429,
+    -0.005,
+    0.903
+   ],
+   "bbox": [
+    47.0,
+    47.0,
+    18.1
+   ]
+  }
+ ]
+}

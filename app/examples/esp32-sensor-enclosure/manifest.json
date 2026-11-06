@@ -1,0 +1,248 @@
+{
+ "t": 1793827259.889819,
+ "title": "ESP32 Sensor Enclosure",
+ "parts": [
+  {
+   "file": "stl/base.stl",
+   "name": "Base",
+   "group": "case",
+   "process": "print",
+   "color": "#eceae4",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    96.0,
+    50.0,
+    30.0
+   ]
+  },
+  {
+   "file": "stl/lid.stl",
+   "name": "Lid",
+   "group": "case",
+   "process": "print",
+   "color": "#3d7cc9",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    96.0,
+    50.0,
+    8.5
+   ]
+  },
+  {
+   "file": "stl/board-clamp.stl",
+   "name": "Board clamp",
+   "group": "case",
+   "process": "print",
+   "color": "#3d7cc9",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    8.0,
+    46.0,
+    3.5
+   ]
+  },
+  {
+   "file": "stl/esp32-devkitc-wroom-32-38-pin.stl",
+   "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    -0.97,
+    0.0,
+    -0.244
+   ],
+   "bbox": [
+    55.4,
+    27.9,
+    13.2
+   ],
+   "port": {
+    "type": "usb-c",
+    "at": [
+     -45.1,
+     0.0,
+     17.9
+    ],
+    "dir": [
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "wide": [
+     0.0,
+     1.0,
+     0.0
+    ]
+   },
+   "subparts": [
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__1.stl",
+     "color": "#232a36",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__4.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__6.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__7.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__8.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-devkitc-wroom-32-38-pin__9.stl",
+     "color": "#b48a5c",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "esp32_devkitc",
+    "qty": 1,
+    "name": "ESP32 DevKitC (WROOM-32, 38 pin)",
+    "unit_cost_usd": 7.5,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/bme280-sensor.stl",
+   "name": "BME280 sensor",
+   "group": "component",
+   "process": "bought",
+   "color": "#6a2c91",
+   "explode": [
+    0.986,
+    0.0,
+    -0.166
+   ],
+   "bbox": [
+    15.0,
+    12.0,
+    2.6
+   ],
+   "material": "pcb"
+  },
+  {
+   "file": "stl/rubber-feet.stl",
+   "name": "Rubber feet",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    84.0,
+    40.0,
+    2.5
+   ],
+   "material": "rubber"
+  },
+  {
+   "file": "stl/m2-5-8-self-tapping-screw-for-plastic-3.stl",
+   "name": "M2.5\u00d78 self-tapping screw for plastic \u00d73",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.984,
+    0.0,
+    -0.176
+   ],
+   "bbox": [
+    47.4,
+    44.6,
+    20.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m2-5-8-self-tapping-screw-for-plastic-3__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 3,
+    "name": "M2.5\u00d78 self-tapping screw for plastic",
+    "unit_cost_usd": 0.052,
+    "mass_g": 0.5
+   }
+  }
+ ],
+ "scene": "desk",
+ "assembly_order": [
+  [
+   "Base"
+  ],
+  [
+   "Rubber feet"
+  ],
+  [
+   "ESP32 DevKitC (WROOM-32, 38 pin)"
+  ],
+  [
+   "Board clamp"
+  ],
+  [
+   "BME280 sensor"
+  ],
+  [
+   "Lid"
+  ]
+ ],
+ "wiring": {
+  "file": "wiring.json",
+  "wires": 4,
+  "parts": [
+   "BME280 sensor",
+   "ESP32 DevKitC (WROOM-32, 38 pin)"
+  ],
+  "ok": true
+ }
+}

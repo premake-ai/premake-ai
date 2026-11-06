@@ -1,0 +1,54 @@
+{
+ "t": 1793164617.676977,
+ "title": "Wall bike hook",
+ "parts": [
+  {
+   "file": "stl/bike-hook.stl",
+   "name": "Bike hook",
+   "group": "case",
+   "color": "#2f6fdf",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    64.0,
+    141.0,
+    120.0
+   ]
+  },
+  {
+   "file": "stl/rubber-pad-strip.stl",
+   "name": "Rubber pad strip",
+   "group": "component",
+   "color": "#1d1d1d",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    17.6,
+    101.0,
+    2.4
+   ]
+  },
+  {
+   "file": "stl/10-x-2-1-2-in-wood-screws-3x.stl",
+   "name": "#10 x 2-1/2 in wood screws (3x)",
+   "group": "component",
+   "color": "#b0b5bb",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    56.5,
+    62.0,
+    98.5
+   ]
+  }
+ ]
+}

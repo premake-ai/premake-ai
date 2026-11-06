@@ -1,0 +1,194 @@
+{
+ "t": 1793828669.078348,
+ "title": "Bedside Lamp Base",
+ "parts": [
+  {
+   "file": "stl/lamp-base-body.stl",
+   "name": "Lamp base body",
+   "group": "case",
+   "process": "print",
+   "color": "#e9e4da",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    130.2,
+    130.2,
+    29.2
+   ]
+  },
+  {
+   "file": "stl/bottom-plate.stl",
+   "name": "Bottom plate",
+   "group": "case",
+   "process": "print",
+   "color": "#b9b2a5",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    123.5,
+    123.5,
+    6.1
+   ]
+  },
+  {
+   "file": "stl/m3-10-self-tapping-screw-for-plastic-3.stl",
+   "name": "M3\u00d710 self-tapping screw for plastic \u00d73",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.318,
+    0.0,
+    -0.948
+   ],
+   "bbox": [
+    80.6,
+    92.2,
+    12.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-self-tapping-screw-for-plastic-3__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 3,
+    "name": "M3\u00d710 self-tapping screw for plastic",
+    "unit_cost_usd": 0.059,
+    "mass_g": 0.8
+   }
+  },
+  {
+   "file": "stl/rubber-feet-12-7-mm.stl",
+   "name": "Rubber feet 12.7 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    87.7,
+    99.3,
+    3.5
+   ],
+   "material": "rubber"
+  },
+  {
+   "file": "stl/kcd1-rocker-switch.stl",
+   "name": "KCD1 rocker switch",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    21.0,
+    15.0,
+    21.5
+   ]
+  },
+  {
+   "file": "stl/dc-jack-screw-terminal-adapter.stl",
+   "name": "DC jack screw-terminal adapter",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f4fa0",
+   "explode": [
+    -0.688,
+    0.402,
+    -0.604
+   ],
+   "bbox": [
+    18.0,
+    14.0,
+    12.0
+   ]
+  },
+  {
+   "file": "stl/1-8-ips-lamp-pipe.stl",
+   "name": "1/8 IPS lamp pipe",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f98",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    10.3,
+    10.3,
+    80.0
+   ],
+   "material": "brass",
+   "step": "step/1-8-ips-lamp-pipe.step"
+  },
+  {
+   "file": "stl/lamp-pipe-lock-nuts.stl",
+   "name": "Lamp pipe lock nuts",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a8f98",
+   "explode": [
+    -0.002,
+    -0.0,
+    -1.0
+   ],
+   "bbox": [
+    16.0,
+    13.9,
+    21.0
+   ],
+   "material": "brass",
+   "step": "step/lamp-pipe-lock-nuts.step"
+  }
+ ],
+ "scene": "desk",
+ "assembly_order": [
+  [
+   "Lamp base body"
+  ],
+  [
+   "1/8 IPS lamp pipe",
+   "Lamp pipe lock nuts"
+  ],
+  [
+   "KCD1 rocker switch"
+  ],
+  [
+   "DC jack screw-terminal adapter"
+  ],
+  [
+   "Bottom plate"
+  ],
+  [
+   "Rubber feet 12.7 mm"
+  ]
+ ],
+ "wiring": {
+  "file": "wiring.json",
+  "wires": 4,
+  "parts": [
+   "12V 1A DC power adapter (5.5x2.1)",
+   "DC jack screw-terminal adapter",
+   "KCD1 rocker switch",
+   "Lamp wire 2-core 18 AWG"
+  ],
+  "ok": true
+ }
+}

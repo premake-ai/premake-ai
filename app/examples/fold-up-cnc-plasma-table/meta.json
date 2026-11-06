@@ -1,0 +1,14 @@
+{
+ "title": "Fold-Up CNC Plasma Table",
+ "description": "A 4 x 4 ft CNC plasma table with steel slats, a dual-motor belt gantry and a floating-head torch, which folds up on gas struts to stand against the garage wall.",
+ "creator": "Premake",
+ "tags": [
+  "cnc",
+  "plasma",
+  "garage",
+  "folding",
+  "steel"
+ ],
+ "created": "2026-11-05T02:06:43.893Z",
+ "demo": true
+}

@@ -1,0 +1,32 @@
+{
+ "wires": [
+  {"from": {"part": "18650 holder, 1 cell", "pin": "+"}, "to": {"part": "TP4056 USB-C charger", "pin": "B+"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "18650 holder, 1 cell", "pin": "-"}, "to": {"part": "TP4056 USB-C charger", "pin": "B-"}, "color": "black", "kind": "solder"},
+  {"from": {"part": "TP4056 USB-C charger", "pin": "OUT+"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "5V"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "TP4056 USB-C charger", "pin": "OUT-"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "GND"}, "color": "black", "kind": "solder"},
+
+  {"from": {"part": "0.96\" OLED display (SSD1306)", "pin": "VCC"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "3V3"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "0.96\" OLED display (SSD1306)", "pin": "GND"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "GND"}, "color": "black", "kind": "solder"},
+  {"from": {"part": "0.96\" OLED display (SSD1306)", "pin": "SDA"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "GPIO6"}, "color": "blue", "kind": "solder"},
+  {"from": {"part": "0.96\" OLED display (SSD1306)", "pin": "SCL"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "GPIO7"}, "color": "yellow", "kind": "solder"},
+
+  {"from": {"part": "ESP32-C3 SuperMini", "pin": "3V3"}, "to": {"part": "100k 1% resistor", "pin": "1"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "100k 1% resistor", "pin": "2"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "GPIO1"}, "color": "green", "kind": "solder"},
+  {"from": {"part": "2.5 mm stereo panel jack", "pin": "Tip"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "GPIO1"}, "color": "green", "kind": "solder"},
+  {"from": {"part": "2.5 mm stereo panel jack", "pin": "Sleeve"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "GND"}, "color": "black", "kind": "solder"},
+  {"from": {"part": "100nF ceramic capacitor", "pin": "C1 a"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "GPIO1"}, "color": "green", "kind": "solder"},
+  {"from": {"part": "100nF ceramic capacitor", "pin": "C1 b"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "GND"}, "color": "black", "kind": "solder"},
+
+  {"from": {"part": "TP4056 USB-C charger", "pin": "OUT+"}, "to": {"part": "470k resistor", "pin": "R1 a"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "470k resistor", "pin": "R1 b"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "GPIO0"}, "color": "white", "kind": "solder"},
+  {"from": {"part": "470k resistor", "pin": "R2 a"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "GPIO0"}, "color": "white", "kind": "solder"},
+  {"from": {"part": "470k resistor", "pin": "R2 b"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "GND"}, "color": "black", "kind": "solder"},
+  {"from": {"part": "100nF ceramic capacitor", "pin": "C2 a"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "GPIO0"}, "color": "white", "kind": "solder"},
+  {"from": {"part": "100nF ceramic capacitor", "pin": "C2 b"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "GND"}, "color": "black", "kind": "solder"},
+
+  {"from": {"part": "12 mm push button", "pin": "1"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "GPIO3"}, "color": "orange", "kind": "solder"},
+  {"from": {"part": "12 mm push button", "pin": "2"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "GND"}, "color": "black", "kind": "solder"},
+  {"from": {"part": "Active buzzer 3 V, 12 mm", "pin": "+"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "GPIO10"}, "color": "purple", "kind": "solder"},
+  {"from": {"part": "Active buzzer 3 V, 12 mm", "pin": "-"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "GND"}, "color": "black", "kind": "solder"}
+ ]
+}

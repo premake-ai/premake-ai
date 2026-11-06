@@ -1,0 +1,335 @@
+{
+ "t": 1793677147.483728,
+ "title": "Printed Recipe Baking Parchment",
+ "parts": [
+  {
+   "file": "stl/recipe-parchment-food-band.stl",
+   "name": "Recipe parchment: food band",
+   "group": "component",
+   "process": "bought",
+   "color": "#f4ecd9",
+   "explode": [
+    -0.602,
+    0.792,
+    -0.102
+   ],
+   "bbox": [
+    559.0,
+    120.0,
+    0.3
+   ]
+  },
+  {
+   "file": "stl/wall-f.stl",
+   "name": "Recipe parchment: front wall",
+   "group": "component",
+   "process": "bought",
+   "color": "#f4ecd9",
+   "explode": [
+    -0.796,
+    0.591,
+    -0.135
+   ],
+   "bbox": [
+    559.0,
+    40.0,
+    0.3
+   ]
+  },
+  {
+   "file": "stl/wall-b.stl",
+   "name": "Recipe parchment: back wall",
+   "group": "component",
+   "process": "bought",
+   "color": "#f4ecd9",
+   "explode": [
+    -0.467,
+    0.881,
+    -0.079
+   ],
+   "bbox": [
+    559.0,
+    40.0,
+    0.3
+   ]
+  },
+  {
+   "file": "stl/flap-f.stl",
+   "name": "Recipe parchment: front flap",
+   "group": "component",
+   "process": "bought",
+   "color": "#f4ecd9",
+   "explode": [
+    -0.951,
+    0.262,
+    -0.162
+   ],
+   "bbox": [
+    559.0,
+    90.5,
+    0.3
+   ]
+  },
+  {
+   "file": "stl/flap-b.stl",
+   "name": "Recipe parchment: back flap",
+   "group": "component",
+   "process": "bought",
+   "color": "#f4ecd9",
+   "explode": [
+    -0.39,
+    0.918,
+    -0.066
+   ],
+   "bbox": [
+    559.0,
+    90.5,
+    0.3
+   ]
+  },
+  {
+   "file": "stl/salmon-outline.stl",
+   "name": "Salmon outline",
+   "group": "component",
+   "process": "bought",
+   "color": "#e2704a",
+   "explode": [
+    -0.416,
+    0.902,
+    -0.115
+   ],
+   "bbox": [
+    141.7,
+    64.9,
+    1.2
+   ]
+  },
+  {
+   "file": "stl/lemon-slice-outlines.stl",
+   "name": "Lemon slice outlines",
+   "group": "component",
+   "process": "bought",
+   "color": "#d9a90f",
+   "explode": [
+    -0.417,
+    0.902,
+    -0.115
+   ],
+   "bbox": [
+    133.4,
+    53.4,
+    0.3
+   ]
+  },
+  {
+   "file": "stl/courgette-ring-outlines.stl",
+   "name": "Courgette ring outlines",
+   "group": "component",
+   "process": "bought",
+   "color": "#3f7f34",
+   "explode": [
+    -0.776,
+    0.626,
+    -0.08
+   ],
+   "bbox": [
+    119.6,
+    81.6,
+    0.2
+   ]
+  },
+  {
+   "file": "stl/oil-garlic-and-spice-circles.stl",
+   "name": "Oil, garlic and spice circles",
+   "group": "component",
+   "process": "bought",
+   "color": "#8a6d3b",
+   "explode": [
+    -0.365,
+    0.926,
+    -0.094
+   ],
+   "bbox": [
+    121.2,
+    23.2,
+    0.2
+   ]
+  },
+  {
+   "file": "stl/fold-and-twist-lines.stl",
+   "name": "Fold and twist lines",
+   "group": "component",
+   "process": "bought",
+   "color": "#b5482f",
+   "explode": [
+    -0.609,
+    0.787,
+    -0.101
+   ],
+   "bbox": [
+    538.0,
+    121.0,
+    0.6
+   ]
+  },
+  {
+   "file": "stl/art-wall-f.stl",
+   "name": "Ingredient labels (front)",
+   "group": "component",
+   "process": "bought",
+   "color": "#4a3426",
+   "explode": [
+    -0.802,
+    0.582,
+    -0.134
+   ],
+   "bbox": [
+    540.0,
+    38.5,
+    0.4
+   ]
+  },
+  {
+   "file": "stl/art-wall-b.stl",
+   "name": "Ingredient labels (back)",
+   "group": "component",
+   "process": "bought",
+   "color": "#4a3426",
+   "explode": [
+    -0.469,
+    0.88,
+    -0.078
+   ],
+   "bbox": [
+    540.0,
+    38.5,
+    0.2
+   ]
+  },
+  {
+   "file": "stl/art-flap-f.stl",
+   "name": "Folding steps",
+   "group": "component",
+   "process": "bought",
+   "color": "#4a3426",
+   "explode": [
+    -0.957,
+    0.244,
+    -0.157
+   ],
+   "bbox": [
+    536.0,
+    78.4,
+    0.4
+   ]
+  },
+  {
+   "file": "stl/art-flap-b.stl",
+   "name": "Recipe title and bake time",
+   "group": "component",
+   "process": "bought",
+   "color": "#4a3426",
+   "explode": [
+    -0.404,
+    0.912,
+    -0.066
+   ],
+   "bbox": [
+    536.0,
+    76.0,
+    0.4
+   ]
+  },
+  {
+   "file": "stl/half-sheet-tray-yours.stl",
+   "name": "Half-sheet tray (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9ccd0",
+   "explode": [
+    -0.553,
+    -0.832,
+    -0.044
+   ],
+   "bbox": [
+    454.7,
+    327.7,
+    25.5
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/closed-parcel-how-it-bakes.stl",
+   "name": "Closed parcel (how it bakes)",
+   "group": "component",
+   "process": "bought",
+   "color": "#f4ecd9",
+   "explode": [
+    -0.554,
+    -0.833,
+    0.0
+   ],
+   "bbox": [
+    418.9,
+    125.0,
+    51.1
+   ]
+  },
+  {
+   "file": "stl/4-folded-recipe-sheets-packed.stl",
+   "name": "4 folded recipe sheets (packed)",
+   "group": "component",
+   "process": "bought",
+   "color": "#f4ecd9",
+   "explode": [
+    0.791,
+    -0.609,
+    -0.062
+   ],
+   "bbox": [
+    279.5,
+    190.5,
+    2.0
+   ]
+  },
+  {
+   "file": "stl/recipe-sleeve.stl",
+   "name": "Recipe sleeve",
+   "group": "component",
+   "process": "bought",
+   "color": "#c49a6c",
+   "explode": [
+    0.791,
+    -0.609,
+    -0.061
+   ],
+   "bbox": [
+    292.0,
+    198.0,
+    5.5
+   ],
+   "engrave": {
+    "text": "SALMON, LEMON & COURGETTE",
+    "face": ">Z",
+    "depth_mm": 0.3,
+    "mode": "emboss",
+    "size_mm": 14.63
+   }
+  }
+ ],
+ "scene": "counter",
+ "assembly_order": [
+  [
+   "4 folded recipe sheets (packed)"
+  ],
+  [
+   "Recipe sleeve"
+  ]
+ ],
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 8
+ }
+}

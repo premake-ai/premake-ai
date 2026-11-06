@@ -1,0 +1,91 @@
+{
+ "parts": [
+  {
+   "name": "#8 x 1-1/4 in flat-head wood screw",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.08,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": "One per cleat, countersunk"
+  },
+  {
+   "name": "Plastic drywall anchor, #8",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.06,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": "Skip into studs or wood"
+  }
+ ],
+ "assembly_minutes": 4,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/hook-1.stl",
+   "name": "Hook 1",
+   "grams": 13.3,
+   "print_hours": 0.67,
+   "bbox": [
+    19.2,
+    42.2,
+    70.8
+   ]
+  },
+  {
+   "file": "stl/hook-2.stl",
+   "name": "Hook 2",
+   "grams": 13.3,
+   "print_hours": 0.67,
+   "bbox": [
+    19.2,
+    42.2,
+    70.8
+   ]
+  },
+  {
+   "file": "stl/hook-3.stl",
+   "name": "Hook 3",
+   "grams": 13.3,
+   "print_hours": 0.67,
+   "bbox": [
+    19.2,
+    42.2,
+    70.8
+   ]
+  },
+  {
+   "file": "stl/wall-cleat-1.stl",
+   "name": "Wall cleat 1",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    14.0,
+    8.0,
+    28.0
+   ]
+  },
+  {
+   "file": "stl/wall-cleat-2.stl",
+   "name": "Wall cleat 2",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    14.0,
+    8.0,
+    28.0
+   ]
+  },
+  {
+   "file": "stl/wall-cleat-3.stl",
+   "name": "Wall cleat 3",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    14.0,
+    8.0,
+    28.0
+   ]
+  }
+ ],
+ "fabricated": []
+}

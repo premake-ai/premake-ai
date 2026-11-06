@@ -1,0 +1,94 @@
+{
+ "t": 1793828242.037194,
+ "title": "Drawer Desk Organiser",
+ "parts": [
+  {
+   "file": "stl/organiser-body.stl",
+   "name": "Organiser body",
+   "group": "case",
+   "process": "print",
+   "color": "#e8e4dc",
+   "explode": [
+    0.0,
+    0.038,
+    -0.999
+   ],
+   "bbox": [
+    171.1,
+    90.0,
+    105.4
+   ]
+  },
+  {
+   "file": "stl/drawer.stl",
+   "name": "Drawer",
+   "group": "case",
+   "process": "print",
+   "color": "#d9734a",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    104.6,
+    90.7,
+    38.0
+   ]
+  },
+  {
+   "file": "stl/iphone-16-yours.stl",
+   "name": "iPhone 16 (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2a3b49",
+   "explode": [
+    0.84,
+    -0.227,
+    0.492
+   ],
+   "bbox": [
+    72.3,
+    48.3,
+    145.3
+   ],
+   "ref_model": {
+    "key": "iphone_16",
+    "m": [
+     [
+      1.0,
+      0.0,
+      0.0,
+      37.5
+     ],
+     [
+      0.0,
+      0.965925826,
+      0.258819045,
+      -10.396566
+     ],
+     [
+      0.0,
+      -0.258819045,
+      0.965925826,
+      111.294985
+     ],
+     [
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "yours": true
+   }
+  }
+ ],
+ "scene": "desk",
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 1
+ }
+}

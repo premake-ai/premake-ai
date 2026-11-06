@@ -1,0 +1,410 @@
+{
+ "t": 1793308158.4176111,
+ "title": "Recirculating Shower Unit",
+ "parts": [
+  {
+   "file": "stl/cabinet-wrap.stl",
+   "name": "Cabinet wrap",
+   "group": "case",
+   "process": "sheet",
+   "color": "#c8ccd0",
+   "explode": [
+    -0.723,
+    -0.114,
+    -0.682
+   ],
+   "bbox": [
+    241.2,
+    181.2,
+    280.0
+   ]
+  },
+  {
+   "file": "stl/base-plate.stl",
+   "name": "Base plate",
+   "group": "case",
+   "process": "sheet",
+   "color": "#c8ccd0",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    240.0,
+    180.0,
+    1.2
+   ]
+  },
+  {
+   "file": "stl/back-panel.stl",
+   "name": "Back panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#e8e8e8",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    237.6,
+    6.0,
+    272.0
+   ]
+  },
+  {
+   "file": "stl/equipment-shelf.stl",
+   "name": "Equipment shelf",
+   "group": "case",
+   "process": "laser",
+   "color": "#f2f2f2",
+   "explode": [
+    0.0,
+    0.0,
+    0.5
+   ],
+   "bbox": [
+    236.6,
+    171.0,
+    6.0
+   ]
+  },
+  {
+   "file": "stl/service-lid.stl",
+   "name": "Service lid",
+   "group": "case",
+   "process": "laser",
+   "color": "#3a4550",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    240.0,
+    180.0,
+    6.0
+   ]
+  },
+  {
+   "file": "stl/hair-catcher-basket.stl",
+   "name": "Hair catcher basket",
+   "group": "case",
+   "process": "print",
+   "color": "#2f9e8f",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    130.0,
+    100.0,
+    45.0
+   ]
+  },
+  {
+   "file": "stl/filter-clamp.stl",
+   "name": "Filter clamp",
+   "group": "case",
+   "process": "print",
+   "color": "#2f9e8f",
+   "explode": [
+    -0.05,
+    -0.726,
+    0.686
+   ],
+   "bbox": [
+    65.0,
+    65.1,
+    12.1
+   ]
+  },
+  {
+   "file": "stl/uv-clamp.stl",
+   "name": "UV clamp",
+   "group": "case",
+   "process": "print",
+   "color": "#2f9e8f",
+   "explode": [
+    -0.051,
+    0.718,
+    0.694
+   ],
+   "bbox": [
+    50.0,
+    50.0,
+    12.1
+   ]
+  },
+  {
+   "file": "stl/controller-box.stl",
+   "name": "Controller box",
+   "group": "case",
+   "process": "print",
+   "color": "#2f9e8f",
+   "explode": [
+    0.912,
+    0.41,
+    0.006
+   ],
+   "bbox": [
+    80.0,
+    55.0,
+    35.0
+   ]
+  },
+  {
+   "file": "stl/controller-lid.stl",
+   "name": "Controller lid",
+   "group": "case",
+   "process": "print",
+   "color": "#2f9e8f",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    80.0,
+    55.0,
+    3.0
+   ]
+  },
+  {
+   "file": "stl/sump-tank-5-l.stl",
+   "name": "Sump tank 5 L",
+   "group": "component",
+   "process": "bought",
+   "color": "#9fc9e8",
+   "explode": [
+    -0.036,
+    -0.063,
+    -0.997
+   ],
+   "bbox": [
+    200.0,
+    140.0,
+    110.0
+   ]
+  },
+  {
+   "file": "stl/12-v-diaphragm-pump.stl",
+   "name": "12 V diaphragm pump",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    -0.955,
+    -0.178,
+    0.236
+   ],
+   "bbox": [
+    65.0,
+    120.0,
+    75.0
+   ]
+  },
+  {
+   "file": "stl/carbon-sediment-cartridge.stl",
+   "name": "Carbon + sediment cartridge",
+   "group": "component",
+   "process": "bought",
+   "color": "#f4f4f4",
+   "explode": [
+    -0.044,
+    -0.633,
+    0.773
+   ],
+   "bbox": [
+    55.0,
+    55.1,
+    145.1
+   ]
+  },
+  {
+   "file": "stl/12-v-uv-c-sterilizer.stl",
+   "name": "12 V UV-C sterilizer",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa4ad",
+   "explode": [
+    -0.048,
+    0.679,
+    0.733
+   ],
+   "bbox": [
+    40.0,
+    40.0,
+    130.0
+   ]
+  },
+  {
+   "file": "stl/12-v-dump-solenoid-valve.stl",
+   "name": "12 V dump solenoid valve",
+   "group": "component",
+   "process": "bought",
+   "color": "#444444",
+   "explode": [
+    0.83,
+    -0.546,
+    0.114
+   ],
+   "bbox": [
+    55.0,
+    40.0,
+    55.0
+   ]
+  },
+  {
+   "file": "stl/esp32-c3-supermini.stl",
+   "name": "ESP32-C3 SuperMini",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    0.901,
+    0.407,
+    -0.152
+   ],
+   "bbox": [
+    23.5,
+    18.0,
+    4.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/esp32-c3-supermini__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__4.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__6.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    }
+   ],
+   "lib": {
+    "key": "esp32_c3_supermini",
+    "qty": 1,
+    "name": "ESP32-C3 SuperMini",
+    "unit_cost_usd": 4.0,
+    "mass_g": 2.0
+   }
+  },
+  {
+   "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1.stl",
+   "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9cdd2",
+   "explode": [
+    0.539,
+    0.581,
+    0.61
+   ],
+   "bbox": [
+    16.2,
+    16.6,
+    14.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__0.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__1.stl",
+     "color": "#b9bec4",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__3.stl",
+     "color": "#e0e2e4",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__4.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "dc_jack_panel",
+    "qty": 1,
+    "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+    "unit_cost_usd": 0.8,
+    "mass_g": 6.0
+   }
+  },
+  {
+   "file": "stl/m3-8-button-head-screw-4.stl",
+   "name": "M3\u00d78 button head screw \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    0.999,
+    -0.035
+   ],
+   "bbox": [
+    249.6,
+    5.7,
+    205.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-8-button-head-screw-4__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M3\u00d78 button head screw",
+    "unit_cost_usd": 0.097,
+    "mass_g": 0.7
+   }
+  }
+ ],
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 2
+ }
+}

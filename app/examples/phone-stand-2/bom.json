@@ -1,0 +1,18 @@
+{
+ "parts": [],
+ "assembly_minutes": 0,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/phone-stand.stl",
+   "name": "Phone Stand",
+   "grams": 44.7,
+   "print_hours": 2.23,
+   "bbox": [
+    80.0,
+    91.7,
+    92.3
+   ]
+  }
+ ]
+}

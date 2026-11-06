@@ -1,0 +1,35 @@
+{
+ "parts": [
+  {
+   "name": "#8 x 5/8 in flat head wood screw",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.08,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "Adhesive felt strip",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.4,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Cut to 50 x 28 mm"
+  }
+ ],
+ "assembly_minutes": 3,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/headphone-hook.stl",
+   "name": "Headphone hook",
+   "grams": 47.6,
+   "print_hours": 2.38,
+   "bbox": [
+    34.0,
+    140.0,
+    78.0
+   ]
+  }
+ ]
+}

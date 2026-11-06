@@ -1,0 +1,14 @@
+{
+ "title": "Ball Balancing Platform",
+ "description": "A desk toy that balances a ball on an 8-inch resistive touch plate: three MG996R servos on a 3-RRS linkage, run by an ESP32 at 100 Hz to hold the ball centred or roll it in circles.",
+ "creator": "Premake",
+ "tags": [
+  "robotics",
+  "ESP32",
+  "servo",
+  "parallel linkage",
+  "desk toy"
+ ],
+ "created": "2026-11-03T04:19:34.439Z",
+ "demo": true
+}

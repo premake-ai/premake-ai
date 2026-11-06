@@ -1,0 +1,372 @@
+{
+ "parts": [
+  {
+   "name": "Ground spike anchor, 50 mm (2 in) square post, bolt-clamp socket",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 18.0,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search: 2 inch square fence post spike anchor"
+  },
+  {
+   "name": "2020 L corner bracket with M5 screws and T-nuts",
+   "qty_per_unit": 14,
+   "unit_cost_usd": 0.6,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "8 rail-to-post, 6 stile-to-rail; search: 2020 corner bracket kit with T nuts"
+  },
+  {
+   "name": "M5 x 16 stainless button head screw + M5 T-nut",
+   "qty_per_unit": 36,
+   "unit_cost_usd": 0.25,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "6 per panel; search: M5 T-nut and button head screw kit stainless"
+  },
+  {
+   "name": "M5 EPDM bonded sealing washer",
+   "qty_per_unit": 36,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "cushions the acrylic, lets it expand; search: M5 bonded sealing washer"
+  },
+  {
+   "name": "2040 end cap",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "post tops, keeps rain out; search: 2040 extrusion end cap"
+  }
+ ],
+ "assembly_minutes": 75,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/left-post-adapter.stl",
+   "name": "Left post adapter",
+   "grams": 40.3,
+   "print_hours": 2.01,
+   "bbox": [
+    49.0,
+    49.0,
+    70.0
+   ]
+  },
+  {
+   "file": "stl/right-post-adapter.stl",
+   "name": "Right post adapter",
+   "grams": 40.3,
+   "print_hours": 2.01,
+   "bbox": [
+    49.0,
+    49.0,
+    70.0
+   ]
+  }
+ ],
+ "fabricated": [
+  {
+   "file": "stl/left-post.stl",
+   "name": "Left post",
+   "process": "extrusion",
+   "params": {
+    "profile": "2040",
+    "length_mm": 1200.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1200.0,
+    "minutes": 5.0,
+    "material_usd": 12.0
+   },
+   "bbox": [
+    20.0,
+    40.0,
+    1200.0
+   ]
+  },
+  {
+   "file": "stl/right-post.stl",
+   "name": "Right post",
+   "process": "extrusion",
+   "params": {
+    "profile": "2040",
+    "length_mm": 1200.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1200.0,
+    "minutes": 5.0,
+    "material_usd": 12.0
+   },
+   "bbox": [
+    20.0,
+    40.0,
+    1200.0
+   ]
+  },
+  {
+   "file": "stl/rail1.stl",
+   "name": "Rail 1",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 1000.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1000.0,
+    "minutes": 5.0,
+    "material_usd": 6.0
+   },
+   "bbox": [
+    1000.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/rail2.stl",
+   "name": "Rail 2",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 1000.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1000.0,
+    "minutes": 5.0,
+    "material_usd": 6.0
+   },
+   "bbox": [
+    1000.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/rail3.stl",
+   "name": "Rail 3",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 1000.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1000.0,
+    "minutes": 5.0,
+    "material_usd": 6.0
+   },
+   "bbox": [
+    1000.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/rail4.stl",
+   "name": "Rail 4",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 1000.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 1000.0,
+    "minutes": 5.0,
+    "material_usd": 6.0
+   },
+   "bbox": [
+    1000.0,
+    20.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/stile1.stl",
+   "name": "Mid stile 1",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 300.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 300.0,
+    "minutes": 5.0,
+    "material_usd": 1.8
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    300.0
+   ]
+  },
+  {
+   "file": "stl/stile2.stl",
+   "name": "Mid stile 2",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 300.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 300.0,
+    "minutes": 5.0,
+    "material_usd": 1.8
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    300.0
+   ]
+  },
+  {
+   "file": "stl/stile3.stl",
+   "name": "Mid stile 3",
+   "process": "extrusion",
+   "params": {
+    "profile": "2020",
+    "length_mm": 300.0,
+    "tapped_ends": 0
+   },
+   "est": {
+    "length_mm": 300.0,
+    "minutes": 5.0,
+    "material_usd": 1.8
+   },
+   "bbox": [
+    20.0,
+    20.0,
+    300.0
+   ]
+  },
+  {
+   "file": "stl/panel00.stl",
+   "name": "Lower panel",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1640.0,
+    "area_cm2": 1438.2,
+    "minutes": 4.4,
+    "material_usd": 30.2
+   },
+   "bbox": [
+    500.0,
+    5.5,
+    320.0
+   ]
+  },
+  {
+   "file": "stl/panel01.stl",
+   "name": "Lower panel",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1640.0,
+    "area_cm2": 1438.2,
+    "minutes": 4.4,
+    "material_usd": 30.2
+   },
+   "bbox": [
+    500.0,
+    5.5,
+    320.0
+   ]
+  },
+  {
+   "file": "stl/panel10.stl",
+   "name": "Upper panel",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1640.0,
+    "area_cm2": 1466.7,
+    "minutes": 4.4,
+    "material_usd": 30.8
+   },
+   "bbox": [
+    500.0,
+    5.5,
+    320.0
+   ]
+  },
+  {
+   "file": "stl/panel11.stl",
+   "name": "Upper panel",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1640.0,
+    "area_cm2": 1466.7,
+    "minutes": 4.4,
+    "material_usd": 30.8
+   },
+   "bbox": [
+    500.0,
+    5.5,
+    320.0
+   ]
+  },
+  {
+   "file": "stl/panel20.stl",
+   "name": "Upper panel",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1640.0,
+    "area_cm2": 1466.7,
+    "minutes": 4.4,
+    "material_usd": 30.8
+   },
+   "bbox": [
+    500.0,
+    5.5,
+    320.0
+   ]
+  },
+  {
+   "file": "stl/panel21.stl",
+   "name": "Upper panel",
+   "process": "laser",
+   "params": {
+    "material": "acrylic",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1640.0,
+    "area_cm2": 1466.7,
+    "minutes": 4.4,
+    "material_usd": 30.8
+   },
+   "bbox": [
+    500.0,
+    5.5,
+    320.0
+   ]
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{"wires": [
+  {"from": {"part": "USB-C power breakout", "pin": "VBUS"}, "to": {"part": "PTC fuse 2A", "pin": "1"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "PTC fuse 2A", "pin": "2"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "5V"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "PTC fuse 2A", "pin": "2"}, "to": {"part": "LED ring 24", "pin": "5V"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "USB-C power breakout", "pin": "GND"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "GND"}, "color": "black", "kind": "solder"},
+  {"from": {"part": "USB-C power breakout", "pin": "GND"}, "to": {"part": "LED ring 24", "pin": "GND"}, "color": "black", "kind": "solder"},
+  {"from": {"part": "1000uF capacitor", "pin": "+"}, "to": {"part": "LED ring 24", "pin": "5V"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "1000uF capacitor", "pin": "-"}, "to": {"part": "LED ring 24", "pin": "GND"}, "color": "black", "kind": "solder"},
+  {"from": {"part": "ESP32-C3 SuperMini", "pin": "GPIO4"}, "to": {"part": "330 ohm resistor", "pin": "1"}, "color": "green", "kind": "solder"},
+  {"from": {"part": "330 ohm resistor", "pin": "2"}, "to": {"part": "LED ring 24", "pin": "DIN"}, "color": "green", "kind": "solder"},
+  {"from": {"part": "ESP32-C3 SuperMini", "pin": "GPIO0"}, "to": {"part": "Encoder EC11", "pin": "A"}, "color": "yellow", "kind": "solder"},
+  {"from": {"part": "ESP32-C3 SuperMini", "pin": "GPIO1"}, "to": {"part": "Encoder EC11", "pin": "B"}, "color": "blue", "kind": "solder"},
+  {"from": {"part": "ESP32-C3 SuperMini", "pin": "GND"}, "to": {"part": "Encoder EC11", "pin": "C"}, "color": "black", "kind": "solder"},
+  {"from": {"part": "ESP32-C3 SuperMini", "pin": "GPIO3"}, "to": {"part": "Encoder EC11", "pin": "SW1"}, "color": "white", "kind": "solder"},
+  {"from": {"part": "ESP32-C3 SuperMini", "pin": "GND"}, "to": {"part": "Encoder EC11", "pin": "SW2"}, "color": "black", "kind": "solder"}
+]}

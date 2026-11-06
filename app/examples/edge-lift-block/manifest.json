@@ -1,0 +1,54 @@
+{
+ "t": 1793164653.480833,
+ "title": "Edge lift block",
+ "parts": [
+  {
+   "file": "stl/edge-block.stl",
+   "name": "Edge block",
+   "group": "case",
+   "color": "#f4a259",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    110.0,
+    60.0,
+    62.0
+   ]
+  },
+  {
+   "file": "stl/3-8-16-x-4-in-eye-bolt-nut-washer.stl",
+   "name": "3/8-16 x 4 in eye bolt + nut + washer",
+   "group": "component",
+   "color": "#9aa0a6",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    26.0,
+    21.0,
+    126.0
+   ]
+  },
+  {
+   "file": "stl/locking-carabiner.stl",
+   "name": "Locking carabiner",
+   "group": "component",
+   "color": "#3a86ff",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    10.1,
+    32.1,
+    60.1
+   ]
+  }
+ ]
+}

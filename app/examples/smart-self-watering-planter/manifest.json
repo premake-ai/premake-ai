@@ -1,0 +1,557 @@
+{
+ "t": 1793392284.336766,
+ "title": "This",
+ "parts": [
+  {
+   "file": "stl/planter-body.stl",
+   "name": "Planter body",
+   "group": "case",
+   "process": "print",
+   "color": "#e9e5dc",
+   "explode": [
+    0.0,
+    -0.151,
+    -0.989
+   ],
+   "bbox": [
+    126.6,
+    156.3,
+    140.4
+   ]
+  },
+  {
+   "file": "stl/back-cover.stl",
+   "name": "Back cover",
+   "group": "case",
+   "process": "print",
+   "color": "#e9e5dc",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    60.0,
+    2.4,
+    82.0
+   ]
+  },
+  {
+   "file": "stl/grow-pot-yours.stl",
+   "name": "Grow pot (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#3a3a3a",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    105.1,
+    105.1,
+    89.5
+   ]
+  },
+  {
+   "file": "stl/soil-yours.stl",
+   "name": "Soil (yours)",
+   "group": "component",
+   "process": "bought",
+   "color": "#4a3526",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    95.3,
+    95.3,
+    3.1
+   ]
+  },
+  {
+   "file": "stl/18650-holder-1-cell.stl",
+   "name": "18650 holder, 1 cell",
+   "group": "component",
+   "process": "bought",
+   "color": "#1c1d20",
+   "explode": [
+    -0.147,
+    0.957,
+    0.251
+   ],
+   "bbox": [
+    21.0,
+    15.0,
+    105.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/18650-holder-1-cell__0.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/18650-holder-1-cell__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/18650-holder-1-cell__2.stl",
+     "color": "#d23b2e",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "holder_18650",
+    "qty": 1,
+    "name": "18650 holder, 1 cell",
+    "unit_cost_usd": 1.0,
+    "mass_g": 8.0
+   }
+  },
+  {
+   "file": "stl/18650-li-ion-cell.stl",
+   "name": "18650 Li-ion cell",
+   "group": "component",
+   "process": "bought",
+   "color": "#2f6fd0",
+   "explode": [
+    -0.146,
+    0.953,
+    0.267
+   ],
+   "bbox": [
+    18.4,
+    18.4,
+    66.1
+   ],
+   "subparts": [
+    {
+     "file": "stl/18650-li-ion-cell__0.stl",
+     "color": "#2f6fd0",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/18650-li-ion-cell__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/18650-li-ion-cell__2.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "cell_18650",
+    "qty": 1,
+    "name": "18650 Li-ion cell",
+    "unit_cost_usd": 5.0,
+    "mass_g": 46.0
+   }
+  },
+  {
+   "file": "stl/12-12-mm-tactile-button.stl",
+   "name": "12\u00d712 mm tactile button",
+   "group": "component",
+   "process": "bought",
+   "color": "#1c1d20",
+   "explode": [
+    -0.106,
+    0.691,
+    0.715
+   ],
+   "bbox": [
+    12.0,
+    12.6,
+    10.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/12-12-mm-tactile-button__0.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/12-12-mm-tactile-button__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/12-12-mm-tactile-button__2.stl",
+     "color": "#2c2e33",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/12-12-mm-tactile-button__3.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "tact_12x12",
+    "qty": 1,
+    "name": "12\u00d712 mm tactile button",
+    "unit_cost_usd": 0.2,
+    "mass_g": 1.0
+   }
+  },
+  {
+   "file": "stl/5-mm-led-red.stl",
+   "name": "5 mm LED (red)",
+   "group": "component",
+   "process": "bought",
+   "color": "#e8483d",
+   "explode": [
+    -0.288,
+    0.75,
+    0.596
+   ],
+   "bbox": [
+    5.8,
+    5.8,
+    31.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/5-mm-led-red__0.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/5-mm-led-red__1.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "led_5mm",
+    "qty": 1,
+    "name": "5 mm LED (red)",
+    "unit_cost_usd": 0.05,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/esp32-c3-supermini.stl",
+   "name": "ESP32-C3 SuperMini",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    0.142,
+    0.942,
+    0.304
+   ],
+   "bbox": [
+    23.5,
+    4.3,
+    18.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/esp32-c3-supermini__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__4.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__6.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    }
+   ],
+   "lib": {
+    "key": "esp32_c3_supermini",
+    "qty": 1,
+    "name": "ESP32-C3 SuperMini",
+    "unit_cost_usd": 4.0,
+    "mass_g": 2.0
+   }
+  },
+  {
+   "file": "stl/tp4056-usb-c-charger.stl",
+   "name": "TP4056 USB-C charger",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f4fa0",
+   "explode": [
+    0.183,
+    0.981,
+    0.059
+   ],
+   "bbox": [
+    28.0,
+    4.0,
+    17.0
+   ],
+   "cable": {
+    "type": "usb-c",
+    "at": [
+     30.0,
+     89.8,
+     82.5
+    ],
+    "dir": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "length_mm": 400.0
+   }
+  },
+  {
+   "file": "stl/d4184-mosfet-module.stl",
+   "name": "D4184 MOSFET module",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f4fa0",
+   "explode": [
+    -0.144,
+    0.989,
+    -0.013
+   ],
+   "bbox": [
+    17.0,
+    10.0,
+    34.0
+   ]
+  },
+  {
+   "file": "stl/bh1750-light-sensor.stl",
+   "name": "BH1750 light sensor",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f4fa0",
+   "explode": [
+    0.188,
+    0.652,
+    0.734
+   ],
+   "bbox": [
+    18.5,
+    13.9,
+    3.2
+   ]
+  },
+  {
+   "file": "stl/bme280-sensor.stl",
+   "name": "BME280 sensor",
+   "group": "component",
+   "process": "bought",
+   "color": "#6a2a8a",
+   "explode": [
+    0.399,
+    0.842,
+    0.362
+   ],
+   "bbox": [
+    3.0,
+    12.0,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/capacitive-soil-sensor.stl",
+   "name": "Capacitive soil sensor",
+   "group": "component",
+   "process": "bought",
+   "color": "#111111",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    23.0,
+    4.0,
+    98.0
+   ]
+  },
+  {
+   "file": "stl/mini-submersible-pump.stl",
+   "name": "Mini submersible pump",
+   "group": "component",
+   "process": "bought",
+   "color": "#202020",
+   "explode": [
+    -0.0,
+    0.341,
+    -0.94
+   ],
+   "bbox": [
+    45.0,
+    24.0,
+    30.0
+   ]
+  },
+  {
+   "file": "stl/silicone-tube.stl",
+   "name": "Silicone tube",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8eef5",
+   "explode": [
+    0.453,
+    0.837,
+    0.306
+   ],
+   "bbox": [
+    10.0,
+    21.8,
+    119.5
+   ]
+  },
+  {
+   "file": "stl/m3-heat-set-insert.stl",
+   "name": "M3 heat-set insert",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    -0.304,
+    0.936,
+    -0.177
+   ],
+   "bbox": [
+    4.6,
+    5.7,
+    4.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-heat-set-insert__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "insert",
+    "qty": 1,
+    "name": "M3 heat-set insert",
+    "unit_cost_usd": 0.12,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m3-heat-set-insert-2.stl",
+   "name": "M3 heat-set insert (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    0.304,
+    0.936,
+    -0.177
+   ],
+   "bbox": [
+    4.6,
+    5.7,
+    4.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-heat-set-insert-2__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "insert",
+    "qty": 1,
+    "name": "M3 heat-set insert",
+    "unit_cost_usd": 0.12,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m3-heat-set-insert-3.stl",
+   "name": "M3 heat-set insert (3)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    -0.253,
+    0.781,
+    0.571
+   ],
+   "bbox": [
+    4.6,
+    5.7,
+    4.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-heat-set-insert-3__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "insert",
+    "qty": 1,
+    "name": "M3 heat-set insert",
+    "unit_cost_usd": 0.12,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m3-heat-set-insert-4.stl",
+   "name": "M3 heat-set insert (4)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    0.253,
+    0.781,
+    0.571
+   ],
+   "bbox": [
+    4.6,
+    5.7,
+    4.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-heat-set-insert-4__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "insert",
+    "qty": 1,
+    "name": "M3 heat-set insert",
+    "unit_cost_usd": 0.12,
+    "mass_g": 0.4
+   }
+  }
+ ],
+ "scene": "desk"
+}

@@ -1,0 +1,270 @@
+{
+ "t": 1793827972.533768,
+ "title": "Wall Key and Mail Organizer",
+ "parts": [
+  {
+   "file": "stl/back-panel.stl",
+   "name": "Back panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#c9a26b",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    266.0,
+    5.5,
+    195.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/shelf.stl",
+   "name": "Shelf",
+   "group": "case",
+   "process": "laser",
+   "color": "#c9a26b",
+   "explode": [
+    0.0,
+    -0.3,
+    1.0
+   ],
+   "bbox": [
+    266.0,
+    65.5,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/shelf-lip.stl",
+   "name": "Shelf lip",
+   "group": "case",
+   "process": "laser",
+   "color": "#c9a26b",
+   "explode": [
+    0.0,
+    -0.5,
+    1.0
+   ],
+   "bbox": [
+    250.0,
+    5.5,
+    19.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/gusset-l.stl",
+   "name": "Gusset L",
+   "group": "case",
+   "process": "laser",
+   "color": "#c9a26b",
+   "explode": [
+    -0.3,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    5.5,
+    55.5,
+    55.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/gusset-r.stl",
+   "name": "Gusset R",
+   "group": "case",
+   "process": "laser",
+   "color": "#c9a26b",
+   "explode": [
+    0.3,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    5.5,
+    55.5,
+    55.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/pocket-bottom.stl",
+   "name": "Pocket bottom",
+   "group": "case",
+   "process": "laser",
+   "color": "#c9a26b",
+   "explode": [
+    0.0,
+    -0.5,
+    -0.3
+   ],
+   "bbox": [
+    246.0,
+    39.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/pocket-side-l.stl",
+   "name": "Pocket side L",
+   "group": "case",
+   "process": "laser",
+   "color": "#c9a26b",
+   "explode": [
+    -1.0,
+    -0.3,
+    0.0
+   ],
+   "bbox": [
+    5.5,
+    39.0,
+    65.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/pocket-side-r.stl",
+   "name": "Pocket side R",
+   "group": "case",
+   "process": "laser",
+   "color": "#c9a26b",
+   "explode": [
+    1.0,
+    -0.3,
+    0.0
+   ],
+   "bbox": [
+    5.5,
+    39.0,
+    65.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/pocket-front.stl",
+   "name": "Pocket front",
+   "group": "case",
+   "process": "laser",
+   "color": "#c9a26b",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    266.0,
+    5.5,
+    65.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/hook-1.stl",
+   "name": "Hook 1",
+   "group": "case",
+   "process": "laser",
+   "color": "#c9a26b",
+   "explode": [
+    0.0,
+    -1.0,
+    -0.2
+   ],
+   "bbox": [
+    5.5,
+    47.5,
+    44.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/hook-2.stl",
+   "name": "Hook 2",
+   "group": "case",
+   "process": "laser",
+   "color": "#c9a26b",
+   "explode": [
+    0.0,
+    -1.0,
+    -0.2
+   ],
+   "bbox": [
+    5.5,
+    47.5,
+    44.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/hook-3.stl",
+   "name": "Hook 3",
+   "group": "case",
+   "process": "laser",
+   "color": "#c9a26b",
+   "explode": [
+    0.0,
+    -1.0,
+    -0.2
+   ],
+   "bbox": [
+    5.5,
+    47.5,
+    44.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/hook-4.stl",
+   "name": "Hook 4",
+   "group": "case",
+   "process": "laser",
+   "color": "#c9a26b",
+   "explode": [
+    0.0,
+    -1.0,
+    -0.2
+   ],
+   "bbox": [
+    5.5,
+    47.5,
+    44.0
+   ],
+   "material": "plywood"
+  }
+ ],
+ "scene": "wall",
+ "assembly_order": [
+  [
+   "Back panel"
+  ],
+  [
+   "Hook 1",
+   "Hook 2",
+   "Hook 3",
+   "Hook 4"
+  ],
+  [
+   "Gusset L",
+   "Gusset R"
+  ],
+  [
+   "Shelf"
+  ],
+  [
+   "Shelf lip"
+  ],
+  [
+   "Pocket bottom",
+   "Pocket side L",
+   "Pocket side R"
+  ],
+  [
+   "Pocket front"
+  ]
+ ]
+}

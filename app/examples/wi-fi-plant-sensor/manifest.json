@@ -1,0 +1,300 @@
+{
+ "t": 1793388173.05829,
+ "title": "Wi-Fi Plant Sensor",
+ "parts": [
+  {
+   "file": "stl/body.stl",
+   "name": "Body",
+   "group": "case",
+   "process": "print",
+   "color": "#5f8f4e",
+   "explode": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    48.0,
+    39.0,
+    80.0
+   ]
+  },
+  {
+   "file": "stl/cap.stl",
+   "name": "Cap",
+   "group": "case",
+   "process": "print",
+   "color": "#eef0e8",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    48.1,
+    39.1,
+    17.0
+   ],
+   "material": "petg"
+  },
+  {
+   "file": "stl/soil-probe.stl",
+   "name": "Soil probe",
+   "group": "component",
+   "process": "bought",
+   "color": "#151515",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    23.0,
+    4.3,
+    98.0
+   ]
+  },
+  {
+   "file": "stl/usb-c-charger.stl",
+   "name": "USB-C charger",
+   "group": "component",
+   "process": "bought",
+   "color": "#1f4fa0",
+   "explode": [
+    -0.148,
+    -0.192,
+    0.97
+   ],
+   "bbox": [
+    28.5,
+    4.8,
+    17.0
+   ],
+   "cable": {
+    "type": "usb-c",
+    "at": [
+     -24.0,
+     -10.6,
+     130.5
+    ],
+    "dir": [
+     -1.0,
+     0.0,
+     0.0
+    ],
+    "length_mm": 400.0
+   }
+  },
+  {
+   "file": "stl/temp-humidity-sensor.stl",
+   "name": "Temp/humidity sensor",
+   "group": "component",
+   "process": "bought",
+   "color": "#6a3a9a",
+   "explode": [
+    0.249,
+    -0.259,
+    0.933
+   ],
+   "bbox": [
+    12.0,
+    2.4,
+    15.0
+   ]
+  },
+  {
+   "file": "stl/light-sensor.stl",
+   "name": "Light sensor",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d5fb0",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    18.5,
+    13.9,
+    2.5
+   ]
+  },
+  {
+   "file": "stl/battery-contacts.stl",
+   "name": "Battery contacts",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9c9c9",
+   "explode": [
+    -0.0,
+    0.175,
+    0.985
+   ],
+   "bbox": [
+    14.0,
+    14.0,
+    72.6
+   ]
+  },
+  {
+   "file": "stl/18650-li-ion-cell.stl",
+   "name": "18650 Li-ion cell",
+   "group": "component",
+   "process": "bought",
+   "color": "#2f6fd0",
+   "explode": [
+    -0.0,
+    0.186,
+    0.983
+   ],
+   "bbox": [
+    18.4,
+    18.4,
+    66.1
+   ],
+   "subparts": [
+    {
+     "file": "stl/18650-li-ion-cell__0.stl",
+     "color": "#2f6fd0",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/18650-li-ion-cell__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/18650-li-ion-cell__2.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "cell_18650",
+    "qty": 1,
+    "name": "18650 Li-ion cell",
+    "unit_cost_usd": 5.0,
+    "mass_g": 46.0
+   }
+  },
+  {
+   "file": "stl/esp32-c3-supermini.stl",
+   "name": "ESP32-C3 SuperMini",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    -0.0,
+    -0.452,
+    0.892
+   ],
+   "bbox": [
+    23.5,
+    4.3,
+    18.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/esp32-c3-supermini__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__4.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__6.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    }
+   ],
+   "lib": {
+    "key": "esp32_c3_supermini",
+    "qty": 1,
+    "name": "ESP32-C3 SuperMini",
+    "unit_cost_usd": 4.0,
+    "mass_g": 2.0
+   }
+  },
+  {
+   "file": "stl/m2-8-button-head-screw-2.stl",
+   "name": "M2\u00d78 button head screw \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.0,
+    0.175,
+    0.985
+   ],
+   "bbox": [
+    33.5,
+    3.5,
+    9.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/m2-8-button-head-screw-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 2,
+    "name": "M2\u00d78 button head screw",
+    "unit_cost_usd": 0.076,
+    "mass_g": 0.3
+   }
+  }
+ ],
+ "scene": "desk",
+ "assembly_order": [
+  [
+   "Body"
+  ],
+  [
+   "Soil probe"
+  ],
+  [
+   "ESP32-C3 SuperMini",
+   "USB-C charger",
+   "Temp/humidity sensor"
+  ],
+  [
+   "Battery contacts",
+   "18650 Li-ion cell"
+  ],
+  [
+   "Light sensor"
+  ],
+  [
+   "Cap"
+  ],
+  [
+   "M2\u00d78 button head screw \u00d72"
+  ]
+ ]
+}

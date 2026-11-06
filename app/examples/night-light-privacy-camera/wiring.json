@@ -1,0 +1,13 @@
+{"wires": [
+  {"from": {"part": "Micro-USB panel extension", "pin": "micro-USB plug"}, "to": {"part": "ESP32-CAM-MB programmer", "pin": "micro-USB"}, "color": "black", "kind": "jst"},
+  {"from": {"part": "5 V 2 A USB wall adapter + micro-USB cable", "pin": "micro-USB plug"}, "to": {"part": "Micro-USB panel extension", "pin": "panel socket"}, "color": "black", "kind": "jst"},
+  {"from": {"part": "ESP32-CAM-MB programmer", "pin": "header sockets"}, "to": {"part": "ESP32-CAM (AI-Thinker, OV2640)", "pin": "header pins"}, "color": "black", "kind": "dupont"},
+  {"from": {"part": "ESP32-CAM (AI-Thinker, OV2640)", "pin": "5V"}, "to": {"part": "PTC resettable fuse 0.5 A", "pin": "1"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "PTC resettable fuse 0.5 A", "pin": "2"}, "to": {"part": "WS2812B 12-LED ring", "pin": "5V"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "ESP32-CAM (AI-Thinker, OV2640)", "pin": "GND"}, "to": {"part": "WS2812B 12-LED ring", "pin": "GND"}, "color": "black", "kind": "solder"},
+  {"from": {"part": "ESP32-CAM (AI-Thinker, OV2640)", "pin": "IO14"}, "to": {"part": "330 ohm resistor", "pin": "1"}, "color": "green", "kind": "solder"},
+  {"from": {"part": "330 ohm resistor", "pin": "2"}, "to": {"part": "WS2812B 12-LED ring", "pin": "DI"}, "color": "green", "kind": "solder"},
+  {"from": {"part": "ESP32-CAM (AI-Thinker, OV2640)", "pin": "IO13"}, "to": {"part": "220 ohm resistor", "pin": "1"}, "color": "yellow", "kind": "solder"},
+  {"from": {"part": "220 ohm resistor", "pin": "2"}, "to": {"part": "5 mm LED (red)", "pin": "+ (long leg)"}, "color": "yellow", "kind": "solder"},
+  {"from": {"part": "5 mm LED (red)", "pin": "- (short leg)"}, "to": {"part": "ESP32-CAM (AI-Thinker, OV2640)", "pin": "GND"}, "color": "black", "kind": "solder"}
+]}

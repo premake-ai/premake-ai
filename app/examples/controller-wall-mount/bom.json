@@ -1,0 +1,58 @@
+{
+ "parts": [
+  {
+   "name": "#8 x 1-1/4 in pan-head wood screw",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.08,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": "Heads sit in the 10.4 mm counterbores, hidden by the snap caps"
+  },
+  {
+   "name": "Plastic drywall anchor, #8",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.06,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": "Skip when screwing into a stud or wood panel"
+  }
+ ],
+ "assembly_minutes": 2,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/mount-body.stl",
+   "name": "Mount body",
+   "grams": 34.1,
+   "print_hours": 1.71,
+   "bbox": [
+    34.2,
+    59.1,
+    96.1
+   ]
+  },
+  {
+   "file": "stl/screw-caps-x2.stl",
+   "name": "Screw caps (x2)",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    11.3,
+    3.0,
+    81.3
+   ]
+  },
+  {
+   "file": "stl/grip-pad-tpu.stl",
+   "name": "Grip pad (TPU)",
+   "grams": 2.0,
+   "print_hours": 0.25,
+   "bbox": [
+    23.6,
+    38.0,
+    5.7
+   ]
+  }
+ ],
+ "fabricated": []
+}

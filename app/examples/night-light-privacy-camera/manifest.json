@@ -1,0 +1,305 @@
+{
+ "t": 1793740510.8918028,
+ "title": "Night Light Privacy Camera",
+ "parts": [
+  {
+   "file": "stl/base-cap.stl",
+   "name": "Base cap",
+   "group": "case",
+   "process": "print",
+   "color": "#b08560",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    56.2,
+    56.2,
+    24.2
+   ]
+  },
+  {
+   "file": "stl/ring-tray.stl",
+   "name": "Ring tray",
+   "group": "case",
+   "process": "print",
+   "color": "#e8e4dc",
+   "explode": [
+    0.0,
+    0.0,
+    -0.5
+   ],
+   "bbox": [
+    51.0,
+    51.0,
+    5.0
+   ]
+  },
+  {
+   "file": "stl/ws2812b-12-led-ring.stl",
+   "name": "WS2812B 12-LED ring",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1a1a",
+   "explode": [
+    0.0,
+    0.0,
+    -0.3
+   ],
+   "bbox": [
+    37.0,
+    37.0,
+    3.0
+   ],
+   "fx": {
+    "glow": {
+     "color": "#ffb36b",
+     "mode": "solid"
+    }
+   }
+  },
+  {
+   "file": "stl/frosted-tube.stl",
+   "name": "Frosted tube",
+   "group": "component",
+   "process": "bought",
+   "color": "#f6f4ee",
+   "explode": [
+    0.0,
+    0.0,
+    0.3
+   ],
+   "bbox": [
+    50.8,
+    50.8,
+    101.7
+   ],
+   "material": "acrylic_frosted"
+  },
+  {
+   "file": "stl/head-chassis.stl",
+   "name": "Head & chassis",
+   "group": "case",
+   "process": "print",
+   "color": "#b08560",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    56.1,
+    56.1,
+    163.1
+   ]
+  },
+  {
+   "file": "stl/faceplate.stl",
+   "name": "Faceplate",
+   "group": "case",
+   "process": "sheet",
+   "color": "#161616",
+   "explode": [
+    0.0,
+    -1.0,
+    0.3
+   ],
+   "bbox": [
+    32.0,
+    7.5,
+    46.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/shutter.stl",
+   "name": "Privacy shutter",
+   "group": "case",
+   "process": "print",
+   "color": "#2a2a2a",
+   "explode": [
+    0.0,
+    -1.0,
+    0.5
+   ],
+   "bbox": [
+    14.0,
+    6.0,
+    29.3
+   ]
+  },
+  {
+   "file": "stl/esp32-cam-ai-thinker-ov2640.stl",
+   "name": "ESP32-CAM (AI-Thinker, OV2640)",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1d1d",
+   "explode": [
+    0.0,
+    -0.6,
+    0.8
+   ],
+   "bbox": [
+    27.0,
+    13.5,
+    40.5
+   ]
+  },
+  {
+   "file": "stl/esp32-cam-mb-programmer.stl",
+   "name": "ESP32-CAM-MB programmer",
+   "group": "component",
+   "process": "bought",
+   "color": "#1b3f8a",
+   "explode": [
+    0.0,
+    -0.2,
+    0.8
+   ],
+   "bbox": [
+    27.0,
+    9.6,
+    40.8
+   ]
+  },
+  {
+   "file": "stl/micro-usb-panel-extension.stl",
+   "name": "Micro-USB panel extension",
+   "group": "component",
+   "process": "bought",
+   "color": "#202020",
+   "explode": [
+    0.0,
+    1.0,
+    -0.5
+   ],
+   "bbox": [
+    33.0,
+    37.8,
+    116.2
+   ]
+  },
+  {
+   "file": "stl/5-mm-led-red.stl",
+   "name": "5 mm LED (red)",
+   "group": "component",
+   "process": "bought",
+   "color": "#e8483d",
+   "explode": [
+    -0.209,
+    -0.17,
+    0.963
+   ],
+   "bbox": [
+    5.8,
+    31.8,
+    5.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/5-mm-led-red__0.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/5-mm-led-red__1.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "led_5mm",
+    "qty": 1,
+    "name": "5 mm LED (red)",
+    "unit_cost_usd": 0.05,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m2-6-self-tapping-screw-for-plastic-2.stl",
+   "name": "M2\u00d76 self-tapping screw for plastic \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.0,
+    -0.368,
+    0.93
+   ],
+   "bbox": [
+    24.0,
+    7.6,
+    41.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m2-6-self-tapping-screw-for-plastic-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 2,
+    "name": "M2\u00d76 self-tapping screw for plastic",
+    "unit_cost_usd": 0.045,
+    "mass_g": 0.2
+   }
+  },
+  {
+   "file": "stl/m3-12-self-tapping-screw-for-plastic-2.stl",
+   "name": "M3\u00d712 self-tapping screw for plastic \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    -0.0,
+    0.009,
+    -1.0
+   ],
+   "bbox": [
+    13.6,
+    5.6,
+    14.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-12-self-tapping-screw-for-plastic-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 2,
+    "name": "M3\u00d712 self-tapping screw for plastic",
+    "unit_cost_usd": 0.06,
+    "mass_g": 0.9
+   }
+  }
+ ],
+ "scene": "shelf",
+ "wiring": {
+  "file": "wiring.json",
+  "wires": 11,
+  "parts": [
+   "220 ohm resistor",
+   "330 ohm resistor",
+   "5 V 2 A USB wall adapter + micro-USB cable",
+   "5 mm LED (red)",
+   "ESP32-CAM (AI-Thinker, OV2640)",
+   "ESP32-CAM-MB programmer",
+   "Micro-USB panel extension",
+   "PTC resettable fuse 0.5 A",
+   "WS2812B 12-LED ring"
+  ],
+  "ok": true
+ },
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 1
+ }
+}

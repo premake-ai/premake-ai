@@ -1,0 +1,14 @@
+{
+ "title": "Pork Meat Temperature Gauge",
+ "description": "Wi-Fi meat thermometer with a plug-in food probe, OLED readout, alarm buzzer and an iPhone web dashboard, tuned for pork doneness temps.",
+ "creator": "Premake",
+ "tags": [
+  "kitchen",
+  "bbq",
+  "ESP32",
+  "thermometer",
+  "Wi-Fi"
+ ],
+ "created": "2026-11-01T00:31:13.976Z",
+ "demo": true
+}

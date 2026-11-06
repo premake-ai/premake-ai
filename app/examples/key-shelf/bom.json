@@ -1,0 +1,43 @@
+{
+ "parts": [
+  {
+   "name": "Mini aluminium carabiner",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.45,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "From a 10-pack"
+  },
+  {
+   "name": "#8 x 1-1/2 in flat head screw",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.12,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "Plastic wall anchor #8",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.08,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": ""
+  }
+ ],
+ "assembly_minutes": 4,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/key-shelf.stl",
+   "name": "Key shelf",
+   "grams": 107.7,
+   "print_hours": 5.39,
+   "bbox": [
+    200.0,
+    50.5,
+    104.0
+   ]
+  }
+ ]
+}

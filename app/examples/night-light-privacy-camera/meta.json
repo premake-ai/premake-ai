@@ -1,0 +1,14 @@
+{
+ "title": "Night Light Privacy Camera",
+ "description": "Local-only Wi-Fi camera in a frosted acrylic tube that glows as a soft night light, with a black metal faceplate and a sliding privacy shutter.",
+ "creator": "Premake",
+ "tags": [
+  "camera",
+  "esp32 cam",
+  "night light",
+  "elder care",
+  "privacy"
+ ],
+ "created": "2026-11-03T21:02:34.297Z",
+ "demo": true
+}

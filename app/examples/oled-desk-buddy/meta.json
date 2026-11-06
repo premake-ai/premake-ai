@@ -1,0 +1,8 @@
+{
+ "title": "OLED Desk Buddy",
+ "description": "A small desk buddy built from an ELEGOO kit: an OLED face in a head that pans on a servo, driven by an ESP32 in a printed base.",
+ "creator": "Premake",
+ "tags": [],
+ "created": "2026-11-03T05:35:40.930Z",
+ "demo": true
+}

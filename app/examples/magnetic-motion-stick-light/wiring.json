@@ -1,0 +1,16 @@
+{"wires": [
+  {"from": {"part": "18650 holder, 1 cell", "pin": "+"}, "to": {"part": "TP4056 USB-C charger (protected)", "pin": "B+"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "18650 holder, 1 cell", "pin": "-"}, "to": {"part": "TP4056 USB-C charger (protected)", "pin": "B-"}, "color": "black", "kind": "solder"},
+  {"from": {"part": "TP4056 USB-C charger (protected)", "pin": "OUT+"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "5V"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "TP4056 USB-C charger (protected)", "pin": "OUT-"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "GND"}, "color": "black", "kind": "solder"},
+  {"from": {"part": "TP4056 USB-C charger (protected)", "pin": "OUT+"}, "to": {"part": "WS2812B LED strip, 6 LEDs", "pin": "5V"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "TP4056 USB-C charger (protected)", "pin": "OUT-"}, "to": {"part": "WS2812B LED strip, 6 LEDs", "pin": "GND"}, "color": "black", "kind": "solder"},
+  {"from": {"part": "ESP32-C3 SuperMini", "pin": "GPIO4"}, "to": {"part": "WS2812B LED strip, 6 LEDs", "pin": "DIN"}, "color": "green", "kind": "solder"},
+  {"from": {"part": "ESP32-C3 SuperMini", "pin": "3V3"}, "to": {"part": "AM312 mini PIR sensor", "pin": "VCC"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "ESP32-C3 SuperMini", "pin": "GND"}, "to": {"part": "AM312 mini PIR sensor", "pin": "GND"}, "color": "black", "kind": "solder"},
+  {"from": {"part": "AM312 mini PIR sensor", "pin": "OUT"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "GPIO3"}, "color": "yellow", "kind": "solder"},
+  {"from": {"part": "TP4056 USB-C charger (protected)", "pin": "OUT+"}, "to": {"part": "100k resistor (top)", "pin": "1"}, "color": "red", "kind": "solder"},
+  {"from": {"part": "100k resistor (top)", "pin": "2"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "GPIO1"}, "color": "blue", "kind": "solder"},
+  {"from": {"part": "ESP32-C3 SuperMini", "pin": "GPIO1"}, "to": {"part": "100k resistor (bottom)", "pin": "1"}, "color": "blue", "kind": "solder"},
+  {"from": {"part": "100k resistor (bottom)", "pin": "2"}, "to": {"part": "ESP32-C3 SuperMini", "pin": "GND"}, "color": "black", "kind": "solder"}
+]}

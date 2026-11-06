@@ -1,0 +1,70 @@
+{
+ "t": 1793164721.4419641,
+ "title": "Twist planter with saucer",
+ "parts": [
+  {
+   "file": "stl/planter-pot.stl",
+   "name": "Planter pot",
+   "group": "case",
+   "color": "#e07a5f",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    133.0,
+    139.4,
+    125.4
+   ]
+  },
+  {
+   "file": "stl/drip-saucer.stl",
+   "name": "Drip saucer",
+   "group": "case",
+   "color": "#f2cc8f",
+   "explode": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "bbox": [
+    152.0,
+    152.0,
+    16.5
+   ]
+  },
+  {
+   "file": "stl/drainage-mesh-disc.stl",
+   "name": "Drainage mesh disc",
+   "group": "component",
+   "color": "#555555",
+   "explode": [
+    0.0,
+    0.0,
+    0.5
+   ],
+   "bbox": [
+    76.0,
+    76.1,
+    0.7
+   ]
+  },
+  {
+   "file": "stl/potting-mix-not-included.stl",
+   "name": "Potting mix (not included)",
+   "group": "component",
+   "color": "#5b4636",
+   "explode": [
+    0.0,
+    0.0,
+    1.5
+   ],
+   "bbox": [
+    124.1,
+    128.6,
+    106.5
+   ]
+  }
+ ]
+}

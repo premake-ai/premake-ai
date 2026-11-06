@@ -1,0 +1,97 @@
+{
+ "parts": [
+  {
+   "name": "Clear self-adhesive bumper pads, 8 x 2 mm",
+   "qty_per_unit": 8,
+   "unit_cost_usd": 0.03,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "On each divider end so they sit snug against the drawer walls without rattling. Search: \"clear bumper pads 8mm x 2mm\""
+  }
+ ],
+ "assembly_minutes": 3,
+ "kit_ok": true,
+ "printed": [],
+ "fabricated": [
+  {
+   "file": "stl/long-divider-1.stl",
+   "name": "Long divider 1",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1150.4,
+    "area_cm2": 248.8,
+    "minutes": 3.4,
+    "material_usd": 1.79
+   },
+   "bbox": [
+    5.5,
+    497.0,
+    55.0
+   ]
+  },
+  {
+   "file": "stl/long-divider-2.stl",
+   "name": "Long divider 2",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1150.4,
+    "area_cm2": 248.8,
+    "minutes": 3.4,
+    "material_usd": 1.79
+   },
+   "bbox": [
+    5.5,
+    497.0,
+    55.0
+   ]
+  },
+  {
+   "file": "stl/long-divider-3.stl",
+   "name": "Long divider 3",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1150.4,
+    "area_cm2": 248.8,
+    "minutes": 3.4,
+    "material_usd": 1.79
+   },
+   "bbox": [
+    5.5,
+    497.0,
+    55.0
+   ]
+  },
+  {
+   "file": "stl/cross-divider-1.stl",
+   "name": "Cross divider 1",
+   "process": "laser",
+   "params": {
+    "material": "plywood",
+    "thickness_mm": 6.0
+   },
+   "est": {
+    "cut_length_mm": 1063.4,
+    "area_cm2": 195.6,
+    "minutes": 3.2,
+    "material_usd": 1.41
+   },
+   "bbox": [
+    397.0,
+    5.5,
+    55.0
+   ]
+  }
+ ]
+}

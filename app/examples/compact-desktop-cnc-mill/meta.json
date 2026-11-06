@@ -1,0 +1,14 @@
+{
+ "title": "Compact Desktop CNC Mill",
+ "description": "A desktop CNC router-mill with 200 x 200 x 200 mm travel: 2040 aluminium frame, MGN12 rails, T8 lead screws, NEMA17 motors, a 24 V ER11 spindle and an ESP32 G-code controller.",
+ "creator": "Premake",
+ "tags": [
+  "cnc",
+  "mill",
+  "router",
+  "extrusion",
+  "ESP32"
+ ],
+ "created": "2026-11-05T22:48:23.134Z",
+ "demo": true
+}

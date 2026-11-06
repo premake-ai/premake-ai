@@ -1,0 +1,27 @@
+{
+ "parts": [
+  {
+   "name": "M5 x 12 mm stainless socket head bolt",
+   "qty_per_unit": 2,
+   "unit_cost_usd": 0.3,
+   "supplier": "McMaster-Carr",
+   "url": "",
+   "notes": "Pack of 50 is about $15"
+  }
+ ],
+ "assembly_minutes": 1,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/bottle-cage.stl",
+   "name": "Bottle cage",
+   "grams": 65.1,
+   "print_hours": 3.26,
+   "bbox": [
+    81.2,
+    81.2,
+    128.1
+   ]
+  }
+ ]
+}

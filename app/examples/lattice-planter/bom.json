@@ -1,0 +1,19 @@
+{
+ "parts": [],
+ "assembly_minutes": 0,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/lattice-planter.stl",
+   "name": "Lattice planter",
+   "grams": 41.5,
+   "print_hours": 2.07,
+   "bbox": [
+    111.9,
+    111.9,
+    100.5
+   ]
+  }
+ ],
+ "fabricated": []
+}

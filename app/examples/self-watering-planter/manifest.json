@@ -1,0 +1,80 @@
+{
+ "t": 1793311782.318707,
+ "title": "Self-Watering Planter",
+ "parts": [
+  {
+   "file": "stl/pot.stl",
+   "name": "Pot",
+   "group": "case",
+   "process": "print",
+   "color": "#e8e2d6",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    168.7,
+    168.7,
+    184.3
+   ]
+  },
+  {
+   "file": "stl/soil-platform.stl",
+   "name": "Soil platform",
+   "group": "case",
+   "process": "print",
+   "color": "#6f8f6a",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    158.0,
+    156.0,
+    67.2
+   ]
+  },
+  {
+   "file": "stl/rod.stl",
+   "name": "Gauge rod",
+   "group": "case",
+   "process": "print",
+   "color": "#e0452b",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    30.4,
+    30.4,
+    97.5
+   ]
+  },
+  {
+   "file": "stl/cork.stl",
+   "name": "Wine cork float",
+   "group": "component",
+   "process": "bought",
+   "color": "#c49a6c",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    24.0,
+    24.1,
+    44.1
+   ]
+  }
+ ],
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 2
+ }
+}

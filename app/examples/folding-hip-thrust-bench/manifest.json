@@ -1,0 +1,1515 @@
+{
+ "t": 1793655931.9440398,
+ "title": "Folding Hip Thrust Bench",
+ "parts": [
+  {
+   "file": "stl/side-rail-l.stl",
+   "name": "Side rail L",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -0.814,
+    -0.005,
+    -0.58
+   ],
+   "bbox": [
+    20.0,
+    1200.0,
+    40.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/side-rail-r.stl",
+   "name": "Side rail R",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.814,
+    -0.005,
+    -0.58
+   ],
+   "bbox": [
+    20.0,
+    1200.0,
+    40.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/cross-bar-1.stl",
+   "name": "Cross bar 1",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.0,
+    -0.966,
+    -0.257
+   ],
+   "bbox": [
+    450.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/cross-bar-2.stl",
+   "name": "Cross bar 2",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.0,
+    -0.93,
+    -0.368
+   ],
+   "bbox": [
+    450.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/cross-bar-3.stl",
+   "name": "Cross bar 3",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.0,
+    -0.788,
+    -0.616
+   ],
+   "bbox": [
+    450.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/cross-bar-4.stl",
+   "name": "Cross bar 4",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.0,
+    0.016,
+    -1.0
+   ],
+   "bbox": [
+    450.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/cross-bar-5.stl",
+   "name": "Cross bar 5",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.0,
+    0.788,
+    -0.616
+   ],
+   "bbox": [
+    450.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/cross-bar-6.stl",
+   "name": "Cross bar 6",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.0,
+    0.966,
+    -0.259
+   ],
+   "bbox": [
+    450.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/box-post-1.stl",
+   "name": "Box post 1",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -0.737,
+    0.672,
+    -0.071
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    250.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/box-post-2.stl",
+   "name": "Box post 2",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.737,
+    0.672,
+    -0.071
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    250.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/box-post-3.stl",
+   "name": "Box post 3",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -0.371,
+    0.928,
+    -0.036
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    250.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/box-post-4.stl",
+   "name": "Box post 4",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.371,
+    0.928,
+    -0.036
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    250.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/2020-corner-bracket-5.stl",
+   "name": "2020 corner bracket \u00d75",
+   "group": "component",
+   "process": "bought",
+   "color": "#c7ccd2",
+   "explode": [
+    0.775,
+    0.269,
+    -0.572
+   ],
+   "bbox": [
+    23.0,
+    1009.0,
+    20.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/2020-corner-bracket-5__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bracket_2020",
+    "qty": 5,
+    "name": "2020 corner bracket",
+    "unit_cost_usd": 0.6,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/2020-corner-bracket-5-2.stl",
+   "name": "2020 corner bracket \u00d75 (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c7ccd2",
+   "explode": [
+    -0.775,
+    0.269,
+    -0.572
+   ],
+   "bbox": [
+    23.0,
+    1009.0,
+    20.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/2020-corner-bracket-5-2__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bracket_2020",
+    "qty": 5,
+    "name": "2020 corner bracket",
+    "unit_cost_usd": 0.6,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/2020-corner-bracket.stl",
+   "name": "2020 corner bracket",
+   "group": "component",
+   "process": "bought",
+   "color": "#c7ccd2",
+   "explode": [
+    0.34,
+    -0.907,
+    -0.251
+   ],
+   "bbox": [
+    23.0,
+    23.0,
+    20.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/2020-corner-bracket__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bracket_2020",
+    "qty": 1,
+    "name": "2020 corner bracket",
+    "unit_cost_usd": 0.6,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/2020-corner-bracket-2.stl",
+   "name": "2020 corner bracket (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c7ccd2",
+   "explode": [
+    -0.34,
+    -0.907,
+    -0.251
+   ],
+   "bbox": [
+    23.0,
+    23.0,
+    20.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/2020-corner-bracket-2__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bracket_2020",
+    "qty": 1,
+    "name": "2020 corner bracket",
+    "unit_cost_usd": 0.6,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/2020-corner-bracket-2-2.stl",
+   "name": "2020 corner bracket \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#c7ccd2",
+   "explode": [
+    0.0,
+    0.866,
+    -0.5
+   ],
+   "bbox": [
+    490.0,
+    23.0,
+    23.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/2020-corner-bracket-2-2__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bracket_2020",
+    "qty": 2,
+    "name": "2020 corner bracket",
+    "unit_cost_usd": 0.6,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/2020-corner-bracket-2-2-2.stl",
+   "name": "2020 corner bracket \u00d72 (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c7ccd2",
+   "explode": [
+    0.0,
+    0.972,
+    -0.233
+   ],
+   "bbox": [
+    490.0,
+    23.0,
+    23.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/2020-corner-bracket-2-2-2__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bracket_2020",
+    "qty": 2,
+    "name": "2020 corner bracket",
+    "unit_cost_usd": 0.6,
+    "mass_g": 10.0
+   }
+  },
+  {
+   "file": "stl/deck-panel-1.stl",
+   "name": "Deck panel 1",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.0,
+    -0.941,
+    -0.339
+   ],
+   "bbox": [
+    501.0,
+    400.0,
+    5.6
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/deck-panel-2.stl",
+   "name": "Deck panel 2",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.0,
+    -0.01,
+    -1.0
+   ],
+   "bbox": [
+    501.0,
+    400.0,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/front-panel.stl",
+   "name": "Front panel",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.0,
+    -0.965,
+    -0.263
+   ],
+   "bbox": [
+    501.0,
+    5.6,
+    45.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/skirt-l1.stl",
+   "name": "Skirt L1",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    -0.495,
+    -0.802,
+    -0.335
+   ],
+   "bbox": [
+    5.5,
+    400.0,
+    40.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/skirt-l2.stl",
+   "name": "Skirt L2",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    -0.828,
+    -0.005,
+    -0.56
+   ],
+   "bbox": [
+    5.5,
+    400.0,
+    40.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/box-side-l.stl",
+   "name": "Box side L",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    -0.526,
+    0.846,
+    -0.084
+   ],
+   "bbox": [
+    5.6,
+    400.0,
+    295.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/skirt-r1.stl",
+   "name": "Skirt R1",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.495,
+    -0.802,
+    -0.335
+   ],
+   "bbox": [
+    5.5,
+    400.0,
+    40.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/skirt-r2.stl",
+   "name": "Skirt R2",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.828,
+    -0.005,
+    -0.56
+   ],
+   "bbox": [
+    5.5,
+    400.0,
+    40.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/box-side-r.stl",
+   "name": "Box side R",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.526,
+    0.846,
+    -0.084
+   ],
+   "bbox": [
+    5.6,
+    400.0,
+    295.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/box-front.stl",
+   "name": "Box front",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.0,
+    0.995,
+    -0.098
+   ],
+   "bbox": [
+    490.0,
+    5.5,
+    255.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/box-back.stl",
+   "name": "Box back",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.0,
+    0.998,
+    -0.066
+   ],
+   "bbox": [
+    501.0,
+    5.6,
+    295.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/box-top.stl",
+   "name": "Box top",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.0,
+    0.967,
+    0.254
+   ],
+   "bbox": [
+    490.0,
+    394.5,
+    5.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/capbar-1.stl",
+   "name": "Cap bar L",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    -0.502,
+    0.829,
+    0.247
+   ],
+   "bbox": [
+    20.0,
+    350.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/capskirt-1.stl",
+   "name": "Cap skirt L",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    -0.533,
+    0.838,
+    0.118
+   ],
+   "bbox": [
+    5.6,
+    400.0,
+    144.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/capbar1.stl",
+   "name": "Cap bar R",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bec7",
+   "explode": [
+    0.502,
+    0.829,
+    0.247
+   ],
+   "bbox": [
+    20.0,
+    350.0,
+    20.0
+   ],
+   "material": "aluminium"
+  },
+  {
+   "file": "stl/capskirt1.stl",
+   "name": "Cap skirt R",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.533,
+    0.838,
+    0.118
+   ],
+   "bbox": [
+    5.6,
+    400.0,
+    144.5
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/capboard.stl",
+   "name": "Cap board",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.0,
+    0.95,
+    0.313
+   ],
+   "bbox": [
+    513.0,
+    400.0,
+    5.6
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/padboard.stl",
+   "name": "Pad board",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8ecf5",
+   "explode": [
+    0.0,
+    0.946,
+    0.324
+   ],
+   "bbox": [
+    556.1,
+    398.1,
+    5.6
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/cushion.stl",
+   "name": "Back pad (2in foam + boucle)",
+   "group": "component",
+   "process": "bought",
+   "color": "#e8e0d2",
+   "explode": [
+    -0.0,
+    0.926,
+    0.377
+   ],
+   "bbox": [
+    570.5,
+    412.4,
+    56.6
+   ]
+  },
+  {
+   "file": "stl/teenuts.stl",
+   "name": "M5 tee nut",
+   "group": "component",
+   "process": "bought",
+   "color": "#b9b9b9",
+   "explode": [
+    0.0,
+    0.943,
+    0.332
+   ],
+   "bbox": [
+    319.0,
+    249.0,
+    1.2
+   ]
+  },
+  {
+   "file": "stl/capscrr.stl",
+   "name": "M5\u00d710 countersunk screw \u00d73",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.518,
+    0.82,
+    0.244
+   ],
+   "bbox": [
+    10.0,
+    302.0,
+    10.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/capscrr__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "csk",
+    "qty": 3,
+    "name": "M5\u00d710 countersunk screw",
+    "unit_cost_usd": 0.176,
+    "mass_g": 1.9
+   }
+  },
+  {
+   "file": "stl/capscrl.stl",
+   "name": "M5\u00d710 countersunk screw \u00d73 (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.518,
+    0.82,
+    0.244
+   ],
+   "bbox": [
+    10.0,
+    302.0,
+    10.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/capscrl__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "csk",
+    "qty": 3,
+    "name": "M5\u00d710 countersunk screw",
+    "unit_cost_usd": 0.176,
+    "mass_g": 1.9
+   }
+  },
+  {
+   "file": "stl/capscrt.stl",
+   "name": "M5\u00d710 countersunk screw \u00d76",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    0.951,
+    0.308
+   ],
+   "bbox": [
+    492.0,
+    302.0,
+    10.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/capscrt__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "csk",
+    "qty": 6,
+    "name": "M5\u00d710 countersunk screw",
+    "unit_cost_usd": 0.176,
+    "mass_g": 1.9
+   }
+  },
+  {
+   "file": "stl/padscr.stl",
+   "name": "M5\u00d716 countersunk screw \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    0.946,
+    0.325
+   ],
+   "bbox": [
+    310.0,
+    240.0,
+    16.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/padscr__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "csk",
+    "qty": 4,
+    "name": "M5\u00d716 countersunk screw",
+    "unit_cost_usd": 0.186,
+    "mass_g": 2.8
+   }
+  },
+  {
+   "file": "stl/pin-10.stl",
+   "name": "Height pin",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f2",
+   "explode": [
+    -0.704,
+    0.71,
+    0.021
+   ],
+   "bbox": [
+    22.6,
+    22.1,
+    21.9
+   ]
+  },
+  {
+   "file": "stl/pin-11.stl",
+   "name": "Height pin",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f2",
+   "explode": [
+    -0.413,
+    0.911,
+    0.012
+   ],
+   "bbox": [
+    22.6,
+    22.1,
+    21.9
+   ]
+  },
+  {
+   "file": "stl/pin10.stl",
+   "name": "Height pin",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f2",
+   "explode": [
+    0.704,
+    0.71,
+    0.021
+   ],
+   "bbox": [
+    22.6,
+    22.1,
+    21.9
+   ]
+  },
+  {
+   "file": "stl/pin11.stl",
+   "name": "Height pin",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f2",
+   "explode": [
+    0.413,
+    0.911,
+    0.012
+   ],
+   "bbox": [
+    22.6,
+    22.1,
+    21.9
+   ]
+  },
+  {
+   "file": "stl/m5-10-countersunk-screw-22.stl",
+   "name": "M5\u00d710 countersunk screw \u00d722",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    -0.821,
+    -0.571
+   ],
+   "bbox": [
+    480.0,
+    770.2,
+    10.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m5-10-countersunk-screw-22__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "csk",
+    "qty": 22,
+    "name": "M5\u00d710 countersunk screw",
+    "unit_cost_usd": 0.176,
+    "mass_g": 1.9
+   }
+  },
+  {
+   "file": "stl/m5-10-countersunk-screw-12.stl",
+   "name": "M5\u00d710 countersunk screw \u00d712",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.93,
+    0.305,
+    -0.205
+   ],
+   "bbox": [
+    10.0,
+    1026.0,
+    257.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m5-10-countersunk-screw-12__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "csk",
+    "qty": 12,
+    "name": "M5\u00d710 countersunk screw",
+    "unit_cost_usd": 0.176,
+    "mass_g": 1.9
+   }
+  },
+  {
+   "file": "stl/m5-10-countersunk-screw-12-2.stl",
+   "name": "M5\u00d710 countersunk screw \u00d712 (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.93,
+    0.305,
+    -0.205
+   ],
+   "bbox": [
+    10.0,
+    1026.0,
+    257.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m5-10-countersunk-screw-12-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "csk",
+    "qty": 12,
+    "name": "M5\u00d710 countersunk screw",
+    "unit_cost_usd": 0.176,
+    "mass_g": 1.9
+   }
+  },
+  {
+   "file": "stl/m5-10-countersunk-screw-6-2.stl",
+   "name": "M5\u00d710 countersunk screw \u00d76 (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    -0.971,
+    -0.239
+   ],
+   "bbox": [
+    480.0,
+    815.5,
+    227.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m5-10-countersunk-screw-6-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "csk",
+    "qty": 6,
+    "name": "M5\u00d710 countersunk screw",
+    "unit_cost_usd": 0.176,
+    "mass_g": 1.9
+   }
+  },
+  {
+   "file": "stl/m5-10-countersunk-screw-6-3.stl",
+   "name": "M5\u00d710 countersunk screw \u00d76 (3)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    0.997,
+    -0.082
+   ],
+   "bbox": [
+    480.0,
+    10.0,
+    227.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m5-10-countersunk-screw-6-3__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "csk",
+    "qty": 6,
+    "name": "M5\u00d710 countersunk screw",
+    "unit_cost_usd": 0.176,
+    "mass_g": 1.9
+   }
+  },
+  {
+   "file": "stl/band-rail-l.stl",
+   "name": "Band rail L",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8b07e",
+   "explode": [
+    -0.826,
+    -0.333,
+    -0.455
+   ],
+   "bbox": [
+    31.8,
+    914.4,
+    31.8
+   ],
+   "material": "wood"
+  },
+  {
+   "file": "stl/rail-bracket-l1.stl",
+   "name": "Rail bracket L1",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f2",
+   "explode": [
+    -0.469,
+    -0.84,
+    -0.271
+   ],
+   "bbox": [
+    43.1,
+    28.1,
+    54.3
+   ]
+  },
+  {
+   "file": "stl/rail-bracket-l2.stl",
+   "name": "Rail bracket L2",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f2",
+   "explode": [
+    -0.815,
+    0.337,
+    -0.472
+   ],
+   "bbox": [
+    43.1,
+    28.1,
+    54.3
+   ]
+  },
+  {
+   "file": "stl/band-rail-r.stl",
+   "name": "Band rail R",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8b07e",
+   "explode": [
+    0.826,
+    -0.333,
+    -0.455
+   ],
+   "bbox": [
+    31.8,
+    914.4,
+    31.8
+   ],
+   "material": "wood"
+  },
+  {
+   "file": "stl/rail-bracket-r1.stl",
+   "name": "Rail bracket R1",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f2",
+   "explode": [
+    0.469,
+    -0.84,
+    -0.271
+   ],
+   "bbox": [
+    43.1,
+    28.1,
+    54.3
+   ]
+  },
+  {
+   "file": "stl/rail-bracket-r2.stl",
+   "name": "Rail bracket R2",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f2",
+   "explode": [
+    0.815,
+    0.337,
+    -0.472
+   ],
+   "bbox": [
+    43.1,
+    28.1,
+    54.3
+   ]
+  },
+  {
+   "file": "stl/m5-20-button-head-screw-4.stl",
+   "name": "M5\u00d720 button head screw \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.694,
+    -0.523,
+    -0.495
+   ],
+   "bbox": [
+    22.8,
+    625.5,
+    9.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m5-20-button-head-screw-4__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M5\u00d720 button head screw",
+    "unit_cost_usd": 0.192,
+    "mass_g": 4.2
+   }
+  },
+  {
+   "file": "stl/m5-20-button-head-screw-4-2.stl",
+   "name": "M5\u00d720 button head screw \u00d74 (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.694,
+    -0.523,
+    -0.495
+   ],
+   "bbox": [
+    22.8,
+    625.5,
+    9.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m5-20-button-head-screw-4-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "bhcs",
+    "qty": 4,
+    "name": "M5\u00d720 button head screw",
+    "unit_cost_usd": 0.192,
+    "mass_g": 4.2
+   }
+  },
+  {
+   "file": "stl/m4-20-self-tapping-screw-for-plastic-4.stl",
+   "name": "M4\u00d720 self-tapping screw for plastic \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.0,
+    -0.803,
+    -0.595
+   ],
+   "bbox": [
+    554.2,
+    607.5,
+    22.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/m4-20-self-tapping-screw-for-plastic-4__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 4,
+    "name": "M4\u00d720 self-tapping screw for plastic",
+    "unit_cost_usd": 0.086,
+    "mass_g": 2.5
+   }
+  },
+  {
+   "file": "stl/hip-bar-oak-dowel.stl",
+   "name": "Hip bar (oak dowel)",
+   "group": "component",
+   "process": "bought",
+   "color": "#d8b07e",
+   "explode": [
+    0.0,
+    -0.864,
+    0.504
+   ],
+   "bbox": [
+    914.4,
+    31.8,
+    31.8
+   ],
+   "material": "wood"
+  },
+  {
+   "file": "stl/hip-bar-pad.stl",
+   "name": "Hip bar pad",
+   "group": "component",
+   "process": "bought",
+   "color": "#8d8a85",
+   "explode": [
+    0.0,
+    -0.864,
+    0.504
+   ],
+   "bbox": [
+    400.1,
+    100.1,
+    100.1
+   ]
+  },
+  {
+   "file": "stl/band-ring-l1.stl",
+   "name": "Band ring L1",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f2",
+   "explode": [
+    -0.821,
+    -0.493,
+    0.288
+   ],
+   "bbox": [
+    6.1,
+    44.1,
+    44.1
+   ]
+  },
+  {
+   "file": "stl/loop-band-l.stl",
+   "name": "Loop band L",
+   "group": "component",
+   "process": "bought",
+   "color": "#7a5ca8",
+   "explode": [
+    -0.823,
+    -0.565,
+    -0.062
+   ],
+   "bbox": [
+    41.2,
+    41.2,
+    301.2
+   ],
+   "material": "rubber"
+  },
+  {
+   "file": "stl/band-ring-r1.stl",
+   "name": "Band ring R1",
+   "group": "case",
+   "process": "print",
+   "color": "#f4f4f2",
+   "explode": [
+    0.821,
+    -0.493,
+    0.288
+   ],
+   "bbox": [
+    6.1,
+    44.1,
+    44.1
+   ]
+  },
+  {
+   "file": "stl/loop-band-r.stl",
+   "name": "Loop band R",
+   "group": "component",
+   "process": "bought",
+   "color": "#7a5ca8",
+   "explode": [
+    0.823,
+    -0.565,
+    -0.062
+   ],
+   "bbox": [
+    41.2,
+    41.2,
+    301.2
+   ],
+   "material": "rubber"
+  },
+  {
+   "file": "stl/m3-16-self-tapping-screw-for-plastic-2.stl",
+   "name": "M3\u00d716 self-tapping screw for plastic \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.0,
+    -0.833,
+    0.553
+   ],
+   "bbox": [
+    630.3,
+    5.6,
+    18.2
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-16-self-tapping-screw-for-plastic-2__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "selftap",
+    "qty": 2,
+    "name": "M3\u00d716 self-tapping screw for plastic",
+    "unit_cost_usd": 0.063,
+    "mass_g": 1.1
+   }
+  },
+  {
+   "file": "stl/rubber-feet.stl",
+   "name": "Rubber feet",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    0.0,
+    0.134,
+    -0.991
+   ],
+   "bbox": [
+    489.0,
+    1199.0,
+    269.5
+   ],
+   "material": "rubber"
+  }
+ ],
+ "scene": "floor",
+ "assembly_order": [
+  [
+   "Side rail L",
+   "Side rail R"
+  ],
+  [
+   "Cross bar 1"
+  ],
+  [
+   "Box post 1"
+  ],
+  [
+   "Deck panel 1",
+   "Deck panel 2"
+  ],
+  [
+   "Box side L",
+   "Box side R",
+   "Box front",
+   "Box back"
+  ],
+  [
+   "Box top"
+  ],
+  [
+   "Band rail L",
+   "Band rail R"
+  ],
+  [
+   "Cap board"
+  ],
+  [
+   "Back pad (2in foam + boucle)"
+  ],
+  [
+   "Height pin",
+   "Height pin",
+   "Height pin",
+   "Height pin"
+  ],
+  [
+   "Hip bar (oak dowel)"
+  ]
+ ],
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 16
+ }
+}

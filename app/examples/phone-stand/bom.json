@@ -1,0 +1,62 @@
+{
+ "parts": [
+  {
+   "name": "M5 x 70 mm hex bolt, zinc",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.55,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "M5 wing nut",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.45,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "M5 flat washer",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.1,
+   "supplier": "Home Depot",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "Clear rubber bumper feet 12 mm",
+   "qty_per_unit": 4,
+   "unit_cost_usd": 0.12,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "From a 100-pack"
+  }
+ ],
+ "assembly_minutes": 4,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/base.stl",
+   "name": "Base",
+   "grams": 46.9,
+   "print_hours": 2.35,
+   "bbox": [
+    84.0,
+    96.0,
+    27.5
+   ]
+  },
+  {
+   "file": "stl/tilting-arm.stl",
+   "name": "Tilting arm",
+   "grams": 31.8,
+   "print_hours": 1.59,
+   "bbox": [
+    74.0,
+    63.3,
+    117.2
+   ]
+  }
+ ]
+}

@@ -1,0 +1,745 @@
+{
+ "t": 1793337303.242078,
+ "title": "Motorized Camera Slider",
+ "parts": [
+  {
+   "file": "stl/rail.stl",
+   "name": "Rail",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#c4c8ce",
+   "explode": [
+    0.797,
+    0.191,
+    0.574
+   ],
+   "bbox": [
+    600.0,
+    40.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/motor-end.stl",
+   "name": "Motor End",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2d31",
+   "explode": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    90.0,
+    90.0,
+    58.0
+   ]
+  },
+  {
+   "file": "stl/control-box-lid.stl",
+   "name": "Control Box Lid",
+   "group": "case",
+   "process": "print",
+   "color": "#e0662b",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    52.0,
+    40.0,
+    5.5
+   ]
+  },
+  {
+   "file": "stl/idler-end.stl",
+   "name": "Idler End",
+   "group": "case",
+   "process": "print",
+   "color": "#2b2d31",
+   "explode": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "bbox": [
+    38.0,
+    80.0,
+    58.0
+   ]
+  },
+  {
+   "file": "stl/carriage.stl",
+   "name": "Carriage",
+   "group": "case",
+   "process": "print",
+   "color": "#e0662b",
+   "explode": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "bbox": [
+    96.0,
+    76.0,
+    44.0
+   ]
+  },
+  {
+   "file": "stl/wheels.stl",
+   "name": "V-slot wheel kit",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1d1f",
+   "explode": [
+    0.705,
+    0.169,
+    0.689
+   ],
+   "bbox": [
+    93.9,
+    83.2,
+    17.6
+   ]
+  },
+  {
+   "file": "stl/gt2-belt-6-mm.stl",
+   "name": "GT2 belt 6 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#222222",
+   "explode": [
+    0.486,
+    0.171,
+    -0.857
+   ],
+   "bbox": [
+    656.0,
+    6.0,
+    14.2
+   ]
+  },
+  {
+   "file": "stl/gt2-idler-20t-5-mm-bore.stl",
+   "name": "GT2 idler 20T 5 mm bore",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa0a6",
+   "explode": [
+    0.999,
+    0.009,
+    -0.045
+   ],
+   "bbox": [
+    18.0,
+    9.6,
+    18.0
+   ]
+  },
+  {
+   "file": "stl/stud.stl",
+   "name": "1/4\"-20 camera stud",
+   "group": "component",
+   "process": "bought",
+   "color": "#9aa0a6",
+   "explode": [
+    0.373,
+    0.089,
+    0.924
+   ],
+   "bbox": [
+    6.3,
+    6.3,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/limit-switch.stl",
+   "name": "Limit switch",
+   "group": "component",
+   "process": "bought",
+   "color": "#2a62c9",
+   "explode": [
+    -0.995,
+    -0.094,
+    -0.027
+   ],
+   "bbox": [
+    6.5,
+    10.0,
+    20.0
+   ]
+  },
+  {
+   "file": "stl/nema17-stepper-motor-40-mm.stl",
+   "name": "NEMA17 stepper motor 40 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    -0.997,
+    -0.07,
+    -0.038
+   ],
+   "bbox": [
+    42.3,
+    64.6,
+    47.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 40 mm",
+    "unit_cost_usd": 11.0,
+    "mass_g": 280.0
+   }
+  },
+  {
+   "file": "stl/pulley.stl",
+   "name": "GT2 pulley 20T 5 mm bore",
+   "group": "component",
+   "process": "bought",
+   "color": "#c7ccd2",
+   "explode": [
+    -0.999,
+    0.009,
+    -0.047
+   ],
+   "bbox": [
+    16.1,
+    16.0,
+    16.1
+   ],
+   "subparts": [
+    {
+     "file": "stl/pulley__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/pulley__1.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "gt2_pulley_20t",
+    "qty": 1,
+    "name": "GT2 pulley 20T 5 mm bore",
+    "unit_cost_usd": 1.5,
+    "mass_g": 6.2
+   }
+  },
+  {
+   "file": "stl/m3-10-socket-head-screw-4.stl",
+   "name": "M3\u00d710 socket head screw \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.998,
+    -0.039,
+    -0.047
+   ],
+   "bbox": [
+    36.5,
+    13.0,
+    36.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-socket-head-screw-4__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 4,
+    "name": "M3\u00d710 socket head screw",
+    "unit_cost_usd": 0.099,
+    "mass_g": 1.0
+   }
+  },
+  {
+   "file": "stl/m5-16-socket-head-screw-2.stl",
+   "name": "M5\u00d716 socket head screw \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    -0.999,
+    0.01,
+    0.031
+   ],
+   "bbox": [
+    21.0,
+    28.5,
+    8.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m5-16-socket-head-screw-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 2,
+    "name": "M5\u00d716 socket head screw",
+    "unit_cost_usd": 0.186,
+    "mass_g": 4.3
+   }
+  },
+  {
+   "file": "stl/m5-16-socket-head-screw-2-2.stl",
+   "name": "M5\u00d716 socket head screw \u00d72 (2)",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    1.0,
+    0.01,
+    0.029
+   ],
+   "bbox": [
+    21.0,
+    28.5,
+    8.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m5-16-socket-head-screw-2-2__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 2,
+    "name": "M5\u00d716 socket head screw",
+    "unit_cost_usd": 0.186,
+    "mass_g": 4.3
+   }
+  },
+  {
+   "file": "stl/m5-30-socket-head-screw.stl",
+   "name": "M5\u00d730 socket head screw",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.999,
+    0.004,
+    -0.045
+   ],
+   "bbox": [
+    8.5,
+    35.0,
+    8.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m5-30-socket-head-screw__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 1,
+    "name": "M5\u00d730 socket head screw",
+    "unit_cost_usd": 0.208,
+    "mass_g": 6.5
+   }
+  },
+  {
+   "file": "stl/m5-nylock-nut.stl",
+   "name": "M5 nylock nut",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.998,
+    -0.032,
+    -0.045
+   ],
+   "bbox": [
+    9.2,
+    5.8,
+    8.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/m5-nylock-nut__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/m5-nylock-nut__1.stl",
+     "color": "#e8e4d6",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 1,
+    "name": "M5 nylock nut",
+    "unit_cost_usd": 0.11,
+    "mass_g": 1.3
+   }
+  },
+  {
+   "file": "stl/wheelscrews.stl",
+   "name": "M5\u00d735 socket head screw \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.711,
+    0.171,
+    0.682
+   ],
+   "bbox": [
+    78.5,
+    67.8,
+    40.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/wheelscrews__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 4,
+    "name": "M5\u00d735 socket head screw",
+    "unit_cost_usd": 0.216,
+    "mass_g": 7.3
+   }
+  },
+  {
+   "file": "stl/wheelnuts.stl",
+   "name": "M5 nylock nut \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#cfd2cc",
+   "explode": [
+    0.967,
+    0.232,
+    0.108
+   ],
+   "bbox": [
+    79.2,
+    67.3,
+    5.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/wheelnuts__0.stl",
+     "color": "#cfd2cc",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/wheelnuts__1.stl",
+     "color": "#e8e4d6",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nut",
+    "qty": 4,
+    "name": "M5 nylock nut",
+    "unit_cost_usd": 0.11,
+    "mass_g": 1.3
+   }
+  },
+  {
+   "file": "stl/esp32-c3-supermini.stl",
+   "name": "ESP32-C3 SuperMini",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    -0.991,
+    0.074,
+    -0.108
+   ],
+   "bbox": [
+    23.5,
+    18.0,
+    4.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/esp32-c3-supermini__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__4.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__6.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    }
+   ],
+   "lib": {
+    "key": "esp32_c3_supermini",
+    "qty": 1,
+    "name": "ESP32-C3 SuperMini",
+    "unit_cost_usd": 4.0,
+    "mass_g": 2.0
+   }
+  },
+  {
+   "file": "stl/tmc2209-stepper-driver.stl",
+   "name": "TMC2209 stepper driver",
+   "group": "component",
+   "process": "bought",
+   "color": "#2f2547",
+   "explode": [
+    -0.988,
+    0.125,
+    -0.086
+   ],
+   "bbox": [
+    20.3,
+    15.2,
+    18.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/tmc2209-stepper-driver__0.stl",
+     "color": "#2f2547",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/tmc2209-stepper-driver__1.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tmc2209-stepper-driver__2.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/tmc2209-stepper-driver__3.stl",
+     "color": "#9aa3ad",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/tmc2209-stepper-driver__4.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tmc2209-stepper-driver__5.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/tmc2209-stepper-driver__6.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tmc2209-stepper-driver__7.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "tmc2209",
+    "qty": 1,
+    "name": "TMC2209 stepper driver",
+    "unit_cost_usd": 5.0,
+    "mass_g": 4.0
+   }
+  },
+  {
+   "file": "stl/mp1584-mini-buck-converter.stl",
+   "name": "MP1584 mini buck converter",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d5e3b",
+   "explode": [
+    -0.99,
+    0.08,
+    -0.117
+   ],
+   "bbox": [
+    22.0,
+    17.0,
+    4.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/mp1584-mini-buck-converter__0.stl",
+     "color": "#1d5e3b",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__1.stl",
+     "color": "#26282c",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__3.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__4.stl",
+     "color": "#2a6ad0",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__5.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__6.stl",
+     "color": "#b48a5c",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__7.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    }
+   ],
+   "lib": {
+    "key": "mp1584",
+    "qty": 1,
+    "name": "MP1584 mini buck converter",
+    "unit_cost_usd": 1.2,
+    "mass_g": 2.0
+   }
+  },
+  {
+   "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1.stl",
+   "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9cdd2",
+   "explode": [
+    -0.987,
+    0.144,
+    -0.075
+   ],
+   "bbox": [
+    16.2,
+    16.6,
+    14.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__0.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__1.stl",
+     "color": "#b9bec4",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__3.stl",
+     "color": "#e0e2e4",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__4.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "dc_jack_panel",
+    "qty": 1,
+    "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+    "unit_cost_usd": 0.8,
+    "mass_g": 6.0
+   }
+  }
+ ],
+ "motion": {
+  "file": "motion.json",
+  "duration": 8.0,
+  "frames": 90,
+  "parts": 6
+ }
+}

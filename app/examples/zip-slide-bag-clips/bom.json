@@ -1,0 +1,41 @@
+{
+ "parts": [],
+ "assembly_minutes": 0,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/bag-clip-70-mm.stl",
+   "name": "Bag clip 70 mm",
+   "grams": 4.8,
+   "print_hours": 0.25,
+   "bbox": [
+    87.0,
+    19.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/bag-clip-105-mm.stl",
+   "name": "Bag clip 105 mm",
+   "grams": 7.0,
+   "print_hours": 0.35,
+   "bbox": [
+    122.0,
+    19.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/bag-clip-140-mm.stl",
+   "name": "Bag clip 140 mm",
+   "grams": 9.1,
+   "print_hours": 0.46,
+   "bbox": [
+    157.0,
+    19.0,
+    10.0
+   ]
+  }
+ ],
+ "fabricated": []
+}

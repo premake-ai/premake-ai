@@ -1,0 +1,52 @@
+{
+ "parts": [
+  {
+   "name": "M5x30 knurled thumb screw",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.45,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "search 'M5 x 30mm knurled thumb screw'; stainless"
+  },
+  {
+   "name": "M5 hex nut",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon / McMaster-Carr",
+   "url": "",
+   "notes": "8 mm across flats, pressed into nut trap"
+  },
+  {
+   "name": "Desk (reference)",
+   "qty_per_unit": 0,
+   "unit_cost_usd": 0,
+   "supplier": "",
+   "url": "",
+   "notes": "customer's desk, shown for fit only"
+  },
+  {
+   "name": "Cables (reference)",
+   "qty_per_unit": 0,
+   "unit_cost_usd": 0,
+   "supplier": "",
+   "url": "",
+   "notes": "customer's cables, shown for fit only"
+  }
+ ],
+ "assembly_minutes": 1,
+ "kit_ok": true,
+ "printed": [
+  {
+   "file": "stl/desk-clamp-organizer.stl",
+   "name": "Desk Clamp Organizer",
+   "grams": 45.2,
+   "print_hours": 2.26,
+   "bbox": [
+    80.0,
+    45.0,
+    60.0
+   ]
+  }
+ ],
+ "fabricated": []
+}

@@ -1,0 +1,526 @@
+{
+ "t": 1793310732.6437771,
+ "title": "Wi-Fi Blind Motor",
+ "parts": [
+  {
+   "file": "stl/body.stl",
+   "name": "Body",
+   "group": "case",
+   "process": "print",
+   "color": "#ecebe7",
+   "explode": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "bbox": [
+    104.0,
+    60.0,
+    135.0
+   ]
+  },
+  {
+   "file": "stl/front-plate.stl",
+   "name": "Front plate",
+   "group": "case",
+   "process": "print",
+   "color": "#3b3f45",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    72.0,
+    22.0,
+    135.0
+   ]
+  },
+  {
+   "file": "stl/sprocket.stl",
+   "name": "Sprocket",
+   "group": "case",
+   "process": "print",
+   "color": "#f08a24",
+   "explode": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "bbox": [
+    39.0,
+    13.0,
+    39.0
+   ]
+  },
+  {
+   "file": "stl/your-blind-s-bead-chain-reference.stl",
+   "name": "Your blind's bead chain (reference)",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9ccd1",
+   "explode": [
+    0.0,
+    -0.585,
+    0.811
+   ],
+   "bbox": [
+    35.2,
+    4.5,
+    167.6
+   ]
+  },
+  {
+   "file": "stl/nema17-stepper-motor-48-mm.stl",
+   "name": "NEMA17 stepper motor 48 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    0.0,
+    -0.231,
+    -0.973
+   ],
+   "bbox": [
+    42.3,
+    72.6,
+    47.7
+   ],
+   "subparts": [
+    {
+     "file": "stl/nema17-stepper-motor-48-mm__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-48-mm__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-48-mm__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-48-mm__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-48-mm__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-48-mm__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 48 mm",
+    "unit_cost_usd": 13.0,
+    "mass_g": 360.0
+   }
+  },
+  {
+   "file": "stl/perfboard-50x70.stl",
+   "name": "Perfboard 50x70",
+   "group": "component",
+   "process": "bought",
+   "color": "#3d7a3a",
+   "explode": [
+    -0.052,
+    0.103,
+    -0.993
+   ],
+   "bbox": [
+    52.0,
+    34.0,
+    1.6
+   ]
+  },
+  {
+   "file": "stl/tmc2209-stepper-driver.stl",
+   "name": "TMC2209 stepper driver",
+   "group": "component",
+   "process": "bought",
+   "color": "#2f2547",
+   "explode": [
+    -0.161,
+    0.178,
+    -0.971
+   ],
+   "bbox": [
+    20.3,
+    15.2,
+    18.0
+   ],
+   "subparts": [
+    {
+     "file": "stl/tmc2209-stepper-driver__0.stl",
+     "color": "#2f2547",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/tmc2209-stepper-driver__1.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tmc2209-stepper-driver__2.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/tmc2209-stepper-driver__3.stl",
+     "color": "#9aa3ad",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/tmc2209-stepper-driver__4.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tmc2209-stepper-driver__5.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/tmc2209-stepper-driver__6.stl",
+     "color": "#3b3c40",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/tmc2209-stepper-driver__7.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "tmc2209",
+    "qty": 1,
+    "name": "TMC2209 stepper driver",
+    "unit_cost_usd": 5.0,
+    "mass_g": 4.0
+   }
+  },
+  {
+   "file": "stl/mp1584-mini-buck-converter.stl",
+   "name": "MP1584 mini buck converter",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d5e3b",
+   "explode": [
+    -0.166,
+    0.035,
+    -0.985
+   ],
+   "bbox": [
+    22.0,
+    17.0,
+    4.4
+   ],
+   "subparts": [
+    {
+     "file": "stl/mp1584-mini-buck-converter__0.stl",
+     "color": "#1d5e3b",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__1.stl",
+     "color": "#26282c",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__3.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__4.stl",
+     "color": "#2a6ad0",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__5.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__6.stl",
+     "color": "#b48a5c",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/mp1584-mini-buck-converter__7.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    }
+   ],
+   "lib": {
+    "key": "mp1584",
+    "qty": 1,
+    "name": "MP1584 mini buck converter",
+    "unit_cost_usd": 1.2,
+    "mass_g": 2.0
+   }
+  },
+  {
+   "file": "stl/esp32-c3-supermini.stl",
+   "name": "ESP32-C3 SuperMini",
+   "group": "component",
+   "process": "bought",
+   "color": "#1d1f24",
+   "explode": [
+    0.066,
+    0.106,
+    -0.992
+   ],
+   "bbox": [
+    23.5,
+    18.0,
+    4.3
+   ],
+   "subparts": [
+    {
+     "file": "stl/esp32-c3-supermini__0.stl",
+     "color": "#1d1f24",
+     "finish": "pcb"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__1.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__3.stl",
+     "color": "#d4ad4c",
+     "finish": "gold"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__4.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__5.stl",
+     "color": "#ecebe6",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/esp32-c3-supermini__6.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    }
+   ],
+   "lib": {
+    "key": "esp32_c3_supermini",
+    "qty": 1,
+    "name": "ESP32-C3 SuperMini",
+    "unit_cost_usd": 4.0,
+    "mass_g": 2.0
+   }
+  },
+  {
+   "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1.stl",
+   "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+   "group": "component",
+   "process": "bought",
+   "color": "#c9cdd2",
+   "explode": [
+    0.208,
+    0.247,
+    -0.946
+   ],
+   "bbox": [
+    16.2,
+    14.0,
+    16.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__0.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__1.stl",
+     "color": "#b9bec4",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__2.stl",
+     "color": "#1c1d20",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__3.stl",
+     "color": "#e0e2e4",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/dc-barrel-jack-panel-mount-5-5-2-1__4.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "dc_jack_panel",
+    "qty": 1,
+    "name": "DC barrel jack, panel mount 5.5\u00d72.1",
+    "unit_cost_usd": 0.8,
+    "mass_g": 6.0
+   }
+  },
+  {
+   "file": "stl/m3-heat-set-insert-4.stl",
+   "name": "M3 heat-set insert \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#c8a04a",
+   "explode": [
+    0.0,
+    -0.234,
+    -0.972
+   ],
+   "bbox": [
+    60.6,
+    5.7,
+    123.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-heat-set-insert-4__0.stl",
+     "color": "#c8a04a",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "insert",
+    "qty": 4,
+    "name": "M3 heat-set insert",
+    "unit_cost_usd": 0.12,
+    "mass_g": 0.4
+   }
+  },
+  {
+   "file": "stl/m3-10-socket-head-screw-4.stl",
+   "name": "M3\u00d710 socket head screw \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    -0.287,
+    -0.958
+   ],
+   "bbox": [
+    61.5,
+    13.0,
+    124.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-10-socket-head-screw-4__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 4,
+    "name": "M3\u00d710 socket head screw",
+    "unit_cost_usd": 0.099,
+    "mass_g": 1.0
+   }
+  },
+  {
+   "file": "stl/m3-8-socket-head-screw-4.stl",
+   "name": "M3\u00d78 socket head screw \u00d74",
+   "group": "component",
+   "process": "bought",
+   "color": "#2b2d31",
+   "explode": [
+    0.0,
+    -0.675,
+    -0.738
+   ],
+   "bbox": [
+    36.5,
+    11.0,
+    36.5
+   ],
+   "subparts": [
+    {
+     "file": "stl/m3-8-socket-head-screw-4__0.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "shcs",
+    "qty": 4,
+    "name": "M3\u00d78 socket head screw",
+    "unit_cost_usd": 0.097,
+    "mass_g": 0.9
+   }
+  },
+  {
+   "file": "stl/5-mm-led-red.stl",
+   "name": "5 mm LED (red)",
+   "group": "component",
+   "process": "bought",
+   "color": "#e8483d",
+   "explode": [
+    0.0,
+    -0.138,
+    -0.99
+   ],
+   "bbox": [
+    5.8,
+    31.8,
+    5.8
+   ],
+   "subparts": [
+    {
+     "file": "stl/5-mm-led-red__0.stl",
+     "color": "#e8483d",
+     "finish": "glass"
+    },
+    {
+     "file": "stl/5-mm-led-red__1.stl",
+     "color": "#c4c7cb",
+     "finish": "metal"
+    }
+   ],
+   "lib": {
+    "key": "led_5mm",
+    "qty": 1,
+    "name": "5 mm LED (red)",
+    "unit_cost_usd": 0.05,
+    "mass_g": 0.4
+   }
+  }
+ ],
+ "motion": {
+  "file": "motion.json",
+  "duration": 6.0,
+  "frames": 90,
+  "parts": 1
+ }
+}

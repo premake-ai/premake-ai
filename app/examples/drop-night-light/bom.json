@@ -1,0 +1,87 @@
+{
+ "parts": [
+  {
+   "name": "ESP32-C3 SuperMini (USB-C)",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 3.5,
+   "supplier": "Amazon / AliExpress",
+   "url": "",
+   "notes": "Search 'ESP32-C3 SuperMini'"
+  },
+  {
+   "name": "WS2812B 8-LED ring, 32 mm",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.6,
+   "supplier": "Amazon / AliExpress",
+   "url": "",
+   "notes": "Search 'WS2812B 8 bit LED ring 32mm'"
+  },
+  {
+   "name": "Tact switch 6 x 6 x 5 mm",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.05,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Pressed by the printed flexure tab"
+  },
+  {
+   "name": "330 ohm resistor + 100 uF 10 V capacitor",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.1,
+   "supplier": "Amazon / DigiKey",
+   "url": "",
+   "notes": "Data-line resistor and ring decoupling"
+  },
+  {
+   "name": "26 AWG silicone wire, 3 colours, 30 cm",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 0.2,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "Clear silicone bumper feet 8 mm",
+   "qty_per_unit": 3,
+   "unit_cost_usd": 0.04,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": ""
+  },
+  {
+   "name": "USB-C cable 1 m",
+   "qty_per_unit": 1,
+   "unit_cost_usd": 1.5,
+   "supplier": "Amazon",
+   "url": "",
+   "notes": "Charger not included"
+  }
+ ],
+ "assembly_minutes": 15,
+ "kit_ok": false,
+ "printed": [
+  {
+   "file": "stl/base.stl",
+   "name": "Base",
+   "grams": 22.0,
+   "print_hours": 1.1,
+   "bbox": [
+    76.2,
+    76.2,
+    25.7
+   ]
+  },
+  {
+   "file": "stl/diffuser-dome.stl",
+   "name": "Diffuser dome",
+   "grams": 13.6,
+   "print_hours": 0.68,
+   "bbox": [
+    76.3,
+    76.3,
+    80.7
+   ]
+  }
+ ],
+ "fabricated": []
+}
