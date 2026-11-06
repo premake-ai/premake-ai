@@ -55,6 +55,10 @@ function injectCss() {
 .att-drop { outline: 2px dashed var(--accent); outline-offset: 3px; background-color: var(--accent-soft) !important; }
 .att-drop[data-drop-label]::after { content: attr(data-drop-label); position: absolute; inset: 0; z-index: 5; display: grid; place-items: center; padding: 12px;
   border-radius: inherit; background: rgba(255, 247, 237, .94); color: #c2410c; font: 600 15px/1.3 var(--ui, inherit); text-align: center; pointer-events: none; }
+.att-menu { position: fixed; z-index: 1000; min-width: 220px; padding: 4px; background: var(--panel, #fff); border: 1px solid var(--line, #e7e5e4); border-radius: 10px; box-shadow: 0 6px 20px rgba(28,25,23,.12); display: flex; flex-direction: column; }
+.att-menu button { display: flex; align-items: center; gap: 10px; width: 100%; padding: 8px 10px; border: 0; border-radius: 7px; background: none; color: var(--text, #1c1917); font: 500 13.5px/1.2 var(--ui, inherit); text-align: left; cursor: pointer; }
+.att-menu button:hover, .att-menu button:focus-visible { background: var(--panel-2, #f4f3f0); outline: none; }
+.att-menu svg { width: 16px; height: 16px; flex: none; color: var(--muted, #78716c); }
 .att-tip { margin: 10px 0 0; text-align: center; color: var(--muted); font-size: 12.5px; }
 .cam-btns { display: inline-flex; gap: 6px; flex: none; }
 .cam-btns .btn { gap: 6px; }
@@ -169,7 +173,7 @@ export function attachImages(opts) {
   if (getComputedStyle(opts.box).position === 'static') opts.box.style.position = 'relative';
   opts.button.into.insertBefore(btn, opts.button.before || opts.button.into.firstChild);
   btn.after(input);
-  btn.onclick = () => { if (enabled()) input.click(); };
+  btn.onclick = () => { if (!enabled()) return; if (opts.menu && opts.screenshot && !phone) toggleMenu(); else input.click(); };
   input.onchange = () => { add([...input.files]); input.value = ''; };
   const enabled = () => !opts.enabled || opts.enabled();
 
@@ -197,9 +201,33 @@ export function attachImages(opts) {
     }
   }
 
+  // opts.menu: the image button opens a small menu, "Screenshot the 3D view" or "Choose from your computer"
+  let menu = null;
+  async function takeShot() {
+    try { const f = await opts.screenshot(); if (f) { f.shot = true; await add([f]); } }
+    catch (e) { say(e.message || 'Couldn’t take a screenshot.'); }
+  }
+  function closeMenu() { if (!menu) return; menu.remove(); menu = null; btn.setAttribute('aria-expanded', 'false'); removeEventListener('pointerdown', outside, true); removeEventListener('keydown', onKey, true); }
+  const outside = e => { if (menu && !menu.contains(e.target) && !btn.contains(e.target)) closeMenu(); };
+  const onKey = e => { if (e.key === 'Escape') closeMenu(); };
+  function toggleMenu() {
+    if (menu) { closeMenu(); return; }
+    menu = document.createElement('div'); menu.className = 'att-menu'; menu.setAttribute('role', 'menu');
+    menu.innerHTML = `<button type="button" role="menuitem" data-m="shot">${shotSvg}<span>Screenshot the 3D view</span></button>`
+      + `<button type="button" role="menuitem" data-m="pick">${imgSvg}<span>Choose from your computer</span></button>`;
+    menu.onclick = e => { const b = e.target.closest('[data-m]'); if (!b) return; const m = b.dataset.m; closeMenu(); if (m === 'shot') takeShot(); else input.click(); };
+    document.body.appendChild(menu); btn.setAttribute('aria-expanded', 'true'); // on the page itself: a blurred composer would trap a fixed menu
+    const r = btn.getBoundingClientRect();
+    menu.style.left = Math.max(8, Math.min(r.left, innerWidth - menu.offsetWidth - 8)) + 'px';
+    menu.style.bottom = (innerHeight - r.top + 6) + 'px';
+    addEventListener('pointerdown', outside, true); addEventListener('keydown', onKey, true);
+    menu.querySelector('button')?.focus();
+  }
+  if (opts.menu) btn.setAttribute('aria-haspopup', 'menu');
+
   // chattools: screenshot of the 3D view, right after the image button. opts.screenshot() -> File | null (cancelled); throws a user-facing Error
   let shot = null;
-  if (opts.screenshot) {
+  if (opts.screenshot && !opts.menu) {
     shot = document.createElement('button');
     shot.type = 'button'; shot.className = 'att-btn att-shot'; shot.innerHTML = shotSvg;
     shot.title = 'Screenshot the 3D view'; shot.setAttribute('aria-label', 'Screenshot the 3D view');

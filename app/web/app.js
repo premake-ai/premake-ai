@@ -1679,7 +1679,9 @@ addEventListener('keydown', e => { if (e.key === 'Escape' && !$('#verPop').hidde
 function autoGrow() { const t = $('#chatInput'); t.style.height = 'auto'; t.style.height = Math.min(180, t.scrollHeight) + 'px'; }
 // images: paste / drop / pick images in the chat composer (agent chats only; uploads start right away)
 const chatAtt = attachImages({ box: $('#composer .cbox'), textarea: $('#chatInput'), strip: { before: $('#chatInput') }, button: { into: $('#composer .cbar') },
-  projectId: () => (S.cur?.kind === 'project' && !S.cur.readOnly ? S.cur.id : null), enabled: () => S.cur?.kind === 'project' && !S.cur.readOnly && chatTarget() !== 'app' }); // no "Screenshot the 3D view" button (owner: removed); apps: the app agent reads ./app only, so no images
+  projectId: () => (S.cur?.kind === 'project' && !S.cur.readOnly ? S.cur.id : null), enabled: () => S.cur?.kind === 'project' && !S.cur.readOnly && chatTarget() !== 'app', // apps: the app agent reads ./app only, so no images
+  menu: true, // the image button: "Screenshot the 3D view" or "Choose from your computer" (owner, 6 Nov)
+  screenshot: async () => { if (!S.viewer?.parts().length) throw new Error('No 3D model to screenshot yet.'); const f = await (await import('./shot.js')).takeShot(S.viewer); if (f) track('screenshot_attached', { page: 'studio' }); return f; } });
 // chattools: parts referenced in the next message (hover Ask, the "Ask about <part>" chip after a click, phone tap + Ask)
 const partCtx = partContext({ cbox: $('#composer .cbox'), textarea: $('#chatInput'), before: $('#composer .cbox'), viewer: () => S.viewer,
   enabled: () => S.cur?.kind === 'project' && !S.cur.readOnly });
