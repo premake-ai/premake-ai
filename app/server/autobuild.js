@@ -32,7 +32,7 @@ function prepareShadow(dir) {
     const src = path.join(dir, n), dst = path.join(sh, n);
     try {
       if (ent.isFile()) { if (fs.statSync(src).size <= MAX_COPY) fs.copyFileSync(src, dst); }
-      else if (ent.isDirectory()) fs.symlinkSync(src, dst, 'dir');
+      else if (ent.isDirectory()) fs.symlinkSync(path.join('..', n), dst, 'dir'); // relative: the data folder can move
     } catch {}
   }
   return sh;
