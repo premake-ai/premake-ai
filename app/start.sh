@@ -53,6 +53,10 @@ fi
 export PORT
 if [ -n "${PREMAKE_DATA_DIR:-}" ]; then export FORMA_DATA_DIR="$PREMAKE_DATA_DIR"; fi
 mkdir -p "${FORMA_DATA_DIR:-$APP_DIR/data}"
+# The design agent is never allowed to read /tmp (a security rule), so designs can't live there.
+case "$(cd "${FORMA_DATA_DIR:-$APP_DIR/data}" && pwd -P)/" in
+  /tmp/*|/private/tmp/*) fail "Your designs folder is under /tmp, where the design agent isn't allowed to work. Set PREMAKE_DATA_DIR to a folder in your home directory (or move the app out of /tmp)." ;;
+esac
 
 URL="http://localhost:$PORT"
 echo "Premake: $URL"
