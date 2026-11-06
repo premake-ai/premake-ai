@@ -244,12 +244,13 @@ export function threadHtml(chat, opts = {}) {
     let inner;
     if (flow.some(x => x.text != null)) { // narration: texts and step groups in order; only the newest group is the live line
       const done = tail?.steps && L.running ? flow.slice(0, -1) : flow;
-      inner = flowHtml(done)
-        + (L.running ? activityHtml(first ? L.steps : tail?.steps ? tail.steps : [], true, open, L.thinking, true, first ? L.stepParts : tail?.steps ? tail.parts || null : null, first) : '')
-        + (partial ? `<div class="body narr">${textHtml(partial)}</div>` : '');
-    } else {
-      inner = `${activityHtml(L.steps, L.running, open, L.thinking, true, L.stepParts, first)}
-      ${L.text || partial ? `<div class="body">${textHtml(L.text || '')}${partial ? textHtml(partial) : ''}</div>` : ''}`;
+      const line = L.running ? activityHtml(first ? L.steps : tail?.steps ? tail.steps : [], true, open, L.thinking, true, first ? L.stepParts : tail?.steps ? tail.parts || null : null, first) : '';
+      const typing = partial ? `<div class="body narr">${textHtml(partial)}</div>` : '';
+      inner = flowHtml(done) + (tail?.early ? typing + line : line + typing); // steps that overtook the text being typed go under it
+    } else { // no message yet: while it works, what it's doing now sits under what it is saying (a new design's checklist stays on top)
+      const act = activityHtml(L.steps, L.running, open, L.thinking, true, L.stepParts, first);
+      const body = L.text || partial ? `<div class="body">${textHtml(L.text || '')}${partial ? textHtml(partial) : ''}</div>` : '';
+      inner = L.running && !first ? body + act : act + body;
     }
     html += `<div class="msg assistant live">${refsHtml(L.refs, opts.base)}${inner}
       ${L.error ? `<div class="err">${esc(L.error)}</div>` : ''}</div>`;
@@ -270,7 +271,9 @@ export function addLiveText(L, t) {
   L.partial = ''; // the full block replaces the streamed partial
   L.text = t.startsWith(L.text) ? t : (L.text ? L.text + '\n\n' + t : t);
   const f = (L.flow ||= []), last = f[f.length - 1]; // narration: the texts in order between the step groups
-  if (last?.text != null && t.startsWith(last.text)) last.text = t; else f.push({ text: t });
+  if (last?.text != null && t.startsWith(last.text)) last.text = t;
+  else if (last?.steps && last.early) { delete last.early; f.splice(f.length - 1, 0, { text: t }); } // steps that overtook this text go after it
+  else f.push({ text: t });
   return true;
 }
 
@@ -280,7 +283,7 @@ export function addLiveStep(L, t, parts) {
   if (parts?.length) (L.stepParts ||= {})[L.steps.length - 1] = parts;
   const f = (L.flow ||= []);
   let g = f[f.length - 1];
-  if (!g?.steps) f.push(g = { steps: [] });
+  if (!g?.steps) f.push(g = { steps: [], ...(L.partial ? { early: true } : {}) }); // early: arrived while the text before it was still streaming
   g.steps.push(t);
   if (parts?.length) (g.parts ||= {})[g.steps.length - 1] = parts;
 }

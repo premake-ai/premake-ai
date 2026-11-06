@@ -522,18 +522,22 @@ const pollSeen = new Map(); // id -> last poll time; keeps the file watcher aliv
 function lastStepOf(run) { const ev = run?.events || []; for (let i = ev.length - 1; i >= 0; i--) if (/step$/.test(ev[i].type)) return ev[i].text || ''; return ''; }
 /** Emit and remember an event for this run, so reconnecting clients can replay it. */
 function record(id, run, ev) {
-  if (run.flow) flowAdd(run.flow, ev, run.P);
+  if (run.flow) flowAdd(run.flow, ev, run.P, !!run.partial); // run.partial: a text block still waiting for its full 'assistant'
   run.events.push(ev);
   if (run.events.length > RUN_EVENTS_MAX) run.events.splice(0, run.events.length - RUN_EVENTS_MAX);
   emit(id, ev);
 }
 
 /** narration: the turn as it happened, [{ text } | { steps, parts? }], so the reply can show its messages between the steps. */
-function flowAdd(flow, ev, P) {
+function flowAdd(flow, ev, P, writing = false) {
   const last = flow[flow.length - 1];
-  if (ev.type === P + 'assistant') flow.push({ text: ev.text });
-  else if (ev.type === P + 'step') {
-    const g = last?.steps ? last : (flow.push({ steps: [] }), flow[flow.length - 1]);
+  if (ev.type === P + 'assistant') {
+    // a step can overtake the message it follows (the tool call streams in before that text's full block arrives):
+    // the text goes back in front of the steps that came while it was still being written
+    if (last?.steps && last.early) { delete last.early; flow.splice(flow.length - 1, 0, { text: ev.text }); }
+    else flow.push({ text: ev.text });
+  } else if (ev.type === P + 'step') {
+    const g = last?.steps ? last : (flow.push({ steps: [], ...(writing ? { early: true } : {}) }), flow[flow.length - 1]);
     g.steps.push(ev.text);
     if (ev.parts?.length) (g.parts ||= {})[g.steps.length - 1] = ev.parts;
   }
