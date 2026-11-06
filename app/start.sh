@@ -110,17 +110,7 @@ echo "  data:   ${FORMA_DATA_DIR:-$APP_DIR/data}"
 echo "  agent:  $AGENT_LINE"
 echo "  Stop with Ctrl-C."
 
-# 4. Open the browser once the server answers
-if [ "$OPEN" = 1 ]; then
-  (
-    for _ in $(seq 1 60); do
-      if (exec 3<>"/dev/tcp/127.0.0.1/$PORT") 2>/dev/null; then
-        if [ "$(uname)" = "Darwin" ]; then open "$URL"; elif command -v xdg-open >/dev/null 2>&1; then xdg-open "$URL" >/dev/null 2>&1; fi
-        exit 0
-      fi
-      sleep 0.5
-    done
-  ) &
-fi
+# 4. The server opens the browser once it is listening (PREMAKE_OPEN=1)
+if [ "$OPEN" = 1 ]; then export PREMAKE_OPEN=1; else export PREMAKE_OPEN=0; fi
 
 exec node "$APP_DIR/server/server.js"

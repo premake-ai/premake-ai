@@ -122,8 +122,18 @@ function resultMsg(st, turns) {
     agent: 'codex' };
 }
 
-/** Run one Codex turn; emit translated lines; resolves the turn state. Retries once without -m if the model is refused. */
-function runTurn(bin, flags, opts, emit, retried = false) {
+/** The models Codex offers this account, best first (Codex's own models_cache.json: visible ones by priority). */
+function listedModels() {
+  try {
+    const f = path.join(process.env.CODEX_HOME || path.join(os.homedir(), '.codex'), 'models_cache.json');
+    return (JSON.parse(fs.readFileSync(f, 'utf8')).models || []).filter((m) => m.visibility === 'list' && m.slug)
+      .sort((a, b) => (a.priority ?? 99) - (b.priority ?? 99)).map((m) => m.slug);
+  } catch { return []; }
+}
+
+/** Run one Codex turn; emit translated lines; resolves the turn state. If the model is refused (a config.toml model the
+ *  plan doesn't include, say), retries with Codex's default, then each model Codex lists for this account, best first. */
+function runTurn(bin, flags, opts, emit) {
   return new Promise((resolve) => {
     const st = { threadId: opts.threadId || null, model: opts.model || '', lastText: '', usage: null, error: null, done: false, started: new Set(), warnings: [], emitted: 0 };
     const child = spawn(bin, codexArgs(flags, opts), { cwd: process.cwd(), env: process.env, stdio: ['ignore', 'pipe', 'pipe'] });
@@ -143,9 +153,14 @@ function runTurn(bin, flags, opts, emit, retried = false) {
     child.on('close', async (code) => {
       process.removeListener('SIGTERM', onSig); process.removeListener('SIGINT', onSig);
       if (!st.done && !st.error) st.error = (err.trim().split('\n').filter((l) => !/Reading additional input/.test(l)).pop()) || `codex exited ${code}`;
-      if (st.error && opts.model && !retried && st.emitted === 0 && MODEL_ERR_RE.test(st.error)) {
-        process.stderr.write(`[codex] model ${opts.model} refused, using Codex's default model\n`);
-        return resolve(runTurn(bin, flags, { ...opts, model: '' }, emit, true));
+      if (st.error && st.emitted === 0 && MODEL_ERR_RE.test(st.error)) {
+        const tried = opts.tried || new Set([opts.model]);
+        const next = ['', ...listedModels()].find((m) => !tried.has(m));
+        if (next !== undefined) {
+          tried.add(next);
+          process.stderr.write(`[codex] model ${opts.model || '(Codex default)'} refused, trying ${next || "Codex's default model"}\n`);
+          return resolve(runTurn(bin, flags, { ...opts, model: next, tried }, emit));
+        }
       }
       resolve(st);
     });
@@ -185,6 +200,7 @@ async function main(argv) {
       threadId = null;
       st = await runTurn(bin, flags, { prompt: withSystem(flags, text), threadId: null, images, model }, sink);
     }
+    if (!st.error && st.model) process.env.PREMAKE_CODEX_MODEL = st.model; // a fallback that worked: use it for the next turns
     first = false; turns++;
     if (st.threadId) threadId = st.threadId;
     const res = resultMsg(st, turns);

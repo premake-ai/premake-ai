@@ -11,24 +11,15 @@ Two things live here: the Premake studio app (describe a product, a design agent
 
 Use this when the user says "install Premake", "open Premake", "start Premake" or "design X with Premake". The app runs on their own machine and its design agent is their own Claude Code login (their subscription), or OpenAI Codex if that is what they use. Never set or use `ANTHROPIC_API_KEY`.
 
-1. Find the app: `$PREMAKE_HOME` if set, else `~/premake-ai`. If its `app/start.sh` doesn't exist, clone it (about 110 MB with the example designs, a minute or two):
+1. Run the installer and wait for it (1 to 3 minutes the first time, seconds after). It downloads Premake to `~/premake-ai` (or reuses it and the user's designs), sets it up, starts the studio in the background and opens the browser:
    ```bash
-   P="${PREMAKE_HOME:-$HOME/premake-ai}"; [ -x "$P/app/start.sh" ] || git clone --depth 1 https://github.com/premake-ai/premake-ai "$P"
+   P="${PREMAKE_HOME:-$HOME/premake-ai}"; if [ -x "$P/install.sh" ]; then bash "$P/install.sh"; else curl -fsSL https://raw.githubusercontent.com/premake-ai/premake-ai/main/install.sh | bash; fi
    ```
-   If it exists, leave it as it is (don't pull or reset it unless the user asks: their designs live in `app/data`).
-2. Set it up (first time 1 to 3 minutes, re-runs take seconds; no sudo):
-   ```bash
-   "${PREMAKE_HOME:-$HOME/premake-ai}/app/setup.sh"
-   ```
-   It checks Node 20+ and Python 3.11/3.12 and makes a CadQuery venv. If it stops with a message (no Node, no suitable Python), tell the user exactly what it says and the one command to fix it. Installing uv (`curl -LsSf https://astral.sh/uv/install.sh | sh`) fixes any Python problem.
-3. Start it in the background (it keeps running; use the shell's background option, don't wait for it to exit):
-   ```bash
-   "${PREMAKE_HOME:-$HOME/premake-ai}/app/start.sh"
-   ```
-   It checks a design agent (Claude Code, else Codex) is installed and logged in, picks a free port from 8800, prints `Premake: http://localhost:PORT` and opens it in the browser. Read the URL from its first output line. If it says no design agent is logged in or Claude Code is too old, tell the user to run `claude auth login` (or `claude update`), or `codex login` if they use Codex, in a terminal, then start it again. To use Codex when both are installed, start it with `PREMAKE_AGENT=codex`.
-4. Tell the user the URL. If they asked to design something, give them their idea as one line to paste into the "Describe a product" box (for example "A phone stand that holds a phone in portrait or landscape"). The design agent takes it from there: 3D model, Assemble, Order (parts, prices, where to buy) and Make (files).
+   If it stops with a message (no Node, no suitable Python, Claude Code or Codex not logged in), tell the user exactly what it says and the one command to fix it: `claude auth login`, `codex login`, or installing uv (`curl -LsSf https://astral.sh/uv/install.sh | sh`) for any Python problem. To use Codex when both are installed, run it with `PREMAKE_AGENT=codex`.
+2. Read the URL from its last lines (`Premake: running at http://localhost:PORT`) and open it yourself too: `open "URL"` (macOS), `xdg-open "URL"` (Linux) or `start "" "URL"` (Windows).
+3. Tell the user the URL. Every example design is already in the sidebar. If they asked to design something, give them their idea as one line to paste into the "Describe a product" box (for example "A phone stand that holds a phone in portrait or landscape"). The design agent takes it from there: 3D model, Assemble, Order (parts, prices, where to buy) and Make (files).
 
-To stop it, stop the background shell (or Ctrl-C in its terminal). Before starting a second copy, check whether the first is still running and reuse its URL.
+To stop it: `kill $(cat ~/premake-ai/app/data/.premake.pid)`. Running the installer again reuses a running studio.
 
 # Premake: getting parts made
 

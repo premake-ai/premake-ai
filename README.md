@@ -16,26 +16,21 @@ Premake also gets live manufacturing quotes for any STEP or STL file from machin
 
 ## Install
 
-Paste this into Claude Code:
+Tell Claude Code or Codex:
 
 ```
-Install Premake from github.com/premake-ai/premake-ai
+Install premake-ai from github
 ```
 
-Claude adds the plugin, sets up the app and opens it in your browser. Or do it by hand, in Claude Code:
+It downloads Premake, sets it up, starts it and opens it in your browser. Every example design is already in your sidebar.
 
-```
-/plugin marketplace add premake-ai/premake-ai
-/plugin install premake-ai@premake-ai
-```
-
-Then ask "open Premake" or "design a phone stand with Premake". Without Claude, from a terminal:
+Or run it yourself in a terminal (the same thing):
 
 ```bash
-git clone --depth 1 https://github.com/premake-ai/premake-ai ~/premake-ai
-~/premake-ai/app/setup.sh      # once, 1 to 3 minutes
-~/premake-ai/app/start.sh      # prints and opens http://localhost:8800
+curl -fsSL https://raw.githubusercontent.com/premake-ai/premake-ai/main/install.sh | bash
 ```
+
+Run that again any time to start Premake. It reuses your install and your designs. Premake lives in `~/premake-ai`.
 
 ## Requirements
 

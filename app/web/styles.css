@@ -91,8 +91,8 @@ h1, h2, h3 { margin: 0; font-weight: 600; letter-spacing: normal; }
 .legal-links a:hover { color: var(--text); }
 
 /* Studio grid */
-.studio { display: grid; grid-template-columns: 236px minmax(0, 1fr) 392px; height: calc(100% - var(--top)); }
-.studio.mode-home, .studio.mode-gallery { grid-template-columns: 236px minmax(0, 1fr); }
+.studio { display: grid; grid-template-columns: var(--side-w, 236px) minmax(0, 1fr) 392px; height: calc(100% - var(--top)); }
+.studio.mode-home, .studio.mode-gallery { grid-template-columns: var(--side-w, 236px) minmax(0, 1fr); }
 .studio.mode-home .right, .studio.mode-gallery .right { display: none; }
 
 /* Sidebar */
@@ -1333,7 +1333,7 @@ body[data-access="showcase"] .side-head, body[data-access="showcase"] #projList 
 .sup-text p { margin: 0 0 6px; } .sup-text p:last-child { margin: 0; }
 
 /* Admin help inbox (#/support) */
-.studio.mode-inbox { grid-template-columns: 236px minmax(0, 1fr); }
+.studio.mode-inbox { grid-template-columns: var(--side-w, 236px) minmax(0, 1fr); }
 .studio.mode-inbox .right { display: none; }
 .inbox-wrap { display: grid; grid-template-columns: 300px minmax(0, 1fr); height: 100%; }
 .inbox-list { border-right: 1px solid var(--line); overflow: auto; padding: 18px 10px; }
@@ -1915,8 +1915,8 @@ a.ln-gurl-t:hover { color: var(--link); }
   body.resizing { cursor: col-resize; user-select: none; }
   body.resizing iframe, body.resizing canvas { pointer-events: none; }
 }
-@media (min-width: 1001px) and (max-width: 1280px) { .studio { --side-w: 208px; } }
-@media (min-width: 1001px) and (max-width: 1180px) { .studio { --side-w: 196px; } }
+@media (min-width: 1001px) and (max-width: 1280px) { .studio:not(.has-sw) { --side-w: 208px; } }
+@media (min-width: 1001px) and (max-width: 1180px) { .studio:not(.has-sw) { --side-w: 196px; } }
 
 /* Phones: no Model / Website / Ads / Code bar (and its Versions / Share); the 3D model is always shown */
 @media (max-width: 640px) {
@@ -1988,3 +1988,19 @@ em { font-style: normal; }
 .msg .body em, .md em, .sup-text em { font-style: italic; }
 /* tooltip: quick hover labels on the viewer toolbar (web/tooltip.js) */
 .qtip { position: fixed; z-index: 10001; max-width: 260px; padding: 6px 9px; border-radius: 7px; background: #1c1917; color: #fafaf9; font: 500 12.5px/1.35 var(--ui, system-ui); pointer-events: none; box-shadow: 0 4px 14px rgba(0,0,0,.18); }
+
+/* Drag the sidebar's right edge to resize it (desktop, app.js); dragged far left it becomes a thumbnail strip
+   (.side-rail) that slides open over the page while hovered. */
+.side-resize { display: none; }
+@media (min-width: 1001px) {
+  .sidebar { position: relative; }
+  .side-resize { display: block; position: absolute; right: -4px; top: 0; bottom: 0; width: 8px; cursor: col-resize; z-index: 31; }
+  .side-resize::after { content: ""; position: absolute; left: 3px; top: 0; bottom: 0; width: 2px; background: transparent; transition: background .15s; }
+  .side-resize:hover::after, body.resizing .side-resize::after { background: var(--accent); }
+  .studio.side-rail .sidebar { width: var(--side-w); overflow: hidden; transition: width .16s ease, box-shadow .16s; }
+  .studio.side-rail .sidebar:not(:hover) #newBtn { font-size: 0; gap: 0; padding: 0; justify-content: center; }
+  .studio.side-rail .sidebar:not(:hover) :is(.side-head, .proj-search, .ptext) { display: none; }
+  .studio.side-rail .sidebar:not(:hover) .side-link { font-size: 0; justify-content: center; }
+  .studio.side-rail .sidebar:not(:hover) .proj { justify-content: center; }
+  .studio.side-rail .sidebar:hover { width: 264px; box-shadow: var(--shadow-md); }
+}

@@ -2359,6 +2359,29 @@ route();
 // guest: back from sign-in with a prompt typed while signed out (/?resume=1, or the old /#/?resume=1): send it, once
 if (ACCESS.authed && !ACCESS.showcase) resumeDraft({ textarea: $('#homePrompt'), form: $('#homeForm'), att: homeAtt });
 
+// Desktop: drag the sidebar's right edge to resize it; far left (under 120 px) it snaps to a thumbnail strip that opens on
+// hover. Double-click the edge for the default width. Remembered per browser.
+(() => {
+  const h = $('#sideResize'), st = $('#studio'); if (!h || !st) return;
+  const RAIL = 60, KEY = 'premake.sideW';
+  const apply = w => {
+    const rail = w < 120; w = rail ? RAIL : Math.max(180, Math.min(w, 440));
+    st.style.setProperty('--side-w', w + 'px'); st.classList.add('has-sw'); st.classList.toggle('side-rail', rail);
+    return w;
+  };
+  const reset = () => { st.classList.remove('has-sw', 'side-rail'); st.style.removeProperty('--side-w'); };
+  try { const w = +localStorage.getItem(KEY); if (w) apply(w); } catch {}
+  h.addEventListener('pointerdown', e => {
+    e.preventDefault(); h.setPointerCapture(e.pointerId); document.body.classList.add('resizing');
+    let w = 0;
+    const move = ev => { w = apply(ev.clientX - st.getBoundingClientRect().left); };
+    const up = () => { document.body.classList.remove('resizing'); h.removeEventListener('pointermove', move); h.removeEventListener('pointerup', up);
+      try { if (w) localStorage.setItem(KEY, w); } catch {} };
+    h.addEventListener('pointermove', move); h.addEventListener('pointerup', up);
+  });
+  h.addEventListener('dblclick', () => { reset(); try { localStorage.removeItem(KEY); } catch {} });
+})();
+
 // Desktop: drag the panel's left edge to make Chat / Order / Launch wider (remembered per browser)
 (() => {
   const h = $('#panelResize'), st = $('#studio'); if (!h || !st) return;

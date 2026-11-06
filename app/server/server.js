@@ -820,6 +820,26 @@ function createProject({ fromExample, fromShare, fromProject, ref, owner, prompt
   return id;
 }
 
+/** Local installs: on first start, every repo example is copied into your projects (titles kept) so the sidebar starts
+ *  full and each one opens and edits like your own design. Once only (DATA/.examples-seeded); deleting one keeps it gone. */
+function seedExamples() {
+  const mark = path.join(DATA, '.examples-seeded');
+  if (ONLINE || exists(mark) || process.env.PREMAKE_SEED_EXAMPLES === '0') return;
+  const slugs = (fs.existsSync(EXAMPLES) ? fs.readdirSync(EXAMPLES) : []).filter((s) => ID_RE.test(s) && exists(path.join(EXAMPLES, s, 'design.py')))
+    .map((s) => [s, String(readJSON(path.join(EXAMPLES, s, 'meta.json'), {}).title || s)]).sort((a, b) => b[1].localeCompare(a[1])).map((x) => x[0]);
+  let n = 0;
+  for (const slug of slugs) { // Z-A by title, so the sidebar (newest first) reads A-Z
+    try {
+      const id = createProject({ fromExample: slug, owner: LOCAL_USER, prompt: true });
+      const dir = path.join(PROJECTS, id), meta = readJSON(path.join(dir, 'meta.json'), {}), orig = readJSON(path.join(EXAMPLES, slug, 'meta.json'), {});
+      meta.title = orig.title || meta.title; meta.creator = orig.creator || 'Premake'; meta.example_copy = slug; meta.showcase = false; // not re-published as a showcase example
+      writeJSON(path.join(dir, 'meta.json'), meta); n++;
+    } catch (e) { console.error(`[seed ${slug}] ${e.message}`); }
+  }
+  fs.writeFileSync(mark, new Date().toISOString() + '\n');
+  if (n) console.log(`  examples: ${n} added to your projects`);
+}
+
 function projectUpdated(dir) {
   let t = 0;
   for (const f of ['meta.json', 'messages.json', 'manifest.json', 'design.py', 'bom.json']) {
@@ -3778,6 +3798,11 @@ server.listen(PORT, HOST, () => {
   console.log(AGENT_KIND === "codex" ? `  agent: OpenAI Codex (${process.env.PREMAKE_CODEX_BIN || "codex"}, model: ${process.env.PREMAKE_CODEX_MODEL || "Codex default"}) via ${CLAUDE}` : `  claude: ${CLAUDE}`);
   prebuildParts();
   checkModel(); // model-pick
+  seedExamples(); // local: the examples start in the sidebar
+  if (process.env.PREMAKE_OPEN === '1') { // start.sh: open the browser from here too (its own open can be blocked when an agent runs it)
+    const url = `http://localhost:${PORT}`, cmd = process.platform === 'darwin' ? 'open' : process.platform === 'win32' ? 'cmd' : 'xdg-open';
+    try { require('child_process').spawn(cmd, process.platform === 'win32' ? ['/c', 'start', '', url] : [url], { detached: true, stdio: 'ignore' }).on('error', () => {}).unref(); } catch {}
+  }
   setTimeout(() => showcase.sync(), 5000).unref(); // showcase: publish the owner's finished designs, then keep them current
   setInterval(() => showcase.sync(), 3 * 60e3).unref();
   if (ONLINE) console.log(`  allowed hosts: ${[...ALLOWED_HOSTS].join(', ')}${TUNNEL ? ', *.trycloudflare.com' : ''}`);
