@@ -10,6 +10,7 @@ import { installFX } from './effects.js'; // power: "Turn it on" (LED glow, scre
 import { Props } from './scene.js'; import { Assembly } from './assembly.js'; // scene: product in context; assembly: Assemble animation + steps
 import { refSwap } from './refmodels.js'; // refmodels: real-looking stand-ins for bought parts (display only)
 import { installWiring } from './wireview.js'; // wireview: the Wiring toggle (every wire, pin to pin, Connections list)
+import { installScale } from './scaleref.js'; // scaleref: the Scale toggle (a can / phone / person beside the model)
 import { installAskPreview } from './askpreview.js'; // askmock: question-card option mock-ups over the model
 import { Photoreal, photorealWanted } from './photoreal.js'; // photoreal: HDR studio light, PBR materials, AO, contact shadow, photo mode
 
@@ -124,6 +125,7 @@ export class Viewer {
     installFX(this);        // power: this.fx (web/effects.js)
     this.props = new Props(this); this.assembly = new Assembly(this); // scene.js / assembly.js
     installWiring(this);    // wireview: this.wiring
+    installScale(this);     // scaleref: this.scaleRef
     installAskPreview(this); // askmock: this.askMock.show(sketch) / clear()
     this.photo = photorealWanted() ? new Photoreal(this) : null; // photoreal: the default look (?look=cad for the old one)
     this.renderer.setAnimationLoop(() => {
@@ -628,6 +630,7 @@ export class Viewer {
     fx?.finish();
     this.props.onLoad(manifest); this.assembly.onLoad(manifest); // scene.js / assembly.js
     this.wiring?.onLoad(manifest); // wireview: after assembly (it shares the prefetched build data)
+    this.scaleRef?.onLoad(manifest); // scaleref: keep the size object beside the new model
     dispatchEvent(new Event('buildery:partsloaded')); // editglow: the chat can turn part names in replies into chips now
     if (landing && !all.isEmpty()) this.glideTo(all, true); // one smooth move to frame it, then the camera stays still
     else if (!keepCamera) this.setView('iso');

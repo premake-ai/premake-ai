@@ -870,3 +870,4 @@
   .asm-pplay.asm-again svg { width: 18px; height: 18px; }
   .asm-pctl:has(.asm-again) { gap: 14px; }
 }
+@media (max-width: 640px) { .scale-bar { bottom: 66px; } } /* scaleref: above the model card's round buttons */

@@ -841,7 +841,7 @@ function createProject({ fromExample, fromShare, fromProject, ref, owner, prompt
  *  full and each one opens and edits like your own design. Once only (DATA/.examples-seeded); deleting one keeps it gone. */
 function seedExamples() {
   const mark = path.join(DATA, '.examples-seeded');
-  if (ONLINE || exists(mark) || process.env.PREMAKE_SEED_EXAMPLES === '0') return;
+  if (ONLINE || exists(mark) || process.env.PREMAKE_SEED_EXAMPLES !== '1') return; // start.sh turns it on (not tests or dev servers)
   const slugs = (fs.existsSync(EXAMPLES) ? fs.readdirSync(EXAMPLES) : []).filter((s) => ID_RE.test(s) && exists(path.join(EXAMPLES, s, 'design.py')))
     .map((s) => [s, String(readJSON(path.join(EXAMPLES, s, 'meta.json'), {}).title || s)]).sort((a, b) => b[1].localeCompare(a[1])).map((x) => x[0]);
   let n = 0;
@@ -850,11 +850,46 @@ function seedExamples() {
       const id = createProject({ fromExample: slug, owner: LOCAL_USER, prompt: true });
       const dir = path.join(PROJECTS, id), meta = readJSON(path.join(dir, 'meta.json'), {}), orig = readJSON(path.join(EXAMPLES, slug, 'meta.json'), {});
       meta.title = orig.title || meta.title; meta.creator = orig.creator || 'Premake'; meta.example_copy = slug; meta.showcase = false; // not re-published as a showcase example
+      fs.rmSync(path.join(dir, 'replay'), { recursive: true, force: true }); // replay: only a new design plays it
       writeJSON(path.join(dir, 'meta.json'), meta); n++;
     } catch (e) { console.error(`[seed ${slug}] ${e.message}`); }
   }
   fs.writeFileSync(mark, new Date().toISOString() + '\n');
   if (n) console.log(`  examples: ${n} added to your projects`);
+}
+
+/** replay: a new design whose request matches an example with a recorded real run (examples/<slug>/replay/, made by
+ *  scripts/make-replay.py) starts as that example and the studio plays the real run back sped up (web/replay.js), then
+ *  hands over to the live agent. Local installs only (PREMAKE_REPLAY=0 turns it off). The reply says it was a replay. */
+const REPLAYS = [{ slug: 'scara-arm-3d-printer', re: /\bscara\b/i }];
+function replayFor(prompt) {
+  if (ONLINE || process.env.PREMAKE_REPLAY === '0') return null;
+  const r = REPLAYS.find((x) => x.re.test(prompt));
+  return r && exists(path.join(EXAMPLES, r.slug, 'replay', 'replay.json')) ? r.slug : null;
+}
+function replayFlow(R) {
+  const flow = [];
+  for (const e of R.events || []) {
+    const st = e.type === 'step' ? e.text : null;
+    if (e.type === 'text') flow.push({ text: e.text });
+    else if (e.type === 'round') flow.push({ text: `Feedback round ${e.n} of ${R.rounds_total}.` });
+    else if (st) { const g = flow[flow.length - 1]; if (g?.steps) g.steps.push(st); else flow.push({ steps: [st] }); }
+  }
+  return flow;
+}
+function startReplay(slug, prompt, owner) {
+  const id = createProject({ fromExample: slug, owner, prompt: true });
+  const dir = path.join(PROJECTS, id), R = readJSON(path.join(dir, 'replay', 'replay.json'), {});
+  const orig = readJSON(path.join(EXAMPLES, slug, 'meta.json'), {}), meta = readJSON(path.join(dir, 'meta.json'), {});
+  meta.title = orig.title || meta.title; meta.replay = { pending: true, slug }; meta.showcase = false;
+  writeJSON(path.join(dir, 'meta.json'), meta);
+  const h = Math.floor((R.minutes || 0) / 60), mins = (R.minutes || 0) % 60, took = h ? `${h} h ${mins} min` : `${mins} min`;
+  const text = `Here's your ${meta.title || 'design'}: ${String(orig.description || '').replace(/^[^:]*:\s*/, '').replace(/\.?$/, '.')} The Order tab has every part and where to buy it, and Make has the files.\n\n`
+    + `This was a replay of a real Premake build: ${R.rounds_total || 'several'} rounds with a person giving feedback, ${took} of real work, shown here in about a minute. Ask for any change and it's live from here.`;
+  const now = Date.now() / 1000;
+  writeJSON(path.join(dir, 'messages.json'), [{ role: 'user', text: String(prompt).slice(0, 4000), t: now }, { role: 'assistant', text, flow: replayFlow(R), t: now + 1 }]);
+  console.log(`[replay ${id}] ${slug} for ${JSON.stringify(String(prompt).slice(0, 80))}`);
+  return id;
 }
 
 function projectUpdated(dir) {
@@ -3416,6 +3451,8 @@ async function handle(req, res) {
       if (!allow('create:' + acc.user, 60, 3600e3)) return send(res, 429, { error: 'That is a lot of new projects this hour. Try again later.' });
       const fromProject = typeof body.fromProject === 'string' ? body.fromProject : undefined; // duplicate: only your own (or admin)
       if (fromProject && !(projDir(fromProject) && canEdit(acc, fromProject))) return send(res, 404, { error: 'project not found' });
+      const rp = prompt && !body.fromExample && !body.fromShare && !fromProject ? replayFor(prompt) : null; // replay: a recorded real run
+      if (rp) return send(res, 200, { id: startReplay(rp, prompt, acc.user), replay: true });
       const id = createProject({ fromExample: body.fromExample, fromShare: typeof body.fromShare === 'string' ? body.fromShare : undefined, fromProject, ref: body.ref, owner: acc.user, prompt: !!prompt });
       if (prompt) startRun(id, prompt, req.t0);
       return send(res, 200, { id });
@@ -3438,12 +3475,20 @@ async function handle(req, res) {
       }
       if (!c && m === 'GET') {
         if (mem) return send(res, 200, memberPayload(acc, b, dir, mem));
-        return send(res, 200, { id: b, ...designPayload('projects', b, dir), messages: share.labelChat(readJSON(path.join(dir, 'messages.json'), []), acc, b), running: runs.has(b), site_running: siteRuns.has(b), ads_running: adsRuns.has(b),
+        const pl = designPayload('projects', b, dir); let msgs = readJSON(path.join(dir, 'messages.json'), []);
+        if (pl.meta?.replay?.pending) msgs = msgs.filter((x) => x.role === 'user'); // replay: the reply arrives when the replay ends
+        return send(res, 200, { id: b, ...pl, messages: share.labelChat(msgs, acc, b), running: runs.has(b), site_running: siteRuns.has(b), ads_running: adsRuns.has(b),
           app_running: appRuns.has(b), app: apps.info(dir), // apps: the App tab shows when the design has electronics or an app/
           firmware: firmware.status(b, dir), // firmware: sketch, board, compile state (the Flash button)
           history: historyPayload(dir, 'design'), sketch: liveSketch(dir), role: 'owner' });
       }
       if (c === 'sections' && !d && m === 'GET') return send(res, 200, await designSections(dir, path.join(dir, 'sections.json'), true)); // sections: Parts panel groups
+      if (c === 'replay-done' && !d && m === 'POST' && owner) { // replay: played once; the live agent takes over in a clean folder
+        const mf = path.join(dir, 'meta.json'), meta = readJSON(mf, {});
+        if (meta.replay?.pending) { meta.replay.pending = false; writeJSON(mf, meta); }
+        fs.rmSync(path.join(dir, 'replay'), { recursive: true, force: true });
+        return send(res, 200, { ok: true });
+      }
       // agentbrain: rename (the owner's own title wins over the auto title)
       if (!c && m === 'PATCH') {
         const body = await readBody(req, 2e3);

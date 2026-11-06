@@ -13,11 +13,12 @@ Use this when the user says "install Premake", "open Premake", "start Premake" o
 
 1. Run the installer and wait for it (1 to 3 minutes the first time, seconds after). It downloads Premake to `~/premake-ai` (or reuses it and the user's designs), sets it up, starts the studio in the background and opens the browser:
    ```bash
-   P="${PREMAKE_HOME:-$HOME/premake-ai}"; if [ -x "$P/install.sh" ]; then bash "$P/install.sh"; else curl -fsSL https://raw.githubusercontent.com/premake-ai/premake-ai/main/install.sh | bash; fi
+   P="${PREMAKE_HOME:-$HOME/premake-ai}"; IDEA=""; if [ -x "$P/install.sh" ]; then bash "$P/install.sh" "$IDEA"; else curl -fsSL https://raw.githubusercontent.com/premake-ai/premake-ai/main/install.sh | bash -s "$IDEA"; fi
    ```
+   If the user asked for a design too ("design me a SCARA arm 3D printer"), put their request, in their words, in `IDEA="..."` first: the studio then starts that design straight away.
    If it stops with a message (no Node, no suitable Python, Claude Code or Codex not logged in), tell the user exactly what it says and the one command to fix it: `claude auth login`, `codex login`, or installing uv (`curl -LsSf https://astral.sh/uv/install.sh | sh`) for any Python problem. To use Codex when both are installed, run it with `PREMAKE_AGENT=codex`.
-2. Read the URL from its last lines (`Premake: running at http://localhost:PORT`) and open it yourself too: `open "URL"` (macOS), `xdg-open "URL"` (Linux) or `start "" "URL"` (Windows).
-3. Tell the user the URL. Every example design is already in the sidebar. If they asked to design something, give them their idea as one line to paste into the "Describe a product" box (for example "A phone stand that holds a phone in portrait or landscape"). The design agent takes it from there: 3D model, Assemble, Order (parts, prices, where to buy) and Make (files).
+2. Read the link from its last lines (`Premake: your design: ...` when there was a request, else `Premake: running at http://localhost:PORT`) and open it yourself too, quoted: `open "URL"` (macOS), `xdg-open "URL"` (Linux) or `start "" "URL"` (Windows).
+3. Tell the user the URL. Every example design is already in the sidebar. If they asked for a design, it is already being designed in the page; tell them to watch it there. The design agent takes it from there: 3D model, Assemble, Order (parts, prices, where to buy) and Make (files).
 
 To stop it: `kill $(cat ~/premake-ai/app/data/.premake.pid)`. Running the installer again reuses a running studio.
 

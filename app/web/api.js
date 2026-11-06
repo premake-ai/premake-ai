@@ -67,6 +67,7 @@ const real = {
   stop: id => req(`/api/projects/${encodeURIComponent(id)}/stop`, { method: 'POST', body: {} }),
   // speed: pre-warm a design agent + build worker (studio open, composer focus); never starts a turn
   warm: id => req(`${P(id)}/warm`, { method: 'POST', body: {} }),
+  replayDone: id => req(`${P(id)}/replay-done`, { method: 'POST', body: {} }), // replay: played once
   warmHome: () => req('/api/warm', { method: 'POST', body: {} }),
   stats: (n = 50, kind = 'design') => req(`/api/stats?n=${n}&kind=${kind}`),
   quote: (src, mode) => req(`/api/quote?${src.project ? 'project=' + encodeURIComponent(src.project) : 'example=' + encodeURIComponent(src.example)}&mode=${mode}`),

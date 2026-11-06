@@ -48,6 +48,7 @@ const I = {
   reset: svg('M4.6 7.6A6 6 0 1 1 4.2 12M4 3.6v4.2h4.2', 20, 1.7), // reset view
   explode: '<svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path d="M8 1v4M8 11v4M1 8h4M11 8h4M3 3l2.5 2.5M13 13l-2.5-2.5M13 3l-2.5 2.5M3 13l2.5-2.5" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg>',
   wire: '<svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><circle cx="3.2" cy="4" r="1.7" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="12.8" cy="12" r="1.7" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M4.9 4c5 0 1.2 8 6.2 8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>', // wireview
+  scale: '<svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><rect x="2" y="7" width="5" height="7" rx="1" fill="none" stroke="currentColor" stroke-width="1.2"/><rect x="9.5" y="2" width="4.5" height="12" rx="1.2" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>', // scaleref
   ghost: '<svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><rect x="2.5" y="2.5" width="11" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="2 1.5"/><rect x="6" y="6" width="4" height="4" fill="currentColor"/></svg>',
   render: '<svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path d="M8 1.8l1.5 3.6 3.7.3-2.8 2.5.9 3.7L8 9.9l-3.3 2 .9-3.7-2.8-2.5 3.7-.3z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>',
   steps: svg('M7.5 5h9M7.5 10h9M7.5 15h9', 20, 1.7).replace('</svg>', '<circle cx="3.6" cy="5" r="1.3" fill="currentColor"/><circle cx="3.6" cy="10" r="1.3" fill="currentColor"/><circle cx="3.6" cy="15" r="1.3" fill="currentColor"/></svg>'),
@@ -349,6 +350,7 @@ function init() {
   vb.className = 'm-vbtns';
   vb.innerHTML = `<button type="button" class="m-vb m-glass" data-v="explode" aria-label="Explode" aria-pressed="false" aria-expanded="false" aria-haspopup="dialog">${I.explode}</button>
     <button type="button" class="m-vb m-glass" data-v="ghost" aria-label="See-through" aria-pressed="false">${I.ghost}</button>
+    <button type="button" class="m-vb m-glass" data-v="scale" aria-label="Scale" aria-pressed="false">${I.scale}</button>
     <button type="button" class="m-vb m-glass" data-v="render" aria-label="Look" aria-pressed="false" aria-haspopup="dialog">${I.render}</button>
     <button type="button" class="m-vb m-glass" data-v="move" aria-label="Move" aria-pressed="false" hidden>${I.move}</button>
     <button type="button" class="m-vb m-glass" data-v="power" aria-label="Turn it on" aria-pressed="false" hidden>${I.power}</button>`;
@@ -584,6 +586,7 @@ function init() {
     else if (k === 'ghost') $('#ghostBtn')?.click();
     else if (k === 'move') $('#toolbar .tmove-btn')?.click();
     else if (k === 'power') $('#toolbar .tpower-btn')?.click(); // power: web/effects.js
+    else if (k === 'scale') $('#scaleBtn')?.click(); // scaleref
     syncVb();
   });
   expIn.addEventListener('input', () => { expAuto = false; const r = tbRange(); if (!r) return; r.value = expIn.value; r.dispatchEvent(new Event('input', { bubbles: true })); syncVb(); });
@@ -596,6 +599,7 @@ function init() {
     expBtn.setAttribute('aria-expanded', String(expCS.isOpen()));
     set('ghost', $('#ghostBtn')?.getAttribute('aria-pressed') === 'true' || !!$('#ghostBtn')?.classList.contains('on'));
     set('render', !!$('#renderBtn')?.classList.contains('on'));
+    set('scale', !!$('#scaleBtn')?.classList.contains('on')); // scaleref
     $('[data-v=render]', vb).setAttribute('aria-expanded', String(!!$('#renderBtn')?.classList.contains('on')));
     treeEl.classList.toggle('m-on', partsCS.isOpen());
     $('#treeToggle')?.setAttribute('aria-expanded', String(partsCS.isOpen()));

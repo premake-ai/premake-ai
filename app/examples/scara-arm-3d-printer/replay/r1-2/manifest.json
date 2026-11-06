@@ -1,0 +1,356 @@
+{
+ "t": 1793990205.868835,
+ "title": "r1-2",
+ "parts": [
+  {
+   "file": "stl/frame-bar-x.stl",
+   "name": "Frame bar X",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    0.0,
+    -0.589,
+    -0.808
+   ],
+   "bbox": [
+    400.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium",
+   "step": "step/frame-bar-x.step"
+  },
+  {
+   "file": "stl/frame-bar-x-2.stl",
+   "name": "Frame bar X",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    0.0,
+    0.553,
+    -0.833
+   ],
+   "bbox": [
+    400.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium",
+   "step": "step/frame-bar-x-2.step"
+  },
+  {
+   "file": "stl/frame-bar-y.stl",
+   "name": "Frame bar Y",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    -0.637,
+    -0.025,
+    -0.771
+   ],
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ],
+   "material": "aluminium",
+   "step": "step/frame-bar-y.step"
+  },
+  {
+   "file": "stl/frame-bar-y-2.stl",
+   "name": "Frame bar Y",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    0.637,
+    -0.025,
+    -0.771
+   ],
+   "bbox": [
+    20.0,
+    300.0,
+    20.0
+   ],
+   "material": "aluminium",
+   "step": "step/frame-bar-y-2.step"
+  },
+  {
+   "file": "stl/base-plate.stl",
+   "name": "Base plate",
+   "group": "case",
+   "process": "laser",
+   "color": "#d8b98a",
+   "explode": [
+    0.0,
+    -0.035,
+    -0.999
+   ],
+   "bbox": [
+    400.0,
+    340.0,
+    6.0
+   ],
+   "material": "plywood"
+  },
+  {
+   "file": "stl/z-column.stl",
+   "name": "Z column",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    -0.441,
+    0.897,
+    0.0
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    440.0
+   ],
+   "material": "aluminium",
+   "step": "step/z-column.step"
+  },
+  {
+   "file": "stl/z-column-2.stl",
+   "name": "Z column",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    0.441,
+    0.897,
+    0.0
+   ],
+   "bbox": [
+    20.0,
+    20.0,
+    440.0
+   ],
+   "material": "aluminium",
+   "step": "step/z-column-2.step"
+  },
+  {
+   "file": "stl/top-bar.stl",
+   "name": "Top bar",
+   "group": "case",
+   "process": "extrusion",
+   "color": "#b8bcc2",
+   "explode": [
+    0.0,
+    0.553,
+    0.833
+   ],
+   "bbox": [
+    190.0,
+    20.0,
+    20.0
+   ],
+   "material": "aluminium",
+   "step": "step/top-bar.step"
+  },
+  {
+   "file": "stl/bed-plate.stl",
+   "name": "Bed plate",
+   "group": "case",
+   "process": "sheet",
+   "color": "#2b2b2b",
+   "explode": [
+    0.0,
+    -0.182,
+    -0.983
+   ],
+   "bbox": [
+    200.0,
+    200.0,
+    3.0
+   ],
+   "material": "aluminium",
+   "step": "step/bed-plate.step"
+  },
+  {
+   "file": "stl/z-carriage.stl",
+   "name": "Z carriage",
+   "group": "case",
+   "process": "print",
+   "color": "#e8702a",
+   "explode": [
+    0.0,
+    0.79,
+    -0.613
+   ],
+   "bbox": [
+    190.0,
+    110.0,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/link-1.stl",
+   "name": "Link 1",
+   "group": "case",
+   "process": "print",
+   "color": "#e8702a",
+   "explode": [
+    0.633,
+    0.583,
+    -0.51
+   ],
+   "bbox": [
+    169.9,
+    68.4,
+    12.0
+   ]
+  },
+  {
+   "file": "stl/link-2.stl",
+   "name": "Link 2",
+   "group": "case",
+   "process": "print",
+   "color": "#e8702a",
+   "explode": [
+    0.919,
+    -0.039,
+    -0.391
+   ],
+   "bbox": [
+    135.9,
+    119.6,
+    10.0
+   ]
+  },
+  {
+   "file": "stl/nema17-stepper-motor-48-mm-2.stl",
+   "name": "NEMA17 stepper motor 48 mm \u00d72",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    0.0,
+    0.756,
+    -0.654
+   ],
+   "bbox": [
+    122.3,
+    47.7,
+    72.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/nema17-stepper-motor-48-mm-2__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-48-mm-2__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-48-mm-2__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-48-mm-2__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-48-mm-2__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-48-mm-2__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 2,
+    "name": "NEMA17 stepper motor 48 mm",
+    "unit_cost_usd": 13.0,
+    "mass_g": 360.0
+   }
+  },
+  {
+   "file": "stl/nema17-stepper-motor-40-mm.stl",
+   "name": "NEMA17 stepper motor 40 mm",
+   "group": "component",
+   "process": "bought",
+   "color": "#1a1b1e",
+   "explode": [
+    0.0,
+    0.652,
+    -0.758
+   ],
+   "bbox": [
+    42.3,
+    47.7,
+    64.6
+   ],
+   "subparts": [
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__0.stl",
+     "color": "#c7ccd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__1.stl",
+     "color": "#1a1b1e",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__2.stl",
+     "color": "#c9cdd2",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__3.stl",
+     "color": "#2b2d31",
+     "finish": "metal"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__4.stl",
+     "color": "#efe9da",
+     "finish": "plastic"
+    },
+    {
+     "file": "stl/nema17-stepper-motor-40-mm__5.stl",
+     "color": "#d9d2c0",
+     "finish": "plastic"
+    }
+   ],
+   "lib": {
+    "key": "nema17",
+    "qty": 1,
+    "name": "NEMA17 stepper motor 40 mm",
+    "unit_cost_usd": 11.0,
+    "mass_g": 280.0
+   }
+  },
+  {
+   "file": "stl/hotend.stl",
+   "name": "Hotend",
+   "group": "component",
+   "process": "bought",
+   "color": "#c0c0c0",
+   "explode": [
+    0.234,
+    -0.41,
+    -0.882
+   ],
+   "bbox": [
+    22.0,
+    22.0,
+    38.0
+   ]
+  }
+ ]
+}

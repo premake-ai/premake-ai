@@ -503,6 +503,8 @@ $('#homeForm').onsubmit = async e => {
   btn.disabled = false;
 };
 $('#homePrompt').onkeydown = e => { if (e.key === 'Enter' && (e.metaKey || e.ctrlKey || !e.shiftKey)) { e.preventDefault(); $('#homeForm').requestSubmit(); } };
+// install: /?prompt=<idea> (install.sh "design me a ...") starts that design straight away, once
+{ const q = new URLSearchParams(location.search).get('prompt'); if (q && location.pathname === '/') { history.replaceState(null, '', '/'); $('#homePrompt').value = q.slice(0, 4000); setTimeout(() => $('#homeForm').requestSubmit(), 800); } }
 let pendingPrompt = null;
 
 // ---------- gallery ----------
@@ -613,6 +615,7 @@ async function openDesign(kind, id) {
     if (kind === 'project') runEntry(id).sentAt = Date.now();
     pendingPrompt = null;
   }
+  if (kind === 'project' && data.meta?.replay?.pending && data.manifest?.parts?.length) { startReplay(id, data, token); return; } // replay:
   syncAppTab(); // apps: the App tab shows for designs with electronics or an app/ folder
   syncAsmTab(); // assemble:
   renderChat(); renderCode(); updateRunIndicator();
@@ -622,6 +625,53 @@ async function openDesign(kind, id) {
   });
   loadQuote();
   if (kind === 'project') warmUp(id, true);
+}
+
+// ---------- replay: a recorded real run played back sped up (web/replay.js, server.js startReplay) ----------
+function startReplay(id, data, token) {
+  pendingPrompt = null;
+  syncAppTab(); syncAsmTab(); renderCode(); loadQuote();
+  const final = { manifest: data.manifest, messages: data.messages || [] };
+  const alive = () => token === openToken && isCurProject(id);
+  let models = 0;
+  const landed = async (manifest, base) => { // like loadModel, for a model from the replay folder
+    const v = await getViewer(); if (!v || !alive()) return;
+    const prev = v.parts().map(p => ({ name: p.name }));
+    overlay(''); S.modelEmpty = false;
+    await v.load(manifest, base, { keepCamera: models > 0, animate: true });
+    v.showEmpty(false); renderTree(); renderVpStatus();
+    if (models > 0 && v.fitBox) v.glideTo(v.fitBox, true); // the printer grows: ease back so all of it stays in view
+    if (++models > 1) { const c = { id, text: versionNote(prev, manifest.parts || [], models) }; S.verCap = c; setTimeout(() => { if (S.verCap === c) { S.verCap = null; renderVpStatus(); } }, 4000); }
+  };
+  import('./replay.js').then(R => R.playReplay({
+    id, base: S.cur.base, alive,
+    onEvent: d => onProjectEvent(id, d),
+    async prep() {
+      S.cur.data.manifest = null; // a first run: the designing state, then the models as they land
+      S.chat.messages = final.messages.filter(m => m.role === 'user').slice(0, 1);
+      S.chat.live = { steps: [], text: '', running: true };
+      if (!isNarrow()) $('#tree')?.classList.add('collapsed'); // the model is the show
+      renderChat(); updateRunIndicator();
+      await loadModel(null, false);
+    },
+    showModel: (m, base) => landed(m, base),
+    async showFinal() { S.cur.data.manifest = final.manifest; await landed(final.manifest, S.cur.base); },
+    async finish() {
+      if (!alive()) return;
+      S.cur.data.manifest = final.manifest;
+      await api.replayDone?.(id).catch(() => {});
+      const p = await api.project(id).catch(() => null); if (!alive()) return; // the saved reply (held back while it played)
+      S.chat.live = null; S.chat.messages = p?.messages || final.messages; S.chat.history = p?.history || S.chat.history;
+      renderChat(); updateRunIndicator();
+      await loadModel(final.manifest, true, true);
+      const v = S.viewer; if (!v || !alive()) return;
+      v.fit(); await new Promise(r => setTimeout(r, 400));
+      try { await v.playAssembly?.(); } catch {}
+      if (!alive()) return;
+      if (v.fitBox) v.glideTo(v.fitBox, true); await new Promise(r => setTimeout(r, 900)); // the Assemble camera ends close in
+      if (alive()) { const b = $('#scaleBtn'); if (b && !b.classList.contains('on')) b.click(); await new Promise(r => setTimeout(r, 900)); if (alive()) v.fit(); } // fit: the printer and the phone, like the Fit button
+    },
+  })).catch(() => { if (alive()) { api.replayDone?.(id).catch(() => {}); loadModel(final.manifest, false); } });
 }
 
 // ---------- share: designs shared with you (server/share.js). edit: the studio, chatting on the shared design. copy: the
@@ -829,6 +879,7 @@ $$('#toolbar [data-view]').forEach(b => b.onclick = () => { S.viewer?.setView(b.
 $('#explode').oninput = e => S.viewer?.set('explode', e.target.value / 100);
 $('#ghostBtn').onclick = e => { const b = e.currentTarget, on = !b.classList.contains('on'); b.classList.toggle('on', on); b.setAttribute('aria-pressed', on); S.viewer?.set('ghost', on); };
 $('#compBtn').onclick = e => { const b = e.currentTarget, on = !b.classList.contains('on'); b.classList.toggle('on', on); b.setAttribute('aria-pressed', on); S.viewer?.set('showComp', on); };
+$('#scaleBtn').onclick = () => S.viewer?.scaleRef?.toggle(); // scaleref: everyday object beside the model
 $('#fitBtn').onclick = () => S.viewer?.fit();
 addEventListener('buildery:share', async e => { try { (await import('./share.js')).toggleSharePop(e.detail, S.cur); } catch (err) { toast?.(err.message); } }); // Launch tab's Share button
 // assemble: the Assemble tab (web/assemble.js), for projects: print, gather, wire, flash, test, close it up. It replaced the
@@ -922,7 +973,7 @@ function previewChanged() {
   const v = S.viewer; if (!v?.items?.length) return false;
   return v.hidden.size > 0 || !!v.partmenu?.state.see.length || !!v.partmenu?.state.isolated || Number($('#explode')?.value || 0) > 0
     || $('#ghostBtn')?.classList.contains('on') || !$('#compBtn')?.classList.contains('on') || !!v.fx?.on || !!v.moving
-    || !!v.assembly?.steps?.open || (!!v.props && v.props.kind !== 'none') || !!v.wiring?.on;
+    || !!v.assembly?.steps?.open || (!!v.props && v.props.kind !== 'none') || !!v.wiring?.on || !!v.scaleRef?.on;
 }
 function resetPreview(opts = {}) { // phonekit: opts.quiet (no toast) when the phone card reopens
   const v = S.viewer; if (!v) return;
@@ -930,6 +981,7 @@ function resetPreview(opts = {}) { // phonekit: opts.quiet (no toast) when the p
   try { v.fx?.setPower(false); } catch {}
   if (v.moving) v.setMoving(false);
   v.wiring?.set(false); // wireview: Wiring off (and the see-through it turned on)
+  v.scaleRef?.set(false); // scaleref
   const r = $('#explode'); if (r && Number(r.value) > 0) { r.value = '0'; r.dispatchEvent(new Event('input', { bubbles: true })); }
   if (v.ui?.explode) v.set('explode', 0);
   if ($('#ghostBtn')?.classList.contains('on')) $('#ghostBtn').click();
@@ -2372,7 +2424,7 @@ if (ACCESS.authed && !ACCESS.showcase) resumeDraft({ textarea: $('#homePrompt'),
     if (tg) { const t = rail ? 'Open sidebar' : 'Close sidebar'; tg.setAttribute('aria-label', t); tg.title = t; tg.dataset.tip = t; tg.setAttribute('aria-pressed', String(rail)); }
   };
   const setRail = on => { st.classList.toggle('side-rail', on); show(); try { on ? localStorage.setItem(RAIL_KEY, '1') : localStorage.removeItem(RAIL_KEY); } catch {} };
-  try { width = +localStorage.getItem(KEY) || 0; st.classList.toggle('side-rail', localStorage.getItem(RAIL_KEY) === '1'); } catch {}
+  try { width = +localStorage.getItem(KEY) || 0; if (width < 180) width = 0; st.classList.toggle('side-rail', localStorage.getItem(RAIL_KEY) === '1'); } catch {}
   show();
   // hovering the strip opens it over the page; not straight after closing it, until the mouse has left once
   const sb = $('#sidebar'); let hold = false;

@@ -4,11 +4,14 @@
 #   curl -fsSL https://raw.githubusercontent.com/premake-ai/premake-ai/main/install.sh | bash
 #   PREMAKE_HOME=~/somewhere bash install.sh       install somewhere else
 #   PREMAKE_AGENT=codex bash install.sh            use OpenAI Codex as the design agent
+#   bash install.sh "design me a SCARA arm 3D printer"   also start that design (curl ... | bash -s "...")
 # Needs git, Node.js 20+ and Python 3.11/3.12 (or uv), and Claude Code or Codex logged in. No API key, no sudo.
 set -euo pipefail
 P="${PREMAKE_HOME:-$HOME/premake-ai}"
 REPO="${PREMAKE_REPO:-https://github.com/premake-ai/premake-ai}"
 say() { printf 'Premake: %s\n' "$*"; }
+PROMPT="${1:-${PREMAKE_PROMPT:-}}"
+withPrompt() { if [ -n "$PROMPT" ]; then printf '%s/?prompt=%s' "$1" "$(node -e 'process.stdout.write(encodeURIComponent(process.argv[1]))' "$PROMPT" 2>/dev/null)"; else printf '%s' "$1"; fi; }
 open_url() { if [ "$(uname)" = Darwin ]; then open "$1"; elif command -v xdg-open >/dev/null 2>&1; then xdg-open "$1" >/dev/null 2>&1 || true; fi; }
 
 # 1. Download (once). An existing install is left as it is: your designs live in it.
@@ -21,8 +24,8 @@ fi
 # 2. Already running? Just open it.
 DATA="$P/app/data"; mkdir -p "$DATA"
 if [ -f "$DATA/.premake.pid" ] && kill -0 "$(cat "$DATA/.premake.pid")" 2>/dev/null && [ -f "$DATA/.premake.url" ]; then
-  URL="$(cat "$DATA/.premake.url")"; open_url "$URL"
-  say "already running at $URL"; exit 0
+  URL="$(cat "$DATA/.premake.url")"; open_url "$(withPrompt "$URL")"
+  say "already running at $URL"; [ -z "$PROMPT" ] || say "your design: $(withPrompt "$URL")"; exit 0
 fi
 
 # 3. Set up (first time 1 to 3 minutes, then seconds)
@@ -41,6 +44,7 @@ for _ in $(seq 1 120); do
 done
 [ -n "$URL" ] || { cat "$LOG" >&2; say "it didn't start in time (log above: $LOG)"; exit 1; }
 echo "$URL" > "$DATA/.premake.url"
-open_url "$URL"
+open_url "$(withPrompt "$URL")"
 say "running at $URL"
+[ -z "$PROMPT" ] || say "your design: $(withPrompt "$URL")"
 say "stop it: kill $PID   start it again: bash $P/install.sh   log: $LOG"

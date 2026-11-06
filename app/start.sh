@@ -110,6 +110,8 @@ echo "  data:   ${FORMA_DATA_DIR:-$APP_DIR/data}"
 echo "  agent:  $AGENT_LINE"
 echo "  Stop with Ctrl-C."
 
+export PREMAKE_SEED_EXAMPLES="${PREMAKE_SEED_EXAMPLES:-1}" # first start: the examples go into your sidebar
+
 # 4. The server opens the browser once it is listening (PREMAKE_OPEN=1)
 if [ "$OPEN" = 1 ]; then export PREMAKE_OPEN=1; else export PREMAKE_OPEN=0; fi
 

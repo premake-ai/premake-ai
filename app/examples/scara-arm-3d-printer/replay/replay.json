@@ -1,0 +1,481 @@
+{
+ "v": 1,
+ "rounds_total": 10,
+ "rounds": [
+  1,
+  4,
+  8,
+  10
+ ],
+ "started": 1793304014.608,
+ "ended": 1793311932.254,
+ "minutes": 132,
+ "first_prompt": "3d printer that uses scara arms",
+ "sketch": {
+  "t": 1793304020.306,
+  "title": "SCARA Arm 3D Printer",
+  "parts": [
+   {
+    "shape": "box",
+    "at": [
+     0,
+     0,
+     20
+    ],
+    "color": "#3a3d42",
+    "name": "base",
+    "size": [
+     360,
+     300,
+     40
+    ]
+   },
+   {
+    "shape": "cylinder",
+    "at": [
+     0,
+     -30,
+     45
+    ],
+    "color": "#5a5f66",
+    "name": "bed",
+    "r": 110,
+    "h": 10,
+    "axis": "z"
+   },
+   {
+    "shape": "box",
+    "at": [
+     0,
+     110,
+     220
+    ],
+    "color": "#2e3135",
+    "name": "column",
+    "size": [
+     70,
+     70,
+     360
+    ]
+   },
+   {
+    "shape": "box",
+    "at": [
+     0,
+     100,
+     260
+    ],
+    "color": "#6b7078",
+    "name": "carriage",
+    "size": [
+     90,
+     90,
+     60
+    ]
+   },
+   {
+    "shape": "box",
+    "at": [
+     0,
+     30,
+     260
+    ],
+    "color": "#8a8f96",
+    "name": "upper arm",
+    "size": [
+     40,
+     150,
+     25
+    ]
+   },
+   {
+    "shape": "cylinder",
+    "at": [
+     0,
+     -45,
+     260
+    ],
+    "color": "#4a4e54",
+    "name": "elbow joint",
+    "r": 22,
+    "h": 35,
+    "axis": "z"
+   },
+   {
+    "shape": "box",
+    "at": [
+     55,
+     -45,
+     240
+    ],
+    "color": "#8a8f96",
+    "name": "forearm",
+    "size": [
+     120,
+     30,
+     20
+    ]
+   },
+   {
+    "shape": "box",
+    "at": [
+     115,
+     -45,
+     200
+    ],
+    "color": "#b06a3c",
+    "name": "hotend",
+    "size": [
+     40,
+     40,
+     60
+    ]
+   },
+   {
+    "shape": "cylinder",
+    "at": [
+     0,
+     150,
+     480
+    ],
+    "color": "#4f7a6a",
+    "name": "spool",
+    "r": 100,
+    "h": 60,
+    "axis": "x"
+   }
+  ]
+ },
+ "events": [
+  {
+   "t": 112.30999994277954,
+   "type": "step",
+   "text": "Writing design.py"
+  },
+  {
+   "t": 112.47399997711182,
+   "type": "step",
+   "text": "Building model"
+  },
+  {
+   "t": 112.47399997711182,
+   "type": "model",
+   "model": "r1-2"
+  },
+  {
+   "t": 166.44899988174438,
+   "type": "step",
+   "text": "Writing design.py"
+  },
+  {
+   "t": 166.56900000572205,
+   "type": "step",
+   "text": "Building model"
+  },
+  {
+   "t": 166.56900000572205,
+   "type": "model",
+   "model": "r1-5"
+  },
+  {
+   "t": 176.0149998664856,
+   "type": "step",
+   "text": "Editing design.py"
+  },
+  {
+   "t": 188.2519998550415,
+   "type": "step",
+   "text": "Writing bom.json"
+  },
+  {
+   "t": 188.41400003433228,
+   "type": "step",
+   "text": "Building model"
+  },
+  {
+   "t": 188.41400003433228,
+   "type": "model",
+   "model": "r1-9"
+  },
+  {
+   "t": 194.90199995040894,
+   "type": "step",
+   "text": "Reading bom.json"
+  },
+  {
+   "t": 207.1159999370575,
+   "type": "step",
+   "text": "Writing bom.json"
+  },
+  {
+   "t": 214.1029999256134,
+   "type": "step",
+   "text": "Writing wiring.md"
+  },
+  {
+   "t": 216.1619999408722,
+   "type": "step",
+   "text": "Reading meta.json"
+  },
+  {
+   "t": 219.27900004386902,
+   "type": "step",
+   "text": "Editing meta.json"
+  },
+  {
+   "t": 219.46599984169006,
+   "type": "step",
+   "text": "Building model"
+  },
+  {
+   "t": 238.7039999961853,
+   "type": "text",
+   "text": "I've designed a desktop 3D printer where the nozzle is moved by a SCARA arm, and the build passes."
+  },
+  {
+   "t": 1167.093999862671,
+   "type": "round",
+   "n": 4
+  },
+  {
+   "t": 1281.289999961853,
+   "type": "step",
+   "text": "Editing design.py"
+  },
+  {
+   "t": 1284.6640000343323,
+   "type": "step",
+   "text": "Editing design.py"
+  },
+  {
+   "t": 1284.8499999046326,
+   "type": "step",
+   "text": "Building model"
+  },
+  {
+   "t": 1284.8499999046326,
+   "type": "model",
+   "model": "r4-21"
+  },
+  {
+   "t": 1295.8399999141693,
+   "type": "text",
+   "text": "The joints work, but printing them adds 7 hours. Flat plates are stronger and quicker as 3 mm aluminium, so I'll switch them over."
+  },
+  {
+   "t": 1296.026999950409,
+   "type": "step",
+   "text": "Building model"
+  },
+  {
+   "t": 1305.316999912262,
+   "type": "step",
+   "text": "Editing design.py"
+  },
+  {
+   "t": 1306.4119999408722,
+   "type": "step",
+   "text": "Editing design.py"
+  },
+  {
+   "t": 1307.2530000209808,
+   "type": "step",
+   "text": "Editing design.py"
+  },
+  {
+   "t": 1308.0539999008179,
+   "type": "step",
+   "text": "Editing design.py"
+  },
+  {
+   "t": 1309.0550000667572,
+   "type": "step",
+   "text": "Editing design.py"
+  },
+  {
+   "t": 1310.8580000400543,
+   "type": "step",
+   "text": "Editing design.py"
+  },
+  {
+   "t": 1312.2109999656677,
+   "type": "step",
+   "text": "Editing design.py"
+  },
+  {
+   "t": 1313.6059999465942,
+   "type": "step",
+   "text": "Editing design.py"
+  },
+  {
+   "t": 1317.6579999923706,
+   "type": "step",
+   "text": "Editing design.py"
+  },
+  {
+   "t": 1317.8539998531342,
+   "type": "step",
+   "text": "Building model"
+  },
+  {
+   "t": 1317.8539998531342,
+   "type": "model",
+   "model": "r4-34"
+  },
+  {
+   "t": 1326.845999956131,
+   "type": "step",
+   "text": "Editing design.py"
+  },
+  {
+   "t": 1327.6329998970032,
+   "type": "step",
+   "text": "Looking up m5x10, rubber and feet"
+  },
+  {
+   "t": 1330.2139999866486,
+   "type": "step",
+   "text": "Reading bom.json"
+  },
+  {
+   "t": 1334.5539999008179,
+   "type": "step",
+   "text": "Editing bom.json"
+  },
+  {
+   "t": 1336.1129999160767,
+   "type": "step",
+   "text": "Editing bom.json"
+  },
+  {
+   "t": 1336.300999879837,
+   "type": "step",
+   "text": "Building model"
+  },
+  {
+   "t": 1336.300999879837,
+   "type": "model",
+   "model": "r4-41"
+  },
+  {
+   "t": 1348.7330000400543,
+   "type": "text",
+   "text": "The frame is now bolted together, and the build passes. I haven't checked the new joints in the 3D view."
+  },
+  {
+   "t": 5470.418999910355,
+   "type": "round",
+   "n": 8
+  },
+  {
+   "t": 5472.848999977112,
+   "type": "step",
+   "text": "Reading 1793309464294-33f07503.jpg"
+  },
+  {
+   "t": 5526.284999847412,
+   "type": "step",
+   "text": "Reading design.py"
+  },
+  {
+   "t": 5526.763000011444,
+   "type": "step",
+   "text": "Reading design.py"
+  },
+  {
+   "t": 5539.099999904633,
+   "type": "step",
+   "text": "Editing design.py"
+  },
+  {
+   "t": 5541.490000009537,
+   "type": "step",
+   "text": "Editing design.py"
+  },
+  {
+   "t": 5542.546999931335,
+   "type": "step",
+   "text": "Editing design.py"
+  },
+  {
+   "t": 5542.776000022888,
+   "type": "step",
+   "text": "Building model"
+  },
+  {
+   "t": 5542.776000022888,
+   "type": "model",
+   "model": "r8-51"
+  },
+  {
+   "t": 5550.233999967575,
+   "type": "text",
+   "text": "Now update the parts list: swap the 135\u00b0 brackets for the diagonal support brackets and fix the extrusion lengths."
+  },
+  {
+   "t": 5551.2119998931885,
+   "type": "step",
+   "text": "Looking up deg, x250 and outriggers"
+  },
+  {
+   "t": 5553.6449999809265,
+   "type": "step",
+   "text": "Reading bom.json"
+  },
+  {
+   "t": 5558.714999914169,
+   "type": "step",
+   "text": "Editing bom.json"
+  },
+  {
+   "t": 5559.670000076294,
+   "type": "step",
+   "text": "Editing bom.json"
+  },
+  {
+   "t": 5559.895999908447,
+   "type": "step",
+   "text": "Building model"
+  },
+  {
+   "t": 5573.507999897003,
+   "type": "text",
+   "text": "Yes, I swapped the diagonal bars for bought brackets and the build passes. Each column now has a steel diagonal support bracket (about 150 mm) bolted from the back slot of the column down to the top slot of a short 200 mm outrigger. The outriggers are still needed because the bracket has to bolt to something behind the column."
+  },
+  {
+   "t": 7891.381000041962,
+   "type": "round",
+   "n": 10
+  },
+  {
+   "t": 7899.034999847412,
+   "type": "step",
+   "text": "Reading design.py"
+  },
+  {
+   "t": 7906.43799996376,
+   "type": "step",
+   "text": "Editing design.py"
+  },
+  {
+   "t": 7907.825000047684,
+   "type": "step",
+   "text": "Editing design.py"
+  },
+  {
+   "t": 7908.046999931335,
+   "type": "step",
+   "text": "Building model"
+  },
+  {
+   "t": 7908.046999931335,
+   "type": "model",
+   "model": "final"
+  },
+  {
+   "t": 7917.645999908447,
+   "type": "text",
+   "text": "I made the links thicker again: link 1 is now 26 \u00d7 44 mm and link 2 is 20 \u00d7 36 mm. I raised the elbow pulleys, belt and hotend mount to match, and the build passes."
+  }
+ ]
+}
