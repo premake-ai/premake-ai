@@ -248,7 +248,7 @@ export async function startCall({ project = null, example = null } = {}) {
   VIS.busy = true;
   track('call_started', { design: project ? 'project' : example ? 'example' : null }); // analytics:
   let peer = null, done = false, ringT = null;
-  const ui = new CallUI({ title: 'Josh', sub: 'Premake live support', onHangup: () => hangup('user') });
+  const ui = new CallUI({ title: 'Premake', sub: 'Premake live support', onHangup: () => hangup('user') });
   const finish = (title, sub, actions) => {
     if (done) return; done = true; clearTimeout(ringT);
     if (peer) { if (!peer.closed && peer.id && !actions) api(`/api/call/${peer.id}/end`, {}).catch(() => {}); peer.close(); }
@@ -264,7 +264,7 @@ export async function startCall({ project = null, example = null } = {}) {
     };
   };
   const CLOSE = '<button class="btn" data-call-act="close">Close</button>';
-  const unavailable = () => finish('Josh isn’t available right now', 'Try again later.', CLOSE);
+  const unavailable = () => finish('Nobody is available right now', 'Try again later.', CLOSE);
   function hangup(by) {
     if (done) return;
     if (peer?.id) api(`/api/call/${peer.id}/end`, {}).catch(() => {});
@@ -282,7 +282,7 @@ export async function startCall({ project = null, example = null } = {}) {
   }
   if (done) { stream.getTracks().forEach(t => t.stop()); return; }
   ui.setLocal(stream);
-  ui.wait('Calling Josh…', 'Connecting');
+  ui.wait('Calling Premake…', 'Connecting');
   try {
     const cfg = await api('/api/call/config');
     peer = new Peer(cfg.iceServers, { setRemote: s => ui.setRemote(s), onConn });
@@ -294,7 +294,7 @@ export async function startCall({ project = null, example = null } = {}) {
     if (done) return;
     const r = await api('/api/call/start', { project, example, offer });
     peer.id = r.id; peer.flushSoon();
-    ui.wait('Calling Josh…', 'Ringing');
+    ui.wait('Calling Premake…', 'Ringing');
     ringT = setTimeout(() => { if (!ui.live) unavailable(); }, (r.ring_s + 4) * 1000);
   } catch (e) {
     if (done) return;
@@ -308,13 +308,13 @@ export async function startCall({ project = null, example = null } = {}) {
       '<button class="btn primary" data-call-act="retry">Try again</button>' + CLOSE);
   }
   peer.poll(async ev => {
-    if (ev.type === 'answer') { await peer.setRemote(ev.sdp).catch(() => {}); ui.wait('Connecting…', 'Josh picked up'); }
+    if (ev.type === 'answer') { await peer.setRemote(ev.sdp).catch(() => {}); ui.wait('Connecting…', 'Premake picked up'); }
     else if (ev.type === 'ice') await peer.addRemote(ev.candidates || []);
     else if (ev.type === 'media') ui.remoteMedia(ev);
     else if (ev.type === 'state') {
-      if (ev.state === 'active') { clearTimeout(ringT); if (!ui.live) ui.wait('Connecting…', 'Josh picked up'); }
+      if (ev.state === 'active') { clearTimeout(ringT); if (!ui.live) ui.wait('Connecting…', 'Premake picked up'); }
       if (ev.state === 'missed') unavailable();
-      if (ev.state === 'declined') finish('Josh can’t pick up right now', 'Try again later.', CLOSE);
+      if (ev.state === 'declined') finish('Nobody can pick up right now', 'Try again later.', CLOSE);
       if (ev.state === 'ended' || ev.state === 'canceled') hangup('josh');
     }
   });
@@ -439,7 +439,7 @@ function drawToggle() {
   }
   el.querySelector('input').checked = ADM.available;
   el.classList.toggle('on', ADM.available);
-  el.title = ADM.available ? 'Visitors can video call you while /admin is open' : 'Visitors see “Josh isn’t available right now”';
+  el.title = ADM.available ? 'Visitors can video call you while /admin is open' : 'Visitors see “Nobody is available right now”';
 }
 
 /** /admin: poll for incoming calls on every admin page. A worker drives the timer so a background tab still rings. */

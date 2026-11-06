@@ -198,7 +198,7 @@ function sectionHtml(s, i, d, { c, ed, weeks, cta, brand, first, editable }) {
     case 'how-its-made': {
       const steps = [
         ['You order', 'Nothing is made ahead. Your order starts the build.'],
-        ['Printed in PETG', `${d.specs.printed_parts || 'Several'} printed part${d.specs.printed_parts === 1 ? '' : 's'}, about ${d.build_days} day${d.build_days === 1 ? '' : 's'} on our printers.`],
+        ['Printed in PETG', `${d.specs.printed_parts || 'Several'} printed part${d.specs.printed_parts === 1 ? '' : 's'}, about ${d.build_days} day${d.build_days === 1 ? '' : 's'} on a 3D printer.`],
         d.sell_assembled === false ? ['Shipped as a kit', 'Each part ships to you from where it’s made, with step-by-step instructions to put it together.']
           : ['Assembled and shipped', d.specs.assembly_minutes ? `About ${d.specs.assembly_minutes} minutes of hand assembly, a check, then it ships.` : 'Checked by hand, packed and shipped.'],
       ];

@@ -62,7 +62,7 @@ function estimatePart(p) {
   let process, unit, setup, lead, why;
   if (M.print) {
     const g = vol * M.density, h = 0.25 + g / 12;
-    process = 'print'; unit = g * 0.025 + h * 0.40 + 1.5; setup = 0; lead = 3; why = `${g.toFixed(0)} g, about ${h.toFixed(1)} h on our printers`;
+    process = 'print'; unit = g * 0.025 + h * 0.40 + 1.5; setup = 0; lead = 3; why = `${g.toFixed(0)} g, about ${h.toFixed(1)} h of printing`;
   } else if (M.metal && wall && wall <= 3.5 && Math.abs(bb[1] - bb[0]) / bb[1] < 0.03 && bb[2] > bb[1] * 1.2) {
     // thin-walled, square cross-section, long: tube, laser cut to length (holes and slots priced roughly by length)
     const kg = vol * M.density / 1000;

@@ -183,7 +183,7 @@ function init({ DATA, PROJECTS, EXAMPLES, BULK, MARGIN, tierOf, MATERIAL_PER_G, 
     const farm = q === 1 && hours <= PRINTER_HOURS_PER_DAY ? 1 : 2 + Math.ceil((q * hours) / (PRINTERS * PRINTER_HOURS_PER_DAY));
     const inhouse = (why) => ({
       key: 'inhouse', material: cents(grams * MATERIAL_PER_G), printing: cents(hours * PRINT_PER_H), service: 0, lead_days: farm, inhouse: true,
-      source: src.estimate(why || `In-house print (our NYC printers): ${Math.round(grams)} g PETG at $${(MATERIAL_PER_G * 1000).toFixed(0)}/kg + ${hours.toFixed(1)} h at $${PRINT_PER_H.toFixed(2)}/h`),
+      source: src.estimate(why || `In-house print: ${Math.round(grams)} g PETG at $${(MATERIAL_PER_G * 1000).toFixed(0)}/kg + ${hours.toFixed(1)} h at $${PRINT_PER_H.toFixed(2)}/h`),
       lines: printed.map((p) => ({ type: 'printed', shop: 'Premake', name: p.name, file: p.file, total_usd: cents(n(p.grams) * MATERIAL_PER_G + n(p.print_hours) * PRINT_PER_H) })),
     });
     if (!printed.length) return { ...inhouse(), ps };
@@ -199,7 +199,7 @@ function init({ DATA, PROJECTS, EXAMPLES, BULK, MARGIN, tierOf, MATERIAL_PER_G, 
       const setup = n(o.setup_usd), parts = Math.max(0, n(o.subtotal_usd) - setup);
       return {
         key: 'slant', material: 0, printing: 0, service: cents(n(o.subtotal_usd) / q), setup_usd: setup, ps, inhouse: false, refreshing: false,
-        ship_usd: o.ship_usd, ship_why: o.ship_usd != null ? `Slant 3D’s live rate${o.ship_service ? `, ${o.ship_service}` : ''}, to ${o.region_label || 'NYC'}` : '',
+        ship_usd: o.ship_usd, ship_why: o.ship_usd != null ? `Slant 3D’s live rate${o.ship_service ? `, ${o.ship_service}` : ''}, to ${o.region_label || 'you'}` : '',
         lead_days: (leadDays(o.lead_time) || 7) + (n(o.ship_days) || cfg.LEAD.slant_transit), lead_text: o.lead_time,
         source: src.live('Slant 3D', o.fetched_at, 'https://www.slant3d.com/', { detail: `${o.material || 'PETG'}${o.color ? ' ' + o.color : ''}, ${q} ${q === 1 ? 'set' : 'sets'}, ${o.lead_time}${setup ? `, $${setup} setup per order` : ''}` }),
         lines: (() => { // whole-order amounts that add up to Slant's subtotal to the cent
@@ -461,8 +461,8 @@ function init({ DATA, PROJECTS, EXAMPLES, BULK, MARGIN, tierOf, MATERIAL_PER_G, 
       const count = { live: 0, list: 0, estimate: 0 };
       for (const l of ls) count[l.source.kind] = (count[l.source.kind] || 0) + 1;
       const notes = (q.notes || []).filter((x) => !/^Estimate only\./.test(x) && !/^Fabricated parts priced from the model/.test(x));
-      notes.push(`Price sources at 1 unit: ${count.live} live, ${count.list} list price, ${count.estimate} estimated lines. At cost: no margin; shipping is each supplier's own, plus the card fee Stripe keeps.`);
-      if (!sellAssembled()) notes.push('Kit: parts ship to you, with step-by-step instructions. Printed parts and small parts (electronics, screws, feet) come in one Premake box from NYC; anything big ships straight from its shop, and the lead time is the slowest box’s.');
+      if (process.env.STRIPE_SECRET_KEY) notes.push(`Price sources at 1 unit: ${count.live} live, ${count.list} list price, ${count.estimate} estimated lines. At cost: no margin; shipping is each supplier's own, plus the card fee Stripe keeps.`);
+      if (process.env.STRIPE_SECRET_KEY && !sellAssembled()) notes.push('Kit: parts ship to you, with step-by-step instructions. Printed parts and small parts (electronics, screws, feet) come in one Premake box from NYC; anything big ships straight from its shop, and the lead time is the slowest box’s.');
       // hover tooltips: printed and bought parts at their sourced 1-unit cost
       if (Array.isArray(q.part_costs) && ls.length) {
         for (const pc of q.part_costs) {

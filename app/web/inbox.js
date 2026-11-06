@@ -131,7 +131,7 @@ function drawThread() {
       <div class="ti"><b>${esc(t.user)}</b><span><span>${t.resolved ? 'Resolved' : 'Open'}</span><span>Started ${esc(ago(t.created))}</span></span></div>
       <button type="button" class="btn sm" id="ibxResolve">${t.resolved ? 'Reopen' : 'Mark resolved'}</button></div>
     <div class="sup-msgs" id="ibxMsgs">${html || '<div class="sup-none">No messages yet.</div>'}</div>
-    <div class="sup-comp"><textarea id="ibxInput" rows="1" placeholder="Reply as Josh" aria-label="Reply"></textarea><button type="button" class="btn primary" id="ibxSend">Send</button></div>
+    <div class="sup-comp"><textarea id="ibxInput" rows="1" placeholder="Reply" aria-label="Reply"></textarea><button type="button" class="btn primary" id="ibxSend">Send</button></div>
     <div class="sup-hint">Enter to send, Shift+Enter for a new line. They see your reply within a few seconds.</div>`;
   $('#ibxMsgs').dataset.h = html;
   const ta = $('#ibxInput'); ta.value = draft; grow(ta);

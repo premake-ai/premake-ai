@@ -475,7 +475,7 @@ Reply with ONLY this JSON, no prose, no code fence:
       fab_total: Math.round(fabricated.reduce((s, p) => s + p.material_usd, 0) * 100) / 100,
       totals: { grams: r1(printed.reduce((s, p) => s + p.grams, 0)), hours: r1(printed.reduce((s, p) => s + p.hours, 0)), assembly_minutes: Number(bom.assembly_minutes) || 0 },
       firmware: fwFiles, wiring: wiring ? wiring.slice(0, 20000) : null,
-      downloads, cta: ctaFor(bom, src.dir),
+      downloads, cta: process.env.STRIPE_SECRET_KEY ? ctaFor(bom, src.dir) : null, // open-source app: "buy it made" only with checkout set up
       ...(cardStats ? cardStats(src.dir) : {}), // card-stats: price_each, design_minutes, print_hours
     };
   }

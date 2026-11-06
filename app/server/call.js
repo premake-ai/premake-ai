@@ -129,7 +129,7 @@ async function handle(req, res, { parts, m, acc, url, readBody }) {
     if (!av.available) {
       const fake = { project, user: acc.user };
       if (project) note(fake, 'missed');
-      return send(409, { error: 'Josh isn’t available right now.', unavailable: true, reason: av.reason });
+      return send(409, { error: 'Nobody is available right now.', unavailable: true, reason: av.reason });
     }
     const id = crypto.randomBytes(9).toString('base64url');
     const call = { id, user: acc.user, project, example, title, state: 'ringing', created: Date.now(), offer: body.offer, events: [], seq: 0,

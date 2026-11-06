@@ -35,7 +35,7 @@ function setUnread(n) {
 function openThread() {
   if (status?.guest) { close(); dispatchEvent(new CustomEvent('forma:signin')); return; }
   view = 'thread'; pop.dataset.h = ''; pop.classList.add('thread');
-  pop.setAttribute('aria-label', 'Message Josh');
+  pop.setAttribute('aria-label', 'Message the Premake team');
   thread.render(pop);
   place();
 }
@@ -48,7 +48,7 @@ if (pane) {
   pane.append(bub);
   pop = document.createElement('div');
   pop.className = 'sup-pop'; pop.hidden = true;
-  pop.setAttribute('role', 'dialog'); pop.setAttribute('aria-label', 'Video call Josh');
+  pop.setAttribute('role', 'dialog'); pop.setAttribute('aria-label', 'Video call the Premake team');
   dim = document.createElement('div');
   dim.className = 'sup-dim'; dim.hidden = true;
   document.body.append(dim, pop);
@@ -91,8 +91,8 @@ function draw() {
   const st = state(), on = st === 'on';
   if (draw.on !== on) { draw.on = on; document.dispatchEvent(new CustomEvent('forma:josh', { detail: { on } })); } // phones: the green dot on the menu button (web/phonestudio.js)
   bub.querySelector('.sup-dot').hidden = !on;
-  bub.setAttribute('aria-label', on ? 'Video call Josh, available now' : 'Video call Josh');
-  bub.title = on ? 'Josh is available for a video call' : 'Video call Josh';
+  bub.setAttribute('aria-label', on ? 'Video call the Premake team, available now' : 'Video call the Premake team');
+  bub.title = on ? 'The Premake team is available for a video call' : 'Video call the Premake team';
   if (!open || view === 'thread') return;
   const line = {
     on: '<span class="sup-on">Available now</span>',
@@ -100,23 +100,23 @@ function draw() {
     off: 'Not available right now',
     guest: 'Sign in to start a video call',
     admin: 'This is you',
-    unknown: 'Checking if Josh is around…',
+    unknown: 'Checking if someone is around…',
   }[st];
-  const blurb = 'Talk face to face about your design. Josh can look at it with you and make the changes live.';
-  const note = st === 'busy' ? 'Josh is on another call right now. Try again later.'
-    : st === 'off' ? 'Josh isn’t available right now. Try again later.'
-    : st === 'admin' ? 'You’re signed in as Josh. Visitors see this card, and their calls ring in /admin.'
+  const blurb = 'Talk face to face about your design. We can look at it with you and make the changes live.';
+  const note = st === 'busy' ? 'The team is on another call right now. Try again later.'
+    : st === 'off' ? 'Nobody is available right now. Try again later.'
+    : st === 'admin' ? 'You’re signed in as an admin. Visitors see this card, and their calls ring in /admin.'
     : '';
   const canCall = st === 'on' || st === 'guest' || st === 'unknown';
   const html = `${phone() ? '<div class="sup-grab" aria-hidden="true"></div>' : ''}
     <div class="sup-head">
       <span class="sup-av lg" aria-hidden="true">J${on ? '<span class="sup-dot"></span>' : ''}</span>
-      <div class="sup-who"><b>Josh, Premake founder</b><span>${line}</span></div>
+      <div class="sup-who"><b>The Premake team</b><span>${line}</span></div>
       <button type="button" class="btn sm sup-x" aria-label="Close">${X}</button>
     </div>
     <p class="sup-blurb">${blurb}</p>
     ${ctx.title ? `<p class="sup-about">About: ${esc(ctx.title)}</p>` : ''}
-    <button type="button" class="btn primary sup-call" ${canCall ? '' : 'disabled'}>${CAM}Video call Josh</button>
+    <button type="button" class="btn primary sup-call" ${canCall ? '' : 'disabled'}>${CAM}Video call the Premake team</button>
     ${note ? `<p class="sup-note">${note}</p>` : ''}
     <button type="button" class="btn sup-write">${MSG}<span>Message us</span>${unread ? `<span class="sup-write-new">${unread === 1 ? 'New reply' : unread + ' new replies'}</span>` : ''}</button>`;
   if (html !== pop.dataset.h) { pop.innerHTML = html; pop.dataset.h = html; } // the 30 s refresh doesn't steal focus
@@ -140,7 +140,7 @@ function show(any) {
 function close(refocus) {
   if (!open) return;
   open = false; pop.hidden = true; pop.dataset.h = ''; dim.hidden = true; pop.style.transform = '';
-  if (view === 'thread') { thread.stop(); view = 'card'; pop.classList.remove('thread'); pop.setAttribute('aria-label', 'Video call Josh'); } // supportchat
+  if (view === 'thread') { thread.stop(); view = 'card'; pop.classList.remove('thread'); pop.setAttribute('aria-label', 'Video call the Premake team'); } // supportchat
   bub.setAttribute('aria-expanded', 'false'); bub.classList.remove('on');
   if (refocus && !bub.hidden) bub.focus({ preventScroll: true });
 }

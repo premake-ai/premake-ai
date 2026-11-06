@@ -25,10 +25,10 @@ const ALLOWED_SUPPLIERS = String(process.env.ALLOWED_SUPPLIERS || 'Amazon,SendCu
  *   4. allow: an `allow` regex matches -> stocked, in that category, unless one piece costs more than max_unit_usd
  *      (a pricey specialty part we'd order per kit) or weighs more than max_piece_g (estimated, `grams` below)
  *   5. anything else -> straight from the shop (not a small part we keep)
- * Env STOCK_SMALL_PARTS=0 switches stocking off (every bought line back to Amazon). */
+ * Env STOCK_SMALL_PARTS=1 switches stocking on (off by default in the open-source app: every bought line goes to its shop). */
 const STOCK = {
-  enabled: !/^(0|false|no|off)$/i.test(String(process.env.STOCK_SMALL_PARTS || '').trim()),
-  label: 'Premake stock, NYC',
+  enabled: /^(1|true|yes|on)$/i.test(String(process.env.STOCK_SMALL_PARTS || '').trim()), // open-source app: off unless STOCK_SMALL_PARTS=1
+  label: 'Premake stock',
   max_unit_usd: 30,     // dearer per piece than this (parts-list price): a specialty part, ordered per kit
   max_piece_g: 600,     // heavier per piece than this (estimated): ships straight from the shop
   bulk_qty: 500,        // the catalog quantity break we buy at (list_prices.json breaks up to this many pieces)
@@ -81,7 +81,7 @@ const ASSEMBLY_MIN_PER_DAY = 450;
 const SHIP = {
   Amazon: { base: 0, per_lb: 0, why: 'Free with Prime' },
   SendCutSend: { base: 0, per_lb: 0, why: 'Free standard shipping' },
-  Premake: { base: 6.5, per_lb: 1.6, why: 'USPS Ground Advantage from NYC, box included' },
+  Premake: { base: 6.5, per_lb: 1.6, why: 'USPS Ground Advantage, box included' },
   'Slant 3D': { base: 7.5, per_lb: 1.6, why: 'Slant 3D ground shipping' },
   other: { base: 7, per_lb: 1.6, why: 'Shop’s ground shipping' },
 };

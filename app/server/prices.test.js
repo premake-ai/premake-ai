@@ -1,5 +1,6 @@
 // node --test server/prices.test.js   price sources for the main quote (server/prices): no network, fake distributors
 'use strict';
+if (process.env.STOCK_SMALL_PARTS == null) process.env.STOCK_SMALL_PARTS = '1'; // stocking is off by default in the open-source app; these tests cover it
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');

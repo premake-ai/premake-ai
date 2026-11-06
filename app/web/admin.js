@@ -120,7 +120,7 @@ function msgsHtml(list) {
     const sep = day !== last ? `<div class="sup-day">${esc(day)}</div>` : ''; last = day;
     const me = m.from === 'josh';
     const ctx = [m.context?.tab ? TAB[m.context.tab] || m.context.tab : '', Number.isFinite(m.context?.version) && m.context.version ? `v${m.context.version}` : ''].filter(Boolean).join(' · ');
-    return `${sep}<div class="sup-m ${me ? 'me' : 'them'}${m.pending ? ' pending' : ''}"><div class="meta">${esc(me ? (m.email && m.email !== 'josh' ? m.email : 'Josh') : (m.email || 'User'))} · ${esc(clock(m.t))}${ctx && !me ? ` · ${esc(ctx)}` : ''}</div>
+    return `${sep}<div class="sup-m ${me ? 'me' : 'them'}${m.pending ? ' pending' : ''}"><div class="meta">${esc(me ? (m.email && m.email !== 'josh' ? m.email : 'Admin') : (m.email || 'User'))} · ${esc(clock(m.t))}${ctx && !me ? ` · ${esc(ctx)}` : ''}</div>
       <div class="bub">${textHtml(m.text)}</div></div>`;
   }).join('');
 }
@@ -140,7 +140,7 @@ function drawThread() {
         <span>${p.current_v ? `Version v${esc(p.current_v)}` : 'Original version'}${p.versions ? ` of ${esc(p.versions)}` : ''}</span>${p.running ? '<span class="adm-pill acc">Agent running</span>' : ''}</span></div>
       <a class="btn sm" href="${studioHref(t.id)}" target="_blank" rel="noopener">${EXT}<span class="lbl">Open design</span></a></div>
     <div class="sup-msgs" id="supMsgs">${t.messages.length || SUP.sending.length ? msgsHtml([...t.messages, ...SUP.sending.filter(s => s.id === t.id)]) : '<div class="sup-none">No messages yet.</div>'}</div>
-    <div class="sup-comp"><textarea id="supInput" rows="1" placeholder="Reply as Josh…" aria-label="Reply"></textarea><button class="btn primary" id="supSend">Send</button></div>
+    <div class="sup-comp"><textarea id="supInput" rows="1" placeholder="Reply…" aria-label="Reply"></textarea><button class="btn primary" id="supSend">Send</button></div>
     <div class="sup-hint">Enter to send, Shift+Enter for a new line</div>`;
   const ta = $('#supInput'); ta.value = draft; grow(ta);
   const box = $('#supMsgs'); if (atBottom) box.scrollTop = box.scrollHeight;
@@ -424,7 +424,7 @@ async function renderSystem() {
       <div class="adm-card"><div class="k">Rate-limit hits</div><div class="v">${s.rate_hits.last_hour}<small>last hour</small></div><div class="k">${s.rate_hits.last_24h} in 24 h</div></div>
       <div class="adm-card"><div class="k">Mac</div><div class="v"><span class="dot on"></span> Up</div><div class="k">Load ${esc(s.load.join(' / '))} · ${esc(bytes(s.rss))} memory</div></div>
       <div class="adm-card"><div class="k">Gateway</div><div class="v">${!g.configured ? '<span class="dot"></span> Not set' : g.ok ? '<span class="dot on"></span> Healthy' : '<span class="dot bad"></span> Down'}</div><div class="k">${g.configured ? `${g.ms} ms${g.ok ? ` · Mac ${g.target ? 'registered' : 'not registered'} · Google ${g.google ? 'on' : 'off'}` : ''}` : 'Local only'}</div></div>
-      <div class="adm-card"><div class="k">Presence</div><div class="v">${s.presence.users_online}<small>users online</small></div><div class="k">Support shows ${s.presence.admin_online ? '“Josh is online”' : '“Usually replies within a few hours”'}</div></div>
+      <div class="adm-card"><div class="k">Presence</div><div class="v">${s.presence.users_online}<small>users online</small></div><div class="k">Support shows ${s.presence.admin_online ? '“The team is online”' : '“Usually replies within a few hours”'}</div></div>
     </div>
     <div class="adm-h2">Warm agent pool (${s.pool.length} of ${s.limits.pool_max})</div>
     ${s.pool.length ? `<div class="adm-tw"><table class="adm-t"><thead><tr><th>Project</th><th class="hide-m">Owner</th><th>State</th><th class="hide-m">Effort</th><th class="num">Age</th><th class="num">Idle</th></tr></thead><tbody>

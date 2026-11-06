@@ -150,7 +150,7 @@ function init() {
     pillBtn.setAttribute('aria-label', busy ? `${t}, AI working` : t);
     if (body.classList.contains('m-busy') !== busy) body.classList.toggle('m-busy', busy);
     $('.m-dot', right).hidden = !joshOn;
-    right.setAttribute('aria-label', joshOn ? 'Menu. Josh is available for a call' : 'Menu');
+    right.setAttribute('aria-label', joshOn ? 'Menu. The Premake team is available for a call' : 'Menu');
     const ds = designScreen();
     if (body.classList.contains('m-design') !== ds) {
       body.classList.toggle('m-design', ds);
@@ -209,7 +209,7 @@ function init() {
       if (at !== 'orders' && $('#sideOrders') && !$('#sideOrders').hidden) rows.push(row('orders', I.orders, 'Orders'));
     }
     const more = [];
-    if (support?.supported?.()) more.push(row('call', I.call, 'Call Josh', joshOn ? '<span class="m-on">Available now</span>' : ''));
+    if (support?.supported?.()) more.push(row('call', I.call, 'Call the Premake team', joshOn ? '<span class="m-on">Available now</span>' : ''));
     // account: the avatar menu's email, Admin and Sign out (the bar's own avatar is hidden on phones)
     const acct = [];
     const email = $('#conn .acct-email')?.textContent?.trim();

@@ -55,7 +55,7 @@ export function renderSite(el, { examples, quote }) {
         <p>The agent writes parametric CadQuery, exports print-ready parts and picks off-the-shelf hardware. Ask for changes like you would a colleague.</p>
         <div class="vign"><ul><li><b>✓</b>Editing design.py</li><li><b>✓</b>Exported 3 printed parts</li><li><b>✓</b>Added 4 × M3 screws to the parts list</li><li><b>›</b>Widening the cable slot to 9 mm</li></ul></div></div>
       <div class="s-step"><div class="n">3</div><h3>Order 1 to 500</h3>
-        <p>We print on a farm of machines, add the hardware, and ship. One for your desk or a run for your shop.</p>
+        <p>Print the parts yourself or have a shop make them, then add the hardware. One for your desk or a run for your shop.</p>
         <div class="vign"><div class="qtys">${(q?.a.tiers || [{ qty: 1 }, { qty: 10 }, { qty: 100 }, { qty: 500 }]).map(t =>
           `<div><b>${t.qty}</b><span>${t.unit_price ? money(t.unit_price) : 'units'}</span></div>`).join('')}</div></div></div>
     </div>

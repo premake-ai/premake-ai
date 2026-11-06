@@ -87,7 +87,7 @@ function draw() {
     </div>
 
     <div class="mt-group">
-      ${row({ icon: I.made, title: 'Get it made', sub: 'We print, cut and ship the parts to you', action: `<span class="mt-chev">${I.chev}</span>`, tag: 'button', attrs: 'type="button" data-mt-order' })}
+      ${row({ icon: I.made, title: 'Get it made', sub: 'Shops, prices and links for every part', action: `<span class="mt-chev">${I.chev}</span>`, tag: 'button', attrs: 'type="button" data-mt-order' })}
     </div>
 
     <h3 class="mt-gh">Parts</h3>

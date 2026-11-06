@@ -230,6 +230,7 @@ function ctaLine(c) {
 }
 function ctaBand(g, i) {
   const c = g.cta;
+  if (!c) return ''; // open-source app: no ordering from Premake unless checkout is set up (cta null)
   if (c.orderable === false) return `<aside class="gd-cta-band" aria-label="Ordering"><div><b>${NA}</b></div></aside>`;
   if (kitsOnly(c)) return `<aside class="gd-cta-band" aria-label="Order the parts instead">
     <div><b>Get the kit from Premake</b>
@@ -303,7 +304,7 @@ function draw(el, g, opts) {
     <div class="gd-bar-in">
       ${opts.standalone ? `<a class="gd-brand" href="/"><span class="gd-mark" aria-hidden="true"></span>Premake</a>` : back}
       <span class="gd-bar-title">${esc(g.title)}</span>
-      ${c.orderable === false ? `<span class="gd-bar-cta"><span class="gd-bar-txt">${NA}</span></span>`
+      ${!c ? '' : c.orderable === false ? `<span class="gd-bar-cta"><span class="gd-bar-txt">${NA}</span></span>`
         : `<span class="gd-bar-cta"><span class="gd-bar-txt">${kitsOnly(c) ? 'Get the kit' : 'Skip the build'}: ${esc(ctaLine(c))}, ships in ${days(main(c).lead_time_days)}</span>
         <button class="gd-btn primary sm" data-order="${kitsOnly(c) ? 'kit' : 'assembled'}">${kitsOnly(c) ? 'Order the parts' : 'Get it from Premake'}</button></span>`}
     </div>
@@ -331,7 +332,7 @@ function draw(el, g, opts) {
         <span><b>Share build guide</b><span class="gd-sub">${g.share ? `Anyone with the link can see it: <a href="${esc(g.share_url)}" target="_blank" rel="noopener">${esc(shareAbs)}</a>` : 'Only you can see this guide. Turn on to get a public link.'}</span></span></label>
     </section>` : ''}
 
-    ${c.orderable === false ? `<aside class="gd-cta-hero"><div class="gd-cta-col"><b>Not available to order yet</b><span>This design needs assembly.</span></div></aside>`
+    ${!c ? '' : c.orderable === false ? `<aside class="gd-cta-hero"><div class="gd-cta-col"><b>Not available to order yet</b><span>This design needs assembly.</span></div></aside>`
       : kitsOnly(c) ? `<aside class="gd-cta-hero">
       <div class="gd-cta-col"><b>Rather not source the parts?</b><span>Kit: parts ship to you, with step-by-step instructions. US shipping included.</span></div>
       <button class="gd-price on" data-order="kit"><span>Kit</span><b>${money(main(c).total)}</b><small>Ships in ${days(main(c).lead_time_days)}</small></button>

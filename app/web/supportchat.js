@@ -52,7 +52,7 @@ function dayLabel(t) {
   return d.toLocaleDateString([], { weekday: 'short', month: 'short', day: 'numeric' });
 }
 function msgsHtml(list) {
-  if (!list.length) return '<p class="sc-empty">Tell us what’s broken or what you’d like. Josh usually replies within a few hours.</p>';
+  if (!list.length) return '<p class="sc-empty">Tell us what’s broken or what you’d like. The team usually replies within a few hours.</p>';
   let day = '';
   return list.map((m, i) => {
     const d = dayLabel(m.t), next = list[i + 1];
@@ -61,7 +61,7 @@ function msgsHtml(list) {
     const imgs = (m.images || []).map(u => `<a class="sc-img" href="${esc(u)}" target="_blank" rel="noopener"><img src="${esc(u)}" alt="Attached image" loading="lazy"></a>`).join('');
     return `${sep}<div class="sc-m ${m.from === 'josh' ? 'them' : 'me'}${m.pending ? ' pending' : ''}${m.failed ? ' failed' : ''}">
       ${imgs ? `<div class="sc-imgs">${imgs}</div>` : ''}${m.text ? `<div class="sc-b">${esc(m.text)}</div>` : ''}
-      ${m.failed ? `<div class="sc-t">Not sent. <button type="button" class="sc-retry" data-i="${i}">Try again</button></div>` : tail ? `<div class="sc-t">${m.from === 'josh' ? 'Josh · ' : ''}${m.pending ? 'Sending…' : esc(clock(m.t))}</div>` : ''}</div>`;
+      ${m.failed ? `<div class="sc-t">Not sent. <button type="button" class="sc-retry" data-i="${i}">Try again</button></div>` : tail ? `<div class="sc-t">${m.from === 'josh' ? 'Premake · ' : ''}${m.pending ? 'Sending…' : esc(clock(m.t))}</div>` : ''}</div>`;
   }).join('');
 }
 
@@ -156,7 +156,7 @@ export function supportThread(opts) {
       <div class="sc-head">
         <button type="button" class="btn sm sc-back" aria-label="Back">${BACK}</button>
         <span class="sup-av" aria-hidden="true">J</span>
-        <div class="sup-who"><b>Message Josh</b><span>Usually replies within a few hours</span></div>
+        <div class="sup-who"><b>Message the Premake team</b><span>Usually replies within a few hours</span></div>
         <button type="button" class="btn sm sup-x" aria-label="Close">${X}</button>
       </div>
       <div class="sc-msgs" role="log" aria-live="polite" aria-label="Messages"></div>

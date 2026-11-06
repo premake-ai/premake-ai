@@ -1697,7 +1697,7 @@ function queueHtml(c) {
 function supportHtml(list, mine) {
   return list.map(m => {
     const me = m.from === mine;
-    const who = m.from === 'josh' ? 'Josh' : (mine === 'josh' ? (m.email || 'Customer') : 'You');
+    const who = m.from === 'josh' ? 'Premake' : (mine === 'josh' ? (m.email || 'Customer') : 'You');
     return `<div class="sup-msg ${me ? 'me' : 'them'}"><div class="sup-meta">${esc(who)} · ${esc(ago(m.t))}${m.context?.tab ? ` · ${esc({ model: 'Model', code: 'Code', site: 'Website', ads: 'Ads' }[m.context.tab] || m.context.tab)}` : ''}</div><div class="sup-text">${textHtml(m.text)}</div></div>`;
   }).join('');
 }
@@ -1750,7 +1750,7 @@ function drawInbox() {
           <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.6" fill="none"/></svg></a><div><b>${esc(sel.title)}</b><span class="muted">${esc(sel.email || '')}</span></div>
         <a class="btn sm primary" href="${esc(designPath({ project: sel.id }))}">Open this project</a></div>
         <div class="msgs ib-msgs" id="ibMsgs"><div class="empty-chat"><div class="big-spin"></div></div></div>
-        <div class="composer"><div class="cbox"><textarea id="ibInput" rows="2" placeholder="Reply as Josh…"></textarea>
+        <div class="composer"><div class="cbox"><textarea id="ibInput" rows="2" placeholder="Reply…"></textarea>
           <div class="cbar"><span class="muted small">Enter to send</span><button class="send" id="ibSend" aria-label="Send reply">
           <svg viewBox="0 0 16 16" width="14" height="14"><path d="M8 13V3M3.5 7.5L8 3l4.5 4.5" stroke="currentColor" stroke-width="1.7" fill="none"/></svg></button></div></div></div>`
       : '<div class="empty-chat"><h3>Pick a conversation</h3></div>'}</div></div>`;
