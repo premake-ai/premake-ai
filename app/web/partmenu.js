@@ -1,5 +1,6 @@
 // Part context menu for the 3D viewer: right-click (or long-press) a part to hide it (see-through), hide it completely,
-// isolate it, find it in the parts tree, ask the agent to change it, or read its info. Left-click selects (outline).
+// isolate it, find it in the parts tree, ask the agent to change it, read its info, or download its STEP / STL / DXF
+// (only the files that exist, from GET /api/make/<id>, server/makefiles.js) and copy its name. Left-click selects (outline).
 // Keys: H hides the hovered / selected part, Alt+H or Shift+H shows all, Escape closes the menu.
 //
 // State is kept by part NAME so it survives live model reloads. "Hide completely" uses the viewer's own `hidden`
@@ -190,6 +191,35 @@ export function attachPartMenu(v, ctx = {}) {
     if (n) chipEl.innerHTML = `<span>Show all</span><span class="pm-n">${isolated ? 'isolated' : `${n} hidden`}</span>`;
   }
 
+  // ---------- part files (GET /api/make/<id>: which parts have STL / STEP / DXF) ----------
+  const files = { id: null, at: 0, parts: null, loading: false };
+  const designId = () => S.cur?.id || null;
+  function loadFiles() {
+    const id = designId();
+    if (!id || files.loading || (files.id === id && Date.now() - files.at < 30e3)) return;
+    files.loading = true;
+    fetch(`/api/make/${encodeURIComponent(id)}`, { cache: 'no-store' })
+      .then(r => (r.ok ? r.json() : null)).catch(() => null)
+      .then(j => {
+        files.loading = false; files.id = id; files.at = Date.now(); files.parts = Array.isArray(j?.parts) ? j.parts : [];
+        if (!menu.hidden && target && designId() === id) { draw(); place(at.x, at.y); }
+      });
+  }
+  /** The part's downloadable files: [{ label, href }] (none for bought parts without their own model). */
+  function downloads(name) {
+    const id = designId();
+    if (!id || files.id !== id || !files.parts) return [];
+    const it = itemOf(name), base = String(it?.p.file || '').split('/').pop().replace(/\.[^.]+$/, '');
+    const mp = files.parts.find(x => x.name === name) || (base && files.parts.find(x => x.file === base));
+    if (!mp?.file) return [];
+    const href = ext => `/api/make/${encodeURIComponent(id)}/part/${encodeURIComponent(mp.file)}.${ext}`;
+    return [mp.step && { label: 'Download STEP', href: href('step') }, mp.stl && { label: 'Download STL', href: href('stl') },
+      mp.dxf && { label: 'Download DXF', href: href('dxf') }].filter(Boolean);
+  }
+  function download(href) {
+    const a = document.createElement('a'); a.href = href; a.download = ''; document.body.appendChild(a); a.click(); a.remove();
+  }
+
   // ---------- menu ----------
   const menu = document.createElement('div');
   menu.className = 'pm-menu'; menu.hidden = true; menu.setAttribute('role', 'menu');
@@ -226,7 +256,10 @@ export function attachPartMenu(v, ctx = {}) {
       + item('tree', 'Select in parts list')
       + (example ? item('remix', 'Remix to edit') : item('change', 'Change this part…'))
       + item('info', infoOpen ? 'Hide part info' : 'Part info')
-      + (infoOpen ? info(name) : '');
+      + (infoOpen ? info(name) : '')
+      + '<div class="pm-sep"></div>'
+      + downloads(name).map(d => `<button role="menuitem" data-act="dl" data-href="${esc(d.href)}"><span>${esc(d.label)}</span></button>`).join('')
+      + item('copy', 'Copy part name');
   }
   function place(x, y) {
     menu.style.left = '0px'; menu.style.top = '0px';
@@ -238,6 +271,7 @@ export function attachPartMenu(v, ctx = {}) {
   function openMenu(name, x, y) {
     if (!name) return closeMenu();
     target = name; infoOpen = false; at = { x, y };
+    loadFiles();
     menu.hidden = false; draw(); place(x, y); outlines();
     menu.querySelector('button:not([disabled])')?.focus({ preventScroll: true });
   }
@@ -254,6 +288,8 @@ export function attachPartMenu(v, ctx = {}) {
     else if (act === 'tree') select(name, { tree: true });
     else if (act === 'change') changePart(name);
     else if (act === 'remix') document.getElementById('remixBtn')?.click();
+    else if (act === 'dl') download(b.dataset.href);
+    else if (act === 'copy') navigator.clipboard?.writeText(name).then(() => ctx.toast?.('Part name copied'), () => ctx.toast?.('Could not copy'));
   });
   menu.addEventListener('keydown', e => {
     const bs = [...menu.querySelectorAll('button:not([disabled])')], i = bs.indexOf(document.activeElement);

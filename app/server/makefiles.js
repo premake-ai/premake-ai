@@ -2,12 +2,14 @@
 // makefiles: the studio's Make tab (web/launch.js renderLaunch). Downloads for one design, owner or admin only for a
 // project, anyone for an example. Nothing is generated here: it zips the files the build already wrote.
 //
-//   GET /api/make/<id>                    -> { title, parts: [{ name, process, bbox, stl, step }], bought: [...], print: {...} }
+//   GET /api/make/<id>                    -> { title, parts: [{ name, process, bbox, stl, step, dxf }], bought: [...], print: {...} }
 //   GET /api/make/<id>/all.zip            every made part (printed + fabricated) as STL, plus STEP where the build wrote
 //                                         one, bom.json and shopping-list.csv
 //   GET /api/make/<id>/print.zip          the printed parts as STL (a 3MF instead when the project has one)
 //   GET /api/make/<id>/shopping-list.csv  bought parts: qty, unit price, line total, supplier, link
-//   GET /api/make/<id>/part/<file>        one part file: <name>.stl or <name>.step
+//   GET /api/make/<id>/part/<file>        one part file: <name>.stl or <name>.step, or <name>.dxf for a flat cut part
+//                                         (laser, or sheet without bends: its outline from the STL, server/sourcing.js plateDxf)
+//                                         (the 3D viewer's part menu, web/partmenu.js, offers these per part)
 //   GET /api/make/<id>/bambu.3mf          the printed parts laid flat on 256 mm plates (cadlib/bambu3mf.py), for Bambu Studio
 //   POST /api/make/<id>/open-bambu        local installs: the same file, opened in Bambu Studio on this computer
 const fs = require('node:fs');
@@ -16,7 +18,7 @@ const { makeZip } = require('./guide');
 
 let C = {}; // init(): { projDir, exDir, canEdit, send, allow, clientIp, readJSON, bambu3mf, openBambu }
 const ID_RE = /^[a-z0-9][a-z0-9-]{0,80}$/i;
-const FILE_RE = /^[\w.-]{1,120}\.(stl|step|3mf)$/i;
+const FILE_RE = /^[\w.-]{1,120}\.(stl|step|dxf|3mf)$/i;
 
 function fileBuf(dir, rel) {
   let root, real;
@@ -29,6 +31,21 @@ const csvCell = (v) => { const s = String(v ?? ''); return /[",\n\r]/.test(s) ? 
 const csv = (rows) => rows.map((r) => r.map(csvCell).join(',')).join('\r\n') + '\r\n';
 const slugOf = (title, id) => (String(title || '').replace(/[^\w -]+/g, '').trim().replace(/\s+/g, '-').toLowerCase().slice(0, 48)) || id;
 
+/** A flat part's DXF outline (server/sourcing.js plateDxf), or null when the STL is not one flat plate (pockets, bends).
+ *  Cached by file and mtime: the listing checks every laser / sheet part. */
+const dxfCache = new Map();
+function dxfOf(dir, rel) {
+  const f = path.join(dir, rel);
+  let st; try { st = fs.statSync(f); } catch { return null; }
+  const k = f + ':' + st.mtimeMs, hit = dxfCache.get(k);
+  if (hit !== undefined) return hit;
+  const b = fileBuf(dir, rel);
+  let d = null; try { d = b ? require('./sourcing').plateDxf(b.data) : null; } catch { d = null; }
+  if (dxfCache.size > 200) dxfCache.clear();
+  dxfCache.set(k, d?.dxf || null);
+  return d?.dxf || null;
+}
+
 /** The made parts (printed, then fabricated), each with its STL and, when the build wrote one, its STEP. */
 function madeParts(dir, bom) {
   const out = [], seen = new Set();
@@ -38,7 +55,9 @@ function madeParts(dir, bom) {
     seen.add(rel);
     const base = path.basename(rel, path.extname(rel));
     const step = exists(path.join(dir, 'step', base + '.step')) ? `step/${base}.step` : null;
-    out.push({ name: p.name || base, process, bbox: Array.isArray(p.bbox) ? p.bbox : null, stl: exists(path.join(dir, rel)) ? rel : null, step, base });
+    const flat = process === 'laser' || (process === 'sheet' && !(Number(p.params?.bends) > 0)); // same rule as the Order tab's DXF
+    const stl = exists(path.join(dir, rel)) ? rel : null;
+    out.push({ name: p.name || base, process, bbox: Array.isArray(p.bbox) ? p.bbox : null, stl, step, dxf: !!(flat && stl && dxfOf(dir, stl)), base });
   };
   for (const p of bom.printed || []) add(p, 'print');
   for (const f of bom.fabricated || []) add(f, f.process || 'fab');
@@ -82,7 +101,7 @@ async function handle(req, res, { parts, m, acc }) {
   if (!f && parts.length === 3) {
     const printed = made.filter((p) => p.process === 'print');
     C.send(res, 200, { id: src.id, title: meta.title || src.id, has_model: exists(path.join(src.dir, 'manifest.json')),
-      parts: made.map(({ name, process, bbox, stl, step }) => ({ name, process, bbox, stl: !!stl, step: !!step, file: path.basename(stl || step, path.extname(stl || step)) })),
+      parts: made.map(({ name, process, bbox, stl, step, dxf }) => ({ name, process, bbox, stl: !!stl, step: !!step, dxf, file: path.basename(stl || step, path.extname(stl || step)) })),
       bought: boughtParts(bom), print: { count: printed.length, threemf: find3mf(src.dir) } });
     return true;
   }
@@ -118,6 +137,11 @@ async function handle(req, res, { parts, m, acc }) {
   if (f === 'part' && parts.length === 5 && FILE_RE.test(parts[4] || '')) {
     const ext = path.extname(parts[4]).toLowerCase(), base = path.basename(parts[4], ext);
     const p = made.find((x) => x.base === base);
+    if (ext === '.dxf') { // flat cut part: its outline, made from the STL now
+      const d = p?.dxf && dxfOf(src.dir, p.stl);
+      if (!d) { C.send(res, 404, { error: 'not found' }); return true; }
+      sendDownload(res, `${P}-${base}.dxf`, 'application/dxf', Buffer.from(d)); return true;
+    }
     const rel = p && (ext === '.stl' ? p.stl : ext === '.step' ? p.step : null);
     const b = rel && fileBuf(src.dir, rel);
     if (!b) { C.send(res, 404, { error: 'not found' }); return true; }
