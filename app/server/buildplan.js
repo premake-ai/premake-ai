@@ -16,7 +16,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 
-const PLAN_V = 2;
+const PLAN_V = 3;
 const FAST = /\b(screws?|bolts?|nuts?|washers?|inserts?|rivets?|nails?|anchors?|shcs|bhcs|csk|grub|dowels?|hinge pins?)\b|\bm[2-8]\s*[x×]\s*\d/i;
 const CAPTIVE = /\b(heat-?set|threaded)\s+inserts?\b|\binserts?\b/i; // pressed into the printed part before anything else
 const YOURS = /\((yours|ref|reference)\)|\byours\b/i;
@@ -215,7 +215,44 @@ function buildPlan(dir, man, opts = {}) {
     return { name: String(p.name), group: p.group, process: p.process, explode: p.explode, file: p.file, box: f ? stlBox(f) : null };
   });
   const wiring = opts.wiring || readWiring(dir);
+  const firmware = opts.firmware ?? fs.existsSync(path.join(dir, 'firmware'));
+  if (Array.isArray(man?.build_steps) && man.build_steps.length) return written(parts, wiring, man.build_steps, { firmware });
   return plan(parts, wiring, { declared: man?.assembly_order || man?.steps, firmware: opts.firmware ?? fs.existsSync(path.join(dir, 'firmware')) });
+}
+
+/** The design's own written steps (design.py BUILD_STEPS -> manifest build_steps), used as they are: the designer knows
+ * sub-assemblies (a head built up on its own, then fitted to the base) the geometric planner can't see. A "wire" step gets
+ * the wiring.json wires between its parts; Flash and Power on and test are added at the end when they are missing.
+ * Checked by validate() for the order rules that need no geometry (added twice, wired before fitted, test last), and for
+ * model parts no step adds. */
+function written(parts, wiring, list, opts = {}) {
+  const byName = new Map(parts.map(p => [p.name, p]));
+  const wires = (wiring.wires || []).map(w => ({ ...w, a: matchPart(w.from.part, parts), b: matchPart(w.to.part, parts) }));
+  const ids = ns => ns.map(n => byName.get(n)).filter(Boolean).map(id);
+  const steps = [];
+  for (const st of list) {
+    const kind = ['place', 'wire', 'flash', 'test'].includes(st?.kind) ? st.kind : 'place';
+    const add = (st.parts || []).filter(n => byName.has(n)), show = (st.show || []).filter(n => byName.has(n));
+    const s = { kind, title: String(st.title || ''), text: String(st.text || st.title || ''), note: '', parts: add, ids: ids(add), hl: show, hlIds: ids(show), wires: [],
+      ...(st.warning ? { warning: String(st.warning) } : {}) };
+    if (kind === 'wire') {
+      const set = new Set([...add, ...show].map(n => byName.get(n)));
+      s.wires = wires.filter(w => (w.a && set.has(w.a)) || (w.b && set.has(w.b))).map(w => ({ from: { part: w.from.part, pin: w.from.pin }, to: { part: w.to.part, pin: w.to.pin },
+        color: w.color || '', kind: w.kind || '', text: `${short(w.from.part)} ${pinStr(w.from.pin)} → ${short(w.to.part)} ${pinStr(w.to.pin)}` }));
+      s.note = kindNote(wires.filter(w => s.wires.some(x => x.from.part === w.from.part && x.from.pin === w.from.pin && x.to.part === w.to.part)));
+    }
+    steps.push(s);
+  }
+  const electronics = parts.some(p => p.group === 'component' && ELEC.test(p.name)) || wires.length > 0;
+  const has = k => steps.some(s => s.kind === k);
+  const P = parts.map(p => ({ ...p }));
+  if (electronics && opts.firmware && !has('flash')) { const t = steps.findIndex(s => s.kind === 'test'); const f = describe({ kind: 'flash' }, 0, {}); if (t >= 0) steps.splice(t, 0, f); else steps.push(f); }
+  if (electronics && !has('test')) steps.push(describe({ kind: 'test' }, 0, { P, base: null, covers: [], wiring, firmware: opts.firmware }));
+  const model = { base: null, covers: [], inside: [], before: [] };
+  const errors = validate(steps, model);
+  const added = new Set(steps.flatMap(s => s.parts));
+  for (const p of parts) if (!added.has(p.name)) errors.push(`"${p.name}" is not added in any step`);
+  return { v: PLAN_V, steps, model, errors, written: true, wiring: { source: wiring.source || null, wires: wires.length, missing: electronics && !wires.length, list: wireList(wires) } };
 }
 
 /** parts: [{name, group, box:{min,max}|null, explode}], wiring: {wires, source}. Pure (tests call this). */

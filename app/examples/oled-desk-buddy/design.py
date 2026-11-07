@@ -106,6 +106,45 @@ def back_cover():
     return c
 
 
+# Written assembly steps (the Assemble view and the build guide use these as they are). Screws are bought only (bom.json):
+# 4 x M2x6 hold the OLED, 2 x M3x10 the back cover, 4 x M3x10 the bottom plate; the servo's own bag has its 2 tab screws
+# and the horn screw.
+BUILD_STEPS = [
+    {"title": "Fit the servo in the base", "parts": ["Base", "SG90 micro servo"],
+     "text": "Turn the servo shaft gently by hand to the middle of its travel, so the head ends up facing forward. Push the "
+             "servo down into the slot in the top of the Base, cable first, until its two tabs sit on the deck. Fix it with "
+             "the two small screws from the servo's bag."},
+    {"title": "Fit the screen in the head", "parts": ["Head", '0.96" OLED display (SSD1306)'],
+     "text": "From the open back of the Head, press the OLED onto the four little posts with the screen looking out through "
+             "the front window. Fix it with 4 x M2x6 screws. Push four female-to-female jumpers onto its pins: VCC red, "
+             "GND black, SDA blue, SCL yellow.",
+     "warning": "Stop as soon as the M2 screws are snug: the posts are short and strip easily."},
+    {"title": "Mount the head on the servo", "show": ["Head", "SG90 micro servo", "Base"],
+     "text": "Feed the four screen leads down through the hole in the Head's floor and on through the slot in the top of the "
+             "Base. Press the servo's long two-arm horn into the recess under the Head, then push the Head onto the servo "
+             "shaft facing straight forward. Screw the horn screw from the servo's bag down through the Head floor into "
+             "the shaft."},
+    {"title": "Close the head", "parts": ["Back cover"],
+     "text": "Check no lead is pinched, then fit the Back cover with 2 x M3x10 screws into the two posts at the top corners."},
+    {"title": "Stand the ESP32 in the bottom plate", "parts": ["Bottom plate", "ESP32 DevKitC (WROOM-32, 38 pin)"],
+     "text": "Slide the ESP32's bottom edge into the two slotted blocks on the Bottom plate: chips facing the front, pin "
+             "headers facing the back, USB-C port at the left end."},
+    {"title": "Connect the screen and servo to the ESP32", "kind": "wire",
+     "show": ['0.96" OLED display (SSD1306)', "SG90 micro servo", "ESP32 DevKitC (WROOM-32, 38 pin)"],
+     "text": "Turn the Base upside down beside the plate. Screen leads onto the ESP32: VCC to 3V3 (red), GND to GND (black), "
+             "SDA to GPIO21 (blue), SCL to GPIO22 (yellow). Servo, with three male-to-female jumpers from its plug: red to "
+             "5V, brown to GND, orange to GPIO13."},
+    {"title": "Close the base", "show": ["Base", "Bottom plate"],
+     "text": "Tuck the leads in and lower the Base onto the plate so the ESP32's USB-C port lines up with the slot in the "
+             "left wall. Fix the plate with 4 x M3x10 screws into the corner posts, then stick a rubber foot near each "
+             "corner underneath."},
+    {"title": "Power on and test", "kind": "test",
+     "text": "Plug the USB-C cable into the port on the left side. The face appears on the screen and the head turns left "
+             "and right smoothly without hitting anything. If the screen stays blank, check the four screen leads first; "
+             "if the head jitters, check the servo's three leads."},
+]
+
+
 def parts():
     return [
         {"name": "Base", "shape": base(), "group": "case", "color": "#f07a2a"},

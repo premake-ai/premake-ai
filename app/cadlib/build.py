@@ -30,6 +30,10 @@ Optional SCENE = "desk" | "wall" | "counter" | "shelf" | "handlebar" | "floor" (
 context) and SCENE_FACE = "-z" | "+y" | ... (the face that sits on / against it; default bottom, or back = +Y on a wall).
 Optional ASSEMBLY = [["Base"], ["PCB", "Button"], ["Lid"], ["M3x10 screw"]] (steps of part names, in order) ->
 manifest["assembly_order"] for the viewer's Assemble animation; a part dict's "step": n does the same per part.
+Optional BUILD_STEPS = [{"title": "Fit the servo in the base", "text": "...", "parts": ["SG90 micro servo"], "show": ["Base"],
+"kind": "place" | "wire" | "flash" | "test", "warning": "..."}] -> manifest["build_steps"]: the written assembly steps, used
+as they are instead of the geometric planner. "parts" are added in that step, "show" are highlighted; a "wire" step draws
+the wiring.json wires between its parts. Every model part should be added in exactly one step (warned otherwise).
 After the manifest, fit_checks() warns about parts that overlap (optional TOUCHING = [("Lid", "Body"), "Phone (yours)"]
 allows an intended press fit) and about library screws with no hole under them or no screwdriver path above them.
 Exit code 0 on success, 1 on failure (readable error in build_log.txt).
@@ -816,6 +820,50 @@ def scene_meta(mod, raw_steps, rows, manifest):
     if steps:
         manifest["assembly_order"] = steps
         print(f"assembly: {len(steps)} steps")
+    build_steps(mod, resolve, names, manifest)
+
+
+def build_steps(mod, resolve, names, manifest):
+    """BUILD_STEPS (written assembly steps) -> manifest["build_steps"]. Never fails the build: bad values only warn."""
+    raw = getattr(mod, "BUILD_STEPS", None)
+    if raw is None:
+        return
+    if not isinstance(raw, (list, tuple)) or not raw:
+        print("  WARNING: BUILD_STEPS must be a non-empty list of steps")
+        return
+    out, added = [], {}
+    for i, st in enumerate(raw, 1):
+        if not isinstance(st, dict) or not str(st.get("title") or "").strip():
+            print(f"  WARNING: BUILD_STEPS step {i} needs at least a title")
+            continue
+        kind = str(st.get("kind") or "place").strip().lower()
+        if kind not in ("place", "wire", "flash", "test"):
+            print(f"  WARNING: BUILD_STEPS step {i}: kind must be place, wire, flash or test, got {kind!r}")
+            kind = "place"
+        lists = {}
+        for key in ("parts", "show"):
+            got = []
+            for n in st.get(key) or []:
+                hit = resolve(n)
+                if not hit:
+                    print(f"  WARNING: BUILD_STEPS step {i} names an unknown part {n!r}")
+                got += [h for h in hit if h not in got]
+            lists[key] = got
+        for n in lists["parts"]:
+            if n in added:
+                print(f"  WARNING: BUILD_STEPS adds {n!r} twice (steps {added[n]} and {i})")
+            added.setdefault(n, i)
+        step = {"kind": kind, "title": re.sub(r"\s+", " ", str(st["title"])).strip()[:90],
+                "text": re.sub(r"\s+", " ", str(st.get("text") or "")).strip()[:900], **lists}
+        if str(st.get("warning") or "").strip():
+            step["warning"] = re.sub(r"\s+", " ", str(st["warning"])).strip()[:300]
+        out.append(step)
+    missing = [n for n in names if n not in added]
+    if missing:
+        print(f"  WARNING: BUILD_STEPS never adds {', '.join(repr(n) for n in missing[:8])}")
+    if out:
+        manifest["build_steps"] = out
+        print(f"build steps: {len(out)} written")
 
 
 def clean_section(v):

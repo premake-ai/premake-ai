@@ -1,5 +1,5 @@
 {
- "t": 1793686928.200376,
+ "t": 1794075413.454709,
  "title": "OLED Desk Buddy",
  "parts": [
   {
@@ -288,6 +288,87 @@
   }
  ],
  "scene": "desk",
+ "build_steps": [
+  {
+   "kind": "place",
+   "title": "Fit the servo in the base",
+   "text": "Turn the servo shaft gently by hand to the middle of its travel, so the head ends up facing forward. Push the servo down into the slot in the top of the Base, cable first, until its two tabs sit on the deck. Fix it with the two small screws from the servo's bag.",
+   "parts": [
+    "Base",
+    "SG90 micro servo"
+   ],
+   "show": []
+  },
+  {
+   "kind": "place",
+   "title": "Fit the screen in the head",
+   "text": "From the open back of the Head, press the OLED onto the four little posts with the screen looking out through the front window. Fix it with 4 x M2x6 screws. Push four female-to-female jumpers onto its pins: VCC red, GND black, SDA blue, SCL yellow.",
+   "parts": [
+    "Head",
+    "0.96\" OLED display (SSD1306)"
+   ],
+   "show": [],
+   "warning": "Stop as soon as the M2 screws are snug: the posts are short and strip easily."
+  },
+  {
+   "kind": "place",
+   "title": "Mount the head on the servo",
+   "text": "Feed the four screen leads down through the hole in the Head's floor and on through the slot in the top of the Base. Press the servo's long two-arm horn into the recess under the Head, then push the Head onto the servo shaft facing straight forward. Screw the horn screw from the servo's bag down through the Head floor into the shaft.",
+   "parts": [],
+   "show": [
+    "Head",
+    "SG90 micro servo",
+    "Base"
+   ]
+  },
+  {
+   "kind": "place",
+   "title": "Close the head",
+   "text": "Check no lead is pinched, then fit the Back cover with 2 x M3x10 screws into the two posts at the top corners.",
+   "parts": [
+    "Back cover"
+   ],
+   "show": []
+  },
+  {
+   "kind": "place",
+   "title": "Stand the ESP32 in the bottom plate",
+   "text": "Slide the ESP32's bottom edge into the two slotted blocks on the Bottom plate: chips facing the front, pin headers facing the back, USB-C port at the left end.",
+   "parts": [
+    "Bottom plate",
+    "ESP32 DevKitC (WROOM-32, 38 pin)"
+   ],
+   "show": []
+  },
+  {
+   "kind": "wire",
+   "title": "Connect the screen and servo to the ESP32",
+   "text": "Turn the Base upside down beside the plate. Screen leads onto the ESP32: VCC to 3V3 (red), GND to GND (black), SDA to GPIO21 (blue), SCL to GPIO22 (yellow). Servo, with three male-to-female jumpers from its plug: red to 5V, brown to GND, orange to GPIO13.",
+   "parts": [],
+   "show": [
+    "0.96\" OLED display (SSD1306)",
+    "SG90 micro servo",
+    "ESP32 DevKitC (WROOM-32, 38 pin)"
+   ]
+  },
+  {
+   "kind": "place",
+   "title": "Close the base",
+   "text": "Tuck the leads in and lower the Base onto the plate so the ESP32's USB-C port lines up with the slot in the left wall. Fix the plate with 4 x M3x10 screws into the corner posts, then stick a rubber foot near each corner underneath.",
+   "parts": [],
+   "show": [
+    "Base",
+    "Bottom plate"
+   ]
+  },
+  {
+   "kind": "test",
+   "title": "Power on and test",
+   "text": "Plug the USB-C cable into the port on the left side. The face appears on the screen and the head turns left and right smoothly without hitting anything. If the screen stays blank, check the four screen leads first; if the head jitters, check the servo's three leads.",
+   "parts": [],
+   "show": []
+  }
+ ],
  "wiring": {
   "file": "wiring.json",
   "wires": 7,

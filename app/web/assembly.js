@@ -310,8 +310,8 @@ class StepView {
     const steps = [];
     for (const g of src) {
       const got = map(g.files, g.parts, left); got.forEach(it => left.delete(it));
-      const st = { kind: g.kind || 'place', title: g.title, text: g.text, note: g.note || '', items: got, hl: g.kind === 'place' ? [] : map(g.hl_files, g.hl), wires: g.wires || [], missing: !!g.missing };
-      if (st.items.length || st.kind !== 'place') steps.push(st);
+      const st = { kind: g.kind || 'place', title: g.title, text: g.text, note: g.note || '', items: got, hl: g.kind === 'place' && !g.hl_files?.length ? [] : map(g.hl_files, g.hl), wires: g.wires || [], missing: !!g.missing };
+      if (st.items.length || st.kind !== 'place' || st.hl.length) steps.push(st); // a written step can just show parts already in ("Mount the head on the servo")
     }
     if (steps.filter(s => s.items.length).length < 1) return null;
     if (left.size) { const last = [...steps].reverse().find(s => s.kind === 'place') || steps[steps.length - 1]; last.items.push(...left); }
