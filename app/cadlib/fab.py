@@ -12,6 +12,10 @@ All return cq.Workplane in mm, Z up. Fabricated helpers return the solid only; y
   fab.pilot(d=3)                         printed pilot hole for a self-tapping screw: M2 1.6, M2.5 2.0, M3 2.5, M3.5 2.9, M4 3.3
   fab.screw_boss(d=3, h=10, depth=None, od=None, at=(0,0,0))   (boss, hole): a round boss (OD 2.5 x d) standing on z=0
                                          at `at`, and the pilot-hole cutter going down from its top. body.union(boss).cut(hole)
+  fab.shaft_bore(shaft=5, length=20, d_flat=0.5)   cutter for a printed hub on a motor shaft (NEMA17 5 mm D shaft),
+                                         axis +Z from z=0, flat facing +X, sized from real prints (see its docstring)
+  fab.hex_pocket(m=8, depth=6, kind="nut")   cutter for a captive M-size nut or bolt head, axis +Z from z=0, sized from
+                                         real prints; leave it OPEN to the side the nut / bolt goes in from
   fab.nema17(length=40)                  motor dummy, face plate on z=0, body below, shaft up (+Z)
   fab.esp32_devkit(kind="s3")            "s3" (ESP32-S3-DevKitC-1), "c3mini" (ESP32-C3 SuperMini), "wroom" (30-pin DevKit V1)
   fab.buck(kind="lm2596")                "lm2596" or "mp1584" converter module
@@ -72,6 +76,37 @@ def screw_boss(d=3.0, h=10.0, depth=None, od=None, at=(0.0, 0.0, 0.0)):
     boss = cq.Workplane("XY").circle(od / 2).extrude(h).translate((x, y, z))
     hole = cq.Workplane("XY").circle(pilot(d) / 2).extrude(depth).translate((x, y, z + h - depth))
     return boss, hole
+
+
+# Printed holes come out smaller than drawn (about 0.2-0.3 mm on FDM) and a D flat prints slightly proud. These sizes
+# are from real prints: a 5.4 mm D bore with its flat 0.25 mm off the shaft's was too tight on a NEMA17 shaft (Nov 2026).
+SHAFT_CLEAR = 0.6   # mm over the shaft diameter (5 mm shaft -> 5.6 mm bore): slides on by hand, a grub screw or the flat drives it
+FLAT_CLEAR = 0.4    # mm between the shaft's flat and the bore's flat
+HEX_AF = {2: 4.0, 2.5: 5.0, 3: 5.5, 4: 7.0, 5: 8.0, 6: 10.0, 8: 13.0, 10: 17.0}   # nut / hex head across flats
+HEX_T = {"nut": {2: 1.6, 2.5: 2.0, 3: 2.4, 4: 3.2, 5: 4.0, 6: 5.0, 8: 6.5, 10: 8.0}, "head": {3: 2.0, 4: 2.8, 5: 3.5, 6: 4.0, 8: 5.3, 10: 6.4}}
+HEX_CLEAR = 0.4     # mm over across-flats so a nut or head drops in by hand
+
+
+def shaft_bore(shaft=5.0, length=20.0, d_flat=0.5):
+    """Cutter for a printed part on a motor shaft: a round bore shaft + 0.6 mm, with a D flat d_flat deep on the shaft
+    (NEMA17: 5 mm shaft, 0.5 mm flat; d_flat=0 for a round shaft, then fix it with a grub screw). Axis +Z from z=0, flat
+    facing +X. Slides on by hand; the flat drives it. Never a press fit on a motor shaft: printed parts crack or won't go on."""
+    r = (float(shaft) + SHAFT_CLEAR) / 2
+    w = cq.Workplane("XY").circle(r).extrude(length)
+    if d_flat:
+        fx = float(shaft) / 2 - float(d_flat) + FLAT_CLEAR    # bore flat's distance from the axis
+        w = w.cut(cq.Workplane("XY").center(fx + r, 0).rect(2 * r, 4 * r).extrude(length))
+    return w
+
+
+def hex_pocket(m=8, depth=None, kind="nut"):
+    """Cutter for a captive nut or bolt head of size M`m`: hex across flats + 0.4 mm, depth = its thickness + 0.3 mm by
+    default. Axis +Z from z=0, a corner facing +X. Run it out through the surface the nut or bolt is pushed in from (make
+    `depth` reach past that face): a pocket closed on every side can't be filled. For a bolt, the shank hole (M + 0.5 mm)
+    runs on from the pocket."""
+    af = HEX_AF[float(m) if float(m) % 1 else int(m)] + HEX_CLEAR
+    depth = float(depth) if depth else HEX_T[kind][float(m) if float(m) % 1 else int(m)] + 0.3
+    return cq.Workplane("XY").polygon(6, af / 0.8660254).extrude(depth)
 
 
 def _lib(w, key, **params):
