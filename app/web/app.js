@@ -1556,6 +1556,7 @@ function renderChat() {
   el.innerHTML = threadHtml(c, { editable: !running && !!api.undo, parts: tgt === 'design', firstRun: tgt === 'design' && isFirstRun(), base: S.cur.base }) + (tgt === 'design' ? queueHtml(c) + nudgeHtml(c) : '');
   if (tgt === 'design') {
     wireNudge(el); $$('[data-qx]', el).forEach(b => b.onclick = () => { c.queue.splice(+b.dataset.qx, 1); renderChat(); });
+    $$('.q-text', el).forEach(t => t.onclick = () => t.classList.toggle('open')); // a long queued message: click to read it all
     // Send now: stop the current change; this message goes out as soon as the stop lands (run_finished)
     $$('[data-qnow]', el).forEach(b => b.onclick = async () => {
       const q = c.queue.splice(+b.dataset.qnow, 1)[0], id = cur.id; if (!q) return;
@@ -1784,9 +1785,9 @@ function saveQueue(id, q) {
 }
 function queueHtml(c) {
   if (!c.queue?.length && !c.sendNow) return '';
-  const now = c.sendNow ? `<div class="q-item"><div class="q-text">${esc(splitParts(c.sendNow.text).text)}</div><div class="q-meta">Stopping the current change…</div></div>` : '';
+  const now = c.sendNow ? `<div class="q-item"><div class="q-text"><span>${esc(splitParts(c.sendNow.text).text)}</span></div><div class="q-meta">Stopping the current change…</div></div>` : '';
   // a queued message: your own bubble, faded, with "Sends next · Send now · Remove" under it
-  return `<div class="q-list">${now}${(c.queue || []).map((q, i) => `<div class="q-item"><div class="q-text">${esc(splitParts(q.text).text)}</div>
+  return `<div class="q-list">${now}${(c.queue || []).map((q, i) => `<div class="q-item"><div class="q-text"><span>${esc(splitParts(q.text).text)}</span></div>
     <div class="q-meta">Sends next · <button type="button" class="q-x" data-qnow="${i}">Send now</button> · <button type="button" class="q-x" data-qx="${i}">Remove</button></div></div>`).join('')}</div>`;
 }
 
