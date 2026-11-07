@@ -1,27 +1,37 @@
-"""Real gears for printing: involute teeth (the curved flank real gears use, so they roll instead of knocking), sized by
-module, with backlash for FDM. Never build gear teeth from boxes.
+"""Real gears for printing, made with cq_gears (cadlib/cq_gears, Apache-2.0): involute teeth with rounded roots, smooth
+spline flanks and true tapered bevel teeth, plus a printing backlash. Never build gear teeth from boxes.
 
     from cadlib import gears
     g = gears.spur(module=1.5, teeth=20, width=8, bore=5)              # spur gear, axis +Z, z 0..width, centred on 0,0
     h = gears.spur(1.5, 20, 8, bore=5, helix=20, herringbone=True)     # quieter, stronger, self-centring
-    a, b = gears.bevel_pair(module=1.5, teeth_a=16, teeth_b=32, face=8, bore_a=5, bore_b=8)  # 90-degree pair, see below
+    a, b, info = gears.bevel_pair(module=1.5, teeth_a=16, teeth_b=32, face=8, bore_a=5, bore_b=8)  # 90-degree pair
     r = gears.rack(module=1.5, length=120, width=8, height=10)          # straight rack along X, teeth up (+Z)
     gears.center_distance(1.5, 20, 40)   # 45.0: axis-to-axis spacing for a spur pair
     gears.pitch_d(1.5, 20)               # 30.0: pitch diameter; outside diameter = pitch_d + 2 * module
 
-Every gear is a cq.Workplane with its axis on +Z, the back face on z=0. Place and rotate it like any other part. Two meshing
-spur gears need the SAME module and pressure angle, axes `center_distance()` apart; rotate one of them by half a tooth
-(180 / teeth degrees) so a tooth meets a gap.
+Every gear is a cq.Workplane with its axis on +Z, the back face on z=0, a tooth centred on +X. Place and rotate it like
+any other part. Two meshing spur gears need the SAME module and pressure angle, axes `center_distance()` apart; rotate
+one of them by half a tooth (180 / teeth degrees) so a tooth meets a gap.
 
-bevel_pair(): two bevel gears whose axes meet at 90 degrees at the origin's apex. Gear A's axis is +Z, gear B's axis is +X;
-each is returned already placed so they mesh: A's back face at z = a_back, B's at x = b_back (both in the returned info).
-Move/rotate the pair together.
+bevel_pair(): two bevel gears whose axes meet at 90 degrees at the origin (the apex). Gear A's axis is +Z with its back
+face below the apex at z = a_back; gear B's axis is +X with its back face at x = b_back (both in the returned info), and
+B is already turned so a tooth meets a gap. Move / rotate the pair together.
+
+Bores: `bore` is the hole you draw; for a motor shaft use fab.shaft_bore() instead (printed holes come out small).
+Under 17 teeth the teeth get undercut (thin at the root): 12+ is fine for light loads, 17+ for anything that pushes hard.
+Built gears are cached (in memory and on disk), so a bevel pair (about 10 s the first time) is instant after that.
 """
+import hashlib
 import math
+import os
+import tempfile
 
 import cadquery as cq
 
+from cadlib.cq_gears import BevelGearPair, HerringboneGear, RackGear, SpurGear
+
 PA = 20.0  # pressure angle, degrees (the standard)
+BACKLASH = 0.15  # mm taken off each tooth's thickness at the pitch circle, so printed gears don't bind
 
 
 def pitch_d(module, teeth):
@@ -32,114 +42,120 @@ def center_distance(module, teeth_a, teeth_b):
     return module * (teeth_a + teeth_b) / 2.0
 
 
-def _inv(a):
-    return math.tan(a) - a
+def _bl(module, backlash, pa):
+    """Backlash in mm of tooth thickness -> cq_gears' backlash coefficient (it thins the tooth by m * k * tan(pa))."""
+    return float(backlash) / (float(module) * math.tan(math.radians(pa)))
 
 
-def _profile(module, teeth, backlash=0.15, pa=PA, pts=8):
-    """The gear's outline in XY as a closed list of points (involute flanks, root and tip arcs)."""
+def _check(teeth):
     if teeth < 6:
-        raise ValueError('gears: use at least 6 teeth (12+ avoids undercut)')
-    pa = math.radians(pa)
-    r = module * teeth / 2.0
-    rb = r * math.cos(pa)
-    ra = r + module
-    rf = max(r - 1.25 * module, 0.5)
-    # half the tooth's angular thickness at the pitch circle, thinned by the backlash (mm along the pitch circle)
-    half = math.pi / (2 * teeth) - (backlash / 2.0) / r
-    out = []
-    step = 2 * math.pi / teeth
-    r0 = max(rb, rf)
-    rs = [r0 + (ra - r0) * (i / (pts - 1)) ** 0.8 for i in range(pts)]
-    for k in range(teeth):
-        c = k * step
-        flank = []
-        for ri in rs:
-            ai = math.acos(min(1.0, rb / ri))
-            th = half + _inv(pa) - _inv(ai)
-            flank.append((ri, th))
-        # root in front of the tooth, rising flank, tip, falling flank
-        left = [(rri, c - th) for rri, th in flank]
-        right = [(rri, c + th) for rri, th in reversed(flank)]
-        if rf < r0:
-            out.append((rf, c - flank[0][1]))
-        out += left + right
-        if rf < r0:
-            out.append((rf, c + flank[0][1]))
-    return [(ri * math.cos(t), ri * math.sin(t)) for ri, t in out]
+        raise ValueError('gears: use at least 6 teeth (12+ avoids weak undercut teeth)')
+    if teeth < 12:
+        print(f'  WARNING: a {teeth}-tooth gear is badly undercut (thin, weak teeth): use 12 or more')
 
 
-def _with_bore(wp, bore, width, z0=0.0):
-    if bore and bore > 0:
-        wp = wp.cut(cq.Workplane('XY').workplane(offset=z0 - 1).circle(bore / 2.0).extrude(width + 2))
-    return wp
+# ---- cache: the same gear (same numbers) is built once per process and kept on disk between builds
+_mem = {}
 
 
-def spur(module, teeth, width, bore=0.0, *, helix=0.0, herringbone=False, backlash=0.15, pa=PA, hub=None):
+def _cache_dir():
+    home = os.path.join(os.getcwd(), '.agent-home', 'cache')  # a design's build sandbox can write here
+    d = os.path.join(home if os.path.isdir(home) else tempfile.gettempdir(), 'premake-gears')
+    try:
+        os.makedirs(d, exist_ok=True)
+        return d
+    except OSError:
+        return None
+
+
+def _cached(key, make):
+    if key in _mem:
+        return _mem[key]
+    k = hashlib.sha1(('cq_gears-0.62|' + key).encode()).hexdigest()[:20]
+    d = _cache_dir()
+    f = os.path.join(d, k + '.brep') if d else None
+    shape = None
+    if f and os.path.isfile(f):
+        try:
+            shape = cq.Shape.importBrep(f)
+            if not shape.isValid():
+                shape = None
+        except Exception:
+            shape = None
+    if shape is None:
+        shape = make()
+        if f:
+            try:
+                tmp = f + f'.{os.getpid()}.part'
+                shape.exportBrep(tmp)
+                os.replace(tmp, f)
+            except Exception:
+                pass
+    _mem[key] = shape
+    return shape
+
+
+def _cyl(r, z0, h):
+    return cq.Workplane('XY').workplane(offset=z0).circle(r).extrude(h)
+
+
+def spur(module, teeth, width, bore=0.0, *, helix=0.0, herringbone=False, backlash=BACKLASH, pa=PA, hub=None):
     """A spur gear (helix=0) or helical gear (helix = helix angle in degrees, 15-25 is typical), axis +Z, z 0..width.
     herringbone=True mirrors the helix at mid-width (stronger, no side thrust: the best choice for printed gears).
-    hub=(diameter, length): a round hub on the back for a grub screw."""
-    pts = _profile(module, teeth, backlash, pa)
-    base = cq.Workplane('XY').polyline(pts).close()
-    r = module * teeth / 2.0
-    twist = math.degrees(width * math.tan(math.radians(helix)) / r) if helix else 0.0
-    if not helix:
-        g = base.extrude(width)
-    elif herringbone:
-        half = width / 2.0
-        g = base.twistExtrude(half, twist / 2.0)
-        top = cq.Workplane('XY').workplane(offset=half).transformed(rotate=(0, 0, twist / 2.0)).polyline(pts).close().twistExtrude(half, -twist / 2.0)
-        g = g.union(top)
+    hub=(diameter, length): a round hub on the back (z -length..0) for a grub screw."""
+    _check(teeth)
+    k = _bl(module, backlash, pa)
+    key = f'spur|{module}|{teeth}|{width}|{helix}|{herringbone}|{k:.6f}|{pa}'
+    if herringbone and helix:
+        g = _cached(key, lambda: HerringboneGear(module, teeth, width, pressure_angle=pa, helix_angle=helix, backlash=k).build())
     else:
-        g = base.twistExtrude(width, twist)
+        g = _cached(key, lambda: SpurGear(module, teeth, width, pressure_angle=pa, helix_angle=helix, backlash=k).build())
+    w = cq.Workplane('XY').add(g)
+    z0, h = -1.0, width + 2.0
     if hub:
         hd, hl = hub
-        g = g.union(cq.Workplane('XY').workplane(offset=-hl).circle(hd / 2.0).extrude(hl + 0.01))
-        return _with_bore(g, bore, width + hl, -hl)
-    return _with_bore(g, bore, width)
+        w = w.union(_cyl(hd / 2.0, -hl, hl + 0.01))
+        z0, h = -hl - 1.0, width + hl + 2.0
+    if bore and bore > 0:
+        w = w.cut(_cyl(bore / 2.0, z0, h))
+    return w
 
 
-def _bevel(module, teeth, other_teeth, face, bore, backlash, pa):
-    """One bevel gear of a 90-degree pair, axis +Z, back face on z=0, apex at z = apex (returned)."""
-    delta = math.atan2(teeth, other_teeth)            # pitch cone angle
-    r = module * teeth / 2.0
-    cone = r / math.sin(delta)                        # cone distance (pitch point to apex)
-    face = min(face, cone / 3.0)
-    k = (cone - face) / cone                          # the small end is this much smaller
-    dz = face * math.cos(delta)
-    pts = _profile(module, teeth, backlash, pa)
-    small = [(x * k, y * k) for x, y in pts]
-    g = (cq.Workplane('XY').polyline(pts).close()
-         .workplane(offset=dz).polyline(small).close().loft(ruled=True))
-    g = _with_bore(g, bore, dz)
-    apex = r / math.tan(delta)                        # pitch point's height above the back face is 0: apex above it
-    return g, apex, delta
-
-
-def bevel_pair(module, teeth_a, teeth_b, face, bore_a=0.0, bore_b=0.0, *, backlash=0.15, pa=PA):
+def bevel_pair(module, teeth_a, teeth_b, face, bore_a=0.0, bore_b=0.0, *, backlash=BACKLASH, pa=PA):
     """Two bevel gears meshing at 90 degrees, apex at the origin. Returns (gear_a, gear_b, info): gear A axis +Z (back
-    face below the apex), gear B axis +X. info = {'a_back': z of A's back face, 'b_back': x of B's back face, ...}."""
-    ga, apex_a, da = _bevel(module, teeth_a, teeth_b, face, bore_a, backlash, pa)
-    gb, apex_b, db = _bevel(module, teeth_b, teeth_a, face, bore_b, backlash, pa)
-    ga = ga.translate((0, 0, -apex_a))                                   # A: apex at the origin, teeth facing up to it
-    gb = gb.translate((0, 0, -apex_b)).rotate((0, 0, 0), (0, 1, 0), 90)  # B: its +Z axis turned onto +X
-    gb = gb.rotate((0, 0, 0), (1, 0, 0), 180.0 / teeth_b)                # half a tooth, so a tooth meets a gap
-    return ga, gb, {'a_back': -apex_a, 'b_back': -apex_b, 'pitch_angle_a': math.degrees(da), 'pitch_angle_b': math.degrees(db),
-                    'pitch_d_a': module * teeth_a, 'pitch_d_b': module * teeth_b}
+    face below the apex), gear B axis +X (back face on the -X side). info = {'a_back': z of A's back face, 'b_back': x of
+    B's back face, 'pitch_angle_a', 'pitch_angle_b', 'pitch_d_a', 'pitch_d_b'}."""
+    _check(teeth_a); _check(teeth_b)
+    k = _bl(module, backlash, pa)
+    pair = BevelGearPair(module, teeth_a, teeth_b, face, pressure_angle=pa, backlash=k)
+    key = f'bevel|{module}|{teeth_a}|{teeth_b}|{face}|{k:.6f}|{pa}'
+    ga = _cached(key + '|a', lambda: pair.gear.build())
+    gb = _cached(key + '|b', lambda: pair.pinion.build())
+    ha, hb = pair.gear.cone_h, pair.pinion.cone_h
+    a = cq.Workplane('XY').add(ga)
+    b = cq.Workplane('XY').add(gb)
+    if bore_a and bore_a > 0:
+        a = a.cut(_cyl(bore_a / 2.0, -1.0, ha + 2.0))
+    if bore_b and bore_b > 0:
+        b = b.cut(_cyl(bore_b / 2.0, -1.0, hb + 2.0))
+    # cq_gears' own placement (BevelGearPair.assemble), then the apex moved to the origin
+    if teeth_b % 2 == 0:
+        b = b.rotate((0, 0, 0), (0, 0, 1), 180.0 / teeth_b)
+    b = b.translate((0, 0, -hb)).rotate((0, 0, 0), (0, 1, 0), 90.0)
+    a = a.translate((0, 0, -ha))
+    return a, b, {'a_back': -float(ha), 'b_back': -float(hb), 'pitch_angle_a': math.degrees(pair.gear.gamma_p),
+                  'pitch_angle_b': math.degrees(pair.pinion.gamma_p), 'pitch_d_a': module * teeth_a, 'pitch_d_b': module * teeth_b}
 
 
-def rack(module, length, width, height, *, backlash=0.15, pa=PA):
+def rack(module, length, width, height, *, backlash=BACKLASH, pa=PA):
     """A straight rack along +X from x=0, teeth on top, pitch line at z = height (the gear's pitch circle touches it),
-    y 0..width."""
-    p = math.pi * module
-    t = math.tan(math.radians(pa))
-    half = p / 4.0 - backlash / 4.0
-    pts = [(0, 0)]
-    x = 0.0
-    while x + p <= length + 1e-6:
-        c = x + p / 2.0
-        pts += [(c - half - 1.25 * module * t, height - 1.25 * module), (c - half + module * t, height + module),
-                (c + half - module * t, height + module), (c + half + 1.25 * module * t, height - 1.25 * module)]
-        x += p
-    pts += [(length, height - 1.25 * module), (length, 0)]
-    return cq.Workplane('XZ').polyline(pts).close().extrude(-width)
+    y 0..width. Tooth centres at x = k * pi * module, gaps half way between: put the gear's axis over a gap
+    (x = (k + 0.5) * pi * module) with one of its teeth pointing straight down at it."""
+    below = height - 1.25 * module  # cq_gears' height is measured down from the tooth roots
+    if below <= 0:
+        raise ValueError(f'gears.rack: height must be more than {1.25 * module:g} mm (1.25 x module) for this module')
+    k = _bl(module, backlash, pa)
+    r = _cached(f'rack|{module}|{length}|{width}|{below}|{k:.6f}|{pa}',
+                lambda: RackGear(module, length, width, below, pressure_angle=pa, backlash=k).build())
+    # cq_gears: along +X, teeth toward +Y (pitch line y=0), width z 0..width -> teeth up (+Z), width along y 0..width
+    return cq.Workplane('XY').add(r).rotate((0, 0, 0), (1, 0, 0), 90.0).translate((0, width, height))
