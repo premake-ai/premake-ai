@@ -3039,7 +3039,10 @@ function setCampaignStatus(id, dir, body) {
 // ---------------------------------------------------------------- access: login cookie, showcase mode, agent limits
 const isLocalHost = (h) => h === `127.0.0.1:${PORT}` || h === `localhost:${PORT}`;
 const TUNNEL_HOST = /^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.trycloudflare\.com$/;
-const hostAllowed = (h) => ALLOWED_HOSTS.has(h) || (TUNNEL && TUNNEL_HOST.test(h));
+// phonelink: Continue on phone straight to this computer (server/phonelink.js), its own quick tunnel; PREMAKE_PHONE_LINK=0 turns it off
+const phonelink = require('./phonelink').createLink({ port: PORT, appDir: APP });
+const PHONE_LINK = process.env.PREMAKE_PHONE_LINK !== '0';
+const hostAllowed = (h) => ALLOWED_HOSTS.has(h) || (TUNNEL && TUNNEL_HOST.test(h)) || (!!phonelink.host() && h === phonelink.host());
 /** True if the request came through the Google sign-in gateway (constant-time secret compare). */
 function viaGateway(req) {
   const v = req.headers['x-forma-gateway'];
@@ -3126,6 +3129,11 @@ function access(req) {
     const user = gatewayUser(req);
     // The gateway passes a few public paths (webhook, legal pages, deployed sites) with no user: those are anonymous.
     return USER_RE.test(user) ? { authed: true, sid: 'gw:' + user, user } : { authed: false, sid: null, user: '' };
+  }
+  // phonelink: through this computer's own phone tunnel. Signed in only with the phone cookie a redeemed code set (never
+  // OPEN_LOCAL: the tunnel is reachable from anywhere)
+  if (phonelink.isPhoneHost(req)) {
+    return phonelink.sessionOk(req) ? { authed: true, sid: 'local', user: LOCAL_USER, local: true, phone: true } : { authed: false, sid: null, user: '', phoneHost: true };
   }
   if (isLocalRequest(req) || OPEN_LOCAL) {
     // A3: no local token, no admin: a signed-out guest (who can still browse, and sign in with the one-time link)
@@ -3321,9 +3329,15 @@ async function handoffRoute(req, res, { parts, m, acc, url }) {
     if (!acc.authed || !acc.user || !acc.sid) return send(res, 401, { error: 'Sign in first.', code: 'signin' }), true;
     if (!handoffCanOpen(acc, id)) return send(res, 404, { error: 'project not found' }), true;
     if (!allow('handoff:' + acc.user, 10, 10 * 60e3) || !allow('handoff-ip:' + clientIp(req), 20, 10 * 60e3)) return send(res, 429, { error: 'That’s a lot of phone codes. Wait a few minutes and try again.' }), true;
+    // phonelink: a code made on this computer opens straight to it, through its own tunnel (started on first use)
+    let base = '';
+    if (acc.local && !viaGateway(req) && PHONE_LINK) {
+      base = await phonelink.start();
+      if (!base) return send(res, 503, { error: 'Couldn’t open a link for your phone. Check your internet connection and try again.' }), true;
+    }
     const { token, expires } = handoff.issue({ who: acc.user, kind: acc.local ? 'local' : 'gw', project: id, sid: acc.sid });
     const p = '/phone/' + token;
-    return send(res, 200, { url: handoffBase(req) + p, path: p, expires: new Date(expires).toISOString(), ttl_s: Math.round((expires - Date.now()) / 1000) }), true;
+    return send(res, 200, { url: (base || handoffBase(req)) + p, path: p, expires: new Date(expires).toISOString(), ttl_s: Math.round((expires - Date.now()) / 1000) }), true;
   }
   // the gateway redeems (or, for its confirm page, peeks at) a code: server-to-server, gateway secret only
   if (url.pathname === '/api/handoff/redeem') {
@@ -3339,7 +3353,7 @@ async function handoffRoute(req, res, { parts, m, acc, url }) {
   }
   // /phone/<code> on this Mac (127.0.0.1): a code made by the local admin signs this browser in as the local admin.
   // Online, /phone/ is the gateway's (it never forwards it here).
-  if (parts[0] === 'phone' && parts.length === 2 && (acc.local || acc.localGuest)) {
+  if (parts[0] === 'phone' && parts.length === 2 && (acc.local || acc.localGuest || acc.phoneHost)) {
     const token = parts[1];
     const gone = () => phonePage(res, 410, 'This code has expired', 'Codes work once, for 2 minutes. On your computer, open Share, then Continue on phone, for a new one.');
     if (m === 'GET' || m === 'HEAD') {
@@ -3357,7 +3371,8 @@ async function handoffRoute(req, res, { parts, m, acc, url }) {
     const r = handoff.redeem(token);
     if (!r) return gone(), true;
     const cookies = ['forma_local_out=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0'];
-    if (LOCAL_TOKEN) cookies.push(`${LOCAL_COOKIE}=${localCookieValue()}; Path=/; HttpOnly; SameSite=Strict; Max-Age=31536000`);
+    if (phonelink.isPhoneHost(req)) cookies.push(phonelink.issueSession()); // phonelink: a phone session for this tunnel, never the local token
+    else if (LOCAL_TOKEN) cookies.push(`${LOCAL_COOKIE}=${localCookieValue()}; Path=/; HttpOnly; SameSite=Strict; Max-Age=31536000`);
     res.writeHead(303, { Location: handoffPath(r.project), 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer', 'Set-Cookie': cookies });
     return res.end(), true;
   }
@@ -3417,12 +3432,14 @@ async function handle(req, res) {
   // ---- legal pages (public). One copy in gateway/legal/, served by the gateway and by this server.
 
   // ---- the bare tunnel URL (not via the gateway, not this Mac): everyone signs in at the gateway instead
-  if (ONLINE && !viaGateway(req) && !acc.local && !acc.localGuest) {
+  if (ONLINE && !viaGateway(req) && !acc.local && !acc.localGuest && !acc.phoneHost) {
     if (GATEWAY_URL && (m === 'GET' || m === 'HEAD')) { res.writeHead(302, { Location: GATEWAY_URL + req.url, 'Cache-Control': 'no-store' }); return res.end(); }
     return send(res, 403, { error: 'Sign in first', signin: GATEWAY_URL ? GATEWAY_URL + '/auth/signin' : null });
   }
 
   if (await handoffRoute(req, res, { parts, m, acc, url })) return; // handoff: Continue on phone
+  // phonelink: the phone tunnel without a phone sign-in: nothing but this page
+  if (acc.phoneHost) return phonePage(res, 401, 'Scan the code again', 'This link opens Premake on a computer. On that computer, open a design, click the phone button and scan the new code.');
 
   // ---- sign-in lives at the gateway (Google). The old password pages just point there.
   // On this Mac, sign out / sign in just toggles the local guest cookie (no Google involved).
@@ -4013,8 +4030,10 @@ function shutdown() {
   for (const p of [...pool.values()]) killProc(p);
   for (const id of [...workers.keys()]) stopWorker(id);
   if (sketchProc) killSketch(sketchProc);
+  phonelink.stop();
   for (const j of sketchJobs.values()) killSketch(j.s);
   setTimeout(() => process.exit(0), 300);
 }
 process.on('SIGINT', shutdown);
 process.on('SIGTERM', shutdown);
+process.on('exit', () => phonelink.stop()); // phonelink: never leave a tunnel to this computer running

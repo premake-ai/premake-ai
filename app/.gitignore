@@ -77,3 +77,6 @@ data/shares.json
 # Sourcing API uploads and quotes (server/apiv1.js): private, deleted after 30 days
 data/.apiv1/
 .agent-bin/
+
+# phonelink: cloudflared, downloaded on first "Continue on phone" when it is not installed
+.bin/
