@@ -34,6 +34,8 @@ function cleanQuestions(j) {
     let id = slug(q.id) || slug(question);
     while (ids.has(id)) id += '_2';
     ids.add(id);
+    // photocard: "photo": true asks the user to take or pick a photo (Mac camera, phone or file); no options
+    if (q.photo === true) { out.push({ id, question, photo: true, options: [] }); continue; }
     const options = [];
     for (const o of Array.isArray(q.options) ? q.options : []) {
       const label = str(typeof o === 'string' ? o : o?.label, 60);

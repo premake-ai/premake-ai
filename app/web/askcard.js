@@ -8,6 +8,7 @@
 //     Phone: the sheet opens at half height with the model card left undimmed above it; Send is the second control.
 //   - m.status: why a run stopped ("Stopped after 25 min", "Stopped: no progress for 5 min", "Stopped") + Continue.
 // chatui.js renders msgExtrasHtml(m, i, chat) under each assistant message; sending goes through app.js's 'formery:send'.
+import { photoCardHtml, photoDoneHtml } from './photocard.js';
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const CONTINUE_TEXT = 'Continue where you left off.';
 const phone = () => matchMedia('(max-width: 640px)').matches;
@@ -65,7 +66,11 @@ export function msgExtrasHtml(m, i, chat) {
     if (!(same && !last)) html += `<div class="ab-status${last ? ' live' : ''}">${same ? '' : `${stopSvg}<span>${esc(m.status.text)}</span>`}${last && m.status.continuable !== false
       ? `<button type="button" class="ab-continue" data-ab-continue>${playSvg}Continue</button>` : ''}</div>`;
   }
-  if (Array.isArray(m.questions) && m.questions.length) {
+  const photoQ = Array.isArray(m.questions) ? m.questions.find(q => q.photo) : null; // photocard: a photo request
+  if (photoQ) html += last ? photoCardHtml(photoQ) : photoDoneHtml(photoQ, chat.messages[i + 1]);
+  const qs0 = Array.isArray(m.questions) ? m.questions.filter(q => !q.photo) : [];
+  if (qs0.length) {
+    m = { ...m, questions: qs0 };
     const key = keyOf(m, i);
     if (!last) { // answered (or skipped): the questions stay, read-only, with the picks from the next user message
       if (current?.key === key) { current = null; hoverOpt = null; setMock(null); }

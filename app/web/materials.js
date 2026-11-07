@@ -659,6 +659,7 @@ export function cableTick(v) {
 }
 
 /** viewer.load hook (after every part is placed): cables from the manifest, the parts, or the heuristic. */
+const SHOW_CABLES = false; // power cables drawn into the scene (buildCable). Off: they looked wrong more often than right
 export function dressScene(v, manifest) {
   try {
     for (const g of v._cables || []) { g.parent?.remove(g); disposeTree(g); }
@@ -670,6 +671,7 @@ export function dressScene(v, manifest) {
         e.material[0].emissiveIntensity = 0.85; e.material[1].emissiveIntensity = 0.35; it.p.engraved = 'lit'; e.userData.autoClear = false;
       }
     }
+    if (!SHOW_CABLES) return; // the drawn plug + desk run rarely sits right (plugs in mid-air, through walls): off for now
     const specs = [];
     for (const c of Array.isArray(manifest?.cables) ? manifest.cables : []) if (validCable(c)) specs.push({ ...c });
     for (const it of v.items) {

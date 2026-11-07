@@ -76,6 +76,19 @@ async function api(req, res, { id, dir, acc, d, m }) {
   return send(res, 404, { error: 'no such endpoint' });
 }
 
+/** photocard: save an image buffer (the phone photo page) into <dir>/uploads/; returns { id, url } or throws { code }. */
+function save(dir, projectId, buf) {
+  const ext = sniff(buf);
+  if (!ext) throw Object.assign(new Error('That file is not a PNG, JPEG, WebP or GIF image.'), { code: 415 });
+  if (buf.length > MAX_BYTES) throw Object.assign(new Error('That image is over 5 MB.'), { code: 413 });
+  const up = uploadsDir(dir);
+  fs.mkdirSync(up, { recursive: true });
+  if (fs.readdirSync(up).filter((f) => ID_RE.test(f)).length >= MAX_PER_PROJECT) throw Object.assign(new Error('This project has too many images.'), { code: 409 });
+  const file = `${Date.now()}-${crypto.randomBytes(4).toString('hex')}.${ext}`;
+  fs.writeFileSync(path.join(up, file), buf, { flag: 'wx' });
+  return { id: file, url: urlFor(projectId, file) };
+}
+
 /** Validated attachment ids for this project (existing files only, deduped, at most 4). Throws 400 on a bad list. */
 function pick(dir, list) {
   if (list == null) return [];
@@ -123,4 +136,4 @@ function tag(file, text, ids, projectId, tries = 0) {
   fs.renameSync(tmp, file);
 }
 
-module.exports = { init, api, pick, withImages, tag, sniff, MAX_BYTES, MAX_PER_MESSAGE };
+module.exports = { save, readRaw, init, api, pick, withImages, tag, sniff, MAX_BYTES, MAX_PER_MESSAGE };

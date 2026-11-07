@@ -3,7 +3,7 @@
 // Server: server/handoff.js + routes in server/server.js; the gateway redeems the code (gateway/handoff.js).
 /** web/apps/qr.js (the vendored encoder) is a classic script, window.BuilderyQR; load it once. Same as appview.js. */
 let qrLoad = null;
-function loadQr() {
+export function loadQr() {
   if (window.BuilderyQR) return Promise.resolve(window.BuilderyQR);
   qrLoad ||= new Promise((resolve, reject) => {
     const s = document.createElement('script'); s.src = '/apps/qr.js'; s.async = true;

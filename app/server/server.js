@@ -3322,6 +3322,7 @@ p{margin:0 0 20px;color:#6b6560;font-size:15px}b{color:#1c1917;font-weight:600;w
 a{color:#1c1917;font-size:14px}</style></head><body><main><h1>${escHtml(title)}</h1><p>${text}</p>${form}</main></body></html>`);
 }
 async function handoffRoute(req, res, { parts, m, acc, url }) {
+  if (await snapRoute(req, res, { parts, m, acc })) return true; // photosnap: photo from the phone
   // make a code: POST /api/projects/<id>/handoff (signed in; the design must be one you can open)
   if (parts[0] === 'api' && parts[1] === 'projects' && parts[3] === 'handoff' && parts.length === 4) {
     if (m !== 'POST') return send(res, 405, { error: 'POST only' }), true;
@@ -3375,6 +3376,55 @@ async function handoffRoute(req, res, { parts, m, acc, url }) {
     else if (LOCAL_TOKEN) cookies.push(`${LOCAL_COOKIE}=${localCookieValue()}; Path=/; HttpOnly; SameSite=Strict; Max-Age=31536000`);
     res.writeHead(303, { Location: handoffPath(r.project), 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer', 'Set-Cookie': cookies });
     return res.end(), true;
+  }
+  return false;
+}
+
+// ---- photosnap: "Use your phone" on a photo request card (server/photosnap.js). The studio makes a 10-minute code for one
+// design; the phone opens <phone link>/snap/<code>, takes a photo, and it lands in that design's uploads/. Only the code's
+// own routes work with it. Needs this computer's own phone link (local admin).
+const photosnap = require('./photosnap');
+const snaps = photosnap.createStore();
+async function snapRoute(req, res, { parts, m, acc }) {
+  // make a code: POST /api/projects/<id>/snap; poll it: GET /api/projects/<id>/snap/<code>
+  if (parts[0] === 'api' && parts[1] === 'projects' && parts[3] === 'snap' && (parts.length === 4 || parts.length === 5)) {
+    const id = parts[2];
+    if (!acc.authed || !projDir(id) || !canEdit(acc, id)) return send(res, 404, { error: 'project not found' }), true;
+    if (parts.length === 5) {
+      const e = snaps.get(parts[4]);
+      if (!e || e.project !== id) return send(res, 410, { error: 'This photo code has expired.' }), true;
+      return send(res, 200, { files: e.files }), true;
+    }
+    if (m !== 'POST') return send(res, 405, { error: 'POST only' }), true;
+    if (!acc.local || viaGateway(req) || !PHONE_LINK) return send(res, 409, { error: 'Phone photos work when Premake runs on your own computer. Use the camera or choose a file instead.' }), true;
+    if (!allow('snap:' + (acc.user || acc.sid), 20, 10 * 60e3)) return send(res, 429, { error: 'That’s a lot of photo codes. Wait a few minutes.' }), true;
+    const base = await phonelink.start();
+    if (!base) return send(res, 503, { error: 'Couldn’t open a link for your phone. Check your internet connection and try again.' }), true;
+    const { token, ttl_s } = snaps.issue(id);
+    return send(res, 200, { token, url: `${base}/snap/${token}`, ttl_s }), true;
+  }
+  // the phone: GET /snap/<code> (the page), POST /snap/<code> (a photo)
+  if (parts[0] === 'snap' && parts.length === 2) {
+    const e = snaps.get(parts[1]);
+    if (!e || !projDir(e.project)) return phonePage(res, 410, 'This code has expired', 'On your computer, click Use your phone again for a new one.'), true;
+    if (m === 'GET' || m === 'HEAD') {
+      const q = readJSON(path.join(projDir(e.project), 'meta.json'), {})?.title || 'your design';
+      const pg = photosnap.page(parts[1], `For ${q}. It goes straight to Premake on your computer.`);
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store', 'X-Frame-Options': 'DENY', 'Referrer-Policy': 'no-referrer', 'Content-Security-Policy': pg.csp });
+      return res.end(pg.html), true;
+    }
+    if (m !== 'POST') return send(res, 405, { error: 'GET or POST' }), true;
+    if (!allow('snap-up:' + clientIp(req), 30, 10 * 60e3)) return send(res, 429, { error: 'Too many photos. Wait a few minutes.' }), true;
+    if (snaps.full(e)) return send(res, 409, { error: `That’s ${photosnap.MAX_FILES} photos already` }), true;
+    const ct = String(req.headers['content-type'] || '').split(';')[0].trim().toLowerCase();
+    if (!/^image\/(png|jpeg|webp|gif)$/.test(ct)) { req.resume(); return send(res, 415, { error: 'Only photos can be sent' }), true; }
+    try {
+      const buf = await uploads.readRaw(req, uploads.MAX_BYTES);
+      const f = uploads.save(projDir(e.project), e.project, buf);
+      e.files.push(f);
+      console.log(`[photosnap] photo for ${e.project} from a phone`);
+      return send(res, 200, { ok: true }), true;
+    } catch (err) { return send(res, err.code || 500, { error: err.code ? err.message : 'Upload failed' }), true; }
   }
   return false;
 }

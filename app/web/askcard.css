@@ -136,3 +136,18 @@
 .ab-done { box-shadow: none; padding: 10px 12px 6px; }
 .ab-done .ab-opt { cursor: default; pointer-events: none; }
 .ab-done .ab-opt:not(.on) { opacity: .5; }
+
+/* photocard: the designer asks for a photo */
+.pc-btns { display: flex; flex-wrap: wrap; gap: 8px; }
+.pc-btn { display: inline-flex; align-items: center; gap: 8px; min-height: 38px; padding: 8px 12px; border: 1px solid var(--line, #e7e5e4); border-radius: 10px;
+  background: var(--panel, #fff); color: var(--text); font: 500 13.5px/1.2 var(--ui); cursor: pointer; }
+.pc-btn:hover { background: var(--panel-2, #f5f5f4); }
+.pc-btn svg { flex: none; color: var(--muted); }
+.pc-err { margin: 8px 0 0; color: var(--danger, #dc2626); font-size: 12.5px; }
+.pc-done { margin: 0; color: var(--muted); font-size: 13px; }
+.pc-cam { position: relative; margin-top: 4px; border-radius: 12px; overflow: hidden; background: #111; aspect-ratio: 4 / 3; display: grid; place-items: center; }
+.pc-cam video, .pc-cam canvas { width: 100%; height: 100%; object-fit: contain; display: block; }
+.pc-cam video[hidden], .pc-cam canvas[hidden] { display: none; }
+.pc-cam .pc-note { position: absolute; inset: auto 12px 12px; margin: 0; color: #fff; font-size: 13px; text-align: center; }
+.pc-modal .modal { width: min(560px, calc(100vw - 32px)); }
+@media (max-width: 640px) { .pc-btn { flex: 1 1 auto; justify-content: center; min-height: 44px; } }

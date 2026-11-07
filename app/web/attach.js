@@ -103,7 +103,7 @@ async function decode(file) {
 const toBlob = (canvas, q) => new Promise(res => canvas.toBlob(res, 'image/jpeg', q));
 
 /** File -> JPEG Blob (downscaled, metadata stripped; GIFs keep their first frame). Throws a user-facing Error. */
-async function processImage(file) {
+export async function processImage(file) {
   if (!isAccepted(file)) throw new Error(`${file.name || 'That file'} is not an image. Attach PNG, JPEG, WebP, GIF or HEIC.`);
   let src;
   try { src = await decode(file); } catch {
@@ -127,7 +127,7 @@ async function processImage(file) {
   throw new Error('That image is over 5 MB even after shrinking it. Try a smaller one.');
 }
 
-function upload(projectId, blob, onProgress) {
+export function upload(projectId, blob, onProgress = () => {}) {
   return new Promise((resolve, reject) => {
     const x = new XMLHttpRequest();
     x.open('POST', `/api/projects/${encodeURIComponent(projectId)}/uploads`);
