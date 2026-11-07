@@ -2230,6 +2230,7 @@ async function autoModel(id, c) {
       let m = null;
       try { m = await api.manifest(base); } catch {}
       if (!m?.parts?.length || !isCurProject(id) || !c.live?.running || gen !== (S.modelGen || 0)) break;
+      if (m.t && S.cur.data.manifest?.t && m.t <= S.cur.data.manifest.t) break; // older than the model the agent built
       if (S.restoring?.id === id) break; // undo / restore rebuild owns the viewer
       const v = await getViewer();
       if (!v || !isCurProject(id) || !v.parts().length || v.sketch || gen !== (S.modelGen || 0)) break; // no model on screen yet: the first build's reveal stays

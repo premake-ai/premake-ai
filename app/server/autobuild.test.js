@@ -4,8 +4,7 @@ const assert = require('node:assert');
 const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
-const { EventEmitter } = require('node:events');
-const { AutoBuild, prepareShadow, DIR } = require('./autobuild');
+const { AutoBuild, prepareShadow, workerJob, DIR } = require('./autobuild');
 
 function proj() {
   const d = fs.mkdtempSync(path.join(os.tmpdir(), 'autobuild-'));
@@ -30,18 +29,19 @@ test('prepareShadow copies inputs, links folders, never the model, chats or dot 
   assert.ok(!fs.existsSync(path.join(sh, 'manifest.json')));
 });
 
-function fakeSpawn(log, ok = true) {
+function fakeStart(log, ok = true, ms = 30) {
   return (sh) => {
-    const c = new EventEmitter(); c.pid = 999999; c.kill = () => { c.killed = true; setImmediate(() => c.emit('close', null)); };
-    log.push(c);
-    setTimeout(() => { if (c.killed) return; if (ok) fs.writeFileSync(path.join(sh, 'manifest.json'), JSON.stringify({ t: log.length, parts: [{ name: 'a' }] })); c.emit('close', ok ? 0 : 1); }, 30);
-    return c;
+    let killed = false, res;
+    const j = { done: new Promise((r) => { res = r; }), kill: () => { killed = true; j.killed = true; res({ code: 137, tail: '' }); } };
+    log.push(j);
+    setTimeout(() => { if (killed) return; if (ok) fs.writeFileSync(path.join(sh, 'manifest.json'), JSON.stringify({ t: log.length, parts: [{ name: 'a' }] })); res({ code: ok ? 0 : 1, tail: ok ? '' : 'BUILD FAILED: x' }); }, ms);
+    return j;
   };
 }
 
 test('a burst of edits is one build; the model is reported', async () => {
   const d = proj(), spawned = [], models = [];
-  const a = new AutoBuild({ dir: d, spawnBuild: fakeSpawn(spawned), onModel: (m) => models.push(m), debounceMs: 20 });
+  const a = new AutoBuild({ dir: d, start: fakeStart(spawned), onModel: (m) => models.push(m), debounceMs: 20 });
   a.edited(); a.edited(); a.edited();
   await wait(120);
   assert.equal(spawned.length, 1);
@@ -49,22 +49,43 @@ test('a burst of edits is one build; the model is reported', async () => {
   a.stop();
 });
 
-test('edits during a build run it once more after; a failed build is silent', async () => {
-  const d = proj(), spawned = [], models = [];
-  const a = new AutoBuild({ dir: d, spawnBuild: fakeSpawn(spawned), onModel: (m) => models.push(m), debounceMs: 10 });
+test('edits during a build run it once more after; a failed build only logs', async () => {
+  const d = proj(), spawned = [], models = [], logs = [];
+  const a = new AutoBuild({ dir: d, start: fakeStart(spawned), onModel: (m) => models.push(m), debounceMs: 10 });
   a.edited(); await wait(20); a.edited(); a.edited(); await wait(150);
   assert.equal(spawned.length, 2); assert.equal(models.length, 2);
-  const b = new AutoBuild({ dir: d, spawnBuild: fakeSpawn([], false), onModel: (m) => models.push(m), debounceMs: 10 });
+  const b = new AutoBuild({ dir: d, start: fakeStart([], false), onModel: (m) => models.push(m), log: (m) => logs.push(m), debounceMs: 10 });
   b.edited(); await wait(80);
   assert.equal(models.length, 2);
+  assert.ok(logs.some((l) => /failed .*BUILD FAILED: x/.test(l)), logs.join('|'));
 });
 
-test("the agent's own build wins: skipped while it runs, an auto build in flight is dropped", async () => {
+test("the agent's build: nothing starts while it runs; one in flight still lands unless the agent's model came first", async () => {
   const d = proj(), spawned = [], models = [];
   let building = true;
-  const a = new AutoBuild({ dir: d, spawnBuild: fakeSpawn(spawned), onModel: (m) => models.push(m), agentBuilding: () => building, debounceMs: 10 });
+  const a = new AutoBuild({ dir: d, start: fakeStart(spawned, true, 60), onModel: (m) => models.push(m), agentBuilding: () => building, debounceMs: 10 });
   a.edited(); await wait(40);
   assert.equal(spawned.length, 0);
-  building = false; a.edited(); await wait(15); a.agentBuildStarted(); await wait(60);
-  assert.equal(spawned.length, 1); assert.ok(spawned[0].killed); assert.equal(models.length, 0);
+  building = false; a.edited(); await wait(20); a.agentBuildStarted(); await wait(80);
+  assert.equal(spawned.length, 1); assert.ok(!spawned[0].killed); assert.equal(models.length, 1); // not killed: it began first
+  a.edited(); await wait(20); a.agentModelLanded(); await wait(80);
+  assert.equal(spawned.length, 2); assert.equal(models.length, 1); // landed after the agent's model: dropped
+  a.edited(); await wait(20); a.stop(); await wait(80);
+  assert.ok(spawned[2].killed); assert.equal(models.length, 1);
+});
+
+test('workerJob: hands the build over with the build.sh files and reads the exit code', async () => {
+  const d = proj(), sh = prepareShadow(d), w = path.join(sh, '.build');
+  const job = workerJob(sh, () => true);
+  await wait(30);
+  const req = fs.readdirSync(w).find((f) => f.startsWith('req.'));
+  assert.ok(req);
+  const tag = req.slice(4);
+  fs.writeFileSync(path.join(w, 'out.' + tag), 'manifest written\nbuild ok');
+  fs.writeFileSync(path.join(w, 'done.' + tag), '0');
+  const r = await job.done;
+  assert.equal(r.code, 0); assert.match(r.tail, /build ok/);
+  assert.deepEqual(fs.readdirSync(w), []);
+  const dead = await workerJob(sh, () => false).done;
+  assert.equal(dead.code, 1);
 });

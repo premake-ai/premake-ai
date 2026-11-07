@@ -594,6 +594,7 @@ function ensureWatcher(id) {
       if (!m) return; // mid-write; retry next tick
       emit(id, { type: 'model_updated', t: m.t });
       const r = runs.get(id);
+      r?.auto?.agentModelLanded(); // autobuild: the real model is out (often before build.sh's result): older auto models are stale
       if (r?.tl && r.tl.first_model == null && r.buildIds.size) r.tl.first_model = Date.now() - r.tl.t_send; // the agent's own build, not a leftover
       if (!r) renderThumb(dir); // no renders during a design run: the server renders thumb.png when it ends
     }
@@ -1185,6 +1186,7 @@ function startAgent(id, kind, text, tSend, by = null) {
     buildIds: new Set(), buildStart: new Map(), events: [], denied: 0, partial: '', thinking: '', partialTimer: null, tl, lastWork: Date.now(), lastAny: Date.now() };
   if (kind === 'design') { run.fwSig = firmware.sketchSig(dir); run.fwFix = fwFixTurns.get(id) || 0; fwFixTurns.delete(id); } // firmware: compile afterwards if the sketch changed
   map.set(id, run);
+  if (kind === 'design' && !tl.new_design) autoBuilder(id, run)?.warm(); // autobuild: cadquery imported before the first edit lands
   // Hard cap on one turn's length, so a stuck agent can't run up the bill.
   const capMs = kind === 'app' ? Math.max(RUN_TIMEOUT_MS, 15 * 60e3) : RUN_TIMEOUT_MS; // apps: a first app build writes ~60k tokens (8 min measured)
   run.capMs = capMs;
@@ -1370,7 +1372,7 @@ function handleMsg(id, run, agent, agentFile, j) {
           try { const qs = brain.cleanQuestions(JSON.parse(String(c.input.content || ''))); if (qs.length) startAskMocks(id, run.dir, qs, run.userText); } catch {}
         }
         if (c.name === 'Bash' && /build\.sh/.test((c.input || {}).command || '')) { run.buildIds.add(c.id); run.buildStart.set(c.id, at()); run.preview?.stop('build started'); (run.buildsOpen ||= new Set()).add(c.id); run.auto?.agentBuildStarted(); } // livepreview / autobuild: never alongside the real build
-        if (run.kind === 'design' && /^(Edit|MultiEdit|Write)$/.test(c.name) && path.basename(String(c.input?.file_path || '')) === 'design.py') (run.designEdits ||= new Set()).add(c.id); // autobuild:
+        if (run.kind === 'design' && /^(Edit|MultiEdit|Write)$/.test(c.name) && path.basename(String(c.input?.file_path || '')) === 'design.py') { (run.designEdits ||= new Set()).add(c.id); autoBuilder(id, run)?.warm(); } // autobuild: the worker imports cadquery while the edit applies
       }
     }
   } else if (j.type === 'user' && j.message && Array.isArray(j.message.content)) {
@@ -1385,7 +1387,7 @@ function handleMsg(id, run, agent, agentFile, j) {
         record(id, run, { type: P + 'step', text: c.is_error ? 'Build failed, fixing' : 'Build finished' });
         setCaption(id, run, caption.forBuild(!c.is_error, body)); // livecaption:
         if (!c.is_error) { // model_updated right away, not on the next poll
-          pokeWatcher(id); run.built = true;
+          pokeWatcher(id); run.built = true; run.auto?.agentModelLanded(); // autobuild: older auto models are stale now
           if (run.editingSet) { run.editingSet = null; record(id, run, { type: 'editing_parts', parts: [], source: 'build' }); } // editglow: replays end clean
         }
       }
@@ -1463,31 +1465,50 @@ function narrationParts(id, run, text) {
 }
 
 // ---------------------------------------------------------------- autobuild: the model keeps up with the edits
-/** A design.py edit landed: (re)build a copy of the design in autobuild/ and tell the studio (server/autobuild.js).
+/** The run's AutoBuild (server/autobuild.js), made on first use; null when off or not wanted.
  * Not on a new design's first turn before its first build (the sketch + livepreview own that stage). */
-function autoEdited(id, run) {
-  if (!AUTOBUILD_ON || run.kind !== 'design' || run.finished || runs.get(id) !== run) return;
-  if (run.tl.new_design && !run.tl.builds?.some((b) => b.ok)) return;
-  run.auto ||= new autobuild.AutoBuild({
-    dir: run.dir, spawnBuild: spawnAutoBuild, log: (m) => console.log(`[autobuild ${id}] ${m}`),
+function autoBuilder(id, run) {
+  if (!AUTOBUILD_ON || run.kind !== 'design' || run.finished || runs.get(id) !== run) return null;
+  if (run.tl.new_design && !run.tl.builds?.some((b) => b.ok)) return null;
+  if (run.auto) return run.auto;
+  const log = (m) => console.log(`[autobuild ${id}] ${m}`);
+  let worker = null; // warm cadlib.worker serving autobuild/
+  const alive = () => !!worker && worker.exitCode == null && worker.signalCode == null;
+  const a = run.auto = new autobuild.AutoBuild({
+    dir: run.dir, log,
     agentBuilding: () => !!run.buildsOpen?.size,
+    start: (sh) => alive() ? autobuild.workerJob(sh, alive) : autobuild.childJob(spawnAutoBuild(sh)),
     onModel: (man) => {
       if (run.finished || runs.get(id) !== run) return;
       run.editingSet = null; // editglow: the next edits shimmer again on the new model
-      record(id, run, { type: 'auto_model', t: man.t, n: run.auto.n });
+      record(id, run, { type: 'auto_model', t: man.t, n: a.n });
     },
   });
-  run.auto.edited();
+  a.warm = () => {
+    if (worker || a.stopped) return;
+    try { fs.mkdirSync(path.join(run.dir, autobuild.DIR), { recursive: true }); worker = spawnAutoBuild(path.join(run.dir, autobuild.DIR), true); } catch (e) { log(`worker failed: ${e.message}`); return; }
+    let err = '';
+    worker.stdout.resume(); worker.stderr.on('data', (d) => { err = (err + d).slice(-600); });
+    worker.on('error', () => {});
+    worker.on('close', (code) => { if (!a.stopped) log(`worker exited ${code}: ${err.trim().split('\n').pop() || ''}`); });
+  };
+  const stop = a.stop.bind(a);
+  a.stop = () => { stop(); if (worker) try { process.kill(-worker.pid, 'SIGKILL'); } catch {} };
+  return a;
 }
-/** autobuild: `python -m cadlib.build .` in the shadow folder, under exactly the build.sh sandbox (the project's
- * profile), empty env and caps, at low priority. Its own process group so a kill takes everything. */
-function spawnAutoBuild(sh) {
+/** A design.py edit landed: rebuild the copy and show it live. */
+function autoEdited(id, run) { autoBuilder(id, run)?.edited(); }
+/** autobuild: in the shadow folder, under exactly the build.sh sandbox (the project's profile), empty env and caps, at
+ * low priority, in its own process group: `python -m cadlib.build .`, or (worker) a warm `python -m cadlib.worker`. */
+function spawnAutoBuild(sh, worker = false) {
   const dir = path.dirname(sh), home = path.join(dir, AGENT_HOME);
   for (const d of ['tmp', 'cache']) fs.mkdirSync(path.join(home, d), { recursive: true });
   const env = { PATH: '/usr/bin:/bin', LANG: 'en_US.UTF-8', HOME: home, TMPDIR: path.join(home, 'tmp'), XDG_CACHE_HOME: path.join(home, 'cache'),
-    MPLCONFIGDIR: path.join(home, 'cache'), FORMA_NO_RENDER: '1', PYTHONPATH: APP, PYTHONDONTWRITEBYTECODE: '1' };
-  const [cmd, args] = sandbox.AVAILABLE ? ['/usr/bin/sandbox-exec', ['-p', buildProfile(dir), VENV_PY, '-m', 'cadlib.build', '.']] : [VENV_PY, ['-m', 'cadlib.build', '.']];
-  return spawn('/usr/bin/nice', ['-n', '10', '/bin/sh', '-c', `${ULIMITS}; exec "$@"`, 'autobuild', cmd, ...args], { cwd: sh, env, detached: true, stdio: 'ignore' });
+    MPLCONFIGDIR: path.join(home, 'cache'), FORMA_NO_RENDER: '1', PYTHONPATH: APP, PYTHONDONTWRITEBYTECODE: '1',
+    ...(worker ? { OBJC_DISABLE_INITIALIZE_FORK_SAFETY: 'YES', FORMA_WORKER_IDLE: '900' } : {}) };
+  const py = worker ? [VENV_PY, '-m', 'cadlib.worker', sh] : [VENV_PY, '-m', 'cadlib.build', '.'];
+  const [cmd, args] = sandbox.AVAILABLE ? ['/usr/bin/sandbox-exec', ['-p', buildProfile(dir), ...py]] : [py[0], py.slice(1)];
+  return spawn('/usr/bin/nice', ['-n', '10', '/bin/sh', '-c', `${ULIMITS}; exec "$@"`, 'autobuild', cmd, ...args], { cwd: sh, env, detached: true, stdio: ['ignore', 'pipe', 'pipe'] });
 }
 
 // ---------------------------------------------------------------- livecaption + livepreview
